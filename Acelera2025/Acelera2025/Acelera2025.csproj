@@ -209,5 +209,8 @@
   <ItemGroup>
     <None Include="Resources\IconeNotificacao.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classis\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
