@@ -47,6 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Date.cs" />
+    <Compile Include="Class\PeopleManager.cs" />
+    <Compile Include="Class\Person.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -209,8 +212,6 @@
   <ItemGroup>
     <None Include="Resources\IconeNotificacao.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classis\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
