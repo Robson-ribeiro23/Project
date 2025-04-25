@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,26 +11,28 @@ namespace Acelera2025.Class
     {
         public static PeopleManager Instance { get; set; }
 
-        private List<Person> peopleDB = new List<Person>();
+        private ArrayList peopleDB = new ArrayList();
         public Person myself;
 
         public PeopleManager() {
             Instance = new PeopleManager();
         }
 
-        public List<Person> GetPeople()
+        public ArrayList GetPeopleDB()
         {
             return peopleDB;
         }
 
         public void AddPerson(Person person)
         {
+            person.SetIndex(peopleDB.Count);
             peopleDB.Add(person);
+
         }
 
         public void RemovePerson(Person person) {
-            int index = peopleDB.IndexOf(person);
-            
+            person.SetActivity(false);
         }
     }
+
 }

@@ -89,9 +89,9 @@ namespace Acelera2025.Telas
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            Principal principal = new Principal();
-            principal.Show();
-            this.Hide();
+            //Principal principal = new Principal();
+            //principal.Show();
+            //this.Hide();
         }
     }
 }
