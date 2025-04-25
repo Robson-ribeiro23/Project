@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera2025.Class;
 
 namespace Acelera2025.Telas
 {
@@ -38,7 +39,14 @@ namespace Acelera2025.Telas
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-
+            string name = "";
+            if (string.IsNullOrEmpty(name))
+            {
+                var formPopup = new Form();
+                formPopup.Show();
+                //Console.WriteLine("Death to all betrayers.");
+            }
+            //Person person = new Person();
             //Principal principal = new Principal();
             //principal.Show();
             //this.Hide();
