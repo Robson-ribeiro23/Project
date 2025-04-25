@@ -31,18 +31,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnEntrarEmpresa = new RoundedButton();
+            this.btnEntrar = new RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new RoundedPanel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.roundedButton1 = new RoundedButton();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.btnCadastrar = new RoundedButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,7 +56,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btnEntrarEmpresa);
+            this.panel1.Controls.Add(this.btnEntrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -91,23 +91,23 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Fazer Login";
             // 
-            // btnEntrarEmpresa
+            // btnEntrar
             // 
-            this.btnEntrarEmpresa.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnEntrarEmpresa.BackColor = System.Drawing.SystemColors.Control;
-            this.btnEntrarEmpresa.BorderColor = System.Drawing.Color.Black;
-            this.btnEntrarEmpresa.BorderRadius = 10;
-            this.btnEntrarEmpresa.BorderSize = 0;
-            this.btnEntrarEmpresa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEntrarEmpresa.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrarEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnEntrarEmpresa.Location = new System.Drawing.Point(187, 353);
-            this.btnEntrarEmpresa.Name = "btnEntrarEmpresa";
-            this.btnEntrarEmpresa.Size = new System.Drawing.Size(190, 40);
-            this.btnEntrarEmpresa.TabIndex = 7;
-            this.btnEntrarEmpresa.Text = "Entrar";
-            this.btnEntrarEmpresa.UseVisualStyleBackColor = false;
-            this.btnEntrarEmpresa.Click += new System.EventHandler(this.btnEntrarEmpresa_Click);
+            this.btnEntrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnEntrar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEntrar.BorderColor = System.Drawing.Color.Black;
+            this.btnEntrar.BorderRadius = 10;
+            this.btnEntrar.BorderSize = 0;
+            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEntrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnEntrar.Location = new System.Drawing.Point(187, 353);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(190, 40);
+            this.btnEntrar.TabIndex = 7;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrarEmpresa_Click);
             // 
             // panel2
             // 
@@ -126,15 +126,15 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
-            this.roundedPanel1.Controls.Add(this.textBox6);
+            this.roundedPanel1.Controls.Add(this.txtConfirmarSenha);
             this.roundedPanel1.Controls.Add(this.label8);
             this.roundedPanel1.Controls.Add(this.label7);
-            this.roundedPanel1.Controls.Add(this.textBox5);
-            this.roundedPanel1.Controls.Add(this.textBox4);
+            this.roundedPanel1.Controls.Add(this.txtEmail);
+            this.roundedPanel1.Controls.Add(this.txtNome);
             this.roundedPanel1.Controls.Add(this.label6);
-            this.roundedPanel1.Controls.Add(this.textBox1);
-            this.roundedPanel1.Controls.Add(this.textBox2);
-            this.roundedPanel1.Controls.Add(this.roundedButton1);
+            this.roundedPanel1.Controls.Add(this.txtSenha);
+            this.roundedPanel1.Controls.Add(this.txtCpf);
+            this.roundedPanel1.Controls.Add(this.btnCadastrar);
             this.roundedPanel1.Controls.Add(this.label5);
             this.roundedPanel1.Controls.Add(this.label3);
             this.roundedPanel1.Controls.Add(this.label1);
@@ -144,15 +144,15 @@
             this.roundedPanel1.TabIndex = 0;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
-            // textBox6
+            // txtConfirmarSenha
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox6.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(74, 547);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(547, 35);
-            this.textBox6.TabIndex = 23;
+            this.txtConfirmarSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtConfirmarSenha.BackColor = System.Drawing.SystemColors.Control;
+            this.txtConfirmarSenha.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmarSenha.Location = new System.Drawing.Point(74, 547);
+            this.txtConfirmarSenha.Name = "txtConfirmarSenha";
+            this.txtConfirmarSenha.Size = new System.Drawing.Size(547, 35);
+            this.txtConfirmarSenha.TabIndex = 23;
             // 
             // label8
             // 
@@ -178,25 +178,25 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "E-mail:";
             // 
-            // textBox5
+            // txtEmail
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(74, 357);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(547, 35);
-            this.textBox5.TabIndex = 20;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
+            this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(74, 357);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(547, 35);
+            this.txtEmail.TabIndex = 20;
             // 
-            // textBox4
+            // txtNome
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(74, 151);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(547, 35);
-            this.textBox4.TabIndex = 19;
+            this.txtNome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNome.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNome.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(74, 151);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(547, 35);
+            this.txtNome.TabIndex = 19;
             // 
             // label6
             // 
@@ -210,43 +210,43 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Nome:";
             // 
-            // textBox1
+            // txtSenha
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(74, 452);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(547, 35);
-            this.textBox1.TabIndex = 8;
+            this.txtSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSenha.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSenha.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(74, 452);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(547, 35);
+            this.txtSenha.TabIndex = 8;
             // 
-            // textBox2
+            // txtCpf
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(74, 253);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(547, 35);
-            this.textBox2.TabIndex = 10;
+            this.txtCpf.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCpf.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCpf.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.Location = new System.Drawing.Point(74, 253);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(547, 35);
+            this.txtCpf.TabIndex = 10;
             // 
-            // roundedButton1
+            // btnCadastrar
             // 
-            this.roundedButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton1.BorderRadius = 10;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedButton1.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.ForeColor = System.Drawing.SystemColors.Control;
-            this.roundedButton1.Location = new System.Drawing.Point(250, 593);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(190, 40);
-            this.roundedButton1.TabIndex = 15;
-            this.roundedButton1.Text = "Cadastrar";
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
+            this.btnCadastrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnCadastrar.BorderColor = System.Drawing.Color.Black;
+            this.btnCadastrar.BorderRadius = 10;
+            this.btnCadastrar.BorderSize = 0;
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCadastrar.Location = new System.Drawing.Point(250, 593);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(190, 40);
+            this.btnCadastrar.TabIndex = 15;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // label5
             // 
@@ -308,18 +308,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label label2;
-        private RoundedButton btnEntrarEmpresa;
+        private RoundedButton btnEntrar;
         private System.Windows.Forms.Panel panel2;
         private RoundedPanel roundedPanel1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtConfirmarSenha;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private RoundedButton roundedButton1;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.TextBox txtCpf;
+        private RoundedButton btnCadastrar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;

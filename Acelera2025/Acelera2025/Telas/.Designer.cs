@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnEntrarEmpresa = new RoundedButton();
+            this.btnCadastrar = new RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new RoundedPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -39,7 +39,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.cadastrarEmpresa = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
-            this.roundedButton1 = new RoundedButton();
+            this.btnEntrar = new RoundedButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btnEntrarEmpresa);
+            this.panel1.Controls.Add(this.btnCadastrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -89,23 +89,23 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Cadastrar empresa";
             // 
-            // btnEntrarEmpresa
+            // btnCadastrar
             // 
-            this.btnEntrarEmpresa.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnEntrarEmpresa.BackColor = System.Drawing.SystemColors.Control;
-            this.btnEntrarEmpresa.BorderColor = System.Drawing.Color.Black;
-            this.btnEntrarEmpresa.BorderRadius = 10;
-            this.btnEntrarEmpresa.BorderSize = 0;
-            this.btnEntrarEmpresa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEntrarEmpresa.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrarEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnEntrarEmpresa.Location = new System.Drawing.Point(187, 359);
-            this.btnEntrarEmpresa.Name = "btnEntrarEmpresa";
-            this.btnEntrarEmpresa.Size = new System.Drawing.Size(190, 40);
-            this.btnEntrarEmpresa.TabIndex = 7;
-            this.btnEntrarEmpresa.Text = "Cadastrar";
-            this.btnEntrarEmpresa.UseVisualStyleBackColor = false;
-            this.btnEntrarEmpresa.Click += new System.EventHandler(this.btnEntrarEmpresa_Click);
+            this.btnCadastrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnCadastrar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCadastrar.BorderColor = System.Drawing.Color.Black;
+            this.btnCadastrar.BorderRadius = 10;
+            this.btnCadastrar.BorderSize = 0;
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.btnCadastrar.Location = new System.Drawing.Point(187, 359);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(190, 40);
+            this.btnCadastrar.TabIndex = 7;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnEntrarEmpresa_Click);
             // 
             // panel2
             // 
@@ -123,12 +123,12 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
-            this.roundedPanel1.Controls.Add(this.textBox1);
-            this.roundedPanel1.Controls.Add(this.textBox3);
-            this.roundedPanel1.Controls.Add(this.textBox2);
-            this.roundedPanel1.Controls.Add(this.cadastrarEmpresa);
+            this.roundedPanel1.Controls.Add(this.txtSenha);
+            this.roundedPanel1.Controls.Add(this.txtEmail);
+            this.roundedPanel1.Controls.Add(this.txtCnpj);
+            this.roundedPanel1.Controls.Add(this.btnRecuperar);
             this.roundedPanel1.Controls.Add(this.label7);
-            this.roundedPanel1.Controls.Add(this.roundedButton1);
+            this.roundedPanel1.Controls.Add(this.btnEntrar);
             this.roundedPanel1.Controls.Add(this.label5);
             this.roundedPanel1.Controls.Add(this.label4);
             this.roundedPanel1.Controls.Add(this.label3);
@@ -139,51 +139,51 @@
             this.roundedPanel1.TabIndex = 0;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
-            // textBox1
+            // txtSenha
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(74, 343);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(439, 35);
-            this.textBox1.TabIndex = 8;
+            this.txtSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSenha.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSenha.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(74, 343);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(439, 35);
+            this.txtSenha.TabIndex = 8;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(74, 243);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(439, 35);
-            this.textBox3.TabIndex = 11;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
+            this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(74, 243);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(439, 35);
+            this.txtEmail.TabIndex = 11;
             // 
-            // textBox2
+            // txtCnpj
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(74, 148);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(439, 35);
-            this.textBox2.TabIndex = 10;
+            this.txtCnpj.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCnpj.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCnpj.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCnpj.Location = new System.Drawing.Point(74, 148);
+            this.txtCnpj.Name = "txtCnpj";
+            this.txtCnpj.Size = new System.Drawing.Size(439, 35);
+            this.txtCnpj.TabIndex = 10;
             // 
-            // cadastrarEmpresa
+            // btnRecuperar
             // 
-            this.cadastrarEmpresa.ActiveLinkColor = System.Drawing.Color.Firebrick;
-            this.cadastrarEmpresa.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.cadastrarEmpresa.AutoSize = true;
-            this.cadastrarEmpresa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cadastrarEmpresa.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadastrarEmpresa.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.cadastrarEmpresa.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.cadastrarEmpresa.Location = new System.Drawing.Point(265, 460);
-            this.cadastrarEmpresa.Name = "cadastrarEmpresa";
-            this.cadastrarEmpresa.Size = new System.Drawing.Size(90, 30);
-            this.cadastrarEmpresa.TabIndex = 17;
-            this.cadastrarEmpresa.TabStop = true;
-            this.cadastrarEmpresa.Text = "Recuperar";
+            this.btnRecuperar.ActiveLinkColor = System.Drawing.Color.Firebrick;
+            this.btnRecuperar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnRecuperar.AutoSize = true;
+            this.btnRecuperar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRecuperar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecuperar.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnRecuperar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnRecuperar.Location = new System.Drawing.Point(265, 460);
+            this.btnRecuperar.Name = "btnRecuperar";
+            this.btnRecuperar.Size = new System.Drawing.Size(90, 30);
+            this.btnRecuperar.TabIndex = 17;
+            this.btnRecuperar.TabStop = true;
+            this.btnRecuperar.Text = "Recuperar";
             // 
             // label7
             // 
@@ -197,23 +197,23 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Esqueceu sua senha?";
             // 
-            // roundedButton1
+            // btnEntrar
             // 
-            this.roundedButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton1.BorderRadius = 10;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedButton1.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.roundedButton1.Location = new System.Drawing.Point(195, 406);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(190, 40);
-            this.roundedButton1.TabIndex = 15;
-            this.roundedButton1.Text = "Entrar";
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
+            this.btnEntrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.btnEntrar.BorderColor = System.Drawing.Color.Black;
+            this.btnEntrar.BorderRadius = 10;
+            this.btnEntrar.BorderSize = 0;
+            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEntrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnEntrar.Location = new System.Drawing.Point(195, 406);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(190, 40);
+            this.btnEntrar.TabIndex = 15;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // label5
             // 
@@ -287,15 +287,15 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private RoundedButton btnEntrarEmpresa;
+        private RoundedButton btnCadastrar;
         private System.Windows.Forms.Panel panel2;
         private RoundedPanel roundedPanel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.LinkLabel cadastrarEmpresa;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtCnpj;
+        private System.Windows.Forms.LinkLabel btnRecuperar;
         private System.Windows.Forms.Label label7;
-        private RoundedButton roundedButton1;
+        private RoundedButton btnEntrar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
