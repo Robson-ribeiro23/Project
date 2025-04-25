@@ -8,9 +8,9 @@ namespace Acelera2025.Class
 {
     internal class Local
     {
-        public string CEP,num,street,estate,city,reference;
+        public string CEP, num, street, estate, city, reference;
 
-        public Local(string CEP , string num, string street, string estate, string city, string reference)
+        public Local(string CEP, string num, string street, string estate, string city, string reference)
         {
             this.CEP = CEP;
             this.num = num;
@@ -19,6 +19,8 @@ namespace Acelera2025.Class
             this.city = city;
             this.reference = reference;
 
+
         }
     }
 }
+
