@@ -111,7 +111,6 @@
             this.circularButton1.BorderSize = 0;
             this.circularButton1.FlatAppearance.BorderSize = 0;
             this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton1.Image = global::Acelera2025.Properties.Resources.Captura_de_tela_2025_03_31_151223;
             this.circularButton1.Location = new System.Drawing.Point(92, 172);
             this.circularButton1.Name = "circularButton1";
             this.circularButton1.Size = new System.Drawing.Size(27, 25);

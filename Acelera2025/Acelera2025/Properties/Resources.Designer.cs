@@ -173,6 +173,16 @@ namespace Acelera2025.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LinkedIn__2_ {
+            get {
+                object obj = ResourceManager.GetObject("LinkedIn (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap setaAzul {
             get {
                 object obj = ResourceManager.GetObject("setaAzul", resourceCulture);

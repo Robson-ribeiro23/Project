@@ -80,5 +80,10 @@ namespace Acelera2025.Telas
         {
 
         }
+
+        private void gradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

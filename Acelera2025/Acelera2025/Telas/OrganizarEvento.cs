@@ -21,7 +21,7 @@ namespace Acelera2025.Telas
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            roundedPanel10.Visible = false;
+            panelMeusEventos.Visible = false;
         }
         private void roundedButton1_Click(object sender, EventArgs e)
         {
@@ -35,7 +35,7 @@ namespace Acelera2025.Telas
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked)
+            if (radioBtnPresencial.Checked)
             {
                 panel3.Visible = true;
                 panel2.Visible = false;
@@ -74,7 +74,7 @@ namespace Acelera2025.Telas
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButton2.Checked)
+            if (radioBtnOnline.Checked)
             { 
                 panel2.Visible = true;
                 panel3.Visible = false;
@@ -111,7 +111,7 @@ namespace Acelera2025.Telas
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             panelVisivel = !panelVisivel;
-            roundedPanel10.Visible = panelVisivel;
+            panelMeusEventos.Visible = panelVisivel;
     }
 
         private void linkLabel20_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

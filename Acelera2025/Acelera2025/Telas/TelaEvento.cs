@@ -21,12 +21,12 @@ namespace Acelera2025.Telas
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            roundedPanel10.Visible = false;
+            panelMeusEventos.Visible = false;
         }
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             panelVisivel = !panelVisivel;
-            roundedPanel10.Visible = panelVisivel;
+            panelMeusEventos.Visible = panelVisivel;
         }
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -102,14 +102,14 @@ namespace Acelera2025.Telas
 
             int altura = panel2.ClientSize.Height;
 
-            superiorRoundedPic1.Width = larguraCadaElemento;
-            superiorRoundedPic1.Height = altura;
-            superiorRoundedPic1.Left = margemLateral;
-            superiorRoundedPic1.Top = 0;
+            picEvento.Width = larguraCadaElemento;
+            picEvento.Height = altura;
+            picEvento.Left = margemLateral;
+            picEvento.Top = 0;
 
             roundedPanel1.Width = larguraCadaElemento;
             roundedPanel1.Height = altura;
-            roundedPanel1.Left = superiorRoundedPic1.Right + espaco;
+            roundedPanel1.Left = picEvento.Right + espaco;
             roundedPanel1.Top = 0;
         }
 

@@ -80,6 +80,12 @@
     <Compile Include="Telas\EntrarUsuario.Designer.cs">
       <DependentUpon>EntrarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\EventosCriados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\EventosCriados.Designer.cs">
+      <DependentUpon>EventosCriados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Ferramentas\CircularButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -87,6 +93,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Telas\Ferramentas\Arredondar.cs" />
+    <Compile Include="Telas\EventoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\EventoCard.Designer.cs">
+      <DependentUpon>EventoCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Ferramentas\RoundedPicture.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -104,6 +116,30 @@
     </Compile>
     <Compile Include="Telas\Ferramentas\SuperiorRoundedPic.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Telas\OrganizarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\OrganizarEvento.Designer.cs">
+      <DependentUpon>OrganizarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\PerfilEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\PerfilEmpresa.Designer.cs">
+      <DependentUpon>PerfilEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\PostsCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\PostsCard.Designer.cs">
+      <DependentUpon>PostsCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Principal.cs">
       <SubType>Form</SubType>
@@ -131,6 +167,12 @@
     <Compile Include="Telas\CadastrarEmpresa2.Designer.cs">
       <DependentUpon>CadastrarEmpresa2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\TelaEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaEvento.Designer.cs">
+      <DependentUpon>TelaEvento.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Telas\CadastrarEmpresa.resx">
       <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +184,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\EntrarUsuario.resx">
       <DependentUpon>EntrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\EventoCard.resx">
+      <DependentUpon>EventoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\EventosCriados.resx">
+      <DependentUpon>EventosCriados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\OrganizarEvento.resx">
+      <DependentUpon>OrganizarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\PerfilEmpresa.resx">
+      <DependentUpon>PerfilEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\PostsCard.resx">
+      <DependentUpon>PostsCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -159,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CadastrarEmpresa2.resx">
       <DependentUpon>CadastrarEmpresa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaEvento.resx">
+      <DependentUpon>TelaEvento.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -212,6 +275,11 @@
   <ItemGroup>
     <None Include="Resources\IconeNotificacao.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Captura de tela 2025-03-31 151223.png" />
+    <Content Include="Resources\Captura de tela 2025-03-31 152752.png" />
+    <Content Include="Resources\Captura de tela 2025-03-31 152801.png" />
+    <None Include="Resources\LinkedIn %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

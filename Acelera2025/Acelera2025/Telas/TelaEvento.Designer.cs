@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.gradientPanel1 = new GradientPanel();
-            this.button18 = new System.Windows.Forms.Button();
-            this.circularPanel3 = new CircularPanel();
+            this.btnNotificacoes = new System.Windows.Forms.Button();
+            this.btnPerfil = new CircularPanel();
             this.roundedPanel5 = new RoundedPanel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
+            this.btnPrincipal = new System.Windows.Forms.LinkLabel();
             this.circularPanel1 = new CircularPanel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.btnOrganizadorEventos = new System.Windows.Forms.LinkLabel();
+            this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
+            this.btnAjuda = new System.Windows.Forms.LinkLabel();
+            this.btnSobreNos = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roundedPanel10 = new RoundedPanel();
-            this.roundedButton4 = new RoundedButton();
-            this.roundedButton5 = new RoundedButton();
-            this.circularButton3 = new CircularButton();
-            this.circularButton2 = new CircularButton();
-            this.circularButton1 = new CircularButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.panelMeusEventos = new RoundedPanel();
+            this.btnEventosCriados = new RoundedButton();
+            this.btnEventosIngressados = new RoundedButton();
+            this.btnMaisEventos = new CircularButton();
+            this.btnSeguir = new CircularButton();
+            this.btnCurtir = new CircularButton();
+            this.lblNomeEvento = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.roundedButton3 = new RoundedButton();
+            this.btnInscrever = new RoundedButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblNomePublicador = new System.Windows.Forms.Label();
             this.circularPanel5 = new CircularPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -66,37 +66,37 @@
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.superiorRoundedPic1 = new SuperiorRoundedPic();
+            this.picEvento = new SuperiorRoundedPic();
             this.roundedPanel1 = new RoundedPanel();
-            this.roundedButton2 = new RoundedButton();
-            this.roundedButton1 = new RoundedButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.btnPresencialOnline = new RoundedButton();
+            this.btnCategoria = new RoundedButton();
+            this.lblCidadeUf = new System.Windows.Forms.Label();
+            this.lblCep = new System.Windows.Forms.Label();
+            this.lblRua = new System.Windows.Forms.Label();
+            this.lblNomeLocal = new System.Windows.Forms.Label();
+            this.lblData = new System.Windows.Forms.Label();
             this.gradientPanel1.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.roundedPanel10.SuspendLayout();
+            this.panelMeusEventos.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.gradientPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.superiorRoundedPic1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEvento)).BeginInit();
             this.roundedPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gradientPanel1
             // 
-            this.gradientPanel1.Controls.Add(this.button18);
-            this.gradientPanel1.Controls.Add(this.circularPanel3);
+            this.gradientPanel1.Controls.Add(this.btnNotificacoes);
+            this.gradientPanel1.Controls.Add(this.btnPerfil);
             this.gradientPanel1.Controls.Add(this.roundedPanel5);
-            this.gradientPanel1.Controls.Add(this.linkLabel5);
+            this.gradientPanel1.Controls.Add(this.btnPrincipal);
             this.gradientPanel1.Controls.Add(this.circularPanel1);
-            this.gradientPanel1.Controls.Add(this.linkLabel4);
-            this.gradientPanel1.Controls.Add(this.linkLabel3);
-            this.gradientPanel1.Controls.Add(this.linkLabel1);
-            this.gradientPanel1.Controls.Add(this.linkLabel2);
+            this.gradientPanel1.Controls.Add(this.btnOrganizadorEventos);
+            this.gradientPanel1.Controls.Add(this.btnMeusEventos);
+            this.gradientPanel1.Controls.Add(this.btnAjuda);
+            this.gradientPanel1.Controls.Add(this.btnSobreNos);
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
@@ -106,87 +106,87 @@
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 24;
             // 
-            // button18
+            // btnNotificacoes
             // 
-            this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button18.BackColor = System.Drawing.Color.Transparent;
-            this.button18.BackgroundImage = global::Acelera2025.Properties.Resources.IconeNotificacao;
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Location = new System.Drawing.Point(1380, 13);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(29, 26);
-            this.button18.TabIndex = 10;
-            this.button18.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.btnNotificacoes.BackgroundImage = global::Acelera2025.Properties.Resources.IconeNotificacao;
+            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotificacoes.FlatAppearance.BorderSize = 0;
+            this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificacoes.Location = new System.Drawing.Point(1380, 13);
+            this.btnNotificacoes.Name = "btnNotificacoes";
+            this.btnNotificacoes.Size = new System.Drawing.Size(29, 26);
+            this.btnNotificacoes.TabIndex = 10;
+            this.btnNotificacoes.UseVisualStyleBackColor = false;
             // 
-            // circularPanel3
+            // btnPerfil
             // 
-            this.circularPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.circularPanel3.BorderColor = System.Drawing.Color.Black;
-            this.circularPanel3.BorderSize = 2;
-            this.circularPanel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.circularPanel3.Location = new System.Drawing.Point(1443, 3);
-            this.circularPanel3.Name = "circularPanel3";
-            this.circularPanel3.Size = new System.Drawing.Size(47, 48);
-            this.circularPanel3.TabIndex = 9;
-            this.circularPanel3.Click += new System.EventHandler(this.circularPanel3_Click);
-            this.circularPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.circularPanel3_Paint);
+            this.btnPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPerfil.BorderColor = System.Drawing.Color.Black;
+            this.btnPerfil.BorderSize = 2;
+            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPerfil.Location = new System.Drawing.Point(1443, 3);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(47, 48);
+            this.btnPerfil.TabIndex = 9;
+            this.btnPerfil.Click += new System.EventHandler(this.circularPanel3_Click);
+            this.btnPerfil.Paint += new System.Windows.Forms.PaintEventHandler(this.circularPanel3_Paint);
             // 
             // roundedPanel5
             // 
             this.roundedPanel5.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel5.BorderRadius = 10;
             this.roundedPanel5.BorderSize = 0;
-            this.roundedPanel5.Controls.Add(this.button11);
-            this.roundedPanel5.Controls.Add(this.textBox1);
+            this.roundedPanel5.Controls.Add(this.btnPesquisar);
+            this.roundedPanel5.Controls.Add(this.txtPesquisar);
             this.roundedPanel5.Location = new System.Drawing.Point(327, 12);
             this.roundedPanel5.Name = "roundedPanel5";
             this.roundedPanel5.Size = new System.Drawing.Size(528, 31);
             this.roundedPanel5.TabIndex = 8;
             // 
-            // button11
+            // btnPesquisar
             // 
-            this.button11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
-            this.button11.Location = new System.Drawing.Point(485, -2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(43, 38);
-            this.button11.TabIndex = 1;
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnPesquisar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesquisar.FlatAppearance.BorderSize = 0;
+            this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
+            this.btnPesquisar.Location = new System.Drawing.Point(485, -2);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(43, 38);
+            this.btnPesquisar.TabIndex = 1;
+            this.btnPesquisar.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtPesquisar
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox1.Location = new System.Drawing.Point(3, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(482, 32);
-            this.textBox1.TabIndex = 0;
+            this.txtPesquisar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPesquisar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisar.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txtPesquisar.Location = new System.Drawing.Point(3, 5);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(482, 32);
+            this.txtPesquisar.TabIndex = 0;
             // 
-            // linkLabel5
+            // btnPrincipal
             // 
-            this.linkLabel5.ActiveLinkColor = System.Drawing.Color.White;
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel5.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel5.LinkColor = System.Drawing.Color.White;
-            this.linkLabel5.Location = new System.Drawing.Point(65, 12);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(90, 36);
-            this.linkLabel5.TabIndex = 7;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Nome(?)";
-            this.linkLabel5.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
+            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.AutoSize = true;
+            this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrincipal.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnPrincipal.LinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.Location = new System.Drawing.Point(65, 12);
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Size = new System.Drawing.Size(90, 36);
+            this.btnPrincipal.TabIndex = 7;
+            this.btnPrincipal.TabStop = true;
+            this.btnPrincipal.Text = "Nome(?)";
+            this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // circularPanel1
             // 
@@ -198,90 +198,90 @@
             this.circularPanel1.TabIndex = 6;
             this.circularPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.circularPanel1_Paint);
             // 
-            // linkLabel4
+            // btnOrganizadorEventos
             // 
-            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.White;
-            this.linkLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel4.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel4.LinkColor = System.Drawing.Color.White;
-            this.linkLabel4.Location = new System.Drawing.Point(872, 15);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(132, 27);
-            this.linkLabel4.TabIndex = 5;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Organizar eventos";
-            this.linkLabel4.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            this.btnOrganizadorEventos.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnOrganizadorEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOrganizadorEventos.AutoSize = true;
+            this.btnOrganizadorEventos.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrganizadorEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrganizadorEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnOrganizadorEventos.LinkColor = System.Drawing.Color.White;
+            this.btnOrganizadorEventos.Location = new System.Drawing.Point(872, 15);
+            this.btnOrganizadorEventos.Name = "btnOrganizadorEventos";
+            this.btnOrganizadorEventos.Size = new System.Drawing.Size(132, 27);
+            this.btnOrganizadorEventos.TabIndex = 5;
+            this.btnOrganizadorEventos.TabStop = true;
+            this.btnOrganizadorEventos.Text = "Organizar eventos";
+            this.btnOrganizadorEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnOrganizadorEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
-            // linkLabel3
+            // btnMeusEventos
             // 
-            this.linkLabel3.ActiveLinkColor = System.Drawing.Color.White;
-            this.linkLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel3.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel3.LinkColor = System.Drawing.Color.White;
-            this.linkLabel3.Location = new System.Drawing.Point(1046, 15);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(102, 27);
-            this.linkLabel3.TabIndex = 4;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Meus eventos";
-            this.linkLabel3.VisitedLinkColor = System.Drawing.Color.White;
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            this.btnMeusEventos.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMeusEventos.AutoSize = true;
+            this.btnMeusEventos.BackColor = System.Drawing.Color.Transparent;
+            this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.Location = new System.Drawing.Point(1046, 15);
+            this.btnMeusEventos.Name = "btnMeusEventos";
+            this.btnMeusEventos.Size = new System.Drawing.Size(102, 27);
+            this.btnMeusEventos.TabIndex = 4;
+            this.btnMeusEventos.TabStop = true;
+            this.btnMeusEventos.Text = "Meus eventos";
+            this.btnMeusEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // linkLabel1
+            // btnAjuda
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(1178, 15);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(51, 27);
-            this.linkLabel1.TabIndex = 3;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Ajuda";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnAjuda.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnAjuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAjuda.AutoSize = true;
+            this.btnAjuda.BackColor = System.Drawing.Color.Transparent;
+            this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnAjuda.LinkColor = System.Drawing.Color.White;
+            this.btnAjuda.Location = new System.Drawing.Point(1178, 15);
+            this.btnAjuda.Name = "btnAjuda";
+            this.btnAjuda.Size = new System.Drawing.Size(51, 27);
+            this.btnAjuda.TabIndex = 3;
+            this.btnAjuda.TabStop = true;
+            this.btnAjuda.Text = "Ajuda";
+            this.btnAjuda.VisitedLinkColor = System.Drawing.Color.White;
             // 
-            // linkLabel2
+            // btnSobreNos
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel2.LinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(1251, 16);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(78, 27);
-            this.linkLabel2.TabIndex = 2;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Sobre nós";
-            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnSobreNos.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnSobreNos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSobreNos.AutoSize = true;
+            this.btnSobreNos.BackColor = System.Drawing.Color.Transparent;
+            this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnSobreNos.LinkColor = System.Drawing.Color.White;
+            this.btnSobreNos.Location = new System.Drawing.Point(1251, 16);
+            this.btnSobreNos.Name = "btnSobreNos";
+            this.btnSobreNos.Size = new System.Drawing.Size(78, 27);
+            this.btnSobreNos.TabIndex = 2;
+            this.btnSobreNos.TabStop = true;
+            this.btnSobreNos.Text = "Sobre nós";
+            this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Controls.Add(this.roundedPanel10);
-            this.panel1.Controls.Add(this.circularButton3);
-            this.panel1.Controls.Add(this.circularButton2);
-            this.panel1.Controls.Add(this.circularButton1);
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.panelMeusEventos);
+            this.panel1.Controls.Add(this.btnMaisEventos);
+            this.panel1.Controls.Add(this.btnSeguir);
+            this.panel1.Controls.Add(this.btnCurtir);
+            this.panel1.Controls.Add(this.lblNomeEvento);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.roundedButton3);
+            this.panel1.Controls.Add(this.btnInscrever);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.lblNomePublicador);
             this.panel1.Controls.Add(this.circularPanel5);
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.gradientPanel2);
@@ -293,112 +293,109 @@
             this.panel1.TabIndex = 25;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // roundedPanel10
+            // panelMeusEventos
             // 
-            this.roundedPanel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedPanel10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.roundedPanel10.BorderColor = System.Drawing.Color.Black;
-            this.roundedPanel10.BorderRadius = 20;
-            this.roundedPanel10.BorderSize = 0;
-            this.roundedPanel10.Controls.Add(this.roundedButton4);
-            this.roundedPanel10.Controls.Add(this.roundedButton5);
-            this.roundedPanel10.Location = new System.Drawing.Point(940, 6);
-            this.roundedPanel10.Name = "roundedPanel10";
-            this.roundedPanel10.Size = new System.Drawing.Size(245, 100);
-            this.roundedPanel10.TabIndex = 56;
-            this.roundedPanel10.Visible = false;
-            this.roundedPanel10.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel10_Paint);
+            this.panelMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelMeusEventos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelMeusEventos.BorderColor = System.Drawing.Color.Black;
+            this.panelMeusEventos.BorderRadius = 20;
+            this.panelMeusEventos.BorderSize = 0;
+            this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
+            this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
+            this.panelMeusEventos.Location = new System.Drawing.Point(940, 6);
+            this.panelMeusEventos.Name = "panelMeusEventos";
+            this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
+            this.panelMeusEventos.TabIndex = 56;
+            this.panelMeusEventos.Visible = false;
+            this.panelMeusEventos.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel10_Paint);
             // 
-            // roundedButton4
+            // btnEventosCriados
             // 
-            this.roundedButton4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.roundedButton4.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton4.BorderRadius = 20;
-            this.roundedButton4.BorderSize = 0;
-            this.roundedButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedButton4.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.roundedButton4.Location = new System.Drawing.Point(0, 49);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(245, 51);
-            this.roundedButton4.TabIndex = 1;
-            this.roundedButton4.Text = "Eventos Criados";
-            this.roundedButton4.UseVisualStyleBackColor = false;
-            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
+            this.btnEventosCriados.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEventosCriados.BorderColor = System.Drawing.Color.Black;
+            this.btnEventosCriados.BorderRadius = 20;
+            this.btnEventosCriados.BorderSize = 0;
+            this.btnEventosCriados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEventosCriados.Location = new System.Drawing.Point(0, 49);
+            this.btnEventosCriados.Name = "btnEventosCriados";
+            this.btnEventosCriados.Size = new System.Drawing.Size(245, 51);
+            this.btnEventosCriados.TabIndex = 1;
+            this.btnEventosCriados.Text = "Eventos Criados";
+            this.btnEventosCriados.UseVisualStyleBackColor = false;
+            this.btnEventosCriados.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
-            // roundedButton5
+            // btnEventosIngressados
             // 
-            this.roundedButton5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.roundedButton5.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton5.BorderRadius = 20;
-            this.roundedButton5.BorderSize = 0;
-            this.roundedButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedButton5.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.roundedButton5.Location = new System.Drawing.Point(0, 3);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(245, 55);
-            this.roundedButton5.TabIndex = 0;
-            this.roundedButton5.Text = "Eventos Ingressados";
-            this.roundedButton5.UseVisualStyleBackColor = false;
-            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
+            this.btnEventosIngressados.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEventosIngressados.BorderColor = System.Drawing.Color.Black;
+            this.btnEventosIngressados.BorderRadius = 20;
+            this.btnEventosIngressados.BorderSize = 0;
+            this.btnEventosIngressados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEventosIngressados.Location = new System.Drawing.Point(0, 3);
+            this.btnEventosIngressados.Name = "btnEventosIngressados";
+            this.btnEventosIngressados.Size = new System.Drawing.Size(245, 55);
+            this.btnEventosIngressados.TabIndex = 0;
+            this.btnEventosIngressados.Text = "Eventos Ingressados";
+            this.btnEventosIngressados.UseVisualStyleBackColor = false;
+            this.btnEventosIngressados.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
-            // circularButton3
+            // btnMaisEventos
             // 
-            this.circularButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.circularButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.circularButton3.BorderColor = System.Drawing.Color.Black;
-            this.circularButton3.BorderSize = 0;
-            this.circularButton3.FlatAppearance.BorderSize = 0;
-            this.circularButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton3.Image = global::Acelera2025.Properties.Resources.Captura_de_tela_2025_03_31_152801;
-            this.circularButton3.Location = new System.Drawing.Point(348, 423);
-            this.circularButton3.Name = "circularButton3";
-            this.circularButton3.Size = new System.Drawing.Size(24, 23);
-            this.circularButton3.TabIndex = 55;
-            this.circularButton3.UseVisualStyleBackColor = false;
+            this.btnMaisEventos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnMaisEventos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMaisEventos.BorderColor = System.Drawing.Color.Black;
+            this.btnMaisEventos.BorderSize = 0;
+            this.btnMaisEventos.FlatAppearance.BorderSize = 0;
+            this.btnMaisEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaisEventos.Location = new System.Drawing.Point(348, 423);
+            this.btnMaisEventos.Name = "btnMaisEventos";
+            this.btnMaisEventos.Size = new System.Drawing.Size(24, 23);
+            this.btnMaisEventos.TabIndex = 55;
+            this.btnMaisEventos.UseVisualStyleBackColor = false;
             // 
-            // circularButton2
+            // btnSeguir
             // 
-            this.circularButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.circularButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.circularButton2.BorderColor = System.Drawing.Color.Black;
-            this.circularButton2.BorderSize = 0;
-            this.circularButton2.FlatAppearance.BorderSize = 0;
-            this.circularButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton2.Image = global::Acelera2025.Properties.Resources.Captura_de_tela_2025_03_31_152752;
-            this.circularButton2.Location = new System.Drawing.Point(191, 420);
-            this.circularButton2.Name = "circularButton2";
-            this.circularButton2.Size = new System.Drawing.Size(26, 26);
-            this.circularButton2.TabIndex = 54;
-            this.circularButton2.UseVisualStyleBackColor = false;
+            this.btnSeguir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnSeguir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSeguir.BorderColor = System.Drawing.Color.Black;
+            this.btnSeguir.BorderSize = 0;
+            this.btnSeguir.FlatAppearance.BorderSize = 0;
+            this.btnSeguir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeguir.Location = new System.Drawing.Point(191, 420);
+            this.btnSeguir.Name = "btnSeguir";
+            this.btnSeguir.Size = new System.Drawing.Size(26, 26);
+            this.btnSeguir.TabIndex = 54;
+            this.btnSeguir.UseVisualStyleBackColor = false;
             // 
-            // circularButton1
+            // btnCurtir
             // 
-            this.circularButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.circularButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.circularButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.circularButton1.BorderColor = System.Drawing.Color.Black;
-            this.circularButton1.BorderSize = 0;
-            this.circularButton1.FlatAppearance.BorderSize = 0;
-            this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton1.Image = global::Acelera2025.Properties.Resources.Captura_de_tela_2025_03_31_151223;
-            this.circularButton1.Location = new System.Drawing.Point(1156, 323);
-            this.circularButton1.Name = "circularButton1";
-            this.circularButton1.Size = new System.Drawing.Size(38, 40);
-            this.circularButton1.TabIndex = 53;
-            this.circularButton1.UseVisualStyleBackColor = false;
+            this.btnCurtir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCurtir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnCurtir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCurtir.BorderColor = System.Drawing.Color.Black;
+            this.btnCurtir.BorderSize = 0;
+            this.btnCurtir.FlatAppearance.BorderSize = 0;
+            this.btnCurtir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCurtir.Location = new System.Drawing.Point(1156, 323);
+            this.btnCurtir.Name = "btnCurtir";
+            this.btnCurtir.Size = new System.Drawing.Size(38, 40);
+            this.btnCurtir.TabIndex = 53;
+            this.btnCurtir.UseVisualStyleBackColor = false;
             // 
-            // label5
+            // lblNomeEvento
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.label5.Location = new System.Drawing.Point(99, 323);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(229, 50);
-            this.label5.TabIndex = 39;
-            this.label5.Text = "Nome do Evento";
+            this.lblNomeEvento.AutoSize = true;
+            this.lblNomeEvento.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.lblNomeEvento.Location = new System.Drawing.Point(99, 323);
+            this.lblNomeEvento.Name = "lblNomeEvento";
+            this.lblNomeEvento.Size = new System.Drawing.Size(229, 50);
+            this.lblNomeEvento.TabIndex = 39;
+            this.lblNomeEvento.Text = "Nome do Evento";
             // 
             // label6
             // 
@@ -412,21 +409,21 @@
             this.label6.TabIndex = 42;
             this.label6.Text = "0 curtidas";
             // 
-            // roundedButton3
+            // btnInscrever
             // 
-            this.roundedButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.roundedButton3.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton3.BorderRadius = 10;
-            this.roundedButton3.BorderSize = 0;
-            this.roundedButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton3.ForeColor = System.Drawing.SystemColors.Control;
-            this.roundedButton3.Location = new System.Drawing.Point(886, 323);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(232, 40);
-            this.roundedButton3.TabIndex = 40;
-            this.roundedButton3.Text = "Inscrever-se";
-            this.roundedButton3.UseVisualStyleBackColor = false;
+            this.btnInscrever.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInscrever.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.btnInscrever.BorderColor = System.Drawing.Color.Black;
+            this.btnInscrever.BorderRadius = 10;
+            this.btnInscrever.BorderSize = 0;
+            this.btnInscrever.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInscrever.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnInscrever.Location = new System.Drawing.Point(886, 323);
+            this.btnInscrever.Name = "btnInscrever";
+            this.btnInscrever.Size = new System.Drawing.Size(232, 40);
+            this.btnInscrever.TabIndex = 40;
+            this.btnInscrever.Text = "Inscrever-se";
+            this.btnInscrever.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
@@ -451,16 +448,16 @@
             this.label8.Text = "Seguir";
             this.label8.Click += new System.EventHandler(this.label8_Click_1);
             // 
-            // label7
+            // lblNomePublicador
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label7.Location = new System.Drawing.Point(185, 376);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(288, 36);
-            this.label7.TabIndex = 44;
-            this.label7.Text = "Evento publicado por XXXXX";
+            this.lblNomePublicador.AutoSize = true;
+            this.lblNomePublicador.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomePublicador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblNomePublicador.Location = new System.Drawing.Point(185, 376);
+            this.lblNomePublicador.Name = "lblNomePublicador";
+            this.lblNomePublicador.Size = new System.Drawing.Size(288, 36);
+            this.lblNomePublicador.TabIndex = 44;
+            this.lblNomePublicador.Text = "Evento publicado por XXXXX";
             // 
             // circularPanel5
             // 
@@ -518,7 +515,6 @@
             // 
             this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button14.BackColor = System.Drawing.Color.Transparent;
-            this.button14.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_linkedin_48;
             this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button14.FlatAppearance.BorderSize = 0;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -633,7 +629,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.superiorRoundedPic1);
+            this.panel2.Controls.Add(this.picEvento);
             this.panel2.Controls.Add(this.roundedPanel1);
             this.panel2.Location = new System.Drawing.Point(4, 42);
             this.panel2.Name = "panel2";
@@ -641,18 +637,18 @@
             this.panel2.TabIndex = 49;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // superiorRoundedPic1
+            // picEvento
             // 
-            this.superiorRoundedPic1.BackColor = System.Drawing.Color.Silver;
-            this.superiorRoundedPic1.BorderColor = System.Drawing.Color.Black;
-            this.superiorRoundedPic1.BorderRadius = 20;
-            this.superiorRoundedPic1.BorderSize = 0;
-            this.superiorRoundedPic1.Location = new System.Drawing.Point(92, 19);
-            this.superiorRoundedPic1.Name = "superiorRoundedPic1";
-            this.superiorRoundedPic1.Size = new System.Drawing.Size(667, 231);
-            this.superiorRoundedPic1.TabIndex = 36;
-            this.superiorRoundedPic1.TabStop = false;
-            this.superiorRoundedPic1.Click += new System.EventHandler(this.superiorRoundedPic1_Click);
+            this.picEvento.BackColor = System.Drawing.Color.Silver;
+            this.picEvento.BorderColor = System.Drawing.Color.Black;
+            this.picEvento.BorderRadius = 20;
+            this.picEvento.BorderSize = 0;
+            this.picEvento.Location = new System.Drawing.Point(92, 19);
+            this.picEvento.Name = "picEvento";
+            this.picEvento.Size = new System.Drawing.Size(667, 231);
+            this.picEvento.TabIndex = 36;
+            this.picEvento.TabStop = false;
+            this.picEvento.Click += new System.EventHandler(this.superiorRoundedPic1_Click);
             // 
             // roundedPanel1
             // 
@@ -661,102 +657,102 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
-            this.roundedPanel1.Controls.Add(this.roundedButton2);
-            this.roundedPanel1.Controls.Add(this.roundedButton1);
-            this.roundedPanel1.Controls.Add(this.label4);
-            this.roundedPanel1.Controls.Add(this.label3);
-            this.roundedPanel1.Controls.Add(this.label2);
-            this.roundedPanel1.Controls.Add(this.label1);
-            this.roundedPanel1.Controls.Add(this.label11);
+            this.roundedPanel1.Controls.Add(this.btnPresencialOnline);
+            this.roundedPanel1.Controls.Add(this.btnCategoria);
+            this.roundedPanel1.Controls.Add(this.lblCidadeUf);
+            this.roundedPanel1.Controls.Add(this.lblCep);
+            this.roundedPanel1.Controls.Add(this.lblRua);
+            this.roundedPanel1.Controls.Add(this.lblNomeLocal);
+            this.roundedPanel1.Controls.Add(this.lblData);
             this.roundedPanel1.Location = new System.Drawing.Point(933, 19);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(547, 231);
             this.roundedPanel1.TabIndex = 37;
             // 
-            // roundedButton2
+            // btnPresencialOnline
             // 
-            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.roundedButton2.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton2.BorderRadius = 10;
-            this.roundedButton2.BorderSize = 0;
-            this.roundedButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton2.ForeColor = System.Drawing.SystemColors.Control;
-            this.roundedButton2.Location = new System.Drawing.Point(294, 23);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(232, 23);
-            this.roundedButton2.TabIndex = 11;
-            this.roundedButton2.Text = "Presen/Online";
-            this.roundedButton2.UseVisualStyleBackColor = false;
+            this.btnPresencialOnline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnPresencialOnline.BorderColor = System.Drawing.Color.Black;
+            this.btnPresencialOnline.BorderRadius = 10;
+            this.btnPresencialOnline.BorderSize = 0;
+            this.btnPresencialOnline.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPresencialOnline.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPresencialOnline.Location = new System.Drawing.Point(294, 23);
+            this.btnPresencialOnline.Name = "btnPresencialOnline";
+            this.btnPresencialOnline.Size = new System.Drawing.Size(232, 23);
+            this.btnPresencialOnline.TabIndex = 11;
+            this.btnPresencialOnline.Text = "Presen/Online";
+            this.btnPresencialOnline.UseVisualStyleBackColor = false;
             // 
-            // roundedButton1
+            // btnCategoria
             // 
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton1.BorderRadius = 10;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.ForeColor = System.Drawing.SystemColors.Control;
-            this.roundedButton1.Location = new System.Drawing.Point(25, 23);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(232, 23);
-            this.roundedButton1.TabIndex = 10;
-            this.roundedButton1.Text = "Categoria";
-            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.btnCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.btnCategoria.BorderColor = System.Drawing.Color.Black;
+            this.btnCategoria.BorderRadius = 10;
+            this.btnCategoria.BorderSize = 0;
+            this.btnCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategoria.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCategoria.Location = new System.Drawing.Point(25, 23);
+            this.btnCategoria.Name = "btnCategoria";
+            this.btnCategoria.Size = new System.Drawing.Size(232, 23);
+            this.btnCategoria.TabIndex = 10;
+            this.btnCategoria.Text = "Categoria";
+            this.btnCategoria.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // lblCidadeUf
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label4.Location = new System.Drawing.Point(19, 188);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 32);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Cidade - UF";
+            this.lblCidadeUf.AutoSize = true;
+            this.lblCidadeUf.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidadeUf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCidadeUf.Location = new System.Drawing.Point(19, 188);
+            this.lblCidadeUf.Name = "lblCidadeUf";
+            this.lblCidadeUf.Size = new System.Drawing.Size(107, 32);
+            this.lblCidadeUf.TabIndex = 9;
+            this.lblCidadeUf.Text = "Cidade - UF";
             // 
-            // label3
+            // lblCep
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label3.Location = new System.Drawing.Point(19, 160);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 32);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "xx xxx-xxx";
+            this.lblCep.AutoSize = true;
+            this.lblCep.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCep.Location = new System.Drawing.Point(19, 160);
+            this.lblCep.Name = "lblCep";
+            this.lblCep.Size = new System.Drawing.Size(90, 32);
+            this.lblCep.TabIndex = 8;
+            this.lblCep.Text = "xx xxx-xxx";
             // 
-            // label2
+            // lblRua
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label2.Location = new System.Drawing.Point(19, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 32);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Rua xxxx, nnn - Bairo X";
+            this.lblRua.AutoSize = true;
+            this.lblRua.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblRua.Location = new System.Drawing.Point(19, 128);
+            this.lblRua.Name = "lblRua";
+            this.lblRua.Size = new System.Drawing.Size(193, 32);
+            this.lblRua.TabIndex = 7;
+            this.lblRua.Text = "Rua xxxx, nnn - Bairo X";
             // 
-            // label1
+            // lblNomeLocal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label1.Location = new System.Drawing.Point(19, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 32);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "nome do Local";
+            this.lblNomeLocal.AutoSize = true;
+            this.lblNomeLocal.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeLocal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblNomeLocal.Location = new System.Drawing.Point(19, 96);
+            this.lblNomeLocal.Name = "lblNomeLocal";
+            this.lblNomeLocal.Size = new System.Drawing.Size(132, 32);
+            this.lblNomeLocal.TabIndex = 6;
+            this.lblNomeLocal.Text = "nome do Local";
             // 
-            // label11
+            // lblData
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label11.Location = new System.Drawing.Point(19, 64);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 32);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "dd/mm/aaaa";
+            this.lblData.AutoSize = true;
+            this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblData.Location = new System.Drawing.Point(19, 64);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(118, 32);
+            this.lblData.TabIndex = 5;
+            this.lblData.Text = "dd/mm/aaaa";
             // 
             // TelaEvento
             // 
@@ -777,12 +773,12 @@
             this.roundedPanel5.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.roundedPanel10.ResumeLayout(false);
+            this.panelMeusEventos.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.gradientPanel2.ResumeLayout(false);
             this.gradientPanel2.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.superiorRoundedPic1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEvento)).EndInit();
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -792,20 +788,20 @@
         #endregion
 
         private GradientPanel gradientPanel1;
-        private System.Windows.Forms.Button button18;
-        private CircularPanel circularPanel3;
+        private System.Windows.Forms.Button btnNotificacoes;
+        private CircularPanel btnPerfil;
         private RoundedPanel roundedPanel5;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.LinkLabel linkLabel5;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.TextBox txtPesquisar;
+        private System.Windows.Forms.LinkLabel btnPrincipal;
         private CircularPanel circularPanel1;
-        private System.Windows.Forms.LinkLabel linkLabel4;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel btnOrganizadorEventos;
+        private System.Windows.Forms.LinkLabel btnMeusEventos;
+        private System.Windows.Forms.LinkLabel btnAjuda;
+        private System.Windows.Forms.LinkLabel btnSobreNos;
         private System.Windows.Forms.Panel panel1;
         private RoundedPanel roundedPanel1;
-        private SuperiorRoundedPic superiorRoundedPic1;
+        private SuperiorRoundedPic picEvento;
         private GradientPanel gradientPanel2;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button17;
@@ -817,26 +813,26 @@
         private System.Windows.Forms.LinkLabel linkLabel7;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private RoundedButton roundedButton2;
-        private RoundedButton roundedButton1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label11;
-        private RoundedButton roundedButton3;
-        private System.Windows.Forms.Label label5;
+        private RoundedButton btnPresencialOnline;
+        private RoundedButton btnCategoria;
+        private System.Windows.Forms.Label lblCidadeUf;
+        private System.Windows.Forms.Label lblCep;
+        private System.Windows.Forms.Label lblRua;
+        private System.Windows.Forms.Label lblNomeLocal;
+        private System.Windows.Forms.Label lblData;
+        private RoundedButton btnInscrever;
+        private System.Windows.Forms.Label lblNomeEvento;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblNomePublicador;
         private CircularPanel circularPanel5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
-        private CircularButton circularButton3;
-        private CircularButton circularButton2;
-        private CircularButton circularButton1;
-        private RoundedPanel roundedPanel10;
-        private RoundedButton roundedButton4;
-        private RoundedButton roundedButton5;
+        private CircularButton btnMaisEventos;
+        private CircularButton btnSeguir;
+        private CircularButton btnCurtir;
+        private RoundedPanel panelMeusEventos;
+        private RoundedButton btnEventosCriados;
+        private RoundedButton btnEventosIngressados;
     }
 }

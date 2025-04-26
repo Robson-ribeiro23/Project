@@ -21,7 +21,7 @@ namespace Acelera2025.Telas
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            roundedPanel10.Visible = false;
+            panelMeusEventos.Visible = false;
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -40,12 +40,6 @@ namespace Acelera2025.Telas
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            panelVisivel = !panelVisivel;
-            roundedPanel10.Visible = panelVisivel;
-        }
-
-        private void roundedButton1_Click(object sender, EventArgs e)
         {
 
         }
@@ -84,6 +78,26 @@ namespace Acelera2025.Telas
             Perfil perfil = new Perfil();
             perfil.Show();
             this.Hide();
+        }
+
+        private void btnOrganizarEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnMeusEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnEventosIngressados_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPesquisa_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
