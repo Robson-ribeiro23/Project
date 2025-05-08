@@ -1,6 +1,6 @@
 ﻿namespace Acelera2025.Telas
 {
-    partial class PerfilEmpresa
+    partial class SobreNos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilEmpresa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SobreNos));
             this.gradientPanel1 = new GradientPanel();
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnPerfil = new CircularPanel();
@@ -42,31 +42,21 @@
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelPerfil = new CircularPanel();
+            this.btnLinkedIn = new System.Windows.Forms.Button();
+            this.btnEmail = new System.Windows.Forms.Button();
+            this.btnFacebook = new System.Windows.Forms.Button();
+            this.btnInstagram = new System.Windows.Forms.Button();
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
             this.btnEventosIngressados = new RoundedButton();
-            this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnEntrarEmContato = new CircularButton();
-            this.btnSeguir = new CircularButton();
-            this.lblSeguidores = new System.Windows.Forms.Label();
-            this.lblNomeEmpresa = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gradientPanel1.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
-            this.superiorRoundedPanel1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gradientPanel1
@@ -85,7 +75,7 @@
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1742, 51);
+            this.gradientPanel1.Size = new System.Drawing.Size(1491, 51);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 4;
             // 
@@ -98,7 +88,7 @@
             this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacoes.Location = new System.Drawing.Point(1608, 13);
+            this.btnNotificacoes.Location = new System.Drawing.Point(1357, 13);
             this.btnNotificacoes.Name = "btnNotificacoes";
             this.btnNotificacoes.Size = new System.Drawing.Size(29, 26);
             this.btnNotificacoes.TabIndex = 10;
@@ -110,10 +100,12 @@
             this.btnPerfil.BorderColor = System.Drawing.Color.Black;
             this.btnPerfil.BorderSize = 2;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPerfil.Location = new System.Drawing.Point(1671, 3);
+            this.btnPerfil.Location = new System.Drawing.Point(1420, 3);
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(47, 48);
             this.btnPerfil.TabIndex = 9;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
+            this.btnPerfil.Paint += new System.Windows.Forms.PaintEventHandler(this.btnPerfil_Paint);
             // 
             // roundedPanel5
             // 
@@ -166,6 +158,7 @@
             this.btnPrincipal.TabStop = true;
             this.btnPrincipal.Text = "Nome(?)";
             this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnPrincipal_LinkClicked);
             // 
             // circularPanel1
             // 
@@ -185,13 +178,14 @@
             this.btnOrganizarEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrganizarEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnOrganizarEventos.LinkColor = System.Drawing.Color.White;
-            this.btnOrganizarEventos.Location = new System.Drawing.Point(1100, 15);
+            this.btnOrganizarEventos.Location = new System.Drawing.Point(849, 15);
             this.btnOrganizarEventos.Name = "btnOrganizarEventos";
             this.btnOrganizarEventos.Size = new System.Drawing.Size(132, 27);
             this.btnOrganizarEventos.TabIndex = 5;
             this.btnOrganizarEventos.TabStop = true;
             this.btnOrganizarEventos.Text = "Organizar eventos";
             this.btnOrganizarEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnOrganizarEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnOrganizarEventos_LinkClicked);
             // 
             // btnMeusEventos
             // 
@@ -202,13 +196,14 @@
             this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Location = new System.Drawing.Point(1271, 16);
+            this.btnMeusEventos.Location = new System.Drawing.Point(1020, 16);
             this.btnMeusEventos.Name = "btnMeusEventos";
             this.btnMeusEventos.Size = new System.Drawing.Size(102, 27);
             this.btnMeusEventos.TabIndex = 4;
             this.btnMeusEventos.TabStop = true;
             this.btnMeusEventos.Text = "Meus eventos";
             this.btnMeusEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnMeusEventos_LinkClicked);
             // 
             // btnAjuda
             // 
@@ -219,7 +214,7 @@
             this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjuda.LinkColor = System.Drawing.Color.White;
-            this.btnAjuda.Location = new System.Drawing.Point(1406, 15);
+            this.btnAjuda.Location = new System.Drawing.Point(1155, 15);
             this.btnAjuda.Name = "btnAjuda";
             this.btnAjuda.Size = new System.Drawing.Size(51, 27);
             this.btnAjuda.TabIndex = 3;
@@ -237,36 +232,90 @@
             this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnSobreNos.LinkColor = System.Drawing.Color.White;
-            this.btnSobreNos.Location = new System.Drawing.Point(1479, 16);
+            this.btnSobreNos.Location = new System.Drawing.Point(1228, 16);
             this.btnSobreNos.Name = "btnSobreNos";
             this.btnSobreNos.Size = new System.Drawing.Size(78, 27);
             this.btnSobreNos.TabIndex = 2;
             this.btnSobreNos.TabStop = true;
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
-            this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
             // panel1
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.panelPerfil);
+            this.panel1.Controls.Add(this.btnLinkedIn);
+            this.panel1.Controls.Add(this.btnEmail);
+            this.panel1.Controls.Add(this.btnFacebook);
+            this.panel1.Controls.Add(this.btnInstagram);
             this.panel1.Controls.Add(this.panelMeusEventos);
-            this.panel1.Controls.Add(this.superiorRoundedPanel1);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 51);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1742, 666);
+            this.panel1.Size = new System.Drawing.Size(1491, 666);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panelPerfil
+            // btnLinkedIn
             // 
-            this.panelPerfil.BackColor = System.Drawing.Color.Silver;
-            this.panelPerfil.BorderColor = System.Drawing.Color.Black;
-            this.panelPerfil.BorderSize = 0;
-            this.panelPerfil.Location = new System.Drawing.Point(122, 103);
-            this.panelPerfil.Name = "panelPerfil";
-            this.panelPerfil.Size = new System.Drawing.Size(163, 156);
-            this.panelPerfil.TabIndex = 63;
+            this.btnLinkedIn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLinkedIn.BackColor = System.Drawing.Color.Transparent;
+            this.btnLinkedIn.BackgroundImage = global::Acelera2025.Properties.Resources.LinkedIn__2_;
+            this.btnLinkedIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLinkedIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLinkedIn.FlatAppearance.BorderSize = 0;
+            this.btnLinkedIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLinkedIn.Location = new System.Drawing.Point(677, 569);
+            this.btnLinkedIn.Name = "btnLinkedIn";
+            this.btnLinkedIn.Size = new System.Drawing.Size(60, 48);
+            this.btnLinkedIn.TabIndex = 18;
+            this.btnLinkedIn.UseVisualStyleBackColor = false;
+            // 
+            // btnEmail
+            // 
+            this.btnEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEmail.BackColor = System.Drawing.Color.Transparent;
+            this.btnEmail.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_email_48;
+            this.btnEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEmail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEmail.FlatAppearance.BorderSize = 0;
+            this.btnEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmail.Location = new System.Drawing.Point(617, 569);
+            this.btnEmail.Name = "btnEmail";
+            this.btnEmail.Size = new System.Drawing.Size(54, 48);
+            this.btnEmail.TabIndex = 17;
+            this.btnEmail.UseVisualStyleBackColor = false;
+            // 
+            // btnFacebook
+            // 
+            this.btnFacebook.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnFacebook.BackColor = System.Drawing.Color.Transparent;
+            this.btnFacebook.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_facebook_logo_48;
+            this.btnFacebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFacebook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFacebook.FlatAppearance.BorderSize = 0;
+            this.btnFacebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacebook.Location = new System.Drawing.Point(797, 569);
+            this.btnFacebook.Name = "btnFacebook";
+            this.btnFacebook.Size = new System.Drawing.Size(54, 48);
+            this.btnFacebook.TabIndex = 16;
+            this.btnFacebook.UseVisualStyleBackColor = false;
+            // 
+            // btnInstagram
+            // 
+            this.btnInstagram.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnInstagram.BackColor = System.Drawing.Color.Transparent;
+            this.btnInstagram.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_instagram_logo_48;
+            this.btnInstagram.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInstagram.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInstagram.FlatAppearance.BorderSize = 0;
+            this.btnInstagram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInstagram.Location = new System.Drawing.Point(737, 569);
+            this.btnInstagram.Name = "btnInstagram";
+            this.btnInstagram.Size = new System.Drawing.Size(54, 48);
+            this.btnInstagram.TabIndex = 15;
+            this.btnInstagram.UseVisualStyleBackColor = false;
             // 
             // panelMeusEventos
             // 
@@ -277,10 +326,10 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1149, 6);
+            this.panelMeusEventos.Location = new System.Drawing.Point(927, 6);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
-            this.panelMeusEventos.TabIndex = 65;
+            this.panelMeusEventos.TabIndex = 8;
             this.panelMeusEventos.Visible = false;
             // 
             // btnEventosCriados
@@ -298,6 +347,7 @@
             this.btnEventosCriados.TabIndex = 1;
             this.btnEventosCriados.Text = "Eventos Criados";
             this.btnEventosCriados.UseVisualStyleBackColor = false;
+            this.btnEventosCriados.Click += new System.EventHandler(this.btnEventosCriados_Click);
             // 
             // btnEventosIngressados
             // 
@@ -315,203 +365,64 @@
             this.btnEventosIngressados.Text = "Eventos Ingressados";
             this.btnEventosIngressados.UseVisualStyleBackColor = false;
             // 
-            // superiorRoundedPanel1
+            // textBox1
             // 
-            this.superiorRoundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.superiorRoundedPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.superiorRoundedPanel1.BorderColor = System.Drawing.Color.Black;
-            this.superiorRoundedPanel1.BorderRadius = 100;
-            this.superiorRoundedPanel1.BorderSize = 0;
-            this.superiorRoundedPanel1.Controls.Add(this.tabControl1);
-            this.superiorRoundedPanel1.Controls.Add(this.label3);
-            this.superiorRoundedPanel1.Controls.Add(this.label2);
-            this.superiorRoundedPanel1.Controls.Add(this.btnEntrarEmContato);
-            this.superiorRoundedPanel1.Controls.Add(this.btnSeguir);
-            this.superiorRoundedPanel1.Controls.Add(this.lblSeguidores);
-            this.superiorRoundedPanel1.Controls.Add(this.lblNomeEmpresa);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 185);
-            this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1679, 782);
-            this.superiorRoundedPanel1.TabIndex = 64;
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(617, 185);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(874, 367);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // tabControl1
+            // label10
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(122, 127);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.Padding = new System.Drawing.Point(30, 15);
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1448, 635);
-            this.tabControl1.TabIndex = 60;
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label10.Location = new System.Drawing.Point(622, 129);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(190, 53);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "SOBRE NÓS";
             // 
-            // tabPage1
+            // pictureBox1
             // 
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 60);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1440, 571);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Sobre";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(80, 139);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(516, 413);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // textBox2
-            // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(22, 20);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1441, 523);
-            this.textBox2.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 60);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1461, 571);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Participações";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 60);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1461, 571);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Disponíveis";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 60);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1461, 571);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Encerrados";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 60);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1461, 571);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Posts";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label3.Location = new System.Drawing.Point(1436, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 32);
-            this.label3.TabIndex = 59;
-            this.label3.Text = "Entrar em Contato";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label2.Location = new System.Drawing.Point(1436, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 32);
-            this.label2.TabIndex = 58;
-            this.label2.Text = "Seguir";
-            // 
-            // btnEntrarEmContato
-            // 
-            this.btnEntrarEmContato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEntrarEmContato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnEntrarEmContato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEntrarEmContato.BorderColor = System.Drawing.Color.Black;
-            this.btnEntrarEmContato.BorderSize = 0;
-            this.btnEntrarEmContato.FlatAppearance.BorderSize = 0;
-            this.btnEntrarEmContato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEntrarEmContato.Image = ((System.Drawing.Image)(resources.GetObject("btnEntrarEmContato.Image")));
-            this.btnEntrarEmContato.Location = new System.Drawing.Point(1387, 68);
-            this.btnEntrarEmContato.Name = "btnEntrarEmContato";
-            this.btnEntrarEmContato.Size = new System.Drawing.Size(31, 32);
-            this.btnEntrarEmContato.TabIndex = 57;
-            this.btnEntrarEmContato.UseVisualStyleBackColor = false;
-            // 
-            // btnSeguir
-            // 
-            this.btnSeguir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSeguir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnSeguir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSeguir.BorderColor = System.Drawing.Color.Black;
-            this.btnSeguir.BorderSize = 0;
-            this.btnSeguir.FlatAppearance.BorderSize = 0;
-            this.btnSeguir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeguir.Location = new System.Drawing.Point(1385, 27);
-            this.btnSeguir.Name = "btnSeguir";
-            this.btnSeguir.Size = new System.Drawing.Size(33, 35);
-            this.btnSeguir.TabIndex = 56;
-            this.btnSeguir.UseVisualStyleBackColor = false;
-            // 
-            // lblSeguidores
-            // 
-            this.lblSeguidores.AutoSize = true;
-            this.lblSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblSeguidores.Location = new System.Drawing.Point(307, 49);
-            this.lblSeguidores.Name = "lblSeguidores";
-            this.lblSeguidores.Size = new System.Drawing.Size(117, 32);
-            this.lblSeguidores.TabIndex = 20;
-            this.lblSeguidores.Text = "X seguidores";
-            // 
-            // lblNomeEmpresa
-            // 
-            this.lblNomeEmpresa.AutoSize = true;
-            this.lblNomeEmpresa.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNomeEmpresa.Location = new System.Drawing.Point(304, 0);
-            this.lblNomeEmpresa.Name = "lblNomeEmpresa";
-            this.lblNomeEmpresa.Size = new System.Drawing.Size(106, 50);
-            this.lblNomeEmpresa.TabIndex = 2;
-            this.lblNomeEmpresa.Text = "Nome ";
-            // 
-            // PerfilEmpresa
+            // SobreNos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1742, 717);
+            this.ClientSize = new System.Drawing.Size(1491, 717);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gradientPanel1);
-            this.Name = "PerfilEmpresa";
-            this.Text = "PerfilEmpresa";
+            this.Name = "SobreNos";
+            this.Text = "SobreNos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.SobreNos_Load);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panelMeusEventos.ResumeLayout(false);
-            this.superiorRoundedPanel1.ResumeLayout(false);
-            this.superiorRoundedPanel1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -531,23 +442,15 @@
         private System.Windows.Forms.LinkLabel btnAjuda;
         private System.Windows.Forms.LinkLabel btnSobreNos;
         private System.Windows.Forms.Panel panel1;
-        private CircularPanel panelPerfil;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
         private RoundedPanel panelMeusEventos;
         private RoundedButton btnEventosCriados;
         private RoundedButton btnEventosIngressados;
-        private SuperiorRoundedPanel superiorRoundedPanel1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private CircularButton btnEntrarEmContato;
-        private CircularButton btnSeguir;
-        private System.Windows.Forms.Label lblSeguidores;
-        private System.Windows.Forms.Label lblNomeEmpresa;
+        private System.Windows.Forms.Button btnLinkedIn;
+        private System.Windows.Forms.Button btnEmail;
+        private System.Windows.Forms.Button btnFacebook;
+        private System.Windows.Forms.Button btnInstagram;
     }
 }

@@ -250,6 +250,7 @@
             this.btnAjuda.TabStop = true;
             this.btnAjuda.Text = "Ajuda";
             this.btnAjuda.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnAjuda.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnAjuda_LinkClicked);
             // 
             // btnSobreNos
             // 
@@ -267,6 +268,7 @@
             this.btnSobreNos.TabStop = true;
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
             // panel1
             // 

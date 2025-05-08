@@ -1629,7 +1629,7 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(29, 26);
             this.btnNotificacoes.TabIndex = 10;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
-            this.btnNotificacoes.Click += new System.EventHandler(this.button18_Click);
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
             // 
             // btnPerfil
             // 
@@ -1641,7 +1641,7 @@
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(47, 48);
             this.btnPerfil.TabIndex = 9;
-            this.btnPerfil.Click += new System.EventHandler(this.circularPanel_Click);
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             this.btnPerfil.Paint += new System.Windows.Forms.PaintEventHandler(this.circularPanel3_Paint);
             // 
             // roundedPanel5
@@ -1721,7 +1721,7 @@
             this.btnOrganizarEventos.TabStop = true;
             this.btnOrganizarEventos.Text = "Organizar eventos";
             this.btnOrganizarEventos.VisitedLinkColor = System.Drawing.Color.White;
-            this.btnOrganizarEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
+            this.btnOrganizarEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OrganizarEventos_LinkClicked);
             // 
             // btnMeusEventos
             // 
@@ -1757,6 +1757,7 @@
             this.btnAjuda.TabStop = true;
             this.btnAjuda.Text = "Ajuda";
             this.btnAjuda.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnAjuda.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnAjuda_LinkClicked);
             // 
             // btnSobreNos
             // 
@@ -1774,6 +1775,7 @@
             this.btnSobreNos.TabStop = true;
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
             // Principal
             // 

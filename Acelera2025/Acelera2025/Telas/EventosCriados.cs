@@ -99,5 +99,19 @@ namespace Acelera2025.Telas
         {
 
         }
+
+        private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Ajuda ajuda = new Ajuda();
+            ajuda.Show();
+            this.Hide();
+        }
+
+        private void btnSobreNos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SobreNos sobreNos = new SobreNos();
+            sobreNos.Show();
+            this.Hide();
+        }
     }
 }

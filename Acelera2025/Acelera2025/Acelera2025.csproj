@@ -55,6 +55,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Ajuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Ajuda.Designer.cs">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\CadastrarEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,12 +173,21 @@
     <Compile Include="Telas\CadastrarEmpresa2.Designer.cs">
       <DependentUpon>CadastrarEmpresa2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\SobreNos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\SobreNos.Designer.cs">
+      <DependentUpon>SobreNos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\TelaEvento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\TelaEvento.Designer.cs">
       <DependentUpon>TelaEvento.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Telas\Ajuda.resx">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\CadastrarEmpresa.resx">
       <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CadastrarEmpresa2.resx">
       <DependentUpon>CadastrarEmpresa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\SobreNos.resx">
+      <DependentUpon>SobreNos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaEvento.resx">
       <DependentUpon>TelaEvento.cs</DependentUpon>
@@ -279,6 +297,12 @@
     <Content Include="Resources\Captura de tela 2025-03-31 151223.png" />
     <Content Include="Resources\Captura de tela 2025-03-31 152752.png" />
     <Content Include="Resources\Captura de tela 2025-03-31 152801.png" />
+    <None Include="Resources\icons8-employ-100.png" />
+    <None Include="Resources\icons8-feed-100.png" />
+    <None Include="Resources\icons8-create-100.png" />
+    <None Include="Resources\icons8-ticket-100.png" />
+    <None Include="Resources\icons8-male-user-100.png" />
+    <None Include="Resources\icons8-account-48.png" />
     <None Include="Resources\LinkedIn %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

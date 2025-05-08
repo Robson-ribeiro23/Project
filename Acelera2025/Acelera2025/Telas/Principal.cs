@@ -210,19 +210,7 @@ namespace Acelera2025.Telas
 
         }
 
-        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            OrganizarEvento organizarEvento = new OrganizarEvento();
-            organizarEvento.Show();
-            this.Hide();
-        }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            panelVisivel = !panelVisivel;
-            panelMeusEventos.Visible = panelVisivel;
-            
-        }
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
@@ -264,12 +252,45 @@ namespace Acelera2025.Telas
 
         private void btnMeusEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            panelVisivel = !panelVisivel;
+            panelMeusEventos.Visible = panelVisivel;
         }
 
         private void roundedPanel9_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("Ajuda clicado");
+            Ajuda ajuda = new Ajuda();
+            ajuda.Show();
+            this.Hide();
+        }
+
+        private void OrganizarEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OrganizarEvento organizarEvento = new OrganizarEvento();
+            organizarEvento.Show();
+            this.Hide();
+        }
+
+        private void btnNotificacoes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSobreNos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SobreNos sobreNos = new SobreNos();
+            sobreNos.Show();
+            this.Hide();
         }
     }
 }
