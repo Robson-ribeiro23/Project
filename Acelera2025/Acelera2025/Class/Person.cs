@@ -13,9 +13,10 @@ namespace Acelera2025.Class
         private string cpf;
         private string email;
         private string password;
+        private DateTime birthday;
         private bool isInactive = false;
 
-        public Person(string name, string cpf, string email, string password, Date birthday) { 
+        public Person(string name, string cpf, string email, string password, DateTime birthday) { 
             this.name = name;
             this.cpf = cpf;
             this.email = email;
