@@ -63,6 +63,26 @@ namespace Acelera2025.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap altoEngajamento {
+            get {
+                object obj = ResourceManager.GetObject("altoEngajamento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baixoEngajamento {
+            get {
+                object obj = ResourceManager.GetObject("baixoEngajamento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CategoriaEducacao {
             get {
                 object obj = ResourceManager.GetObject("CategoriaEducacao", resourceCulture);
@@ -236,6 +256,16 @@ namespace Acelera2025.Properties {
         internal static System.Drawing.Bitmap LinkedIn__2_ {
             get {
                 object obj = ResourceManager.GetObject("LinkedIn (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medioEngajamento {
+            get {
+                object obj = ResourceManager.GetObject("medioEngajamento", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

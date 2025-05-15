@@ -60,6 +60,19 @@
             this.lblNomeEvento = new System.Windows.Forms.Label();
             this.PicEvento = new SuperiorRoundedPic();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.roundedPicture3 = new Acelera2025.Ferramentas.RoundedPicture();
+            this.label9 = new System.Windows.Forms.Label();
+            this.roundedPicture2 = new Acelera2025.Ferramentas.RoundedPicture();
+            this.label8 = new System.Windows.Forms.Label();
+            this.roundedPicture1 = new Acelera2025.Ferramentas.RoundedPicture();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.roundedButton2 = new RoundedButton();
+            this.roundedButton1 = new RoundedButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblParticipantes = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
@@ -85,6 +98,10 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture1)).BeginInit();
             this.superiorRoundedPanel1.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
@@ -489,12 +506,192 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage2.Controls.Add(this.roundedPicture3);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.roundedPicture2);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.roundedPicture1);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.flowLayoutPanel1);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.roundedButton2);
+            this.tabPage2.Controls.Add(this.roundedButton1);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.lblParticipantes);
             this.tabPage2.Location = new System.Drawing.Point(4, 48);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1501, 494);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Participantes";
+            // 
+            // roundedPicture3
+            // 
+            this.roundedPicture3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPicture3.BorderColor = System.Drawing.Color.Black;
+            this.roundedPicture3.BorderRadius = 20;
+            this.roundedPicture3.BorderSize = 0;
+            this.roundedPicture3.Image = global::Acelera2025.Properties.Resources.altoEngajamento;
+            this.roundedPicture3.Location = new System.Drawing.Point(807, 211);
+            this.roundedPicture3.Name = "roundedPicture3";
+            this.roundedPicture3.Size = new System.Drawing.Size(108, 108);
+            this.roundedPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roundedPicture3.TabIndex = 15;
+            this.roundedPicture3.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label9.Location = new System.Drawing.Point(828, 322);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 36);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Alto";
+            // 
+            // roundedPicture2
+            // 
+            this.roundedPicture2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPicture2.BorderColor = System.Drawing.Color.Black;
+            this.roundedPicture2.BorderRadius = 20;
+            this.roundedPicture2.BorderSize = 0;
+            this.roundedPicture2.Image = global::Acelera2025.Properties.Resources.medioEngajamento;
+            this.roundedPicture2.Location = new System.Drawing.Point(667, 211);
+            this.roundedPicture2.Name = "roundedPicture2";
+            this.roundedPicture2.Size = new System.Drawing.Size(108, 108);
+            this.roundedPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roundedPicture2.TabIndex = 13;
+            this.roundedPicture2.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label8.Location = new System.Drawing.Point(688, 322);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 36);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Médio";
+            // 
+            // roundedPicture1
+            // 
+            this.roundedPicture1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPicture1.BorderColor = System.Drawing.Color.Navy;
+            this.roundedPicture1.BorderRadius = 20;
+            this.roundedPicture1.BorderSize = 0;
+            this.roundedPicture1.Image = global::Acelera2025.Properties.Resources.baixoEngajamento;
+            this.roundedPicture1.Location = new System.Drawing.Point(520, 211);
+            this.roundedPicture1.Name = "roundedPicture1";
+            this.roundedPicture1.Size = new System.Drawing.Size(108, 108);
+            this.roundedPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roundedPicture1.TabIndex = 11;
+            this.roundedPicture1.TabStop = false;
+            this.roundedPicture1.Click += new System.EventHandler(this.roundedPicture1_Click);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label6.Location = new System.Drawing.Point(541, 322);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 36);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Baixo";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label3.Location = new System.Drawing.Point(640, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(153, 41);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Engajamento";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1065, 84);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(376, 388);
+            this.flowLayoutPanel1.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label2.Location = new System.Drawing.Point(1058, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(151, 41);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Participantes";
+            // 
+            // roundedButton2
+            // 
+            this.roundedButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.roundedButton2.BorderColor = System.Drawing.Color.Black;
+            this.roundedButton2.BorderRadius = 20;
+            this.roundedButton2.BorderSize = 0;
+            this.roundedButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.roundedButton2.Location = new System.Drawing.Point(108, 358);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(204, 55);
+            this.roundedButton2.TabIndex = 5;
+            this.roundedButton2.Text = "Notificar Participantes";
+            this.roundedButton2.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.roundedButton1.BorderColor = System.Drawing.Color.Black;
+            this.roundedButton1.BorderRadius = 20;
+            this.roundedButton1.BorderSize = 0;
+            this.roundedButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.roundedButton1.Location = new System.Drawing.Point(108, 264);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(204, 55);
+            this.roundedButton1.TabIndex = 4;
+            this.roundedButton1.Text = "Convidar Participante";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label1.Location = new System.Drawing.Point(110, 188);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(151, 41);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Participantes";
+            // 
+            // lblParticipantes
+            // 
+            this.lblParticipantes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblParticipantes.AutoSize = true;
+            this.lblParticipantes.Font = new System.Drawing.Font("Myanmar Text", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParticipantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblParticipantes.Location = new System.Drawing.Point(107, 142);
+            this.lblParticipantes.Name = "lblParticipantes";
+            this.lblParticipantes.Size = new System.Drawing.Size(72, 65);
+            this.lblParticipantes.TabIndex = 2;
+            this.lblParticipantes.Text = "XX";
             // 
             // tabPage3
             // 
@@ -807,6 +1004,11 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture1)).EndInit();
             this.superiorRoundedPanel1.ResumeLayout(false);
             this.superiorRoundedPanel1.PerformLayout();
             this.gradientPanel1.ResumeLayout(false);
@@ -872,5 +1074,18 @@
         private RoundedPanel panelMeusEventos;
         private RoundedButton btnEventosCriados;
         private RoundedButton btnEventosIngressados;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblParticipantes;
+        private RoundedButton roundedButton1;
+        private System.Windows.Forms.Label label2;
+        private RoundedButton roundedButton2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private Ferramentas.RoundedPicture roundedPicture1;
+        private Ferramentas.RoundedPicture roundedPicture2;
+        private System.Windows.Forms.Label label8;
+        private Ferramentas.RoundedPicture roundedPicture3;
+        private System.Windows.Forms.Label label9;
     }
 }

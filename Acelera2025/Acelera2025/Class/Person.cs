@@ -13,7 +13,6 @@ namespace Acelera2025.Class
         private string cpf;
         private string email;
         private string password;
-        private Date birthday;
         private bool isInactive = false;
 
         public Person(string name, string cpf, string email, string password, Date birthday) { 

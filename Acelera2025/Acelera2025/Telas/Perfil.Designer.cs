@@ -260,6 +260,7 @@
             this.btnSeguir.BorderSize = 0;
             this.btnSeguir.FlatAppearance.BorderSize = 0;
             this.btnSeguir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeguir.Image = ((System.Drawing.Image)(resources.GetObject("btnSeguir.Image")));
             this.btnSeguir.Location = new System.Drawing.Point(1497, 27);
             this.btnSeguir.Name = "btnSeguir";
             this.btnSeguir.Size = new System.Drawing.Size(33, 35);

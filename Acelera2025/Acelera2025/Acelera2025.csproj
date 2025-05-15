@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Date.cs" />
     <Compile Include="Class\PeopleManager.cs" />
     <Compile Include="Class\Person.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -73,6 +72,12 @@
     <Compile Include="Telas\CadastrarUsuario.Designer.cs">
       <DependentUpon>CadastrarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\CardParticipantes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardParticipantes.Designer.cs">
+      <DependentUpon>CardParticipantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\EntrarEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +96,12 @@
     </Compile>
     <Compile Include="Telas\EventosCriados.Designer.cs">
       <DependentUpon>EventosCriados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Feed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Feed.Designer.cs">
+      <DependentUpon>Feed.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Ferramentas\CircularButton.cs">
       <SubType>Component</SubType>
@@ -194,6 +205,9 @@
     <EmbeddedResource Include="Telas\CadastrarUsuario.resx">
       <DependentUpon>CadastrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CardParticipantes.resx">
+      <DependentUpon>CardParticipantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\EntrarEmpresa.resx">
       <DependentUpon>EntrarEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\EventosCriados.resx">
       <DependentUpon>EventosCriados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Feed.resx">
+      <DependentUpon>Feed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\OrganizarEvento.resx">
       <DependentUpon>OrganizarEvento.cs</DependentUpon>
@@ -294,6 +311,9 @@
     <None Include="Resources\IconeNotificacao.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\medioEngajamento.png" />
+    <None Include="Resources\baixoEngajamento.png" />
+    <None Include="Resources\altoEngajamento.png" />
     <Content Include="Resources\Captura de tela 2025-03-31 151223.png" />
     <Content Include="Resources\Captura de tela 2025-03-31 152752.png" />
     <Content Include="Resources\Captura de tela 2025-03-31 152801.png" />
