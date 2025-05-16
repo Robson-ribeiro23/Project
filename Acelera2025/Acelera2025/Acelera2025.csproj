@@ -47,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="Class\Empresa.cs" />
+    <Compile Include="Class\EmpresaManager.cs" />
+    <Compile Include="Class\Endereco.cs" />
     <Compile Include="Class\PeopleManager.cs" />
     <Compile Include="Class\Person.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
