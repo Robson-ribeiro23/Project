@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera2025.Class;
 
 namespace Acelera2025.Telas
 {
@@ -50,6 +51,7 @@ namespace Acelera2025.Telas
             PanelEventosOnline_Resize(null, null);
             panelMeusEventos.Visible = false;
 
+         
         }
 
 
@@ -263,17 +265,17 @@ namespace Acelera2025.Telas
 
         private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Close();
             MessageBox.Show("Ajuda clicado");
             Ajuda ajuda = new Ajuda();
             ajuda.Show();
-            this.Hide();
         }
 
         private void OrganizarEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Close();
             OrganizarEvento organizarEvento = new OrganizarEvento();
             organizarEvento.Show();
-            this.Hide();
         }
 
         private void btnNotificacoes_Click(object sender, EventArgs e)
@@ -283,14 +285,34 @@ namespace Acelera2025.Telas
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
-
+            DisplayCrimes();
         }
 
         private void btnSobreNos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Close();
             SobreNos sobreNos = new SobreNos();
             sobreNos.Show();
-            this.Hide();
+        }
+
+        public void DisplayCrimes()
+        {
+            for (int i = 0; i < PeopleManager.GetInstance().GetPeopleDB().Count; i++)
+            {
+                Person person = (Person)PeopleManager.GetInstance().GetPeopleDB()[i];
+                if (i == 0)
+                {
+                    btnNome1.Text = person.GetName();
+                }
+                else if (i == 1)
+                {
+                    btnNome2.Text = person.GetName();
+                }
+                else if (i == 2)
+                {
+                    btnNome3.Text = person.GetName();
+                }
+            }
         }
     }
 }

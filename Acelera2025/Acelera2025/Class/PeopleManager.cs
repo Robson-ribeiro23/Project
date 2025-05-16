@@ -9,14 +9,18 @@ namespace Acelera2025.Class
 {
     internal class PeopleManager
     {
-        public static PeopleManager Instance { get; private set; }
+        private static PeopleManager Instance;
 
         private ArrayList peopleDB = new ArrayList();
         public Person myself;
 
-        public PeopleManager()
+        public static PeopleManager GetInstance()
         {
-            Instance = this;
+            if (Instance == null)
+            {
+                Instance = new PeopleManager();
+            }
+            return Instance;
         }
 
         public ArrayList GetPeopleDB()
@@ -30,16 +34,16 @@ namespace Acelera2025.Class
             peopleDB.Add(person);
         }
 
-        public void InativarPessoa(Person person)
+        public void DeactivatePerson(Person person)
         {
             person.SetActivity(true); // true = inativo
         }
 
-        public Person BuscarPorEmailSenha(string email, string senha)
+        public Person SearchByEmailAndPassword(string email, string password)
         {
             foreach (Person p in peopleDB)
             {
-                if (p.GetEmail() == email && p.GetPassword() == senha && !p.IsInactive())
+                if (p.GetEmail() == email && p.GetPassword() == password && !p.IsInactive())
                 {
                     return p;
                 }

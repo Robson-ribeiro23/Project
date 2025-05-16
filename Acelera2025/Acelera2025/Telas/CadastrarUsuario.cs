@@ -39,17 +39,28 @@ namespace Acelera2025.Telas
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            string name = "";
-            if (string.IsNullOrEmpty(name))
+            string name = txtNome.Text;
+            string cpf = txtCpf.Text;
+            string email = txtEmail.Text;
+            string password = txtSenha.Text;
+            DateTime birthday = DateTime.Now;
+            
+            Person person = new Person(name, cpf, email, password, birthday);
+
+            if (PeopleManager.GetInstance().SearchByEmailAndPassword(email, password) == null)
             {
-                var formPopup = new Form();
-                formPopup.Show();
-                //Console.WriteLine("Death to all betrayers.");
+                PeopleManager.GetInstance().AddPerson(person);
+
+                this.Close();
+                CadastrarUsuario cadastrarUsuario = new CadastrarUsuario();
+                cadastrarUsuario.Show();
+
+                MessageBox.Show("Usuário cadastrado!");
+            } else
+            {
+                MessageBox.Show("Email já cadastrado!");
             }
-            //Person person = new Person();
-            //Principal principal = new Principal();
-            //principal.Show();
-            //this.Hide();
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
