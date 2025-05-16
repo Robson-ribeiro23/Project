@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ajuda));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
@@ -64,12 +65,12 @@
             this.roundedPanel5 = new RoundedPanel();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.btnPrincipal = new System.Windows.Forms.LinkLabel();
-            this.circularPanel1 = new CircularPanel();
             this.btnOrganizadorEventos = new System.Windows.Forms.LinkLabel();
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPrincipal = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
             this.superiorRoundedPanel1.SuspendLayout();
@@ -81,6 +82,7 @@
             this.roundedPanel2.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -489,11 +491,11 @@
             // 
             // gradientPanel1
             // 
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
+            this.gradientPanel1.Controls.Add(this.btnPrincipal);
             this.gradientPanel1.Controls.Add(this.btnNotificacoes);
             this.gradientPanel1.Controls.Add(this.btnPerfil);
             this.gradientPanel1.Controls.Add(this.roundedPanel5);
-            this.gradientPanel1.Controls.Add(this.btnPrincipal);
-            this.gradientPanel1.Controls.Add(this.circularPanel1);
             this.gradientPanel1.Controls.Add(this.btnOrganizadorEventos);
             this.gradientPanel1.Controls.Add(this.btnMeusEventos);
             this.gradientPanel1.Controls.Add(this.btnAjuda);
@@ -571,33 +573,6 @@
             this.txtPesquisar.Size = new System.Drawing.Size(482, 32);
             this.txtPesquisar.TabIndex = 0;
             // 
-            // btnPrincipal
-            // 
-            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.AutoSize = true;
-            this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrincipal.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnPrincipal.LinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.Location = new System.Drawing.Point(65, 12);
-            this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(90, 36);
-            this.btnPrincipal.TabIndex = 7;
-            this.btnPrincipal.TabStop = true;
-            this.btnPrincipal.Text = "Nome(?)";
-            this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnPrincipal_LinkClicked);
-            // 
-            // circularPanel1
-            // 
-            this.circularPanel1.BorderColor = System.Drawing.Color.Black;
-            this.circularPanel1.BorderSize = 2;
-            this.circularPanel1.Location = new System.Drawing.Point(12, 3);
-            this.circularPanel1.Name = "circularPanel1";
-            this.circularPanel1.Size = new System.Drawing.Size(47, 48);
-            this.circularPanel1.TabIndex = 6;
-            // 
             // btnOrganizadorEventos
             // 
             this.btnOrganizadorEventos.ActiveLinkColor = System.Drawing.Color.White;
@@ -669,6 +644,33 @@
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnPrincipal
+            // 
+            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPrincipal.AutoSize = true;
+            this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnPrincipal.LinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.Location = new System.Drawing.Point(67, 15);
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Size = new System.Drawing.Size(108, 27);
+            this.btnPrincipal.TabIndex = 11;
+            this.btnPrincipal.TabStop = true;
+            this.btnPrincipal.Text = "CONNECTA";
+            this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
+            // 
             // Ajuda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -700,6 +702,7 @@
             this.gradientPanel1.PerformLayout();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -712,8 +715,6 @@
         private RoundedPanel roundedPanel5;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisar;
-        private System.Windows.Forms.LinkLabel btnPrincipal;
-        private CircularPanel circularPanel1;
         private System.Windows.Forms.LinkLabel btnOrganizadorEventos;
         private System.Windows.Forms.LinkLabel btnMeusEventos;
         private System.Windows.Forms.LinkLabel btnAjuda;
@@ -748,5 +749,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel btnPrincipal;
     }
 }

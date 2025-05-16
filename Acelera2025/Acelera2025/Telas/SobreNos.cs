@@ -76,5 +76,10 @@ namespace Acelera2025.Telas
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

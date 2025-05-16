@@ -44,8 +44,6 @@
             this.btnEmail = new System.Windows.Forms.Button();
             this.btnFacebook = new System.Windows.Forms.Button();
             this.btnInstagram = new System.Windows.Forms.Button();
-            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
-            this.circularPanel2 = new CircularPanel();
             this.btnContato = new System.Windows.Forms.LinkLabel();
             this.btnAjudaInferior = new System.Windows.Forms.LinkLabel();
             this.panelEventosOnline = new System.Windows.Forms.Panel();
@@ -132,17 +130,19 @@
             this.btnProxEventoPerto = new System.Windows.Forms.Button();
             this.btnAntEventoPerto = new System.Windows.Forms.Button();
             this.gradientPanel1 = new GradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnPerfil = new CircularPanel();
             this.roundedPanel5 = new RoundedPanel();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.btnPrincipal = new System.Windows.Forms.LinkLabel();
-            this.circularPanel1 = new CircularPanel();
             this.btnOrganizarEventos = new System.Windows.Forms.LinkLabel();
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
@@ -169,7 +169,9 @@
             this.roundedPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicEventoPerto4)).BeginInit();
             this.gradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -340,12 +342,12 @@
             // 
             // gradientPanel2
             // 
+            this.gradientPanel2.Controls.Add(this.pictureBox2);
+            this.gradientPanel2.Controls.Add(this.linkLabel1);
             this.gradientPanel2.Controls.Add(this.btnLinkedIn);
             this.gradientPanel2.Controls.Add(this.btnEmail);
             this.gradientPanel2.Controls.Add(this.btnFacebook);
             this.gradientPanel2.Controls.Add(this.btnInstagram);
-            this.gradientPanel2.Controls.Add(this.linkLabel9);
-            this.gradientPanel2.Controls.Add(this.circularPanel2);
             this.gradientPanel2.Controls.Add(this.btnContato);
             this.gradientPanel2.Controls.Add(this.btnAjudaInferior);
             this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -413,31 +415,6 @@
             this.btnInstagram.Size = new System.Drawing.Size(54, 48);
             this.btnInstagram.TabIndex = 10;
             this.btnInstagram.UseVisualStyleBackColor = false;
-            // 
-            // linkLabel9
-            // 
-            this.linkLabel9.ActiveLinkColor = System.Drawing.Color.White;
-            this.linkLabel9.AutoSize = true;
-            this.linkLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel9.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel9.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel9.LinkColor = System.Drawing.Color.White;
-            this.linkLabel9.Location = new System.Drawing.Point(86, 26);
-            this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.Size = new System.Drawing.Size(90, 36);
-            this.linkLabel9.TabIndex = 8;
-            this.linkLabel9.TabStop = true;
-            this.linkLabel9.Text = "Nome(?)";
-            this.linkLabel9.VisitedLinkColor = System.Drawing.Color.White;
-            // 
-            // circularPanel2
-            // 
-            this.circularPanel2.BorderColor = System.Drawing.Color.Black;
-            this.circularPanel2.BorderSize = 2;
-            this.circularPanel2.Location = new System.Drawing.Point(23, 14);
-            this.circularPanel2.Name = "circularPanel2";
-            this.circularPanel2.Size = new System.Drawing.Size(47, 48);
-            this.circularPanel2.TabIndex = 7;
             // 
             // btnContato
             // 
@@ -1597,11 +1574,11 @@
             // 
             // gradientPanel1
             // 
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
             this.gradientPanel1.Controls.Add(this.btnNotificacoes);
             this.gradientPanel1.Controls.Add(this.btnPerfil);
             this.gradientPanel1.Controls.Add(this.roundedPanel5);
             this.gradientPanel1.Controls.Add(this.btnPrincipal);
-            this.gradientPanel1.Controls.Add(this.circularPanel1);
             this.gradientPanel1.Controls.Add(this.btnOrganizarEventos);
             this.gradientPanel1.Controls.Add(this.btnMeusEventos);
             this.gradientPanel1.Controls.Add(this.btnAjuda);
@@ -1614,6 +1591,17 @@
             this.gradientPanel1.Size = new System.Drawing.Size(1744, 51);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // btnNotificacoes
             // 
@@ -1682,28 +1670,19 @@
             // 
             // btnPrincipal
             // 
-            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.WhiteSmoke;
             this.btnPrincipal.AutoSize = true;
             this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrincipal.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnPrincipal.LinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.Location = new System.Drawing.Point(65, 12);
+            this.btnPrincipal.Location = new System.Drawing.Point(67, 15);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(90, 36);
+            this.btnPrincipal.Size = new System.Drawing.Size(108, 27);
             this.btnPrincipal.TabIndex = 7;
             this.btnPrincipal.TabStop = true;
-            this.btnPrincipal.Text = "Nome(?)";
+            this.btnPrincipal.Text = "CONNECTA";
             this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
-            // 
-            // circularPanel1
-            // 
-            this.circularPanel1.BorderColor = System.Drawing.Color.Black;
-            this.circularPanel1.BorderSize = 2;
-            this.circularPanel1.Location = new System.Drawing.Point(12, 3);
-            this.circularPanel1.Name = "circularPanel1";
-            this.circularPanel1.Size = new System.Drawing.Size(47, 48);
-            this.circularPanel1.TabIndex = 6;
             // 
             // btnOrganizarEventos
             // 
@@ -1777,6 +1756,33 @@
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(36, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.WhiteSmoke;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(91, 24);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(108, 27);
+            this.linkLabel1.TabIndex = 15;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "CONNECTA";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1827,8 +1833,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicEventoPerto4)).EndInit();
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1846,8 +1854,6 @@
         private System.Windows.Forms.Button btnEmail;
         private System.Windows.Forms.Button btnFacebook;
         private System.Windows.Forms.Button btnInstagram;
-        private System.Windows.Forms.LinkLabel linkLabel9;
-        private CircularPanel circularPanel2;
         private System.Windows.Forms.LinkLabel btnContato;
         private System.Windows.Forms.LinkLabel btnAjudaInferior;
         private System.Windows.Forms.Panel panelEventosOnline;
@@ -1889,8 +1895,6 @@
         private RoundedPanel roundedPanel5;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisar;
-        private System.Windows.Forms.LinkLabel btnPrincipal;
-        private CircularPanel circularPanel1;
         private System.Windows.Forms.LinkLabel btnOrganizarEventos;
         private System.Windows.Forms.LinkLabel btnMeusEventos;
         private System.Windows.Forms.LinkLabel btnAjuda;
@@ -1949,5 +1953,9 @@
         private RoundedPanel panelMeusEventos;
         private RoundedButton btnEventosCriados;
         private RoundedButton btnEventosIngressados;
+        private System.Windows.Forms.LinkLabel btnPrincipal;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

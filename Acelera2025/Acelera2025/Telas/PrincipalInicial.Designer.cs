@@ -83,13 +83,13 @@
             this.roundedPanel5 = new RoundedPanel();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.circularPanel1 = new CircularPanel();
             this.btnOrganizarEventos = new System.Windows.Forms.LinkLabel();
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNós = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new RoundedButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPrincipal = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPicture1)).BeginInit();
             this.superiorRoundedPanel1.SuspendLayout();
@@ -98,6 +98,7 @@
             this.panelCategorias.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -830,9 +831,9 @@
             // 
             // gradientPanel1
             // 
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
+            this.gradientPanel1.Controls.Add(this.btnPrincipal);
             this.gradientPanel1.Controls.Add(this.roundedPanel5);
-            this.gradientPanel1.Controls.Add(this.linkLabel5);
-            this.gradientPanel1.Controls.Add(this.circularPanel1);
             this.gradientPanel1.Controls.Add(this.btnOrganizarEventos);
             this.gradientPanel1.Controls.Add(this.btnMeusEventos);
             this.gradientPanel1.Controls.Add(this.btnAjuda);
@@ -883,31 +884,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(482, 32);
             this.textBox1.TabIndex = 0;
-            // 
-            // linkLabel5
-            // 
-            this.linkLabel5.ActiveLinkColor = System.Drawing.Color.White;
-            this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel5.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel5.LinkColor = System.Drawing.Color.White;
-            this.linkLabel5.Location = new System.Drawing.Point(65, 12);
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(90, 36);
-            this.linkLabel5.TabIndex = 7;
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.Text = "Nome(?)";
-            this.linkLabel5.VisitedLinkColor = System.Drawing.Color.White;
-            // 
-            // circularPanel1
-            // 
-            this.circularPanel1.BorderColor = System.Drawing.Color.Black;
-            this.circularPanel1.BorderSize = 2;
-            this.circularPanel1.Location = new System.Drawing.Point(12, 3);
-            this.circularPanel1.Name = "circularPanel1";
-            this.circularPanel1.Size = new System.Drawing.Size(47, 48);
-            this.circularPanel1.TabIndex = 6;
             // 
             // btnOrganizarEventos
             // 
@@ -995,6 +971,33 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnPrincipal
+            // 
+            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPrincipal.AutoSize = true;
+            this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnPrincipal.LinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.Location = new System.Drawing.Point(67, 15);
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Size = new System.Drawing.Size(108, 27);
+            this.btnPrincipal.TabIndex = 9;
+            this.btnPrincipal.TabStop = true;
+            this.btnPrincipal.Text = "CONNECTA";
+            this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
+            // 
             // PrincipalInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1022,6 +1025,7 @@
             this.gradientPanel1.PerformLayout();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1049,8 +1053,6 @@
         private System.Windows.Forms.Button button6;
         private RoundedButton btnLogin;
         private System.Windows.Forms.LinkLabel btnSobreNós;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private CircularPanel circularPanel1;
         private System.Windows.Forms.LinkLabel btnOrganizarEventos;
         private System.Windows.Forms.LinkLabel btnMeusEventos;
         private System.Windows.Forms.LinkLabel btnAjuda;
@@ -1089,6 +1091,8 @@
         private System.Windows.Forms.Button btnInstagram;
         private System.Windows.Forms.Button btnFacebook;
         private System.Windows.Forms.Button btnEmail;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel btnPrincipal;
     }
 }
 

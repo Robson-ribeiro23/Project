@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Acelera2025.Telas
 {
-    public partial class CadastrarEmpresa2 : Form
+    public partial class CadastrarEmpresaEndereço : Form
     {
-        public CadastrarEmpresa2()
+        public CadastrarEmpresaEndereço()
         {
             InitializeComponent();
            // panel2.Resize += panel2_Resize;

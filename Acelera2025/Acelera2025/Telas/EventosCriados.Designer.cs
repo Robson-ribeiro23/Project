@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventosCriados));
+            this.EditarInformacoes = new System.Windows.Forms.TabControl();
+            this.VisaoGeral = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblNomeLocal = new System.Windows.Forms.Label();
             this.lblCep = new System.Windows.Forms.Label();
@@ -59,18 +60,18 @@
             this.lblData = new System.Windows.Forms.Label();
             this.lblNomeEvento = new System.Windows.Forms.Label();
             this.PicEvento = new SuperiorRoundedPic();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.roundedPicture3 = new Acelera2025.Ferramentas.RoundedPicture();
+            this.Participantes = new System.Windows.Forms.TabPage();
+            this.picAltoRendimento = new Acelera2025.Ferramentas.RoundedPicture();
             this.label9 = new System.Windows.Forms.Label();
-            this.roundedPicture2 = new Acelera2025.Ferramentas.RoundedPicture();
+            this.picMedioRendimento = new Acelera2025.Ferramentas.RoundedPicture();
             this.label8 = new System.Windows.Forms.Label();
-            this.roundedPicture1 = new Acelera2025.Ferramentas.RoundedPicture();
+            this.picBaixoRendimento = new Acelera2025.Ferramentas.RoundedPicture();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelParticipantes = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.roundedButton2 = new RoundedButton();
-            this.roundedButton1 = new RoundedButton();
+            this.btnNotificarParticipantes = new RoundedButton();
+            this.btnConvidarParticipante = new RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lblParticipantes = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -79,13 +80,13 @@
             this.comboEventosCriados = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPrincipal = new System.Windows.Forms.LinkLabel();
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnPerfil = new CircularPanel();
             this.roundedPanel5 = new RoundedPanel();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.btnTelaInicial = new System.Windows.Forms.LinkLabel();
-            this.circularPanel1 = new CircularPanel();
             this.btnOrganizarEventos = new System.Windows.Forms.LinkLabel();
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
@@ -93,70 +94,71 @@
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
             this.btnEventosIngressados = new RoundedButton();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.EditarInformacoes.SuspendLayout();
+            this.VisaoGeral.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture1)).BeginInit();
+            this.Participantes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAltoRendimento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMedioRendimento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBaixoRendimento)).BeginInit();
             this.superiorRoundedPanel1.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel5.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // EditarInformacoes
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.EditarInformacoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(33, 149);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.Padding = new System.Drawing.Point(25, 9);
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1509, 546);
-            this.tabControl1.TabIndex = 24;
+            this.EditarInformacoes.Controls.Add(this.VisaoGeral);
+            this.EditarInformacoes.Controls.Add(this.Participantes);
+            this.EditarInformacoes.Controls.Add(this.tabPage3);
+            this.EditarInformacoes.Controls.Add(this.tabPage4);
+            this.EditarInformacoes.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditarInformacoes.Location = new System.Drawing.Point(33, 149);
+            this.EditarInformacoes.Name = "EditarInformacoes";
+            this.EditarInformacoes.Padding = new System.Drawing.Point(25, 9);
+            this.EditarInformacoes.SelectedIndex = 0;
+            this.EditarInformacoes.Size = new System.Drawing.Size(1509, 546);
+            this.EditarInformacoes.TabIndex = 24;
             // 
-            // tabPage1
+            // VisaoGeral
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage1.Controls.Add(this.panel3);
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.lblLimiteParticipantes);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.lblPresencialOnline);
-            this.tabPage1.Controls.Add(this.lblCategorias);
-            this.tabPage1.Controls.Add(this.txtDescricao);
-            this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.lblFaixaEtaria);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.btnPatrocinador5);
-            this.tabPage1.Controls.Add(this.btnPatrocinador4);
-            this.tabPage1.Controls.Add(this.btnPatrocinador3);
-            this.tabPage1.Controls.Add(this.btnPatrocinador2);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.btnPatrocinador1);
-            this.tabPage1.Controls.Add(this.lblHora);
-            this.tabPage1.Controls.Add(this.lblData);
-            this.tabPage1.Controls.Add(this.lblNomeEvento);
-            this.tabPage1.Controls.Add(this.PicEvento);
-            this.tabPage1.Location = new System.Drawing.Point(4, 48);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1501, 494);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Visão Geral";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.VisaoGeral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.VisaoGeral.Controls.Add(this.panel3);
+            this.VisaoGeral.Controls.Add(this.panel2);
+            this.VisaoGeral.Controls.Add(this.label12);
+            this.VisaoGeral.Controls.Add(this.lblLimiteParticipantes);
+            this.VisaoGeral.Controls.Add(this.label10);
+            this.VisaoGeral.Controls.Add(this.lblPresencialOnline);
+            this.VisaoGeral.Controls.Add(this.lblCategorias);
+            this.VisaoGeral.Controls.Add(this.txtDescricao);
+            this.VisaoGeral.Controls.Add(this.panel1);
+            this.VisaoGeral.Controls.Add(this.label7);
+            this.VisaoGeral.Controls.Add(this.lblFaixaEtaria);
+            this.VisaoGeral.Controls.Add(this.label5);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador5);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador4);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador3);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador2);
+            this.VisaoGeral.Controls.Add(this.label4);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador1);
+            this.VisaoGeral.Controls.Add(this.lblHora);
+            this.VisaoGeral.Controls.Add(this.lblData);
+            this.VisaoGeral.Controls.Add(this.lblNomeEvento);
+            this.VisaoGeral.Controls.Add(this.PicEvento);
+            this.VisaoGeral.Location = new System.Drawing.Point(4, 48);
+            this.VisaoGeral.Name = "VisaoGeral";
+            this.VisaoGeral.Padding = new System.Windows.Forms.Padding(3);
+            this.VisaoGeral.Size = new System.Drawing.Size(1501, 494);
+            this.VisaoGeral.TabIndex = 0;
+            this.VisaoGeral.Text = "Visão Geral";
+            this.VisaoGeral.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // panel3
             // 
@@ -503,42 +505,42 @@
             this.PicEvento.TabIndex = 0;
             this.PicEvento.TabStop = false;
             // 
-            // tabPage2
+            // Participantes
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage2.Controls.Add(this.roundedPicture3);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.roundedPicture2);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.roundedPicture1);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.flowLayoutPanel1);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.roundedButton2);
-            this.tabPage2.Controls.Add(this.roundedButton1);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.lblParticipantes);
-            this.tabPage2.Location = new System.Drawing.Point(4, 48);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1501, 494);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Participantes";
+            this.Participantes.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Participantes.Controls.Add(this.picAltoRendimento);
+            this.Participantes.Controls.Add(this.label9);
+            this.Participantes.Controls.Add(this.picMedioRendimento);
+            this.Participantes.Controls.Add(this.label8);
+            this.Participantes.Controls.Add(this.picBaixoRendimento);
+            this.Participantes.Controls.Add(this.label6);
+            this.Participantes.Controls.Add(this.label3);
+            this.Participantes.Controls.Add(this.panelParticipantes);
+            this.Participantes.Controls.Add(this.label2);
+            this.Participantes.Controls.Add(this.btnNotificarParticipantes);
+            this.Participantes.Controls.Add(this.btnConvidarParticipante);
+            this.Participantes.Controls.Add(this.label1);
+            this.Participantes.Controls.Add(this.lblParticipantes);
+            this.Participantes.Location = new System.Drawing.Point(4, 48);
+            this.Participantes.Name = "Participantes";
+            this.Participantes.Padding = new System.Windows.Forms.Padding(3);
+            this.Participantes.Size = new System.Drawing.Size(1501, 494);
+            this.Participantes.TabIndex = 1;
+            this.Participantes.Text = "Participantes";
             // 
-            // roundedPicture3
+            // picAltoRendimento
             // 
-            this.roundedPicture3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedPicture3.BorderColor = System.Drawing.Color.Black;
-            this.roundedPicture3.BorderRadius = 20;
-            this.roundedPicture3.BorderSize = 0;
-            this.roundedPicture3.Image = global::Acelera2025.Properties.Resources.altoEngajamento;
-            this.roundedPicture3.Location = new System.Drawing.Point(807, 211);
-            this.roundedPicture3.Name = "roundedPicture3";
-            this.roundedPicture3.Size = new System.Drawing.Size(108, 108);
-            this.roundedPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.roundedPicture3.TabIndex = 15;
-            this.roundedPicture3.TabStop = false;
+            this.picAltoRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picAltoRendimento.BorderColor = System.Drawing.Color.Black;
+            this.picAltoRendimento.BorderRadius = 20;
+            this.picAltoRendimento.BorderSize = 0;
+            this.picAltoRendimento.Image = global::Acelera2025.Properties.Resources.altoEngajamento;
+            this.picAltoRendimento.Location = new System.Drawing.Point(807, 211);
+            this.picAltoRendimento.Name = "picAltoRendimento";
+            this.picAltoRendimento.Size = new System.Drawing.Size(108, 108);
+            this.picAltoRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAltoRendimento.TabIndex = 15;
+            this.picAltoRendimento.TabStop = false;
             // 
             // label9
             // 
@@ -552,19 +554,19 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Alto";
             // 
-            // roundedPicture2
+            // picMedioRendimento
             // 
-            this.roundedPicture2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedPicture2.BorderColor = System.Drawing.Color.Black;
-            this.roundedPicture2.BorderRadius = 20;
-            this.roundedPicture2.BorderSize = 0;
-            this.roundedPicture2.Image = global::Acelera2025.Properties.Resources.medioEngajamento;
-            this.roundedPicture2.Location = new System.Drawing.Point(667, 211);
-            this.roundedPicture2.Name = "roundedPicture2";
-            this.roundedPicture2.Size = new System.Drawing.Size(108, 108);
-            this.roundedPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.roundedPicture2.TabIndex = 13;
-            this.roundedPicture2.TabStop = false;
+            this.picMedioRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picMedioRendimento.BorderColor = System.Drawing.Color.Black;
+            this.picMedioRendimento.BorderRadius = 20;
+            this.picMedioRendimento.BorderSize = 0;
+            this.picMedioRendimento.Image = global::Acelera2025.Properties.Resources.medioEngajamento;
+            this.picMedioRendimento.Location = new System.Drawing.Point(667, 211);
+            this.picMedioRendimento.Name = "picMedioRendimento";
+            this.picMedioRendimento.Size = new System.Drawing.Size(108, 108);
+            this.picMedioRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMedioRendimento.TabIndex = 13;
+            this.picMedioRendimento.TabStop = false;
             // 
             // label8
             // 
@@ -578,20 +580,20 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Médio";
             // 
-            // roundedPicture1
+            // picBaixoRendimento
             // 
-            this.roundedPicture1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedPicture1.BorderColor = System.Drawing.Color.Navy;
-            this.roundedPicture1.BorderRadius = 20;
-            this.roundedPicture1.BorderSize = 0;
-            this.roundedPicture1.Image = global::Acelera2025.Properties.Resources.baixoEngajamento;
-            this.roundedPicture1.Location = new System.Drawing.Point(520, 211);
-            this.roundedPicture1.Name = "roundedPicture1";
-            this.roundedPicture1.Size = new System.Drawing.Size(108, 108);
-            this.roundedPicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.roundedPicture1.TabIndex = 11;
-            this.roundedPicture1.TabStop = false;
-            this.roundedPicture1.Click += new System.EventHandler(this.roundedPicture1_Click);
+            this.picBaixoRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picBaixoRendimento.BorderColor = System.Drawing.Color.Navy;
+            this.picBaixoRendimento.BorderRadius = 20;
+            this.picBaixoRendimento.BorderSize = 0;
+            this.picBaixoRendimento.Image = global::Acelera2025.Properties.Resources.baixoEngajamento;
+            this.picBaixoRendimento.Location = new System.Drawing.Point(520, 211);
+            this.picBaixoRendimento.Name = "picBaixoRendimento";
+            this.picBaixoRendimento.Size = new System.Drawing.Size(108, 108);
+            this.picBaixoRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBaixoRendimento.TabIndex = 11;
+            this.picBaixoRendimento.TabStop = false;
+            this.picBaixoRendimento.Click += new System.EventHandler(this.roundedPicture1_Click);
             // 
             // label6
             // 
@@ -617,15 +619,15 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Engajamento";
             // 
-            // flowLayoutPanel1
+            // panelParticipantes
             // 
-            this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1065, 84);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(376, 388);
-            this.flowLayoutPanel1.TabIndex = 8;
+            this.panelParticipantes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelParticipantes.AutoScroll = true;
+            this.panelParticipantes.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.panelParticipantes.Location = new System.Drawing.Point(1065, 84);
+            this.panelParticipantes.Name = "panelParticipantes";
+            this.panelParticipantes.Size = new System.Drawing.Size(376, 388);
+            this.panelParticipantes.TabIndex = 8;
             // 
             // label2
             // 
@@ -639,35 +641,35 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Participantes";
             // 
-            // roundedButton2
+            // btnNotificarParticipantes
             // 
-            this.roundedButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.roundedButton2.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton2.BorderRadius = 20;
-            this.roundedButton2.BorderSize = 0;
-            this.roundedButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.roundedButton2.Location = new System.Drawing.Point(108, 358);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(204, 55);
-            this.roundedButton2.TabIndex = 5;
-            this.roundedButton2.Text = "Notificar Participantes";
-            this.roundedButton2.UseVisualStyleBackColor = false;
+            this.btnNotificarParticipantes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNotificarParticipantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.btnNotificarParticipantes.BorderColor = System.Drawing.Color.Black;
+            this.btnNotificarParticipantes.BorderRadius = 20;
+            this.btnNotificarParticipantes.BorderSize = 0;
+            this.btnNotificarParticipantes.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnNotificarParticipantes.Location = new System.Drawing.Point(108, 358);
+            this.btnNotificarParticipantes.Name = "btnNotificarParticipantes";
+            this.btnNotificarParticipantes.Size = new System.Drawing.Size(204, 55);
+            this.btnNotificarParticipantes.TabIndex = 5;
+            this.btnNotificarParticipantes.Text = "Notificar Participantes";
+            this.btnNotificarParticipantes.UseVisualStyleBackColor = false;
             // 
-            // roundedButton1
+            // btnConvidarParticipante
             // 
-            this.roundedButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton1.BorderRadius = 20;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.roundedButton1.Location = new System.Drawing.Point(108, 264);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(204, 55);
-            this.roundedButton1.TabIndex = 4;
-            this.roundedButton1.Text = "Convidar Participante";
-            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.btnConvidarParticipante.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnConvidarParticipante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.btnConvidarParticipante.BorderColor = System.Drawing.Color.Black;
+            this.btnConvidarParticipante.BorderRadius = 20;
+            this.btnConvidarParticipante.BorderSize = 0;
+            this.btnConvidarParticipante.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnConvidarParticipante.Location = new System.Drawing.Point(108, 264);
+            this.btnConvidarParticipante.Name = "btnConvidarParticipante";
+            this.btnConvidarParticipante.Size = new System.Drawing.Size(204, 55);
+            this.btnConvidarParticipante.TabIndex = 4;
+            this.btnConvidarParticipante.Text = "Convidar Participante";
+            this.btnConvidarParticipante.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -754,11 +756,11 @@
             // 
             // gradientPanel1
             // 
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
+            this.gradientPanel1.Controls.Add(this.btnPrincipal);
             this.gradientPanel1.Controls.Add(this.btnNotificacoes);
             this.gradientPanel1.Controls.Add(this.btnPerfil);
             this.gradientPanel1.Controls.Add(this.roundedPanel5);
-            this.gradientPanel1.Controls.Add(this.btnTelaInicial);
-            this.gradientPanel1.Controls.Add(this.circularPanel1);
             this.gradientPanel1.Controls.Add(this.btnOrganizarEventos);
             this.gradientPanel1.Controls.Add(this.btnMeusEventos);
             this.gradientPanel1.Controls.Add(this.btnAjuda);
@@ -771,6 +773,33 @@
             this.gradientPanel1.Size = new System.Drawing.Size(1566, 51);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 23;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnPrincipal
+            // 
+            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPrincipal.AutoSize = true;
+            this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnPrincipal.LinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.Location = new System.Drawing.Point(67, 15);
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Size = new System.Drawing.Size(108, 27);
+            this.btnPrincipal.TabIndex = 11;
+            this.btnPrincipal.TabStop = true;
+            this.btnPrincipal.Text = "CONNECTA";
+            this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // btnNotificacoes
             // 
@@ -834,33 +863,6 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(482, 32);
             this.txtPesquisar.TabIndex = 0;
-            // 
-            // btnTelaInicial
-            // 
-            this.btnTelaInicial.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnTelaInicial.AutoSize = true;
-            this.btnTelaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.btnTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTelaInicial.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTelaInicial.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnTelaInicial.LinkColor = System.Drawing.Color.White;
-            this.btnTelaInicial.Location = new System.Drawing.Point(65, 12);
-            this.btnTelaInicial.Name = "btnTelaInicial";
-            this.btnTelaInicial.Size = new System.Drawing.Size(90, 36);
-            this.btnTelaInicial.TabIndex = 7;
-            this.btnTelaInicial.TabStop = true;
-            this.btnTelaInicial.Text = "Nome(?)";
-            this.btnTelaInicial.VisitedLinkColor = System.Drawing.Color.White;
-            this.btnTelaInicial.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
-            // 
-            // circularPanel1
-            // 
-            this.circularPanel1.BorderColor = System.Drawing.Color.Black;
-            this.circularPanel1.BorderSize = 2;
-            this.circularPanel1.Location = new System.Drawing.Point(12, 3);
-            this.circularPanel1.Name = "circularPanel1";
-            this.circularPanel1.Size = new System.Drawing.Size(47, 48);
-            this.circularPanel1.TabIndex = 6;
             // 
             // btnOrganizarEventos
             // 
@@ -990,29 +992,30 @@
             this.ClientSize = new System.Drawing.Size(1566, 721);
             this.Controls.Add(this.panelMeusEventos);
             this.Controls.Add(this.superiorRoundedPanel1);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.EditarInformacoes);
             this.Controls.Add(this.gradientPanel1);
             this.Name = "EventosCriados";
             this.Text = "EventosCriados";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.EventosCriados_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.EditarInformacoes.ResumeLayout(false);
+            this.VisaoGeral.ResumeLayout(false);
+            this.VisaoGeral.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture1)).EndInit();
+            this.Participantes.ResumeLayout(false);
+            this.Participantes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAltoRendimento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMedioRendimento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBaixoRendimento)).EndInit();
             this.superiorRoundedPanel1.ResumeLayout(false);
             this.superiorRoundedPanel1.PerformLayout();
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
             this.panelMeusEventos.ResumeLayout(false);
@@ -1028,15 +1031,13 @@
         private RoundedPanel roundedPanel5;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisar;
-        private System.Windows.Forms.LinkLabel btnTelaInicial;
-        private CircularPanel circularPanel1;
         private System.Windows.Forms.LinkLabel btnOrganizarEventos;
         private System.Windows.Forms.LinkLabel btnMeusEventos;
         private System.Windows.Forms.LinkLabel btnAjuda;
         private System.Windows.Forms.LinkLabel btnSobreNos;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabControl EditarInformacoes;
+        private System.Windows.Forms.TabPage VisaoGeral;
+        private System.Windows.Forms.TabPage Participantes;
         private SuperiorRoundedPanel superiorRoundedPanel1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
@@ -1076,16 +1077,18 @@
         private RoundedButton btnEventosIngressados;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblParticipantes;
-        private RoundedButton roundedButton1;
+        private RoundedButton btnConvidarParticipante;
         private System.Windows.Forms.Label label2;
-        private RoundedButton roundedButton2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private RoundedButton btnNotificarParticipantes;
+        private System.Windows.Forms.FlowLayoutPanel panelParticipantes;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private Ferramentas.RoundedPicture roundedPicture1;
-        private Ferramentas.RoundedPicture roundedPicture2;
+        private Ferramentas.RoundedPicture picBaixoRendimento;
+        private Ferramentas.RoundedPicture picMedioRendimento;
         private System.Windows.Forms.Label label8;
-        private Ferramentas.RoundedPicture roundedPicture3;
+        private Ferramentas.RoundedPicture picAltoRendimento;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel btnPrincipal;
     }
 }

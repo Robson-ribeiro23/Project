@@ -31,7 +31,7 @@ namespace Acelera2025.Telas
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            CadastrarEmpresa2 cadastrarEmpresa2 = new CadastrarEmpresa2();
+            CadastrarEmpresaEndereço cadastrarEmpresa2 = new CadastrarEmpresaEndereço();
             cadastrarEmpresa2.Show();
             this.Hide();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Acelera2025.Telas
 {
-    partial class CadastrarEmpresa2
+    partial class CadastrarEmpresaEndereço
     {
         /// <summary>
         /// Required designer variable.

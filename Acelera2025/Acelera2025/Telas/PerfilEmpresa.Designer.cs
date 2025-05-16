@@ -35,8 +35,6 @@
             this.roundedPanel5 = new RoundedPanel();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.btnPrincipal = new System.Windows.Forms.LinkLabel();
-            this.circularPanel1 = new CircularPanel();
             this.btnOrganizarEventos = new System.Windows.Forms.LinkLabel();
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
@@ -60,6 +58,8 @@
             this.btnSeguir = new CircularButton();
             this.lblSeguidores = new System.Windows.Forms.Label();
             this.lblNomeEmpresa = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPrincipal = new System.Windows.Forms.LinkLabel();
             this.gradientPanel1.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -67,15 +67,16 @@
             this.superiorRoundedPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gradientPanel1
             // 
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
+            this.gradientPanel1.Controls.Add(this.btnPrincipal);
             this.gradientPanel1.Controls.Add(this.btnNotificacoes);
             this.gradientPanel1.Controls.Add(this.btnPerfil);
             this.gradientPanel1.Controls.Add(this.roundedPanel5);
-            this.gradientPanel1.Controls.Add(this.btnPrincipal);
-            this.gradientPanel1.Controls.Add(this.circularPanel1);
             this.gradientPanel1.Controls.Add(this.btnOrganizarEventos);
             this.gradientPanel1.Controls.Add(this.btnMeusEventos);
             this.gradientPanel1.Controls.Add(this.btnAjuda);
@@ -150,31 +151,6 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(482, 32);
             this.txtPesquisar.TabIndex = 0;
-            // 
-            // btnPrincipal
-            // 
-            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.AutoSize = true;
-            this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrincipal.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnPrincipal.LinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.Location = new System.Drawing.Point(65, 12);
-            this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(90, 36);
-            this.btnPrincipal.TabIndex = 7;
-            this.btnPrincipal.TabStop = true;
-            this.btnPrincipal.Text = "Nome(?)";
-            this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
-            // 
-            // circularPanel1
-            // 
-            this.circularPanel1.BorderColor = System.Drawing.Color.Black;
-            this.circularPanel1.BorderSize = 2;
-            this.circularPanel1.Location = new System.Drawing.Point(12, 3);
-            this.circularPanel1.Name = "circularPanel1";
-            this.circularPanel1.Size = new System.Drawing.Size(47, 48);
-            this.circularPanel1.TabIndex = 6;
             // 
             // btnOrganizarEventos
             // 
@@ -277,7 +253,7 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1128, 6);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1107, 6);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
             this.panelMeusEventos.TabIndex = 65;
@@ -332,7 +308,7 @@
             this.superiorRoundedPanel1.Controls.Add(this.lblNomeEmpresa);
             this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 185);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1658, 782);
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1637, 782);
             this.superiorRoundedPanel1.TabIndex = 64;
             // 
             // tabControl1
@@ -349,7 +325,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(30, 15);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1427, 635);
+            this.tabControl1.Size = new System.Drawing.Size(1406, 635);
             this.tabControl1.TabIndex = 60;
             // 
             // tabPage1
@@ -358,7 +334,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 60);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1419, 571);
+            this.tabPage1.Size = new System.Drawing.Size(1398, 571);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sobre";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -422,7 +398,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label3.Location = new System.Drawing.Point(1415, 70);
+            this.label3.Location = new System.Drawing.Point(1394, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 32);
             this.label3.TabIndex = 59;
@@ -434,7 +410,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label2.Location = new System.Drawing.Point(1415, 30);
+            this.label2.Location = new System.Drawing.Point(1394, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 32);
             this.label2.TabIndex = 58;
@@ -450,7 +426,7 @@
             this.btnEntrarEmContato.FlatAppearance.BorderSize = 0;
             this.btnEntrarEmContato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrarEmContato.Image = ((System.Drawing.Image)(resources.GetObject("btnEntrarEmContato.Image")));
-            this.btnEntrarEmContato.Location = new System.Drawing.Point(1366, 68);
+            this.btnEntrarEmContato.Location = new System.Drawing.Point(1345, 68);
             this.btnEntrarEmContato.Name = "btnEntrarEmContato";
             this.btnEntrarEmContato.Size = new System.Drawing.Size(31, 32);
             this.btnEntrarEmContato.TabIndex = 57;
@@ -466,7 +442,7 @@
             this.btnSeguir.FlatAppearance.BorderSize = 0;
             this.btnSeguir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguir.Image = ((System.Drawing.Image)(resources.GetObject("btnSeguir.Image")));
-            this.btnSeguir.Location = new System.Drawing.Point(1364, 27);
+            this.btnSeguir.Location = new System.Drawing.Point(1343, 27);
             this.btnSeguir.Name = "btnSeguir";
             this.btnSeguir.Size = new System.Drawing.Size(33, 35);
             this.btnSeguir.TabIndex = 56;
@@ -494,6 +470,33 @@
             this.lblNomeEmpresa.TabIndex = 2;
             this.lblNomeEmpresa.Text = "Nome ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnPrincipal
+            // 
+            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPrincipal.AutoSize = true;
+            this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnPrincipal.LinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.Location = new System.Drawing.Point(67, 15);
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Size = new System.Drawing.Size(108, 27);
+            this.btnPrincipal.TabIndex = 11;
+            this.btnPrincipal.TabStop = true;
+            this.btnPrincipal.Text = "CONNECTA";
+            this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
+            // 
             // PerfilEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -516,6 +519,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -528,8 +532,6 @@
         private RoundedPanel roundedPanel5;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisar;
-        private System.Windows.Forms.LinkLabel btnPrincipal;
-        private CircularPanel circularPanel1;
         private System.Windows.Forms.LinkLabel btnOrganizarEventos;
         private System.Windows.Forms.LinkLabel btnMeusEventos;
         private System.Windows.Forms.LinkLabel btnAjuda;
@@ -553,5 +555,7 @@
         private CircularButton btnSeguir;
         private System.Windows.Forms.Label lblSeguidores;
         private System.Windows.Forms.Label lblNomeEmpresa;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel btnPrincipal;
     }
 }
