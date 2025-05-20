@@ -34,6 +34,7 @@
             this.btnCadastrar = new RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new RoundedPanel();
+            this.btnMostrarSenha = new System.Windows.Forms.Button();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnRecuperar = new System.Windows.Forms.LinkLabel();
@@ -121,6 +122,7 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
+            this.roundedPanel1.Controls.Add(this.btnMostrarSenha);
             this.roundedPanel1.Controls.Add(this.txtSenha);
             this.roundedPanel1.Controls.Add(this.txtEmail);
             this.roundedPanel1.Controls.Add(this.btnRecuperar);
@@ -134,24 +136,37 @@
             this.roundedPanel1.Size = new System.Drawing.Size(581, 459);
             this.roundedPanel1.TabIndex = 0;
             // 
+            // btnMostrarSenha
+            // 
+            this.btnMostrarSenha.BackColor = System.Drawing.Color.Transparent;
+            this.btnMostrarSenha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMostrarSenha.FlatAppearance.BorderSize = 0;
+            this.btnMostrarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarSenha.Location = new System.Drawing.Point(519, 279);
+            this.btnMostrarSenha.Name = "btnMostrarSenha";
+            this.btnMostrarSenha.Size = new System.Drawing.Size(28, 29);
+            this.btnMostrarSenha.TabIndex = 31;
+            this.btnMostrarSenha.UseVisualStyleBackColor = false;
+            this.btnMostrarSenha.Click += new System.EventHandler(this.btnMostrarSenha_Click);
+            // 
             // txtSenha
             // 
             this.txtSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSenha.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSenha.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(74, 277);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(439, 35);
+            this.txtSenha.Size = new System.Drawing.Size(439, 39);
             this.txtSenha.TabIndex = 8;
             // 
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
-            this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(74, 142);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(439, 35);
+            this.txtEmail.Size = new System.Drawing.Size(439, 39);
             this.txtEmail.TabIndex = 11;
             // 
             // btnRecuperar
@@ -169,6 +184,7 @@
             this.btnRecuperar.TabIndex = 17;
             this.btnRecuperar.TabStop = true;
             this.btnRecuperar.Text = "Recuperar";
+            this.btnRecuperar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnRecuperar_LinkClicked);
             // 
             // label7
             // 
@@ -246,6 +262,7 @@
             this.Name = "EntrarUsuario";
             this.Text = "EntrarUsuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.EntrarUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -271,5 +288,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnMostrarSenha;
     }
 }

@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="Class\Empresa.cs" />
     <Compile Include="Class\EmpresaManager.cs" />
     <Compile Include="Class\Endereco.cs" />
@@ -342,6 +341,23 @@
     <None Include="Resources\IconeNotificacao.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\CategoriaHobbies.png" />
+    <None Include="Resources\CategoriaMeioAmbiente.png" />
+    <None Include="Resources\CategoriaVoluntariado.png" />
+    <None Include="Resources\CategoriaEntretenimento.png" />
+    <None Include="Resources\CategoriaNegocios.png" />
+    <None Include="Resources\CategoriaCulinária.png" />
+    <None Include="Resources\CategoriaSociedade.png" />
+    <None Include="Resources\CategoriaEsportes.png" />
+    <None Include="Resources\CategoriaFestas.png" />
+    <None Include="Resources\CategoriaFeiras.png" />
+    <None Include="Resources\CategoriaEspiritualidade.png" />
+    <None Include="Resources\CategoriaCompeticoes.png" />
+    <None Include="Resources\CategoriaCiencia.png" />
+    <None Include="Resources\CategoriaDanca.png" />
+    <None Include="Resources\CategoriaArtes.png" />
+    <None Include="Resources\icons8-hide-24.png" />
+    <None Include="Resources\icons8-eye-30.png" />
     <None Include="Resources\medioEngajamento.png" />
     <None Include="Resources\baixoEngajamento.png" />
     <None Include="Resources\altoEngajamento.png" />

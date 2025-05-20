@@ -800,6 +800,7 @@
             this.btnPrincipal.TabStop = true;
             this.btnPrincipal.Text = "CONNECTA";
             this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnPrincipal_LinkClicked);
             // 
             // btnNotificacoes
             // 

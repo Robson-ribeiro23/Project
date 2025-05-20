@@ -93,6 +93,20 @@ namespace Acelera2025.Telas
             //principal.Show();
             //this.Hide();
         }
+
+        private void txtUF_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CadastrarEmpresaEndereço_Load(object sender, EventArgs e)
+        {
+            string[] estados = { "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO",
+                     "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR",
+                     "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" };
+
+            comboUF.Items.AddRange(estados);
+        }
     }
 }
 

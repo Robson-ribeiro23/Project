@@ -34,12 +34,12 @@
             this.btnEntrar = new RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new RoundedPanel();
+            this.comboUF = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtUF = new System.Windows.Forms.TextBox();
             this.txtNomeDaRua = new System.Windows.Forms.TextBox();
             this.txtCep = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
@@ -127,12 +127,12 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
+            this.roundedPanel1.Controls.Add(this.comboUF);
             this.roundedPanel1.Controls.Add(this.label9);
             this.roundedPanel1.Controls.Add(this.txtNumero);
             this.roundedPanel1.Controls.Add(this.label8);
             this.roundedPanel1.Controls.Add(this.txtBairro);
             this.roundedPanel1.Controls.Add(this.label6);
-            this.roundedPanel1.Controls.Add(this.txtUF);
             this.roundedPanel1.Controls.Add(this.txtNomeDaRua);
             this.roundedPanel1.Controls.Add(this.txtCep);
             this.roundedPanel1.Controls.Add(this.txtCidade);
@@ -146,6 +146,18 @@
             this.roundedPanel1.Size = new System.Drawing.Size(581, 516);
             this.roundedPanel1.TabIndex = 0;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
+            // 
+            // comboUF
+            // 
+            this.comboUF.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.comboUF.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboUF.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboUF.FormattingEnabled = true;
+            this.comboUF.Location = new System.Drawing.Point(455, 149);
+            this.comboUF.Margin = new System.Windows.Forms.Padding(4);
+            this.comboUF.Name = "comboUF";
+            this.comboUF.Size = new System.Drawing.Size(89, 38);
+            this.comboUF.TabIndex = 28;
             // 
             // label9
             // 
@@ -163,10 +175,10 @@
             // 
             this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNumero.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNumero.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumero.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumero.Location = new System.Drawing.Point(455, 343);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(58, 35);
+            this.txtNumero.Size = new System.Drawing.Size(58, 39);
             this.txtNumero.TabIndex = 22;
             // 
             // label8
@@ -185,10 +197,10 @@
             // 
             this.txtBairro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBairro.BackColor = System.Drawing.SystemColors.Control;
-            this.txtBairro.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBairro.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.Location = new System.Drawing.Point(307, 243);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(206, 35);
+            this.txtBairro.Size = new System.Drawing.Size(206, 39);
             this.txtBairro.TabIndex = 20;
             // 
             // label6
@@ -203,24 +215,14 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "UF:";
             // 
-            // txtUF
-            // 
-            this.txtUF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUF.BackColor = System.Drawing.SystemColors.Control;
-            this.txtUF.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUF.Location = new System.Drawing.Point(455, 148);
-            this.txtUF.Name = "txtUF";
-            this.txtUF.Size = new System.Drawing.Size(58, 35);
-            this.txtUF.TabIndex = 18;
-            // 
             // txtNomeDaRua
             // 
             this.txtNomeDaRua.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNomeDaRua.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNomeDaRua.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeDaRua.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeDaRua.Location = new System.Drawing.Point(74, 343);
             this.txtNomeDaRua.Name = "txtNomeDaRua";
-            this.txtNomeDaRua.Size = new System.Drawing.Size(356, 35);
+            this.txtNomeDaRua.Size = new System.Drawing.Size(356, 39);
             this.txtNomeDaRua.TabIndex = 8;
             this.txtNomeDaRua.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -228,20 +230,20 @@
             // 
             this.txtCep.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCep.BackColor = System.Drawing.SystemColors.Control;
-            this.txtCep.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCep.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCep.Location = new System.Drawing.Point(74, 243);
             this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(206, 35);
+            this.txtCep.Size = new System.Drawing.Size(206, 39);
             this.txtCep.TabIndex = 11;
             // 
             // txtCidade
             // 
             this.txtCidade.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCidade.BackColor = System.Drawing.SystemColors.Control;
-            this.txtCidade.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidade.Location = new System.Drawing.Point(74, 148);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(356, 35);
+            this.txtCidade.Size = new System.Drawing.Size(356, 39);
             this.txtCidade.TabIndex = 10;
             this.txtCidade.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -311,16 +313,17 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Endereço da empresa";
             // 
-            // CadastrarEmpresa2
+            // CadastrarEmpresaEndereço
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1411, 726);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "CadastrarEmpresa2";
+            this.Name = "CadastrarEmpresaEndereço";
             this.Text = "Form3";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CadastrarEmpresaEndereço_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -346,11 +349,11 @@
         private RoundedButton btnCadastrar;
         private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtUF;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.ComboBox comboUF;
     }
 }

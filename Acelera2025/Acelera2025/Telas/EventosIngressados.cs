@@ -16,5 +16,12 @@ namespace Acelera2025.Telas
         {
             InitializeComponent();
         }
+
+        private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Principal p = new Principal();
+            p.Show();
+            this.Hide();
+        }
     }
 }

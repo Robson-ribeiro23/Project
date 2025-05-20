@@ -42,11 +42,11 @@
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel5.SuspendLayout();
@@ -100,6 +100,7 @@
             this.btnPrincipal.TabStop = true;
             this.btnPrincipal.Text = "CONNECTA";
             this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnPrincipal_LinkClicked);
             // 
             // btnNotificacoes
             // 
@@ -241,6 +242,23 @@
             this.panel1.Size = new System.Drawing.Size(1409, 652);
             this.panel1.TabIndex = 25;
             // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(363, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(683, 652);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(363, 652);
+            this.panel3.TabIndex = 1;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel5);
@@ -251,22 +269,14 @@
             this.panel2.Size = new System.Drawing.Size(363, 652);
             this.panel2.TabIndex = 0;
             // 
-            // panel3
+            // panel5
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(363, 652);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.AutoScroll = true;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(363, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(683, 652);
-            this.panel4.TabIndex = 2;
+            this.panel5.AutoScroll = true;
+            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel5.Location = new System.Drawing.Point(32, 74);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(294, 552);
+            this.panel5.TabIndex = 5;
             // 
             // label10
             // 
@@ -279,15 +289,6 @@
             this.label10.Size = new System.Drawing.Size(152, 41);
             this.label10.TabIndex = 4;
             this.label10.Text = "Notificações";
-            // 
-            // panel5
-            // 
-            this.panel5.AutoScroll = true;
-            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel5.Location = new System.Drawing.Point(32, 74);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(294, 552);
-            this.panel5.TabIndex = 5;
             // 
             // Feed
             // 

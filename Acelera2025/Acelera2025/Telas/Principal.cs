@@ -319,5 +319,24 @@ namespace Acelera2025.Telas
         {
 
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            Pesquisa pesquisa = new Pesquisa();
+            pesquisa.Show();
+            this.Hide();
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVerMais_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Categorias categorias = new Categorias();
+            categorias.Show();
+            this.Hide();
+        }
     }
 }

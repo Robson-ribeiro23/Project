@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera2025.Class;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Acelera2025.Telas
 {
@@ -21,6 +22,20 @@ namespace Acelera2025.Telas
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void CadastrarUsuario_Load(object sender, EventArgs e)
+        {
+            string[] estados = { "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO",
+                     "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR",
+                     "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" };
+
+            comboUF.Items.AddRange(estados);
+            txtSenha.PasswordChar = '*';
+            btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+
+            txtConfirmarSenha.PasswordChar = '*';
+            btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -66,6 +81,39 @@ namespace Acelera2025.Telas
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMostrarSenha_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.PasswordChar == '*')
+            {
+                txtSenha.PasswordChar = '\0';
+                btnMostrarSenha.Image = Properties.Resources.icons8_eye_30_1;
+            }
+            else
+            {
+                txtSenha.PasswordChar = '*';
+                btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+            }
+        }
+
+        private void btnMostrarSenhaConfirmar_Click(object sender, EventArgs e)
+        {
+            if (txtConfirmarSenha.PasswordChar == '*')
+            {
+                txtConfirmarSenha.PasswordChar = '\0';
+                btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_eye_30_1;
+            }
+            else
+            {
+                txtConfirmarSenha.PasswordChar = '*';
+                btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
+            }
         }
     }
 }

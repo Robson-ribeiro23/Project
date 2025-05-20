@@ -57,5 +57,41 @@ namespace Acelera2025.Telas
         {
 
         }
+
+        private void btnMostrarSenha_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.PasswordChar == '*')
+            {
+                txtSenha.PasswordChar = '\0';
+                btnMostrarSenha.Image = Properties.Resources.icons8_eye_30_1;
+            }
+            else
+            {
+                txtSenha.PasswordChar = '*';
+                btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+            }
+        }
+
+        private void CadastrarEmpresa_Load(object sender, EventArgs e)
+        {
+            txtSenha.PasswordChar = '*';
+            btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+            txtConfirmarSenha.PasswordChar = '*';
+            btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
+        }
+
+        private void btnMostrarSenhaConfirmar_Click(object sender, EventArgs e)
+        {
+             if (txtConfirmarSenha.PasswordChar == '*')
+                {
+                    txtConfirmarSenha.PasswordChar = '\0';
+                    btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_eye_30_1;
+                }
+                else
+                {
+                    txtConfirmarSenha.PasswordChar = '*';
+                    btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
+                }
+        }
     }
 }

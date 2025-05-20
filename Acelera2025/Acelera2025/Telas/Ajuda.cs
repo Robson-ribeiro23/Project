@@ -72,5 +72,12 @@ namespace Acelera2025.Telas
             sobreNos.Show();
             this.Hide();
         }
+
+        private void btnPrincipal_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Principal p = new Principal();
+            p.Show();
+            this.Hide();
+        }
     }
 }

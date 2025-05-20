@@ -57,5 +57,32 @@ namespace Acelera2025.Telas
             }
 
         }
+
+        private void btnMostrarSenha_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.PasswordChar == '*')
+            {
+                txtSenha.PasswordChar = '\0';
+                btnMostrarSenha.Image = Properties.Resources.icons8_eye_30_1;
+            }
+            else
+            {
+                txtSenha.PasswordChar = '*';
+                btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+            }
+        }
+
+        private void EntrarUsuario_Load(object sender, EventArgs e)
+        {
+            txtSenha.PasswordChar = '*';
+            btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+        }
+
+        private void btnRecuperar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Principal p = new Principal();
+            p.Show();
+            this.Hide();
+        }
     }
 }
