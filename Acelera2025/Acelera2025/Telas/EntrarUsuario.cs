@@ -50,10 +50,8 @@ namespace Acelera2025.Telas
                 MessageBox.Show("Logado com sucesso!");
             } else
             {
-                this.Close();
-                CadastrarUsuario cadastrarUsuario = new CadastrarUsuario();
-                cadastrarUsuario.Show();
-                MessageBox.Show("Usuário não cadastrado!");
+               
+                MessageBox.Show("Email ou senha incorretos!");
             }
 
         }

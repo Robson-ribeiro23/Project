@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera2025.Class;
 
 namespace Acelera2025.Telas
 {
@@ -43,10 +44,27 @@ namespace Acelera2025.Telas
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            Principal principal = new Principal();
-            principal.Show();
-            this.Hide();
+            string email = txtEmail.Text;
+            string senha = txtSenha.Text;
+            string cnpj = txtCnpj.Text;
+
+         
+
+            if (EmpresaManager.GetInstance().SearchByEmailAndPasswordAndCnpj(cnpj,email, senha) != null)
+            {
+                this.Close();
+                Principal principal = new Principal();
+                principal.Show();
+                MessageBox.Show("Logado com sucesso!");
+            }
+            else
+            {
+
+                MessageBox.Show("dados incorretos!");
+            }
+
         }
+       
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
         {

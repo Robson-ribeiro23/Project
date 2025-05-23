@@ -115,5 +115,15 @@ namespace Acelera2025.Telas
                 btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
             }
         }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCpf_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
