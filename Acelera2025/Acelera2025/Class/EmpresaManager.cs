@@ -19,6 +19,15 @@ namespace Acelera2025.Class
             Instance = this;
         }
 
+        public static EmpresaManager GetInstance()
+        {
+            if (Instance == null)
+            {
+                Instance = new EmpresaManager();
+            }
+            return Instance;
+        }
+
         public ArrayList GetEmpresaDB()
         {
             return empresaDB;
@@ -35,7 +44,18 @@ namespace Acelera2025.Class
             empresa.SetActivity(true); // true = inativa
         }
 
-        public Empresa BuscarPorEmailSenha(string email, string senha)
+        public Empresa SearchByEmailAndPasswordAndCnpj(string cnpj, string email, string senha)
+        {
+            foreach (Empresa e in empresaDB)
+            {
+                if (e.GetEmail() == email && e.GetSenha() == senha && e.GetCNPJ() == cnpj && !e.IsInactive())
+                {
+                    return e;
+                }
+            }
+            return null;
+        }
+        public Empresa SearchByEmailAndPassword(string email, string senha)
         {
             foreach (Empresa e in empresaDB)
             {

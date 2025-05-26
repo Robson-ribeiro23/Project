@@ -1,4 +1,4 @@
-﻿namespace Acelera2025.Telas
+namespace Acelera2025.Telas
 {
     partial class CadastrarUsuario
     {
@@ -67,9 +67,9 @@
             this.panel1.Controls.Add(this.btnEntrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(565, 756);
+            this.panel1.Size = new System.Drawing.Size(424, 614);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -81,10 +81,10 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Location = new System.Drawing.Point(31, 26);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoltar.Location = new System.Drawing.Point(23, 21);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(44, 54);
+            this.btnVoltar.Size = new System.Drawing.Size(33, 44);
             this.btnVoltar.TabIndex = 11;
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -95,9 +95,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(185, 298);
+            this.label2.Location = new System.Drawing.Point(139, 242);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 58);
+            this.label2.Size = new System.Drawing.Size(156, 48);
             this.label2.TabIndex = 8;
             this.label2.Text = "Fazer Login";
             // 
@@ -111,10 +112,10 @@
             this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnEntrar.Location = new System.Drawing.Point(187, 358);
-            this.btnEntrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEntrar.Location = new System.Drawing.Point(140, 291);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(189, 39);
+            this.btnEntrar.Size = new System.Drawing.Size(142, 32);
             this.btnEntrar.TabIndex = 7;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
@@ -125,10 +126,10 @@
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Controls.Add(this.roundedPanel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(565, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(424, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(855, 756);
+            this.panel2.Size = new System.Drawing.Size(641, 614);
             this.panel2.TabIndex = 5;
             // 
             // roundedPanel1
@@ -158,10 +159,10 @@
             this.roundedPanel1.Controls.Add(this.label5);
             this.roundedPanel1.Controls.Add(this.label3);
             this.roundedPanel1.Controls.Add(this.label1);
-            this.roundedPanel1.Location = new System.Drawing.Point(89, 11);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPanel1.Location = new System.Drawing.Point(67, 9);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(703, 724);
+            this.roundedPanel1.Size = new System.Drawing.Size(527, 588);
             this.roundedPanel1.TabIndex = 0;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
@@ -171,9 +172,11 @@
             this.btnMostrarSenhaConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMostrarSenhaConfirmar.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenhaConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+
             this.btnMostrarSenhaConfirmar.Location = new System.Drawing.Point(634, 519);
             this.btnMostrarSenhaConfirmar.Name = "btnMostrarSenhaConfirmar";
             this.btnMostrarSenhaConfirmar.Size = new System.Drawing.Size(28, 24);
+
             this.btnMostrarSenhaConfirmar.TabIndex = 31;
             this.btnMostrarSenhaConfirmar.UseVisualStyleBackColor = false;
             this.btnMostrarSenhaConfirmar.Click += new System.EventHandler(this.btnMostrarSenhaConfirmar_Click);
@@ -184,9 +187,10 @@
             this.btnMostrarSenha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMostrarSenha.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarSenha.Location = new System.Drawing.Point(634, 425);
+            this.btnMostrarSenha.Location = new System.Drawing.Point(476, 345);
+            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMostrarSenha.Name = "btnMostrarSenha";
-            this.btnMostrarSenha.Size = new System.Drawing.Size(28, 24);
+            this.btnMostrarSenha.Size = new System.Drawing.Size(21, 20);
             this.btnMostrarSenha.TabIndex = 30;
             this.btnMostrarSenha.UseVisualStyleBackColor = false;
             this.btnMostrarSenha.Click += new System.EventHandler(this.btnMostrarSenha_Click);
@@ -197,10 +201,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label10.Location = new System.Drawing.Point(556, 568);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(417, 462);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(39, 32);
+            this.label10.Size = new System.Drawing.Size(32, 27);
             this.label10.TabIndex = 29;
             this.label10.Text = "UF:";
             // 
@@ -210,10 +213,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label9.Location = new System.Drawing.Point(331, 568);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(248, 462);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 32);
+            this.label9.Size = new System.Drawing.Size(62, 27);
             this.label9.TabIndex = 28;
             this.label9.Text = "Cidade:";
             // 
@@ -223,10 +225,9 @@
             this.comboUF.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboUF.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboUF.FormattingEnabled = true;
-            this.comboUF.Location = new System.Drawing.Point(562, 599);
-            this.comboUF.Margin = new System.Windows.Forms.Padding(4);
+            this.comboUF.Location = new System.Drawing.Point(422, 487);
             this.comboUF.Name = "comboUF";
-            this.comboUF.Size = new System.Drawing.Size(89, 38);
+            this.comboUF.Size = new System.Drawing.Size(68, 33);
             this.comboUF.TabIndex = 27;
             // 
             // label4
@@ -235,10 +236,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(76, 568);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(57, 462);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 32);
+            this.label4.Size = new System.Drawing.Size(151, 27);
             this.label4.TabIndex = 26;
             this.label4.Text = "Data de Nascimento:";
             // 
@@ -247,20 +247,18 @@
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(337, 604);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(253, 491);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 39);
+            this.textBox1.Size = new System.Drawing.Size(135, 33);
             this.textBox1.TabIndex = 25;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(82, 600);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker1.Location = new System.Drawing.Point(62, 488);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(224, 39);
+            this.dateTimePicker1.Size = new System.Drawing.Size(169, 33);
             this.dateTimePicker1.TabIndex = 24;
             // 
             // txtConfirmarSenha
@@ -268,10 +266,10 @@
             this.txtConfirmarSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtConfirmarSenha.BackColor = System.Drawing.SystemColors.Control;
             this.txtConfirmarSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmarSenha.Location = new System.Drawing.Point(82, 510);
-            this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtConfirmarSenha.Location = new System.Drawing.Point(62, 414);
+            this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
-            this.txtConfirmarSenha.Size = new System.Drawing.Size(547, 39);
+            this.txtConfirmarSenha.Size = new System.Drawing.Size(411, 33);
             this.txtConfirmarSenha.TabIndex = 23;
             // 
             // label8
@@ -280,9 +278,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(75, 476);
+            this.label8.Location = new System.Drawing.Point(56, 387);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 32);
+            this.label8.Size = new System.Drawing.Size(125, 27);
             this.label8.TabIndex = 22;
             this.label8.Text = "Confirmar Senha:";
             // 
@@ -292,9 +291,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(76, 287);
+            this.label7.Location = new System.Drawing.Point(57, 233);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 32);
+            this.label7.Size = new System.Drawing.Size(58, 27);
             this.label7.TabIndex = 21;
             this.label7.Text = "E-mail:";
             // 
@@ -303,10 +303,10 @@
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
             this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(82, 321);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmail.Location = new System.Drawing.Point(62, 261);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(547, 39);
+            this.txtEmail.Size = new System.Drawing.Size(411, 33);
             this.txtEmail.TabIndex = 20;
             // 
             // txtNome
@@ -315,11 +315,12 @@
             this.txtNome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNome.BackColor = System.Drawing.SystemColors.Control;
             this.txtNome.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(82, 115);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNome.Location = new System.Drawing.Point(62, 93);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(547, 39);
+            this.txtNome.Size = new System.Drawing.Size(411, 33);
             this.txtNome.TabIndex = 19;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // label6
             // 
@@ -327,8 +328,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(76, 81);
+            this.label6.Location = new System.Drawing.Point(57, 66);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
+
             this.label6.Size = new System.Drawing.Size(151, 32);
             this.label6.TabIndex = 18;
             this.label6.Text = "Nome Completo:";
@@ -338,10 +341,10 @@
             this.txtSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSenha.BackColor = System.Drawing.SystemColors.Control;
             this.txtSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(82, 416);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSenha.Location = new System.Drawing.Point(62, 338);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(546, 39);
+            this.txtSenha.Size = new System.Drawing.Size(410, 33);
             this.txtSenha.TabIndex = 8;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
@@ -351,11 +354,12 @@
             this.txtCpf.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCpf.BackColor = System.Drawing.SystemColors.Control;
             this.txtCpf.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpf.Location = new System.Drawing.Point(82, 218);
-            this.txtCpf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCpf.Location = new System.Drawing.Point(62, 177);
+            this.txtCpf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(547, 39);
+            this.txtCpf.Size = new System.Drawing.Size(411, 33);
             this.txtCpf.TabIndex = 10;
+            this.txtCpf.TextChanged += new System.EventHandler(this.txtCpf_TextChanged);
             // 
             // btnCadastrar
             // 
@@ -367,10 +371,10 @@
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCadastrar.Location = new System.Drawing.Point(272, 665);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCadastrar.Location = new System.Drawing.Point(204, 540);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(189, 39);
+            this.btnCadastrar.Size = new System.Drawing.Size(142, 32);
             this.btnCadastrar.TabIndex = 15;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -382,9 +386,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(75, 382);
+            this.label5.Location = new System.Drawing.Point(56, 310);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 32);
+            this.label5.Size = new System.Drawing.Size(55, 27);
             this.label5.TabIndex = 14;
             this.label5.Text = "Senha:";
             // 
@@ -394,9 +399,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(76, 183);
+            this.label3.Location = new System.Drawing.Point(57, 149);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 32);
+            this.label3.Size = new System.Drawing.Size(39, 27);
             this.label3.TabIndex = 8;
             this.label3.Text = "CPF:";
             // 
@@ -406,20 +412,21 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(223, 24);
+            this.label1.Location = new System.Drawing.Point(167, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 58);
+            this.label1.Size = new System.Drawing.Size(227, 48);
             this.label1.TabIndex = 6;
             this.label1.Text = "Cadastrar usuário";
             // 
             // CadastrarUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1420, 756);
+            this.ClientSize = new System.Drawing.Size(1065, 614);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CadastrarUsuario";
             this.Text = "CadastrarUsuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

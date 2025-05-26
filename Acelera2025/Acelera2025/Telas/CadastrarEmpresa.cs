@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera2025.Class;
 
 namespace Acelera2025.Telas
 {
@@ -31,9 +33,39 @@ namespace Acelera2025.Telas
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            CadastrarEmpresaEndereço cadastrarEmpresa2 = new CadastrarEmpresaEndereço();
-            cadastrarEmpresa2.Show();
-            this.Hide();
+         
+            string nome = txtNomeEmpresa.Text;
+            string cnpj = txtCnpj.Text;
+            string telefone = txtTelefone.Text;
+            string email = txtEmail.Text;
+            string senha = txtSenha.Text;
+            
+
+            Empresa empresa = new Empresa(nome, cnpj, telefone, email, senha);
+
+            if (EmpresaManager.GetInstance().SearchByEmailAndPassword(email, senha) == null)
+            {
+                EmpresaManager.GetInstance().AddEmpresa(empresa);
+
+                limparCampos();
+
+                MessageBox.Show("Empresa cadastrada!");
+            }
+            else
+            {
+                MessageBox.Show("Email já cadastrado!");
+            }
+        }
+
+
+        void limparCampos()
+        {
+            txtNomeEmpresa.Text = "";
+            txtCnpj.Text = "";
+            txtTelefone.Text = "";
+            txtEmail.Text = "";
+            txtSenha.Text = "";
+            txtConfirmarSenha.Text = "";
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
