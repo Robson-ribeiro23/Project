@@ -12,9 +12,23 @@ namespace Acelera2025.Telas
 {
     public partial class EventosIngressados: Form
     {
+        private CardPerfil cardPerfil;
+        private bool cardPerfilVisivel = false;
         public EventosIngressados()
         {
             InitializeComponent();
+        } 
+
+        private void EventosIngressados_Load(object sender, EventArgs e)
+        {
+            cardPerfil = new CardPerfil();
+            cardPerfil.Visible = false;
+
+
+            panel1.Controls.Add(cardPerfil);
+            cardPerfil.Location = new Point(panel1.Width - cardPerfil.Width - 20, 0);
+            cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
+            cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
         }
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -23,5 +37,14 @@ namespace Acelera2025.Telas
             p.Show();
             this.Hide();
         }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            cardPerfilVisivel = !cardPerfilVisivel;
+            cardPerfil.Visible = cardPerfilVisivel;
+            cardPerfil.BringToFront();
+        }
+
+       
     }
 }

@@ -143,6 +143,7 @@
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(47, 48);
             this.btnPerfil.TabIndex = 9;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // roundedPanel5
             // 
@@ -281,7 +282,7 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1086, 6);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1065, 6);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
             this.panelMeusEventos.TabIndex = 65;
@@ -336,7 +337,7 @@
             this.superiorRoundedPanel1.Controls.Add(this.lblNomeEmpresa);
             this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 185);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1616, 782);
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1595, 782);
             this.superiorRoundedPanel1.TabIndex = 64;
             // 
             // tabControl1
@@ -353,7 +354,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(30, 15);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1385, 635);
+            this.tabControl1.Size = new System.Drawing.Size(1364, 635);
             this.tabControl1.TabIndex = 60;
             // 
             // tabPage1
@@ -362,7 +363,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 60);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1377, 571);
+            this.tabPage1.Size = new System.Drawing.Size(1356, 571);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sobre";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -385,7 +386,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 60);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1398, 571);
+            this.tabPage2.Size = new System.Drawing.Size(1377, 571);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Participações";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -395,7 +396,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 60);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1398, 571);
+            this.tabPage3.Size = new System.Drawing.Size(1377, 571);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Disponíveis";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -405,7 +406,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 60);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1398, 571);
+            this.tabPage4.Size = new System.Drawing.Size(1377, 571);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Encerrados";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -415,7 +416,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 60);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1398, 571);
+            this.tabPage5.Size = new System.Drawing.Size(1377, 571);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Posts";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -426,7 +427,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label3.Location = new System.Drawing.Point(1373, 70);
+            this.label3.Location = new System.Drawing.Point(1352, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 32);
             this.label3.TabIndex = 59;
@@ -438,7 +439,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label2.Location = new System.Drawing.Point(1373, 30);
+            this.label2.Location = new System.Drawing.Point(1352, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 32);
             this.label2.TabIndex = 58;
@@ -454,7 +455,7 @@
             this.btnEntrarEmContato.FlatAppearance.BorderSize = 0;
             this.btnEntrarEmContato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrarEmContato.Image = ((System.Drawing.Image)(resources.GetObject("btnEntrarEmContato.Image")));
-            this.btnEntrarEmContato.Location = new System.Drawing.Point(1324, 68);
+            this.btnEntrarEmContato.Location = new System.Drawing.Point(1303, 68);
             this.btnEntrarEmContato.Name = "btnEntrarEmContato";
             this.btnEntrarEmContato.Size = new System.Drawing.Size(31, 32);
             this.btnEntrarEmContato.TabIndex = 57;
@@ -470,7 +471,7 @@
             this.btnSeguir.FlatAppearance.BorderSize = 0;
             this.btnSeguir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguir.Image = ((System.Drawing.Image)(resources.GetObject("btnSeguir.Image")));
-            this.btnSeguir.Location = new System.Drawing.Point(1322, 27);
+            this.btnSeguir.Location = new System.Drawing.Point(1301, 27);
             this.btnSeguir.Name = "btnSeguir";
             this.btnSeguir.Size = new System.Drawing.Size(33, 35);
             this.btnSeguir.TabIndex = 56;
@@ -509,6 +510,7 @@
             this.Name = "PerfilEmpresa";
             this.Text = "PerfilEmpresa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.PerfilEmpresa_Load);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -81,6 +81,12 @@
     <Compile Include="Telas\CardParticipantes.Designer.cs">
       <DependentUpon>CardParticipantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\CardPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardPerfil.Designer.cs">
+      <DependentUpon>CardPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CardParticipantes.resx">
       <DependentUpon>CardParticipantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CardPerfil.resx">
+      <DependentUpon>CardPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>

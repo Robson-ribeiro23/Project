@@ -31,10 +31,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Categorias));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelMeusEventos = new RoundedPanel();
+            this.btnEventosCriados = new RoundedButton();
+            this.btnEventosIngressados = new RoundedButton();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
             this.gradientPanel2 = new GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.roundedPanel2 = new RoundedPanel();
+            this.circularButton20 = new CircularButton();
+            this.circularButton19 = new CircularButton();
+            this.circularButton18 = new CircularButton();
+            this.circularButton17 = new CircularButton();
+            this.circularButton16 = new CircularButton();
+            this.circularButton15 = new CircularButton();
+            this.circularButton14 = new CircularButton();
+            this.circularButton13 = new CircularButton();
+            this.circularButton12 = new CircularButton();
+            this.circularButton11 = new CircularButton();
+            this.circularButton10 = new CircularButton();
+            this.circularButton9 = new CircularButton();
+            this.circularButton8 = new CircularButton();
+            this.circularButton7 = new CircularButton();
+            this.circularButton6 = new CircularButton();
+            this.circularButton5 = new CircularButton();
+            this.circularButton4 = new CircularButton();
+            this.circularButton3 = new CircularButton();
+            this.circularButton1 = new CircularButton();
+            this.circularButton2 = new CircularButton();
             this.label25 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -58,48 +81,29 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnMusica = new CircularButton();
             this.label10 = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnPerfil = new CircularPanel();
             this.roundedPanel5 = new RoundedPanel();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.btnPrincipal = new System.Windows.Forms.LinkLabel();
             this.btnOrganizarEventos = new System.Windows.Forms.LinkLabel();
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.circularButton20 = new CircularButton();
-            this.circularButton19 = new CircularButton();
-            this.circularButton18 = new CircularButton();
-            this.circularButton17 = new CircularButton();
-            this.circularButton16 = new CircularButton();
-            this.circularButton15 = new CircularButton();
-            this.circularButton14 = new CircularButton();
-            this.circularButton13 = new CircularButton();
-            this.circularButton12 = new CircularButton();
-            this.circularButton11 = new CircularButton();
-            this.circularButton10 = new CircularButton();
-            this.circularButton9 = new CircularButton();
-            this.circularButton8 = new CircularButton();
-            this.circularButton7 = new CircularButton();
-            this.circularButton6 = new CircularButton();
-            this.circularButton5 = new CircularButton();
-            this.circularButton4 = new CircularButton();
-            this.circularButton3 = new CircularButton();
-            this.circularButton1 = new CircularButton();
-            this.circularButton2 = new CircularButton();
-            this.btnMusica = new CircularButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnNotificacoes = new System.Windows.Forms.Button();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panelMeusEventos.SuspendLayout();
             this.superiorRoundedPanel1.SuspendLayout();
             this.gradientPanel2.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
-            this.roundedPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.roundedPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,6 +122,7 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
+            this.panel2.Controls.Add(this.panelMeusEventos);
             this.panel2.Controls.Add(this.superiorRoundedPanel1);
             this.panel2.Controls.Add(this.roundedPanel2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -127,6 +132,55 @@
             this.panel2.TabIndex = 33;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // panelMeusEventos
+            // 
+            this.panelMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelMeusEventos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelMeusEventos.BorderColor = System.Drawing.Color.Black;
+            this.panelMeusEventos.BorderRadius = 20;
+            this.panelMeusEventos.BorderSize = 0;
+            this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
+            this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1143, 6);
+            this.panelMeusEventos.Name = "panelMeusEventos";
+            this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
+            this.panelMeusEventos.TabIndex = 75;
+            this.panelMeusEventos.Visible = false;
+            // 
+            // btnEventosCriados
+            // 
+            this.btnEventosCriados.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEventosCriados.BorderColor = System.Drawing.Color.Black;
+            this.btnEventosCriados.BorderRadius = 20;
+            this.btnEventosCriados.BorderSize = 0;
+            this.btnEventosCriados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEventosCriados.Location = new System.Drawing.Point(0, 49);
+            this.btnEventosCriados.Name = "btnEventosCriados";
+            this.btnEventosCriados.Size = new System.Drawing.Size(245, 51);
+            this.btnEventosCriados.TabIndex = 1;
+            this.btnEventosCriados.Text = "Eventos Criados";
+            this.btnEventosCriados.UseVisualStyleBackColor = false;
+            this.btnEventosCriados.Click += new System.EventHandler(this.btnEventosCriados_Click);
+            // 
+            // btnEventosIngressados
+            // 
+            this.btnEventosIngressados.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEventosIngressados.BorderColor = System.Drawing.Color.Black;
+            this.btnEventosIngressados.BorderRadius = 20;
+            this.btnEventosIngressados.BorderSize = 0;
+            this.btnEventosIngressados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEventosIngressados.Location = new System.Drawing.Point(0, 3);
+            this.btnEventosIngressados.Name = "btnEventosIngressados";
+            this.btnEventosIngressados.Size = new System.Drawing.Size(245, 55);
+            this.btnEventosIngressados.TabIndex = 0;
+            this.btnEventosIngressados.Text = "Eventos Ingressados";
+            this.btnEventosIngressados.UseVisualStyleBackColor = false;
+            this.btnEventosIngressados.Click += new System.EventHandler(this.btnEventosIngressados_Click);
+            // 
             // superiorRoundedPanel1
             // 
             this.superiorRoundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -134,7 +188,7 @@
             this.superiorRoundedPanel1.BorderRadius = 20;
             this.superiorRoundedPanel1.BorderSize = 0;
             this.superiorRoundedPanel1.Controls.Add(this.gradientPanel2);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(28, 32);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(26, 32);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1639, 83);
             this.superiorRoundedPanel1.TabIndex = 74;
@@ -213,10 +267,271 @@
             this.roundedPanel2.Controls.Add(this.label9);
             this.roundedPanel2.Controls.Add(this.label6);
             this.roundedPanel2.Controls.Add(this.label14);
-            this.roundedPanel2.Location = new System.Drawing.Point(28, 141);
+            this.roundedPanel2.Location = new System.Drawing.Point(26, 141);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(1651, 1080);
             this.roundedPanel2.TabIndex = 73;
+            // 
+            // circularButton20
+            // 
+            this.circularButton20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton20.BorderSize = 2;
+            this.circularButton20.Image = global::Acelera2025.Properties.Resources.CategoriaHobbies;
+            this.circularButton20.Location = new System.Drawing.Point(1226, 765);
+            this.circularButton20.Name = "circularButton20";
+            this.circularButton20.Size = new System.Drawing.Size(183, 186);
+            this.circularButton20.TabIndex = 92;
+            this.circularButton20.UseVisualStyleBackColor = false;
+            // 
+            // circularButton19
+            // 
+            this.circularButton19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton19.BorderSize = 2;
+            this.circularButton19.Image = global::Acelera2025.Properties.Resources.CategoriaMeioAmbiente;
+            this.circularButton19.Location = new System.Drawing.Point(999, 765);
+            this.circularButton19.Name = "circularButton19";
+            this.circularButton19.Size = new System.Drawing.Size(183, 186);
+            this.circularButton19.TabIndex = 91;
+            this.circularButton19.UseVisualStyleBackColor = false;
+            // 
+            // circularButton18
+            // 
+            this.circularButton18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton18.BorderSize = 2;
+            this.circularButton18.Image = global::Acelera2025.Properties.Resources.CategoriaVoluntariado;
+            this.circularButton18.Location = new System.Drawing.Point(757, 765);
+            this.circularButton18.Name = "circularButton18";
+            this.circularButton18.Size = new System.Drawing.Size(183, 186);
+            this.circularButton18.TabIndex = 90;
+            this.circularButton18.UseVisualStyleBackColor = false;
+            // 
+            // circularButton17
+            // 
+            this.circularButton17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton17.BorderSize = 2;
+            this.circularButton17.Image = global::Acelera2025.Properties.Resources.CategoriaEntretenimento;
+            this.circularButton17.Location = new System.Drawing.Point(513, 765);
+            this.circularButton17.Name = "circularButton17";
+            this.circularButton17.Size = new System.Drawing.Size(183, 186);
+            this.circularButton17.TabIndex = 89;
+            this.circularButton17.UseVisualStyleBackColor = false;
+            // 
+            // circularButton16
+            // 
+            this.circularButton16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton16.BorderSize = 2;
+            this.circularButton16.Image = global::Acelera2025.Properties.Resources.CategoriaNegocios;
+            this.circularButton16.Location = new System.Drawing.Point(267, 765);
+            this.circularButton16.Name = "circularButton16";
+            this.circularButton16.Size = new System.Drawing.Size(183, 186);
+            this.circularButton16.TabIndex = 88;
+            this.circularButton16.UseVisualStyleBackColor = false;
+            // 
+            // circularButton15
+            // 
+            this.circularButton15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton15.BorderSize = 2;
+            this.circularButton15.Image = global::Acelera2025.Properties.Resources.CategoriaSociedade;
+            this.circularButton15.Location = new System.Drawing.Point(1436, 411);
+            this.circularButton15.Name = "circularButton15";
+            this.circularButton15.Size = new System.Drawing.Size(183, 186);
+            this.circularButton15.TabIndex = 87;
+            this.circularButton15.UseVisualStyleBackColor = false;
+            // 
+            // circularButton14
+            // 
+            this.circularButton14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton14.BorderSize = 2;
+            this.circularButton14.Image = global::Acelera2025.Properties.Resources.CategoriaEsportes;
+            this.circularButton14.Location = new System.Drawing.Point(1226, 411);
+            this.circularButton14.Name = "circularButton14";
+            this.circularButton14.Size = new System.Drawing.Size(183, 186);
+            this.circularButton14.TabIndex = 86;
+            this.circularButton14.UseVisualStyleBackColor = false;
+            // 
+            // circularButton13
+            // 
+            this.circularButton13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton13.BorderSize = 2;
+            this.circularButton13.Image = global::Acelera2025.Properties.Resources.CategoriaFestas;
+            this.circularButton13.Location = new System.Drawing.Point(999, 411);
+            this.circularButton13.Name = "circularButton13";
+            this.circularButton13.Size = new System.Drawing.Size(183, 186);
+            this.circularButton13.TabIndex = 85;
+            this.circularButton13.UseVisualStyleBackColor = false;
+            // 
+            // circularButton12
+            // 
+            this.circularButton12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton12.BorderSize = 2;
+            this.circularButton12.Image = global::Acelera2025.Properties.Resources.CategoriaFeiras;
+            this.circularButton12.Location = new System.Drawing.Point(757, 411);
+            this.circularButton12.Name = "circularButton12";
+            this.circularButton12.Size = new System.Drawing.Size(183, 186);
+            this.circularButton12.TabIndex = 84;
+            this.circularButton12.UseVisualStyleBackColor = false;
+            // 
+            // circularButton11
+            // 
+            this.circularButton11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton11.BorderSize = 2;
+            this.circularButton11.Image = global::Acelera2025.Properties.Resources.CategoriaEspiritualidade;
+            this.circularButton11.Location = new System.Drawing.Point(513, 411);
+            this.circularButton11.Name = "circularButton11";
+            this.circularButton11.Size = new System.Drawing.Size(183, 186);
+            this.circularButton11.TabIndex = 83;
+            this.circularButton11.UseVisualStyleBackColor = false;
+            // 
+            // circularButton10
+            // 
+            this.circularButton10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton10.BorderSize = 2;
+            this.circularButton10.Image = global::Acelera2025.Properties.Resources.CategoriaCompeticoes;
+            this.circularButton10.Location = new System.Drawing.Point(267, 411);
+            this.circularButton10.Name = "circularButton10";
+            this.circularButton10.Size = new System.Drawing.Size(183, 186);
+            this.circularButton10.TabIndex = 82;
+            this.circularButton10.UseVisualStyleBackColor = false;
+            // 
+            // circularButton9
+            // 
+            this.circularButton9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton9.BorderSize = 2;
+            this.circularButton9.Image = global::Acelera2025.Properties.Resources.CategoriaCulinária;
+            this.circularButton9.Location = new System.Drawing.Point(22, 765);
+            this.circularButton9.Name = "circularButton9";
+            this.circularButton9.Size = new System.Drawing.Size(183, 186);
+            this.circularButton9.TabIndex = 81;
+            this.circularButton9.UseVisualStyleBackColor = false;
+            // 
+            // circularButton8
+            // 
+            this.circularButton8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton8.BorderSize = 2;
+            this.circularButton8.Image = global::Acelera2025.Properties.Resources.CategoriaCiencia;
+            this.circularButton8.Location = new System.Drawing.Point(22, 411);
+            this.circularButton8.Name = "circularButton8";
+            this.circularButton8.Size = new System.Drawing.Size(183, 186);
+            this.circularButton8.TabIndex = 80;
+            this.circularButton8.UseVisualStyleBackColor = false;
+            // 
+            // circularButton7
+            // 
+            this.circularButton7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton7.BorderSize = 2;
+            this.circularButton7.Image = global::Acelera2025.Properties.Resources.CategoriaDanca;
+            this.circularButton7.Location = new System.Drawing.Point(1436, 52);
+            this.circularButton7.Name = "circularButton7";
+            this.circularButton7.Size = new System.Drawing.Size(183, 186);
+            this.circularButton7.TabIndex = 79;
+            this.circularButton7.UseVisualStyleBackColor = false;
+            // 
+            // circularButton6
+            // 
+            this.circularButton6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton6.BorderSize = 2;
+            this.circularButton6.Image = global::Acelera2025.Properties.Resources.CategoriaArtes;
+            this.circularButton6.Location = new System.Drawing.Point(1226, 52);
+            this.circularButton6.Name = "circularButton6";
+            this.circularButton6.Size = new System.Drawing.Size(183, 186);
+            this.circularButton6.TabIndex = 78;
+            this.circularButton6.UseVisualStyleBackColor = false;
+            // 
+            // circularButton5
+            // 
+            this.circularButton5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton5.BorderSize = 2;
+            this.circularButton5.Image = global::Acelera2025.Properties.Resources.CategoriaMusica;
+            this.circularButton5.Location = new System.Drawing.Point(999, 52);
+            this.circularButton5.Name = "circularButton5";
+            this.circularButton5.Size = new System.Drawing.Size(183, 186);
+            this.circularButton5.TabIndex = 77;
+            this.circularButton5.UseVisualStyleBackColor = false;
+            // 
+            // circularButton4
+            // 
+            this.circularButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton4.BorderSize = 2;
+            this.circularButton4.Image = global::Acelera2025.Properties.Resources.CategoriaFestivais;
+            this.circularButton4.Location = new System.Drawing.Point(757, 52);
+            this.circularButton4.Name = "circularButton4";
+            this.circularButton4.Size = new System.Drawing.Size(183, 186);
+            this.circularButton4.TabIndex = 76;
+            this.circularButton4.UseVisualStyleBackColor = false;
+            this.circularButton4.Click += new System.EventHandler(this.circularButton4_Click);
+            // 
+            // circularButton3
+            // 
+            this.circularButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton3.BorderSize = 2;
+            this.circularButton3.Image = global::Acelera2025.Properties.Resources.CategoriaEducacao;
+            this.circularButton3.Location = new System.Drawing.Point(513, 52);
+            this.circularButton3.Name = "circularButton3";
+            this.circularButton3.Size = new System.Drawing.Size(183, 186);
+            this.circularButton3.TabIndex = 75;
+            this.circularButton3.UseVisualStyleBackColor = false;
+            // 
+            // circularButton1
+            // 
+            this.circularButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton1.BorderSize = 2;
+            this.circularButton1.Image = global::Acelera2025.Properties.Resources.CategoriaSaude;
+            this.circularButton1.Location = new System.Drawing.Point(267, 52);
+            this.circularButton1.Name = "circularButton1";
+            this.circularButton1.Size = new System.Drawing.Size(183, 186);
+            this.circularButton1.TabIndex = 74;
+            this.circularButton1.UseVisualStyleBackColor = false;
+            // 
+            // circularButton2
+            // 
+            this.circularButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circularButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.circularButton2.BorderSize = 2;
+            this.circularButton2.Image = global::Acelera2025.Properties.Resources.CategoriaTecnologia;
+            this.circularButton2.Location = new System.Drawing.Point(22, 52);
+            this.circularButton2.Name = "circularButton2";
+            this.circularButton2.Size = new System.Drawing.Size(183, 186);
+            this.circularButton2.TabIndex = 73;
+            this.circularButton2.UseVisualStyleBackColor = false;
             // 
             // label25
             // 
@@ -503,6 +818,21 @@
             this.label5.TabIndex = 32;
             this.label5.Text = "Música";
             // 
+            // btnMusica
+            // 
+            this.btnMusica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
+            this.btnMusica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMusica.BorderColor = System.Drawing.Color.Bisque;
+            this.btnMusica.BorderSize = 0;
+            this.btnMusica.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMusica.Image = global::Acelera2025.Properties.Resources.CategoriaMusica;
+            this.btnMusica.Location = new System.Drawing.Point(142, 155);
+            this.btnMusica.Name = "btnMusica";
+            this.btnMusica.Size = new System.Drawing.Size(149, 148);
+            this.btnMusica.TabIndex = 31;
+            this.btnMusica.Text = "circularButton4";
+            this.btnMusica.UseVisualStyleBackColor = false;
+            // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -535,6 +865,32 @@
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 4;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnNotificacoes
+            // 
+            this.btnNotificacoes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.btnNotificacoes.BackgroundImage = global::Acelera2025.Properties.Resources.IconeNotificacao;
+            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotificacoes.FlatAppearance.BorderSize = 0;
+            this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificacoes.Location = new System.Drawing.Point(1567, 13);
+            this.btnNotificacoes.Name = "btnNotificacoes";
+            this.btnNotificacoes.Size = new System.Drawing.Size(29, 26);
+            this.btnNotificacoes.TabIndex = 10;
+            this.btnNotificacoes.UseVisualStyleBackColor = false;
+            // 
             // btnPerfil
             // 
             this.btnPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -545,6 +901,8 @@
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(47, 48);
             this.btnPerfil.TabIndex = 9;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
+            this.btnPerfil.Paint += new System.Windows.Forms.PaintEventHandler(this.btnPerfil_Paint);
             // 
             // roundedPanel5
             // 
@@ -557,6 +915,20 @@
             this.roundedPanel5.Name = "roundedPanel5";
             this.roundedPanel5.Size = new System.Drawing.Size(528, 31);
             this.roundedPanel5.TabIndex = 8;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesquisar.FlatAppearance.BorderSize = 0;
+            this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
+            this.btnPesquisar.Location = new System.Drawing.Point(485, -2);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(43, 38);
+            this.btnPesquisar.TabIndex = 1;
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtPesquisar
             // 
@@ -584,6 +956,7 @@
             this.btnPrincipal.TabStop = true;
             this.btnPrincipal.Text = "CONNECTA";
             this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnPrincipal_LinkClicked);
             // 
             // btnOrganizarEventos
             // 
@@ -601,6 +974,7 @@
             this.btnOrganizarEventos.TabStop = true;
             this.btnOrganizarEventos.Text = "Organizar eventos";
             this.btnOrganizarEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnOrganizarEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnOrganizarEventos_LinkClicked);
             // 
             // btnMeusEventos
             // 
@@ -618,6 +992,7 @@
             this.btnMeusEventos.TabStop = true;
             this.btnMeusEventos.Text = "Meus eventos";
             this.btnMeusEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnMeusEventos_LinkClicked);
             // 
             // btnAjuda
             // 
@@ -635,6 +1010,7 @@
             this.btnAjuda.TabStop = true;
             this.btnAjuda.Text = "Ajuda";
             this.btnAjuda.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnAjuda.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnAjuda_LinkClicked);
             // 
             // btnSobreNos
             // 
@@ -652,321 +1028,7 @@
             this.btnSobreNos.TabStop = true;
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
-            // 
-            // circularButton20
-            // 
-            this.circularButton20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton20.BorderSize = 2;
-            this.circularButton20.Image = global::Acelera2025.Properties.Resources.CategoriaHobbies;
-            this.circularButton20.Location = new System.Drawing.Point(1226, 765);
-            this.circularButton20.Name = "circularButton20";
-            this.circularButton20.Size = new System.Drawing.Size(183, 186);
-            this.circularButton20.TabIndex = 92;
-            this.circularButton20.UseVisualStyleBackColor = false;
-            // 
-            // circularButton19
-            // 
-            this.circularButton19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton19.BorderSize = 2;
-            this.circularButton19.Image = global::Acelera2025.Properties.Resources.CategoriaMeioAmbiente;
-            this.circularButton19.Location = new System.Drawing.Point(999, 765);
-            this.circularButton19.Name = "circularButton19";
-            this.circularButton19.Size = new System.Drawing.Size(183, 186);
-            this.circularButton19.TabIndex = 91;
-            this.circularButton19.UseVisualStyleBackColor = false;
-            // 
-            // circularButton18
-            // 
-            this.circularButton18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton18.BorderSize = 2;
-            this.circularButton18.Image = global::Acelera2025.Properties.Resources.CategoriaVoluntariado;
-            this.circularButton18.Location = new System.Drawing.Point(757, 765);
-            this.circularButton18.Name = "circularButton18";
-            this.circularButton18.Size = new System.Drawing.Size(183, 186);
-            this.circularButton18.TabIndex = 90;
-            this.circularButton18.UseVisualStyleBackColor = false;
-            // 
-            // circularButton17
-            // 
-            this.circularButton17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton17.BorderSize = 2;
-            this.circularButton17.Image = global::Acelera2025.Properties.Resources.CategoriaEntretenimento;
-            this.circularButton17.Location = new System.Drawing.Point(513, 765);
-            this.circularButton17.Name = "circularButton17";
-            this.circularButton17.Size = new System.Drawing.Size(183, 186);
-            this.circularButton17.TabIndex = 89;
-            this.circularButton17.UseVisualStyleBackColor = false;
-            // 
-            // circularButton16
-            // 
-            this.circularButton16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton16.BorderSize = 2;
-            this.circularButton16.Image = global::Acelera2025.Properties.Resources.CategoriaNegocios;
-            this.circularButton16.Location = new System.Drawing.Point(267, 765);
-            this.circularButton16.Name = "circularButton16";
-            this.circularButton16.Size = new System.Drawing.Size(183, 186);
-            this.circularButton16.TabIndex = 88;
-            this.circularButton16.UseVisualStyleBackColor = false;
-            // 
-            // circularButton15
-            // 
-            this.circularButton15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton15.BorderSize = 2;
-            this.circularButton15.Image = global::Acelera2025.Properties.Resources.CategoriaSociedade;
-            this.circularButton15.Location = new System.Drawing.Point(1436, 411);
-            this.circularButton15.Name = "circularButton15";
-            this.circularButton15.Size = new System.Drawing.Size(183, 186);
-            this.circularButton15.TabIndex = 87;
-            this.circularButton15.UseVisualStyleBackColor = false;
-            // 
-            // circularButton14
-            // 
-            this.circularButton14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton14.BorderSize = 2;
-            this.circularButton14.Image = global::Acelera2025.Properties.Resources.CategoriaEsportes;
-            this.circularButton14.Location = new System.Drawing.Point(1226, 411);
-            this.circularButton14.Name = "circularButton14";
-            this.circularButton14.Size = new System.Drawing.Size(183, 186);
-            this.circularButton14.TabIndex = 86;
-            this.circularButton14.UseVisualStyleBackColor = false;
-            // 
-            // circularButton13
-            // 
-            this.circularButton13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton13.BorderSize = 2;
-            this.circularButton13.Image = global::Acelera2025.Properties.Resources.CategoriaFestas;
-            this.circularButton13.Location = new System.Drawing.Point(999, 411);
-            this.circularButton13.Name = "circularButton13";
-            this.circularButton13.Size = new System.Drawing.Size(183, 186);
-            this.circularButton13.TabIndex = 85;
-            this.circularButton13.UseVisualStyleBackColor = false;
-            // 
-            // circularButton12
-            // 
-            this.circularButton12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton12.BorderSize = 2;
-            this.circularButton12.Image = global::Acelera2025.Properties.Resources.CategoriaFeiras;
-            this.circularButton12.Location = new System.Drawing.Point(757, 411);
-            this.circularButton12.Name = "circularButton12";
-            this.circularButton12.Size = new System.Drawing.Size(183, 186);
-            this.circularButton12.TabIndex = 84;
-            this.circularButton12.UseVisualStyleBackColor = false;
-            // 
-            // circularButton11
-            // 
-            this.circularButton11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton11.BorderSize = 2;
-            this.circularButton11.Image = global::Acelera2025.Properties.Resources.CategoriaEspiritualidade;
-            this.circularButton11.Location = new System.Drawing.Point(513, 411);
-            this.circularButton11.Name = "circularButton11";
-            this.circularButton11.Size = new System.Drawing.Size(183, 186);
-            this.circularButton11.TabIndex = 83;
-            this.circularButton11.UseVisualStyleBackColor = false;
-            // 
-            // circularButton10
-            // 
-            this.circularButton10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton10.BorderSize = 2;
-            this.circularButton10.Image = global::Acelera2025.Properties.Resources.CategoriaCompeticoes;
-            this.circularButton10.Location = new System.Drawing.Point(267, 411);
-            this.circularButton10.Name = "circularButton10";
-            this.circularButton10.Size = new System.Drawing.Size(183, 186);
-            this.circularButton10.TabIndex = 82;
-            this.circularButton10.UseVisualStyleBackColor = false;
-            // 
-            // circularButton9
-            // 
-            this.circularButton9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton9.BorderSize = 2;
-            this.circularButton9.Image = global::Acelera2025.Properties.Resources.CategoriaCulinária;
-            this.circularButton9.Location = new System.Drawing.Point(22, 765);
-            this.circularButton9.Name = "circularButton9";
-            this.circularButton9.Size = new System.Drawing.Size(183, 186);
-            this.circularButton9.TabIndex = 81;
-            this.circularButton9.UseVisualStyleBackColor = false;
-            // 
-            // circularButton8
-            // 
-            this.circularButton8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton8.BorderSize = 2;
-            this.circularButton8.Image = global::Acelera2025.Properties.Resources.CategoriaCiencia;
-            this.circularButton8.Location = new System.Drawing.Point(22, 411);
-            this.circularButton8.Name = "circularButton8";
-            this.circularButton8.Size = new System.Drawing.Size(183, 186);
-            this.circularButton8.TabIndex = 80;
-            this.circularButton8.UseVisualStyleBackColor = false;
-            // 
-            // circularButton7
-            // 
-            this.circularButton7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton7.BorderSize = 2;
-            this.circularButton7.Image = global::Acelera2025.Properties.Resources.CategoriaDanca;
-            this.circularButton7.Location = new System.Drawing.Point(1436, 52);
-            this.circularButton7.Name = "circularButton7";
-            this.circularButton7.Size = new System.Drawing.Size(183, 186);
-            this.circularButton7.TabIndex = 79;
-            this.circularButton7.UseVisualStyleBackColor = false;
-            // 
-            // circularButton6
-            // 
-            this.circularButton6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton6.BorderSize = 2;
-            this.circularButton6.Image = global::Acelera2025.Properties.Resources.CategoriaArtes;
-            this.circularButton6.Location = new System.Drawing.Point(1226, 52);
-            this.circularButton6.Name = "circularButton6";
-            this.circularButton6.Size = new System.Drawing.Size(183, 186);
-            this.circularButton6.TabIndex = 78;
-            this.circularButton6.UseVisualStyleBackColor = false;
-            // 
-            // circularButton5
-            // 
-            this.circularButton5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton5.BorderSize = 2;
-            this.circularButton5.Image = global::Acelera2025.Properties.Resources.CategoriaMusica;
-            this.circularButton5.Location = new System.Drawing.Point(999, 52);
-            this.circularButton5.Name = "circularButton5";
-            this.circularButton5.Size = new System.Drawing.Size(183, 186);
-            this.circularButton5.TabIndex = 77;
-            this.circularButton5.UseVisualStyleBackColor = false;
-            // 
-            // circularButton4
-            // 
-            this.circularButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton4.BorderSize = 2;
-            this.circularButton4.Image = global::Acelera2025.Properties.Resources.CategoriaFestivais;
-            this.circularButton4.Location = new System.Drawing.Point(757, 52);
-            this.circularButton4.Name = "circularButton4";
-            this.circularButton4.Size = new System.Drawing.Size(183, 186);
-            this.circularButton4.TabIndex = 76;
-            this.circularButton4.UseVisualStyleBackColor = false;
-            this.circularButton4.Click += new System.EventHandler(this.circularButton4_Click);
-            // 
-            // circularButton3
-            // 
-            this.circularButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton3.BorderSize = 2;
-            this.circularButton3.Image = global::Acelera2025.Properties.Resources.CategoriaEducacao;
-            this.circularButton3.Location = new System.Drawing.Point(513, 52);
-            this.circularButton3.Name = "circularButton3";
-            this.circularButton3.Size = new System.Drawing.Size(183, 186);
-            this.circularButton3.TabIndex = 75;
-            this.circularButton3.UseVisualStyleBackColor = false;
-            // 
-            // circularButton1
-            // 
-            this.circularButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton1.BorderSize = 2;
-            this.circularButton1.Image = global::Acelera2025.Properties.Resources.CategoriaSaude;
-            this.circularButton1.Location = new System.Drawing.Point(267, 52);
-            this.circularButton1.Name = "circularButton1";
-            this.circularButton1.Size = new System.Drawing.Size(183, 186);
-            this.circularButton1.TabIndex = 74;
-            this.circularButton1.UseVisualStyleBackColor = false;
-            // 
-            // circularButton2
-            // 
-            this.circularButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circularButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.circularButton2.BorderSize = 2;
-            this.circularButton2.Image = global::Acelera2025.Properties.Resources.CategoriaTecnologia;
-            this.circularButton2.Location = new System.Drawing.Point(22, 52);
-            this.circularButton2.Name = "circularButton2";
-            this.circularButton2.Size = new System.Drawing.Size(183, 186);
-            this.circularButton2.TabIndex = 73;
-            this.circularButton2.UseVisualStyleBackColor = false;
-            // 
-            // btnMusica
-            // 
-            this.btnMusica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
-            this.btnMusica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMusica.BorderColor = System.Drawing.Color.Bisque;
-            this.btnMusica.BorderSize = 0;
-            this.btnMusica.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMusica.Image = global::Acelera2025.Properties.Resources.CategoriaMusica;
-            this.btnMusica.Location = new System.Drawing.Point(142, 155);
-            this.btnMusica.Name = "btnMusica";
-            this.btnMusica.Size = new System.Drawing.Size(149, 148);
-            this.btnMusica.TabIndex = 31;
-            this.btnMusica.Text = "circularButton4";
-            this.btnMusica.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnNotificacoes
-            // 
-            this.btnNotificacoes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
-            this.btnNotificacoes.BackgroundImage = global::Acelera2025.Properties.Resources.IconeNotificacao;
-            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNotificacoes.FlatAppearance.BorderSize = 0;
-            this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacoes.Location = new System.Drawing.Point(1567, 13);
-            this.btnNotificacoes.Name = "btnNotificacoes";
-            this.btnNotificacoes.Size = new System.Drawing.Size(29, 26);
-            this.btnNotificacoes.TabIndex = 10;
-            this.btnNotificacoes.UseVisualStyleBackColor = false;
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPesquisar.FlatAppearance.BorderSize = 0;
-            this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
-            this.btnPesquisar.Location = new System.Drawing.Point(485, -2);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(43, 38);
-            this.btnPesquisar.TabIndex = 1;
-            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
             // Categorias
             // 
@@ -982,6 +1044,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panelMeusEventos.ResumeLayout(false);
             this.superiorRoundedPanel1.ResumeLayout(false);
             this.gradientPanel2.ResumeLayout(false);
             this.gradientPanel2.PerformLayout();
@@ -989,9 +1052,9 @@
             this.roundedPanel2.PerformLayout();
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1061,5 +1124,8 @@
         private CircularButton circularButton18;
         private CircularButton circularButton19;
         private CircularButton circularButton20;
+        private RoundedPanel panelMeusEventos;
+        private RoundedButton btnEventosCriados;
+        private RoundedButton btnEventosIngressados;
     }
 }

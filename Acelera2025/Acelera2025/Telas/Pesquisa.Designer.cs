@@ -40,6 +40,7 @@
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gradientPanel2 = new GradientPanel();
+            this.comboCategoria = new System.Windows.Forms.ComboBox();
             this.comboUF = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -126,6 +127,7 @@
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(47, 48);
             this.btnPerfil.TabIndex = 9;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // btnOrganizarEventos
             // 
@@ -210,6 +212,7 @@
             // 
             this.gradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gradientPanel2.Controls.Add(this.comboCategoria);
             this.gradientPanel2.Controls.Add(this.comboUF);
             this.gradientPanel2.Controls.Add(this.label10);
             this.gradientPanel2.Controls.Add(this.comboBox2);
@@ -223,14 +226,25 @@
             this.gradientPanel2.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel2.TabIndex = 13;
             // 
+            // comboCategoria
+            // 
+            this.comboCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboCategoria.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboCategoria.FormattingEnabled = true;
+            this.comboCategoria.Location = new System.Drawing.Point(345, 160);
+            this.comboCategoria.Name = "comboCategoria";
+            this.comboCategoria.Size = new System.Drawing.Size(247, 35);
+            this.comboCategoria.TabIndex = 13;
+            this.comboCategoria.Text = "Categoria";
+            // 
             // comboUF
             // 
             this.comboUF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboUF.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboUF.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboUF.FormattingEnabled = true;
-            this.comboUF.Location = new System.Drawing.Point(1201, 163);
+            this.comboUF.Location = new System.Drawing.Point(1201, 160);
             this.comboUF.Name = "comboUF";
-            this.comboUF.Size = new System.Drawing.Size(58, 27);
+            this.comboUF.Size = new System.Drawing.Size(58, 35);
             this.comboUF.TabIndex = 12;
             this.comboUF.Text = "UF";
             // 
@@ -250,10 +264,11 @@
             // comboBox2
             // 
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox2.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(1069, 165);
+            this.comboBox2.Location = new System.Drawing.Point(1074, 160);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.Size = new System.Drawing.Size(121, 35);
             this.comboBox2.TabIndex = 11;
             this.comboBox2.Text = "Cidade";
             // 
@@ -290,26 +305,27 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox1.Location = new System.Drawing.Point(0, 2);
+            this.textBox1.Location = new System.Drawing.Point(12, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1023, 34);
+            this.textBox1.Size = new System.Drawing.Size(1015, 34);
             this.textBox1.TabIndex = 0;
             // 
             // comboFiltrarBusca
             // 
             this.comboFiltrarBusca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboFiltrarBusca.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFiltrarBusca.FormattingEnabled = true;
-            this.comboFiltrarBusca.Location = new System.Drawing.Point(192, 166);
+            this.comboFiltrarBusca.Location = new System.Drawing.Point(192, 160);
             this.comboFiltrarBusca.Name = "comboFiltrarBusca";
-            this.comboFiltrarBusca.Size = new System.Drawing.Size(121, 24);
+            this.comboFiltrarBusca.Size = new System.Drawing.Size(121, 35);
             this.comboFiltrarBusca.TabIndex = 10;
             this.comboFiltrarBusca.Text = "Evento";
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(217, 241);
+            this.panel2.Location = new System.Drawing.Point(192, 241);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(912, 364);
+            this.panel2.Size = new System.Drawing.Size(1067, 364);
             this.panel2.TabIndex = 12;
             // 
             // Pesquisa
@@ -356,5 +372,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
         private GradientPanel gradientPanel2;
+        private System.Windows.Forms.ComboBox comboCategoria;
     }
 }

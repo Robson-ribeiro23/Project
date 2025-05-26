@@ -13,16 +13,44 @@ namespace Acelera2025.Telas
     public partial class OrganizarEvento: Form
     {
         private bool panelVisivel = false;
+        private CardPerfil cardPerfil;
+        private bool cardPerfilVisivel = false;
         public OrganizarEvento()
         {
             InitializeComponent();
 
         }
-        private void Form1_Load(object sender, EventArgs e)
+        
+        private void OrganizarEvento_Load(object sender, EventArgs e)
         {
-
             panelMeusEventos.Visible = false;
+            cardPerfil = new CardPerfil();
+            cardPerfil.Visible = false;
+
+
+            panel1.Controls.Add(cardPerfil);
+            cardPerfil.Location = new Point(panel1.Width - cardPerfil.Width - 20, 0);
+            cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
+            cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+
+            string[] estados = { "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO",
+                     "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR",
+                     "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" };
+
+            string[] categorias = { "Artes", "Tecnologia", "Saúde", "Educação", "Festivais", "Música", 
+                "Dança", "Ciências", "Competições e Concursos", "Espiritualidade", "Exposições e Feiras",
+                "Festas", "Esportes", "Sociedade", "Gastronomia", "Empreendedorismo", "Entretenimento",
+                "Voluntariado", "Meio Ambiente" , "Hobbies" };
+
+            string[] faixaEtaria = { "Livre", "+10", "+12",
+                "+14", "+16", "+18"
+            };
+
+            comboUF.Items.AddRange(estados);
+            comboCategoria.Items.AddRange(categorias);
+            comboFaixaEtaria.Items.AddRange(faixaEtaria);
         }
+
         private void roundedButton1_Click(object sender, EventArgs e)
         {
 
@@ -137,9 +165,9 @@ namespace Acelera2025.Telas
 
         private void circularPanel3_Click(object sender, EventArgs e)
         {
-            Perfil perfil = new Perfil();
-            perfil.Show();
-            this.Hide();
+            cardPerfilVisivel = !cardPerfilVisivel;
+            cardPerfil.Visible = cardPerfilVisivel;
+            cardPerfil.BringToFront();
         }
 
         private void circularPanel3_Paint(object sender, PaintEventArgs e)
@@ -168,13 +196,11 @@ namespace Acelera2025.Telas
             this.Hide();
         }
 
-        private void OrganizarEvento_Load(object sender, EventArgs e)
-        {
-            string[] estados = { "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO",
-                     "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR",
-                     "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" };
+       
 
-            comboUF.Items.AddRange(estados);
+        private void comboFaixaEtaria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -522,6 +522,7 @@
             this.comboFaixaEtaria.Name = "comboFaixaEtaria";
             this.comboFaixaEtaria.Size = new System.Drawing.Size(86, 38);
             this.comboFaixaEtaria.TabIndex = 29;
+            this.comboFaixaEtaria.SelectedIndexChanged += new System.EventHandler(this.comboFaixaEtaria_SelectedIndexChanged);
             // 
             // linkLabel10
             // 

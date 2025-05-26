@@ -41,5 +41,10 @@ namespace Acelera2025.Telas
         {
            
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

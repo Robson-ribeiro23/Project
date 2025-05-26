@@ -13,16 +13,27 @@ namespace Acelera2025.Telas
     public partial class TelaEvento: Form
     {
         private bool panelVisivel = false;
+        private CardPerfil cardPerfil;
+        private bool cardPerfilVisivel = false;
         public TelaEvento()
         {
             InitializeComponent();
             this.panel2.Resize += Panel2_Resize;
         }
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
+        private void TelaEvento_Load(object sender, EventArgs e)
+        {
             panelMeusEventos.Visible = false;
+            cardPerfil = new CardPerfil();
+            cardPerfil.Visible = false;
+
+
+            panel1.Controls.Add(cardPerfil);
+            cardPerfil.Location = new Point(panel1.Width - cardPerfil.Width - 20, 0);
+            cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
+            cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
         }
+
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             panelVisivel = !panelVisivel;
@@ -38,10 +49,6 @@ namespace Acelera2025.Telas
 
         }
 
-        private void TelaEvento_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -161,8 +168,9 @@ namespace Acelera2025.Telas
 
         private void circularPanel3_Click(object sender, EventArgs e)
         {
-            Perfil perfil = new Perfil();
-
+            cardPerfilVisivel = !cardPerfilVisivel;
+            cardPerfil.Visible = cardPerfilVisivel;
+            cardPerfil.BringToFront();
         }
 
         private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

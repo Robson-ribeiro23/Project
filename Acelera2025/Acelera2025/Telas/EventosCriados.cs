@@ -13,17 +13,26 @@ namespace Acelera2025.Telas
     public partial class EventosCriados: Form
     {
         private bool panelVisivel = false;
+        private CardPerfil cardPerfil;
+        private bool cardPerfilVisivel = false;
 
         public EventosCriados()
         {
             InitializeComponent();
         }
-        private void Form1_Load(object sender, EventArgs e)
+        
+        private void EventosCriados_Load(object sender, EventArgs e)
         {
-
             panelMeusEventos.Visible = false;
-        }
+            cardPerfil = new CardPerfil();
+            cardPerfil.Visible = false;
 
+
+            this.Controls.Add(cardPerfil);
+            cardPerfil.Location = new Point(this.Width - cardPerfil.Width - 20, 50);
+            cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
+            cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+        }
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -54,10 +63,7 @@ namespace Acelera2025.Telas
 
         }
 
-        private void EventosCriados_Load(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -75,9 +81,9 @@ namespace Acelera2025.Telas
 
         private void circularPanel3_Click(object sender, EventArgs e)
         {
-            Perfil perfil = new Perfil();
-            perfil.Show();
-            this.Hide();
+            cardPerfilVisivel = !cardPerfilVisivel;
+            cardPerfil.Visible = cardPerfilVisivel;
+            cardPerfil.BringToFront();
         }
 
         private void btnOrganizarEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

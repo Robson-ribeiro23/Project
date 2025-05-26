@@ -34,6 +34,7 @@
             this.btnEntrar = new RoundedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new RoundedPanel();
+            this.btnMostrarSenhaConfirmar = new System.Windows.Forms.Button();
             this.btnMostrarSenha = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnMostrarSenhaConfirmar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
@@ -164,6 +164,19 @@
             this.roundedPanel1.Size = new System.Drawing.Size(703, 724);
             this.roundedPanel1.TabIndex = 0;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
+            // 
+            // btnMostrarSenhaConfirmar
+            // 
+            this.btnMostrarSenhaConfirmar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMostrarSenhaConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMostrarSenhaConfirmar.FlatAppearance.BorderSize = 0;
+            this.btnMostrarSenhaConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrarSenhaConfirmar.Location = new System.Drawing.Point(634, 519);
+            this.btnMostrarSenhaConfirmar.Name = "btnMostrarSenhaConfirmar";
+            this.btnMostrarSenhaConfirmar.Size = new System.Drawing.Size(28, 24);
+            this.btnMostrarSenhaConfirmar.TabIndex = 31;
+            this.btnMostrarSenhaConfirmar.UseVisualStyleBackColor = false;
+            this.btnMostrarSenhaConfirmar.Click += new System.EventHandler(this.btnMostrarSenhaConfirmar_Click);
             // 
             // btnMostrarSenha
             // 
@@ -316,9 +329,9 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(76, 81);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 32);
+            this.label6.Size = new System.Drawing.Size(151, 32);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Nome:";
+            this.label6.Text = "Nome Completo:";
             // 
             // txtSenha
             // 
@@ -398,19 +411,6 @@
             this.label1.Size = new System.Drawing.Size(278, 58);
             this.label1.TabIndex = 6;
             this.label1.Text = "Cadastrar usuário";
-            // 
-            // btnMostrarSenhaConfirmar
-            // 
-            this.btnMostrarSenhaConfirmar.BackColor = System.Drawing.Color.Transparent;
-            this.btnMostrarSenhaConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMostrarSenhaConfirmar.FlatAppearance.BorderSize = 0;
-            this.btnMostrarSenhaConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarSenhaConfirmar.Location = new System.Drawing.Point(634, 519);
-            this.btnMostrarSenhaConfirmar.Name = "btnMostrarSenhaConfirmar";
-            this.btnMostrarSenhaConfirmar.Size = new System.Drawing.Size(28, 24);
-            this.btnMostrarSenhaConfirmar.TabIndex = 31;
-            this.btnMostrarSenhaConfirmar.UseVisualStyleBackColor = false;
-            this.btnMostrarSenhaConfirmar.Click += new System.EventHandler(this.btnMostrarSenhaConfirmar_Click);
             // 
             // CadastrarUsuario
             // 

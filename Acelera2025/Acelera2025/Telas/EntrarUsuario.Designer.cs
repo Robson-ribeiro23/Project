@@ -178,7 +178,7 @@
             this.btnRecuperar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperar.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnRecuperar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnRecuperar.Location = new System.Drawing.Point(253, 404);
+            this.btnRecuperar.Location = new System.Drawing.Point(265, 404);
             this.btnRecuperar.Name = "btnRecuperar";
             this.btnRecuperar.Size = new System.Drawing.Size(90, 30);
             this.btnRecuperar.TabIndex = 17;

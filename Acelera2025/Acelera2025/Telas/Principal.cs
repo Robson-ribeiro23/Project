@@ -14,6 +14,8 @@ namespace Acelera2025.Telas
     public partial class Principal: Form
     {
         private bool panelVisivel = false;
+        private CardPerfil cardPerfil;
+        private bool cardPerfilVisivel = false;
         public Principal()
         {
             InitializeComponent();
@@ -43,27 +45,22 @@ namespace Acelera2025.Telas
 
 
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void Principal_Load(object sender, EventArgs e)
         {
             PanelCategorias_Resize(null, null);
             PanelEventosPerto_Resize(null, null);
             PanelEventosOnline_Resize(null, null);
             panelMeusEventos.Visible = false;
+            cardPerfil = new CardPerfil();
+            cardPerfil.Visible = false;
 
-         
-        }
-
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelEventosPerto_Paint(object sender, PaintEventArgs e)
-        {
+            cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
+            panel2.Controls.Add(cardPerfil);
+            cardPerfil.Location = new Point(panel2.Width - cardPerfil.Width - 20, 0);
+            cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 
         }
+
         private void PanelEventosPerto_Resize(object sender, EventArgs e)
         {
             int espaco = 20;
@@ -160,10 +157,6 @@ namespace Acelera2025.Telas
 
 
 
-        private void gradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void roundedPicture1_Click(object sender, EventArgs e)
         {
@@ -207,11 +200,6 @@ namespace Acelera2025.Telas
 
         }
 
-        private void button18_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
 
         private void roundedButton1_Click(object sender, EventArgs e)
@@ -238,15 +226,8 @@ namespace Acelera2025.Telas
 
         private void circularPanel3_Paint(object sender, PaintEventArgs e)
         {
-
+         
         }
-        private void circularPanel_Click(object sender, EventArgs e)
-        {
-            Perfil perfil = new Perfil();
-            perfil.Show();
-            this.Hide();
-        }
-
         private void panelCategorias_Paint(object sender, PaintEventArgs e)
         {
 
@@ -266,7 +247,7 @@ namespace Acelera2025.Telas
         private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
-            MessageBox.Show("Ajuda clicado");
+           
             Ajuda ajuda = new Ajuda();
             ajuda.Show();
         }
@@ -286,6 +267,9 @@ namespace Acelera2025.Telas
         private void btnPerfil_Click(object sender, EventArgs e)
         {
             DisplayCrimes();
+            cardPerfilVisivel = !cardPerfilVisivel;
+            cardPerfil.Visible = cardPerfilVisivel;
+            cardPerfil.BringToFront();
         }
 
         private void btnSobreNos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -327,10 +311,7 @@ namespace Acelera2025.Telas
             this.Hide();
         }
 
-        private void Principal_Load(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void btnVerMais_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

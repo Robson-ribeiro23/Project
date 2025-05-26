@@ -111,6 +111,7 @@
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(47, 48);
             this.btnPerfil.TabIndex = 9;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // roundedPanel5
             // 
@@ -315,6 +316,7 @@
             this.Controls.Add(this.gradientPanel1);
             this.Name = "EventosIngressados";
             this.Text = "EventosIngressados";
+            this.Load += new System.EventHandler(this.EventosIngressados_Load);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

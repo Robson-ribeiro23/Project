@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Feed));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPrincipal = new System.Windows.Forms.LinkLabel();
@@ -41,18 +45,52 @@
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel5.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 51);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1409, 652);
+            this.panel1.TabIndex = 25;
+            // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1046, 652);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(1046, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(363, 652);
+            this.panel2.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label10.Location = new System.Drawing.Point(25, 30);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(152, 41);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Notificações";
             // 
             // gradientPanel1
             // 
@@ -126,6 +164,7 @@
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(47, 48);
             this.btnPerfil.TabIndex = 9;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // roundedPanel5
             // 
@@ -231,65 +270,6 @@
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 51);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1409, 652);
-            this.panel1.TabIndex = 25;
-            // 
-            // panel4
-            // 
-            this.panel4.AutoScroll = true;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(363, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(683, 652);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(363, 652);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1046, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(363, 652);
-            this.panel2.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.AutoScroll = true;
-            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel5.Location = new System.Drawing.Point(32, 74);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(294, 552);
-            this.panel5.TabIndex = 5;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label10.Location = new System.Drawing.Point(25, 30);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(152, 41);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Notificações";
-            // 
             // Feed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -299,14 +279,15 @@
             this.Controls.Add(this.gradientPanel1);
             this.Name = "Feed";
             this.Text = "Feed";
+            this.Load += new System.EventHandler(this.Feed_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -326,10 +307,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel btnPrincipal;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label10;
     }
 }
