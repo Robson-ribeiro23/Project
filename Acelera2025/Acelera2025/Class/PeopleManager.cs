@@ -23,6 +23,11 @@ namespace Acelera2025.Class
             return Instance;
         }
 
+        public void Logout()
+        {
+            myself = null;
+        }
+
         public ArrayList GetPeopleDB()
         {
             return peopleDB;

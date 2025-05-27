@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera2025.Class;
 
 namespace Acelera2025.Telas
 {
@@ -29,6 +30,20 @@ namespace Acelera2025.Telas
             perfil.Show();
 
             FecharTelaSolicitado?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void btnSair_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            PeopleManager manager = PeopleManager.GetInstance();
+            manager.Logout();
+
+            Form parentForm = this.FindForm();
+            if (parentForm != null)
+            {
+                EntrarUsuario loginForm = new EntrarUsuario();
+                loginForm.Show();
+                parentForm.Close();
+            }
         }
     }
 }

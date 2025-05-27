@@ -54,17 +54,19 @@
             this.roundedPanel2.Controls.Add(this.lblNome);
             this.roundedPanel2.Controls.Add(this.picPerfil);
             this.roundedPanel2.Location = new System.Drawing.Point(0, 1);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(378, 155);
+            this.roundedPanel2.Size = new System.Drawing.Size(284, 126);
             this.roundedPanel2.TabIndex = 15;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(17, 13);
+            this.pictureBox2.Location = new System.Drawing.Point(13, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 28);
+            this.pictureBox2.Size = new System.Drawing.Size(31, 23);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
@@ -77,9 +79,10 @@
             this.linkLabel3.Font = new System.Drawing.Font("Cascadia Mono", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel3.LinkColor = System.Drawing.Color.IndianRed;
-            this.linkLabel3.Location = new System.Drawing.Point(78, 18);
+            this.linkLabel3.Location = new System.Drawing.Point(58, 15);
+            this.linkLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(90, 22);
+            this.linkLabel3.Size = new System.Drawing.Size(72, 18);
             this.linkLabel3.TabIndex = 15;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "CONNECTA";
@@ -94,9 +97,10 @@
             this.btnPerfil.Font = new System.Drawing.Font("Myanmar Text", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerfil.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.btnPerfil.LinkColor = System.Drawing.Color.Black;
-            this.btnPerfil.Location = new System.Drawing.Point(67, 104);
+            this.btnPerfil.Location = new System.Drawing.Point(50, 84);
+            this.btnPerfil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(63, 23);
+            this.btnPerfil.Size = new System.Drawing.Size(55, 20);
             this.btnPerfil.TabIndex = 14;
             this.btnPerfil.TabStop = true;
             this.btnPerfil.Text = "Ver Perfil";
@@ -112,13 +116,15 @@
             this.btnSair.Font = new System.Drawing.Font("Myanmar Text", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.btnSair.LinkColor = System.Drawing.Color.Firebrick;
-            this.btnSair.Location = new System.Drawing.Point(315, 18);
+            this.btnSair.Location = new System.Drawing.Point(236, 15);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(32, 23);
+            this.btnSair.Size = new System.Drawing.Size(28, 20);
             this.btnSair.TabIndex = 13;
             this.btnSair.TabStop = true;
             this.btnSair.Text = "Sair";
             this.btnSair.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnSair.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSair_LinkClicked);
             // 
             // lblNome
             // 
@@ -127,9 +133,10 @@
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNome.Location = new System.Drawing.Point(66, 66);
+            this.lblNome.Location = new System.Drawing.Point(50, 54);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(55, 27);
+            this.lblNome.Size = new System.Drawing.Size(44, 21);
             this.lblNome.TabIndex = 12;
             this.lblNome.Text = "Nome";
             // 
@@ -139,19 +146,21 @@
             this.picPerfil.BackColor = System.Drawing.Color.DarkGray;
             this.picPerfil.BorderColor = System.Drawing.Color.Black;
             this.picPerfil.BorderSize = 0;
-            this.picPerfil.Location = new System.Drawing.Point(17, 54);
+            this.picPerfil.Location = new System.Drawing.Point(13, 44);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(43, 44);
+            this.picPerfil.Size = new System.Drawing.Size(32, 36);
             this.picPerfil.TabIndex = 10;
             // 
             // CardPerfil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.roundedPanel2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CardPerfil";
-            this.Size = new System.Drawing.Size(378, 157);
+            this.Size = new System.Drawing.Size(284, 128);
             this.Load += new System.EventHandler(this.CardPerfil_Load);
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
