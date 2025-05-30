@@ -62,7 +62,7 @@ namespace Acelera2025.Telas
             
             Person person = new Person(name, cpf, email, password, birthday);
 
-            if (PeopleManager.GetInstance().SearchByEmailAndPasswordAndCpf(cpf,email, password) == null)
+            if (PeopleManager.GetInstance().SearchByEmailAndCpf(cpf,email) == null)
             {
                 PeopleManager.GetInstance().AddPerson(person);
 

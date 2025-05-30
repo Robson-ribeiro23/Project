@@ -48,7 +48,7 @@ namespace Acelera2025.Class
         {
             foreach (Person p in peopleDB)
             {
-                if (p.GetEmail() == email && p.GetPassword() == password && !p.IsInactive())
+                if (p.GetEmail() == email || p.GetPassword() == password || !p.IsInactive())
                 {
                     return p;
                 }
@@ -57,11 +57,11 @@ namespace Acelera2025.Class
         }
 
 
-        public Person SearchByEmailAndPasswordAndCpf(string cpf,string email, string password)
+        public Person SearchByEmailAndCpf(string cpf,string email)
         {
             foreach (Person p in peopleDB)
             {
-                if (p.GetEmail() == email || p.GetPassword() == password || p.GetCPF() == cpf || !p.IsInactive())
+                if (p.GetEmail() == email || p.GetCPF() == cpf || !p.IsInactive())
                 {
                     return p;
                 }
