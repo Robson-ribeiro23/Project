@@ -44,16 +44,46 @@ namespace Acelera2025.Class
             person.SetActivity(true); // true = inativo
         }
 
-        public Person SearchByEmailAndPassword(string cpf, string email, string password)
+        public Person SearchByEmailAndPassword(string email, string password)
         {
             foreach (Person p in peopleDB)
             {
-                if (p.GetEmail() == email && p.GetPassword() == password && !p.IsInactive() && p.GetCPF() == cpf)
+                if (p.GetEmail() == email && p.GetPassword() == password && !p.IsInactive())
                 {
                     return p;
                 }
             }
             return null;
         }
+
+
+        public Person SearchByEmailAndPasswordAndCpf(string cpf,string email, string password)
+        {
+            foreach (Person p in peopleDB)
+            {
+                if (p.GetEmail() == email || p.GetPassword() == password || p.GetCPF() == cpf || !p.IsInactive())
+                {
+                    return p;
+                }
+            }
+            return null;
+        }
+
+
+
+        public Person SearchForCpf(string cpf)
+        {
+            foreach (Person p in peopleDB)
+            {
+                if (p.GetCPF() == cpf)
+                {
+                    return p;
+                }
+            }
+            return null;
+        }
+
+
+
     }
 }

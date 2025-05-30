@@ -62,7 +62,7 @@ namespace Acelera2025.Telas
             
             Person person = new Person(name, cpf, email, password, birthday);
 
-            if (PeopleManager.GetInstance().SearchByEmailAndPassword(email, password) == null)
+            if (PeopleManager.GetInstance().SearchByEmailAndPasswordAndCpf(cpf,email, password) == null)
             {
                 PeopleManager.GetInstance().AddPerson(person);
 
@@ -71,7 +71,9 @@ namespace Acelera2025.Telas
                 login.Show();
 
                 MessageBox.Show("Usuário cadastrado!");
-            } else
+            }
+            
+            else
             {
                 MessageBox.Show("Usuario já cadastrado!");
             }
