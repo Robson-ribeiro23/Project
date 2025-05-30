@@ -40,8 +40,8 @@ namespace Acelera2025.Telas
             Form parentForm = this.FindForm();
             if (parentForm != null)
             {
-                EntrarUsuario loginForm = new EntrarUsuario();
-                loginForm.Show();
+                PrincipalInicial principal = new PrincipalInicial();
+                principal.Show();
                 parentForm.Close();
             }
         }

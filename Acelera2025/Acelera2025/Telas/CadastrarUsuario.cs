@@ -67,13 +67,13 @@ namespace Acelera2025.Telas
                 PeopleManager.GetInstance().AddPerson(person);
 
                 this.Close();
-                CadastrarUsuario cadastrarUsuario = new CadastrarUsuario();
-                cadastrarUsuario.Show();
+                EntrarUsuario login = new EntrarUsuario();
+                login.Show();
 
                 MessageBox.Show("Usuário cadastrado!");
             } else
             {
-                MessageBox.Show("Email já cadastrado!");
+                MessageBox.Show("Usuario já cadastrado!");
             }
 
         }
