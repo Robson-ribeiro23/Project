@@ -20,7 +20,7 @@ namespace Acelera2025.Telas
         }
         private void PerfilEmpresa_Load(object sender, EventArgs e)
         {
-            cardPerfil = new CardPerfil();
+            cardPerfil = new CardPerfil("empresa");
             cardPerfil.Visible = false;
 
 
@@ -92,9 +92,9 @@ namespace Acelera2025.Telas
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal p = new Principal();
+            /*Principal p = new Principal();
             p.Show();
-            this.Hide();
+            this.Hide();*/
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
@@ -102,6 +102,27 @@ namespace Acelera2025.Telas
             cardPerfilVisivel = !cardPerfilVisivel;
             cardPerfil.Visible = cardPerfilVisivel;
             cardPerfil.BringToFront();
+        }
+
+        private void circularButton1_Click_2(object sender, EventArgs e)
+        {
+            String imageLocation = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|all files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    PicPerfilEmpresa.ImageLocation = imageLocation;
+
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Acelera2025.Telas
         private void OrganizarEvento_Load(object sender, EventArgs e)
         {
             panelMeusEventos.Visible = false;
-            cardPerfil = new CardPerfil();
+            cardPerfil = new CardPerfil("empresa");
             cardPerfil.Visible = false;
 
 
@@ -111,9 +111,9 @@ namespace Acelera2025.Telas
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal principal = new Principal();
-            principal.Show();
-            this.Hide();
+            /*Principal p = new Principal();
+             p.Show();
+             this.Hide();*/
 
         }
 
@@ -124,9 +124,9 @@ namespace Acelera2025.Telas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Principal principal = new Principal();
-            principal.Show();
-            this.Hide();
+            /*Principal p = new Principal();
+              p.Show();
+              this.Hide();*/
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
@@ -191,12 +191,12 @@ namespace Acelera2025.Telas
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal p = new Principal();
+            /*Principal p = new Principal();
             p.Show();
-            this.Hide();
+            this.Hide();*/
         }
 
-       
+
 
         private void comboFaixaEtaria_SelectedIndexChanged(object sender, EventArgs e)
         {

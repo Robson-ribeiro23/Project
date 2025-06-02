@@ -25,7 +25,7 @@ namespace Acelera2025.Telas
         private void Perfil_Load(object sender, EventArgs e)
         {
             roundedPanel10.Visible = false;
-            cardPerfil = new CardPerfil();
+            cardPerfil = new CardPerfil("empresa");
             cardPerfil.Visible = false;
             
 
@@ -70,12 +70,12 @@ namespace Acelera2025.Telas
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal principal = new Principal();
-            principal.Show();
-            this.Hide();
+            /*Principal p = new Principal();
+                p.Show();
+                this.Hide();*/
         }
 
-       
+
 
         private void circularButton2_Click_1(object sender, EventArgs e)
         {
@@ -107,9 +107,9 @@ namespace Acelera2025.Telas
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal p = new Principal();
-            p.Show();
-            this.Hide();
+            /*Principal p = new Principal();
+             p.Show();
+             this.Hide();*/
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
@@ -120,6 +120,42 @@ namespace Acelera2025.Telas
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+ 
+        }
+
+        private void panelPerfil_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void circularButton1_Click(object sender, EventArgs e)
+        {
+            String imageLocation = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|all files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    PicPerfil.ImageLocation = imageLocation;
+
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void PicPerfil_Click(object sender, EventArgs e)
         {
 
         }

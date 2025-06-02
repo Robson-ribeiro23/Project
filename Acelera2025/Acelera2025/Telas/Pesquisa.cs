@@ -21,9 +21,9 @@ namespace Acelera2025.Telas
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal p = new Principal();
+            /*Principal p = new Principal();
             p.Show();
-            this.Hide();
+            this.Hide();*/
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace Acelera2025.Telas
 
         private void Pesquisa_Load(object sender, EventArgs e)
         {
-            cardPerfil = new CardPerfil();
+            cardPerfil = new CardPerfil("empresa");
             cardPerfil.Visible = false;
 
 

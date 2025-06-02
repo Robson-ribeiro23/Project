@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="formatiic">
+      <HintPath>..\..\..\CarolProject\formatiic\bin\Debug\formatiic.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -52,11 +55,18 @@
     <Compile Include="Class\Endereco.cs" />
     <Compile Include="Class\PeopleManager.cs" />
     <Compile Include="Class\Person.cs" />
+    <Compile Include="Controller\EmpresaController.cs" />
+    <Compile Include="Controller\UsuarioController.cs" />
+    <Compile Include="Model\EmpresaModel.cs" />
+    <Compile Include="Model\PessoaModel.cs" />
+    <Compile Include="Model\UsuarioModel.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Service\EmpresaService.cs" />
+    <Compile Include="Service\UsuarioService.cs" />
     <Compile Include="Telas\Ajuda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,6 +360,8 @@
     <None Include="Resources\IconeNotificacao.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\nezuko.jpeg" />
+    <None Include="Resources\usuario.png" />
     <None Include="Resources\CategoriaHobbies.png" />
     <None Include="Resources\CategoriaMeioAmbiente.png" />
     <None Include="Resources\CategoriaVoluntariado.png" />

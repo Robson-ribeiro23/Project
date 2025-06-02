@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardPerfil));
             this.roundedPanel2 = new RoundedPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.btnPerfil = new System.Windows.Forms.LinkLabel();
             this.btnSair = new System.Windows.Forms.LinkLabel();
             this.lblNome = new System.Windows.Forms.Label();
             this.picPerfil = new CircularPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.roundedPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -54,22 +54,10 @@
             this.roundedPanel2.Controls.Add(this.lblNome);
             this.roundedPanel2.Controls.Add(this.picPerfil);
             this.roundedPanel2.Location = new System.Drawing.Point(0, 1);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(284, 126);
             this.roundedPanel2.TabIndex = 15;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(13, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 23);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
             // 
             // linkLabel3
             // 
@@ -143,14 +131,30 @@
             // picPerfil
             // 
             this.picPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picPerfil.BackColor = System.Drawing.Color.DarkGray;
+            this.picPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.picPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.usuario;
+            this.picPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPerfil.BorderColor = System.Drawing.Color.Black;
             this.picPerfil.BorderSize = 0;
+            this.picPerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPerfil.Location = new System.Drawing.Point(13, 44);
-            this.picPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.picPerfil.Name = "picPerfil";
             this.picPerfil.Size = new System.Drawing.Size(32, 36);
             this.picPerfil.TabIndex = 10;
+            this.picPerfil.Paint += new System.Windows.Forms.PaintEventHandler(this.picPerfil_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(13, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 23);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
             // 
             // CardPerfil
             // 
@@ -158,7 +162,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.roundedPanel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CardPerfil";
             this.Size = new System.Drawing.Size(284, 128);
             this.Load += new System.EventHandler(this.CardPerfil_Load);

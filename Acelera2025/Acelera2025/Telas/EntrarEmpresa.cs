@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Acelera2025.Class;
+using MeuSistema.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Acelera2025.Class;
 
 namespace Acelera2025.Telas
 {
@@ -44,23 +45,23 @@ namespace Acelera2025.Telas
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
+            string cnpj = txtCnpj.Text;
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
-            string cnpj = txtCnpj.Text;
 
-         
+            var controller = new EmpresaController();
+            var empresa = controller.LoginEmpresa(cnpj, email, senha);
 
-            if (EmpresaManager.GetInstance().SearchByEmailAndPasswordAndCnpj(cnpj,email, senha) != null)
+            if (empresa != null)
             {
-                this.Close();
-                Principal principal = new Principal();
+                MessageBox.Show($"Login realizado com sucesso! Bem-vindo, {empresa.Nome}.");
+                Principal principal = new Principal(empresa,"empresa");
                 principal.Show();
-                MessageBox.Show("Logado com sucesso!");
+                this.Hide();
             }
             else
             {
-
-                MessageBox.Show("dados incorretos!");
+                MessageBox.Show("CNPJ, e-mail ou senha inválidos.");
             }
 
         }

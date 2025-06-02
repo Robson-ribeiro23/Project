@@ -463,6 +463,16 @@ namespace Acelera2025.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nezuko {
+            get {
+                object obj = ResourceManager.GetObject("nezuko", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap setaAzul {
             get {
                 object obj = ResourceManager.GetObject("setaAzul", resourceCulture);
@@ -476,6 +486,16 @@ namespace Acelera2025.Properties {
         internal static System.Drawing.Bitmap setaBranca {
             get {
                 object obj = ResourceManager.GetObject("setaBranca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario {
+            get {
+                object obj = ResourceManager.GetObject("usuario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

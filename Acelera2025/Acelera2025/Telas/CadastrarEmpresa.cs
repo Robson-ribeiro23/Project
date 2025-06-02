@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Acelera2025.Class;
+using MeuSistema.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,9 +8,9 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Acelera2025.Class;
 
 namespace Acelera2025.Telas
 {
@@ -33,32 +35,57 @@ namespace Acelera2025.Telas
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-         
+
             string nome = txtNomeEmpresa.Text;
             string cnpj = txtCnpj.Text;
             string telefone = txtTelefone.Text;
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
-            
+            string confirmarSenha = txtConfirmarSenha.Text;
 
-            Empresa empresa = new Empresa(nome, cnpj, telefone, email, senha);
 
-            if (EmpresaManager.GetInstance().SearchByEmailAndPassword(email, senha) == null)
+            if (string.IsNullOrWhiteSpace(nome) ||
+                string.IsNullOrWhiteSpace(cnpj) ||
+                string.IsNullOrWhiteSpace(telefone) ||
+                string.IsNullOrWhiteSpace(email) ||
+                string.IsNullOrWhiteSpace(senha) ||
+                string.IsNullOrWhiteSpace(confirmarSenha))
             {
-                EmpresaManager.GetInstance().AddEmpresa(empresa);
-
-                limparCampos();
-
-                MessageBox.Show("Empresa cadastrada!");
+                MessageBox.Show("Por favor, preencha todos os campos.");
+                return;
             }
-            else
+
+            if (!EmailValido(email))
             {
-                MessageBox.Show("Email já cadastrado!");
+                MessageBox.Show("E-mail inválido.");
+                return;
             }
+
+            if (senha != confirmarSenha)
+            {
+                MessageBox.Show("As senhas não coincidem.");
+                return;
+            }
+
+            var controller = new EmpresaController();
+
+            var empresa = controller.CadastrarEmpresa(nome, cnpj, telefone, email, senha);
+
+            MessageBox.Show($"Empresa {empresa.Nome} cadastrada com sucesso! ID: {empresa.Id}");
+
+            txtNomeEmpresa.Clear();
+            txtCnpj.Clear();
+            txtTelefone.Clear();
+            txtEmail.Clear();
+            txtSenha.Clear();
+            txtConfirmarSenha.Clear();
+        }
+        private bool EmailValido(string email)
+        {
+            return Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
         }
 
-
-        void limparCampos()
+        /*void limparCampos()
         {
             txtNomeEmpresa.Text = "";
             txtCnpj.Text = "";
@@ -66,7 +93,7 @@ namespace Acelera2025.Telas
             txtEmail.Text = "";
             txtSenha.Text = "";
             txtConfirmarSenha.Text = "";
-        }
+        }*/
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -124,6 +151,18 @@ namespace Acelera2025.Telas
                     txtConfirmarSenha.PasswordChar = '*';
                     btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
                 }
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void roundedButton1_Click_1(object sender, EventArgs e)
+        {
+            EntrarEmpresa entrarEmpresa = new EntrarEmpresa();
+            entrarEmpresa.Show();
+            this.Hide();
         }
     }
 }

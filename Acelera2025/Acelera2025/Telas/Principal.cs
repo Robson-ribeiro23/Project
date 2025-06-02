@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Acelera2025.Class;
+using Acelera2025.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Acelera2025.Class;
 
 namespace Acelera2025.Telas
 {
@@ -16,9 +17,14 @@ namespace Acelera2025.Telas
         private bool panelVisivel = false;
         private CardPerfil cardPerfil;
         private bool cardPerfilVisivel = false;
-        public Principal()
+
+        private EmpresaModel EmpresaLogado;
+        private String tipo = "";
+        public Principal(EmpresaModel empresa, String tipoUsuario)
         {
             InitializeComponent();
+            EmpresaLogado = empresa;
+            tipo = tipoUsuario;
             panelCategorias.Resize += PanelCategorias_Resize;
             panelEventosPerto.Resize += PanelEventosPerto_Resize;
             panelEventosOnline.Resize += PanelEventosOnline_Resize;
@@ -51,7 +57,7 @@ namespace Acelera2025.Telas
             PanelEventosPerto_Resize(null, null);
             PanelEventosOnline_Resize(null, null);
             panelMeusEventos.Visible = false;
-            cardPerfil = new CardPerfil();
+            cardPerfil = new CardPerfil(tipo);
             cardPerfil.Visible = false;
 
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();

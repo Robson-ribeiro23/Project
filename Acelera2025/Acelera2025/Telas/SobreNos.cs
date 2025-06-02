@@ -22,7 +22,7 @@ namespace Acelera2025.Telas
         private void SobreNos_Load(object sender, EventArgs e)
         {
             panelMeusEventos.Visible = false;
-            cardPerfil = new CardPerfil();
+            cardPerfil = new CardPerfil("empresa");
             cardPerfil.Visible = false;
 
 
@@ -65,9 +65,9 @@ namespace Acelera2025.Telas
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal p = new Principal();
-            p.Show();
-            this.Hide();
+            /*Principal p = new Principal();
+             p.Show();
+             this.Hide();*/
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -94,9 +94,9 @@ namespace Acelera2025.Telas
 
         private void btnPrincipal_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal p = new Principal();
-            p.Show();
-            this.Hide();
+            /*Principal p = new Principal();
+                p.Show();
+                this.Hide();*/
         }
     }
 }

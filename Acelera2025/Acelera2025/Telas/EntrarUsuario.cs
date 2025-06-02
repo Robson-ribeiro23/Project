@@ -45,10 +45,11 @@ namespace Acelera2025.Telas
             if (PeopleManager.GetInstance().SearchByEmailAndPassword(email, password) != null)
             {
                 this.Close();
-                Principal principal = new Principal();
-                principal.Show();
-                MessageBox.Show("Logado com sucesso!");
-            } else
+                /*Principal p = new Principal();
+           p.Show();
+           this.Hide();*/
+            }
+            else
             {
                
                 MessageBox.Show("Email ou senha incorretos!");
@@ -78,9 +79,9 @@ namespace Acelera2025.Telas
 
         private void btnRecuperar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal p = new Principal();
+            /*Principal p = new Principal();
             p.Show();
-            this.Hide();
+            this.Hide();*/
         }
     }
 }

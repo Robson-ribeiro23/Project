@@ -21,7 +21,7 @@ namespace Acelera2025.Telas
 
         private void EventosIngressados_Load(object sender, EventArgs e)
         {
-            cardPerfil = new CardPerfil();
+            cardPerfil = new CardPerfil("empresa");
             cardPerfil.Visible = false;
 
 
@@ -33,9 +33,9 @@ namespace Acelera2025.Telas
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Principal p = new Principal();
-            p.Show();
-            this.Hide();
+            /*Principal p = new Principal();
+              p.Show();
+              this.Hide();*/
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
