@@ -96,6 +96,11 @@ namespace Acelera2025.Telas
             this.PicPerfil.BorderSize = 0;
             this.PicPerfil.Location = new System.Drawing.Point(125, 112);
             this.PicPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.PicPerfil.BackColor = System.Drawing.Color.Gray;
+            this.PicPerfil.BorderColor = System.Drawing.Color.Black;
+            this.PicPerfil.BorderRadius = 60;
+            this.PicPerfil.BorderSize = 2;
+            this.PicPerfil.Location = new System.Drawing.Point(94, 91);
             this.PicPerfil.Name = "PicPerfil";
             this.PicPerfil.Size = new System.Drawing.Size(163, 148);
             this.PicPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

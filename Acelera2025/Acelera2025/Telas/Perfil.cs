@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Acelera2025.Model;
+using Acelera2025.Service;
 
 namespace Acelera2025.Telas
 {
@@ -42,6 +44,7 @@ namespace Acelera2025.Telas
             cardEditarPerfil.FecharTelaSolicitado += (s, args) => this.Close();
             cardEditarPerfil.Top = (this.ClientSize.Height - cardEditarPerfil.Height) / 2;
 
+            UsuarioService usuarioService = new UsuarioService();
 
         }
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -49,6 +52,11 @@ namespace Acelera2025.Telas
             OrganizarEvento organizarEvento = new OrganizarEvento();
             organizarEvento.Show();
             this.Hide();
+        }
+
+        private void PopulateProfile()
+        {
+
         }
 
         private void roundedPanel10_Paint(object sender, PaintEventArgs e)
