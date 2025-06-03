@@ -1,4 +1,6 @@
-﻿namespace Acelera2025.Telas
+﻿using Acelera2025.Ferramentas;
+
+namespace Acelera2025.Telas
 {
     partial class Perfil
     {
@@ -30,7 +32,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Perfil));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.PicPerfil = new RoundedPictureBox();
+            this.PicPerfil = new RoundedPicture();
             this.circularButton1 = new CircularButton();
             this.roundedPanel10 = new RoundedPanel();
             this.roundedButton4 = new RoundedButton();
@@ -584,6 +586,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel btnPrincipal;
         private CircularButton circularButton1;
-        private RoundedPictureBox PicPerfil;
+        private RoundedPicture PicPerfil;
     }
 }
