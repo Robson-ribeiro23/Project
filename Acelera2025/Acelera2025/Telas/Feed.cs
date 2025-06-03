@@ -46,6 +46,14 @@ namespace Acelera2025.Telas
             cardPerfil.BringToFront();
         }
 
-        
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

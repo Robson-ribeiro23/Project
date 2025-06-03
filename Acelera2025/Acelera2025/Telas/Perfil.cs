@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Acelera2025.Telas
 {
@@ -14,25 +15,32 @@ namespace Acelera2025.Telas
     {
         private bool panelVisivel = false;
         private CardPerfil cardPerfil;
+        private CardEditarPerfil cardEditarPerfil;
         private bool cardPerfilVisivel = false;
-        
+        private bool cardEditarPerfilVisivel = false;
+
         public Perfil()
         {
             InitializeComponent();
         }
-        
-        
         private void Perfil_Load(object sender, EventArgs e)
         {
             roundedPanel10.Visible = false;
             cardPerfil = new CardPerfil("empresa");
             cardPerfil.Visible = false;
+            cardEditarPerfil = new CardEditarPerfil();
+            cardEditarPerfil.Visible = false;
             
 
             panel1.Controls.Add(cardPerfil);
             cardPerfil.Location = new Point(panel1.Width - cardPerfil.Width-20, 0);
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
             cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+
+            panel1.Controls.Add(cardEditarPerfil);
+            cardEditarPerfil.Left = (this.ClientSize.Width - cardEditarPerfil.Width) / 2;
+            cardEditarPerfil.FecharTelaSolicitado += (s, args) => this.Close();
+            cardEditarPerfil.Top = (this.ClientSize.Height - cardEditarPerfil.Height) / 2;
 
 
         }
@@ -79,9 +87,7 @@ namespace Acelera2025.Telas
 
         private void circularButton2_Click_1(object sender, EventArgs e)
         {
-            PerfilEmpresa perfilEmpresa = new PerfilEmpresa();
-            perfilEmpresa.Show();
-            this.Hide();
+           
         }
 
         
@@ -122,6 +128,20 @@ namespace Acelera2025.Telas
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            cardEditarPerfilVisivel = !cardEditarPerfilVisivel;
+            cardEditarPerfil.Visible = cardEditarPerfilVisivel;
+            cardEditarPerfil.BringToFront();
+        }
+
+        private void btnEditarInformações_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            cardEditarPerfilVisivel = !cardEditarPerfilVisivel;
+            cardEditarPerfil.Visible = cardEditarPerfilVisivel;
+            cardEditarPerfil.BringToFront();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

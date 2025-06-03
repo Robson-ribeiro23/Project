@@ -182,9 +182,9 @@
             this.panel1.Controls.Add(this.gradientPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1308, 596);
+            this.panel1.Size = new System.Drawing.Size(1744, 734);
             this.panel1.TabIndex = 2;
             // 
             // panel2
@@ -198,10 +198,10 @@
             this.panel2.Controls.Add(this.btnAntCarrossel);
             this.panel2.Controls.Add(this.superiorRoundedPanel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 41);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(0, 50);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1308, 555);
+            this.panel2.Size = new System.Drawing.Size(1744, 684);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -214,10 +214,10 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(910, 5);
-            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1213, 6);
+            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMeusEventos.Name = "panelMeusEventos";
-            this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
+            this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
             this.panelMeusEventos.TabIndex = 7;
             this.panelMeusEventos.Visible = false;
             this.panelMeusEventos.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel10_Paint);
@@ -231,10 +231,10 @@
             this.btnEventosCriados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEventosCriados.Location = new System.Drawing.Point(0, 40);
-            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEventosCriados.Location = new System.Drawing.Point(0, 49);
+            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEventosCriados.Name = "btnEventosCriados";
-            this.btnEventosCriados.Size = new System.Drawing.Size(184, 41);
+            this.btnEventosCriados.Size = new System.Drawing.Size(245, 50);
             this.btnEventosCriados.TabIndex = 1;
             this.btnEventosCriados.Text = "Eventos Criados";
             this.btnEventosCriados.UseVisualStyleBackColor = false;
@@ -250,9 +250,9 @@
             this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEventosIngressados.Location = new System.Drawing.Point(0, 2);
-            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEventosIngressados.Name = "btnEventosIngressados";
-            this.btnEventosIngressados.Size = new System.Drawing.Size(184, 45);
+            this.btnEventosIngressados.Size = new System.Drawing.Size(245, 55);
             this.btnEventosIngressados.TabIndex = 0;
             this.btnEventosIngressados.Text = "Eventos Ingressados";
             this.btnEventosIngressados.UseVisualStyleBackColor = false;
@@ -264,10 +264,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label10.Location = new System.Drawing.Point(555, 76);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(740, 94);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(235, 43);
+            this.label10.Size = new System.Drawing.Size(293, 53);
             this.label10.TabIndex = 3;
             this.label10.Text = "EVENTOS EM ALTA";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -279,10 +278,10 @@
             this.picCarrossel.BorderRadius = 20;
             this.picCarrossel.BorderSize = 2;
             this.picCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCarrossel.Location = new System.Drawing.Point(350, 122);
-            this.picCarrossel.Margin = new System.Windows.Forms.Padding(2);
+            this.picCarrossel.Location = new System.Drawing.Point(467, 150);
+            this.picCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCarrossel.Name = "picCarrossel";
-            this.picCarrossel.Size = new System.Drawing.Size(632, 262);
+            this.picCarrossel.Size = new System.Drawing.Size(843, 322);
             this.picCarrossel.TabIndex = 2;
             this.picCarrossel.TabStop = false;
             this.picCarrossel.Click += new System.EventHandler(this.roundedPicture1_Click);
@@ -296,10 +295,10 @@
             this.btnProxCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProxCarrossel.FlatAppearance.BorderSize = 0;
             this.btnProxCarrossel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProxCarrossel.Location = new System.Drawing.Point(993, 210);
-            this.btnProxCarrossel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProxCarrossel.Location = new System.Drawing.Point(1324, 258);
+            this.btnProxCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProxCarrossel.Name = "btnProxCarrossel";
-            this.btnProxCarrossel.Size = new System.Drawing.Size(37, 49);
+            this.btnProxCarrossel.Size = new System.Drawing.Size(49, 60);
             this.btnProxCarrossel.TabIndex = 5;
             this.btnProxCarrossel.UseVisualStyleBackColor = false;
             this.btnProxCarrossel.Click += new System.EventHandler(this.button2_Click);
@@ -313,10 +312,10 @@
             this.btnAntCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAntCarrossel.FlatAppearance.BorderSize = 0;
             this.btnAntCarrossel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAntCarrossel.Location = new System.Drawing.Point(309, 210);
-            this.btnAntCarrossel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAntCarrossel.Location = new System.Drawing.Point(412, 258);
+            this.btnAntCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAntCarrossel.Name = "btnAntCarrossel";
-            this.btnAntCarrossel.Size = new System.Drawing.Size(37, 49);
+            this.btnAntCarrossel.Size = new System.Drawing.Size(49, 60);
             this.btnAntCarrossel.TabIndex = 4;
             this.btnAntCarrossel.UseVisualStyleBackColor = false;
             this.btnAntCarrossel.Click += new System.EventHandler(this.button1_Click);
@@ -343,10 +342,10 @@
             this.superiorRoundedPanel1.Controls.Add(this.btnCarrossel2);
             this.superiorRoundedPanel1.Controls.Add(this.label11);
             this.superiorRoundedPanel1.Controls.Add(this.panelEventosPerto);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(-1, 263);
-            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(-1, 324);
+            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1312, 1280);
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1749, 1575);
             this.superiorRoundedPanel1.TabIndex = 6;
             this.superiorRoundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.superiorRoundedPanel1_Paint);
             // 
@@ -363,10 +362,10 @@
             this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gradientPanel2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.gradientPanel2.Location = new System.Drawing.Point(0, 1220);
-            this.gradientPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.gradientPanel2.Location = new System.Drawing.Point(0, 1501);
+            this.gradientPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(1312, 60);
+            this.gradientPanel2.Size = new System.Drawing.Size(1749, 74);
             this.gradientPanel2.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel2.TabIndex = 34;
             this.gradientPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel2_Paint);
@@ -375,10 +374,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(27, 17);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(36, 21);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 27);
+            this.pictureBox2.Size = new System.Drawing.Size(49, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
@@ -391,10 +390,9 @@
             this.linkLabel1.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(68, 20);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(91, 25);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(82, 21);
+            this.linkLabel1.Size = new System.Drawing.Size(108, 27);
             this.linkLabel1.TabIndex = 15;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "CONNECTA";
@@ -408,10 +406,10 @@
             this.btnLinkedIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLinkedIn.FlatAppearance.BorderSize = 0;
             this.btnLinkedIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLinkedIn.Location = new System.Drawing.Point(1136, 11);
-            this.btnLinkedIn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLinkedIn.Location = new System.Drawing.Point(1515, 14);
+            this.btnLinkedIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLinkedIn.Name = "btnLinkedIn";
-            this.btnLinkedIn.Size = new System.Drawing.Size(45, 39);
+            this.btnLinkedIn.Size = new System.Drawing.Size(60, 48);
             this.btnLinkedIn.TabIndex = 14;
             this.btnLinkedIn.UseVisualStyleBackColor = false;
             // 
@@ -423,10 +421,10 @@
             this.btnEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEmail.FlatAppearance.BorderSize = 0;
             this.btnEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmail.Location = new System.Drawing.Point(1090, 11);
-            this.btnEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEmail.Location = new System.Drawing.Point(1453, 14);
+            this.btnEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEmail.Name = "btnEmail";
-            this.btnEmail.Size = new System.Drawing.Size(40, 39);
+            this.btnEmail.Size = new System.Drawing.Size(53, 48);
             this.btnEmail.TabIndex = 12;
             this.btnEmail.UseVisualStyleBackColor = false;
             // 
@@ -438,10 +436,10 @@
             this.btnFacebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFacebook.FlatAppearance.BorderSize = 0;
             this.btnFacebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacebook.Location = new System.Drawing.Point(1226, 11);
-            this.btnFacebook.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFacebook.Location = new System.Drawing.Point(1635, 14);
+            this.btnFacebook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFacebook.Name = "btnFacebook";
-            this.btnFacebook.Size = new System.Drawing.Size(40, 39);
+            this.btnFacebook.Size = new System.Drawing.Size(53, 48);
             this.btnFacebook.TabIndex = 11;
             this.btnFacebook.UseVisualStyleBackColor = false;
             // 
@@ -453,10 +451,10 @@
             this.btnInstagram.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInstagram.FlatAppearance.BorderSize = 0;
             this.btnInstagram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInstagram.Location = new System.Drawing.Point(1180, 11);
-            this.btnInstagram.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInstagram.Location = new System.Drawing.Point(1573, 14);
+            this.btnInstagram.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInstagram.Name = "btnInstagram";
-            this.btnInstagram.Size = new System.Drawing.Size(40, 39);
+            this.btnInstagram.Size = new System.Drawing.Size(53, 48);
             this.btnInstagram.TabIndex = 10;
             this.btnInstagram.UseVisualStyleBackColor = false;
             // 
@@ -469,10 +467,9 @@
             this.btnContato.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContato.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnContato.LinkColor = System.Drawing.Color.White;
-            this.btnContato.Location = new System.Drawing.Point(1016, 22);
-            this.btnContato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnContato.Location = new System.Drawing.Point(1355, 27);
             this.btnContato.Name = "btnContato";
-            this.btnContato.Size = new System.Drawing.Size(53, 21);
+            this.btnContato.Size = new System.Drawing.Size(65, 27);
             this.btnContato.TabIndex = 5;
             this.btnContato.TabStop = true;
             this.btnContato.Text = "Contato";
@@ -487,10 +484,9 @@
             this.btnAjudaInferior.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjudaInferior.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjudaInferior.LinkColor = System.Drawing.Color.White;
-            this.btnAjudaInferior.Location = new System.Drawing.Point(962, 21);
-            this.btnAjudaInferior.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnAjudaInferior.Location = new System.Drawing.Point(1283, 26);
             this.btnAjudaInferior.Name = "btnAjudaInferior";
-            this.btnAjudaInferior.Size = new System.Drawing.Size(41, 21);
+            this.btnAjudaInferior.Size = new System.Drawing.Size(51, 27);
             this.btnAjudaInferior.TabIndex = 4;
             this.btnAjudaInferior.TabStop = true;
             this.btnAjudaInferior.Text = "Ajuda";
@@ -506,10 +502,10 @@
             this.panelEventosOnline.Controls.Add(this.roundedPanel8);
             this.panelEventosOnline.Controls.Add(this.roundedPanel7);
             this.panelEventosOnline.Controls.Add(this.roundedPanel6);
-            this.panelEventosOnline.Location = new System.Drawing.Point(0, 898);
-            this.panelEventosOnline.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEventosOnline.Location = new System.Drawing.Point(0, 1105);
+            this.panelEventosOnline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEventosOnline.Name = "panelEventosOnline";
-            this.panelEventosOnline.Size = new System.Drawing.Size(1310, 232);
+            this.panelEventosOnline.Size = new System.Drawing.Size(1747, 286);
             this.panelEventosOnline.TabIndex = 33;
             // 
             // btnProxEventosOnline
@@ -521,10 +517,10 @@
             this.btnProxEventosOnline.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProxEventosOnline.FlatAppearance.BorderSize = 0;
             this.btnProxEventosOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProxEventosOnline.Location = new System.Drawing.Point(1275, 96);
-            this.btnProxEventosOnline.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProxEventosOnline.Location = new System.Drawing.Point(1700, 118);
+            this.btnProxEventosOnline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProxEventosOnline.Name = "btnProxEventosOnline";
-            this.btnProxEventosOnline.Size = new System.Drawing.Size(37, 49);
+            this.btnProxEventosOnline.Size = new System.Drawing.Size(49, 60);
             this.btnProxEventosOnline.TabIndex = 11;
             this.btnProxEventosOnline.UseVisualStyleBackColor = false;
             // 
@@ -536,10 +532,10 @@
             this.btnAntEventosOnline.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAntEventosOnline.FlatAppearance.BorderSize = 0;
             this.btnAntEventosOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAntEventosOnline.Location = new System.Drawing.Point(27, 96);
-            this.btnAntEventosOnline.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAntEventosOnline.Location = new System.Drawing.Point(36, 118);
+            this.btnAntEventosOnline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAntEventosOnline.Name = "btnAntEventosOnline";
-            this.btnAntEventosOnline.Size = new System.Drawing.Size(37, 49);
+            this.btnAntEventosOnline.Size = new System.Drawing.Size(49, 60);
             this.btnAntEventosOnline.TabIndex = 10;
             this.btnAntEventosOnline.UseVisualStyleBackColor = false;
             // 
@@ -557,10 +553,10 @@
             this.roundedPanel9.Controls.Add(this.lblData8);
             this.roundedPanel9.Controls.Add(this.btnNomeEventoOnline4);
             this.roundedPanel9.Controls.Add(this.picEventoOnline4);
-            this.roundedPanel9.Location = new System.Drawing.Point(975, 14);
-            this.roundedPanel9.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel9.Location = new System.Drawing.Point(1300, 17);
+            this.roundedPanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel9.Name = "roundedPanel9";
-            this.roundedPanel9.Size = new System.Drawing.Size(260, 202);
+            this.roundedPanel9.Size = new System.Drawing.Size(347, 252);
             this.roundedPanel9.TabIndex = 9;
             this.roundedPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel9_Paint);
             // 
@@ -569,10 +565,9 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label26.Location = new System.Drawing.Point(84, 142);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Location = new System.Drawing.Point(112, 175);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(29, 43);
+            this.label26.Size = new System.Drawing.Size(35, 53);
             this.label26.TabIndex = 21;
             this.label26.Text = "-";
             // 
@@ -581,10 +576,9 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label27.Location = new System.Drawing.Point(15, 175);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label27.Location = new System.Drawing.Point(20, 215);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(52, 25);
+            this.label27.Size = new System.Drawing.Size(63, 30);
             this.label27.TabIndex = 20;
             this.label27.Text = "Online";
             // 
@@ -593,10 +587,9 @@
             this.lblHora8.AutoSize = true;
             this.lblHora8.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHora8.Location = new System.Drawing.Point(115, 150);
-            this.lblHora8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora8.Location = new System.Drawing.Point(153, 185);
             this.lblHora8.Name = "lblHora8";
-            this.lblHora8.Size = new System.Drawing.Size(52, 29);
+            this.lblHora8.Size = new System.Drawing.Size(63, 36);
             this.lblHora8.TabIndex = 19;
             this.lblHora8.Text = "00:00";
             // 
@@ -605,10 +598,9 @@
             this.lblData8.AutoSize = true;
             this.lblData8.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData8.Location = new System.Drawing.Point(14, 150);
-            this.lblData8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData8.Location = new System.Drawing.Point(19, 185);
             this.lblData8.Name = "lblData8";
-            this.lblData8.Size = new System.Drawing.Size(79, 29);
+            this.lblData8.Size = new System.Drawing.Size(97, 36);
             this.lblData8.TabIndex = 18;
             this.lblData8.Text = "00/00/00";
             // 
@@ -620,10 +612,9 @@
             this.btnNomeEventoOnline4.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNomeEventoOnline4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnNomeEventoOnline4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNomeEventoOnline4.Location = new System.Drawing.Point(14, 118);
-            this.btnNomeEventoOnline4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnNomeEventoOnline4.Location = new System.Drawing.Point(19, 145);
             this.btnNomeEventoOnline4.Name = "btnNomeEventoOnline4";
-            this.btnNomeEventoOnline4.Size = new System.Drawing.Size(69, 34);
+            this.btnNomeEventoOnline4.Size = new System.Drawing.Size(83, 41);
             this.btnNomeEventoOnline4.TabIndex = 17;
             this.btnNomeEventoOnline4.TabStop = true;
             this.btnNomeEventoOnline4.Text = "Nome";
@@ -637,9 +628,9 @@
             this.picEventoOnline4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picEventoOnline4.Dock = System.Windows.Forms.DockStyle.Top;
             this.picEventoOnline4.Location = new System.Drawing.Point(0, 0);
-            this.picEventoOnline4.Margin = new System.Windows.Forms.Padding(2);
+            this.picEventoOnline4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEventoOnline4.Name = "picEventoOnline4";
-            this.picEventoOnline4.Size = new System.Drawing.Size(260, 115);
+            this.picEventoOnline4.Size = new System.Drawing.Size(347, 142);
             this.picEventoOnline4.TabIndex = 4;
             this.picEventoOnline4.TabStop = false;
             // 
@@ -657,10 +648,10 @@
             this.roundedPanel8.Controls.Add(this.lblData7);
             this.roundedPanel8.Controls.Add(this.btnNomeEventoOnline3);
             this.roundedPanel8.Controls.Add(this.picEventoOnline3);
-            this.roundedPanel8.Location = new System.Drawing.Point(689, 14);
-            this.roundedPanel8.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel8.Location = new System.Drawing.Point(919, 17);
+            this.roundedPanel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel8.Name = "roundedPanel8";
-            this.roundedPanel8.Size = new System.Drawing.Size(260, 202);
+            this.roundedPanel8.Size = new System.Drawing.Size(347, 252);
             this.roundedPanel8.TabIndex = 8;
             // 
             // label30
@@ -668,10 +659,9 @@
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label30.Location = new System.Drawing.Point(89, 142);
-            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label30.Location = new System.Drawing.Point(119, 175);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(29, 43);
+            this.label30.Size = new System.Drawing.Size(35, 53);
             this.label30.TabIndex = 26;
             this.label30.Text = "-";
             // 
@@ -680,10 +670,9 @@
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label31.Location = new System.Drawing.Point(20, 175);
-            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label31.Location = new System.Drawing.Point(27, 215);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(52, 25);
+            this.label31.Size = new System.Drawing.Size(63, 30);
             this.label31.TabIndex = 25;
             this.label31.Text = "Online";
             // 
@@ -692,10 +681,9 @@
             this.lblHora7.AutoSize = true;
             this.lblHora7.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHora7.Location = new System.Drawing.Point(120, 150);
-            this.lblHora7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora7.Location = new System.Drawing.Point(160, 185);
             this.lblHora7.Name = "lblHora7";
-            this.lblHora7.Size = new System.Drawing.Size(52, 29);
+            this.lblHora7.Size = new System.Drawing.Size(63, 36);
             this.lblHora7.TabIndex = 24;
             this.lblHora7.Text = "00:00";
             // 
@@ -704,10 +692,9 @@
             this.lblData7.AutoSize = true;
             this.lblData7.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData7.Location = new System.Drawing.Point(20, 150);
-            this.lblData7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData7.Location = new System.Drawing.Point(27, 185);
             this.lblData7.Name = "lblData7";
-            this.lblData7.Size = new System.Drawing.Size(79, 29);
+            this.lblData7.Size = new System.Drawing.Size(97, 36);
             this.lblData7.TabIndex = 23;
             this.lblData7.Text = "00/00/00";
             // 
@@ -719,10 +706,9 @@
             this.btnNomeEventoOnline3.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNomeEventoOnline3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnNomeEventoOnline3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNomeEventoOnline3.Location = new System.Drawing.Point(19, 118);
-            this.btnNomeEventoOnline3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnNomeEventoOnline3.Location = new System.Drawing.Point(25, 145);
             this.btnNomeEventoOnline3.Name = "btnNomeEventoOnline3";
-            this.btnNomeEventoOnline3.Size = new System.Drawing.Size(69, 34);
+            this.btnNomeEventoOnline3.Size = new System.Drawing.Size(83, 41);
             this.btnNomeEventoOnline3.TabIndex = 22;
             this.btnNomeEventoOnline3.TabStop = true;
             this.btnNomeEventoOnline3.Text = "Nome";
@@ -736,9 +722,9 @@
             this.picEventoOnline3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picEventoOnline3.Dock = System.Windows.Forms.DockStyle.Top;
             this.picEventoOnline3.Location = new System.Drawing.Point(0, 0);
-            this.picEventoOnline3.Margin = new System.Windows.Forms.Padding(2);
+            this.picEventoOnline3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEventoOnline3.Name = "picEventoOnline3";
-            this.picEventoOnline3.Size = new System.Drawing.Size(260, 115);
+            this.picEventoOnline3.Size = new System.Drawing.Size(347, 142);
             this.picEventoOnline3.TabIndex = 4;
             this.picEventoOnline3.TabStop = false;
             // 
@@ -756,10 +742,10 @@
             this.roundedPanel7.Controls.Add(this.lblData6);
             this.roundedPanel7.Controls.Add(this.btnNomeEventoOnline2);
             this.roundedPanel7.Controls.Add(this.picEventoOnline2);
-            this.roundedPanel7.Location = new System.Drawing.Point(403, 14);
-            this.roundedPanel7.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel7.Location = new System.Drawing.Point(537, 17);
+            this.roundedPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel7.Name = "roundedPanel7";
-            this.roundedPanel7.Size = new System.Drawing.Size(260, 202);
+            this.roundedPanel7.Size = new System.Drawing.Size(347, 252);
             this.roundedPanel7.TabIndex = 7;
             // 
             // label34
@@ -767,10 +753,9 @@
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label34.Location = new System.Drawing.Point(89, 142);
-            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Location = new System.Drawing.Point(119, 175);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(29, 43);
+            this.label34.Size = new System.Drawing.Size(35, 53);
             this.label34.TabIndex = 26;
             this.label34.Text = "-";
             // 
@@ -779,10 +764,9 @@
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label35.Location = new System.Drawing.Point(20, 175);
-            this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label35.Location = new System.Drawing.Point(27, 215);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(52, 25);
+            this.label35.Size = new System.Drawing.Size(63, 30);
             this.label35.TabIndex = 25;
             this.label35.Text = "Online";
             // 
@@ -791,10 +775,9 @@
             this.lblHora6.AutoSize = true;
             this.lblHora6.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHora6.Location = new System.Drawing.Point(120, 150);
-            this.lblHora6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora6.Location = new System.Drawing.Point(160, 185);
             this.lblHora6.Name = "lblHora6";
-            this.lblHora6.Size = new System.Drawing.Size(52, 29);
+            this.lblHora6.Size = new System.Drawing.Size(63, 36);
             this.lblHora6.TabIndex = 24;
             this.lblHora6.Text = "00:00";
             // 
@@ -803,10 +786,9 @@
             this.lblData6.AutoSize = true;
             this.lblData6.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData6.Location = new System.Drawing.Point(20, 150);
-            this.lblData6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData6.Location = new System.Drawing.Point(27, 185);
             this.lblData6.Name = "lblData6";
-            this.lblData6.Size = new System.Drawing.Size(79, 29);
+            this.lblData6.Size = new System.Drawing.Size(97, 36);
             this.lblData6.TabIndex = 23;
             this.lblData6.Text = "00/00/00";
             // 
@@ -818,10 +800,9 @@
             this.btnNomeEventoOnline2.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNomeEventoOnline2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnNomeEventoOnline2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNomeEventoOnline2.Location = new System.Drawing.Point(19, 118);
-            this.btnNomeEventoOnline2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnNomeEventoOnline2.Location = new System.Drawing.Point(25, 145);
             this.btnNomeEventoOnline2.Name = "btnNomeEventoOnline2";
-            this.btnNomeEventoOnline2.Size = new System.Drawing.Size(69, 34);
+            this.btnNomeEventoOnline2.Size = new System.Drawing.Size(83, 41);
             this.btnNomeEventoOnline2.TabIndex = 22;
             this.btnNomeEventoOnline2.TabStop = true;
             this.btnNomeEventoOnline2.Text = "Nome";
@@ -835,9 +816,9 @@
             this.picEventoOnline2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picEventoOnline2.Dock = System.Windows.Forms.DockStyle.Top;
             this.picEventoOnline2.Location = new System.Drawing.Point(0, 0);
-            this.picEventoOnline2.Margin = new System.Windows.Forms.Padding(2);
+            this.picEventoOnline2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEventoOnline2.Name = "picEventoOnline2";
-            this.picEventoOnline2.Size = new System.Drawing.Size(260, 115);
+            this.picEventoOnline2.Size = new System.Drawing.Size(347, 142);
             this.picEventoOnline2.TabIndex = 4;
             this.picEventoOnline2.TabStop = false;
             // 
@@ -855,10 +836,10 @@
             this.roundedPanel6.Controls.Add(this.lblData5);
             this.roundedPanel6.Controls.Add(this.btnNomeEventoOnline1);
             this.roundedPanel6.Controls.Add(this.picEventoOnline1);
-            this.roundedPanel6.Location = new System.Drawing.Point(122, 14);
-            this.roundedPanel6.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel6.Location = new System.Drawing.Point(163, 17);
+            this.roundedPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel6.Name = "roundedPanel6";
-            this.roundedPanel6.Size = new System.Drawing.Size(260, 202);
+            this.roundedPanel6.Size = new System.Drawing.Size(347, 252);
             this.roundedPanel6.TabIndex = 6;
             // 
             // label38
@@ -866,10 +847,9 @@
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label38.Location = new System.Drawing.Point(84, 142);
-            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label38.Location = new System.Drawing.Point(112, 175);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(29, 43);
+            this.label38.Size = new System.Drawing.Size(35, 53);
             this.label38.TabIndex = 26;
             this.label38.Text = "-";
             // 
@@ -878,10 +858,9 @@
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label39.Location = new System.Drawing.Point(15, 175);
-            this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label39.Location = new System.Drawing.Point(20, 215);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(52, 25);
+            this.label39.Size = new System.Drawing.Size(63, 30);
             this.label39.TabIndex = 25;
             this.label39.Text = "Online";
             // 
@@ -890,10 +869,9 @@
             this.lblHora5.AutoSize = true;
             this.lblHora5.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHora5.Location = new System.Drawing.Point(115, 150);
-            this.lblHora5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora5.Location = new System.Drawing.Point(153, 185);
             this.lblHora5.Name = "lblHora5";
-            this.lblHora5.Size = new System.Drawing.Size(52, 29);
+            this.lblHora5.Size = new System.Drawing.Size(63, 36);
             this.lblHora5.TabIndex = 24;
             this.lblHora5.Text = "00:00";
             // 
@@ -902,10 +880,9 @@
             this.lblData5.AutoSize = true;
             this.lblData5.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData5.Location = new System.Drawing.Point(14, 150);
-            this.lblData5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData5.Location = new System.Drawing.Point(19, 185);
             this.lblData5.Name = "lblData5";
-            this.lblData5.Size = new System.Drawing.Size(79, 29);
+            this.lblData5.Size = new System.Drawing.Size(97, 36);
             this.lblData5.TabIndex = 23;
             this.lblData5.Text = "00/00/00";
             // 
@@ -917,10 +894,9 @@
             this.btnNomeEventoOnline1.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNomeEventoOnline1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnNomeEventoOnline1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNomeEventoOnline1.Location = new System.Drawing.Point(14, 118);
-            this.btnNomeEventoOnline1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnNomeEventoOnline1.Location = new System.Drawing.Point(19, 145);
             this.btnNomeEventoOnline1.Name = "btnNomeEventoOnline1";
-            this.btnNomeEventoOnline1.Size = new System.Drawing.Size(69, 34);
+            this.btnNomeEventoOnline1.Size = new System.Drawing.Size(83, 41);
             this.btnNomeEventoOnline1.TabIndex = 22;
             this.btnNomeEventoOnline1.TabStop = true;
             this.btnNomeEventoOnline1.Text = "Nome";
@@ -934,9 +910,9 @@
             this.picEventoOnline1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picEventoOnline1.Dock = System.Windows.Forms.DockStyle.Top;
             this.picEventoOnline1.Location = new System.Drawing.Point(0, 0);
-            this.picEventoOnline1.Margin = new System.Windows.Forms.Padding(2);
+            this.picEventoOnline1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEventoOnline1.Name = "picEventoOnline1";
-            this.picEventoOnline1.Size = new System.Drawing.Size(260, 115);
+            this.picEventoOnline1.Size = new System.Drawing.Size(347, 142);
             this.picEventoOnline1.TabIndex = 4;
             this.picEventoOnline1.TabStop = false;
             // 
@@ -945,10 +921,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label6.Location = new System.Drawing.Point(88, 869);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(117, 1070);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 29);
+            this.label6.Size = new System.Drawing.Size(149, 36);
             this.label6.TabIndex = 32;
             this.label6.Text = "Eventos Online:";
             // 
@@ -967,10 +942,10 @@
             this.panelCategorias.Controls.Add(this.label1);
             this.panelCategorias.Controls.Add(this.label2);
             this.panelCategorias.Controls.Add(this.label3);
-            this.panelCategorias.Location = new System.Drawing.Point(0, 540);
-            this.panelCategorias.Margin = new System.Windows.Forms.Padding(2);
+            this.panelCategorias.Location = new System.Drawing.Point(0, 665);
+            this.panelCategorias.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelCategorias.Name = "panelCategorias";
-            this.panelCategorias.Size = new System.Drawing.Size(1325, 233);
+            this.panelCategorias.Size = new System.Drawing.Size(1767, 287);
             this.panelCategorias.TabIndex = 28;
             this.panelCategorias.Paint += new System.Windows.Forms.PaintEventHandler(this.panelCategorias_Paint);
             // 
@@ -979,10 +954,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label5.Location = new System.Drawing.Point(1104, 192);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(1472, 236);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 27);
+            this.label5.Size = new System.Drawing.Size(74, 32);
             this.label5.TabIndex = 30;
             this.label5.Text = "Música";
             // 
@@ -995,10 +969,10 @@
             this.btnTecnologia.BorderSize = 0;
             this.btnTecnologia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTecnologia.Image = ((System.Drawing.Image)(resources.GetObject("btnTecnologia.Image")));
-            this.btnTecnologia.Location = new System.Drawing.Point(112, 16);
-            this.btnTecnologia.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTecnologia.Location = new System.Drawing.Point(149, 20);
+            this.btnTecnologia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTecnologia.Name = "btnTecnologia";
-            this.btnTecnologia.Size = new System.Drawing.Size(155, 173);
+            this.btnTecnologia.Size = new System.Drawing.Size(207, 213);
             this.btnTecnologia.TabIndex = 21;
             this.btnTecnologia.Text = "circularButton1";
             this.btnTecnologia.UseVisualStyleBackColor = false;
@@ -1008,10 +982,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label4.Location = new System.Drawing.Point(856, 192);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(1141, 236);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 27);
+            this.label4.Size = new System.Drawing.Size(86, 32);
             this.label4.TabIndex = 29;
             this.label4.Text = "Festivais";
             // 
@@ -1023,10 +996,10 @@
             this.btnSaude.BorderSize = 0;
             this.btnSaude.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSaude.Image = global::Acelera2025.Properties.Resources.CategoriaSaude;
-            this.btnSaude.Location = new System.Drawing.Point(291, 16);
-            this.btnSaude.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaude.Location = new System.Drawing.Point(388, 20);
+            this.btnSaude.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaude.Name = "btnSaude";
-            this.btnSaude.Size = new System.Drawing.Size(158, 173);
+            this.btnSaude.Size = new System.Drawing.Size(211, 213);
             this.btnSaude.TabIndex = 22;
             this.btnSaude.Text = "circularButton2";
             this.btnSaude.UseVisualStyleBackColor = false;
@@ -1039,10 +1012,10 @@
             this.btnEducacao.BorderSize = 0;
             this.btnEducacao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEducacao.Image = global::Acelera2025.Properties.Resources.CategoriaEducacao;
-            this.btnEducacao.Location = new System.Drawing.Point(549, 16);
-            this.btnEducacao.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEducacao.Location = new System.Drawing.Point(732, 20);
+            this.btnEducacao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEducacao.Name = "btnEducacao";
-            this.btnEducacao.Size = new System.Drawing.Size(155, 173);
+            this.btnEducacao.Size = new System.Drawing.Size(207, 213);
             this.btnEducacao.TabIndex = 23;
             this.btnEducacao.Text = "circularButton3";
             this.btnEducacao.UseVisualStyleBackColor = false;
@@ -1056,10 +1029,10 @@
             this.btnFestivais.BorderSize = 0;
             this.btnFestivais.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFestivais.Image = global::Acelera2025.Properties.Resources.CategoriaFestivais;
-            this.btnFestivais.Location = new System.Drawing.Point(872, 16);
-            this.btnFestivais.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFestivais.Location = new System.Drawing.Point(1163, 20);
+            this.btnFestivais.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFestivais.Name = "btnFestivais";
-            this.btnFestivais.Size = new System.Drawing.Size(155, 173);
+            this.btnFestivais.Size = new System.Drawing.Size(207, 213);
             this.btnFestivais.TabIndex = 25;
             this.btnFestivais.Text = "circularButton5";
             this.btnFestivais.UseVisualStyleBackColor = false;
@@ -1072,10 +1045,10 @@
             this.btnMusica.BorderSize = 0;
             this.btnMusica.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMusica.Image = global::Acelera2025.Properties.Resources.CategoriaMusica;
-            this.btnMusica.Location = new System.Drawing.Point(1052, 16);
-            this.btnMusica.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMusica.Location = new System.Drawing.Point(1403, 20);
+            this.btnMusica.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMusica.Name = "btnMusica";
-            this.btnMusica.Size = new System.Drawing.Size(155, 173);
+            this.btnMusica.Size = new System.Drawing.Size(207, 213);
             this.btnMusica.TabIndex = 24;
             this.btnMusica.Text = "circularButton4";
             this.btnMusica.UseVisualStyleBackColor = false;
@@ -1085,10 +1058,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label1.Location = new System.Drawing.Point(88, 192);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(117, 236);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 27);
+            this.label1.Size = new System.Drawing.Size(108, 32);
             this.label1.TabIndex = 26;
             this.label1.Text = "Tecnologia";
             // 
@@ -1097,10 +1069,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label2.Location = new System.Drawing.Point(345, 192);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(460, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 27);
+            this.label2.Size = new System.Drawing.Size(66, 32);
             this.label2.TabIndex = 27;
             this.label2.Text = "Saúde";
             // 
@@ -1109,10 +1080,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label3.Location = new System.Drawing.Point(593, 192);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(791, 236);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 27);
+            this.label3.Size = new System.Drawing.Size(95, 32);
             this.label3.TabIndex = 28;
             this.label3.Text = "Educação";
             // 
@@ -1123,12 +1093,12 @@
             this.btnCarrossel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel1.FlatAppearance.BorderSize = 0;
             this.btnCarrossel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel1.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnCarrossel1.Location = new System.Drawing.Point(578, 125);
-            this.btnCarrossel1.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCarrossel1.Location = new System.Drawing.Point(771, 154);
+            this.btnCarrossel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCarrossel1.Name = "btnCarrossel1";
-            this.btnCarrossel1.Size = new System.Drawing.Size(26, 42);
+            this.btnCarrossel1.Size = new System.Drawing.Size(35, 52);
             this.btnCarrossel1.TabIndex = 27;
             this.btnCarrossel1.Text = ".";
             this.btnCarrossel1.UseVisualStyleBackColor = false;
@@ -1139,10 +1109,9 @@
             this.btnVerMais.AutoSize = true;
             this.btnVerMais.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerMais.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnVerMais.Location = new System.Drawing.Point(1205, 513);
-            this.btnVerMais.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnVerMais.Location = new System.Drawing.Point(1607, 631);
             this.btnVerMais.Name = "btnVerMais";
-            this.btnVerMais.Size = new System.Drawing.Size(58, 21);
+            this.btnVerMais.Size = new System.Drawing.Size(73, 27);
             this.btnVerMais.TabIndex = 26;
             this.btnVerMais.TabStop = true;
             this.btnVerMais.Text = "Ver mais";
@@ -1153,10 +1122,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label9.Location = new System.Drawing.Point(89, 509);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(119, 626);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(181, 29);
+            this.label9.Size = new System.Drawing.Size(228, 36);
             this.label9.TabIndex = 20;
             this.label9.Text = "Navegue por categorias:";
             // 
@@ -1167,12 +1135,12 @@
             this.btnCarrossel6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel6.FlatAppearance.BorderSize = 0;
             this.btnCarrossel6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel6.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnCarrossel6.Location = new System.Drawing.Point(728, 125);
-            this.btnCarrossel6.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCarrossel6.Location = new System.Drawing.Point(971, 154);
+            this.btnCarrossel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCarrossel6.Name = "btnCarrossel6";
-            this.btnCarrossel6.Size = new System.Drawing.Size(26, 42);
+            this.btnCarrossel6.Size = new System.Drawing.Size(35, 52);
             this.btnCarrossel6.TabIndex = 19;
             this.btnCarrossel6.Text = ".";
             this.btnCarrossel6.UseVisualStyleBackColor = false;
@@ -1184,12 +1152,12 @@
             this.btnCarrossel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel5.FlatAppearance.BorderSize = 0;
             this.btnCarrossel5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel5.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnCarrossel5.Location = new System.Drawing.Point(698, 125);
-            this.btnCarrossel5.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCarrossel5.Location = new System.Drawing.Point(931, 154);
+            this.btnCarrossel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCarrossel5.Name = "btnCarrossel5";
-            this.btnCarrossel5.Size = new System.Drawing.Size(26, 42);
+            this.btnCarrossel5.Size = new System.Drawing.Size(35, 52);
             this.btnCarrossel5.TabIndex = 18;
             this.btnCarrossel5.Text = ".";
             this.btnCarrossel5.UseVisualStyleBackColor = false;
@@ -1201,12 +1169,12 @@
             this.btnCarrossel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel4.FlatAppearance.BorderSize = 0;
             this.btnCarrossel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel4.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnCarrossel4.Location = new System.Drawing.Point(668, 125);
-            this.btnCarrossel4.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCarrossel4.Location = new System.Drawing.Point(891, 154);
+            this.btnCarrossel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCarrossel4.Name = "btnCarrossel4";
-            this.btnCarrossel4.Size = new System.Drawing.Size(26, 42);
+            this.btnCarrossel4.Size = new System.Drawing.Size(35, 52);
             this.btnCarrossel4.TabIndex = 17;
             this.btnCarrossel4.Text = ".";
             this.btnCarrossel4.UseVisualStyleBackColor = false;
@@ -1218,12 +1186,12 @@
             this.btnCarrossel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel3.FlatAppearance.BorderSize = 0;
             this.btnCarrossel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel3.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnCarrossel3.Location = new System.Drawing.Point(639, 125);
-            this.btnCarrossel3.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCarrossel3.Location = new System.Drawing.Point(852, 154);
+            this.btnCarrossel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCarrossel3.Name = "btnCarrossel3";
-            this.btnCarrossel3.Size = new System.Drawing.Size(26, 42);
+            this.btnCarrossel3.Size = new System.Drawing.Size(35, 52);
             this.btnCarrossel3.TabIndex = 16;
             this.btnCarrossel3.Text = ".";
             this.btnCarrossel3.UseVisualStyleBackColor = false;
@@ -1235,12 +1203,12 @@
             this.btnCarrossel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel2.FlatAppearance.BorderSize = 0;
             this.btnCarrossel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel2.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnCarrossel2.Location = new System.Drawing.Point(608, 125);
-            this.btnCarrossel2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCarrossel2.Location = new System.Drawing.Point(811, 154);
+            this.btnCarrossel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCarrossel2.Name = "btnCarrossel2";
-            this.btnCarrossel2.Size = new System.Drawing.Size(26, 42);
+            this.btnCarrossel2.Size = new System.Drawing.Size(35, 52);
             this.btnCarrossel2.TabIndex = 15;
             this.btnCarrossel2.Text = ".";
             this.btnCarrossel2.UseVisualStyleBackColor = false;
@@ -1250,10 +1218,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label11.Location = new System.Drawing.Point(89, 187);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(119, 230);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(168, 29);
+            this.label11.Size = new System.Drawing.Size(213, 36);
             this.label11.TabIndex = 4;
             this.label11.Text = "Eventos perto de você:";
             // 
@@ -1267,10 +1234,10 @@
             this.panelEventosPerto.Controls.Add(this.roundedPanel4);
             this.panelEventosPerto.Controls.Add(this.btnProxEventoPerto);
             this.panelEventosPerto.Controls.Add(this.btnAntEventoPerto);
-            this.panelEventosPerto.Location = new System.Drawing.Point(0, 228);
-            this.panelEventosPerto.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEventosPerto.Location = new System.Drawing.Point(0, 281);
+            this.panelEventosPerto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEventosPerto.Name = "panelEventosPerto";
-            this.panelEventosPerto.Size = new System.Drawing.Size(1309, 232);
+            this.panelEventosPerto.Size = new System.Drawing.Size(1745, 286);
             this.panelEventosPerto.TabIndex = 31;
             this.panelEventosPerto.Paint += new System.Windows.Forms.PaintEventHandler(this.panelEventosPerto_Paint_1);
             // 
@@ -1288,10 +1255,10 @@
             this.roundedPanel1.Controls.Add(this.lblData1);
             this.roundedPanel1.Controls.Add(this.btnNome1);
             this.roundedPanel1.Controls.Add(this.PicEventoPerto1);
-            this.roundedPanel1.Location = new System.Drawing.Point(80, 12);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel1.Location = new System.Drawing.Point(107, 15);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(260, 202);
+            this.roundedPanel1.Size = new System.Drawing.Size(347, 254);
             this.roundedPanel1.TabIndex = 5;
             // 
             // label14
@@ -1299,10 +1266,9 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label14.Location = new System.Drawing.Point(79, 143);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(105, 176);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(29, 43);
+            this.label14.Size = new System.Drawing.Size(35, 53);
             this.label14.TabIndex = 21;
             this.label14.Text = "-";
             // 
@@ -1311,10 +1277,9 @@
             this.lblCidadeUf1.AutoSize = true;
             this.lblCidadeUf1.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidadeUf1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCidadeUf1.Location = new System.Drawing.Point(10, 176);
-            this.lblCidadeUf1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCidadeUf1.Location = new System.Drawing.Point(13, 217);
             this.lblCidadeUf1.Name = "lblCidadeUf1";
-            this.lblCidadeUf1.Size = new System.Drawing.Size(75, 25);
+            this.lblCidadeUf1.Size = new System.Drawing.Size(91, 30);
             this.lblCidadeUf1.TabIndex = 20;
             this.lblCidadeUf1.Text = "Cidade UF";
             // 
@@ -1323,10 +1288,9 @@
             this.lblHora1.AutoSize = true;
             this.lblHora1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHora1.Location = new System.Drawing.Point(110, 151);
-            this.lblHora1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora1.Location = new System.Drawing.Point(147, 186);
             this.lblHora1.Name = "lblHora1";
-            this.lblHora1.Size = new System.Drawing.Size(52, 29);
+            this.lblHora1.Size = new System.Drawing.Size(63, 36);
             this.lblHora1.TabIndex = 19;
             this.lblHora1.Text = "00:00";
             // 
@@ -1335,10 +1299,9 @@
             this.lblData1.AutoSize = true;
             this.lblData1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData1.Location = new System.Drawing.Point(9, 151);
-            this.lblData1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData1.Location = new System.Drawing.Point(12, 186);
             this.lblData1.Name = "lblData1";
-            this.lblData1.Size = new System.Drawing.Size(79, 29);
+            this.lblData1.Size = new System.Drawing.Size(97, 36);
             this.lblData1.TabIndex = 18;
             this.lblData1.Text = "00/00/00";
             // 
@@ -1350,10 +1313,9 @@
             this.btnNome1.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNome1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnNome1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNome1.Location = new System.Drawing.Point(8, 119);
-            this.btnNome1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnNome1.Location = new System.Drawing.Point(11, 146);
             this.btnNome1.Name = "btnNome1";
-            this.btnNome1.Size = new System.Drawing.Size(69, 34);
+            this.btnNome1.Size = new System.Drawing.Size(83, 41);
             this.btnNome1.TabIndex = 17;
             this.btnNome1.TabStop = true;
             this.btnNome1.Text = "Nome";
@@ -1367,9 +1329,9 @@
             this.PicEventoPerto1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicEventoPerto1.Dock = System.Windows.Forms.DockStyle.Top;
             this.PicEventoPerto1.Location = new System.Drawing.Point(0, 0);
-            this.PicEventoPerto1.Margin = new System.Windows.Forms.Padding(2);
+            this.PicEventoPerto1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PicEventoPerto1.Name = "PicEventoPerto1";
-            this.PicEventoPerto1.Size = new System.Drawing.Size(260, 116);
+            this.PicEventoPerto1.Size = new System.Drawing.Size(347, 143);
             this.PicEventoPerto1.TabIndex = 4;
             this.PicEventoPerto1.TabStop = false;
             // 
@@ -1387,10 +1349,10 @@
             this.roundedPanel2.Controls.Add(this.lblData2);
             this.roundedPanel2.Controls.Add(this.btnNome2);
             this.roundedPanel2.Controls.Add(this.PicEventoPerto2);
-            this.roundedPanel2.Location = new System.Drawing.Point(372, 12);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel2.Location = new System.Drawing.Point(496, 15);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(262, 202);
+            this.roundedPanel2.Size = new System.Drawing.Size(349, 254);
             this.roundedPanel2.TabIndex = 11;
             // 
             // label7
@@ -1398,10 +1360,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label7.Location = new System.Drawing.Point(86, 143);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(115, 176);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 43);
+            this.label7.Size = new System.Drawing.Size(35, 53);
             this.label7.TabIndex = 21;
             this.label7.Text = "-";
             // 
@@ -1410,10 +1371,9 @@
             this.lblCidadeUf2.AutoSize = true;
             this.lblCidadeUf2.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidadeUf2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCidadeUf2.Location = new System.Drawing.Point(16, 176);
-            this.lblCidadeUf2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCidadeUf2.Location = new System.Drawing.Point(21, 217);
             this.lblCidadeUf2.Name = "lblCidadeUf2";
-            this.lblCidadeUf2.Size = new System.Drawing.Size(75, 25);
+            this.lblCidadeUf2.Size = new System.Drawing.Size(91, 30);
             this.lblCidadeUf2.TabIndex = 20;
             this.lblCidadeUf2.Text = "Cidade UF";
             // 
@@ -1422,10 +1382,9 @@
             this.lblHora2.AutoSize = true;
             this.lblHora2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHora2.Location = new System.Drawing.Point(116, 151);
-            this.lblHora2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora2.Location = new System.Drawing.Point(155, 186);
             this.lblHora2.Name = "lblHora2";
-            this.lblHora2.Size = new System.Drawing.Size(52, 29);
+            this.lblHora2.Size = new System.Drawing.Size(63, 36);
             this.lblHora2.TabIndex = 19;
             this.lblHora2.Text = "00:00";
             // 
@@ -1434,10 +1393,9 @@
             this.lblData2.AutoSize = true;
             this.lblData2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData2.Location = new System.Drawing.Point(16, 151);
-            this.lblData2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData2.Location = new System.Drawing.Point(21, 186);
             this.lblData2.Name = "lblData2";
-            this.lblData2.Size = new System.Drawing.Size(79, 29);
+            this.lblData2.Size = new System.Drawing.Size(97, 36);
             this.lblData2.TabIndex = 18;
             this.lblData2.Text = "00/00/00";
             // 
@@ -1449,10 +1407,9 @@
             this.btnNome2.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNome2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnNome2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNome2.Location = new System.Drawing.Point(15, 119);
-            this.btnNome2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnNome2.Location = new System.Drawing.Point(20, 146);
             this.btnNome2.Name = "btnNome2";
-            this.btnNome2.Size = new System.Drawing.Size(69, 34);
+            this.btnNome2.Size = new System.Drawing.Size(83, 41);
             this.btnNome2.TabIndex = 17;
             this.btnNome2.TabStop = true;
             this.btnNome2.Text = "Nome";
@@ -1466,9 +1423,9 @@
             this.PicEventoPerto2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicEventoPerto2.Dock = System.Windows.Forms.DockStyle.Top;
             this.PicEventoPerto2.Location = new System.Drawing.Point(0, 0);
-            this.PicEventoPerto2.Margin = new System.Windows.Forms.Padding(2);
+            this.PicEventoPerto2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PicEventoPerto2.Name = "PicEventoPerto2";
-            this.PicEventoPerto2.Size = new System.Drawing.Size(262, 116);
+            this.PicEventoPerto2.Size = new System.Drawing.Size(349, 143);
             this.PicEventoPerto2.TabIndex = 4;
             this.PicEventoPerto2.TabStop = false;
             // 
@@ -1486,10 +1443,10 @@
             this.roundedPanel3.Controls.Add(this.lblData3);
             this.roundedPanel3.Controls.Add(this.btnNome3);
             this.roundedPanel3.Controls.Add(this.PicEventoPerto3);
-            this.roundedPanel3.Location = new System.Drawing.Point(662, 12);
-            this.roundedPanel3.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel3.Location = new System.Drawing.Point(883, 15);
+            this.roundedPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Size = new System.Drawing.Size(262, 202);
+            this.roundedPanel3.Size = new System.Drawing.Size(349, 254);
             this.roundedPanel3.TabIndex = 12;
             // 
             // label18
@@ -1497,10 +1454,9 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label18.Location = new System.Drawing.Point(82, 143);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(109, 176);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(29, 43);
+            this.label18.Size = new System.Drawing.Size(35, 53);
             this.label18.TabIndex = 21;
             this.label18.Text = "-";
             // 
@@ -1509,10 +1465,9 @@
             this.lblCidadeUf3.AutoSize = true;
             this.lblCidadeUf3.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidadeUf3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCidadeUf3.Location = new System.Drawing.Point(14, 176);
-            this.lblCidadeUf3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCidadeUf3.Location = new System.Drawing.Point(19, 217);
             this.lblCidadeUf3.Name = "lblCidadeUf3";
-            this.lblCidadeUf3.Size = new System.Drawing.Size(75, 25);
+            this.lblCidadeUf3.Size = new System.Drawing.Size(91, 30);
             this.lblCidadeUf3.TabIndex = 20;
             this.lblCidadeUf3.Text = "Cidade UF";
             // 
@@ -1521,10 +1476,9 @@
             this.lblHora3.AutoSize = true;
             this.lblHora3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHora3.Location = new System.Drawing.Point(113, 151);
-            this.lblHora3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora3.Location = new System.Drawing.Point(151, 186);
             this.lblHora3.Name = "lblHora3";
-            this.lblHora3.Size = new System.Drawing.Size(52, 29);
+            this.lblHora3.Size = new System.Drawing.Size(63, 36);
             this.lblHora3.TabIndex = 19;
             this.lblHora3.Text = "00:00";
             // 
@@ -1533,10 +1487,9 @@
             this.lblData3.AutoSize = true;
             this.lblData3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData3.Location = new System.Drawing.Point(13, 151);
-            this.lblData3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData3.Location = new System.Drawing.Point(17, 186);
             this.lblData3.Name = "lblData3";
-            this.lblData3.Size = new System.Drawing.Size(79, 29);
+            this.lblData3.Size = new System.Drawing.Size(97, 36);
             this.lblData3.TabIndex = 18;
             this.lblData3.Text = "00/00/00";
             // 
@@ -1548,10 +1501,9 @@
             this.btnNome3.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNome3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnNome3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNome3.Location = new System.Drawing.Point(12, 119);
-            this.btnNome3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnNome3.Location = new System.Drawing.Point(16, 146);
             this.btnNome3.Name = "btnNome3";
-            this.btnNome3.Size = new System.Drawing.Size(69, 34);
+            this.btnNome3.Size = new System.Drawing.Size(83, 41);
             this.btnNome3.TabIndex = 17;
             this.btnNome3.TabStop = true;
             this.btnNome3.Text = "Nome";
@@ -1565,9 +1517,9 @@
             this.PicEventoPerto3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicEventoPerto3.Dock = System.Windows.Forms.DockStyle.Top;
             this.PicEventoPerto3.Location = new System.Drawing.Point(0, 0);
-            this.PicEventoPerto3.Margin = new System.Windows.Forms.Padding(2);
+            this.PicEventoPerto3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PicEventoPerto3.Name = "PicEventoPerto3";
-            this.PicEventoPerto3.Size = new System.Drawing.Size(262, 116);
+            this.PicEventoPerto3.Size = new System.Drawing.Size(349, 143);
             this.PicEventoPerto3.TabIndex = 4;
             this.PicEventoPerto3.TabStop = false;
             // 
@@ -1585,10 +1537,10 @@
             this.roundedPanel4.Controls.Add(this.lblData4);
             this.roundedPanel4.Controls.Add(this.btnNome4);
             this.roundedPanel4.Controls.Add(this.PicEventoPerto4);
-            this.roundedPanel4.Location = new System.Drawing.Point(957, 12);
-            this.roundedPanel4.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel4.Location = new System.Drawing.Point(1276, 15);
+            this.roundedPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel4.Name = "roundedPanel4";
-            this.roundedPanel4.Size = new System.Drawing.Size(262, 202);
+            this.roundedPanel4.Size = new System.Drawing.Size(349, 254);
             this.roundedPanel4.TabIndex = 13;
             // 
             // label22
@@ -1596,10 +1548,9 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label22.Location = new System.Drawing.Point(83, 143);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(111, 176);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(29, 43);
+            this.label22.Size = new System.Drawing.Size(35, 53);
             this.label22.TabIndex = 21;
             this.label22.Text = "-";
             // 
@@ -1608,10 +1559,9 @@
             this.lblCidadeUf.AutoSize = true;
             this.lblCidadeUf.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidadeUf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCidadeUf.Location = new System.Drawing.Point(14, 176);
-            this.lblCidadeUf.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCidadeUf.Location = new System.Drawing.Point(19, 217);
             this.lblCidadeUf.Name = "lblCidadeUf";
-            this.lblCidadeUf.Size = new System.Drawing.Size(75, 25);
+            this.lblCidadeUf.Size = new System.Drawing.Size(91, 30);
             this.lblCidadeUf.TabIndex = 20;
             this.lblCidadeUf.Text = "Cidade UF";
             // 
@@ -1620,10 +1570,9 @@
             this.lblHora4.AutoSize = true;
             this.lblHora4.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHora4.Location = new System.Drawing.Point(114, 151);
-            this.lblHora4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora4.Location = new System.Drawing.Point(152, 186);
             this.lblHora4.Name = "lblHora4";
-            this.lblHora4.Size = new System.Drawing.Size(52, 29);
+            this.lblHora4.Size = new System.Drawing.Size(63, 36);
             this.lblHora4.TabIndex = 19;
             this.lblHora4.Text = "00:00";
             // 
@@ -1632,10 +1581,9 @@
             this.lblData4.AutoSize = true;
             this.lblData4.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData4.Location = new System.Drawing.Point(14, 151);
-            this.lblData4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData4.Location = new System.Drawing.Point(19, 186);
             this.lblData4.Name = "lblData4";
-            this.lblData4.Size = new System.Drawing.Size(79, 29);
+            this.lblData4.Size = new System.Drawing.Size(97, 36);
             this.lblData4.TabIndex = 18;
             this.lblData4.Text = "00/00/00";
             // 
@@ -1647,10 +1595,9 @@
             this.btnNome4.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNome4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnNome4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNome4.Location = new System.Drawing.Point(13, 119);
-            this.btnNome4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnNome4.Location = new System.Drawing.Point(17, 146);
             this.btnNome4.Name = "btnNome4";
-            this.btnNome4.Size = new System.Drawing.Size(69, 34);
+            this.btnNome4.Size = new System.Drawing.Size(83, 41);
             this.btnNome4.TabIndex = 17;
             this.btnNome4.TabStop = true;
             this.btnNome4.Text = "Nome";
@@ -1664,9 +1611,9 @@
             this.PicEventoPerto4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicEventoPerto4.Dock = System.Windows.Forms.DockStyle.Top;
             this.PicEventoPerto4.Location = new System.Drawing.Point(0, 0);
-            this.PicEventoPerto4.Margin = new System.Windows.Forms.Padding(2);
+            this.PicEventoPerto4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PicEventoPerto4.Name = "PicEventoPerto4";
-            this.PicEventoPerto4.Size = new System.Drawing.Size(262, 116);
+            this.PicEventoPerto4.Size = new System.Drawing.Size(349, 143);
             this.PicEventoPerto4.TabIndex = 4;
             this.PicEventoPerto4.TabStop = false;
             this.PicEventoPerto4.Click += new System.EventHandler(this.superiorRoundedPic5_Click);
@@ -1680,10 +1627,10 @@
             this.btnProxEventoPerto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProxEventoPerto.FlatAppearance.BorderSize = 0;
             this.btnProxEventoPerto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProxEventoPerto.Location = new System.Drawing.Point(1223, 86);
-            this.btnProxEventoPerto.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProxEventoPerto.Location = new System.Drawing.Point(1631, 106);
+            this.btnProxEventoPerto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnProxEventoPerto.Name = "btnProxEventoPerto";
-            this.btnProxEventoPerto.Size = new System.Drawing.Size(37, 49);
+            this.btnProxEventoPerto.Size = new System.Drawing.Size(49, 60);
             this.btnProxEventoPerto.TabIndex = 9;
             this.btnProxEventoPerto.UseVisualStyleBackColor = false;
             // 
@@ -1695,10 +1642,10 @@
             this.btnAntEventoPerto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAntEventoPerto.FlatAppearance.BorderSize = 0;
             this.btnAntEventoPerto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAntEventoPerto.Location = new System.Drawing.Point(39, 74);
-            this.btnAntEventoPerto.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAntEventoPerto.Location = new System.Drawing.Point(52, 91);
+            this.btnAntEventoPerto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAntEventoPerto.Name = "btnAntEventoPerto";
-            this.btnAntEventoPerto.Size = new System.Drawing.Size(37, 49);
+            this.btnAntEventoPerto.Size = new System.Drawing.Size(49, 60);
             this.btnAntEventoPerto.TabIndex = 6;
             this.btnAntEventoPerto.UseVisualStyleBackColor = false;
             // 
@@ -1717,9 +1664,9 @@
             this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1308, 41);
+            this.gradientPanel1.Size = new System.Drawing.Size(1744, 50);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 3;
             // 
@@ -1727,10 +1674,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 27);
+            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -1744,10 +1691,10 @@
             this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacoes.Location = new System.Drawing.Point(1208, 11);
-            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNotificacoes.Location = new System.Drawing.Point(1611, 14);
+            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNotificacoes.Name = "btnNotificacoes";
-            this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
+            this.btnNotificacoes.Size = new System.Drawing.Size(29, 26);
             this.btnNotificacoes.TabIndex = 10;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
             this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
@@ -1756,15 +1703,15 @@
             // 
             this.btnPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.btnPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.usuario;
+            this.btnPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPerfil.BorderColor = System.Drawing.Color.Transparent;
             this.btnPerfil.BorderSize = 2;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPerfil.Location = new System.Drawing.Point(1255, 2);
-            this.btnPerfil.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPerfil.Location = new System.Drawing.Point(1673, 2);
+            this.btnPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(35, 39);
+            this.btnPerfil.Size = new System.Drawing.Size(47, 48);
             this.btnPerfil.TabIndex = 9;
             this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             this.btnPerfil.Paint += new System.Windows.Forms.PaintEventHandler(this.circularPanel3_Paint);
@@ -1776,10 +1723,10 @@
             this.roundedPanel5.BorderSize = 0;
             this.roundedPanel5.Controls.Add(this.btnPesquisar);
             this.roundedPanel5.Controls.Add(this.txtPesquisar);
-            this.roundedPanel5.Location = new System.Drawing.Point(245, 10);
-            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel5.Location = new System.Drawing.Point(327, 12);
+            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(396, 25);
+            this.roundedPanel5.Size = new System.Drawing.Size(528, 31);
             this.roundedPanel5.TabIndex = 8;
             // 
             // btnPesquisar
@@ -1789,10 +1736,10 @@
             this.btnPesquisar.FlatAppearance.BorderSize = 0;
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
-            this.btnPesquisar.Location = new System.Drawing.Point(364, -2);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPesquisar.Location = new System.Drawing.Point(485, -2);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(32, 31);
+            this.btnPesquisar.Size = new System.Drawing.Size(43, 38);
             this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -1803,10 +1750,10 @@
             this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPesquisar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisar.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtPesquisar.Location = new System.Drawing.Point(2, 4);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPesquisar.Location = new System.Drawing.Point(3, 5);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(362, 26);
+            this.txtPesquisar.Size = new System.Drawing.Size(483, 32);
             this.txtPesquisar.TabIndex = 0;
             // 
             // btnPrincipal
@@ -1817,10 +1764,9 @@
             this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnPrincipal.LinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.Location = new System.Drawing.Point(50, 12);
-            this.btnPrincipal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnPrincipal.Location = new System.Drawing.Point(67, 15);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(82, 21);
+            this.btnPrincipal.Size = new System.Drawing.Size(108, 27);
             this.btnPrincipal.TabIndex = 7;
             this.btnPrincipal.TabStop = true;
             this.btnPrincipal.Text = "CONNECTA";
@@ -1835,10 +1781,9 @@
             this.btnOrganizarEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrganizarEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnOrganizarEventos.LinkColor = System.Drawing.Color.White;
-            this.btnOrganizarEventos.Location = new System.Drawing.Point(826, 12);
-            this.btnOrganizarEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnOrganizarEventos.Location = new System.Drawing.Point(1101, 15);
             this.btnOrganizarEventos.Name = "btnOrganizarEventos";
-            this.btnOrganizarEventos.Size = new System.Drawing.Size(105, 21);
+            this.btnOrganizarEventos.Size = new System.Drawing.Size(132, 27);
             this.btnOrganizarEventos.TabIndex = 5;
             this.btnOrganizarEventos.TabStop = true;
             this.btnOrganizarEventos.Text = "Organizar eventos";
@@ -1854,10 +1799,9 @@
             this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Location = new System.Drawing.Point(955, 13);
-            this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnMeusEventos.Location = new System.Drawing.Point(1273, 16);
             this.btnMeusEventos.Name = "btnMeusEventos";
-            this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
+            this.btnMeusEventos.Size = new System.Drawing.Size(102, 27);
             this.btnMeusEventos.TabIndex = 4;
             this.btnMeusEventos.TabStop = true;
             this.btnMeusEventos.Text = "Meus eventos";
@@ -1873,10 +1817,9 @@
             this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjuda.LinkColor = System.Drawing.Color.White;
-            this.btnAjuda.Location = new System.Drawing.Point(1056, 12);
-            this.btnAjuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnAjuda.Location = new System.Drawing.Point(1408, 15);
             this.btnAjuda.Name = "btnAjuda";
-            this.btnAjuda.Size = new System.Drawing.Size(41, 21);
+            this.btnAjuda.Size = new System.Drawing.Size(51, 27);
             this.btnAjuda.TabIndex = 3;
             this.btnAjuda.TabStop = true;
             this.btnAjuda.Text = "Ajuda";
@@ -1892,10 +1835,9 @@
             this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnSobreNos.LinkColor = System.Drawing.Color.White;
-            this.btnSobreNos.Location = new System.Drawing.Point(1111, 13);
-            this.btnSobreNos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnSobreNos.Location = new System.Drawing.Point(1481, 16);
             this.btnSobreNos.Name = "btnSobreNos";
-            this.btnSobreNos.Size = new System.Drawing.Size(62, 21);
+            this.btnSobreNos.Size = new System.Drawing.Size(78, 27);
             this.btnSobreNos.TabIndex = 2;
             this.btnSobreNos.TabStop = true;
             this.btnSobreNos.Text = "Sobre nós";
@@ -1904,11 +1846,11 @@
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1308, 596);
+            this.ClientSize = new System.Drawing.Size(1744, 734);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Principal";
             this.Text = "Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

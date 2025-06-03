@@ -257,8 +257,10 @@
             // btnPerfil
             // 
             this.btnPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.btnPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_1;
             this.btnPerfil.BorderColor = System.Drawing.Color.Black;
-            this.btnPerfil.BorderSize = 2;
+            this.btnPerfil.BorderSize = 0;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfil.Location = new System.Drawing.Point(1420, 3);
             this.btnPerfil.Name = "btnPerfil";

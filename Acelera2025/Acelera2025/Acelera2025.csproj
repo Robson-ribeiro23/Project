@@ -82,6 +82,36 @@
     <Compile Include="Telas\CadastrarUsuario.Designer.cs">
       <DependentUpon>CadastrarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\CardComentarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardComentarios.Designer.cs">
+      <DependentUpon>CardComentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CardCriarPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardCriarPost.Designer.cs">
+      <DependentUpon>CardCriarPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CardEditarPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardEditarPerfil.Designer.cs">
+      <DependentUpon>CardEditarPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CardEventoTelaInicial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardEventoTelaInicial.Designer.cs">
+      <DependentUpon>CardEventoTelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CardNotificacao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardNotificacao.Designer.cs">
+      <DependentUpon>CardNotificacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\CardParticipantes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,11 +124,35 @@
     <Compile Include="Telas\CardPerfil.Designer.cs">
       <DependentUpon>CardPerfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\CardPostImagem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardPostImagem.Designer.cs">
+      <DependentUpon>CardPostImagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CardPostTexto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardPostTexto.Designer.cs">
+      <DependentUpon>CardPostTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CardPostVideo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CardPostVideo.Designer.cs">
+      <DependentUpon>CardPostVideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Categorias.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Categorias.Designer.cs">
       <DependentUpon>Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CategoriaSelecionada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CategoriaSelecionada.Designer.cs">
+      <DependentUpon>CategoriaSelecionada.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\EntrarEmpresa.cs">
       <SubType>Form</SubType>
@@ -239,14 +293,38 @@
     <EmbeddedResource Include="Telas\CadastrarUsuario.resx">
       <DependentUpon>CadastrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CardComentarios.resx">
+      <DependentUpon>CardComentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CardCriarPost.resx">
+      <DependentUpon>CardCriarPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CardEditarPerfil.resx">
+      <DependentUpon>CardEditarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CardEventoTelaInicial.resx">
+      <DependentUpon>CardEventoTelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\CardParticipantes.resx">
       <DependentUpon>CardParticipantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CardPerfil.resx">
       <DependentUpon>CardPerfil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CardPostImagem.resx">
+      <DependentUpon>CardPostImagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CardPostTexto.resx">
+      <DependentUpon>CardPostTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CardPostVideo.resx">
+      <DependentUpon>CardPostVideo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Categorias.resx">
       <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CategoriaSelecionada.resx">
+      <DependentUpon>CategoriaSelecionada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\EntrarEmpresa.resx">
       <DependentUpon>EntrarEmpresa.cs</DependentUpon>
@@ -357,6 +435,9 @@
     <None Include="Resources\IconeNotificacao.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8-test-account-48 %281%291.png" />
+    <None Include="Resources\icons8-test-account-48 %281%29.png" />
+    <None Include="Resources\icons8-edit-100.png" />
     <None Include="Resources\nezuko.jpeg" />
     <None Include="Resources\usuario.png" />
     <None Include="Resources\CategoriaHobbies.png" />
@@ -389,6 +470,25 @@
     <None Include="Resources\icons8-male-user-100.png" />
     <None Include="Resources\icons8-account-48.png" />
     <None Include="Resources\LinkedIn %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

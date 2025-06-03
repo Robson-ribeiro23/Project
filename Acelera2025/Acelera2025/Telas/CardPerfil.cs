@@ -66,5 +66,10 @@ namespace Acelera2025.Telas
         {
 
         }
+
+        private void roundedPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
