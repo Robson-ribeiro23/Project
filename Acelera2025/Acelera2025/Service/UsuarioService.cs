@@ -1,5 +1,6 @@
 ﻿using Acelera2025.Model;
 using System.Collections.Generic;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Acelera2025.Service
 {
@@ -17,6 +18,11 @@ namespace Acelera2025.Service
         public UsuarioModel Login(string email, string senha)
         {
             return usuarios.Find(u => u.Email == email && u.Senha == senha);
+        }
+
+        public static UsuarioModel AcharUsuarioPorNome(string nome)
+        {
+            return usuarios.Find(u => u.Nome == nome);
         }
 
         public List<UsuarioModel> Listar()
