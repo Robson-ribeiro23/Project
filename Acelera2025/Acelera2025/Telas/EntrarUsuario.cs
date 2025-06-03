@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera2025.Class;
+using Acelera2025.Model;
+using MeuSistema.Controller;
 
 namespace Acelera2025.Telas
 {
@@ -42,12 +44,15 @@ namespace Acelera2025.Telas
             string email = txtEmail.Text;
             string password = txtSenha.Text;
 
-            if (PeopleManager.GetInstance().SearchByEmailAndPassword(email, password) != null)
+            UsuarioController controller = new UsuarioController();
+            UsuarioModel usuario = controller.LoginUsuario(email, password);
+
+            if (usuario != null)
             {
-                this.Close();
-                /*Principal p = new Principal();
-           p.Show();
-           this.Hide();*/
+                MessageBox.Show($"Login realizado com sucesso! Bem-vindo, {usuario.Nome}.");
+                Principal p = new Principal("usuario", usuario);
+                p.Show();
+                this.Hide();
             }
             else
             {

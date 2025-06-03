@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera2025.Class;
+using Acelera2025.Model;
+using MeuSistema.Controller;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Acelera2025.Telas
@@ -58,13 +60,13 @@ namespace Acelera2025.Telas
             string cpf = txtCpf.Text;
             string email = txtEmail.Text;
             string password = txtSenha.Text;
-            DateTime birthday = DateTime.Now;
-            
-            Person person = new Person(name, cpf, email, password, birthday);
+            DateTime birthday = birthdayPicker.Value;
 
-            if (PeopleManager.GetInstance().SearchByEmailAndCpf(cpf,email) == null)
+            UsuarioController controller = new UsuarioController();
+
+            if (controller.LoginUsuario(email, password) == null)
             {
-                PeopleManager.GetInstance().AddPerson(person);
+                UsuarioModel usuario = controller.CadastrarUsuario(name, email, birthday, password);
 
                 this.Close();
                 EntrarUsuario login = new EntrarUsuario();
@@ -72,7 +74,6 @@ namespace Acelera2025.Telas
 
                 MessageBox.Show("Usuário cadastrado!");
             }
-            
             else
             {
                 MessageBox.Show("Usuario já cadastrado!");

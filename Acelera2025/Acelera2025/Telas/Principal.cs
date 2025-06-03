@@ -20,7 +20,7 @@ namespace Acelera2025.Telas
 
         private EmpresaModel EmpresaLogado;
         private String tipo = "";
-        public Principal(EmpresaModel empresa, String tipoUsuario)
+        public Principal(String tipoUsuario, UsuarioModel usuario = null, EmpresaModel empresa = null)
         {
             InitializeComponent();
             EmpresaLogado = empresa;

@@ -32,7 +32,7 @@ namespace Acelera2025.Telas
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilEmpresa));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.PicPerfilEmpresa = new RoundedPicture();
+            this.PicPerfilEmpresa = new Acelera2025.Ferramentas.RoundedPicture();
             this.circularButton1 = new CircularButton();
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
@@ -91,6 +91,9 @@ namespace Acelera2025.Telas
             // PicPerfilEmpresa
             // 
             this.PicPerfilEmpresa.BackColor = System.Drawing.Color.Gray;
+            this.PicPerfilEmpresa.BorderColor = System.Drawing.Color.Black;
+            this.PicPerfilEmpresa.BorderRadius = 60;
+            this.PicPerfilEmpresa.BorderSize = 2;
             this.PicPerfilEmpresa.Location = new System.Drawing.Point(94, 91);
             this.PicPerfilEmpresa.Name = "PicPerfilEmpresa";
             this.PicPerfilEmpresa.Size = new System.Drawing.Size(122, 120);

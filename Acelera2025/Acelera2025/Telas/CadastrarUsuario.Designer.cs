@@ -41,7 +41,7 @@ namespace Acelera2025.Telas
             this.comboUF = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.birthdayPicker = new System.Windows.Forms.DateTimePicker();
             this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@ namespace Acelera2025.Telas
             this.panel1.Controls.Add(this.btnEntrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(424, 614);
             this.panel1.TabIndex = 1;
@@ -82,7 +82,7 @@ namespace Acelera2025.Telas
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Location = new System.Drawing.Point(23, 21);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(33, 44);
             this.btnVoltar.TabIndex = 11;
@@ -113,7 +113,7 @@ namespace Acelera2025.Telas
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnEntrar.Location = new System.Drawing.Point(140, 291);
-            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(142, 32);
             this.btnEntrar.TabIndex = 7;
@@ -127,7 +127,7 @@ namespace Acelera2025.Telas
             this.panel2.Controls.Add(this.roundedPanel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(424, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(641, 614);
             this.panel2.TabIndex = 5;
@@ -146,7 +146,7 @@ namespace Acelera2025.Telas
             this.roundedPanel1.Controls.Add(this.comboUF);
             this.roundedPanel1.Controls.Add(this.label4);
             this.roundedPanel1.Controls.Add(this.textBox1);
-            this.roundedPanel1.Controls.Add(this.dateTimePicker1);
+            this.roundedPanel1.Controls.Add(this.birthdayPicker);
             this.roundedPanel1.Controls.Add(this.txtConfirmarSenha);
             this.roundedPanel1.Controls.Add(this.label8);
             this.roundedPanel1.Controls.Add(this.label7);
@@ -160,7 +160,7 @@ namespace Acelera2025.Telas
             this.roundedPanel1.Controls.Add(this.label3);
             this.roundedPanel1.Controls.Add(this.label1);
             this.roundedPanel1.Location = new System.Drawing.Point(67, 9);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(527, 588);
             this.roundedPanel1.TabIndex = 0;
@@ -172,11 +172,9 @@ namespace Acelera2025.Telas
             this.btnMostrarSenhaConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMostrarSenhaConfirmar.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenhaConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-
             this.btnMostrarSenhaConfirmar.Location = new System.Drawing.Point(634, 519);
             this.btnMostrarSenhaConfirmar.Name = "btnMostrarSenhaConfirmar";
             this.btnMostrarSenhaConfirmar.Size = new System.Drawing.Size(28, 24);
-
             this.btnMostrarSenhaConfirmar.TabIndex = 31;
             this.btnMostrarSenhaConfirmar.UseVisualStyleBackColor = false;
             this.btnMostrarSenhaConfirmar.Click += new System.EventHandler(this.btnMostrarSenhaConfirmar_Click);
@@ -188,7 +186,7 @@ namespace Acelera2025.Telas
             this.btnMostrarSenha.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarSenha.Location = new System.Drawing.Point(476, 345);
-            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(2);
             this.btnMostrarSenha.Name = "btnMostrarSenha";
             this.btnMostrarSenha.Size = new System.Drawing.Size(21, 20);
             this.btnMostrarSenha.TabIndex = 30;
@@ -252,14 +250,14 @@ namespace Acelera2025.Telas
             this.textBox1.Size = new System.Drawing.Size(135, 33);
             this.textBox1.TabIndex = 25;
             // 
-            // dateTimePicker1
+            // birthdayPicker
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(62, 488);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(169, 33);
-            this.dateTimePicker1.TabIndex = 24;
+            this.birthdayPicker.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birthdayPicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.birthdayPicker.Location = new System.Drawing.Point(62, 488);
+            this.birthdayPicker.Name = "birthdayPicker";
+            this.birthdayPicker.Size = new System.Drawing.Size(169, 33);
+            this.birthdayPicker.TabIndex = 24;
             // 
             // txtConfirmarSenha
             // 
@@ -267,7 +265,7 @@ namespace Acelera2025.Telas
             this.txtConfirmarSenha.BackColor = System.Drawing.SystemColors.Control;
             this.txtConfirmarSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmarSenha.Location = new System.Drawing.Point(62, 414);
-            this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
             this.txtConfirmarSenha.Size = new System.Drawing.Size(411, 33);
             this.txtConfirmarSenha.TabIndex = 23;
@@ -304,7 +302,7 @@ namespace Acelera2025.Telas
             this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
             this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(62, 261);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(411, 33);
             this.txtEmail.TabIndex = 20;
@@ -316,7 +314,7 @@ namespace Acelera2025.Telas
             this.txtNome.BackColor = System.Drawing.SystemColors.Control;
             this.txtNome.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(62, 93);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(411, 33);
             this.txtNome.TabIndex = 19;
@@ -331,8 +329,7 @@ namespace Acelera2025.Telas
             this.label6.Location = new System.Drawing.Point(57, 66);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-
-            this.label6.Size = new System.Drawing.Size(151, 32);
+            this.label6.Size = new System.Drawing.Size(126, 27);
             this.label6.TabIndex = 18;
             this.label6.Text = "Nome Completo:";
             // 
@@ -342,7 +339,7 @@ namespace Acelera2025.Telas
             this.txtSenha.BackColor = System.Drawing.SystemColors.Control;
             this.txtSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(62, 338);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(410, 33);
             this.txtSenha.TabIndex = 8;
@@ -355,7 +352,7 @@ namespace Acelera2025.Telas
             this.txtCpf.BackColor = System.Drawing.SystemColors.Control;
             this.txtCpf.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCpf.Location = new System.Drawing.Point(62, 177);
-            this.txtCpf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCpf.Margin = new System.Windows.Forms.Padding(2);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(411, 33);
             this.txtCpf.TabIndex = 10;
@@ -372,7 +369,7 @@ namespace Acelera2025.Telas
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCadastrar.Location = new System.Drawing.Point(204, 540);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(142, 32);
             this.btnCadastrar.TabIndex = 15;
@@ -426,7 +423,7 @@ namespace Acelera2025.Telas
             this.ClientSize = new System.Drawing.Size(1065, 614);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CadastrarUsuario";
             this.Text = "CadastrarUsuario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -462,7 +459,7 @@ namespace Acelera2025.Telas
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker birthdayPicker;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboUF;

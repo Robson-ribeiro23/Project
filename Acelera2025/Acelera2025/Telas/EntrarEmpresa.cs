@@ -55,7 +55,7 @@ namespace Acelera2025.Telas
             if (empresa != null)
             {
                 MessageBox.Show($"Login realizado com sucesso! Bem-vindo, {empresa.Nome}.");
-                Principal principal = new Principal(empresa,"empresa");
+                Principal principal = new Principal("empresa", null, empresa);
                 principal.Show();
                 this.Hide();
             }

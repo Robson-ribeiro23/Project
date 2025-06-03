@@ -28,6 +28,9 @@ namespace Acelera2025.Telas
             cardPerfil.Location = new Point(panel1.Width - cardPerfil.Width - 20, 0);
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
             cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+
+            lblNomeEmpresa.Text = "";
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -110,7 +113,7 @@ namespace Acelera2025.Telas
             try
             {
                 OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|all files(*.*)|*.*";
+                dialog.Filter = "gif files(*.gif)|*.gif|jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|all files(*.*)|*.*";
 
                 if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
