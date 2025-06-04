@@ -92,5 +92,55 @@ namespace Acelera2025.Telas
                 btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
             }
         }
+
+        private void txtCnpj_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                return;
+            }
+
+            
+            string texto = new string(txtCnpj.Text.Where(char.IsDigit).ToArray());
+
+            
+            if (char.IsControl(e.KeyChar))
+                return;
+
+            
+            texto += e.KeyChar;
+
+            
+            if (texto.Length > 14)
+            {
+                e.Handled = true;
+                return;
+            }
+
+            
+            string formatado = "";
+            for (int i = 0; i < texto.Length; i++)
+            {
+                if (i == 2 || i == 5)
+                    formatado += ".";
+                else if (i == 8)
+                    formatado += "/";
+                else if (i == 12)
+                    formatado += "-";
+
+                formatado += texto[i];
+            }
+
+            
+            e.Handled = true;
+
+           
+            txtCnpj.Text = formatado;
+
+            
+            txtCnpj.SelectionStart = txtCnpj.Text.Length;
+        }
     }
 }

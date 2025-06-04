@@ -33,22 +33,61 @@ namespace Acelera2025.Telas
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog
+            String imageLocation = "";
+            try
             {
-                Title = "Selecione um arquivo",
-                Filter = "Imagens|*.png;*.jpg;*.jpeg;*.bmp;*.gif",
-                Multiselect = false
-            };
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|all files(*.*)|*.*";
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    PicPerfilEditar.ImageLocation = imageLocation;
+
+                }
+            }
+            catch (Exception)
             {
-                MessageBox.Show("Arquivo escolhido: " + openFileDialog.FileName);
+                MessageBox.Show("Ocorreu um erro", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void roundedPicture2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtNovaSenha.PasswordChar == '*')
+            {
+                txtNovaSenha.PasswordChar = '\0';
+                btnMostrarSenha.Image = Properties.Resources.icons8_eye_30_1;
+            }
+            else
+            {
+                txtNovaSenha.PasswordChar = '*';
+                btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (txtConfirmarNovaSenha.PasswordChar == '*')
+            {
+                txtConfirmarNovaSenha.PasswordChar = '\0';
+                btnMostrarSenha.Image = Properties.Resources.icons8_eye_30_1;
+            }
+            else
+            {
+                txtConfirmarNovaSenha.PasswordChar = '*';
+                btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+            }
         }
     }
 }

@@ -1,15 +1,16 @@
-﻿using System;
+﻿using Acelera2025.Class;
+using Acelera2025.Model;
+using Acelera2025.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using Acelera2025.Model;
-using Acelera2025.Service;
 
 namespace Acelera2025.Telas
 {
@@ -164,26 +165,17 @@ namespace Acelera2025.Telas
 
         private void circularButton1_Click(object sender, EventArgs e)
         {
-            String imageLocation = "";
-            try
-            {
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|all files(*.*)|*.*";
-
-                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    imageLocation = dialog.FileName;
-                    PicPerfil.ImageLocation = imageLocation;
-
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Ocorreu um erro", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            cardEditarPerfilVisivel = !cardEditarPerfilVisivel;
+            cardEditarPerfil.Visible = cardEditarPerfilVisivel;
+            cardEditarPerfil.BringToFront();
         }
 
         private void PicPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPerfil_Paint(object sender, PaintEventArgs e)
         {
 
         }

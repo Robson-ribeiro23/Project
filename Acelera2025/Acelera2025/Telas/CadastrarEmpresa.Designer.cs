@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.roundedButton1 = new RoundedButton();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEntrar = new RoundedButton();
@@ -50,7 +51,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.roundedButton1 = new RoundedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
@@ -68,6 +68,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(423, 597);
             this.panel1.TabIndex = 3;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.roundedButton1.BackColor = System.Drawing.SystemColors.Control;
+            this.roundedButton1.BorderColor = System.Drawing.Color.Black;
+            this.roundedButton1.BorderRadius = 10;
+            this.roundedButton1.BorderSize = 0;
+            this.roundedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedButton1.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.roundedButton1.Location = new System.Drawing.Point(144, 300);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(142, 32);
+            this.roundedButton1.TabIndex = 12;
+            this.roundedButton1.Text = "Entrar";
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click_1);
             // 
             // btnVoltar
             // 
@@ -164,10 +183,11 @@
             this.txtCnpj.BackColor = System.Drawing.SystemColors.Control;
             this.txtCnpj.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCnpj.Location = new System.Drawing.Point(56, 169);
-            this.txtCnpj.Mask = "00.000.000/0000-00";
             this.txtCnpj.Name = "txtCnpj";
             this.txtCnpj.Size = new System.Drawing.Size(410, 32);
             this.txtCnpj.TabIndex = 34;
+            this.txtCnpj.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCnpj_MaskInputRejected);
+            this.txtCnpj.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCnpj_KeyPress);
             // 
             // txtTelefone
             // 
@@ -364,25 +384,6 @@
             this.label1.Size = new System.Drawing.Size(241, 48);
             this.label1.TabIndex = 6;
             this.label1.Text = "Cadastrar empresa";
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.roundedButton1.BackColor = System.Drawing.SystemColors.Control;
-            this.roundedButton1.BorderColor = System.Drawing.Color.Black;
-            this.roundedButton1.BorderRadius = 10;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedButton1.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.roundedButton1.Location = new System.Drawing.Point(144, 300);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(142, 32);
-            this.roundedButton1.TabIndex = 12;
-            this.roundedButton1.Text = "Entrar";
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click_1);
             // 
             // CadastrarEmpresa
             // 

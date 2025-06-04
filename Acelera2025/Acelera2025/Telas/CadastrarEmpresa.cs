@@ -72,6 +72,10 @@ namespace Acelera2025.Telas
             var empresa = controller.CadastrarEmpresa(nome, cnpj, telefone, email, senha);
 
             MessageBox.Show($"Empresa {empresa.Nome} cadastrada com sucesso! ID: {empresa.Id}");
+           
+            this.Close();
+            EntrarEmpresa login = new EntrarEmpresa();
+            login.Show();
 
             txtNomeEmpresa.Clear();
             txtCnpj.Clear();
@@ -163,6 +167,61 @@ namespace Acelera2025.Telas
             EntrarEmpresa entrarEmpresa = new EntrarEmpresa();
             entrarEmpresa.Show();
             this.Hide();
+        }
+
+        private void txtCnpj_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void txtCnpj_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                return;
+            }
+
+            
+            string texto = new string(txtCnpj.Text.Where(char.IsDigit).ToArray());
+
+            
+            if (char.IsControl(e.KeyChar))
+                return;
+
+            
+            texto += e.KeyChar;
+
+            
+            if (texto.Length > 14)
+            {
+                e.Handled = true;
+                return;
+            }
+
+            
+            string formatado = "";
+            for (int i = 0; i < texto.Length; i++)
+            {
+                if (i == 2 || i == 5)
+                    formatado += ".";
+                else if (i == 8)
+                    formatado += "/";
+                else if (i == 12)
+                    formatado += "-";
+
+                formatado += texto[i];
+            }
+
+            
+            e.Handled = true;
+
+            
+            txtCnpj.Text = formatado;
+
+            
+            txtCnpj.SelectionStart = txtCnpj.Text.Length;
         }
     }
 }

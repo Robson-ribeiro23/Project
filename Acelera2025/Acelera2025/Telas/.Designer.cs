@@ -58,8 +58,9 @@
             this.panel1.Controls.Add(this.btnCadastrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(564, 699);
+            this.panel1.Size = new System.Drawing.Size(423, 568);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -71,9 +72,10 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Location = new System.Drawing.Point(31, 26);
+            this.btnVoltar.Location = new System.Drawing.Point(23, 21);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(44, 54);
+            this.btnVoltar.Size = new System.Drawing.Size(33, 44);
             this.btnVoltar.TabIndex = 10;
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.button1_Click);
@@ -84,9 +86,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(132, 296);
+            this.label2.Location = new System.Drawing.Point(99, 240);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(294, 58);
+            this.label2.Size = new System.Drawing.Size(241, 48);
             this.label2.TabIndex = 8;
             this.label2.Text = "Cadastrar empresa";
             // 
@@ -100,9 +103,10 @@
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnCadastrar.Location = new System.Drawing.Point(187, 359);
+            this.btnCadastrar.Location = new System.Drawing.Point(140, 292);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(190, 40);
+            this.btnCadastrar.Size = new System.Drawing.Size(142, 32);
             this.btnCadastrar.TabIndex = 7;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -112,9 +116,10 @@
             // 
             this.panel2.Controls.Add(this.roundedPanel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(564, 0);
+            this.panel2.Location = new System.Drawing.Point(423, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(870, 699);
+            this.panel2.Size = new System.Drawing.Size(653, 568);
             this.panel2.TabIndex = 2;
             // 
             // roundedPanel1
@@ -135,9 +140,10 @@
             this.roundedPanel1.Controls.Add(this.label4);
             this.roundedPanel1.Controls.Add(this.label3);
             this.roundedPanel1.Controls.Add(this.label1);
-            this.roundedPanel1.Location = new System.Drawing.Point(148, 105);
+            this.roundedPanel1.Location = new System.Drawing.Point(111, 85);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(581, 516);
+            this.roundedPanel1.Size = new System.Drawing.Size(436, 419);
             this.roundedPanel1.TabIndex = 0;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
@@ -147,9 +153,10 @@
             this.btnMostrarSenha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMostrarSenha.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarSenha.Location = new System.Drawing.Point(519, 349);
+            this.btnMostrarSenha.Location = new System.Drawing.Point(389, 284);
+            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMostrarSenha.Name = "btnMostrarSenha";
-            this.btnMostrarSenha.Size = new System.Drawing.Size(28, 24);
+            this.btnMostrarSenha.Size = new System.Drawing.Size(21, 20);
             this.btnMostrarSenha.TabIndex = 32;
             this.btnMostrarSenha.UseVisualStyleBackColor = false;
             this.btnMostrarSenha.Click += new System.EventHandler(this.btnMostrarSenha_Click);
@@ -159,9 +166,10 @@
             this.txtSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSenha.BackColor = System.Drawing.SystemColors.Control;
             this.txtSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(74, 343);
+            this.txtSenha.Location = new System.Drawing.Point(56, 279);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(439, 39);
+            this.txtSenha.Size = new System.Drawing.Size(330, 33);
             this.txtSenha.TabIndex = 8;
             // 
             // txtEmail
@@ -169,9 +177,10 @@
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
             this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(74, 243);
+            this.txtEmail.Location = new System.Drawing.Point(56, 197);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(439, 39);
+            this.txtEmail.Size = new System.Drawing.Size(330, 33);
             this.txtEmail.TabIndex = 11;
             // 
             // txtCnpj
@@ -179,10 +188,12 @@
             this.txtCnpj.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCnpj.BackColor = System.Drawing.SystemColors.Control;
             this.txtCnpj.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCnpj.Location = new System.Drawing.Point(74, 148);
+            this.txtCnpj.Location = new System.Drawing.Point(56, 120);
+            this.txtCnpj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCnpj.Name = "txtCnpj";
-            this.txtCnpj.Size = new System.Drawing.Size(439, 39);
+            this.txtCnpj.Size = new System.Drawing.Size(330, 33);
             this.txtCnpj.TabIndex = 10;
+            this.txtCnpj.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCnpj_KeyPress);
             // 
             // btnRecuperar
             // 
@@ -193,9 +204,10 @@
             this.btnRecuperar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecuperar.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnRecuperar.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnRecuperar.Location = new System.Drawing.Point(265, 460);
+            this.btnRecuperar.Location = new System.Drawing.Point(199, 374);
+            this.btnRecuperar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnRecuperar.Name = "btnRecuperar";
-            this.btnRecuperar.Size = new System.Drawing.Size(90, 30);
+            this.btnRecuperar.Size = new System.Drawing.Size(73, 25);
             this.btnRecuperar.TabIndex = 17;
             this.btnRecuperar.TabStop = true;
             this.btnRecuperar.Text = "Recuperar";
@@ -206,9 +218,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label7.Location = new System.Drawing.Point(68, 460);
+            this.label7.Location = new System.Drawing.Point(51, 374);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(179, 32);
+            this.label7.Size = new System.Drawing.Size(149, 27);
             this.label7.TabIndex = 16;
             this.label7.Text = "Esqueceu sua senha?";
             // 
@@ -222,9 +235,10 @@
             this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEntrar.Location = new System.Drawing.Point(195, 406);
+            this.btnEntrar.Location = new System.Drawing.Point(146, 330);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(190, 40);
+            this.btnEntrar.Size = new System.Drawing.Size(142, 32);
             this.btnEntrar.TabIndex = 15;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
@@ -236,9 +250,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label5.Location = new System.Drawing.Point(77, 308);
+            this.label5.Location = new System.Drawing.Point(58, 250);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 32);
+            this.label5.Size = new System.Drawing.Size(55, 27);
             this.label5.TabIndex = 14;
             this.label5.Text = "Senha:";
             // 
@@ -248,9 +263,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label4.Location = new System.Drawing.Point(76, 208);
+            this.label4.Location = new System.Drawing.Point(57, 169);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 32);
+            this.label4.Size = new System.Drawing.Size(58, 27);
             this.label4.TabIndex = 9;
             this.label4.Text = "E-mail:";
             // 
@@ -260,9 +276,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label3.Location = new System.Drawing.Point(77, 113);
+            this.label3.Location = new System.Drawing.Point(58, 92);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 32);
+            this.label3.Size = new System.Drawing.Size(48, 27);
             this.label3.TabIndex = 8;
             this.label3.Text = "CNPJ:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -273,19 +290,21 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label1.Location = new System.Drawing.Point(126, 35);
+            this.label1.Location = new System.Drawing.Point(94, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(333, 58);
+            this.label1.Size = new System.Drawing.Size(272, 48);
             this.label1.TabIndex = 6;
             this.label1.Text = "Entrar como empresa";
             // 
             // EntrarEmpresa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1434, 699);
+            this.ClientSize = new System.Drawing.Size(1076, 568);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EntrarEmpresa";
             this.Text = "CadastrarEmpresa2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
