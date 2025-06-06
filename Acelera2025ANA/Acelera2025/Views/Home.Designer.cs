@@ -134,7 +134,6 @@
             this.gradientPanel1 = new GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnNotificacoes = new System.Windows.Forms.Button();
-            this.btnPerfil = new CircularPanel();
             this.roundedPanel5 = new RoundedPanel();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
@@ -143,6 +142,7 @@
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
+            this.roundedPicture1 = new Acelera2025.Ferramentas.RoundedPicture();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
@@ -172,6 +172,7 @@
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -203,6 +204,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1308, 555);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panelMeusEventos
             // 
@@ -1113,7 +1115,7 @@
             this.btnCarrossel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel1.FlatAppearance.BorderSize = 0;
             this.btnCarrossel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel1.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel1.Location = new System.Drawing.Point(578, 125);
             this.btnCarrossel1.Margin = new System.Windows.Forms.Padding(2);
@@ -1157,7 +1159,7 @@
             this.btnCarrossel6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel6.FlatAppearance.BorderSize = 0;
             this.btnCarrossel6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel6.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel6.Location = new System.Drawing.Point(728, 125);
             this.btnCarrossel6.Margin = new System.Windows.Forms.Padding(2);
@@ -1174,7 +1176,7 @@
             this.btnCarrossel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel5.FlatAppearance.BorderSize = 0;
             this.btnCarrossel5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel5.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel5.Location = new System.Drawing.Point(698, 125);
             this.btnCarrossel5.Margin = new System.Windows.Forms.Padding(2);
@@ -1191,7 +1193,7 @@
             this.btnCarrossel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel4.FlatAppearance.BorderSize = 0;
             this.btnCarrossel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel4.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel4.Location = new System.Drawing.Point(668, 125);
             this.btnCarrossel4.Margin = new System.Windows.Forms.Padding(2);
@@ -1208,7 +1210,7 @@
             this.btnCarrossel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel3.FlatAppearance.BorderSize = 0;
             this.btnCarrossel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel3.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel3.Location = new System.Drawing.Point(639, 125);
             this.btnCarrossel3.Margin = new System.Windows.Forms.Padding(2);
@@ -1225,7 +1227,7 @@
             this.btnCarrossel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel2.FlatAppearance.BorderSize = 0;
             this.btnCarrossel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel2.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel2.Location = new System.Drawing.Point(608, 125);
             this.btnCarrossel2.Margin = new System.Windows.Forms.Padding(2);
@@ -1692,9 +1694,9 @@
             // 
             // gradientPanel1
             // 
+            this.gradientPanel1.Controls.Add(this.roundedPicture1);
             this.gradientPanel1.Controls.Add(this.pictureBox1);
             this.gradientPanel1.Controls.Add(this.btnNotificacoes);
-            this.gradientPanel1.Controls.Add(this.btnPerfil);
             this.gradientPanel1.Controls.Add(this.roundedPanel5);
             this.gradientPanel1.Controls.Add(this.btnPrincipal);
             this.gradientPanel1.Controls.Add(this.btnOrganizarEventos);
@@ -1738,22 +1740,6 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
             this.btnNotificacoes.TabIndex = 10;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
-            // 
-            // btnPerfil
-            // 
-            this.btnPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.btnPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
-            this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPerfil.BorderColor = System.Drawing.Color.Transparent;
-            this.btnPerfil.BorderSize = 2;
-            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPerfil.Location = new System.Drawing.Point(1255, 2);
-            this.btnPerfil.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(35, 39);
-            this.btnPerfil.TabIndex = 9;
-            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // roundedPanel5
             // 
@@ -1888,6 +1874,22 @@
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
+            // roundedPicture1
+            // 
+            this.roundedPicture1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPicture1.BackColor = System.Drawing.Color.Transparent;
+            this.roundedPicture1.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.roundedPicture1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundedPicture1.BorderColor = System.Drawing.Color.Transparent;
+            this.roundedPicture1.BorderRadius = 18;
+            this.roundedPicture1.BorderSize = 2;
+            this.roundedPicture1.Location = new System.Drawing.Point(1253, 3);
+            this.roundedPicture1.Name = "roundedPicture1";
+            this.roundedPicture1.Size = new System.Drawing.Size(35, 35);
+            this.roundedPicture1.TabIndex = 63;
+            this.roundedPicture1.TabStop = false;
+            this.roundedPicture1.Click += new System.EventHandler(this.roundedPicture1_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1944,6 +1946,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPicture1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2006,7 +2009,6 @@
         private System.Windows.Forms.LinkLabel btnMeusEventos;
         private System.Windows.Forms.LinkLabel btnAjuda;
         private System.Windows.Forms.LinkLabel btnSobreNos;
-        private CircularPanel btnPerfil;
         private System.Windows.Forms.Button btnNotificacoes;
         private System.Windows.Forms.Button btnLinkedIn;
         private SuperiorRoundedPic picEventoOnline4;
@@ -2064,5 +2066,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private Ferramentas.RoundedPicture roundedPicture1;
     }
 }

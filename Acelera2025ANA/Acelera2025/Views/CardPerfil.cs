@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera2025.Class;
+using Ac;
 
 namespace Acelera2025.Views
 {
@@ -15,12 +16,13 @@ namespace Acelera2025.Views
     {
         public event EventHandler FecharTelaSolicitado;
 
-        private string TipoUsuario;
-        public CardPerfil(string tipoUsuario)
+        private PessoaModels TipoUsuario;
+        public CardPerfil(PessoaModels usuario)
         {
 
             InitializeComponent();
-            TipoUsuario = tipoUsuario;
+            TipoUsuario = usuario;
+            
         }
 
         private void CardPerfil_Load(object sender, EventArgs e)
@@ -30,20 +32,14 @@ namespace Acelera2025.Views
 
         private void btnPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (TipoUsuario == "empresa")
+            if (TipoUsuario.Tipo == "empresa")
             {
-                PerfilEmpresa perfil = new PerfilEmpresa();
-                perfil.Show();
-
-                FecharTelaSolicitado?.Invoke(this, EventArgs.Empty);
-
+                Navegador.IrParaPerfilEmpresa(TipoUsuario);
             }
-            else if(TipoUsuario == "usuario")
+            else if(TipoUsuario.Tipo == "usuario")
             {
-                Perfil perfil = new Perfil();
-                perfil.Show();
+                Navegador.IrParaPerfilUsuario(TipoUsuario);
 
-                FecharTelaSolicitado?.Invoke(this, EventArgs.Empty);
             }
 
         }

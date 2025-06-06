@@ -13,6 +13,7 @@ namespace Acelera2025.Views
             panelCategorias.Resize += PanelCategorias_Resize;
             panelEventosPerto.Resize += PanelEventosPerto_Resize;
             panelEventosOnline.Resize += PanelEventosOnline_Resize;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -105,6 +106,21 @@ namespace Acelera2025.Views
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Navegador.IrParaOpcaoLogin();
+        }
+
+        private void btnMeusEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnOrganizarEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnOrganizarEventos_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaOpcaoLogin();
         }

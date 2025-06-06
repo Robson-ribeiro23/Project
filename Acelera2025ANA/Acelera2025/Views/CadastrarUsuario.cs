@@ -120,6 +120,7 @@ namespace Acelera2025.Views
             var usuario = new UsuarioModels
             {
                 Nome = txtNome.Text,
+                Tipo = "usuario",
                 Email = txtEmail.Text,
                 Cidade = txtCidade.Text,
                 CPF = txtCpf.Text,
@@ -161,6 +162,11 @@ namespace Acelera2025.Views
         private void btnEntrarUsuario_Click(object sender, EventArgs e)
         {
             Navegador.IrParaLoginUsuario();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

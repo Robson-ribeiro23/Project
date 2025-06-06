@@ -105,6 +105,22 @@ namespace Ac
             telaAtual.Show();
         }
 
+        public static void IrParaPerfilEmpresa(PessoaModels usuario)
+        {
+            FecharTelaAtual();
+            telaAtual = new PerfilEmpresa(usuario);
+            telaAtual.Show();
+        }
+
+        public static void IrParaPerfilUsuario(PessoaModels usuario)
+        {
+            FecharTelaAtual();
+            telaAtual = new Perfil(usuario);
+            telaAtual.Show();
+        }
+
+
+
         private static void FecharTelaAtual()
         {
             if (telaAtual != null && !telaAtual.IsDisposed)
@@ -112,5 +128,12 @@ namespace Ac
                 telaAtual.Hide();
             }
         }
+
+
+
+
+
+
+
     }
 }

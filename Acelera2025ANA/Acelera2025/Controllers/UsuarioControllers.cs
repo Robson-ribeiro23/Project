@@ -17,6 +17,7 @@ public class UsuarioControllers
     public bool Cadastrar(UsuarioModels usuario)
     {
         if (string.IsNullOrWhiteSpace(usuario.Nome) ||
+            string.IsNullOrWhiteSpace(usuario.Tipo) ||
             string.IsNullOrWhiteSpace(usuario.Email) ||
             string.IsNullOrWhiteSpace(usuario.Cidade) ||
             string.IsNullOrWhiteSpace(usuario.CPF) ||

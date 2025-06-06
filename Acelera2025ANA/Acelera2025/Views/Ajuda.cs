@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ac;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +23,7 @@ namespace Acelera2025.Views
         private void Form_Load(object sender, EventArgs e)
         {
             panelMeusEventos.Visible = false;
-            cardPerfil = new CardPerfil("empresa");
+         
             cardPerfil.Visible = false;
 
 

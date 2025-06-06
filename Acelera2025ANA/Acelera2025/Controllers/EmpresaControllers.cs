@@ -18,6 +18,7 @@ namespace Acelera2025.Controllers
         public bool Cadastrar(EmpresaModels empresa)
         {
             if (string.IsNullOrWhiteSpace(empresa.Nome) ||
+                string.IsNullOrWhiteSpace(empresa.Tipo) || 
                 string.IsNullOrWhiteSpace(empresa.CNPJ) ||
                 string.IsNullOrWhiteSpace(empresa.Telefone) ||
                 string.IsNullOrWhiteSpace(empresa.Cidade) ||
@@ -49,6 +50,7 @@ namespace Acelera2025.Controllers
             }
 
             listaEmpresas.Add(empresa);
+            MessageBox.Show("Empresa cadastrada com sucesso!");
             return true;
         }
 

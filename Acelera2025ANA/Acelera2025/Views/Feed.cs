@@ -21,7 +21,7 @@ namespace Acelera2025.Views
 
         private void Feed_Load(object sender, EventArgs e)
         {
-            cardPerfil = new CardPerfil("empresa");
+            
             cardPerfil.Visible = false;
 
 

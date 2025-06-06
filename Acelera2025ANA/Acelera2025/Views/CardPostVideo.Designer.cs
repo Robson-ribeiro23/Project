@@ -58,25 +58,28 @@
             this.roundedPanel1.Controls.Add(this.roundedPanel2);
             this.roundedPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedPanel1.Location = new System.Drawing.Point(0, 0);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(978, 453);
+            this.roundedPanel1.Size = new System.Drawing.Size(734, 368);
             this.roundedPanel1.TabIndex = 0;
             // 
             // panelComentarios
             // 
             this.panelComentarios.AutoScroll = true;
-            this.panelComentarios.Location = new System.Drawing.Point(666, 22);
+            this.panelComentarios.Location = new System.Drawing.Point(500, 18);
+            this.panelComentarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelComentarios.Name = "panelComentarios";
-            this.panelComentarios.Size = new System.Drawing.Size(289, 366);
+            this.panelComentarios.Size = new System.Drawing.Size(217, 297);
             this.panelComentarios.TabIndex = 63;
             // 
             // txtComentario
             // 
             this.txtComentario.BackColor = System.Drawing.Color.White;
             this.txtComentario.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComentario.Location = new System.Drawing.Point(666, 394);
+            this.txtComentario.Location = new System.Drawing.Point(500, 320);
+            this.txtComentario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtComentario.Name = "txtComentario";
-            this.txtComentario.Size = new System.Drawing.Size(256, 39);
+            this.txtComentario.Size = new System.Drawing.Size(193, 33);
             this.txtComentario.TabIndex = 61;
             this.txtComentario.Text = "Enviar um Comentário";
             // 
@@ -90,9 +93,10 @@
             this.btnComentar.FlatAppearance.BorderSize = 0;
             this.btnComentar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComentar.Image = ((System.Drawing.Image)(resources.GetObject("btnComentar.Image")));
-            this.btnComentar.Location = new System.Drawing.Point(928, 401);
+            this.btnComentar.Location = new System.Drawing.Point(696, 326);
+            this.btnComentar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnComentar.Name = "btnComentar";
-            this.btnComentar.Size = new System.Drawing.Size(27, 28);
+            this.btnComentar.Size = new System.Drawing.Size(20, 23);
             this.btnComentar.TabIndex = 62;
             this.btnComentar.UseVisualStyleBackColor = false;
             // 
@@ -111,8 +115,9 @@
             this.roundedPanel2.Controls.Add(this.btnCurtir);
             this.roundedPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.roundedPanel2.Location = new System.Drawing.Point(0, 0);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(650, 453);
+            this.roundedPanel2.Size = new System.Drawing.Size(488, 368);
             this.roundedPanel2.TabIndex = 0;
             this.roundedPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel2_Paint);
             // 
@@ -120,6 +125,7 @@
             // 
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(33, 134);
+            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(579, 254);
@@ -130,9 +136,10 @@
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData.Location = new System.Drawing.Point(563, 37);
+            this.lblData.Location = new System.Drawing.Point(422, 30);
+            this.lblData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(49, 30);
+            this.lblData.Size = new System.Drawing.Size(41, 25);
             this.lblData.TabIndex = 69;
             this.lblData.Text = "Data";
             // 
@@ -141,9 +148,10 @@
             this.lblTexto.AutoSize = true;
             this.lblTexto.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblTexto.Location = new System.Drawing.Point(26, 95);
+            this.lblTexto.Location = new System.Drawing.Point(20, 77);
+            this.lblTexto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTexto.Name = "lblTexto";
-            this.lblTexto.Size = new System.Drawing.Size(122, 36);
+            this.lblTexto.Size = new System.Drawing.Size(96, 29);
             this.lblTexto.TabIndex = 68;
             this.lblTexto.Text = "Texto TEXTo";
             // 
@@ -152,9 +160,10 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNome.Location = new System.Drawing.Point(84, 37);
+            this.lblNome.Location = new System.Drawing.Point(63, 30);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(74, 36);
+            this.lblNome.Size = new System.Drawing.Size(60, 29);
             this.lblNome.TabIndex = 67;
             this.lblNome.Text = "Nome ";
             // 
@@ -163,9 +172,10 @@
             this.picPerfil.BackColor = System.Drawing.SystemColors.ControlDark;
             this.picPerfil.BorderColor = System.Drawing.Color.Black;
             this.picPerfil.BorderSize = 0;
-            this.picPerfil.Location = new System.Drawing.Point(23, 22);
+            this.picPerfil.Location = new System.Drawing.Point(17, 18);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(55, 61);
+            this.picPerfil.Size = new System.Drawing.Size(41, 50);
             this.picPerfil.TabIndex = 66;
             // 
             // lblCurtidas
@@ -173,9 +183,10 @@
             this.lblCurtidas.AutoSize = true;
             this.lblCurtidas.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurtidas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCurtidas.Location = new System.Drawing.Point(66, 410);
+            this.lblCurtidas.Location = new System.Drawing.Point(50, 333);
+            this.lblCurtidas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCurtidas.Name = "lblCurtidas";
-            this.lblCurtidas.Size = new System.Drawing.Size(77, 27);
+            this.lblCurtidas.Size = new System.Drawing.Size(62, 21);
             this.lblCurtidas.TabIndex = 61;
             this.lblCurtidas.Text = "X curtidas";
             // 
@@ -189,20 +200,22 @@
             this.btnCurtir.BorderSize = 0;
             this.btnCurtir.FlatAppearance.BorderSize = 0;
             this.btnCurtir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCurtir.Location = new System.Drawing.Point(33, 408);
+            this.btnCurtir.Location = new System.Drawing.Point(25, 332);
+            this.btnCurtir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCurtir.Name = "btnCurtir";
-            this.btnCurtir.Size = new System.Drawing.Size(27, 25);
+            this.btnCurtir.Size = new System.Drawing.Size(20, 20);
             this.btnCurtir.TabIndex = 60;
             this.btnCurtir.UseVisualStyleBackColor = false;
             // 
             // CardPostVideo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.roundedPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CardPostVideo";
-            this.Size = new System.Drawing.Size(978, 453);
+            this.Size = new System.Drawing.Size(734, 368);
             this.Load += new System.EventHandler(this.CardPostVideo_Load);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();

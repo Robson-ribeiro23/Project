@@ -24,7 +24,7 @@ namespace Acelera2025.Views
         private void OrganizarEvento_Load(object sender, EventArgs e)
         {
             panelMeusEventos.Visible = false;
-            cardPerfil = new CardPerfil("empresa");
+            
             cardPerfil.Visible = false;
 
 

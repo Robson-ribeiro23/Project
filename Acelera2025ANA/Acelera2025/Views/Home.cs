@@ -12,10 +12,11 @@ namespace Acelera2025.Views
         private bool panelVisivel = false;
         private CardPerfil cardPerfil;
         private bool cardPerfilVisivel = false;
-        private String tipo = "";
+        private PessoaModels usuario;
         public Home(PessoaModels usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
             panelCategorias.Resize += PanelCategorias_Resize;
             panelEventosPerto.Resize += PanelEventosPerto_Resize;
             panelEventosOnline.Resize += PanelEventosOnline_Resize;
@@ -48,7 +49,7 @@ namespace Acelera2025.Views
             PanelEventosPerto_Resize(null, null);
             PanelEventosOnline_Resize(null, null);
             panelMeusEventos.Visible = false;
-            cardPerfil = new CardPerfil(tipo);
+            cardPerfil = new CardPerfil(this.usuario);
             cardPerfil.Visible = false;
 
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
@@ -194,6 +195,18 @@ namespace Acelera2025.Views
         private void btnVerMaisCategorias_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaCategorias();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void roundedPicture1_Click(object sender, EventArgs e)
+        {
+            cardPerfilVisivel = !cardPerfilVisivel;
+            cardPerfil.Visible = cardPerfilVisivel;
+            cardPerfil.BringToFront();
         }
     }
 }

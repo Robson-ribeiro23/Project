@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acelera2025.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,14 +14,17 @@ namespace Acelera2025.Views
     public partial class PerfilEmpresa: Form
     {
         private CardPerfil cardPerfil;
+        private PessoaModels usuario;
         private bool cardPerfilVisivel = false;
-        public PerfilEmpresa()
+        public PerfilEmpresa(PessoaModels usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
+
         }
         private void PerfilEmpresa_Load(object sender, EventArgs e)
         {
-            cardPerfil = new CardPerfil("empresa");
+            cardPerfil = new CardPerfil(this.usuario);
             cardPerfil.Visible = false;
 
 
@@ -126,6 +130,18 @@ namespace Acelera2025.Views
             {
                 MessageBox.Show("Ocorreu um erro", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void roundedPicture1_Click(object sender, EventArgs e)
+        {
+            cardPerfilVisivel = !cardPerfilVisivel;
+            cardPerfil.Visible = cardPerfilVisivel;
+            cardPerfil.BringToFront();
+        }
+
+        private void circularButton1_Click_3(object sender, EventArgs e)
+        {
+
         }
     }
 }

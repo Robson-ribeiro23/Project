@@ -140,6 +140,7 @@ namespace Acelera2025.Views
             var empresa = new EmpresaModels
             {
                 Nome = txtNomeEmpresa.Text,
+                Tipo = "empresa",
                 CNPJ = txtCnpj.Text,
                 Telefone = txtTelefone.Text,
                 Cidade = "São Paulo",
@@ -167,6 +168,11 @@ namespace Acelera2025.Views
         private void btnEntrarEmpresa_Click(object sender, EventArgs e)
         {
             Navegador.IrParaLoginEmpresa();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

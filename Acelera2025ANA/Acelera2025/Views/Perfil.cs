@@ -15,20 +15,22 @@ namespace Acelera2025.Views
     {
         private bool panelVisivel = false;
         private CardPerfil cardPerfil;
+        private PessoaModels usuario;
         private CardEditarPerfil cardEditarPerfil;
         private bool cardPerfilVisivel = false;
         private bool cardEditarPerfilVisivel = false;
 
-        public Perfil()
+        public Perfil(PessoaModels usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
         }
         private void Perfil_Load(object sender, EventArgs e)
         {
             roundedPanel10.Visible = false;
-            cardPerfil = new CardPerfil("empresa");
+            cardPerfil = new CardPerfil(this.usuario);
             cardPerfil.Visible = false;
-            cardEditarPerfil = new CardEditarPerfil();
+            cardEditarPerfil = new CardEditarPerfil(this.usuario);
             cardEditarPerfil.Visible = false;
             
 
@@ -41,9 +43,9 @@ namespace Acelera2025.Views
             cardEditarPerfil.Left = (this.ClientSize.Width - cardEditarPerfil.Width) / 2;
             cardEditarPerfil.FecharTelaSolicitado += (s, args) => this.Close();
             cardEditarPerfil.Top = (this.ClientSize.Height - cardEditarPerfil.Height) / 2;
-
-
         }
+
+
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             OrganizarEvento organizarEvento = new OrganizarEvento();
@@ -156,23 +158,10 @@ namespace Acelera2025.Views
 
         private void circularButton1_Click(object sender, EventArgs e)
         {
-            String imageLocation = "";
-            try
-            {
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|all files(*.*)|*.*";
+            cardEditarPerfilVisivel = !cardEditarPerfilVisivel;
+            cardEditarPerfil.Visible = cardEditarPerfilVisivel;
+            cardEditarPerfil.BringToFront();
 
-                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    imageLocation = dialog.FileName;
-                    PicPerfil.ImageLocation = imageLocation;
-
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Ocorreu um erro", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void PicPerfil_Click(object sender, EventArgs e)
@@ -183,6 +172,26 @@ namespace Acelera2025.Views
         private void btnPerfil_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void gradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void roundedPicture1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundedPicture1_Click_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

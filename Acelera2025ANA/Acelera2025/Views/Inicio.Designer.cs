@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.roundedPicture1 = new Acelera2025.Ferramentas.RoundedPicture();
             this.btnProxEmAlta = new System.Windows.Forms.Button();
             this.btnAntEmAlta = new System.Windows.Forms.Button();
+            this.roundedPicture1 = new Acelera2025.Ferramentas.RoundedPicture();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
             this.gradientPanel2 = new GradientPanel();
             this.btnEmail = new System.Windows.Forms.Button();
@@ -86,10 +86,10 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnOrganizarEventos = new System.Windows.Forms.LinkLabel();
-            this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNós = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new RoundedButton();
+            this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPicture1)).BeginInit();
             this.superiorRoundedPanel1.SuspendLayout();
@@ -130,20 +130,6 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "EVENTOS EM ALTA";
             // 
-            // roundedPicture1
-            // 
-            this.roundedPicture1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedPicture1.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedPicture1.BorderRadius = 20;
-            this.roundedPicture1.BorderSize = 2;
-            this.roundedPicture1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedPicture1.Location = new System.Drawing.Point(315, 127);
-            this.roundedPicture1.Margin = new System.Windows.Forms.Padding(2);
-            this.roundedPicture1.Name = "roundedPicture1";
-            this.roundedPicture1.Size = new System.Drawing.Size(632, 262);
-            this.roundedPicture1.TabIndex = 2;
-            this.roundedPicture1.TabStop = false;
-            // 
             // btnProxEmAlta
             // 
             this.btnProxEmAlta.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -175,6 +161,20 @@
             this.btnAntEmAlta.Size = new System.Drawing.Size(37, 49);
             this.btnAntEmAlta.TabIndex = 4;
             this.btnAntEmAlta.UseVisualStyleBackColor = false;
+            // 
+            // roundedPicture1
+            // 
+            this.roundedPicture1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.roundedPicture1.BorderColor = System.Drawing.Color.Transparent;
+            this.roundedPicture1.BorderRadius = 20;
+            this.roundedPicture1.BorderSize = 2;
+            this.roundedPicture1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedPicture1.Location = new System.Drawing.Point(315, 127);
+            this.roundedPicture1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPicture1.Name = "roundedPicture1";
+            this.roundedPicture1.Size = new System.Drawing.Size(632, 262);
+            this.roundedPicture1.TabIndex = 2;
+            this.roundedPicture1.TabStop = false;
             // 
             // superiorRoundedPanel1
             // 
@@ -637,7 +637,7 @@
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.button5.Location = new System.Drawing.Point(556, 106);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
@@ -680,7 +680,7 @@
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.button10.Location = new System.Drawing.Point(706, 106);
             this.button10.Margin = new System.Windows.Forms.Padding(2);
@@ -697,7 +697,7 @@
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.button9.Location = new System.Drawing.Point(676, 106);
             this.button9.Margin = new System.Windows.Forms.Padding(2);
@@ -714,7 +714,7 @@
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.button8.Location = new System.Drawing.Point(646, 106);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
@@ -731,7 +731,7 @@
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.button7.Location = new System.Drawing.Point(616, 106);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
@@ -748,7 +748,7 @@
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.button6.Location = new System.Drawing.Point(586, 106);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
@@ -970,24 +970,7 @@
             this.btnOrganizarEventos.TabStop = true;
             this.btnOrganizarEventos.Text = "Organizar eventos";
             this.btnOrganizarEventos.VisitedLinkColor = System.Drawing.Color.White;
-            // 
-            // btnMeusEventos
-            // 
-            this.btnMeusEventos.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMeusEventos.AutoSize = true;
-            this.btnMeusEventos.BackColor = System.Drawing.Color.Transparent;
-            this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Location = new System.Drawing.Point(916, 13);
-            this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnMeusEventos.Name = "btnMeusEventos";
-            this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
-            this.btnMeusEventos.TabIndex = 4;
-            this.btnMeusEventos.TabStop = true;
-            this.btnMeusEventos.Text = "Meus eventos";
-            this.btnMeusEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnOrganizarEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnOrganizarEventos_LinkClicked_1);
             // 
             // btnAjuda
             // 
@@ -1043,6 +1026,25 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // btnMeusEventos
+            // 
+            this.btnMeusEventos.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMeusEventos.AutoSize = true;
+            this.btnMeusEventos.BackColor = System.Drawing.Color.Transparent;
+            this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.Location = new System.Drawing.Point(916, 11);
+            this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnMeusEventos.Name = "btnMeusEventos";
+            this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
+            this.btnMeusEventos.TabIndex = 4;
+            this.btnMeusEventos.TabStop = true;
+            this.btnMeusEventos.Text = "Meus eventos";
+            this.btnMeusEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnMeusEventos_LinkClicked);
             // 
             // Inicio
             // 
@@ -1101,7 +1103,6 @@
         private RoundedButton btnLogin;
         private System.Windows.Forms.LinkLabel btnSobreNós;
         private System.Windows.Forms.LinkLabel btnOrganizarEventos;
-        private System.Windows.Forms.LinkLabel btnMeusEventos;
         private System.Windows.Forms.LinkLabel btnAjuda;
         private RoundedPanel roundedPanel5;
         private CircularButton btnTecnologia;
@@ -1140,6 +1141,7 @@
         private System.Windows.Forms.Button btnEmail;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel btnPrincipal;
+        private System.Windows.Forms.LinkLabel btnMeusEventos;
     }
 }
 
