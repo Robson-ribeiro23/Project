@@ -83,6 +83,36 @@ namespace Acelera2025.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_03_31_151223 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-03-31 151223", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_03_31_152752 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-03-31 152752", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_03_31_152801 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-03-31 152801", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CategoriaArtes {
             get {
                 object obj = ResourceManager.GetObject("CategoriaArtes", resourceCulture);
@@ -333,6 +363,16 @@ namespace Acelera2025.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_copy_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-copy-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_create_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-create-100", resourceCulture);
@@ -443,6 +483,16 @@ namespace Acelera2025.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_like_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-like-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_male_user_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-male-user-100", resourceCulture);
@@ -496,6 +546,16 @@ namespace Acelera2025.Properties {
         internal static System.Drawing.Bitmap icons8_video_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-video-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_removebg_preview__3____Copia {
+            get {
+                object obj = ResourceManager.GetObject("image-removebg-preview (3) - Copia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
