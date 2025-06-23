@@ -111,10 +111,5 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaFeed(this.usuario);
         }
-
-        private void lblNomeUsuario_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

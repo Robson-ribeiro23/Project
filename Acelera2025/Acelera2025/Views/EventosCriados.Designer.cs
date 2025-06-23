@@ -581,7 +581,6 @@
             this.PicEvento.Size = new System.Drawing.Size(506, 182);
             this.PicEvento.TabIndex = 0;
             this.PicEvento.TabStop = false;
-            this.PicEvento.Click += new System.EventHandler(this.PicEvento_Click);
             // 
             // Participantes
             // 
@@ -1295,6 +1294,7 @@
             this.comboEventosCriados.Name = "comboEventosCriados";
             this.comboEventosCriados.Size = new System.Drawing.Size(324, 29);
             this.comboEventosCriados.TabIndex = 21;
+            this.comboEventosCriados.SelectedIndexChanged += new System.EventHandler(this.comboEventosCriados_SelectedIndexChanged);
             // 
             // label14
             // 

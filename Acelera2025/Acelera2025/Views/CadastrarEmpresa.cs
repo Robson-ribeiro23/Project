@@ -169,10 +169,5 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaLoginEmpresa();
         }
-
-        private void txtConfirmarSenha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -86,9 +86,9 @@ namespace Acelera2025.Views
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
-
             try
             {
+
                 string nomeEvento = txtNomeEvento.Text;
                 DateTime dataEvento = dateTimePicker.Value;
                 string horario = txtHorario.Text;
@@ -98,6 +98,7 @@ namespace Acelera2025.Views
                 string faixaEtaria = comboFaixaEtaria.SelectedItem?.ToString();
                 string descricao = txtDescricao.Text;
                 bool permitePatrocinio = checkBoxPatrocinio.Checked;
+
 
                 EventoModels novoEvento = new EventoModels
                 (
@@ -117,27 +118,27 @@ namespace Acelera2025.Views
 
                 if (sucesso)
                 {
-                    MessageBox.Show("Evento criado com sucesso!");
-
+                    // TESTE: ver se realmente salvou
                     foreach (var es in controller.ListarTodos())
                     {
                         Console.WriteLine("Salvo: " + es.NomeEvento);
                     }
+
+                    //LimparFormulario();
                 }
-                else
-                {
-                    MessageBox.Show("Erro: Evento não criado. Verifique os campos obrigatórios.");
-                }
+
+                MessageBox.Show("Evento criado com sucesso!");
+
+
+                //LimparFormulario();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Exceção ao criar evento: " + ex.Message);
+                MessageBox.Show("Erro ao criar evento: " + ex.Message);
             }
 
             //Navegador.IrParaTelaEventos(this.usuario);
         }
-
-        
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -187,11 +188,6 @@ namespace Acelera2025.Views
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
-        }
-
-        private void comboCategoria_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
