@@ -1,0 +1,1753 @@
+﻿namespace Acelera2025.Views
+{
+    partial class EventosCriados
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventosCriados));
+            this.EditarInformacoes = new System.Windows.Forms.TabControl();
+            this.VisaoGeral = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblNomeLocal = new System.Windows.Forms.Label();
+            this.lblCep = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lblRua = new System.Windows.Forms.Label();
+            this.lblCidadeEstado = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblLink = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblLimiteParticipantes = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblPresencialOnline = new System.Windows.Forms.Label();
+            this.lblCategorias = new System.Windows.Forms.Label();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblFaixaEtaria = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnPatrocinador5 = new CircularButton();
+            this.btnPatrocinador4 = new CircularButton();
+            this.btnPatrocinador3 = new CircularButton();
+            this.btnPatrocinador2 = new CircularButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnPatrocinador1 = new CircularButton();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblData = new System.Windows.Forms.Label();
+            this.lblNomeEvento = new System.Windows.Forms.Label();
+            this.PicEvento = new SuperiorRoundedPic();
+            this.Participantes = new System.Windows.Forms.TabPage();
+            this.picAltoRendimento = new Acelera2025.Ferramentas.RoundedPicture();
+            this.label9 = new System.Windows.Forms.Label();
+            this.picMedioRendimento = new Acelera2025.Ferramentas.RoundedPicture();
+            this.label8 = new System.Windows.Forms.Label();
+            this.picBaixoRendimento = new Acelera2025.Ferramentas.RoundedPicture();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panelParticipantes = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnConvidarParticipante = new RoundedButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblParticipantes = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnExcluir = new RoundedButton();
+            this.btnAtualizar = new RoundedButton();
+            this.label24 = new System.Windows.Forms.Label();
+            this.roundedPanel10 = new RoundedPanel();
+            this.txtNovaDescricao = new System.Windows.Forms.TextBox();
+            this.btnTrocarImagem = new RoundedButton();
+            this.PicImagemEvento = new SuperiorRoundedPic();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.roundedPanel11 = new RoundedPanel();
+            this.txtLink = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.roundedPanel9 = new RoundedPanel();
+            this.txtCEP = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.roundedPanel8 = new RoundedPanel();
+            this.txtNumero = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.roundedPanel7 = new RoundedPanel();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.roundedPanel6 = new RoundedPanel();
+            this.txtRua = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.roundedPanel4 = new RoundedPanel();
+            this.txtNomeLocal = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.data = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.roundedPanel3 = new RoundedPanel();
+            this.txtParticipantes = new System.Windows.Forms.TextBox();
+            this.roundedPanel2 = new RoundedPanel();
+            this.txtHora = new System.Windows.Forms.TextBox();
+            this.roundedPanel1 = new RoundedPanel();
+            this.txtNomeEvento = new System.Windows.Forms.TextBox();
+            this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
+            this.comboEventosCriados = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.gradientPanel1 = new GradientPanel();
+            this.btnFeed = new System.Windows.Forms.LinkLabel();
+            this.picturePerfil = new Acelera2025.Views.Tools.CircularPictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnPrincipal = new System.Windows.Forms.LinkLabel();
+            this.btnNotificacoes = new System.Windows.Forms.Button();
+            this.roundedPanel5 = new RoundedPanel();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
+            this.btnOrganizarEventos = new System.Windows.Forms.LinkLabel();
+            this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
+            this.btnAjuda = new System.Windows.Forms.LinkLabel();
+            this.btnSobreNos = new System.Windows.Forms.LinkLabel();
+            this.panelMeusEventos = new RoundedPanel();
+            this.btnEventosCriados = new RoundedButton();
+            this.btnEventosIngressados = new RoundedButton();
+            this.EditarInformacoes.SuspendLayout();
+            this.VisaoGeral.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).BeginInit();
+            this.Participantes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAltoRendimento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMedioRendimento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBaixoRendimento)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.roundedPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicImagemEvento)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.roundedPanel11.SuspendLayout();
+            this.roundedPanel9.SuspendLayout();
+            this.roundedPanel8.SuspendLayout();
+            this.roundedPanel7.SuspendLayout();
+            this.roundedPanel6.SuspendLayout();
+            this.roundedPanel4.SuspendLayout();
+            this.roundedPanel3.SuspendLayout();
+            this.roundedPanel2.SuspendLayout();
+            this.roundedPanel1.SuspendLayout();
+            this.superiorRoundedPanel1.SuspendLayout();
+            this.gradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.roundedPanel5.SuspendLayout();
+            this.panelMeusEventos.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // EditarInformacoes
+            // 
+            this.EditarInformacoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.EditarInformacoes.Controls.Add(this.VisaoGeral);
+            this.EditarInformacoes.Controls.Add(this.Participantes);
+            this.EditarInformacoes.Controls.Add(this.tabPage3);
+            this.EditarInformacoes.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditarInformacoes.Location = new System.Drawing.Point(25, 121);
+            this.EditarInformacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditarInformacoes.Name = "EditarInformacoes";
+            this.EditarInformacoes.Padding = new System.Drawing.Point(25, 9);
+            this.EditarInformacoes.SelectedIndex = 0;
+            this.EditarInformacoes.Size = new System.Drawing.Size(1218, 502);
+            this.EditarInformacoes.TabIndex = 24;
+            // 
+            // VisaoGeral
+            // 
+            this.VisaoGeral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.VisaoGeral.Controls.Add(this.panel3);
+            this.VisaoGeral.Controls.Add(this.panel2);
+            this.VisaoGeral.Controls.Add(this.label12);
+            this.VisaoGeral.Controls.Add(this.lblLimiteParticipantes);
+            this.VisaoGeral.Controls.Add(this.label10);
+            this.VisaoGeral.Controls.Add(this.lblPresencialOnline);
+            this.VisaoGeral.Controls.Add(this.lblCategorias);
+            this.VisaoGeral.Controls.Add(this.txtDescricao);
+            this.VisaoGeral.Controls.Add(this.panel1);
+            this.VisaoGeral.Controls.Add(this.label7);
+            this.VisaoGeral.Controls.Add(this.lblFaixaEtaria);
+            this.VisaoGeral.Controls.Add(this.label5);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador5);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador4);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador3);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador2);
+            this.VisaoGeral.Controls.Add(this.label4);
+            this.VisaoGeral.Controls.Add(this.btnPatrocinador1);
+            this.VisaoGeral.Controls.Add(this.lblHora);
+            this.VisaoGeral.Controls.Add(this.lblData);
+            this.VisaoGeral.Controls.Add(this.lblNomeEvento);
+            this.VisaoGeral.Controls.Add(this.PicEvento);
+            this.VisaoGeral.Location = new System.Drawing.Point(4, 42);
+            this.VisaoGeral.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.VisaoGeral.Name = "VisaoGeral";
+            this.VisaoGeral.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.VisaoGeral.Size = new System.Drawing.Size(1210, 456);
+            this.VisaoGeral.TabIndex = 0;
+            this.VisaoGeral.Text = "Visão Geral";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.lblNomeLocal);
+            this.panel3.Controls.Add(this.lblCep);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.lblRua);
+            this.panel3.Controls.Add(this.lblCidadeEstado);
+            this.panel3.Location = new System.Drawing.Point(646, 313);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(541, 89);
+            this.panel3.TabIndex = 22;
+            // 
+            // lblNomeLocal
+            // 
+            this.lblNomeLocal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNomeLocal.AutoSize = true;
+            this.lblNomeLocal.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeLocal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblNomeLocal.Location = new System.Drawing.Point(371, 39);
+            this.lblNomeLocal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomeLocal.Name = "lblNomeLocal";
+            this.lblNomeLocal.Size = new System.Drawing.Size(111, 27);
+            this.lblNomeLocal.TabIndex = 25;
+            this.lblNomeLocal.Text = "Nome do local";
+            // 
+            // lblCep
+            // 
+            this.lblCep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCep.AutoSize = true;
+            this.lblCep.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCep.Location = new System.Drawing.Point(405, 13);
+            this.lblCep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCep.Name = "lblCep";
+            this.lblCep.Size = new System.Drawing.Size(78, 27);
+            this.lblCep.TabIndex = 24;
+            this.lblCep.Text = "xx xxx-xxx";
+            // 
+            // label18
+            // 
+            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label18.Location = new System.Drawing.Point(371, 13);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(40, 27);
+            this.label18.TabIndex = 23;
+            this.label18.Text = "CEP:";
+            // 
+            // lblRua
+            // 
+            this.lblRua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRua.AutoSize = true;
+            this.lblRua.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblRua.Location = new System.Drawing.Point(8, 39);
+            this.lblRua.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRua.Name = "lblRua";
+            this.lblRua.Size = new System.Drawing.Size(246, 27);
+            this.lblRua.TabIndex = 22;
+            this.lblRua.Text = "Rua XXXXXX, Nº XX, Bairro XXXXXX";
+            // 
+            // lblCidadeEstado
+            // 
+            this.lblCidadeEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCidadeEstado.AutoSize = true;
+            this.lblCidadeEstado.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidadeEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCidadeEstado.Location = new System.Drawing.Point(8, 13);
+            this.lblCidadeEstado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCidadeEstado.Name = "lblCidadeEstado";
+            this.lblCidadeEstado.Size = new System.Drawing.Size(87, 27);
+            this.lblCidadeEstado.TabIndex = 21;
+            this.lblCidadeEstado.Text = "Cidade , UF";
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.lblLink);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Location = new System.Drawing.Point(646, 258);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(541, 40);
+            this.panel2.TabIndex = 21;
+            // 
+            // lblLink
+            // 
+            this.lblLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLink.AutoSize = true;
+            this.lblLink.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblLink.Location = new System.Drawing.Point(124, 0);
+            this.lblLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLink.Name = "lblLink";
+            this.lblLink.Size = new System.Drawing.Size(42, 27);
+            this.lblLink.TabIndex = 21;
+            this.lblLink.Text = "Link ";
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label13.Location = new System.Drawing.Point(8, 0);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(120, 27);
+            this.label13.TabIndex = 20;
+            this.label13.Text = "Link da Reunião:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label12.Location = new System.Drawing.Point(21, 229);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(80, 27);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Descrição:";
+            // 
+            // lblLimiteParticipantes
+            // 
+            this.lblLimiteParticipantes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblLimiteParticipantes.AutoSize = true;
+            this.lblLimiteParticipantes.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLimiteParticipantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblLimiteParticipantes.Location = new System.Drawing.Point(1133, 82);
+            this.lblLimiteParticipantes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLimiteParticipantes.Name = "lblLimiteParticipantes";
+            this.lblLimiteParticipantes.Size = new System.Drawing.Size(39, 27);
+            this.lblLimiteParticipantes.TabIndex = 18;
+            this.lblLimiteParticipantes.Text = "XXX";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label10.Location = new System.Drawing.Point(976, 82);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(166, 27);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Limite de Participantes:";
+            // 
+            // lblPresencialOnline
+            // 
+            this.lblPresencialOnline.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblPresencialOnline.AutoSize = true;
+            this.lblPresencialOnline.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPresencialOnline.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblPresencialOnline.Location = new System.Drawing.Point(976, 165);
+            this.lblPresencialOnline.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPresencialOnline.Name = "lblPresencialOnline";
+            this.lblPresencialOnline.Size = new System.Drawing.Size(127, 27);
+            this.lblPresencialOnline.TabIndex = 16;
+            this.lblPresencialOnline.Text = "Presencial/Online";
+            // 
+            // lblCategorias
+            // 
+            this.lblCategorias.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblCategorias.AutoSize = true;
+            this.lblCategorias.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCategorias.Location = new System.Drawing.Point(1054, 125);
+            this.lblCategorias.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategorias.Name = "lblCategorias";
+            this.lblCategorias.Size = new System.Drawing.Size(77, 27);
+            this.lblCategorias.TabIndex = 15;
+            this.lblCategorias.Text = "Categoria";
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDescricao.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtDescricao.Location = new System.Drawing.Point(26, 258);
+            this.txtDescricao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.ReadOnly = true;
+            this.txtDescricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtDescricao.Size = new System.Drawing.Size(602, 140);
+            this.txtDescricao.TabIndex = 14;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.panel1.Location = new System.Drawing.Point(572, 53);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(610, 2);
+            this.panel1.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label7.Location = new System.Drawing.Point(976, 125);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 27);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Categoria:";
+            // 
+            // lblFaixaEtaria
+            // 
+            this.lblFaixaEtaria.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblFaixaEtaria.AutoSize = true;
+            this.lblFaixaEtaria.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFaixaEtaria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblFaixaEtaria.Location = new System.Drawing.Point(1076, 201);
+            this.lblFaixaEtaria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFaixaEtaria.Name = "lblFaixaEtaria";
+            this.lblFaixaEtaria.Size = new System.Drawing.Size(40, 27);
+            this.lblFaixaEtaria.TabIndex = 11;
+            this.lblFaixaEtaria.Text = "+XX";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label5.Location = new System.Drawing.Point(976, 201);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(91, 27);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Faixa Etária:";
+            // 
+            // btnPatrocinador5
+            // 
+            this.btnPatrocinador5.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPatrocinador5.BorderColor = System.Drawing.Color.Black;
+            this.btnPatrocinador5.BorderSize = 0;
+            this.btnPatrocinador5.Location = new System.Drawing.Point(806, 154);
+            this.btnPatrocinador5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPatrocinador5.Name = "btnPatrocinador5";
+            this.btnPatrocinador5.Size = new System.Drawing.Size(54, 49);
+            this.btnPatrocinador5.TabIndex = 9;
+            this.btnPatrocinador5.Text = "circularButton5";
+            this.btnPatrocinador5.UseVisualStyleBackColor = false;
+            // 
+            // btnPatrocinador4
+            // 
+            this.btnPatrocinador4.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPatrocinador4.BorderColor = System.Drawing.Color.Black;
+            this.btnPatrocinador4.BorderSize = 0;
+            this.btnPatrocinador4.Location = new System.Drawing.Point(748, 154);
+            this.btnPatrocinador4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPatrocinador4.Name = "btnPatrocinador4";
+            this.btnPatrocinador4.Size = new System.Drawing.Size(54, 49);
+            this.btnPatrocinador4.TabIndex = 8;
+            this.btnPatrocinador4.Text = "circularButton4";
+            this.btnPatrocinador4.UseVisualStyleBackColor = false;
+            // 
+            // btnPatrocinador3
+            // 
+            this.btnPatrocinador3.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPatrocinador3.BorderColor = System.Drawing.Color.Black;
+            this.btnPatrocinador3.BorderSize = 0;
+            this.btnPatrocinador3.Location = new System.Drawing.Point(689, 154);
+            this.btnPatrocinador3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPatrocinador3.Name = "btnPatrocinador3";
+            this.btnPatrocinador3.Size = new System.Drawing.Size(54, 49);
+            this.btnPatrocinador3.TabIndex = 7;
+            this.btnPatrocinador3.Text = "circularButton3";
+            this.btnPatrocinador3.UseVisualStyleBackColor = false;
+            // 
+            // btnPatrocinador2
+            // 
+            this.btnPatrocinador2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPatrocinador2.BorderColor = System.Drawing.Color.Black;
+            this.btnPatrocinador2.BorderSize = 0;
+            this.btnPatrocinador2.Location = new System.Drawing.Point(631, 154);
+            this.btnPatrocinador2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPatrocinador2.Name = "btnPatrocinador2";
+            this.btnPatrocinador2.Size = new System.Drawing.Size(54, 49);
+            this.btnPatrocinador2.TabIndex = 6;
+            this.btnPatrocinador2.Text = "circularButton2";
+            this.btnPatrocinador2.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label4.Location = new System.Drawing.Point(568, 125);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 27);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Patrocinadores";
+            // 
+            // btnPatrocinador1
+            // 
+            this.btnPatrocinador1.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPatrocinador1.BorderColor = System.Drawing.Color.Black;
+            this.btnPatrocinador1.BorderSize = 0;
+            this.btnPatrocinador1.Location = new System.Drawing.Point(572, 154);
+            this.btnPatrocinador1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPatrocinador1.Name = "btnPatrocinador1";
+            this.btnPatrocinador1.Size = new System.Drawing.Size(54, 49);
+            this.btnPatrocinador1.TabIndex = 4;
+            this.btnPatrocinador1.Text = "circularButton1";
+            this.btnPatrocinador1.UseVisualStyleBackColor = false;
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblHora.Location = new System.Drawing.Point(712, 82);
+            this.lblHora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(57, 27);
+            this.lblHora.TabIndex = 3;
+            this.lblHora.Text = "hh:mm";
+            // 
+            // lblData
+            // 
+            this.lblData.AutoSize = true;
+            this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblData.Location = new System.Drawing.Point(568, 82);
+            this.lblData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(100, 27);
+            this.lblData.TabIndex = 2;
+            this.lblData.Text = "dd/mm/aaaa";
+            // 
+            // lblNomeEvento
+            // 
+            this.lblNomeEvento.AutoSize = true;
+            this.lblNomeEvento.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblNomeEvento.Location = new System.Drawing.Point(566, 20);
+            this.lblNomeEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomeEvento.Name = "lblNomeEvento";
+            this.lblNomeEvento.Size = new System.Drawing.Size(181, 39);
+            this.lblNomeEvento.TabIndex = 1;
+            this.lblNomeEvento.Text = "Nome do Evento";
+            // 
+            // PicEvento
+            // 
+            this.PicEvento.BackColor = System.Drawing.Color.Gainsboro;
+            this.PicEvento.BorderColor = System.Drawing.Color.Black;
+            this.PicEvento.BorderRadius = 20;
+            this.PicEvento.BorderSize = 0;
+            this.PicEvento.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.PicEvento.Location = new System.Drawing.Point(26, 20);
+            this.PicEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicEvento.Name = "PicEvento";
+            this.PicEvento.Size = new System.Drawing.Size(506, 182);
+            this.PicEvento.TabIndex = 0;
+            this.PicEvento.TabStop = false;
+            this.PicEvento.Click += new System.EventHandler(this.PicEvento_Click);
+            // 
+            // Participantes
+            // 
+            this.Participantes.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Participantes.Controls.Add(this.picAltoRendimento);
+            this.Participantes.Controls.Add(this.label9);
+            this.Participantes.Controls.Add(this.picMedioRendimento);
+            this.Participantes.Controls.Add(this.label8);
+            this.Participantes.Controls.Add(this.picBaixoRendimento);
+            this.Participantes.Controls.Add(this.label6);
+            this.Participantes.Controls.Add(this.label3);
+            this.Participantes.Controls.Add(this.panelParticipantes);
+            this.Participantes.Controls.Add(this.label2);
+            this.Participantes.Controls.Add(this.btnConvidarParticipante);
+            this.Participantes.Controls.Add(this.label1);
+            this.Participantes.Controls.Add(this.lblParticipantes);
+            this.Participantes.Location = new System.Drawing.Point(4, 42);
+            this.Participantes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Participantes.Name = "Participantes";
+            this.Participantes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Participantes.Size = new System.Drawing.Size(1210, 456);
+            this.Participantes.TabIndex = 1;
+            this.Participantes.Text = "Participantes";
+            // 
+            // picAltoRendimento
+            // 
+            this.picAltoRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picAltoRendimento.BorderColor = System.Drawing.Color.Black;
+            this.picAltoRendimento.BorderRadius = 20;
+            this.picAltoRendimento.BorderSize = 0;
+            this.picAltoRendimento.Image = global::Acelera2025.Properties.Resources.altoEngajamento;
+            this.picAltoRendimento.Location = new System.Drawing.Point(605, 171);
+            this.picAltoRendimento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picAltoRendimento.Name = "picAltoRendimento";
+            this.picAltoRendimento.Size = new System.Drawing.Size(81, 88);
+            this.picAltoRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAltoRendimento.TabIndex = 15;
+            this.picAltoRendimento.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label9.Location = new System.Drawing.Point(621, 262);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(41, 29);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Alto";
+            // 
+            // picMedioRendimento
+            // 
+            this.picMedioRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picMedioRendimento.BorderColor = System.Drawing.Color.Black;
+            this.picMedioRendimento.BorderRadius = 20;
+            this.picMedioRendimento.BorderSize = 0;
+            this.picMedioRendimento.Image = global::Acelera2025.Properties.Resources.medioEngajamento;
+            this.picMedioRendimento.Location = new System.Drawing.Point(500, 171);
+            this.picMedioRendimento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picMedioRendimento.Name = "picMedioRendimento";
+            this.picMedioRendimento.Size = new System.Drawing.Size(81, 88);
+            this.picMedioRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMedioRendimento.TabIndex = 13;
+            this.picMedioRendimento.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label8.Location = new System.Drawing.Point(516, 262);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 29);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Médio";
+            // 
+            // picBaixoRendimento
+            // 
+            this.picBaixoRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picBaixoRendimento.BorderColor = System.Drawing.Color.Navy;
+            this.picBaixoRendimento.BorderRadius = 20;
+            this.picBaixoRendimento.BorderSize = 0;
+            this.picBaixoRendimento.Image = global::Acelera2025.Properties.Resources.baixoEngajamento;
+            this.picBaixoRendimento.Location = new System.Drawing.Point(390, 171);
+            this.picBaixoRendimento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBaixoRendimento.Name = "picBaixoRendimento";
+            this.picBaixoRendimento.Size = new System.Drawing.Size(81, 88);
+            this.picBaixoRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBaixoRendimento.TabIndex = 11;
+            this.picBaixoRendimento.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label6.Location = new System.Drawing.Point(406, 262);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 29);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Baixo";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label3.Location = new System.Drawing.Point(480, 115);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 34);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Engajamento";
+            // 
+            // panelParticipantes
+            // 
+            this.panelParticipantes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelParticipantes.AutoScroll = true;
+            this.panelParticipantes.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.panelParticipantes.Location = new System.Drawing.Point(799, 68);
+            this.panelParticipantes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelParticipantes.Name = "panelParticipantes";
+            this.panelParticipantes.Size = new System.Drawing.Size(282, 315);
+            this.panelParticipantes.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label2.Location = new System.Drawing.Point(794, 24);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 34);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Participantes";
+            // 
+            // btnConvidarParticipante
+            // 
+            this.btnConvidarParticipante.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnConvidarParticipante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.btnConvidarParticipante.BorderColor = System.Drawing.Color.Black;
+            this.btnConvidarParticipante.BorderRadius = 20;
+            this.btnConvidarParticipante.BorderSize = 0;
+            this.btnConvidarParticipante.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnConvidarParticipante.Location = new System.Drawing.Point(80, 269);
+            this.btnConvidarParticipante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConvidarParticipante.Name = "btnConvidarParticipante";
+            this.btnConvidarParticipante.Size = new System.Drawing.Size(153, 45);
+            this.btnConvidarParticipante.TabIndex = 4;
+            this.btnConvidarParticipante.Text = "Convidar Participante";
+            this.btnConvidarParticipante.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label1.Location = new System.Drawing.Point(81, 208);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 34);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Participantes";
+            // 
+            // lblParticipantes
+            // 
+            this.lblParticipantes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblParticipantes.AutoSize = true;
+            this.lblParticipantes.Font = new System.Drawing.Font("Myanmar Text", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParticipantes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblParticipantes.Location = new System.Drawing.Point(80, 171);
+            this.lblParticipantes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblParticipantes.Name = "lblParticipantes";
+            this.lblParticipantes.Size = new System.Drawing.Size(59, 53);
+            this.lblParticipantes.TabIndex = 2;
+            this.lblParticipantes.Text = "XX";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage3.Controls.Add(this.btnExcluir);
+            this.tabPage3.Controls.Add(this.btnAtualizar);
+            this.tabPage3.Controls.Add(this.label24);
+            this.tabPage3.Controls.Add(this.roundedPanel10);
+            this.tabPage3.Controls.Add(this.btnTrocarImagem);
+            this.tabPage3.Controls.Add(this.PicImagemEvento);
+            this.tabPage3.Controls.Add(this.panel4);
+            this.tabPage3.Controls.Add(this.roundedPanel9);
+            this.tabPage3.Controls.Add(this.label23);
+            this.tabPage3.Controls.Add(this.roundedPanel8);
+            this.tabPage3.Controls.Add(this.label22);
+            this.tabPage3.Controls.Add(this.roundedPanel7);
+            this.tabPage3.Controls.Add(this.label21);
+            this.tabPage3.Controls.Add(this.roundedPanel6);
+            this.tabPage3.Controls.Add(this.label20);
+            this.tabPage3.Controls.Add(this.roundedPanel4);
+            this.tabPage3.Controls.Add(this.label19);
+            this.tabPage3.Controls.Add(this.label17);
+            this.tabPage3.Controls.Add(this.label16);
+            this.tabPage3.Controls.Add(this.label15);
+            this.tabPage3.Controls.Add(this.data);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.roundedPanel3);
+            this.tabPage3.Controls.Add(this.roundedPanel2);
+            this.tabPage3.Controls.Add(this.roundedPanel1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 42);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Size = new System.Drawing.Size(1210, 456);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Editar Informações";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnExcluir.BorderColor = System.Drawing.Color.Black;
+            this.btnExcluir.BorderRadius = 10;
+            this.btnExcluir.BorderSize = 0;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluir.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnExcluir.Location = new System.Drawing.Point(964, 411);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(132, 35);
+            this.btnExcluir.TabIndex = 62;
+            this.btnExcluir.Text = "Excluir Evento";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAtualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnAtualizar.BorderColor = System.Drawing.Color.Black;
+            this.btnAtualizar.BorderRadius = 10;
+            this.btnAtualizar.BorderSize = 0;
+            this.btnAtualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtualizar.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAtualizar.Location = new System.Drawing.Point(798, 411);
+            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(132, 35);
+            this.btnAtualizar.TabIndex = 61;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = false;
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label24.Location = new System.Drawing.Point(562, 237);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(80, 27);
+            this.label24.TabIndex = 60;
+            this.label24.Text = "Descrição:";
+            // 
+            // roundedPanel10
+            // 
+            this.roundedPanel10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel10.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel10.BorderRadius = 20;
+            this.roundedPanel10.BorderSize = 0;
+            this.roundedPanel10.Controls.Add(this.txtNovaDescricao);
+            this.roundedPanel10.Location = new System.Drawing.Point(560, 266);
+            this.roundedPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel10.Name = "roundedPanel10";
+            this.roundedPanel10.Size = new System.Drawing.Size(538, 101);
+            this.roundedPanel10.TabIndex = 59;
+            // 
+            // txtNovaDescricao
+            // 
+            this.txtNovaDescricao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNovaDescricao.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNovaDescricao.Location = new System.Drawing.Point(0, 0);
+            this.txtNovaDescricao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNovaDescricao.Multiline = true;
+            this.txtNovaDescricao.Name = "txtNovaDescricao";
+            this.txtNovaDescricao.Size = new System.Drawing.Size(538, 101);
+            this.txtNovaDescricao.TabIndex = 0;
+            // 
+            // btnTrocarImagem
+            // 
+            this.btnTrocarImagem.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnTrocarImagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnTrocarImagem.BorderColor = System.Drawing.Color.Black;
+            this.btnTrocarImagem.BorderRadius = 10;
+            this.btnTrocarImagem.BorderSize = 0;
+            this.btnTrocarImagem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTrocarImagem.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrocarImagem.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnTrocarImagem.Location = new System.Drawing.Point(567, 205);
+            this.btnTrocarImagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTrocarImagem.Name = "btnTrocarImagem";
+            this.btnTrocarImagem.Size = new System.Drawing.Size(125, 30);
+            this.btnTrocarImagem.TabIndex = 58;
+            this.btnTrocarImagem.Text = "Trocar Imagem";
+            this.btnTrocarImagem.UseVisualStyleBackColor = false;
+            // 
+            // PicImagemEvento
+            // 
+            this.PicImagemEvento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PicImagemEvento.BackColor = System.Drawing.Color.Gainsboro;
+            this.PicImagemEvento.BorderColor = System.Drawing.Color.Black;
+            this.PicImagemEvento.BorderRadius = 20;
+            this.PicImagemEvento.BorderSize = 0;
+            this.PicImagemEvento.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.PicImagemEvento.Location = new System.Drawing.Point(567, 32);
+            this.PicImagemEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PicImagemEvento.Name = "PicImagemEvento";
+            this.PicImagemEvento.Size = new System.Drawing.Size(456, 156);
+            this.PicImagemEvento.TabIndex = 57;
+            this.PicImagemEvento.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.roundedPanel11);
+            this.panel4.Controls.Add(this.label25);
+            this.panel4.Location = new System.Drawing.Point(52, 392);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(456, 63);
+            this.panel4.TabIndex = 56;
+            // 
+            // roundedPanel11
+            // 
+            this.roundedPanel11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel11.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel11.BorderRadius = 20;
+            this.roundedPanel11.BorderSize = 0;
+            this.roundedPanel11.Controls.Add(this.txtLink);
+            this.roundedPanel11.Location = new System.Drawing.Point(0, 28);
+            this.roundedPanel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel11.Name = "roundedPanel11";
+            this.roundedPanel11.Size = new System.Drawing.Size(401, 30);
+            this.roundedPanel11.TabIndex = 30;
+            // 
+            // txtLink
+            // 
+            this.txtLink.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtLink.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLink.Location = new System.Drawing.Point(0, 0);
+            this.txtLink.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLink.Name = "txtLink";
+            this.txtLink.Size = new System.Drawing.Size(401, 33);
+            this.txtLink.TabIndex = 0;
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label25.Location = new System.Drawing.Point(2, 0);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(112, 27);
+            this.label25.TabIndex = 29;
+            this.label25.Text = "Link de Acesso:";
+            // 
+            // roundedPanel9
+            // 
+            this.roundedPanel9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel9.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel9.BorderRadius = 20;
+            this.roundedPanel9.BorderSize = 0;
+            this.roundedPanel9.Controls.Add(this.txtCEP);
+            this.roundedPanel9.Location = new System.Drawing.Point(266, 357);
+            this.roundedPanel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel9.Name = "roundedPanel9";
+            this.roundedPanel9.Size = new System.Drawing.Size(188, 30);
+            this.roundedPanel9.TabIndex = 55;
+            // 
+            // txtCEP
+            // 
+            this.txtCEP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCEP.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCEP.Location = new System.Drawing.Point(0, 0);
+            this.txtCEP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(188, 33);
+            this.txtCEP.TabIndex = 0;
+            // 
+            // label23
+            // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label23.Location = new System.Drawing.Point(261, 328);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(40, 27);
+            this.label23.TabIndex = 54;
+            this.label23.Text = "CEP:";
+            // 
+            // roundedPanel8
+            // 
+            this.roundedPanel8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel8.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel8.BorderRadius = 20;
+            this.roundedPanel8.BorderSize = 0;
+            this.roundedPanel8.Controls.Add(this.txtNumero);
+            this.roundedPanel8.Location = new System.Drawing.Point(352, 285);
+            this.roundedPanel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel8.Name = "roundedPanel8";
+            this.roundedPanel8.Size = new System.Drawing.Size(84, 30);
+            this.roundedPanel8.TabIndex = 53;
+            // 
+            // txtNumero
+            // 
+            this.txtNumero.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNumero.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumero.Location = new System.Drawing.Point(0, 0);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(84, 33);
+            this.txtNumero.TabIndex = 0;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label22.Location = new System.Drawing.Point(348, 257);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(69, 27);
+            this.label22.TabIndex = 52;
+            this.label22.Text = "Número:";
+            // 
+            // roundedPanel7
+            // 
+            this.roundedPanel7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel7.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel7.BorderRadius = 20;
+            this.roundedPanel7.BorderSize = 0;
+            this.roundedPanel7.Controls.Add(this.txtBairro);
+            this.roundedPanel7.Location = new System.Drawing.Point(52, 357);
+            this.roundedPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel7.Name = "roundedPanel7";
+            this.roundedPanel7.Size = new System.Drawing.Size(188, 30);
+            this.roundedPanel7.TabIndex = 51;
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBairro.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBairro.Location = new System.Drawing.Point(0, 0);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(188, 33);
+            this.txtBairro.TabIndex = 0;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label21.Location = new System.Drawing.Point(54, 328);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(55, 27);
+            this.label21.TabIndex = 50;
+            this.label21.Text = "Bairro:";
+            // 
+            // roundedPanel6
+            // 
+            this.roundedPanel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel6.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel6.BorderRadius = 20;
+            this.roundedPanel6.BorderSize = 0;
+            this.roundedPanel6.Controls.Add(this.txtRua);
+            this.roundedPanel6.Location = new System.Drawing.Point(52, 285);
+            this.roundedPanel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel6.Name = "roundedPanel6";
+            this.roundedPanel6.Size = new System.Drawing.Size(188, 30);
+            this.roundedPanel6.TabIndex = 49;
+            // 
+            // txtRua
+            // 
+            this.txtRua.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtRua.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRua.Location = new System.Drawing.Point(0, 0);
+            this.txtRua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(188, 33);
+            this.txtRua.TabIndex = 0;
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label20.Location = new System.Drawing.Point(47, 257);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(40, 27);
+            this.label20.TabIndex = 48;
+            this.label20.Text = "Rua:";
+            // 
+            // roundedPanel4
+            // 
+            this.roundedPanel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel4.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel4.BorderRadius = 20;
+            this.roundedPanel4.BorderSize = 0;
+            this.roundedPanel4.Controls.Add(this.txtNomeLocal);
+            this.roundedPanel4.Location = new System.Drawing.Point(249, 206);
+            this.roundedPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel4.Name = "roundedPanel4";
+            this.roundedPanel4.Size = new System.Drawing.Size(188, 30);
+            this.roundedPanel4.TabIndex = 47;
+            // 
+            // txtNomeLocal
+            // 
+            this.txtNomeLocal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNomeLocal.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeLocal.Location = new System.Drawing.Point(0, 0);
+            this.txtNomeLocal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeLocal.Name = "txtNomeLocal";
+            this.txtNomeLocal.Size = new System.Drawing.Size(188, 33);
+            this.txtNomeLocal.TabIndex = 0;
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label19.Location = new System.Drawing.Point(244, 178);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(117, 27);
+            this.label19.TabIndex = 46;
+            this.label19.Text = "Nome do Local:";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label17.Location = new System.Drawing.Point(47, 178);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(163, 27);
+            this.label17.TabIndex = 45;
+            this.label17.Text = "Limite de Participantes";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label16.Location = new System.Drawing.Point(348, 104);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 27);
+            this.label16.TabIndex = 43;
+            this.label16.Text = "Hora:";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label15.Location = new System.Drawing.Point(47, 104);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(47, 27);
+            this.label15.TabIndex = 41;
+            this.label15.Text = "Data:";
+            // 
+            // data
+            // 
+            this.data.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.data.Location = new System.Drawing.Point(52, 132);
+            this.data.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.data.Name = "data";
+            this.data.Size = new System.Drawing.Size(151, 30);
+            this.data.TabIndex = 40;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label11.Location = new System.Drawing.Point(47, 32);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(127, 27);
+            this.label11.TabIndex = 39;
+            this.label11.Text = "Nome do evento:";
+            // 
+            // roundedPanel3
+            // 
+            this.roundedPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel3.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel3.BorderRadius = 20;
+            this.roundedPanel3.BorderSize = 0;
+            this.roundedPanel3.Controls.Add(this.txtParticipantes);
+            this.roundedPanel3.Location = new System.Drawing.Point(52, 206);
+            this.roundedPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel3.Name = "roundedPanel3";
+            this.roundedPanel3.Size = new System.Drawing.Size(91, 30);
+            this.roundedPanel3.TabIndex = 44;
+            // 
+            // txtParticipantes
+            // 
+            this.txtParticipantes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtParticipantes.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtParticipantes.Location = new System.Drawing.Point(0, 0);
+            this.txtParticipantes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtParticipantes.Name = "txtParticipantes";
+            this.txtParticipantes.Size = new System.Drawing.Size(91, 33);
+            this.txtParticipantes.TabIndex = 0;
+            // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel2.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel2.BorderRadius = 20;
+            this.roundedPanel2.BorderSize = 0;
+            this.roundedPanel2.Controls.Add(this.txtHora);
+            this.roundedPanel2.Location = new System.Drawing.Point(346, 132);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Size = new System.Drawing.Size(91, 30);
+            this.roundedPanel2.TabIndex = 42;
+            // 
+            // txtHora
+            // 
+            this.txtHora.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtHora.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHora.Location = new System.Drawing.Point(0, 0);
+            this.txtHora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(91, 33);
+            this.txtHora.TabIndex = 0;
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.BorderRadius = 20;
+            this.roundedPanel1.BorderSize = 0;
+            this.roundedPanel1.Controls.Add(this.txtNomeEvento);
+            this.roundedPanel1.Location = new System.Drawing.Point(44, 61);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Size = new System.Drawing.Size(393, 30);
+            this.roundedPanel1.TabIndex = 38;
+            // 
+            // txtNomeEvento
+            // 
+            this.txtNomeEvento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNomeEvento.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeEvento.Location = new System.Drawing.Point(0, 0);
+            this.txtNomeEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeEvento.Name = "txtNomeEvento";
+            this.txtNomeEvento.Size = new System.Drawing.Size(393, 33);
+            this.txtNomeEvento.TabIndex = 0;
+            // 
+            // superiorRoundedPanel1
+            // 
+            this.superiorRoundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.superiorRoundedPanel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.superiorRoundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.superiorRoundedPanel1.BorderRadius = 20;
+            this.superiorRoundedPanel1.BorderSize = 0;
+            this.superiorRoundedPanel1.Controls.Add(this.comboEventosCriados);
+            this.superiorRoundedPanel1.Controls.Add(this.label14);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(25, 72);
+            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1218, 45);
+            this.superiorRoundedPanel1.TabIndex = 25;
+            // 
+            // comboEventosCriados
+            // 
+            this.comboEventosCriados.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comboEventosCriados.BackColor = System.Drawing.Color.Gainsboro;
+            this.comboEventosCriados.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboEventosCriados.FormattingEnabled = true;
+            this.comboEventosCriados.Location = new System.Drawing.Point(214, 9);
+            this.comboEventosCriados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboEventosCriados.Name = "comboEventosCriados";
+            this.comboEventosCriados.Size = new System.Drawing.Size(324, 29);
+            this.comboEventosCriados.TabIndex = 21;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label14.Location = new System.Drawing.Point(2, 11);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(180, 27);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Eventos criados por você:";
+            // 
+            // gradientPanel1
+            // 
+            this.gradientPanel1.Controls.Add(this.btnFeed);
+            this.gradientPanel1.Controls.Add(this.picturePerfil);
+            this.gradientPanel1.Controls.Add(this.pictureBox1);
+            this.gradientPanel1.Controls.Add(this.btnPrincipal);
+            this.gradientPanel1.Controls.Add(this.btnNotificacoes);
+            this.gradientPanel1.Controls.Add(this.roundedPanel5);
+            this.gradientPanel1.Controls.Add(this.btnOrganizarEventos);
+            this.gradientPanel1.Controls.Add(this.btnMeusEventos);
+            this.gradientPanel1.Controls.Add(this.btnAjuda);
+            this.gradientPanel1.Controls.Add(this.btnSobreNos);
+            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gradientPanel1.Name = "gradientPanel1";
+            this.gradientPanel1.Size = new System.Drawing.Size(1260, 41);
+            this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.gradientPanel1.TabIndex = 23;
+            // 
+            // btnFeed
+            // 
+            this.btnFeed.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnFeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFeed.AutoSize = true;
+            this.btnFeed.BackColor = System.Drawing.Color.Transparent;
+            this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnFeed.LinkColor = System.Drawing.Color.White;
+            this.btnFeed.Location = new System.Drawing.Point(713, 12);
+            this.btnFeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnFeed.Name = "btnFeed";
+            this.btnFeed.Size = new System.Drawing.Size(35, 21);
+            this.btnFeed.TabIndex = 17;
+            this.btnFeed.TabStop = true;
+            this.btnFeed.Text = "Feed";
+            this.btnFeed.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnFeed.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFeed_LinkClicked);
+            // 
+            // picturePerfil
+            // 
+            this.picturePerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturePerfil.BackColor = System.Drawing.Color.Transparent;
+            this.picturePerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picturePerfil.BorderColor = System.Drawing.Color.Transparent;
+            this.picturePerfil.BorderColor2 = System.Drawing.Color.Transparent;
+            this.picturePerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picturePerfil.BorderSize = 1;
+            this.picturePerfil.GradientAngle = 50F;
+            this.picturePerfil.Image = global::Acelera2025.Properties.Resources.nezuko;
+            this.picturePerfil.Location = new System.Drawing.Point(1208, 2);
+            this.picturePerfil.Name = "picturePerfil";
+            this.picturePerfil.Size = new System.Drawing.Size(35, 35);
+            this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturePerfil.TabIndex = 16;
+            this.picturePerfil.TabStop = false;
+            this.picturePerfil.Click += new System.EventHandler(this.picturePerfil_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnPrincipal
+            // 
+            this.btnPrincipal.ActiveLinkColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPrincipal.AutoSize = true;
+            this.btnPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnPrincipal.LinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.Location = new System.Drawing.Point(50, 12);
+            this.btnPrincipal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Size = new System.Drawing.Size(82, 21);
+            this.btnPrincipal.TabIndex = 11;
+            this.btnPrincipal.TabStop = true;
+            this.btnPrincipal.Text = "CONNECTA";
+            this.btnPrincipal.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnPrincipal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnPrincipal_LinkClicked);
+            // 
+            // btnNotificacoes
+            // 
+            this.btnNotificacoes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.btnNotificacoes.BackgroundImage = global::Acelera2025.Properties.Resources.IconeNotificacao;
+            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotificacoes.FlatAppearance.BorderSize = 0;
+            this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificacoes.Location = new System.Drawing.Point(1160, 11);
+            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNotificacoes.Name = "btnNotificacoes";
+            this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
+            this.btnNotificacoes.TabIndex = 10;
+            this.btnNotificacoes.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
+            // 
+            // roundedPanel5
+            // 
+            this.roundedPanel5.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel5.BorderRadius = 10;
+            this.roundedPanel5.BorderSize = 0;
+            this.roundedPanel5.Controls.Add(this.btnPesquisar);
+            this.roundedPanel5.Controls.Add(this.txtPesquisar);
+            this.roundedPanel5.Location = new System.Drawing.Point(245, 10);
+            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel5.Name = "roundedPanel5";
+            this.roundedPanel5.Size = new System.Drawing.Size(396, 25);
+            this.roundedPanel5.TabIndex = 8;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesquisar.FlatAppearance.BorderSize = 0;
+            this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
+            this.btnPesquisar.Location = new System.Drawing.Point(364, -2);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(32, 31);
+            this.btnPesquisar.TabIndex = 1;
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            // 
+            // txtPesquisar
+            // 
+            this.txtPesquisar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPesquisar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisar.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txtPesquisar.Location = new System.Drawing.Point(2, 4);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(362, 26);
+            this.txtPesquisar.TabIndex = 0;
+            // 
+            // btnOrganizarEventos
+            // 
+            this.btnOrganizarEventos.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnOrganizarEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOrganizarEventos.AutoSize = true;
+            this.btnOrganizarEventos.BackColor = System.Drawing.Color.Transparent;
+            this.btnOrganizarEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrganizarEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnOrganizarEventos.LinkColor = System.Drawing.Color.White;
+            this.btnOrganizarEventos.Location = new System.Drawing.Point(779, 12);
+            this.btnOrganizarEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnOrganizarEventos.Name = "btnOrganizarEventos";
+            this.btnOrganizarEventos.Size = new System.Drawing.Size(105, 21);
+            this.btnOrganizarEventos.TabIndex = 5;
+            this.btnOrganizarEventos.TabStop = true;
+            this.btnOrganizarEventos.Text = "Organizar eventos";
+            this.btnOrganizarEventos.VisitedLinkColor = System.Drawing.Color.White;
+            // 
+            // btnMeusEventos
+            // 
+            this.btnMeusEventos.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMeusEventos.AutoSize = true;
+            this.btnMeusEventos.BackColor = System.Drawing.Color.Transparent;
+            this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.Location = new System.Drawing.Point(909, 12);
+            this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnMeusEventos.Name = "btnMeusEventos";
+            this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
+            this.btnMeusEventos.TabIndex = 4;
+            this.btnMeusEventos.TabStop = true;
+            this.btnMeusEventos.Text = "Meus eventos";
+            this.btnMeusEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnMeusEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnMeusEventos_LinkClicked);
+            // 
+            // btnAjuda
+            // 
+            this.btnAjuda.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnAjuda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAjuda.AutoSize = true;
+            this.btnAjuda.BackColor = System.Drawing.Color.Transparent;
+            this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnAjuda.LinkColor = System.Drawing.Color.White;
+            this.btnAjuda.Location = new System.Drawing.Point(1008, 12);
+            this.btnAjuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnAjuda.Name = "btnAjuda";
+            this.btnAjuda.Size = new System.Drawing.Size(41, 21);
+            this.btnAjuda.TabIndex = 3;
+            this.btnAjuda.TabStop = true;
+            this.btnAjuda.Text = "Ajuda";
+            this.btnAjuda.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnAjuda.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnAjuda_LinkClicked);
+            // 
+            // btnSobreNos
+            // 
+            this.btnSobreNos.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnSobreNos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSobreNos.AutoSize = true;
+            this.btnSobreNos.BackColor = System.Drawing.Color.Transparent;
+            this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnSobreNos.LinkColor = System.Drawing.Color.White;
+            this.btnSobreNos.Location = new System.Drawing.Point(1064, 13);
+            this.btnSobreNos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnSobreNos.Name = "btnSobreNos";
+            this.btnSobreNos.Size = new System.Drawing.Size(62, 21);
+            this.btnSobreNos.TabIndex = 2;
+            this.btnSobreNos.TabStop = true;
+            this.btnSobreNos.Text = "Sobre nós";
+            this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
+            // 
+            // panelMeusEventos
+            // 
+            this.panelMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelMeusEventos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelMeusEventos.BorderColor = System.Drawing.Color.Black;
+            this.panelMeusEventos.BorderRadius = 20;
+            this.panelMeusEventos.BorderSize = 0;
+            this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
+            this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
+            this.panelMeusEventos.Location = new System.Drawing.Point(863, 46);
+            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMeusEventos.Name = "panelMeusEventos";
+            this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
+            this.panelMeusEventos.TabIndex = 26;
+            this.panelMeusEventos.Visible = false;
+            // 
+            // btnEventosCriados
+            // 
+            this.btnEventosCriados.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEventosCriados.BorderColor = System.Drawing.Color.Black;
+            this.btnEventosCriados.BorderRadius = 20;
+            this.btnEventosCriados.BorderSize = 0;
+            this.btnEventosCriados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEventosCriados.Location = new System.Drawing.Point(0, 40);
+            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEventosCriados.Name = "btnEventosCriados";
+            this.btnEventosCriados.Size = new System.Drawing.Size(184, 41);
+            this.btnEventosCriados.TabIndex = 1;
+            this.btnEventosCriados.Text = "Eventos Criados";
+            this.btnEventosCriados.UseVisualStyleBackColor = false;
+            // 
+            // btnEventosIngressados
+            // 
+            this.btnEventosIngressados.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEventosIngressados.BorderColor = System.Drawing.Color.Black;
+            this.btnEventosIngressados.BorderRadius = 20;
+            this.btnEventosIngressados.BorderSize = 0;
+            this.btnEventosIngressados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEventosIngressados.Location = new System.Drawing.Point(0, 2);
+            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEventosIngressados.Name = "btnEventosIngressados";
+            this.btnEventosIngressados.Size = new System.Drawing.Size(184, 45);
+            this.btnEventosIngressados.TabIndex = 0;
+            this.btnEventosIngressados.Text = "Eventos Ingressados";
+            this.btnEventosIngressados.UseVisualStyleBackColor = false;
+            this.btnEventosIngressados.Click += new System.EventHandler(this.btnEventosIngressados_Click);
+            // 
+            // EventosCriados
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(1260, 632);
+            this.Controls.Add(this.panelMeusEventos);
+            this.Controls.Add(this.superiorRoundedPanel1);
+            this.Controls.Add(this.EditarInformacoes);
+            this.Controls.Add(this.gradientPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "EventosCriados";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.EventosCriados_Load);
+            this.EditarInformacoes.ResumeLayout(false);
+            this.VisaoGeral.ResumeLayout(false);
+            this.VisaoGeral.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).EndInit();
+            this.Participantes.ResumeLayout(false);
+            this.Participantes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAltoRendimento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMedioRendimento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBaixoRendimento)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.roundedPanel10.ResumeLayout(false);
+            this.roundedPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicImagemEvento)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.roundedPanel11.ResumeLayout(false);
+            this.roundedPanel11.PerformLayout();
+            this.roundedPanel9.ResumeLayout(false);
+            this.roundedPanel9.PerformLayout();
+            this.roundedPanel8.ResumeLayout(false);
+            this.roundedPanel8.PerformLayout();
+            this.roundedPanel7.ResumeLayout(false);
+            this.roundedPanel7.PerformLayout();
+            this.roundedPanel6.ResumeLayout(false);
+            this.roundedPanel6.PerformLayout();
+            this.roundedPanel4.ResumeLayout(false);
+            this.roundedPanel4.PerformLayout();
+            this.roundedPanel3.ResumeLayout(false);
+            this.roundedPanel3.PerformLayout();
+            this.roundedPanel2.ResumeLayout(false);
+            this.roundedPanel2.PerformLayout();
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel1.PerformLayout();
+            this.superiorRoundedPanel1.ResumeLayout(false);
+            this.superiorRoundedPanel1.PerformLayout();
+            this.gradientPanel1.ResumeLayout(false);
+            this.gradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.roundedPanel5.ResumeLayout(false);
+            this.roundedPanel5.PerformLayout();
+            this.panelMeusEventos.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private GradientPanel gradientPanel1;
+        private System.Windows.Forms.Button btnNotificacoes;
+        private RoundedPanel roundedPanel5;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.TextBox txtPesquisar;
+        private System.Windows.Forms.LinkLabel btnOrganizarEventos;
+        private System.Windows.Forms.LinkLabel btnMeusEventos;
+        private System.Windows.Forms.LinkLabel btnAjuda;
+        private System.Windows.Forms.LinkLabel btnSobreNos;
+        private System.Windows.Forms.TabControl EditarInformacoes;
+        private System.Windows.Forms.TabPage VisaoGeral;
+        private System.Windows.Forms.TabPage Participantes;
+        private SuperiorRoundedPanel superiorRoundedPanel1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private SuperiorRoundedPic PicEvento;
+        private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.Label lblNomeEvento;
+        private CircularButton btnPatrocinador5;
+        private CircularButton btnPatrocinador4;
+        private CircularButton btnPatrocinador3;
+        private CircularButton btnPatrocinador2;
+        private System.Windows.Forms.Label label4;
+        private CircularButton btnPatrocinador1;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblFaixaEtaria;
+        private System.Windows.Forms.Label lblCategorias;
+        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.Label lblPresencialOnline;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblLimiteParticipantes;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboEventosCriados;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblRua;
+        private System.Windows.Forms.Label lblCidadeEstado;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblLink;
+        private System.Windows.Forms.Label lblNomeLocal;
+        private System.Windows.Forms.Label lblCep;
+        private RoundedPanel panelMeusEventos;
+        private RoundedButton btnEventosCriados;
+        private RoundedButton btnEventosIngressados;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblParticipantes;
+        private RoundedButton btnConvidarParticipante;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.FlowLayoutPanel panelParticipantes;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private Ferramentas.RoundedPicture picBaixoRendimento;
+        private Ferramentas.RoundedPicture picMedioRendimento;
+        private System.Windows.Forms.Label label8;
+        private Ferramentas.RoundedPicture picAltoRendimento;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel btnPrincipal;
+        private Tools.CircularPictureBox picturePerfil;
+        private System.Windows.Forms.Panel panel4;
+        private RoundedPanel roundedPanel11;
+        private System.Windows.Forms.TextBox txtLink;
+        private System.Windows.Forms.Label label25;
+        private RoundedPanel roundedPanel9;
+        private System.Windows.Forms.TextBox txtCEP;
+        private System.Windows.Forms.Label label23;
+        private RoundedPanel roundedPanel8;
+        private System.Windows.Forms.TextBox txtNumero;
+        private System.Windows.Forms.Label label22;
+        private RoundedPanel roundedPanel7;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.Label label21;
+        private RoundedPanel roundedPanel6;
+        private System.Windows.Forms.TextBox txtRua;
+        private System.Windows.Forms.Label label20;
+        private RoundedPanel roundedPanel4;
+        private System.Windows.Forms.TextBox txtNomeLocal;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.DateTimePicker data;
+        private System.Windows.Forms.Label label11;
+        private RoundedPanel roundedPanel3;
+        private System.Windows.Forms.TextBox txtParticipantes;
+        private RoundedPanel roundedPanel2;
+        private System.Windows.Forms.TextBox txtHora;
+        private RoundedPanel roundedPanel1;
+        private System.Windows.Forms.TextBox txtNomeEvento;
+        private RoundedButton btnExcluir;
+        private RoundedButton btnAtualizar;
+        private System.Windows.Forms.Label label24;
+        private RoundedPanel roundedPanel10;
+        private System.Windows.Forms.TextBox txtNovaDescricao;
+        private RoundedButton btnTrocarImagem;
+        private SuperiorRoundedPic PicImagemEvento;
+        private System.Windows.Forms.LinkLabel btnFeed;
+    }
+}
