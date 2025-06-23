@@ -48,5 +48,6 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaCadastroEmpresa();
         }
+
     }
 }

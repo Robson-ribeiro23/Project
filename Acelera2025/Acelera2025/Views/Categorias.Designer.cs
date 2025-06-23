@@ -503,7 +503,6 @@
             this.circularButton5.Size = new System.Drawing.Size(183, 186);
             this.circularButton5.TabIndex = 77;
             this.circularButton5.UseVisualStyleBackColor = false;
-            this.circularButton5.Click += new System.EventHandler(this.circularButton5_Click);
             // 
             // circularButton4
             // 

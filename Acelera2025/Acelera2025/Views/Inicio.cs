@@ -120,12 +120,12 @@ namespace Acelera2025.Views
 
         private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+           
         }
 
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Navegador.IrParaOpcaoLogin();
         }
     }
  }

@@ -30,73 +30,72 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ajuda));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabInicial = new System.Windows.Forms.TabPage();
             this.tabIngressar = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tabCriar = new System.Windows.Forms.TabPage();
-            this.tabPostar = new System.Windows.Forms.TabPage();
-            this.tabPatrocinio = new System.Windows.Forms.TabPage();
-            this.tabEngajar = new System.Windows.Forms.TabPage();
-            this.tabConta = new System.Windows.Forms.TabPage();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.tabCriar = new System.Windows.Forms.TabPage();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
+            this.tabPostar = new System.Windows.Forms.TabPage();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
+            this.tabPatrocinio = new System.Windows.Forms.TabPage();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
+            this.tabEngajar = new System.Windows.Forms.TabPage();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
+            this.tabConta = new System.Windows.Forms.TabPage();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
             this.btnEventosIngressados = new RoundedButton();
@@ -125,6 +124,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
             this.btnFeed = new System.Windows.Forms.LinkLabel();
             this.picturePerfil = new Acelera2025.Views.Tools.CircularPictureBox();
@@ -174,19 +174,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1619, 647);
             this.panel1.TabIndex = 27;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label10
+            // panel2
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label10.Location = new System.Drawing.Point(698, 225);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(310, 53);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "PRECISA DE AJUDA?";
+            this.panel2.Location = new System.Drawing.Point(39, 1694);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(22, 100);
+            this.panel2.TabIndex = 29;
             // 
             // tabControl1
             // 
@@ -204,7 +198,7 @@
             this.tabControl1.Location = new System.Drawing.Point(86, 966);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1491, 800);
+            this.tabControl1.Size = new System.Drawing.Size(1449, 800);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 28;
             // 
@@ -213,7 +207,7 @@
             this.tabInicial.Location = new System.Drawing.Point(4, 14);
             this.tabInicial.Name = "tabInicial";
             this.tabInicial.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInicial.Size = new System.Drawing.Size(1483, 782);
+            this.tabInicial.Size = new System.Drawing.Size(1441, 782);
             this.tabInicial.TabIndex = 0;
             this.tabInicial.Text = "tabPage1";
             this.tabInicial.UseVisualStyleBackColor = true;
@@ -232,17 +226,111 @@
             this.tabIngressar.Location = new System.Drawing.Point(4, 14);
             this.tabIngressar.Name = "tabIngressar";
             this.tabIngressar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabIngressar.Size = new System.Drawing.Size(1483, 782);
+            this.tabIngressar.Size = new System.Drawing.Size(1462, 782);
             this.tabIngressar.TabIndex = 1;
             this.tabIngressar.Text = "tabPage2";
             this.tabIngressar.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // label38
             // 
-            this.panel2.Location = new System.Drawing.Point(39, 1694);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(22, 100);
-            this.panel2.TabIndex = 29;
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label38.Location = new System.Drawing.Point(52, 451);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(1355, 60);
+            this.label38.TabIndex = 14;
+            this.label38.Text = resources.GetString("label38.Text");
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label37.Location = new System.Drawing.Point(45, 410);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(386, 41);
+            this.label37.TabIndex = 13;
+            this.label37.Text = "4.Como acessar um evento online?";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label36.Location = new System.Drawing.Point(44, 329);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(1290, 60);
+            this.label36.TabIndex = 12;
+            this.label36.Text = resources.GetString("label36.Text");
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label35.Location = new System.Drawing.Point(42, 288);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(386, 41);
+            this.label35.TabIndex = 11;
+            this.label35.Text = "3.Como acessar meus certificados?";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label34.Location = new System.Drawing.Point(44, 242);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(869, 30);
+            this.label34.TabIndex = 10;
+            this.label34.Text = "Para visualizar clique em \"Meus Eventos\" na parte superior da tela e selecione a " +
+    "opção eventos ingressados.";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label33.Location = new System.Drawing.Point(42, 201);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(532, 41);
+            this.label33.TabIndex = 9;
+            this.label33.Text = "2.Como visualizar os eventos que estou inscrita?";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label32.Location = new System.Drawing.Point(44, 146);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(774, 30);
+            this.label32.TabIndex = 8;
+            this.label32.Text = "Para se inscrever em um evento, basta acessar o evento de seu interesse e clicar " +
+    "em Inscrever-se";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label31.Location = new System.Drawing.Point(42, 105);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(399, 41);
+            this.label31.TabIndex = 7;
+            this.label31.Text = "1.Como se inscrever em um evento?";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label30.Location = new System.Drawing.Point(36, 52);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(534, 53);
+            this.label30.TabIndex = 6;
+            this.label30.Text = "Duvidas sobre inscrições em eventos";
             // 
             // tabCriar
             // 
@@ -260,375 +348,104 @@
             this.tabCriar.Location = new System.Drawing.Point(4, 14);
             this.tabCriar.Name = "tabCriar";
             this.tabCriar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCriar.Size = new System.Drawing.Size(1483, 782);
+            this.tabCriar.Size = new System.Drawing.Size(1462, 782);
             this.tabCriar.TabIndex = 2;
             this.tabCriar.Text = "tabPage3";
             this.tabCriar.UseVisualStyleBackColor = true;
             // 
-            // tabPostar
+            // label49
             // 
-            this.tabPostar.Controls.Add(this.label54);
-            this.tabPostar.Controls.Add(this.label53);
-            this.tabPostar.Controls.Add(this.label50);
-            this.tabPostar.Controls.Add(this.label51);
-            this.tabPostar.Controls.Add(this.label52);
-            this.tabPostar.Location = new System.Drawing.Point(4, 14);
-            this.tabPostar.Name = "tabPostar";
-            this.tabPostar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPostar.Size = new System.Drawing.Size(1483, 782);
-            this.tabPostar.TabIndex = 3;
-            this.tabPostar.Text = "tabPage4";
-            this.tabPostar.UseVisualStyleBackColor = true;
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label49.Location = new System.Drawing.Point(42, 615);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(1300, 60);
+            this.label49.TabIndex = 19;
+            this.label49.Text = "Para excluir seus eventos, clique em \"Meus eventos\" na parte superior da tela e d" +
+    "epois em \"Eventos Criados\", com isso poderá acessar a aba \"Editar Informações\"\r\n" +
+    "e clicar em excluir evento.\r\n";
             // 
-            // tabPatrocinio
+            // label48
             // 
-            this.tabPatrocinio.Controls.Add(this.label61);
-            this.tabPatrocinio.Controls.Add(this.label60);
-            this.tabPatrocinio.Controls.Add(this.label59);
-            this.tabPatrocinio.Controls.Add(this.label58);
-            this.tabPatrocinio.Controls.Add(this.label55);
-            this.tabPatrocinio.Controls.Add(this.label56);
-            this.tabPatrocinio.Controls.Add(this.label57);
-            this.tabPatrocinio.Location = new System.Drawing.Point(4, 14);
-            this.tabPatrocinio.Name = "tabPatrocinio";
-            this.tabPatrocinio.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPatrocinio.Size = new System.Drawing.Size(1483, 782);
-            this.tabPatrocinio.TabIndex = 4;
-            this.tabPatrocinio.Text = "tabPage5";
-            this.tabPatrocinio.UseVisualStyleBackColor = true;
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label48.Location = new System.Drawing.Point(37, 574);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(321, 41);
+            this.label48.TabIndex = 18;
+            this.label48.Text = "5.Como excluir meu evento?";
             // 
-            // tabEngajar
+            // label47
             // 
-            this.tabEngajar.Controls.Add(this.label70);
-            this.tabEngajar.Controls.Add(this.label69);
-            this.tabEngajar.Controls.Add(this.label68);
-            this.tabEngajar.Controls.Add(this.label67);
-            this.tabEngajar.Controls.Add(this.label66);
-            this.tabEngajar.Controls.Add(this.label65);
-            this.tabEngajar.Controls.Add(this.label62);
-            this.tabEngajar.Controls.Add(this.label63);
-            this.tabEngajar.Controls.Add(this.label64);
-            this.tabEngajar.Location = new System.Drawing.Point(4, 14);
-            this.tabEngajar.Name = "tabEngajar";
-            this.tabEngajar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEngajar.Size = new System.Drawing.Size(1483, 782);
-            this.tabEngajar.TabIndex = 5;
-            this.tabEngajar.Text = "tabPage6";
-            this.tabEngajar.UseVisualStyleBackColor = true;
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label47.Location = new System.Drawing.Point(39, 491);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(1269, 60);
+            this.label47.TabIndex = 17;
+            this.label47.Text = "Para convidar seus eventos, clique em \"Meus eventos\" na parte superior da tela e " +
+    "depois em \"Eventos Criados\", com isso poderá acessar a aba \"Participantes\"\r\ne cl" +
+    "icar em convidar Participante.\r\n";
             // 
-            // tabConta
+            // label46
             // 
-            this.tabConta.Controls.Add(this.label29);
-            this.tabConta.Controls.Add(this.label28);
-            this.tabConta.Controls.Add(this.label27);
-            this.tabConta.Controls.Add(this.label26);
-            this.tabConta.Controls.Add(this.label25);
-            this.tabConta.Controls.Add(this.label24);
-            this.tabConta.Controls.Add(this.label23);
-            this.tabConta.Controls.Add(this.label22);
-            this.tabConta.Controls.Add(this.label21);
-            this.tabConta.Controls.Add(this.label20);
-            this.tabConta.Controls.Add(this.label19);
-            this.tabConta.Controls.Add(this.label18);
-            this.tabConta.Controls.Add(this.label17);
-            this.tabConta.Controls.Add(this.label16);
-            this.tabConta.Controls.Add(this.label15);
-            this.tabConta.Controls.Add(this.label14);
-            this.tabConta.Location = new System.Drawing.Point(4, 14);
-            this.tabConta.Name = "tabConta";
-            this.tabConta.Padding = new System.Windows.Forms.Padding(3);
-            this.tabConta.Size = new System.Drawing.Size(1483, 782);
-            this.tabConta.TabIndex = 6;
-            this.tabConta.Text = "tabPage1";
-            this.tabConta.UseVisualStyleBackColor = true;
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label46.Location = new System.Drawing.Point(37, 450);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(341, 41);
+            this.label46.TabIndex = 16;
+            this.label46.Text = "4.Como convidar para evento?";
             // 
-            // label14
+            // label45
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label14.Location = new System.Drawing.Point(42, 37);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(337, 53);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Duvidas sobre a Conta";
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label45.Location = new System.Drawing.Point(39, 376);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(1320, 60);
+            this.label45.TabIndex = 15;
+            this.label45.Text = resources.GetString("label45.Text");
             // 
-            // label15
+            // label44
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label15.Location = new System.Drawing.Point(42, 90);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(286, 41);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "1.Como Criar uma conta?";
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label44.Location = new System.Drawing.Point(37, 335);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(484, 41);
+            this.label44.TabIndex = 14;
+            this.label44.Text = "3.Como editar informações do meu evento?";
             // 
-            // label16
+            // label43
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label16.Location = new System.Drawing.Point(44, 131);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(1134, 30);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "Para criar uma nova conta clique no botão LOGIN no canto superior direito da tela" +
-    ", você será redirecionado para a tela das opções de login, ";
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label43.Location = new System.Drawing.Point(39, 261);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(1392, 60);
+            this.label43.TabIndex = 13;
+            this.label43.Text = "Para visualizar seus eventos, clique em \"Meus eventos\" na parte superior da tela " +
+    "e depois em \"Eventos Criados\", com isso poderá acessar os eventos que criou e ac" +
+    "ompanhar \r\nseu engajamento.\r\n";
             // 
-            // label17
+            // label42
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label17.Location = new System.Drawing.Point(44, 161);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(1377, 30);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "onde poderá escolher criar uma conta para sua empresa, ou criar conta de usuário." +
-    " Para criar sua conta como usuário será necessário seu nome completo, um e-mail " +
-    "válido";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label18.Location = new System.Drawing.Point(44, 191);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(1426, 30);
-            this.label18.TabIndex = 9;
-            this.label18.Text = "CPF, senha, data de nascimento e a cidade em que habita. Já no caso da criação de" +
-    " conta para empresa, será necessário o nome da empresa, CNPJ, telefone, e-mail v" +
-    "álido, senha";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label19.Location = new System.Drawing.Point(44, 285);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(389, 41);
-            this.label19.TabIndex = 10;
-            this.label19.Text = "2. Como entrar na conta existente?";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label20.Location = new System.Drawing.Point(46, 221);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(284, 30);
-            this.label20.TabIndex = 11;
-            this.label20.Text = "e endereço completo da empresa.\r\n";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label21.Location = new System.Drawing.Point(46, 326);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(1119, 30);
-            this.label21.TabIndex = 12;
-            this.label21.Text = "Para entrar na sua conta clique no botão LOGIN no canto superior direito da tela," +
-    " você será redirecionado para a tela das opções de login, ";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label22.Location = new System.Drawing.Point(48, 356);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(1848, 30);
-            this.label22.TabIndex = 13;
-            this.label22.Text = resources.GetString("label22.Text");
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label23.Location = new System.Drawing.Point(46, 417);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(259, 41);
-            this.label23.TabIndex = 14;
-            this.label23.Text = "3.Esqueci minha senha";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label24.Location = new System.Drawing.Point(48, 458);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(1131, 30);
-            this.label24.TabIndex = 15;
-            this.label24.Text = "Caso tenha esquecido sua senha clique no botão de Recuperar que fica localizado a" +
-    "baixo do botão entrar de logar na tela de login, com isso";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label25.Location = new System.Drawing.Point(48, 488);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(688, 30);
-            this.label25.TabIndex = 16;
-            this.label25.Text = "será enviado um código para seu e-mail, confirme o código e defina sua nova senha" +
-    ".";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label26.Location = new System.Drawing.Point(46, 539);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(397, 41);
-            this.label26.TabIndex = 17;
-            this.label26.Text = "4.Como colocar foto no meu perfil?";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label27.Location = new System.Drawing.Point(48, 580);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(964, 30);
-            this.label27.TabIndex = 18;
-            this.label27.Text = "Entre no seu perfil, no canto superior direito da foto padrão há um ícone de lápi" +
-    "s, clique nele e depois em alterar foto.\r\n";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label28.Location = new System.Drawing.Point(46, 635);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(437, 41);
-            this.label28.TabIndex = 19;
-            this.label28.Text = "5.Como alterar as minhas informações?";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label29.Location = new System.Drawing.Point(48, 676);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(1309, 30);
-            this.label29.TabIndex = 20;
-            this.label29.Text = "Para alterar as informações entre no seu perfil, no canto superior direito da sua" +
-    " foto de perfil há um icone de lápis, clique nele e altere as informações que de" +
-    "seja.\r\n";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label30.Location = new System.Drawing.Point(36, 52);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(534, 53);
-            this.label30.TabIndex = 6;
-            this.label30.Text = "Duvidas sobre inscrições em eventos";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label31.Location = new System.Drawing.Point(42, 105);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(399, 41);
-            this.label31.TabIndex = 7;
-            this.label31.Text = "1.Como se inscrever em um evento?";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label32.Location = new System.Drawing.Point(44, 146);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(774, 30);
-            this.label32.TabIndex = 8;
-            this.label32.Text = "Para se inscrever em um evento, basta acessar o evento de seu interesse e clicar " +
-    "em Inscrever-se";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label33.Location = new System.Drawing.Point(42, 201);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(532, 41);
-            this.label33.TabIndex = 9;
-            this.label33.Text = "2.Como visualizar os eventos que estou inscrita?";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label34.Location = new System.Drawing.Point(44, 242);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(869, 30);
-            this.label34.TabIndex = 10;
-            this.label34.Text = "Para visualizar clique em \"Meus Eventos\" na parte superior da tela e selecione a " +
-    "opção eventos ingressados.";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label35.Location = new System.Drawing.Point(42, 288);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(386, 41);
-            this.label35.TabIndex = 11;
-            this.label35.Text = "3.Como acessar meus certificados?";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label36.Location = new System.Drawing.Point(44, 329);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(1290, 60);
-            this.label36.TabIndex = 12;
-            this.label36.Text = resources.GetString("label36.Text");
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label37.Location = new System.Drawing.Point(45, 410);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(386, 41);
-            this.label37.TabIndex = 13;
-            this.label37.Text = "4.Como acessar um evento online?";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label38.Location = new System.Drawing.Point(52, 451);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(1355, 60);
-            this.label38.TabIndex = 14;
-            this.label38.Text = resources.GetString("label38.Text");
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label42.Location = new System.Drawing.Point(37, 220);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(404, 41);
+            this.label42.TabIndex = 12;
+            this.label42.Text = "2.Como visualizar eventos que criei?";
             // 
             // label39
             // 
@@ -665,99 +482,43 @@
             this.label41.TabIndex = 9;
             this.label41.Text = "Duvidas sobre criação de eventos";
             // 
-            // label42
+            // tabPostar
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label42.Location = new System.Drawing.Point(37, 220);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(404, 41);
-            this.label42.TabIndex = 12;
-            this.label42.Text = "2.Como visualizar eventos que criei?";
+            this.tabPostar.Controls.Add(this.label54);
+            this.tabPostar.Controls.Add(this.label53);
+            this.tabPostar.Controls.Add(this.label50);
+            this.tabPostar.Controls.Add(this.label51);
+            this.tabPostar.Controls.Add(this.label52);
+            this.tabPostar.Location = new System.Drawing.Point(4, 14);
+            this.tabPostar.Name = "tabPostar";
+            this.tabPostar.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPostar.Size = new System.Drawing.Size(1462, 782);
+            this.tabPostar.TabIndex = 3;
+            this.tabPostar.Text = "tabPage4";
+            this.tabPostar.UseVisualStyleBackColor = true;
             // 
-            // label43
+            // label54
             // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label43.Location = new System.Drawing.Point(39, 261);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(1392, 60);
-            this.label43.TabIndex = 13;
-            this.label43.Text = "Para visualizar seus eventos, clique em \"Meus eventos\" na parte superior da tela " +
-    "e depois em \"Eventos Criados\", com isso poderá acessar os eventos que criou e ac" +
-    "ompanhar \r\nseu engajamento.\r\n";
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label54.Location = new System.Drawing.Point(47, 243);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(953, 60);
+            this.label54.TabIndex = 16;
+            this.label54.Text = "As interações em postagens podem ser feitas por meio de curtidas e comentários, t" +
+    "endo os comentários a capacidade\r\nde serem curtidos também.";
             // 
-            // label44
+            // label53
             // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label44.Location = new System.Drawing.Point(37, 335);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(484, 41);
-            this.label44.TabIndex = 14;
-            this.label44.Text = "3.Como editar informações do meu evento?";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label45.Location = new System.Drawing.Point(39, 376);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(1320, 60);
-            this.label45.TabIndex = 15;
-            this.label45.Text = resources.GetString("label45.Text");
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label46.Location = new System.Drawing.Point(37, 450);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(341, 41);
-            this.label46.TabIndex = 16;
-            this.label46.Text = "4.Como convidar para evento?";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label47.Location = new System.Drawing.Point(39, 491);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(1269, 60);
-            this.label47.TabIndex = 17;
-            this.label47.Text = "Para convidar seus eventos, clique em \"Meus eventos\" na parte superior da tela e " +
-    "depois em \"Eventos Criados\", com isso poderá acessar a aba \"Participantes\"\r\ne cl" +
-    "icar em convidar Participante.\r\n";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label48.Location = new System.Drawing.Point(37, 574);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(321, 41);
-            this.label48.TabIndex = 18;
-            this.label48.Text = "5.Como excluir meu evento?";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label49.Location = new System.Drawing.Point(42, 615);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(1300, 60);
-            this.label49.TabIndex = 19;
-            this.label49.Text = "Para excluir seus eventos, clique em \"Meus eventos\" na parte superior da tela e d" +
-    "epois em \"Eventos Criados\", com isso poderá acessar a aba \"Editar Informações\"\r\n" +
-    "e clicar em excluir evento.\r\n";
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label53.Location = new System.Drawing.Point(45, 202);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(413, 41);
+            this.label53.TabIndex = 15;
+            this.label53.Text = "2.Como interagir em uma postagem?";
             // 
             // label50
             // 
@@ -793,28 +554,68 @@
             this.label52.TabIndex = 12;
             this.label52.Text = "Duvidas sobre o feed";
             // 
-            // label53
+            // tabPatrocinio
             // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label53.Location = new System.Drawing.Point(45, 202);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(413, 41);
-            this.label53.TabIndex = 15;
-            this.label53.Text = "2.Como interagir em uma postagem?";
+            this.tabPatrocinio.Controls.Add(this.label61);
+            this.tabPatrocinio.Controls.Add(this.label60);
+            this.tabPatrocinio.Controls.Add(this.label59);
+            this.tabPatrocinio.Controls.Add(this.label58);
+            this.tabPatrocinio.Controls.Add(this.label55);
+            this.tabPatrocinio.Controls.Add(this.label56);
+            this.tabPatrocinio.Controls.Add(this.label57);
+            this.tabPatrocinio.Location = new System.Drawing.Point(4, 14);
+            this.tabPatrocinio.Name = "tabPatrocinio";
+            this.tabPatrocinio.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPatrocinio.Size = new System.Drawing.Size(1441, 782);
+            this.tabPatrocinio.TabIndex = 4;
+            this.tabPatrocinio.Text = "tabPage5";
+            this.tabPatrocinio.UseVisualStyleBackColor = true;
             // 
-            // label54
+            // label61
             // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label54.Location = new System.Drawing.Point(47, 243);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(953, 60);
-            this.label54.TabIndex = 16;
-            this.label54.Text = "As interações em postagens podem ser feitas por meio de curtidas e comentários, t" +
-    "endo os comentários a capacidade\r\nde serem curtidos também.";
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label61.Location = new System.Drawing.Point(51, 370);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(793, 30);
+            this.label61.TabIndex = 21;
+            this.label61.Text = "Acesse seu Perfil e depois a aba Patrocínios para visualizar eventos que sua empr" +
+    "esa já patrocinou";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label60.Location = new System.Drawing.Point(49, 329);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(470, 41);
+            this.label60.TabIndex = 20;
+            this.label60.Text = "3.Como Visualizar eventos que patrocinei?";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label59.Location = new System.Drawing.Point(51, 277);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(1058, 30);
+            this.label59.TabIndex = 19;
+            this.label59.Text = "A função de patrocinar só esta disponivel para empresas, e pode ser feita clicand" +
+    "o no evento de interesse e no botão de patrocinar";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label58.Location = new System.Drawing.Point(49, 236);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(347, 41);
+            this.label58.TabIndex = 18;
+            this.label58.Text = "2.Como patrocinar um evento?";
             // 
             // label55
             // 
@@ -850,51 +651,91 @@
             this.label57.TabIndex = 15;
             this.label57.Text = "Duvidas sobre patrocínio";
             // 
-            // label58
+            // tabEngajar
             // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label58.Location = new System.Drawing.Point(49, 236);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(347, 41);
-            this.label58.TabIndex = 18;
-            this.label58.Text = "2.Como patrocinar um evento?";
+            this.tabEngajar.Controls.Add(this.label70);
+            this.tabEngajar.Controls.Add(this.label69);
+            this.tabEngajar.Controls.Add(this.label68);
+            this.tabEngajar.Controls.Add(this.label67);
+            this.tabEngajar.Controls.Add(this.label66);
+            this.tabEngajar.Controls.Add(this.label65);
+            this.tabEngajar.Controls.Add(this.label62);
+            this.tabEngajar.Controls.Add(this.label63);
+            this.tabEngajar.Controls.Add(this.label64);
+            this.tabEngajar.Location = new System.Drawing.Point(4, 14);
+            this.tabEngajar.Name = "tabEngajar";
+            this.tabEngajar.Padding = new System.Windows.Forms.Padding(3);
+            this.tabEngajar.Size = new System.Drawing.Size(1462, 782);
+            this.tabEngajar.TabIndex = 5;
+            this.tabEngajar.Text = "tabPage6";
+            this.tabEngajar.UseVisualStyleBackColor = true;
             // 
-            // label59
+            // label70
             // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label59.Location = new System.Drawing.Point(51, 277);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(1058, 30);
-            this.label59.TabIndex = 19;
-            this.label59.Text = "A função de patrocinar só esta disponivel para empresas, e pode ser feita clicand" +
-    "o no evento de interesse e no botão de patrocinar";
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label70.Location = new System.Drawing.Point(60, 427);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(611, 30);
+            this.label70.TabIndex = 26;
+            this.label70.Text = "Use a aba de Feed para divulgar seu evento e aumentar a visibilidade dele.";
             // 
-            // label60
+            // label69
             // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label60.Location = new System.Drawing.Point(49, 329);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(470, 41);
-            this.label60.TabIndex = 20;
-            this.label60.Text = "3.Como Visualizar eventos que patrocinei?";
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label69.Location = new System.Drawing.Point(58, 386);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(266, 41);
+            this.label69.TabIndex = 25;
+            this.label69.Text = "4.Poste sobre o evento ";
             // 
-            // label61
+            // label68
             // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label61.Location = new System.Drawing.Point(51, 370);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(1246, 30);
-            this.label61.TabIndex = 21;
-            this.label61.Text = "Clique em \"Meus Eventos\" na parte superior da tela e depois em \"Eventos Patrocina" +
-    "dos\" assim poderá visualizar os eventos que a sua empresa patrocinou.";
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label68.Location = new System.Drawing.Point(60, 338);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(654, 30);
+            this.label68.TabIndex = 24;
+            this.label68.Text = "Use a descrição para descrever detalhadamente o funcionamento do seu evento.";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label67.Location = new System.Drawing.Point(58, 297);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(138, 41);
+            this.label67.TabIndex = 23;
+            this.label67.Text = "3.Descreva ";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label66.Location = new System.Drawing.Point(60, 245);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(745, 30);
+            this.label66.TabIndex = 22;
+            this.label66.Text = "Coloque um nome que chame a atenção e seja bem contextualizado com o tema do even" +
+    "to.";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label65.Location = new System.Drawing.Point(58, 204);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(295, 41);
+            this.label65.TabIndex = 21;
+            this.label65.Text = "2.Nomeie bem seu evento";
             // 
             // label62
             // 
@@ -930,72 +771,218 @@
             this.label64.TabIndex = 18;
             this.label64.Text = "Dicas para engajar seu evento";
             // 
-            // label65
+            // tabConta
             // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label65.Location = new System.Drawing.Point(58, 204);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(295, 41);
-            this.label65.TabIndex = 21;
-            this.label65.Text = "2.Nomeie bem seu evento";
+            this.tabConta.Controls.Add(this.label29);
+            this.tabConta.Controls.Add(this.label28);
+            this.tabConta.Controls.Add(this.label27);
+            this.tabConta.Controls.Add(this.label26);
+            this.tabConta.Controls.Add(this.label25);
+            this.tabConta.Controls.Add(this.label24);
+            this.tabConta.Controls.Add(this.label23);
+            this.tabConta.Controls.Add(this.label22);
+            this.tabConta.Controls.Add(this.label21);
+            this.tabConta.Controls.Add(this.label20);
+            this.tabConta.Controls.Add(this.label19);
+            this.tabConta.Controls.Add(this.label18);
+            this.tabConta.Controls.Add(this.label17);
+            this.tabConta.Controls.Add(this.label16);
+            this.tabConta.Controls.Add(this.label15);
+            this.tabConta.Controls.Add(this.label14);
+            this.tabConta.Location = new System.Drawing.Point(4, 14);
+            this.tabConta.Name = "tabConta";
+            this.tabConta.Padding = new System.Windows.Forms.Padding(3);
+            this.tabConta.Size = new System.Drawing.Size(1462, 782);
+            this.tabConta.TabIndex = 6;
+            this.tabConta.Text = "tabPage1";
+            this.tabConta.UseVisualStyleBackColor = true;
             // 
-            // label66
+            // label29
             // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label66.Location = new System.Drawing.Point(60, 245);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(745, 30);
-            this.label66.TabIndex = 22;
-            this.label66.Text = "Coloque um nome que chame a atenção e seja bem contextualizado com o tema do even" +
-    "to.";
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label29.Location = new System.Drawing.Point(48, 676);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(1309, 30);
+            this.label29.TabIndex = 20;
+            this.label29.Text = "Para alterar as informações entre no seu perfil, no canto superior direito da sua" +
+    " foto de perfil há um icone de lápis, clique nele e altere as informações que de" +
+    "seja.\r\n";
             // 
-            // label67
+            // label28
             // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label67.Location = new System.Drawing.Point(58, 297);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(138, 41);
-            this.label67.TabIndex = 23;
-            this.label67.Text = "3.Descreva ";
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label28.Location = new System.Drawing.Point(46, 635);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(437, 41);
+            this.label28.TabIndex = 19;
+            this.label28.Text = "5.Como alterar as minhas informações?";
             // 
-            // label68
+            // label27
             // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label68.Location = new System.Drawing.Point(60, 338);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(654, 30);
-            this.label68.TabIndex = 24;
-            this.label68.Text = "Use a descrição para descrever detalhadamente o funcionamento do seu evento.";
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label27.Location = new System.Drawing.Point(48, 580);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(964, 30);
+            this.label27.TabIndex = 18;
+            this.label27.Text = "Entre no seu perfil, no canto superior direito da foto padrão há um ícone de lápi" +
+    "s, clique nele e depois em alterar foto.\r\n";
             // 
-            // label69
+            // label26
             // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label69.Location = new System.Drawing.Point(58, 386);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(266, 41);
-            this.label69.TabIndex = 25;
-            this.label69.Text = "4.Poste sobre o evento ";
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label26.Location = new System.Drawing.Point(46, 539);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(397, 41);
+            this.label26.TabIndex = 17;
+            this.label26.Text = "4.Como colocar foto no meu perfil?";
             // 
-            // label70
+            // label25
             // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label70.Location = new System.Drawing.Point(60, 427);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(611, 30);
-            this.label70.TabIndex = 26;
-            this.label70.Text = "Use a aba de Feed para divulgar seu evento e aumentar a visibilidade dele.";
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label25.Location = new System.Drawing.Point(48, 488);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(688, 30);
+            this.label25.TabIndex = 16;
+            this.label25.Text = "será enviado um código para seu e-mail, confirme o código e defina sua nova senha" +
+    ".";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label24.Location = new System.Drawing.Point(48, 458);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(1131, 30);
+            this.label24.TabIndex = 15;
+            this.label24.Text = "Caso tenha esquecido sua senha clique no botão de Recuperar que fica localizado a" +
+    "baixo do botão entrar de logar na tela de login, com isso";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label23.Location = new System.Drawing.Point(46, 417);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(259, 41);
+            this.label23.TabIndex = 14;
+            this.label23.Text = "3.Esqueci minha senha";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label22.Location = new System.Drawing.Point(48, 356);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(1848, 30);
+            this.label22.TabIndex = 13;
+            this.label22.Text = resources.GetString("label22.Text");
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label21.Location = new System.Drawing.Point(46, 326);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(1119, 30);
+            this.label21.TabIndex = 12;
+            this.label21.Text = "Para entrar na sua conta clique no botão LOGIN no canto superior direito da tela," +
+    " você será redirecionado para a tela das opções de login, ";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label20.Location = new System.Drawing.Point(46, 221);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(284, 30);
+            this.label20.TabIndex = 11;
+            this.label20.Text = "e endereço completo da empresa.\r\n";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label19.Location = new System.Drawing.Point(44, 285);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(389, 41);
+            this.label19.TabIndex = 10;
+            this.label19.Text = "2. Como entrar na conta existente?";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label18.Location = new System.Drawing.Point(44, 191);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(1426, 30);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "CPF, senha, data de nascimento e a cidade em que habita. Já no caso da criação de" +
+    " conta para empresa, será necessário o nome da empresa, CNPJ, telefone, e-mail v" +
+    "álido, senha";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label17.Location = new System.Drawing.Point(44, 161);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(1377, 30);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "onde poderá escolher criar uma conta para sua empresa, ou criar conta de usuário." +
+    " Para criar sua conta como usuário será necessário seu nome completo, um e-mail " +
+    "válido";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label16.Location = new System.Drawing.Point(44, 131);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(1134, 30);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "Para criar uma nova conta clique no botão LOGIN no canto superior direito da tela" +
+    ", você será redirecionado para a tela das opções de login, ";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label15.Location = new System.Drawing.Point(42, 90);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(286, 41);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "1.Como Criar uma conta?";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label14.Location = new System.Drawing.Point(42, 37);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(337, 53);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Duvidas sobre a Conta";
             // 
             // panelMeusEventos
             // 
@@ -1006,7 +993,7 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1089, 4);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1047, 4);
             this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
@@ -1067,7 +1054,7 @@
             this.superiorRoundedPanel1.Location = new System.Drawing.Point(93, 294);
             this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1484, 539);
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1442, 539);
             this.superiorRoundedPanel1.TabIndex = 27;
             // 
             // roundedPanel7
@@ -1080,7 +1067,7 @@
             this.roundedPanel7.Controls.Add(this.label12);
             this.roundedPanel7.Controls.Add(this.label13);
             this.roundedPanel7.Controls.Add(this.button6);
-            this.roundedPanel7.Location = new System.Drawing.Point(2447, 20);
+            this.roundedPanel7.Location = new System.Drawing.Point(2447, 0);
             this.roundedPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel7.Name = "roundedPanel7";
             this.roundedPanel7.Size = new System.Drawing.Size(412, 434);
@@ -1136,7 +1123,7 @@
             this.roundedPanel6.Controls.Add(this.label9);
             this.roundedPanel6.Controls.Add(this.label11);
             this.roundedPanel6.Controls.Add(this.button5);
-            this.roundedPanel6.Location = new System.Drawing.Point(1965, 13);
+            this.roundedPanel6.Location = new System.Drawing.Point(1965, -7);
             this.roundedPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel6.Name = "roundedPanel6";
             this.roundedPanel6.Size = new System.Drawing.Size(412, 442);
@@ -1192,7 +1179,7 @@
             this.roundedPanel4.Controls.Add(this.label7);
             this.roundedPanel4.Controls.Add(this.label8);
             this.roundedPanel4.Controls.Add(this.button4);
-            this.roundedPanel4.Location = new System.Drawing.Point(1479, 10);
+            this.roundedPanel4.Location = new System.Drawing.Point(1479, -10);
             this.roundedPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel4.Name = "roundedPanel4";
             this.roundedPanel4.Size = new System.Drawing.Size(412, 446);
@@ -1248,7 +1235,7 @@
             this.roundedPanel3.Controls.Add(this.label5);
             this.roundedPanel3.Controls.Add(this.label6);
             this.roundedPanel3.Controls.Add(this.button3);
-            this.roundedPanel3.Location = new System.Drawing.Point(996, 10);
+            this.roundedPanel3.Location = new System.Drawing.Point(996, -10);
             this.roundedPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel3.Name = "roundedPanel3";
             this.roundedPanel3.Size = new System.Drawing.Size(412, 446);
@@ -1304,7 +1291,7 @@
             this.roundedPanel1.Controls.Add(this.label2);
             this.roundedPanel1.Controls.Add(this.label1);
             this.roundedPanel1.Controls.Add(this.button1);
-            this.roundedPanel1.Location = new System.Drawing.Point(16, 10);
+            this.roundedPanel1.Location = new System.Drawing.Point(16, -10);
             this.roundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(412, 446);
@@ -1360,7 +1347,7 @@
             this.roundedPanel2.Controls.Add(this.label3);
             this.roundedPanel2.Controls.Add(this.label4);
             this.roundedPanel2.Controls.Add(this.button2);
-            this.roundedPanel2.Location = new System.Drawing.Point(509, 10);
+            this.roundedPanel2.Location = new System.Drawing.Point(509, -10);
             this.roundedPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(412, 446);
@@ -1405,6 +1392,18 @@
             this.button2.TabIndex = 0;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label10.Location = new System.Drawing.Point(678, 225);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(310, 53);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "PRECISA DE AJUDA?";
             // 
             // gradientPanel1
             // 
@@ -1538,6 +1537,7 @@
             this.btnPesquisar.Size = new System.Drawing.Size(43, 38);
             this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtPesquisar
             // 

@@ -12,9 +12,35 @@ namespace Acelera2025.Telas
 {
     public partial class CardCriarPostTexto: UserControl
     {
-        public CardCriarPostTexto()
+        private PessoaModels usuario;
+        public CardCriarPostTexto(PessoaModels usuario)
         {
             InitializeComponent();
+            this.usuario = usuario;
+
+        }
+
+        private void btnPostar_Click(object sender, EventArgs e)
+        {
+
+            var post = new PostModels(
+                this.usuario,
+                txtTexto.Text,
+                new List<string>(),
+                null
+            )
+            {
+                Data = DateTime.Now,
+                Curtidas = new List<CurtidasModels>(),
+                Comentarios = new List<ComentariosModels>()
+            };
+
+            if (this.usuario.Postagens == null)
+            {
+                this.usuario.Postagens = new List<PostModels>();
+
+            }
+            this.usuario.Postagens.Add(post);
         }
     }
 }

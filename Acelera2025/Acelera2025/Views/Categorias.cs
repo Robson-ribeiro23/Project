@@ -95,11 +95,7 @@ namespace Acelera2025.Views
             cardPerfil.BringToFront();
         }
 
-        private void circularButton5_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void btnNotificacoes_Click(object sender, EventArgs e)
         {
             cardPainelDeNotificacoesVisivel = !cardPainelDeNotificacoesVisivel;

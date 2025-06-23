@@ -111,6 +111,7 @@
             this.btnPostar.TabIndex = 12;
             this.btnPostar.Text = "Postar";
             this.btnPostar.UseVisualStyleBackColor = false;
+            this.btnPostar.Click += new System.EventHandler(this.btnPostar_Click);
             // 
             // txtTexto
             // 

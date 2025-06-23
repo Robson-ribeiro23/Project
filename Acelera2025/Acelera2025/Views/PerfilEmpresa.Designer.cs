@@ -52,6 +52,7 @@ namespace Acelera2025.Views
             this.lblSeguidores = new System.Windows.Forms.Label();
             this.lblNomeEmpresa = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
+            this.btnFeed = new System.Windows.Forms.LinkLabel();
             this.picturePerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPrincipal = new System.Windows.Forms.LinkLabel();
@@ -63,7 +64,7 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.btnFeed = new System.Windows.Forms.LinkLabel();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
             this.panelMeusEventos.SuspendLayout();
@@ -204,6 +205,7 @@ namespace Acelera2025.Views
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(123, 127);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -386,6 +388,24 @@ namespace Acelera2025.Views
             this.gradientPanel1.TabIndex = 4;
             this.gradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel1_Paint);
             // 
+            // btnFeed
+            // 
+            this.btnFeed.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnFeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFeed.AutoSize = true;
+            this.btnFeed.BackColor = System.Drawing.Color.Transparent;
+            this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnFeed.LinkColor = System.Drawing.Color.White;
+            this.btnFeed.Location = new System.Drawing.Point(1005, 15);
+            this.btnFeed.Name = "btnFeed";
+            this.btnFeed.Size = new System.Drawing.Size(44, 27);
+            this.btnFeed.TabIndex = 19;
+            this.btnFeed.TabStop = true;
+            this.btnFeed.Text = "Feed";
+            this.btnFeed.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnFeed.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFeed_LinkClicked);
+            // 
             // picturePerfil
             // 
             this.picturePerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -564,23 +584,15 @@ namespace Acelera2025.Views
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
-            // btnFeed
+            // tabPage6
             // 
-            this.btnFeed.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnFeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFeed.AutoSize = true;
-            this.btnFeed.BackColor = System.Drawing.Color.Transparent;
-            this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnFeed.LinkColor = System.Drawing.Color.White;
-            this.btnFeed.Location = new System.Drawing.Point(1005, 15);
-            this.btnFeed.Name = "btnFeed";
-            this.btnFeed.Size = new System.Drawing.Size(44, 27);
-            this.btnFeed.TabIndex = 19;
-            this.btnFeed.TabStop = true;
-            this.btnFeed.Text = "Feed";
-            this.btnFeed.VisitedLinkColor = System.Drawing.Color.White;
-            this.btnFeed.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFeed_LinkClicked);
+            this.tabPage6.Location = new System.Drawing.Point(4, 60);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1503, 571);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Patrocínios";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // PerfilEmpresa
             // 
@@ -648,5 +660,6 @@ namespace Acelera2025.Views
         private Tools.CircularPictureBox circularPictureBox2;
         private Tools.CircularPictureBox picturePerfil;
         private System.Windows.Forms.LinkLabel btnFeed;
+        private System.Windows.Forms.TabPage tabPage6;
     }
 }

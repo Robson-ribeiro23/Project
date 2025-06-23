@@ -66,7 +66,6 @@
             this.panel1.Size = new System.Drawing.Size(564, 726);
             this.panel1.TabIndex = 0;
             this.panel1.UseWaitCursor = true;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnVoltar
             // 
@@ -111,7 +110,7 @@
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(190, 40);
             this.btnEntrar.TabIndex = 7;
-            this.btnEntrar.Text = "\'";
+            this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.UseWaitCursor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrarEmpresa_Click);

@@ -94,10 +94,6 @@ namespace Acelera2025.Views
             Navegador.IrParaFeed(this.usuario);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -134,6 +130,11 @@ namespace Acelera2025.Views
         {
             tabControl1.SelectedTab = tabEngajar;
             this.ScrollControlIntoView(tabControl1);
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            Navegador.IrParaPesquisa(this.usuario);
         }
     }
 }
