@@ -84,6 +84,7 @@
             this.btnMusica = new CircularButton();
             this.label10 = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
+            this.btnFeed = new System.Windows.Forms.LinkLabel();
             this.picturePerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnNotificacoes = new System.Windows.Forms.Button();
@@ -95,7 +96,6 @@
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.btnFeed = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
@@ -115,10 +115,10 @@
             this.panel1.Controls.Add(this.btnMusica);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 49);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 40);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1701, 1006);
+            this.panel1.Size = new System.Drawing.Size(1276, 817);
             this.panel1.TabIndex = 5;
             // 
             // panel2
@@ -130,9 +130,9 @@
             this.panel2.Controls.Add(this.roundedPanel2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1701, 1006);
+            this.panel2.Size = new System.Drawing.Size(1276, 817);
             this.panel2.TabIndex = 33;
             // 
             // panelMeusEventos
@@ -144,10 +144,10 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1143, 6);
-            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMeusEventos.Location = new System.Drawing.Point(857, 5);
+            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMeusEventos.Name = "panelMeusEventos";
-            this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
+            this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
             this.panelMeusEventos.TabIndex = 75;
             this.panelMeusEventos.Visible = false;
             // 
@@ -160,10 +160,10 @@
             this.btnEventosCriados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEventosCriados.Location = new System.Drawing.Point(0, 49);
-            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEventosCriados.Location = new System.Drawing.Point(0, 40);
+            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEventosCriados.Name = "btnEventosCriados";
-            this.btnEventosCriados.Size = new System.Drawing.Size(245, 50);
+            this.btnEventosCriados.Size = new System.Drawing.Size(184, 41);
             this.btnEventosCriados.TabIndex = 1;
             this.btnEventosCriados.Text = "Eventos Criados";
             this.btnEventosCriados.UseVisualStyleBackColor = false;
@@ -179,9 +179,9 @@
             this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEventosIngressados.Location = new System.Drawing.Point(0, 2);
-            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEventosIngressados.Name = "btnEventosIngressados";
-            this.btnEventosIngressados.Size = new System.Drawing.Size(245, 55);
+            this.btnEventosIngressados.Size = new System.Drawing.Size(184, 45);
             this.btnEventosIngressados.TabIndex = 0;
             this.btnEventosIngressados.Text = "Eventos Ingressados";
             this.btnEventosIngressados.UseVisualStyleBackColor = false;
@@ -194,10 +194,10 @@
             this.superiorRoundedPanel1.BorderRadius = 20;
             this.superiorRoundedPanel1.BorderSize = 0;
             this.superiorRoundedPanel1.Controls.Add(this.gradientPanel2);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(27, 32);
-            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(20, 26);
+            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1639, 82);
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1229, 67);
             this.superiorRoundedPanel1.TabIndex = 74;
             // 
             // gradientPanel2
@@ -206,9 +206,9 @@
             this.gradientPanel2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gradientPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(1639, 80);
+            this.gradientPanel2.Size = new System.Drawing.Size(1229, 65);
             this.gradientPanel2.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel2.TabIndex = 0;
             // 
@@ -219,9 +219,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(691, 17);
+            this.label2.Location = new System.Drawing.Point(518, 14);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(358, 53);
+            this.label2.Size = new System.Drawing.Size(292, 43);
             this.label2.TabIndex = 4;
             this.label2.Text = "Navegue por categorias";
             // 
@@ -274,10 +275,10 @@
             this.roundedPanel2.Controls.Add(this.label9);
             this.roundedPanel2.Controls.Add(this.label6);
             this.roundedPanel2.Controls.Add(this.label14);
-            this.roundedPanel2.Location = new System.Drawing.Point(27, 142);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPanel2.Location = new System.Drawing.Point(20, 115);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(1651, 1081);
+            this.roundedPanel2.Size = new System.Drawing.Size(1238, 878);
             this.roundedPanel2.TabIndex = 73;
             // 
             // circularButton20
@@ -287,10 +288,10 @@
             this.circularButton20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton20.BorderSize = 2;
             this.circularButton20.Image = global::Acelera2025.Properties.Resources.CategoriaHobbies;
-            this.circularButton20.Location = new System.Drawing.Point(1227, 766);
-            this.circularButton20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton20.Location = new System.Drawing.Point(920, 622);
+            this.circularButton20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton20.Name = "circularButton20";
-            this.circularButton20.Size = new System.Drawing.Size(183, 186);
+            this.circularButton20.Size = new System.Drawing.Size(137, 151);
             this.circularButton20.TabIndex = 92;
             this.circularButton20.UseVisualStyleBackColor = false;
             // 
@@ -301,10 +302,10 @@
             this.circularButton19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton19.BorderSize = 2;
             this.circularButton19.Image = global::Acelera2025.Properties.Resources.CategoriaMeioAmbiente;
-            this.circularButton19.Location = new System.Drawing.Point(999, 766);
-            this.circularButton19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton19.Location = new System.Drawing.Point(749, 622);
+            this.circularButton19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton19.Name = "circularButton19";
-            this.circularButton19.Size = new System.Drawing.Size(183, 186);
+            this.circularButton19.Size = new System.Drawing.Size(137, 151);
             this.circularButton19.TabIndex = 91;
             this.circularButton19.UseVisualStyleBackColor = false;
             // 
@@ -315,10 +316,10 @@
             this.circularButton18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton18.BorderSize = 2;
             this.circularButton18.Image = global::Acelera2025.Properties.Resources.CategoriaVoluntariado;
-            this.circularButton18.Location = new System.Drawing.Point(757, 766);
-            this.circularButton18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton18.Location = new System.Drawing.Point(568, 622);
+            this.circularButton18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton18.Name = "circularButton18";
-            this.circularButton18.Size = new System.Drawing.Size(183, 186);
+            this.circularButton18.Size = new System.Drawing.Size(137, 151);
             this.circularButton18.TabIndex = 90;
             this.circularButton18.UseVisualStyleBackColor = false;
             // 
@@ -329,10 +330,10 @@
             this.circularButton17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton17.BorderSize = 2;
             this.circularButton17.Image = global::Acelera2025.Properties.Resources.CategoriaEntretenimento;
-            this.circularButton17.Location = new System.Drawing.Point(513, 766);
-            this.circularButton17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton17.Location = new System.Drawing.Point(385, 622);
+            this.circularButton17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton17.Name = "circularButton17";
-            this.circularButton17.Size = new System.Drawing.Size(183, 186);
+            this.circularButton17.Size = new System.Drawing.Size(137, 151);
             this.circularButton17.TabIndex = 89;
             this.circularButton17.UseVisualStyleBackColor = false;
             // 
@@ -343,10 +344,10 @@
             this.circularButton16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton16.BorderSize = 2;
             this.circularButton16.Image = global::Acelera2025.Properties.Resources.CategoriaNegocios;
-            this.circularButton16.Location = new System.Drawing.Point(267, 766);
-            this.circularButton16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton16.Location = new System.Drawing.Point(200, 622);
+            this.circularButton16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton16.Name = "circularButton16";
-            this.circularButton16.Size = new System.Drawing.Size(183, 186);
+            this.circularButton16.Size = new System.Drawing.Size(137, 151);
             this.circularButton16.TabIndex = 88;
             this.circularButton16.UseVisualStyleBackColor = false;
             // 
@@ -357,10 +358,10 @@
             this.circularButton15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton15.BorderSize = 2;
             this.circularButton15.Image = global::Acelera2025.Properties.Resources.CategoriaSociedade;
-            this.circularButton15.Location = new System.Drawing.Point(1436, 411);
-            this.circularButton15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton15.Location = new System.Drawing.Point(1077, 334);
+            this.circularButton15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton15.Name = "circularButton15";
-            this.circularButton15.Size = new System.Drawing.Size(183, 186);
+            this.circularButton15.Size = new System.Drawing.Size(137, 151);
             this.circularButton15.TabIndex = 87;
             this.circularButton15.UseVisualStyleBackColor = false;
             // 
@@ -371,10 +372,10 @@
             this.circularButton14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton14.BorderSize = 2;
             this.circularButton14.Image = global::Acelera2025.Properties.Resources.CategoriaEsportes;
-            this.circularButton14.Location = new System.Drawing.Point(1227, 411);
-            this.circularButton14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton14.Location = new System.Drawing.Point(920, 334);
+            this.circularButton14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton14.Name = "circularButton14";
-            this.circularButton14.Size = new System.Drawing.Size(183, 186);
+            this.circularButton14.Size = new System.Drawing.Size(137, 151);
             this.circularButton14.TabIndex = 86;
             this.circularButton14.UseVisualStyleBackColor = false;
             // 
@@ -385,10 +386,10 @@
             this.circularButton13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton13.BorderSize = 2;
             this.circularButton13.Image = global::Acelera2025.Properties.Resources.CategoriaFestas;
-            this.circularButton13.Location = new System.Drawing.Point(999, 411);
-            this.circularButton13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton13.Location = new System.Drawing.Point(749, 334);
+            this.circularButton13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton13.Name = "circularButton13";
-            this.circularButton13.Size = new System.Drawing.Size(183, 186);
+            this.circularButton13.Size = new System.Drawing.Size(137, 151);
             this.circularButton13.TabIndex = 85;
             this.circularButton13.UseVisualStyleBackColor = false;
             // 
@@ -399,10 +400,10 @@
             this.circularButton12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton12.BorderSize = 2;
             this.circularButton12.Image = global::Acelera2025.Properties.Resources.CategoriaFeiras;
-            this.circularButton12.Location = new System.Drawing.Point(757, 411);
-            this.circularButton12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton12.Location = new System.Drawing.Point(568, 334);
+            this.circularButton12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton12.Name = "circularButton12";
-            this.circularButton12.Size = new System.Drawing.Size(183, 186);
+            this.circularButton12.Size = new System.Drawing.Size(137, 151);
             this.circularButton12.TabIndex = 84;
             this.circularButton12.UseVisualStyleBackColor = false;
             // 
@@ -413,10 +414,10 @@
             this.circularButton11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton11.BorderSize = 2;
             this.circularButton11.Image = global::Acelera2025.Properties.Resources.CategoriaEspiritualidade;
-            this.circularButton11.Location = new System.Drawing.Point(513, 411);
-            this.circularButton11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton11.Location = new System.Drawing.Point(385, 334);
+            this.circularButton11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton11.Name = "circularButton11";
-            this.circularButton11.Size = new System.Drawing.Size(183, 186);
+            this.circularButton11.Size = new System.Drawing.Size(137, 151);
             this.circularButton11.TabIndex = 83;
             this.circularButton11.UseVisualStyleBackColor = false;
             // 
@@ -427,10 +428,10 @@
             this.circularButton10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton10.BorderSize = 2;
             this.circularButton10.Image = global::Acelera2025.Properties.Resources.CategoriaCompeticoes;
-            this.circularButton10.Location = new System.Drawing.Point(267, 411);
-            this.circularButton10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton10.Location = new System.Drawing.Point(200, 334);
+            this.circularButton10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton10.Name = "circularButton10";
-            this.circularButton10.Size = new System.Drawing.Size(183, 186);
+            this.circularButton10.Size = new System.Drawing.Size(137, 151);
             this.circularButton10.TabIndex = 82;
             this.circularButton10.UseVisualStyleBackColor = false;
             // 
@@ -441,10 +442,10 @@
             this.circularButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton9.BorderSize = 2;
             this.circularButton9.Image = global::Acelera2025.Properties.Resources.CategoriaCulinária;
-            this.circularButton9.Location = new System.Drawing.Point(21, 766);
-            this.circularButton9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton9.Location = new System.Drawing.Point(16, 622);
+            this.circularButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton9.Name = "circularButton9";
-            this.circularButton9.Size = new System.Drawing.Size(183, 186);
+            this.circularButton9.Size = new System.Drawing.Size(137, 151);
             this.circularButton9.TabIndex = 81;
             this.circularButton9.UseVisualStyleBackColor = false;
             // 
@@ -455,10 +456,10 @@
             this.circularButton8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton8.BorderSize = 2;
             this.circularButton8.Image = global::Acelera2025.Properties.Resources.CategoriaCiencia;
-            this.circularButton8.Location = new System.Drawing.Point(21, 411);
-            this.circularButton8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton8.Location = new System.Drawing.Point(16, 334);
+            this.circularButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton8.Name = "circularButton8";
-            this.circularButton8.Size = new System.Drawing.Size(183, 186);
+            this.circularButton8.Size = new System.Drawing.Size(137, 151);
             this.circularButton8.TabIndex = 80;
             this.circularButton8.UseVisualStyleBackColor = false;
             // 
@@ -469,10 +470,10 @@
             this.circularButton7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton7.BorderSize = 2;
             this.circularButton7.Image = global::Acelera2025.Properties.Resources.CategoriaDanca;
-            this.circularButton7.Location = new System.Drawing.Point(1436, 52);
-            this.circularButton7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton7.Location = new System.Drawing.Point(1077, 42);
+            this.circularButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton7.Name = "circularButton7";
-            this.circularButton7.Size = new System.Drawing.Size(183, 186);
+            this.circularButton7.Size = new System.Drawing.Size(137, 151);
             this.circularButton7.TabIndex = 79;
             this.circularButton7.UseVisualStyleBackColor = false;
             // 
@@ -483,10 +484,10 @@
             this.circularButton6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton6.BorderSize = 2;
             this.circularButton6.Image = global::Acelera2025.Properties.Resources.CategoriaArtes;
-            this.circularButton6.Location = new System.Drawing.Point(1227, 52);
-            this.circularButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton6.Location = new System.Drawing.Point(920, 42);
+            this.circularButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton6.Name = "circularButton6";
-            this.circularButton6.Size = new System.Drawing.Size(183, 186);
+            this.circularButton6.Size = new System.Drawing.Size(137, 151);
             this.circularButton6.TabIndex = 78;
             this.circularButton6.UseVisualStyleBackColor = false;
             // 
@@ -497,10 +498,10 @@
             this.circularButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton5.BorderSize = 2;
             this.circularButton5.Image = global::Acelera2025.Properties.Resources.CategoriaMusica;
-            this.circularButton5.Location = new System.Drawing.Point(999, 52);
-            this.circularButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton5.Location = new System.Drawing.Point(749, 42);
+            this.circularButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton5.Name = "circularButton5";
-            this.circularButton5.Size = new System.Drawing.Size(183, 186);
+            this.circularButton5.Size = new System.Drawing.Size(137, 151);
             this.circularButton5.TabIndex = 77;
             this.circularButton5.UseVisualStyleBackColor = false;
             this.circularButton5.Click += new System.EventHandler(this.circularButton5_Click);
@@ -512,10 +513,10 @@
             this.circularButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton4.BorderSize = 2;
             this.circularButton4.Image = global::Acelera2025.Properties.Resources.CategoriaFestivais;
-            this.circularButton4.Location = new System.Drawing.Point(757, 52);
-            this.circularButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton4.Location = new System.Drawing.Point(568, 42);
+            this.circularButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton4.Name = "circularButton4";
-            this.circularButton4.Size = new System.Drawing.Size(183, 186);
+            this.circularButton4.Size = new System.Drawing.Size(137, 151);
             this.circularButton4.TabIndex = 76;
             this.circularButton4.UseVisualStyleBackColor = false;
             // 
@@ -526,10 +527,10 @@
             this.circularButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton3.BorderSize = 2;
             this.circularButton3.Image = global::Acelera2025.Properties.Resources.CategoriaEducacao;
-            this.circularButton3.Location = new System.Drawing.Point(513, 52);
-            this.circularButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton3.Location = new System.Drawing.Point(385, 42);
+            this.circularButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton3.Name = "circularButton3";
-            this.circularButton3.Size = new System.Drawing.Size(183, 186);
+            this.circularButton3.Size = new System.Drawing.Size(137, 151);
             this.circularButton3.TabIndex = 75;
             this.circularButton3.UseVisualStyleBackColor = false;
             // 
@@ -540,10 +541,10 @@
             this.circularButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton1.BorderSize = 2;
             this.circularButton1.Image = global::Acelera2025.Properties.Resources.CategoriaSaude;
-            this.circularButton1.Location = new System.Drawing.Point(267, 52);
-            this.circularButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton1.Location = new System.Drawing.Point(200, 42);
+            this.circularButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton1.Name = "circularButton1";
-            this.circularButton1.Size = new System.Drawing.Size(183, 186);
+            this.circularButton1.Size = new System.Drawing.Size(137, 151);
             this.circularButton1.TabIndex = 74;
             this.circularButton1.UseVisualStyleBackColor = false;
             // 
@@ -554,10 +555,10 @@
             this.circularButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(207)))), ((int)(((byte)(214)))));
             this.circularButton2.BorderSize = 2;
             this.circularButton2.Image = global::Acelera2025.Properties.Resources.CategoriaTecnologia;
-            this.circularButton2.Location = new System.Drawing.Point(21, 52);
-            this.circularButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.circularButton2.Location = new System.Drawing.Point(16, 42);
+            this.circularButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.circularButton2.Name = "circularButton2";
-            this.circularButton2.Size = new System.Drawing.Size(183, 186);
+            this.circularButton2.Size = new System.Drawing.Size(137, 151);
             this.circularButton2.TabIndex = 73;
             this.circularButton2.UseVisualStyleBackColor = false;
             // 
@@ -567,9 +568,10 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label25.Location = new System.Drawing.Point(1295, 241);
+            this.label25.Location = new System.Drawing.Point(971, 196);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(59, 32);
+            this.label25.Size = new System.Drawing.Size(50, 27);
             this.label25.TabIndex = 71;
             this.label25.Text = "Artes";
             // 
@@ -579,9 +581,10 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label17.Location = new System.Drawing.Point(803, 609);
+            this.label17.Location = new System.Drawing.Point(602, 495);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(107, 32);
+            this.label17.Size = new System.Drawing.Size(88, 27);
             this.label17.TabIndex = 58;
             this.label17.Text = "Exposições";
             // 
@@ -591,9 +594,10 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label20.Location = new System.Drawing.Point(819, 641);
+            this.label20.Location = new System.Drawing.Point(614, 521);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(78, 32);
+            this.label20.Size = new System.Drawing.Size(65, 27);
             this.label20.TabIndex = 62;
             this.label20.Text = "e Feiras";
             // 
@@ -603,9 +607,10 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label24.Location = new System.Drawing.Point(533, 609);
+            this.label24.Location = new System.Drawing.Point(400, 495);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(140, 32);
+            this.label24.Size = new System.Drawing.Size(115, 27);
             this.label24.TabIndex = 70;
             this.label24.Text = "Espiritualidade";
             // 
@@ -615,9 +620,10 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label23.Location = new System.Drawing.Point(1060, 609);
+            this.label23.Location = new System.Drawing.Point(795, 495);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(66, 32);
+            this.label23.Size = new System.Drawing.Size(56, 27);
             this.label23.TabIndex = 68;
             this.label23.Text = "Festas";
             // 
@@ -627,9 +633,10 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label18.Location = new System.Drawing.Point(299, 609);
+            this.label18.Location = new System.Drawing.Point(224, 495);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(123, 32);
+            this.label18.Size = new System.Drawing.Size(102, 27);
             this.label18.TabIndex = 56;
             this.label18.Text = "Competições";
             // 
@@ -639,9 +646,10 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label21.Location = new System.Drawing.Point(1483, 609);
+            this.label21.Location = new System.Drawing.Point(1112, 495);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(101, 32);
+            this.label21.Size = new System.Drawing.Size(82, 27);
             this.label21.TabIndex = 66;
             this.label21.Text = "Sociedade";
             // 
@@ -651,9 +659,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label1.Location = new System.Drawing.Point(56, 241);
+            this.label1.Location = new System.Drawing.Point(42, 196);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 32);
+            this.label1.Size = new System.Drawing.Size(88, 27);
             this.label1.TabIndex = 32;
             this.label1.Text = "Tecnologia";
             // 
@@ -663,9 +672,10 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label22.Location = new System.Drawing.Point(71, 609);
+            this.label22.Location = new System.Drawing.Point(53, 495);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(83, 32);
+            this.label22.Size = new System.Drawing.Size(68, 27);
             this.label22.TabIndex = 64;
             this.label22.Text = "Ciências";
             // 
@@ -675,9 +685,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label3.Location = new System.Drawing.Point(325, 241);
+            this.label3.Location = new System.Drawing.Point(244, 196);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 32);
+            this.label3.Size = new System.Drawing.Size(54, 27);
             this.label3.TabIndex = 34;
             this.label3.Text = "Saúde";
             // 
@@ -687,9 +698,10 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label15.Location = new System.Drawing.Point(1277, 961);
+            this.label15.Location = new System.Drawing.Point(958, 781);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(84, 32);
+            this.label15.Size = new System.Drawing.Size(69, 27);
             this.label15.TabIndex = 54;
             this.label15.Text = "Hobbies";
             // 
@@ -699,9 +711,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label4.Location = new System.Drawing.Point(552, 241);
+            this.label4.Location = new System.Drawing.Point(414, 196);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 32);
+            this.label4.Size = new System.Drawing.Size(77, 27);
             this.label4.TabIndex = 36;
             this.label4.Text = "Educação";
             // 
@@ -711,9 +724,10 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label12.Location = new System.Drawing.Point(1497, 241);
+            this.label12.Location = new System.Drawing.Point(1123, 196);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 32);
+            this.label12.Size = new System.Drawing.Size(55, 27);
             this.label12.TabIndex = 52;
             this.label12.Text = "Dança";
             // 
@@ -723,9 +737,10 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label19.Location = new System.Drawing.Point(299, 641);
+            this.label19.Location = new System.Drawing.Point(224, 521);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(116, 32);
+            this.label19.Size = new System.Drawing.Size(96, 27);
             this.label19.TabIndex = 61;
             this.label19.Text = "e Concursos";
             // 
@@ -735,9 +750,10 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label13.Location = new System.Drawing.Point(533, 961);
+            this.label13.Location = new System.Drawing.Point(400, 781);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(147, 32);
+            this.label13.Size = new System.Drawing.Size(122, 27);
             this.label13.TabIndex = 50;
             this.label13.Text = "Entretenimento";
             // 
@@ -747,9 +763,10 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label11.Location = new System.Drawing.Point(56, 961);
+            this.label11.Location = new System.Drawing.Point(42, 781);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(123, 32);
+            this.label11.Size = new System.Drawing.Size(103, 27);
             this.label11.TabIndex = 44;
             this.label11.Text = "Gastronomia";
             // 
@@ -759,9 +776,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label8.Location = new System.Drawing.Point(1271, 609);
+            this.label8.Location = new System.Drawing.Point(953, 495);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 32);
+            this.label8.Size = new System.Drawing.Size(76, 27);
             this.label8.TabIndex = 42;
             this.label8.Text = "Esportes ";
             // 
@@ -771,9 +789,10 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label16.Location = new System.Drawing.Point(784, 961);
+            this.label16.Location = new System.Drawing.Point(588, 781);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(125, 32);
+            this.label16.Size = new System.Drawing.Size(103, 27);
             this.label16.TabIndex = 60;
             this.label16.Text = "Voluntariado";
             // 
@@ -783,9 +802,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label7.Location = new System.Drawing.Point(1052, 241);
+            this.label7.Location = new System.Drawing.Point(789, 196);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 32);
+            this.label7.Size = new System.Drawing.Size(61, 27);
             this.label7.TabIndex = 40;
             this.label7.Text = "Música";
             // 
@@ -795,9 +815,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label9.Location = new System.Drawing.Point(271, 961);
+            this.label9.Location = new System.Drawing.Point(203, 781);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(179, 32);
+            this.label9.Size = new System.Drawing.Size(149, 27);
             this.label9.TabIndex = 46;
             this.label9.Text = "Empreendedorismo";
             // 
@@ -807,9 +828,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label6.Location = new System.Drawing.Point(801, 241);
+            this.label6.Location = new System.Drawing.Point(601, 196);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 32);
+            this.label6.Size = new System.Drawing.Size(72, 27);
             this.label6.TabIndex = 38;
             this.label6.Text = "Festivais";
             // 
@@ -819,9 +841,10 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label14.Location = new System.Drawing.Point(1020, 961);
+            this.label14.Location = new System.Drawing.Point(765, 781);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(145, 32);
+            this.label14.Size = new System.Drawing.Size(120, 27);
             this.label14.TabIndex = 48;
             this.label14.Text = "Meio Ambiente";
             // 
@@ -830,9 +853,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label5.Location = new System.Drawing.Point(179, 315);
+            this.label5.Location = new System.Drawing.Point(134, 256);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 32);
+            this.label5.Size = new System.Drawing.Size(61, 27);
             this.label5.TabIndex = 32;
             this.label5.Text = "Música";
             // 
@@ -844,10 +868,10 @@
             this.btnMusica.BorderSize = 0;
             this.btnMusica.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMusica.Image = global::Acelera2025.Properties.Resources.CategoriaMusica;
-            this.btnMusica.Location = new System.Drawing.Point(141, 155);
-            this.btnMusica.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMusica.Location = new System.Drawing.Point(106, 126);
+            this.btnMusica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMusica.Name = "btnMusica";
-            this.btnMusica.Size = new System.Drawing.Size(149, 148);
+            this.btnMusica.Size = new System.Drawing.Size(112, 120);
             this.btnMusica.TabIndex = 31;
             this.btnMusica.Text = "circularButton4";
             this.btnMusica.UseVisualStyleBackColor = false;
@@ -858,9 +882,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label10.Location = new System.Drawing.Point(159, 85);
+            this.label10.Location = new System.Drawing.Point(119, 69);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(358, 53);
+            this.label10.Size = new System.Drawing.Size(292, 43);
             this.label10.TabIndex = 4;
             this.label10.Text = "Navegue por categorias";
             // 
@@ -880,11 +905,30 @@
             this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1701, 49);
+            this.gradientPanel1.Size = new System.Drawing.Size(1276, 40);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 4;
+            // 
+            // btnFeed
+            // 
+            this.btnFeed.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnFeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFeed.AutoSize = true;
+            this.btnFeed.BackColor = System.Drawing.Color.Transparent;
+            this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnFeed.LinkColor = System.Drawing.Color.White;
+            this.btnFeed.Location = new System.Drawing.Point(732, 13);
+            this.btnFeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnFeed.Name = "btnFeed";
+            this.btnFeed.Size = new System.Drawing.Size(35, 21);
+            this.btnFeed.TabIndex = 17;
+            this.btnFeed.TabStop = true;
+            this.btnFeed.Text = "Feed";
+            this.btnFeed.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnFeed.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFeed_LinkClicked);
             // 
             // picturePerfil
             // 
@@ -896,11 +940,10 @@
             this.picturePerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.picturePerfil.BorderSize = 1;
             this.picturePerfil.GradientAngle = 50F;
-            this.picturePerfil.Image = global::Acelera2025.Properties.Resources.nezuko;
-            this.picturePerfil.Location = new System.Drawing.Point(1629, 2);
-            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.picturePerfil.Location = new System.Drawing.Point(1222, 2);
             this.picturePerfil.Name = "picturePerfil";
-            this.picturePerfil.Size = new System.Drawing.Size(47, 47);
+            this.picturePerfil.Size = new System.Drawing.Size(35, 35);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturePerfil.TabIndex = 15;
             this.picturePerfil.TabStop = false;
@@ -910,10 +953,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox1.Size = new System.Drawing.Size(37, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -927,10 +970,10 @@
             this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacoes.Location = new System.Drawing.Point(1567, 14);
-            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNotificacoes.Location = new System.Drawing.Point(1175, 11);
+            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNotificacoes.Name = "btnNotificacoes";
-            this.btnNotificacoes.Size = new System.Drawing.Size(29, 26);
+            this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
             this.btnNotificacoes.TabIndex = 10;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
             this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
@@ -942,10 +985,10 @@
             this.roundedPanel5.BorderSize = 0;
             this.roundedPanel5.Controls.Add(this.btnPesquisar);
             this.roundedPanel5.Controls.Add(this.txtPesquisar);
-            this.roundedPanel5.Location = new System.Drawing.Point(327, 12);
-            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPanel5.Location = new System.Drawing.Point(245, 10);
+            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(528, 31);
+            this.roundedPanel5.Size = new System.Drawing.Size(396, 25);
             this.roundedPanel5.TabIndex = 8;
             // 
             // btnPesquisar
@@ -955,10 +998,10 @@
             this.btnPesquisar.FlatAppearance.BorderSize = 0;
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
-            this.btnPesquisar.Location = new System.Drawing.Point(485, -2);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPesquisar.Location = new System.Drawing.Point(364, -2);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(43, 38);
+            this.btnPesquisar.Size = new System.Drawing.Size(32, 31);
             this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -969,10 +1012,10 @@
             this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPesquisar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisar.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtPesquisar.Location = new System.Drawing.Point(3, 5);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPesquisar.Location = new System.Drawing.Point(2, 4);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(483, 32);
+            this.txtPesquisar.Size = new System.Drawing.Size(362, 26);
             this.txtPesquisar.TabIndex = 0;
             // 
             // btnPrincipal
@@ -983,9 +1026,10 @@
             this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnPrincipal.LinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.Location = new System.Drawing.Point(67, 15);
+            this.btnPrincipal.Location = new System.Drawing.Point(50, 12);
+            this.btnPrincipal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(108, 27);
+            this.btnPrincipal.Size = new System.Drawing.Size(82, 21);
             this.btnPrincipal.TabIndex = 7;
             this.btnPrincipal.TabStop = true;
             this.btnPrincipal.Text = "CONNECTA";
@@ -1001,9 +1045,10 @@
             this.btnOrganizarEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrganizarEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnOrganizarEventos.LinkColor = System.Drawing.Color.White;
-            this.btnOrganizarEventos.Location = new System.Drawing.Point(1059, 15);
+            this.btnOrganizarEventos.Location = new System.Drawing.Point(794, 12);
+            this.btnOrganizarEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnOrganizarEventos.Name = "btnOrganizarEventos";
-            this.btnOrganizarEventos.Size = new System.Drawing.Size(132, 27);
+            this.btnOrganizarEventos.Size = new System.Drawing.Size(105, 21);
             this.btnOrganizarEventos.TabIndex = 5;
             this.btnOrganizarEventos.TabStop = true;
             this.btnOrganizarEventos.Text = "Organizar eventos";
@@ -1019,9 +1064,10 @@
             this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Location = new System.Drawing.Point(1229, 16);
+            this.btnMeusEventos.Location = new System.Drawing.Point(922, 13);
+            this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnMeusEventos.Name = "btnMeusEventos";
-            this.btnMeusEventos.Size = new System.Drawing.Size(102, 27);
+            this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
             this.btnMeusEventos.TabIndex = 4;
             this.btnMeusEventos.TabStop = true;
             this.btnMeusEventos.Text = "Meus eventos";
@@ -1037,9 +1083,10 @@
             this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjuda.LinkColor = System.Drawing.Color.White;
-            this.btnAjuda.Location = new System.Drawing.Point(1365, 15);
+            this.btnAjuda.Location = new System.Drawing.Point(1024, 12);
+            this.btnAjuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnAjuda.Name = "btnAjuda";
-            this.btnAjuda.Size = new System.Drawing.Size(51, 27);
+            this.btnAjuda.Size = new System.Drawing.Size(41, 21);
             this.btnAjuda.TabIndex = 3;
             this.btnAjuda.TabStop = true;
             this.btnAjuda.Text = "Ajuda";
@@ -1055,42 +1102,25 @@
             this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnSobreNos.LinkColor = System.Drawing.Color.White;
-            this.btnSobreNos.Location = new System.Drawing.Point(1437, 16);
+            this.btnSobreNos.Location = new System.Drawing.Point(1078, 13);
+            this.btnSobreNos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnSobreNos.Name = "btnSobreNos";
-            this.btnSobreNos.Size = new System.Drawing.Size(78, 27);
+            this.btnSobreNos.Size = new System.Drawing.Size(62, 21);
             this.btnSobreNos.TabIndex = 2;
             this.btnSobreNos.TabStop = true;
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
-            // btnFeed
-            // 
-            this.btnFeed.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnFeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFeed.AutoSize = true;
-            this.btnFeed.BackColor = System.Drawing.Color.Transparent;
-            this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnFeed.LinkColor = System.Drawing.Color.White;
-            this.btnFeed.Location = new System.Drawing.Point(976, 16);
-            this.btnFeed.Name = "btnFeed";
-            this.btnFeed.Size = new System.Drawing.Size(44, 27);
-            this.btnFeed.TabIndex = 17;
-            this.btnFeed.TabStop = true;
-            this.btnFeed.Text = "Feed";
-            this.btnFeed.VisitedLinkColor = System.Drawing.Color.White;
-            this.btnFeed.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFeed_LinkClicked);
-            // 
             // Categorias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1701, 1055);
+            this.ClientSize = new System.Drawing.Size(1276, 857);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Categorias";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Categorias_Load);

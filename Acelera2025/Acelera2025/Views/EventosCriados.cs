@@ -162,6 +162,7 @@ namespace Acelera2025.Views
                 PicEvento.Image = null;
             }
 
+            
 
 
 

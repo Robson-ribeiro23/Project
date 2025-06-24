@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public class EventoModels
 {
@@ -31,6 +32,16 @@ public class EventoModels
         CaminhoImagem = caminhoImagem;
         UsuarioEmail = email;
 
+    }
+
+    public static class EventoCache
+    {
+        public static List<EventoModels> EventosCriados { get; private set; } = new List<EventoModels>();
+
+        public static void Adicionar(EventoModels evento)
+        {
+            EventosCriados.Add(evento);
+        }
     }
 
     public override string ToString()

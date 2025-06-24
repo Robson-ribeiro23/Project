@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using static EventoModels;
 
 namespace Acelera2025.Views
 {
@@ -143,14 +144,24 @@ namespace Acelera2025.Views
                     {
                         Console.WriteLine("Salvo: " + es.NomeEvento + " | Imagem: " + es.CaminhoImagem);
                     }
+
+                    // Adiciona à cache (opcional para acessos futuros)
+                    EventoCache.Adicionar(novoEvento);
+
+                    Navegador.IrParaTelaEventos(this.usuario, novoEvento);
+
+                    MessageBox.Show("Evento criado com sucesso!");
                 }
 
-                MessageBox.Show("Evento criado com sucesso!");
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao criar evento: " + ex.Message);
             }
+
+
+           
 
 
             /*try
@@ -222,7 +233,7 @@ namespace Acelera2025.Views
 
             //Navegador.IrParaTelaEventos(this.usuario); */
 
-            Navegador.IrParaTelaEventos(this.usuario);
+
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

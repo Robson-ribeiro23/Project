@@ -61,6 +61,7 @@
     <Compile Include="Controllers\UsuarioControllers.cs" />
     <Compile Include="Helpers\NavegadorHelpers.cs" />
     <Compile Include="Models\EmpresaModels.cs" />
+    <Compile Include="Models\EventoCache.cs" />
     <Compile Include="Models\EventoModels.cs" />
     <Compile Include="Models\PessoaModels.cs" />
     <Compile Include="Models\UsuarioModels.cs" />

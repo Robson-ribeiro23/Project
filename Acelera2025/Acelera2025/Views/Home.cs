@@ -1,14 +1,20 @@
-﻿using System;
+﻿using Ac;
+using Acelera2025.Telas;
+using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using Ac;
-using Acelera2025.Telas;
+
+
 
 
 namespace Acelera2025.Views
 {
+
+
+
     public partial class Home: Form
     {
         private bool panelVisivel = false;
@@ -17,9 +23,17 @@ namespace Acelera2025.Views
         private PessoaModels usuario;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
+
+        private List<PictureBox> pictureBoxes;
+        private List<Label> labelDatas;
+        private List<Label> labelHoras;
+        private List<LinkLabel> btnNomes;
+
         public Home(PessoaModels usuario)
         {
             InitializeComponent();
+
+
 
             this.usuario = usuario;
 
@@ -53,6 +67,62 @@ namespace Acelera2025.Views
             panel2.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPainelDeNotificacoes.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+
+            pictureBoxes = new List<PictureBox> { PicEventoPerto1, PicEventoPerto2, PicEventoPerto3 };
+            labelDatas = new List<Label> { lblData1, lblData2, lblData3 };
+            labelHoras = new List<Label> { lblHora1, lblHora2, lblHora3 };
+            btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3 };
+
+            List<EventoModels> eventos = EventoCache.ListarTodos();
+
+            for (int i = 0; i < pictureBoxes.Count; i++)
+            {
+                if (i < eventos.Count)
+                {
+                    var evento = eventos[i];
+
+                    labelDatas[i].Text = evento.Data.ToShortDateString();
+                    labelHoras[i].Text = evento.Horario;
+                    btnNomes[i].Text = evento.NomeEvento;
+
+                    if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+                    {
+                        pictureBoxes[i].Image = Image.FromFile(evento.CaminhoImagem);
+                    }
+
+                    pictureBoxes[i].Tag = evento;
+                    btnNomes[i].Tag = evento;
+
+                    pictureBoxes[i].Click -= Evento_Click;
+                    pictureBoxes[i].Click += Evento_Click;
+
+                    btnNomes[i].LinkClicked -= Evento_LinkClicked;
+                    btnNomes[i].LinkClicked += Evento_LinkClicked;
+                }
+                else
+                {
+                    labelDatas[i].Text = "";
+                    labelHoras[i].Text = "";
+                    btnNomes[i].Text = "";
+                    pictureBoxes[i].Image = null;
+
+                    pictureBoxes[i].Tag = null;
+                    btnNomes[i].Tag = null;
+
+                    pictureBoxes[i].Click -= Evento_Click;
+                    btnNomes[i].LinkClicked -= Evento_LinkClicked;
+                }
+            }
+
+        }
+
+        private void PicEvento_Click(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pic && pic.Tag is EventoModels evento)
+            {
+                Navegador.IrParaTelaEventos(this.usuario, evento);
+                
+            }
         }
 
         private void PanelEventosPerto_Resize(object sender, EventArgs e)
@@ -110,6 +180,22 @@ namespace Acelera2025.Views
 
                     posicaoBotao++;
                 }
+            }
+        }
+
+        private void Evento_Click(object sender, EventArgs e)
+        {
+            if (sender is PictureBox pic && pic.Tag is EventoModels evento)
+            {
+                Navegador.IrParaTelaEventos(this.usuario, evento);
+            }
+        }
+
+        private void Evento_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (sender is LinkLabel link && link.Tag is EventoModels evento)
+            {
+                Navegador.IrParaTelaEventos(this.usuario, evento);
             }
         }
 
@@ -295,6 +381,11 @@ namespace Acelera2025.Views
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
+        }
+
+        private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

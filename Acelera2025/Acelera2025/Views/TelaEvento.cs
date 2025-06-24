@@ -21,16 +21,35 @@ namespace Acelera2025.Views
         private PessoaModels usuario;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
-        public TelaEvento(PessoaModels usuario)
+        private EventoModels evento;
+
+
+
+
+        public TelaEvento(PessoaModels usuario, EventoModels evento)
         {
             InitializeComponent();
-            this.panel2.Resize += Panel2_Resize;
             this.usuario = usuario;
+            this.evento = evento;
 
-            if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
+            if (evento != null)
             {
-                picturePerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
+                lblNomeEvento.Text = evento.NomeEvento;
+                tabPage1.Text = evento.Descricao;
+                lblNomePublicador.Text = evento.UsuarioEmail;
+
+                if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+                    picEvento.Image = Image.FromFile(evento.CaminhoImagem);
             }
+            else
+            {
+                lblNomeEvento.Text = "Evento não selecionado";
+                tabPage1.Text = "";
+                lblNomePublicador.Text = "";
+            }
+
+            if (!string.IsNullOrEmpty(usuario.CaminhoFoto) && File.Exists(usuario.CaminhoFoto))
+                picturePerfil.Image = Image.FromFile(usuario.CaminhoFoto);
         }
 
         private void TelaEvento_Load(object sender, EventArgs e)
@@ -126,6 +145,11 @@ namespace Acelera2025.Views
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

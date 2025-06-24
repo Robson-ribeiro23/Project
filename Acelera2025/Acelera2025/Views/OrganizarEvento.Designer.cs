@@ -796,7 +796,7 @@
             this.picturePerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.picturePerfil.BorderSize = 1;
             this.picturePerfil.GradientAngle = 50F;
-            this.picturePerfil.Image = global::Acelera2025.Properties.Resources.nezuko;
+            this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
             this.picturePerfil.Location = new System.Drawing.Point(1261, 2);
             this.picturePerfil.Name = "picturePerfil";
             this.picturePerfil.Size = new System.Drawing.Size(35, 35);
