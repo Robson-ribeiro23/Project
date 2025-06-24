@@ -73,6 +73,7 @@
             this.btnAddImagem = new RoundedButton();
             this.picEvento = new Acelera2025.Ferramentas.RoundedPicture();
             this.gradientPanel1 = new GradientPanel();
+            this.btnFeed = new System.Windows.Forms.LinkLabel();
             this.picturePerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPrincipal = new System.Windows.Forms.LinkLabel();
@@ -84,7 +85,6 @@
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.btnFeed = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -108,11 +108,12 @@
             this.panel1.Controls.Add(this.txtDescricao);
             this.panel1.Controls.Add(this.roundedPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 50);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 41);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1752, 789);
+            this.panel1.Size = new System.Drawing.Size(1314, 641);
             this.panel1.TabIndex = 23;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panelMeusEventos
             // 
@@ -123,10 +124,10 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1221, 6);
-            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMeusEventos.Location = new System.Drawing.Point(916, 5);
+            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2);
             this.panelMeusEventos.Name = "panelMeusEventos";
-            this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
+            this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
             this.panelMeusEventos.TabIndex = 26;
             this.panelMeusEventos.Visible = false;
             // 
@@ -139,10 +140,10 @@
             this.btnEventosCriados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEventosCriados.Location = new System.Drawing.Point(0, 49);
-            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEventosCriados.Location = new System.Drawing.Point(0, 40);
+            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventosCriados.Name = "btnEventosCriados";
-            this.btnEventosCriados.Size = new System.Drawing.Size(245, 50);
+            this.btnEventosCriados.Size = new System.Drawing.Size(184, 41);
             this.btnEventosCriados.TabIndex = 1;
             this.btnEventosCriados.Text = "Eventos Criados";
             this.btnEventosCriados.UseVisualStyleBackColor = false;
@@ -158,9 +159,9 @@
             this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEventosIngressados.Location = new System.Drawing.Point(0, 2);
-            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventosIngressados.Name = "btnEventosIngressados";
-            this.btnEventosIngressados.Size = new System.Drawing.Size(245, 55);
+            this.btnEventosIngressados.Size = new System.Drawing.Size(184, 45);
             this.btnEventosIngressados.TabIndex = 0;
             this.btnEventosIngressados.Text = "Eventos Ingressados";
             this.btnEventosIngressados.UseVisualStyleBackColor = false;
@@ -175,10 +176,10 @@
             this.btnCriarEvento.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCriarEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCriarEvento.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCriarEvento.Location = new System.Drawing.Point(1543, 729);
-            this.btnCriarEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCriarEvento.Location = new System.Drawing.Point(1157, 592);
+            this.btnCriarEvento.Margin = new System.Windows.Forms.Padding(2);
             this.btnCriarEvento.Name = "btnCriarEvento";
-            this.btnCriarEvento.Size = new System.Drawing.Size(197, 34);
+            this.btnCriarEvento.Size = new System.Drawing.Size(148, 28);
             this.btnCriarEvento.TabIndex = 25;
             this.btnCriarEvento.Text = "Criar Evento";
             this.btnCriarEvento.UseVisualStyleBackColor = false;
@@ -203,10 +204,10 @@
             this.panel3.Controls.Add(this.linkLabel14);
             this.panel3.Controls.Add(this.txtCidade);
             this.panel3.Controls.Add(this.linkLabel12);
-            this.panel3.Location = new System.Drawing.Point(676, 523);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(507, 425);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1052, 197);
+            this.panel3.Size = new System.Drawing.Size(789, 160);
             this.panel3.TabIndex = 24;
             this.panel3.Visible = false;
             // 
@@ -214,10 +215,10 @@
             // 
             this.comboUF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.comboUF.FormattingEnabled = true;
-            this.comboUF.Location = new System.Drawing.Point(411, 57);
-            this.comboUF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboUF.Location = new System.Drawing.Point(308, 46);
+            this.comboUF.Margin = new System.Windows.Forms.Padding(2);
             this.comboUF.Name = "comboUF";
-            this.comboUF.Size = new System.Drawing.Size(137, 24);
+            this.comboUF.Size = new System.Drawing.Size(104, 21);
             this.comboUF.TabIndex = 36;
             // 
             // txtNomeRua
@@ -226,10 +227,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomeRua.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNomeRua.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeRua.Location = new System.Drawing.Point(807, 140);
-            this.txtNomeRua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNomeRua.Location = new System.Drawing.Point(605, 114);
+            this.txtNomeRua.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeRua.Name = "txtNomeRua";
-            this.txtNomeRua.Size = new System.Drawing.Size(205, 39);
+            this.txtNomeRua.Size = new System.Drawing.Size(155, 33);
             this.txtNomeRua.TabIndex = 35;
             // 
             // linkLabel19
@@ -240,9 +241,10 @@
             this.linkLabel19.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel19.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel19.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel19.Location = new System.Drawing.Point(197, 101);
+            this.linkLabel19.Location = new System.Drawing.Point(148, 82);
+            this.linkLabel19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel19.Name = "linkLabel19";
-            this.linkLabel19.Size = new System.Drawing.Size(78, 36);
+            this.linkLabel19.Size = new System.Drawing.Size(63, 29);
             this.linkLabel19.TabIndex = 34;
             this.linkLabel19.TabStop = true;
             this.linkLabel19.Text = "Bairro:";
@@ -252,10 +254,10 @@
             // 
             this.txtNumero.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNumero.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(648, 140);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNumero.Location = new System.Drawing.Point(486, 114);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(91, 39);
+            this.txtNumero.Size = new System.Drawing.Size(69, 33);
             this.txtNumero.TabIndex = 33;
             // 
             // linkLabel18
@@ -266,9 +268,10 @@
             this.linkLabel18.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel18.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel18.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel18.Location = new System.Drawing.Point(643, 101);
+            this.linkLabel18.Location = new System.Drawing.Point(482, 82);
+            this.linkLabel18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel18.Name = "linkLabel18";
-            this.linkLabel18.Size = new System.Drawing.Size(97, 36);
+            this.linkLabel18.Size = new System.Drawing.Size(80, 29);
             this.linkLabel18.TabIndex = 32;
             this.linkLabel18.TabStop = true;
             this.linkLabel18.Text = "Número:";
@@ -278,10 +281,10 @@
             // 
             this.txtBairro.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtBairro.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBairro.Location = new System.Drawing.Point(204, 140);
-            this.txtBairro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBairro.Location = new System.Drawing.Point(153, 114);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(2);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(361, 39);
+            this.txtBairro.Size = new System.Drawing.Size(272, 33);
             this.txtBairro.TabIndex = 31;
             // 
             // linkLabel17
@@ -292,9 +295,10 @@
             this.linkLabel17.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel17.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel17.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel17.Location = new System.Drawing.Point(801, 101);
+            this.linkLabel17.Location = new System.Drawing.Point(601, 82);
+            this.linkLabel17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel17.Name = "linkLabel17";
-            this.linkLabel17.Size = new System.Drawing.Size(148, 36);
+            this.linkLabel17.Size = new System.Drawing.Size(120, 29);
             this.linkLabel17.TabIndex = 30;
             this.linkLabel17.TabStop = true;
             this.linkLabel17.Text = "Nome da Rua:";
@@ -304,10 +308,10 @@
             // 
             this.txtCep.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCep.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCep.Location = new System.Drawing.Point(9, 140);
-            this.txtCep.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCep.Location = new System.Drawing.Point(7, 114);
+            this.txtCep.Margin = new System.Windows.Forms.Padding(2);
             this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(155, 39);
+            this.txtCep.Size = new System.Drawing.Size(117, 33);
             this.txtCep.TabIndex = 29;
             // 
             // linkLabel16
@@ -318,9 +322,10 @@
             this.linkLabel16.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel16.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel16.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel16.Location = new System.Drawing.Point(3, 101);
+            this.linkLabel16.Location = new System.Drawing.Point(2, 82);
+            this.linkLabel16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel16.Name = "linkLabel16";
-            this.linkLabel16.Size = new System.Drawing.Size(50, 36);
+            this.linkLabel16.Size = new System.Drawing.Size(42, 29);
             this.linkLabel16.TabIndex = 28;
             this.linkLabel16.TabStop = true;
             this.linkLabel16.Text = "CEP";
@@ -332,10 +337,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox9.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(699, 58);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox9.Location = new System.Drawing.Point(524, 47);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(313, 39);
+            this.textBox9.Size = new System.Drawing.Size(236, 33);
             this.textBox9.TabIndex = 27;
             // 
             // linkLabel15
@@ -346,9 +351,10 @@
             this.linkLabel15.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel15.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel15.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel15.Location = new System.Drawing.Point(693, 18);
+            this.linkLabel15.Location = new System.Drawing.Point(520, 15);
+            this.linkLabel15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel15.Name = "linkLabel15";
-            this.linkLabel15.Size = new System.Drawing.Size(162, 36);
+            this.linkLabel15.Size = new System.Drawing.Size(132, 29);
             this.linkLabel15.TabIndex = 26;
             this.linkLabel15.TabStop = true;
             this.linkLabel15.Text = "Nome do Local:";
@@ -362,9 +368,10 @@
             this.linkLabel14.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel14.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel14.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel14.Location = new System.Drawing.Point(404, 17);
+            this.linkLabel14.Location = new System.Drawing.Point(303, 14);
+            this.linkLabel14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel14.Name = "linkLabel14";
-            this.linkLabel14.Size = new System.Drawing.Size(44, 36);
+            this.linkLabel14.Size = new System.Drawing.Size(37, 29);
             this.linkLabel14.TabIndex = 24;
             this.linkLabel14.TabStop = true;
             this.linkLabel14.Text = "UF:";
@@ -374,10 +381,10 @@
             // 
             this.txtCidade.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtCidade.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCidade.Location = new System.Drawing.Point(9, 58);
-            this.txtCidade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCidade.Location = new System.Drawing.Point(7, 47);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(2);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(291, 39);
+            this.txtCidade.Size = new System.Drawing.Size(219, 33);
             this.txtCidade.TabIndex = 23;
             // 
             // linkLabel12
@@ -388,9 +395,10 @@
             this.linkLabel12.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel12.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel12.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel12.Location = new System.Drawing.Point(3, 18);
+            this.linkLabel12.Location = new System.Drawing.Point(2, 15);
+            this.linkLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel12.Name = "linkLabel12";
-            this.linkLabel12.Size = new System.Drawing.Size(84, 36);
+            this.linkLabel12.Size = new System.Drawing.Size(70, 29);
             this.linkLabel12.TabIndex = 22;
             this.linkLabel12.TabStop = true;
             this.linkLabel12.Text = "Cidade:";
@@ -403,10 +411,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.txtLinkReunião);
             this.panel2.Controls.Add(this.linkLabel11);
-            this.panel2.Location = new System.Drawing.Point(676, 418);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(507, 340);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1052, 100);
+            this.panel2.Size = new System.Drawing.Size(789, 81);
             this.panel2.TabIndex = 23;
             this.panel2.Visible = false;
             // 
@@ -414,10 +422,10 @@
             // 
             this.txtLinkReunião.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLinkReunião.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLinkReunião.Location = new System.Drawing.Point(9, 58);
-            this.txtLinkReunião.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLinkReunião.Location = new System.Drawing.Point(7, 47);
+            this.txtLinkReunião.Margin = new System.Windows.Forms.Padding(2);
             this.txtLinkReunião.Name = "txtLinkReunião";
-            this.txtLinkReunião.Size = new System.Drawing.Size(636, 39);
+            this.txtLinkReunião.Size = new System.Drawing.Size(478, 33);
             this.txtLinkReunião.TabIndex = 23;
             // 
             // linkLabel11
@@ -428,9 +436,10 @@
             this.linkLabel11.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel11.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel11.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel11.Location = new System.Drawing.Point(3, 18);
+            this.linkLabel11.Location = new System.Drawing.Point(2, 15);
+            this.linkLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel11.Name = "linkLabel11";
-            this.linkLabel11.Size = new System.Drawing.Size(340, 36);
+            this.linkLabel11.Size = new System.Drawing.Size(275, 29);
             this.linkLabel11.TabIndex = 22;
             this.linkLabel11.TabStop = true;
             this.linkLabel11.Text = "Link da Reunião Online do Evento:";
@@ -443,10 +452,10 @@
             this.checkBoxPatrocinio.AutoSize = true;
             this.checkBoxPatrocinio.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxPatrocinio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.checkBoxPatrocinio.Location = new System.Drawing.Point(676, 351);
-            this.checkBoxPatrocinio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBoxPatrocinio.Location = new System.Drawing.Point(507, 285);
+            this.checkBoxPatrocinio.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxPatrocinio.Name = "checkBoxPatrocinio";
-            this.checkBoxPatrocinio.Size = new System.Drawing.Size(185, 36);
+            this.checkBoxPatrocinio.Size = new System.Drawing.Size(157, 31);
             this.checkBoxPatrocinio.TabIndex = 22;
             this.checkBoxPatrocinio.Text = "Permitir Patrocínio:";
             this.checkBoxPatrocinio.UseVisualStyleBackColor = true;
@@ -461,9 +470,10 @@
             this.linkLabel9.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel9.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel9.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel9.Location = new System.Drawing.Point(669, 59);
+            this.linkLabel9.Location = new System.Drawing.Point(502, 48);
+            this.linkLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.Size = new System.Drawing.Size(112, 36);
+            this.linkLabel9.Size = new System.Drawing.Size(91, 29);
             this.linkLabel9.TabIndex = 21;
             this.linkLabel9.TabStop = true;
             this.linkLabel9.Text = "Descrição:";
@@ -475,11 +485,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescricao.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtDescricao.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricao.Location = new System.Drawing.Point(676, 98);
-            this.txtDescricao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDescricao.Location = new System.Drawing.Point(507, 80);
+            this.txtDescricao.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(1052, 216);
+            this.txtDescricao.Size = new System.Drawing.Size(790, 176);
             this.txtDescricao.TabIndex = 4;
             // 
             // roundedPanel1
@@ -506,9 +516,9 @@
             this.roundedPanel1.Controls.Add(this.picEvento);
             this.roundedPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.roundedPanel1.Location = new System.Drawing.Point(0, 0);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(607, 789);
+            this.roundedPanel1.Size = new System.Drawing.Size(455, 641);
             this.roundedPanel1.TabIndex = 0;
             // 
             // linkLabel20
@@ -519,9 +529,10 @@
             this.linkLabel20.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel20.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel20.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel20.Location = new System.Drawing.Point(407, 644);
+            this.linkLabel20.Location = new System.Drawing.Point(305, 523);
+            this.linkLabel20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel20.Name = "linkLabel20";
-            this.linkLabel20.Size = new System.Drawing.Size(130, 36);
+            this.linkLabel20.Size = new System.Drawing.Size(105, 29);
             this.linkLabel20.TabIndex = 30;
             this.linkLabel20.TabStop = true;
             this.linkLabel20.Text = "Faixa Etária:";
@@ -531,10 +542,10 @@
             // 
             this.comboFaixaEtaria.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFaixaEtaria.FormattingEnabled = true;
-            this.comboFaixaEtaria.Location = new System.Drawing.Point(413, 684);
-            this.comboFaixaEtaria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboFaixaEtaria.Location = new System.Drawing.Point(310, 556);
+            this.comboFaixaEtaria.Margin = new System.Windows.Forms.Padding(2);
             this.comboFaixaEtaria.Name = "comboFaixaEtaria";
-            this.comboFaixaEtaria.Size = new System.Drawing.Size(87, 38);
+            this.comboFaixaEtaria.Size = new System.Drawing.Size(66, 33);
             this.comboFaixaEtaria.TabIndex = 29;
             // 
             // linkLabel10
@@ -545,9 +556,10 @@
             this.linkLabel10.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel10.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel10.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel10.Location = new System.Drawing.Point(57, 644);
+            this.linkLabel10.Location = new System.Drawing.Point(43, 523);
+            this.linkLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel10.Name = "linkLabel10";
-            this.linkLabel10.Size = new System.Drawing.Size(238, 36);
+            this.linkLabel10.Size = new System.Drawing.Size(192, 29);
             this.linkLabel10.TabIndex = 27;
             this.linkLabel10.TabStop = true;
             this.linkLabel10.Text = "Limite de Participantes:";
@@ -557,10 +569,10 @@
             // 
             this.txtLimiteParticipantes.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLimiteParticipantes.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLimiteParticipantes.Location = new System.Drawing.Point(63, 683);
-            this.txtLimiteParticipantes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLimiteParticipantes.Location = new System.Drawing.Point(47, 555);
+            this.txtLimiteParticipantes.Margin = new System.Windows.Forms.Padding(2);
             this.txtLimiteParticipantes.Name = "txtLimiteParticipantes";
-            this.txtLimiteParticipantes.Size = new System.Drawing.Size(200, 39);
+            this.txtLimiteParticipantes.Size = new System.Drawing.Size(151, 33);
             this.txtLimiteParticipantes.TabIndex = 26;
             // 
             // linkLabel8
@@ -571,9 +583,10 @@
             this.linkLabel8.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel8.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel8.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel8.Location = new System.Drawing.Point(65, 551);
+            this.linkLabel8.Location = new System.Drawing.Point(49, 448);
+            this.linkLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(111, 36);
+            this.linkLabel8.Size = new System.Drawing.Size(91, 29);
             this.linkLabel8.TabIndex = 25;
             this.linkLabel8.TabStop = true;
             this.linkLabel8.Text = "Categoria:";
@@ -583,10 +596,10 @@
             // 
             this.comboCategoria.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCategoria.FormattingEnabled = true;
-            this.comboCategoria.Location = new System.Drawing.Point(63, 590);
-            this.comboCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboCategoria.Location = new System.Drawing.Point(47, 479);
+            this.comboCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.comboCategoria.Name = "comboCategoria";
-            this.comboCategoria.Size = new System.Drawing.Size(200, 38);
+            this.comboCategoria.Size = new System.Drawing.Size(151, 33);
             this.comboCategoria.TabIndex = 24;
             // 
             // radioBtnOnline
@@ -594,10 +607,10 @@
             this.radioBtnOnline.AutoSize = true;
             this.radioBtnOnline.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioBtnOnline.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(193)))));
-            this.radioBtnOnline.Location = new System.Drawing.Point(413, 590);
-            this.radioBtnOnline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioBtnOnline.Location = new System.Drawing.Point(310, 479);
+            this.radioBtnOnline.Margin = new System.Windows.Forms.Padding(2);
             this.radioBtnOnline.Name = "radioBtnOnline";
-            this.radioBtnOnline.Size = new System.Drawing.Size(86, 36);
+            this.radioBtnOnline.Size = new System.Drawing.Size(73, 31);
             this.radioBtnOnline.TabIndex = 23;
             this.radioBtnOnline.TabStop = true;
             this.radioBtnOnline.Text = "Online";
@@ -609,10 +622,10 @@
             this.radioBtnPresencial.AutoSize = true;
             this.radioBtnPresencial.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioBtnPresencial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(193)))));
-            this.radioBtnPresencial.Location = new System.Drawing.Point(413, 551);
-            this.radioBtnPresencial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioBtnPresencial.Location = new System.Drawing.Point(310, 448);
+            this.radioBtnPresencial.Margin = new System.Windows.Forms.Padding(2);
             this.radioBtnPresencial.Name = "radioBtnPresencial";
-            this.radioBtnPresencial.Size = new System.Drawing.Size(112, 36);
+            this.radioBtnPresencial.Size = new System.Drawing.Size(96, 31);
             this.radioBtnPresencial.TabIndex = 22;
             this.radioBtnPresencial.Text = "Presencial";
             this.radioBtnPresencial.UseVisualStyleBackColor = true;
@@ -622,10 +635,10 @@
             // 
             this.txtHorario.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtHorario.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHorario.Location = new System.Drawing.Point(413, 478);
-            this.txtHorario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtHorario.Location = new System.Drawing.Point(310, 388);
+            this.txtHorario.Margin = new System.Windows.Forms.Padding(2);
             this.txtHorario.Name = "txtHorario";
-            this.txtHorario.Size = new System.Drawing.Size(129, 39);
+            this.txtHorario.Size = new System.Drawing.Size(98, 33);
             this.txtHorario.TabIndex = 21;
             // 
             // linkLabel7
@@ -636,9 +649,10 @@
             this.linkLabel7.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel7.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel7.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel7.Location = new System.Drawing.Point(407, 438);
+            this.linkLabel7.Location = new System.Drawing.Point(305, 356);
+            this.linkLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(92, 36);
+            this.linkLabel7.Size = new System.Drawing.Size(75, 29);
             this.linkLabel7.TabIndex = 20;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "Horário:";
@@ -652,9 +666,10 @@
             this.linkLabel6.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel6.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel6.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel6.Location = new System.Drawing.Point(65, 438);
+            this.linkLabel6.Location = new System.Drawing.Point(49, 356);
+            this.linkLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(65, 36);
+            this.linkLabel6.Size = new System.Drawing.Size(53, 29);
             this.linkLabel6.TabIndex = 19;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "Data:";
@@ -668,9 +683,10 @@
             this.linkLabel13.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel13.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel13.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.linkLabel13.Location = new System.Drawing.Point(65, 335);
+            this.linkLabel13.Location = new System.Drawing.Point(49, 272);
+            this.linkLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel13.Name = "linkLabel13";
-            this.linkLabel13.Size = new System.Drawing.Size(178, 36);
+            this.linkLabel13.Size = new System.Drawing.Size(145, 29);
             this.linkLabel13.TabIndex = 18;
             this.linkLabel13.TabStop = true;
             this.linkLabel13.Text = "Nome do Evento:";
@@ -680,21 +696,21 @@
             // 
             this.txtNomeEvento.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtNomeEvento.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeEvento.Location = new System.Drawing.Point(71, 366);
-            this.txtNomeEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNomeEvento.Location = new System.Drawing.Point(53, 297);
+            this.txtNomeEvento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeEvento.Multiline = true;
             this.txtNomeEvento.Name = "txtNomeEvento";
-            this.txtNomeEvento.Size = new System.Drawing.Size(471, 35);
+            this.txtNomeEvento.Size = new System.Drawing.Size(354, 29);
             this.txtNomeEvento.TabIndex = 3;
             // 
             // dateTimePicker
             // 
             this.dateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(193)))));
             this.dateTimePicker.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker.Location = new System.Drawing.Point(63, 478);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker.Location = new System.Drawing.Point(47, 388);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(200, 35);
+            this.dateTimePicker.Size = new System.Drawing.Size(151, 30);
             this.dateTimePicker.TabIndex = 2;
             // 
             // btnAddImagem
@@ -706,13 +722,14 @@
             this.btnAddImagem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddImagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddImagem.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAddImagem.Location = new System.Drawing.Point(160, 281);
-            this.btnAddImagem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddImagem.Location = new System.Drawing.Point(120, 228);
+            this.btnAddImagem.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddImagem.Name = "btnAddImagem";
-            this.btnAddImagem.Size = new System.Drawing.Size(295, 34);
+            this.btnAddImagem.Size = new System.Drawing.Size(221, 28);
             this.btnAddImagem.TabIndex = 1;
             this.btnAddImagem.Text = "Adicionar Imagem de Capa";
             this.btnAddImagem.UseVisualStyleBackColor = false;
+            this.btnAddImagem.Click += new System.EventHandler(this.btnAddImagem_Click);
             // 
             // picEvento
             // 
@@ -720,12 +737,13 @@
             this.picEvento.BorderColor = System.Drawing.Color.Black;
             this.picEvento.BorderRadius = 20;
             this.picEvento.BorderSize = 0;
-            this.picEvento.Location = new System.Drawing.Point(63, 64);
-            this.picEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picEvento.Location = new System.Drawing.Point(47, 52);
+            this.picEvento.Margin = new System.Windows.Forms.Padding(2);
             this.picEvento.Name = "picEvento";
-            this.picEvento.Size = new System.Drawing.Size(479, 183);
+            this.picEvento.Size = new System.Drawing.Size(359, 149);
             this.picEvento.TabIndex = 0;
             this.picEvento.TabStop = false;
+            this.picEvento.Click += new System.EventHandler(this.picEvento_Click);
             // 
             // gradientPanel1
             // 
@@ -743,11 +761,30 @@
             this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1752, 50);
+            this.gradientPanel1.Size = new System.Drawing.Size(1314, 41);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 22;
+            // 
+            // btnFeed
+            // 
+            this.btnFeed.ActiveLinkColor = System.Drawing.Color.White;
+            this.btnFeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFeed.AutoSize = true;
+            this.btnFeed.BackColor = System.Drawing.Color.Transparent;
+            this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.btnFeed.LinkColor = System.Drawing.Color.White;
+            this.btnFeed.Location = new System.Drawing.Point(770, 11);
+            this.btnFeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnFeed.Name = "btnFeed";
+            this.btnFeed.Size = new System.Drawing.Size(35, 21);
+            this.btnFeed.TabIndex = 18;
+            this.btnFeed.TabStop = true;
+            this.btnFeed.Text = "Feed";
+            this.btnFeed.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnFeed.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFeed_LinkClicked);
             // 
             // picturePerfil
             // 
@@ -760,10 +797,9 @@
             this.picturePerfil.BorderSize = 1;
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.nezuko;
-            this.picturePerfil.Location = new System.Drawing.Point(1681, 2);
-            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.picturePerfil.Location = new System.Drawing.Point(1261, 2);
             this.picturePerfil.Name = "picturePerfil";
-            this.picturePerfil.Size = new System.Drawing.Size(47, 47);
+            this.picturePerfil.Size = new System.Drawing.Size(35, 35);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturePerfil.TabIndex = 17;
             this.picturePerfil.TabStop = false;
@@ -773,10 +809,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
+            this.pictureBox1.Size = new System.Drawing.Size(37, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -789,9 +825,10 @@
             this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnPrincipal.LinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.Location = new System.Drawing.Point(67, 15);
+            this.btnPrincipal.Location = new System.Drawing.Point(50, 12);
+            this.btnPrincipal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(108, 27);
+            this.btnPrincipal.Size = new System.Drawing.Size(82, 21);
             this.btnPrincipal.TabIndex = 11;
             this.btnPrincipal.TabStop = true;
             this.btnPrincipal.Text = "CONNECTA";
@@ -807,10 +844,10 @@
             this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacoes.Location = new System.Drawing.Point(1619, 14);
-            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNotificacoes.Location = new System.Drawing.Point(1214, 11);
+            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2);
             this.btnNotificacoes.Name = "btnNotificacoes";
-            this.btnNotificacoes.Size = new System.Drawing.Size(29, 26);
+            this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
             this.btnNotificacoes.TabIndex = 10;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
             this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
@@ -822,10 +859,10 @@
             this.roundedPanel5.BorderSize = 0;
             this.roundedPanel5.Controls.Add(this.btnPesquisar);
             this.roundedPanel5.Controls.Add(this.txtPesquisar);
-            this.roundedPanel5.Location = new System.Drawing.Point(327, 12);
-            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPanel5.Location = new System.Drawing.Point(245, 10);
+            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(528, 31);
+            this.roundedPanel5.Size = new System.Drawing.Size(396, 25);
             this.roundedPanel5.TabIndex = 8;
             // 
             // btnPesquisar
@@ -835,10 +872,10 @@
             this.btnPesquisar.FlatAppearance.BorderSize = 0;
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
-            this.btnPesquisar.Location = new System.Drawing.Point(485, -2);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPesquisar.Location = new System.Drawing.Point(364, -2);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(43, 38);
+            this.btnPesquisar.Size = new System.Drawing.Size(32, 31);
             this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -849,10 +886,10 @@
             this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPesquisar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisar.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtPesquisar.Location = new System.Drawing.Point(3, 5);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPesquisar.Location = new System.Drawing.Point(2, 4);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(483, 32);
+            this.txtPesquisar.Size = new System.Drawing.Size(362, 26);
             this.txtPesquisar.TabIndex = 0;
             // 
             // btnOrganizarEventos
@@ -865,9 +902,10 @@
             this.btnOrganizarEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrganizarEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnOrganizarEventos.LinkColor = System.Drawing.Color.White;
-            this.btnOrganizarEventos.Location = new System.Drawing.Point(1109, 15);
+            this.btnOrganizarEventos.Location = new System.Drawing.Point(832, 12);
+            this.btnOrganizarEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnOrganizarEventos.Name = "btnOrganizarEventos";
-            this.btnOrganizarEventos.Size = new System.Drawing.Size(132, 27);
+            this.btnOrganizarEventos.Size = new System.Drawing.Size(105, 21);
             this.btnOrganizarEventos.TabIndex = 5;
             this.btnOrganizarEventos.TabStop = true;
             this.btnOrganizarEventos.Text = "Organizar eventos";
@@ -883,9 +921,10 @@
             this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Location = new System.Drawing.Point(1281, 16);
+            this.btnMeusEventos.Location = new System.Drawing.Point(961, 13);
+            this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnMeusEventos.Name = "btnMeusEventos";
-            this.btnMeusEventos.Size = new System.Drawing.Size(102, 27);
+            this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
             this.btnMeusEventos.TabIndex = 4;
             this.btnMeusEventos.TabStop = true;
             this.btnMeusEventos.Text = "Meus eventos";
@@ -902,9 +941,10 @@
             this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjuda.LinkColor = System.Drawing.Color.White;
-            this.btnAjuda.Location = new System.Drawing.Point(1416, 15);
+            this.btnAjuda.Location = new System.Drawing.Point(1062, 12);
+            this.btnAjuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnAjuda.Name = "btnAjuda";
-            this.btnAjuda.Size = new System.Drawing.Size(51, 27);
+            this.btnAjuda.Size = new System.Drawing.Size(41, 21);
             this.btnAjuda.TabIndex = 3;
             this.btnAjuda.TabStop = true;
             this.btnAjuda.Text = "Ajuda";
@@ -921,43 +961,26 @@
             this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnSobreNos.LinkColor = System.Drawing.Color.White;
-            this.btnSobreNos.Location = new System.Drawing.Point(1489, 16);
+            this.btnSobreNos.Location = new System.Drawing.Point(1117, 13);
+            this.btnSobreNos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnSobreNos.Name = "btnSobreNos";
-            this.btnSobreNos.Size = new System.Drawing.Size(78, 27);
+            this.btnSobreNos.Size = new System.Drawing.Size(62, 21);
             this.btnSobreNos.TabIndex = 2;
             this.btnSobreNos.TabStop = true;
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
-            // btnFeed
-            // 
-            this.btnFeed.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnFeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFeed.AutoSize = true;
-            this.btnFeed.BackColor = System.Drawing.Color.Transparent;
-            this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnFeed.LinkColor = System.Drawing.Color.White;
-            this.btnFeed.Location = new System.Drawing.Point(1027, 14);
-            this.btnFeed.Name = "btnFeed";
-            this.btnFeed.Size = new System.Drawing.Size(44, 27);
-            this.btnFeed.TabIndex = 18;
-            this.btnFeed.TabStop = true;
-            this.btnFeed.Text = "Feed";
-            this.btnFeed.VisitedLinkColor = System.Drawing.Color.White;
-            this.btnFeed.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFeed_LinkClicked);
-            // 
             // OrganizarEvento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1752, 839);
+            this.ClientSize = new System.Drawing.Size(1314, 682);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OrganizarEvento";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.OrganizarEvento_Load);

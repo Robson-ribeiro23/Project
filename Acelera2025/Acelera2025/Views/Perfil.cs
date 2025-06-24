@@ -111,5 +111,10 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaFeed(this.usuario);
         }
+
+        private void picPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

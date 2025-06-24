@@ -88,6 +88,73 @@ namespace Acelera2025.Views
         {
             try
             {
+                // === Salvar imagem do PictureBox ===
+                string caminhoImagem = null;
+                if (picEvento.Image != null)
+                {
+                    string pastaDestino = @"C:\Users\giiml\Desktop\Acelera2025\Acelera2025\Pictures";
+
+                    if (!Directory.Exists(pastaDestino))
+                        Directory.CreateDirectory(pastaDestino);
+
+                    string nomeArquivo = "evento" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
+                    string caminhoCompleto = Path.Combine(pastaDestino, nomeArquivo);
+
+                    picEvento.Image.Save(caminhoCompleto, System.Drawing.Imaging.ImageFormat.Png);
+
+                    caminhoImagem = caminhoCompleto; // Guarda o caminho para passar ao modelo
+                }
+
+                // === Dados do formulário ===
+                string nomeEvento = txtNomeEvento.Text;
+                DateTime dataEvento = dateTimePicker.Value;
+                string horario = txtHorario.Text;
+                string categoria = comboCategoria.SelectedItem?.ToString();
+                bool isPresencial = radioBtnPresencial.Checked;
+                int limiteParticipantes = int.TryParse(txtLimiteParticipantes.Text, out int limite) ? limite : 0;
+                string faixaEtaria = comboFaixaEtaria.SelectedItem?.ToString();
+                string descricao = txtDescricao.Text;
+                bool permitePatrocinio = checkBoxPatrocinio.Checked;
+                string email = this.usuario.Email;
+
+                // === Cria o evento com o caminho da imagem ===
+                EventoModels novoEvento = new EventoModels
+                (
+                    nomeEvento,
+                    dataEvento,
+                    categoria,
+                    horario,
+                    isPresencial,
+                    limiteParticipantes,
+                    faixaEtaria,
+                    descricao,
+                    permitePatrocinio,
+                    caminhoImagem,
+                    email
+                );
+
+                EventoControllers controller = new EventoControllers();
+                bool sucesso = controller.CriarEvento(novoEvento);
+
+                if (sucesso)
+                {
+                    // Exibe eventos criados no console
+                    foreach (var es in controller.ListarTodos())
+                    {
+                        Console.WriteLine("Salvo: " + es.NomeEvento + " | Imagem: " + es.CaminhoImagem);
+                    }
+                }
+
+                MessageBox.Show("Evento criado com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao criar evento: " + ex.Message);
+            }
+
+
+            /*try
+            {
 
                 string nomeEvento = txtNomeEvento.Text;
                 DateTime dataEvento = dateTimePicker.Value;
@@ -98,6 +165,7 @@ namespace Acelera2025.Views
                 string faixaEtaria = comboFaixaEtaria.SelectedItem?.ToString();
                 string descricao = txtDescricao.Text;
                 bool permitePatrocinio = checkBoxPatrocinio.Checked;
+
 
 
                 EventoModels novoEvento = new EventoModels
@@ -130,14 +198,31 @@ namespace Acelera2025.Views
                 MessageBox.Show("Evento criado com sucesso!");
 
 
-                //LimparFormulario();
-            }
+                if (picEvento.Image != null)
+                {
+                    string pastaDestino = @"C:\Users\giiml\Desktop\Acelera2025\Acelera2025\Pictures";
+
+                    if (!Directory.Exists(pastaDestino))
+                        Directory.CreateDirectory(pastaDestino);
+
+                    string nomeArquivo = "evento" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
+                    string caminhoCompleto = Path.Combine(pastaDestino, nomeArquivo);
+
+                    picEvento.Image.Save(caminhoCompleto, System.Drawing.Imaging.ImageFormat.Png);
+                }
+            
+
+
+                    //LimparFormulario();
+                }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao criar evento: " + ex.Message);
             }
 
-            //Navegador.IrParaTelaEventos(this.usuario);
+            //Navegador.IrParaTelaEventos(this.usuario); */
+
+            Navegador.IrParaTelaEventos(this.usuario);
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -188,6 +273,31 @@ namespace Acelera2025.Views
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
+        }
+
+        public void btnAddImagem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Title = "Selecionar Imagem";
+                openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    picEvento.Image = Image.FromFile(openFileDialog.FileName);
+                    picEvento.SizeMode = PictureBoxSizeMode.Zoom; // ou StretchImage, CenterImage, etc.
+                }
+            }
+        }
+
+        private void picEvento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

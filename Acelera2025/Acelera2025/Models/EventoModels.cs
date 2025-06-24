@@ -11,11 +11,13 @@ public class EventoModels
     public string FaixaEtaria { get; set; }
     public string Descricao { get; set; }
     public bool PermitePatrocinio { get; set; }
+    public string CaminhoImagem { get; set; } 
+    public string UsuarioEmail { get; set; }
 
     public EventoModels() { }
 
     public EventoModels(string nomeEvento, DateTime data, string categoria, string horario, bool isPresencial,
-                        int limiteParticipantes, string faixaEtaria, string descricao, bool permitePatrocinio)
+                        int limiteParticipantes, string faixaEtaria, string descricao, bool permitePatrocinio, string caminhoImagem, string email)
     {
         NomeEvento = nomeEvento;
         Data = data;
@@ -26,6 +28,9 @@ public class EventoModels
         FaixaEtaria = faixaEtaria;
         Descricao = descricao;
         PermitePatrocinio = permitePatrocinio;
+        CaminhoImagem = caminhoImagem;
+        UsuarioEmail = email;
+
     }
 
     public override string ToString()

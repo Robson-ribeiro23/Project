@@ -59,16 +59,24 @@ namespace Acelera2025.Views
         {
             comboEventosCriados.Items.Clear();
 
+            // Supondo que você tenha o usuário logado em this.usuario.Email
+            string emailUsuarioLogado = this.usuario.Email;
+
             List<EventoModels> eventos = new EventoControllers().ListarTodos();
 
-            if (eventos != null && eventos.Count > 0)
+            // FILTRA apenas os eventos do usuário logado
+            var eventosDoUsuario = eventos
+            .Where(e => e.UsuarioEmail == emailUsuarioLogado)
+            .ToList();
+
+            if (eventosDoUsuario.Count > 0)
             {
-                foreach (var evento in eventos)
+                foreach (var evento in eventosDoUsuario)
                 {
                     comboEventosCriados.Items.Add(evento.NomeEvento);
                 }
 
-                comboEventosCriados.SelectedIndex = 0; // seleciona o primeiro automaticamente
+                comboEventosCriados.SelectedIndex = 0;
             }
             else
             {
@@ -124,7 +132,43 @@ namespace Acelera2025.Views
 
         private void comboEventosCriados_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+
             string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
+            if (string.IsNullOrWhiteSpace(nomeSelecionado)) return;
+
+            EventoModels evento = new EventoControllers().BuscarPorNome(nomeSelecionado);
+            if (evento == null || evento.UsuarioEmail != this.usuario.Email) return;
+
+            lblNomeEvento.Text = evento.NomeEvento;
+            lblData.Text = evento.Data.ToString("dd/MM/yyyy");
+            lblHora.Text = evento.Horario;
+            lblCategorias.Text = evento.Categoria;
+            lblPresencialOnline.Text = evento.IsPresencial ? "Presencial" : "Online";
+            lblLimiteParticipantes.Text = evento.LimiteParticipantes.ToString();
+            lblFaixaEtaria.Text = evento.FaixaEtaria;
+            txtDescricao.Text = evento.Descricao;
+
+            if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+            {
+                using (var imgTemp = Image.FromFile(evento.CaminhoImagem))
+                {
+                    PicEvento.Image = new Bitmap(imgTemp);
+                }
+                PicEvento.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            else
+            {
+                PicEvento.Image = null;
+            }
+
+
+
+
+
+
+
+            /*string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
             if (string.IsNullOrWhiteSpace(nomeSelecionado)) return;
 
             EventoModels evento = new EventoControllers().BuscarPorNome(nomeSelecionado);
@@ -139,7 +183,28 @@ namespace Acelera2025.Views
             lblLimiteParticipantes.Text = evento.LimiteParticipantes.ToString();
             lblFaixaEtaria.Text = evento.FaixaEtaria;
             txtDescricao.Text = evento.Descricao;
-            //lblPatrocinio.Text = evento.PermitePatrocinio ? "Permitido" : "Não permitido";
+            // lblPatrocinio.Text = evento.PermitePatrocinio ? "Permitido" : "Não permitido";
+
+            // Carregar a imagem do evento no PictureBox
+            if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+            {
+                using (var imgTemp = Image.FromFile(evento.CaminhoImagem))
+                {
+                    PicEvento.Image = new Bitmap(imgTemp); // cria uma cópia para evitar travamento do arquivo
+                }
+                PicEvento.SizeMode = PictureBoxSizeMode.Zoom; // ajusta a imagem ao PictureBox
+            }
+            else
+            {
+                PicEvento.Image = null; // limpa caso não haja imagem
+            }
+            */
+
+        }
+
+        private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
