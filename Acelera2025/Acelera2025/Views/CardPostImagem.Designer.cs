@@ -128,14 +128,15 @@
             // 
             // lblData
             // 
+            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData.Location = new System.Drawing.Point(563, 39);
+            this.lblData.Location = new System.Drawing.Point(533, 39);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(49, 30);
+            this.lblData.Size = new System.Drawing.Size(91, 30);
             this.lblData.TabIndex = 65;
-            this.lblData.Text = "Data";
+            this.lblData.Text = "xx/xx/xxxx";
             // 
             // lblTexto
             // 
@@ -195,6 +196,7 @@
             this.btnCurtir.Size = new System.Drawing.Size(27, 25);
             this.btnCurtir.TabIndex = 58;
             this.btnCurtir.UseVisualStyleBackColor = false;
+            this.btnCurtir.Click += new System.EventHandler(this.btnCurtir_Click);
             // 
             // btnComentar
             // 

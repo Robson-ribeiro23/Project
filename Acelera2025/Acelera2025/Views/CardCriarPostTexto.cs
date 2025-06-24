@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ac;
+using Acelera2025.Views;
 
 namespace Acelera2025.Telas
 {
     public partial class CardCriarPostTexto: UserControl
     {
+        public event EventHandler OnPostCriado;
         private PessoaModels usuario;
         public CardCriarPostTexto(PessoaModels usuario)
         {
@@ -22,12 +25,18 @@ namespace Acelera2025.Telas
 
         private void btnPostar_Click(object sender, EventArgs e)
         {
+            
+            if (string.IsNullOrWhiteSpace(txtTexto.Text))
+            {
+                MessageBox.Show("O texto da postagem não pode estar vazio.");
+                return;
+            }
 
             var post = new PostModels(
-                this.usuario,
-                txtTexto.Text,
-                new List<string>(),
-                null
+                usuario: this.usuario,
+                texto: txtTexto.Text,
+                imagens: null,             
+                video: null              
             )
             {
                 Data = DateTime.Now,
@@ -35,12 +44,23 @@ namespace Acelera2025.Telas
                 Comentarios = new List<ComentariosModels>()
             };
 
+            
             if (this.usuario.Postagens == null)
-            {
                 this.usuario.Postagens = new List<PostModels>();
 
-            }
+            
             this.usuario.Postagens.Add(post);
+
+            this.Parent.Controls.Remove(this);
+            OnPostCriado?.Invoke(this, EventArgs.Empty);
+
+            txtTexto.Clear();
+            MessageBox.Show("Postagem de texto criada com sucesso!");
+        }
+
+        private void btnFechar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Navegador.IrParaFeed(this.usuario);
         }
     }
 }

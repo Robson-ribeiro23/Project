@@ -85,6 +85,7 @@
             this.btnFechar.TabStop = true;
             this.btnFechar.Text = "X";
             this.btnFechar.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnFechar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFechar_LinkClicked);
             // 
             // panel1
             // 
@@ -119,6 +120,7 @@
             this.txtTexto.Location = new System.Drawing.Point(135, 92);
             this.txtTexto.Multiline = true;
             this.txtTexto.Name = "txtTexto";
+            this.txtTexto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTexto.Size = new System.Drawing.Size(632, 163);
             this.txtTexto.TabIndex = 11;
             // 

@@ -12,10 +12,20 @@ namespace Acelera2025.Views
 {
     public partial class CardPostVideo: UserControl
     {
-        public CardPostVideo()
+        private PostModels postagem;
+        public CardPostVideo(PostModels postagem)
         {
             InitializeComponent();
-            
+            this.postagem = postagem;
+            lblNome.Text = postagem.Usuario.Nome;
+            lblTexto.Text = postagem.Texto;
+            lblData.Text = postagem.Data.ToString("dd/MM/yyyy HH:mm");
+            if (!string.IsNullOrEmpty(postagem.Video))
+            {
+                video.URL = postagem.Video;
+            }
+
+            this.postagem = postagem;
         }
         private void CardPostVideo_Load(object sender, EventArgs e)
         {
@@ -31,6 +41,9 @@ namespace Acelera2025.Views
 
         }
 
-        
+        private void btnCurtir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

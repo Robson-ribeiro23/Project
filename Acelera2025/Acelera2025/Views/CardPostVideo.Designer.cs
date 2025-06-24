@@ -34,7 +34,7 @@
             this.txtComentario = new System.Windows.Forms.TextBox();
             this.btnComentar = new CircularButton();
             this.roundedPanel2 = new RoundedPanel();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.video = new AxWMPLib.AxWindowsMediaPlayer();
             this.lblData = new System.Windows.Forms.Label();
             this.lblTexto = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.btnCurtir = new CircularButton();
             this.roundedPanel1.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.video)).BeginInit();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -102,7 +102,7 @@
             this.roundedPanel2.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel2.BorderRadius = 20;
             this.roundedPanel2.BorderSize = 0;
-            this.roundedPanel2.Controls.Add(this.axWindowsMediaPlayer1);
+            this.roundedPanel2.Controls.Add(this.video);
             this.roundedPanel2.Controls.Add(this.lblData);
             this.roundedPanel2.Controls.Add(this.lblTexto);
             this.roundedPanel2.Controls.Add(this.lblNome);
@@ -116,14 +116,14 @@
             this.roundedPanel2.TabIndex = 0;
             this.roundedPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel2_Paint);
             // 
-            // axWindowsMediaPlayer1
+            // video
             // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(33, 134);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(579, 254);
-            this.axWindowsMediaPlayer1.TabIndex = 70;
+            this.video.Enabled = true;
+            this.video.Location = new System.Drawing.Point(33, 134);
+            this.video.Name = "video";
+            this.video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video.OcxState")));
+            this.video.Size = new System.Drawing.Size(579, 254);
+            this.video.TabIndex = 70;
             // 
             // lblData
             // 
@@ -194,6 +194,7 @@
             this.btnCurtir.Size = new System.Drawing.Size(27, 25);
             this.btnCurtir.TabIndex = 60;
             this.btnCurtir.UseVisualStyleBackColor = false;
+            this.btnCurtir.Click += new System.EventHandler(this.btnCurtir_Click);
             // 
             // CardPostVideo
             // 
@@ -208,7 +209,7 @@
             this.roundedPanel1.PerformLayout();
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.video)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -226,6 +227,6 @@
         private System.Windows.Forms.Label lblNome;
         private CircularPanel picPerfil;
         private System.Windows.Forms.Panel panelComentarios;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private AxWMPLib.AxWindowsMediaPlayer video;
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardCriarPostVideo));
             this.roundedPanel1 = new RoundedPanel();
+            this.video = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPostar = new RoundedButton();
             this.btnSelecionarVideo = new System.Windows.Forms.Button();
@@ -37,11 +38,10 @@
             this.txtTexto = new System.Windows.Forms.TextBox();
             this.btnFechar = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.video = new AxWMPLib.AxWindowsMediaPlayer();
             this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.video)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.video)).BeginInit();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -62,6 +62,15 @@
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(858, 375);
             this.roundedPanel1.TabIndex = 1;
+            // 
+            // video
+            // 
+            this.video.Enabled = true;
+            this.video.Location = new System.Drawing.Point(582, 78);
+            this.video.Name = "video";
+            this.video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video.OcxState")));
+            this.video.Size = new System.Drawing.Size(250, 198);
+            this.video.TabIndex = 48;
             // 
             // panel1
             // 
@@ -88,11 +97,11 @@
             this.btnPostar.TabIndex = 12;
             this.btnPostar.Text = "Postar";
             this.btnPostar.UseVisualStyleBackColor = false;
+            this.btnPostar.Click += new System.EventHandler(this.btnPostar_Click);
             // 
             // btnSelecionarVideo
             // 
-            this.btnSelecionarVideo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSelecionarVideo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSelecionarVideo.BackColor = System.Drawing.Color.Transparent;
             this.btnSelecionarVideo.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_create_100;
             this.btnSelecionarVideo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -104,6 +113,7 @@
             this.btnSelecionarVideo.Size = new System.Drawing.Size(22, 27);
             this.btnSelecionarVideo.TabIndex = 47;
             this.btnSelecionarVideo.UseVisualStyleBackColor = false;
+            this.btnSelecionarVideo.Click += new System.EventHandler(this.btnSelecionarVideo_Click);
             // 
             // picPerfil
             // 
@@ -157,15 +167,6 @@
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
-            // video
-            // 
-            this.video.Enabled = true;
-            this.video.Location = new System.Drawing.Point(582, 78);
-            this.video.Name = "video";
-            this.video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video.OcxState")));
-            this.video.Size = new System.Drawing.Size(250, 198);
-            this.video.TabIndex = 48;
-            // 
             // CardCriarPostVideo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -176,9 +177,9 @@
             this.Size = new System.Drawing.Size(858, 375);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.video)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.video)).EndInit();
             this.ResumeLayout(false);
 
         }

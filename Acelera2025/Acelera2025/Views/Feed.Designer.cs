@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Feed));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
             this.btnEventosIngressados = new RoundedButton();
@@ -39,11 +40,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.btnPostarTexto = new System.Windows.Forms.LinkLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.panelPosts = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelNotificacoes = new System.Windows.Forms.FlowLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
@@ -86,15 +86,27 @@
             // panel4
             // 
             this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.flowLayoutPanel1);
             this.panel4.Controls.Add(this.panelMeusEventos);
             this.panel4.Controls.Add(this.superiorRoundedPanel1);
-            this.panel4.Controls.Add(this.panelPosts);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1345, 653);
             this.panel4.TabIndex = 2;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(164, 241);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1007, 400);
+            this.flowLayoutPanel1.TabIndex = 28;
+            this.flowLayoutPanel1.WrapContents = false;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // panelMeusEventos
             // 
@@ -105,7 +117,7 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1076, 7);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1097, 7);
             this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
@@ -157,14 +169,14 @@
             this.superiorRoundedPanel1.Controls.Add(this.button1);
             this.superiorRoundedPanel1.Controls.Add(this.linkLabel3);
             this.superiorRoundedPanel1.Controls.Add(this.linkLabel2);
-            this.superiorRoundedPanel1.Controls.Add(this.linkLabel1);
+            this.superiorRoundedPanel1.Controls.Add(this.btnPostarTexto);
             this.superiorRoundedPanel1.Controls.Add(this.panel3);
             this.superiorRoundedPanel1.Controls.Add(this.label1);
             this.superiorRoundedPanel1.Controls.Add(this.button3);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(162, 37);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(164, 37);
             this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(999, 138);
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1007, 138);
             this.superiorRoundedPanel1.TabIndex = 9;
             // 
             // button2
@@ -179,9 +191,10 @@
             this.button2.Location = new System.Drawing.Point(383, 82);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(37, 36);
+            this.button2.Size = new System.Drawing.Size(45, 36);
             this.button2.TabIndex = 13;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -195,9 +208,10 @@
             this.button1.Location = new System.Drawing.Point(47, 75);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 50);
+            this.button1.Size = new System.Drawing.Size(63, 50);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLabel3
             // 
@@ -208,7 +222,7 @@
             this.linkLabel3.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.linkLabel3.Location = new System.Drawing.Point(755, 89);
+            this.linkLabel3.Location = new System.Drawing.Point(763, 89);
             this.linkLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(142, 27);
@@ -216,6 +230,7 @@
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Postagem de Vídeo";
             this.linkLabel3.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -226,7 +241,7 @@
             this.linkLabel2.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.linkLabel2.Location = new System.Drawing.Point(429, 94);
+            this.linkLabel2.Location = new System.Drawing.Point(436, 88);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(158, 27);
@@ -234,24 +249,26 @@
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Postagem de Imagem";
             this.linkLabel2.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // linkLabel1
+            // btnPostarTexto
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Tomato;
-            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.linkLabel1.Location = new System.Drawing.Point(96, 89);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(140, 27);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Postagem de Texto";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnPostarTexto.ActiveLinkColor = System.Drawing.Color.Tomato;
+            this.btnPostarTexto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPostarTexto.AutoSize = true;
+            this.btnPostarTexto.BackColor = System.Drawing.Color.Transparent;
+            this.btnPostarTexto.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPostarTexto.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.btnPostarTexto.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnPostarTexto.Location = new System.Drawing.Point(104, 89);
+            this.btnPostarTexto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btnPostarTexto.Name = "btnPostarTexto";
+            this.btnPostarTexto.Size = new System.Drawing.Size(140, 27);
+            this.btnPostarTexto.TabIndex = 10;
+            this.btnPostarTexto.TabStop = true;
+            this.btnPostarTexto.Text = "Postagem de Texto";
+            this.btnPostarTexto.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnPostarTexto.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // panel3
             // 
@@ -261,7 +278,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 65);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(999, 2);
+            this.panel3.Size = new System.Drawing.Size(1007, 2);
             this.panel3.TabIndex = 9;
             // 
             // label1
@@ -290,19 +307,10 @@
             this.button3.Location = new System.Drawing.Point(709, 81);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(37, 36);
+            this.button3.Size = new System.Drawing.Size(45, 36);
             this.button3.TabIndex = 8;
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // panelPosts
-            // 
-            this.panelPosts.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panelPosts.AutoSize = true;
-            this.panelPosts.Location = new System.Drawing.Point(162, 210);
-            this.panelPosts.Margin = new System.Windows.Forms.Padding(4);
-            this.panelPosts.Name = "panelPosts";
-            this.panelPosts.Size = new System.Drawing.Size(999, 581);
-            this.panelPosts.TabIndex = 1;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel2
             // 
@@ -318,10 +326,10 @@
             // panelNotificacoes
             // 
             this.panelNotificacoes.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panelNotificacoes.Location = new System.Drawing.Point(43, 102);
+            this.panelNotificacoes.Location = new System.Drawing.Point(26, 75);
             this.panelNotificacoes.Margin = new System.Windows.Forms.Padding(4);
             this.panelNotificacoes.Name = "panelNotificacoes";
-            this.panelNotificacoes.Size = new System.Drawing.Size(409, 670);
+            this.panelNotificacoes.Size = new System.Drawing.Size(314, 670);
             this.panelNotificacoes.TabIndex = 5;
             // 
             // label10
@@ -584,7 +592,6 @@
             this.Load += new System.EventHandler(this.Feed_Load);
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panelMeusEventos.ResumeLayout(false);
             this.superiorRoundedPanel1.ResumeLayout(false);
             this.superiorRoundedPanel1.PerformLayout();
@@ -618,7 +625,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.FlowLayoutPanel panelNotificacoes;
-        private System.Windows.Forms.Panel panelPosts;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
@@ -626,7 +632,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel btnPostarTexto;
         private CircularPanel btnPerfil;
         private System.Windows.Forms.Button button2;
         private Tools.CircularPictureBox picturePerfil;
@@ -634,5 +640,6 @@
         private RoundedButton btnEventosCriados;
         private RoundedButton btnEventosIngressados;
         private System.Windows.Forms.LinkLabel btnFeed;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

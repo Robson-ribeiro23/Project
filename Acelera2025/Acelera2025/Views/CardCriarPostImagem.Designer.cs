@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardCriarPostImagem));
             this.roundedPanel1 = new RoundedPanel();
             this.btnSelecionarImagem2 = new System.Windows.Forms.Button();
-            this.btnSelecionarImagem1 = new System.Windows.Forms.Button();
             this.picImagem2 = new Acelera2025.Ferramentas.RoundedPicture();
             this.picImagem1 = new Acelera2025.Ferramentas.RoundedPicture();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -54,7 +53,6 @@
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 2;
             this.roundedPanel1.Controls.Add(this.btnSelecionarImagem2);
-            this.roundedPanel1.Controls.Add(this.btnSelecionarImagem1);
             this.roundedPanel1.Controls.Add(this.picImagem2);
             this.roundedPanel1.Controls.Add(this.picImagem1);
             this.roundedPanel1.Controls.Add(this.pictureBox1);
@@ -77,28 +75,13 @@
             this.btnSelecionarImagem2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSelecionarImagem2.FlatAppearance.BorderSize = 0;
             this.btnSelecionarImagem2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelecionarImagem2.Location = new System.Drawing.Point(662, 264);
+            this.btnSelecionarImagem2.Location = new System.Drawing.Point(662, 114);
             this.btnSelecionarImagem2.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelecionarImagem2.Name = "btnSelecionarImagem2";
             this.btnSelecionarImagem2.Size = new System.Drawing.Size(22, 27);
             this.btnSelecionarImagem2.TabIndex = 40;
             this.btnSelecionarImagem2.UseVisualStyleBackColor = false;
-            // 
-            // btnSelecionarImagem1
-            // 
-            this.btnSelecionarImagem1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSelecionarImagem1.BackColor = System.Drawing.Color.Transparent;
-            this.btnSelecionarImagem1.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_create_100;
-            this.btnSelecionarImagem1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSelecionarImagem1.FlatAppearance.BorderSize = 0;
-            this.btnSelecionarImagem1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelecionarImagem1.Location = new System.Drawing.Point(662, 125);
-            this.btnSelecionarImagem1.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSelecionarImagem1.Name = "btnSelecionarImagem1";
-            this.btnSelecionarImagem1.Size = new System.Drawing.Size(22, 27);
-            this.btnSelecionarImagem1.TabIndex = 39;
-            this.btnSelecionarImagem1.UseVisualStyleBackColor = false;
+            this.btnSelecionarImagem2.Click += new System.EventHandler(this.btnSelecionarImagem2_Click);
             // 
             // picImagem2
             // 
@@ -177,6 +160,7 @@
             this.btnPostar.TabIndex = 12;
             this.btnPostar.Text = "Postar";
             this.btnPostar.UseVisualStyleBackColor = false;
+            this.btnPostar.Click += new System.EventHandler(this.btnPostar_Click);
             // 
             // txtTexto
             // 
@@ -232,6 +216,5 @@
         private Ferramentas.RoundedPicture picImagem2;
         private Ferramentas.RoundedPicture picImagem1;
         private System.Windows.Forms.Button btnSelecionarImagem2;
-        private System.Windows.Forms.Button btnSelecionarImagem1;
     }
 }
