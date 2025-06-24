@@ -41,9 +41,11 @@
             this.picPerfil = new CircularPanel();
             this.lblCurtidas = new System.Windows.Forms.Label();
             this.btnCurtir = new CircularButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.roundedPanel1.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.video)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -102,7 +104,7 @@
             this.roundedPanel2.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel2.BorderRadius = 20;
             this.roundedPanel2.BorderSize = 0;
-            this.roundedPanel2.Controls.Add(this.video);
+            this.roundedPanel2.Controls.Add(this.panel1);
             this.roundedPanel2.Controls.Add(this.lblData);
             this.roundedPanel2.Controls.Add(this.lblTexto);
             this.roundedPanel2.Controls.Add(this.lblNome);
@@ -112,17 +114,18 @@
             this.roundedPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.roundedPanel2.Location = new System.Drawing.Point(0, 0);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(650, 453);
+            this.roundedPanel2.Size = new System.Drawing.Size(647, 453);
             this.roundedPanel2.TabIndex = 0;
             this.roundedPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel2_Paint);
             // 
             // video
             // 
+            this.video.Dock = System.Windows.Forms.DockStyle.Fill;
             this.video.Enabled = true;
-            this.video.Location = new System.Drawing.Point(33, 134);
+            this.video.Location = new System.Drawing.Point(0, 0);
             this.video.Name = "video";
             this.video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video.OcxState")));
-            this.video.Size = new System.Drawing.Size(579, 254);
+            this.video.Size = new System.Drawing.Size(429, 221);
             this.video.TabIndex = 70;
             // 
             // lblData
@@ -130,7 +133,7 @@
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData.Location = new System.Drawing.Point(563, 37);
+            this.lblData.Location = new System.Drawing.Point(523, 37);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(49, 30);
             this.lblData.TabIndex = 69;
@@ -173,7 +176,7 @@
             this.lblCurtidas.AutoSize = true;
             this.lblCurtidas.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurtidas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCurtidas.Location = new System.Drawing.Point(66, 410);
+            this.lblCurtidas.Location = new System.Drawing.Point(66, 409);
             this.lblCurtidas.Name = "lblCurtidas";
             this.lblCurtidas.Size = new System.Drawing.Size(77, 27);
             this.lblCurtidas.TabIndex = 61;
@@ -196,6 +199,14 @@
             this.btnCurtir.UseVisualStyleBackColor = false;
             this.btnCurtir.Click += new System.EventHandler(this.btnCurtir_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.video);
+            this.panel1.Location = new System.Drawing.Point(33, 167);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(429, 221);
+            this.panel1.TabIndex = 71;
+            // 
             // CardPostVideo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -210,6 +221,7 @@
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.video)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -228,5 +240,6 @@
         private CircularPanel picPerfil;
         private System.Windows.Forms.Panel panelComentarios;
         private AxWMPLib.AxWindowsMediaPlayer video;
+        private System.Windows.Forms.Panel panel1;
     }
 }

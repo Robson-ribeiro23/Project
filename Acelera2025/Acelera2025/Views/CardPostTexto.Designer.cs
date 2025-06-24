@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardPostTexto));
             this.roundedPanel1 = new RoundedPanel();
-            this.panelComentarios = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.txtComentarios = new System.Windows.Forms.TextBox();
             this.roundedPanel2 = new RoundedPanel();
-            this.lblData = new System.Windows.Forms.Label();
-            this.lblTexto = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.picPerfil = new CircularPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lblCurtidas = new System.Windows.Forms.Label();
             this.btnCurtir = new CircularButton();
-            this.btnComentar = new CircularButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTexto = new System.Windows.Forms.Label();
+            this.lblData = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.picPerfil = new CircularPanel();
+            this.btnComentar = new CircularButton();
             this.roundedPanel1.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -54,7 +54,7 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
-            this.roundedPanel1.Controls.Add(this.panelComentarios);
+            this.roundedPanel1.Controls.Add(this.flowLayoutPanel1);
             this.roundedPanel1.Controls.Add(this.txtComentarios);
             this.roundedPanel1.Controls.Add(this.roundedPanel2);
             this.roundedPanel1.Controls.Add(this.btnComentar);
@@ -64,13 +64,13 @@
             this.roundedPanel1.Size = new System.Drawing.Size(978, 314);
             this.roundedPanel1.TabIndex = 1;
             // 
-            // panelComentarios
+            // flowLayoutPanel1
             // 
-            this.panelComentarios.AutoScroll = true;
-            this.panelComentarios.Location = new System.Drawing.Point(673, 13);
-            this.panelComentarios.Name = "panelComentarios";
-            this.panelComentarios.Size = new System.Drawing.Size(289, 230);
-            this.panelComentarios.TabIndex = 61;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(673, 16);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(289, 227);
+            this.flowLayoutPanel1.TabIndex = 61;
             // 
             // txtComentarios
             // 
@@ -101,48 +101,15 @@
             this.roundedPanel2.TabIndex = 0;
             this.roundedPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel2_Paint);
             // 
-            // lblData
+            // panel2
             // 
-            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData.Location = new System.Drawing.Point(494, 39);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(128, 30);
-            this.lblData.TabIndex = 65;
-            this.lblData.Text = "xx/xx/xxxx";
-            // 
-            // lblTexto
-            // 
-            this.lblTexto.AutoSize = true;
-            this.lblTexto.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblTexto.Location = new System.Drawing.Point(18, 13);
-            this.lblTexto.Name = "lblTexto";
-            this.lblTexto.Size = new System.Drawing.Size(122, 36);
-            this.lblTexto.TabIndex = 64;
-            this.lblTexto.Text = "Texto TEXTo";
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNome.Location = new System.Drawing.Point(84, 39);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(74, 36);
-            this.lblNome.TabIndex = 63;
-            this.lblNome.Text = "Nome ";
-            // 
-            // picPerfil
-            // 
-            this.picPerfil.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.picPerfil.BorderColor = System.Drawing.Color.Black;
-            this.picPerfil.BorderSize = 0;
-            this.picPerfil.Location = new System.Drawing.Point(23, 24);
-            this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(55, 61);
-            this.picPerfil.TabIndex = 62;
+            this.panel2.Controls.Add(this.lblCurtidas);
+            this.panel2.Controls.Add(this.btnCurtir);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 271);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(650, 43);
+            this.panel2.TabIndex = 67;
             // 
             // lblCurtidas
             // 
@@ -171,6 +138,61 @@
             this.btnCurtir.UseVisualStyleBackColor = false;
             this.btnCurtir.Click += new System.EventHandler(this.btnCurtir_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoScroll = true;
+            this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.lblTexto);
+            this.panel1.Location = new System.Drawing.Point(3, 91);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(647, 166);
+            this.panel1.TabIndex = 66;
+            // 
+            // lblTexto
+            // 
+            this.lblTexto.AutoSize = true;
+            this.lblTexto.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblTexto.Location = new System.Drawing.Point(18, 13);
+            this.lblTexto.Name = "lblTexto";
+            this.lblTexto.Size = new System.Drawing.Size(122, 36);
+            this.lblTexto.TabIndex = 64;
+            this.lblTexto.Text = "Texto TEXTo";
+            // 
+            // lblData
+            // 
+            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblData.Location = new System.Drawing.Point(494, 39);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(128, 30);
+            this.lblData.TabIndex = 65;
+            this.lblData.Text = "xx/xx/xxxx";
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblNome.Location = new System.Drawing.Point(84, 39);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(74, 36);
+            this.lblNome.TabIndex = 63;
+            this.lblNome.Text = "Nome ";
+            // 
+            // picPerfil
+            // 
+            this.picPerfil.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.picPerfil.BorderColor = System.Drawing.Color.Black;
+            this.picPerfil.BorderSize = 0;
+            this.picPerfil.Location = new System.Drawing.Point(23, 24);
+            this.picPerfil.Name = "picPerfil";
+            this.picPerfil.Size = new System.Drawing.Size(55, 61);
+            this.picPerfil.TabIndex = 62;
+            // 
             // btnComentar
             // 
             this.btnComentar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -186,28 +208,7 @@
             this.btnComentar.Size = new System.Drawing.Size(27, 28);
             this.btnComentar.TabIndex = 60;
             this.btnComentar.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.AutoScroll = true;
-            this.panel1.AutoSize = true;
-            this.panel1.Controls.Add(this.lblTexto);
-            this.panel1.Location = new System.Drawing.Point(3, 91);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(647, 166);
-            this.panel1.TabIndex = 66;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblCurtidas);
-            this.panel2.Controls.Add(this.btnCurtir);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 271);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(650, 43);
-            this.panel2.TabIndex = 67;
+            this.btnComentar.Click += new System.EventHandler(this.btnComentar_Click);
             // 
             // CardPostTexto
             // 
@@ -222,10 +223,10 @@
             this.roundedPanel1.PerformLayout();
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -242,8 +243,8 @@
         private System.Windows.Forms.Label lblCurtidas;
         private CircularButton btnCurtir;
         private CircularButton btnComentar;
-        private System.Windows.Forms.Panel panelComentarios;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ac;
 
 namespace Acelera2025.Telas
 {
@@ -112,6 +113,11 @@ namespace Acelera2025.Telas
                     picImagem2.Visible = true;
                 }
             }
+        }
+
+        private void btnFechar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Navegador.IrParaFeed(this.usuario);
         }
     }
 }

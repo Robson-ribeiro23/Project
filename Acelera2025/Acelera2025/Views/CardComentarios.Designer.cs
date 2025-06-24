@@ -91,13 +91,14 @@
             this.btnCurtir.Size = new System.Drawing.Size(15, 15);
             this.btnCurtir.TabIndex = 66;
             this.btnCurtir.UseVisualStyleBackColor = false;
+            this.btnCurtir.Click += new System.EventHandler(this.btnCurtir_Click);
             // 
             // lblTexto
             // 
             this.lblTexto.AutoSize = true;
             this.lblTexto.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblTexto.Location = new System.Drawing.Point(40, 39);
+            this.lblTexto.Location = new System.Drawing.Point(56, 39);
             this.lblTexto.Name = "lblTexto";
             this.lblTexto.Size = new System.Drawing.Size(57, 27);
             this.lblTexto.TabIndex = 65;

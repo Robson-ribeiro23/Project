@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ac;
 
 namespace Acelera2025.Telas
 {
@@ -19,6 +20,7 @@ namespace Acelera2025.Telas
         {
             InitializeComponent();
             this.usuario = usuario;
+            video.Anchor = AnchorStyles.Top | AnchorStyles.Left;
         }
 
         private void btnSelecionarVideo_Click(object sender, EventArgs e)
@@ -75,6 +77,11 @@ namespace Acelera2025.Telas
 
             txtTexto.Clear();
             MessageBox.Show("Postagem de imagens criada com sucesso!");
+        }
+
+        private void btnFechar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Navegador.IrParaFeed(this.usuario);
         }
     }
 }

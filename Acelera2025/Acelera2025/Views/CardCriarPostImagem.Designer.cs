@@ -51,7 +51,7 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.BorderSize = 0;
             this.roundedPanel1.Controls.Add(this.btnSelecionarImagem2);
             this.roundedPanel1.Controls.Add(this.picImagem2);
             this.roundedPanel1.Controls.Add(this.picImagem1);
@@ -134,6 +134,7 @@
             this.btnFechar.TabStop = true;
             this.btnFechar.Text = "X";
             this.btnFechar.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnFechar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFechar_LinkClicked);
             // 
             // panel1
             // 

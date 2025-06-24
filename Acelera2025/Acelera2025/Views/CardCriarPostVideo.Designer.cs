@@ -49,7 +49,7 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.BorderSize = 0;
             this.roundedPanel1.Controls.Add(this.video);
             this.roundedPanel1.Controls.Add(this.panel1);
             this.roundedPanel1.Controls.Add(this.btnSelecionarVideo);
@@ -156,6 +156,7 @@
             this.btnFechar.TabStop = true;
             this.btnFechar.Text = "X";
             this.btnFechar.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnFechar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnFechar_LinkClicked);
             // 
             // pictureBox1
             // 
@@ -169,8 +170,7 @@
             // 
             // CardCriarPostVideo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.roundedPanel1);
             this.Name = "CardCriarPostVideo";

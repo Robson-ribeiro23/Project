@@ -46,7 +46,7 @@
             this.roundedPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.BorderSize = 2;
+            this.roundedPanel1.BorderSize = 0;
             this.roundedPanel1.Controls.Add(this.pictureBox1);
             this.roundedPanel1.Controls.Add(this.btnFechar);
             this.roundedPanel1.Controls.Add(this.panel1);

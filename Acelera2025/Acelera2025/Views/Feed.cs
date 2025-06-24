@@ -140,25 +140,27 @@ namespace Acelera2025.Views
 
         public void CarregarPostagensNoFeed()
         {
-            //flowLayoutPanel1.Controls.Clear();
-
-            var postagensOrdenadas = usuario.Postagens?
-                                      .OrderByDescending(p => p.Data)
-                                      .ToList();
-            if (postagensOrdenadas != null)
+            flowLayoutPanel1.Controls.Clear();
+            foreach (var post in usuario.Postagens.OrderByDescending(p => p.Data))
             {
-                foreach (var postagem in postagensOrdenadas)
+                UserControl cardPost = null;
+
+                if (post.Video != null)
                 {
-                    var cardPostTexto = new CardPostTexto(postagem);
-                    var cardPostImagem = new CardPostImagem(postagem);
-                    //cardPost.Margin = new Padding(10);
-                    //cardPost.Width = flowLayoutPanel1.Width - 25; 
-                    
-                    cardPostTexto.BringToFront();
-                    flowLayoutPanel1.Controls.Add(cardPostTexto);
-                    cardPostImagem.BringToFront();
-                    flowLayoutPanel1.Controls.Add(cardPostImagem);
+                    cardPost = new CardPostVideo(post); 
                 }
+                else if (post.Imagens != null && post.Imagens.Count > 0)
+                {
+                    cardPost = new CardPostImagem(post); 
+                }
+                else
+                {
+                    cardPost = new CardPostTexto(post);
+                }
+
+                cardPost.Width = flowLayoutPanel1.Width - 25;
+                cardPost.Margin = new Padding(10);
+                flowLayoutPanel1.Controls.Add(cardPost);
             }
         }
 

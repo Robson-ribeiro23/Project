@@ -104,7 +104,7 @@
             // 
             // picPost2
             // 
-            this.picPost2.BackColor = System.Drawing.Color.Silver;
+            this.picPost2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.picPost2.BorderColor = System.Drawing.Color.Black;
             this.picPost2.BorderRadius = 20;
             this.picPost2.BorderSize = 0;
@@ -116,7 +116,7 @@
             // 
             // picPost1
             // 
-            this.picPost1.BackColor = System.Drawing.Color.Silver;
+            this.picPost1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.picPost1.BorderColor = System.Drawing.Color.Black;
             this.picPost1.BorderRadius = 20;
             this.picPost1.BorderSize = 0;
@@ -132,7 +132,7 @@
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData.Location = new System.Drawing.Point(533, 39);
+            this.lblData.Location = new System.Drawing.Point(472, 39);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(91, 30);
             this.lblData.TabIndex = 65;

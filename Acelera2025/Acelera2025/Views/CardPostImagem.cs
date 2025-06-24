@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera2025.Controllers;
 
 namespace Acelera2025.Views
 { 
@@ -29,10 +30,44 @@ namespace Acelera2025.Views
                 picPost2.Image = Image.FromFile(postagem.Imagens[1]);
             }
 
+            ConfigurarBotaoCurtir();
+            AtualizarContadorCurtidas();
+        }
+        private void ConfigurarBotaoCurtir()
+        {
+            bool curtido = postagem.Curtidas.Any(c => c.Usuario == postagem.Usuario.Nome);
+            btnCurtir.ForeColor = curtido ? Color.Red : Color.Gray;
+
+            btnCurtir.Click += (s, e) => {
+                CurtirPostagem();
+            };
         }
 
+        private void CurtirPostagem()
+        {
+            var curtidaExistente = postagem.Curtidas.FirstOrDefault(c => c.Usuario == postagem.Usuario.Nome);
+
+            if (curtidaExistente != null)
+            {
+                postagem.Curtidas.Remove(curtidaExistente);
+                btnCurtir.ForeColor = Color.Gray;
+            }
+            else
+            {
+                postagem.Curtidas.Add(new CurtidasModels(postagem.Usuario.Nome));
+
+                btnCurtir.ForeColor = Color.Red;
+            }
+            AtualizarContadorCurtidas();
+        }
         private void btnCurtir_Click(object sender, EventArgs e)
         {
+            ConfigurarBotaoCurtir();
+        }
+        private void AtualizarContadorCurtidas()
+        {
+            var controller = new PostagemControllers();
+            lblCurtidas.Text = controller.ObterTotalCurtidas(postagem).ToString() + " curtidas";
 
         }
     }

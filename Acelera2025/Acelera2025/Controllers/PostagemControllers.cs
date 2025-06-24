@@ -100,5 +100,11 @@ namespace Acelera2025.Controllers
             }
             return false;
         }
+
+        public int ObterTotalCurtidas(PostModels postagem)
+        {
+            return postagem?.Curtidas.Count ?? 0;  
+        }
+
     }
 }
