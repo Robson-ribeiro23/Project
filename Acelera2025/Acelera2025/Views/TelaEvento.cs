@@ -35,7 +35,7 @@ namespace Acelera2025.Views
             if (evento != null)
             {
                 lblNomeEvento.Text = evento.NomeEvento;
-                tabPage1.Text = evento.Descricao;
+                lblDescricao.Text = evento.Descricao;
                 lblNomePublicador.Text = evento.UsuarioEmail;
 
                 if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
@@ -44,7 +44,7 @@ namespace Acelera2025.Views
             else
             {
                 lblNomeEvento.Text = "Evento não selecionado";
-                tabPage1.Text = "";
+                lblDescricao.Text = "";
                 lblNomePublicador.Text = "";
             }
 
@@ -147,9 +147,6 @@ namespace Acelera2025.Views
             Navegador.IrParaFeed(this.usuario);
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
     }
 }
