@@ -144,6 +144,7 @@
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
+            this.lblEventoEmAlta = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
@@ -193,6 +194,7 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
+            this.panel2.Controls.Add(this.lblEventoEmAlta);
             this.panel2.Controls.Add(this.panelMeusEventos);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.picCarrossel);
@@ -1934,6 +1936,19 @@
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
+            // lblEventoEmAlta
+            // 
+            this.lblEventoEmAlta.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblEventoEmAlta.AutoSize = true;
+            this.lblEventoEmAlta.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEventoEmAlta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblEventoEmAlta.Location = new System.Drawing.Point(364, 137);
+            this.lblEventoEmAlta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEventoEmAlta.Name = "lblEventoEmAlta";
+            this.lblEventoEmAlta.Size = new System.Drawing.Size(84, 43);
+            this.lblEventoEmAlta.TabIndex = 8;
+            this.lblEventoEmAlta.Text = "nome";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2112,5 +2127,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Tools.CircularPictureBox picturePerfil;
         private System.Windows.Forms.LinkLabel btnFeed;
+        private System.Windows.Forms.Label lblEventoEmAlta;
     }
 }

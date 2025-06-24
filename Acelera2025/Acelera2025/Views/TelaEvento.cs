@@ -35,19 +35,39 @@ namespace Acelera2025.Views
             if (evento != null)
             {
                 lblNomeEvento.Text = evento.NomeEvento;
-                tabPage1.Text = evento.Descricao;
-                lblNomePublicador.Text = evento.UsuarioEmail;
+                lblDataEvento.Text = evento.Data.ToShortDateString();
+                btnCategoria.Text = evento.Categoria;
+                btnPresencialOnline.Text = evento.IsPresencial ? "Presencial" : "Online";
+                lblNomeLocal.Text = evento.NomeLocal ?? "";
 
+                // Monta o endereço
+                string rua = evento.Rua ?? "";
+                string numero = string.IsNullOrWhiteSpace(evento.NumeroEndereco) ? "s/n" : evento.NumeroEndereco;
+                string bairro = evento.Bairro ?? "";
+                lblEndereco.Text = $"{rua}, {numero} - {bairro}";
+
+                lblCEP.Text = evento.CEP ?? "";
+                lblCidadeUf.Text = evento.Cidade ?? "";
+                lblDescrição.Text = evento.Descricao ?? "";
+                lblNomePublicador.Text = evento.UsuarioEmail ?? "";
+
+                // Carrega imagem do evento
                 if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
                     picEvento.Image = Image.FromFile(evento.CaminhoImagem);
             }
             else
             {
                 lblNomeEvento.Text = "Evento não selecionado";
-                tabPage1.Text = "";
+                lblDataEvento.Text = "";
+                lblNomeLocal.Text = "";
+                lblEndereco.Text = "";
+                lblCEP.Text = "";
+                lblCidadeUf.Text = "";
+                lblDescrição.Text = "";
                 lblNomePublicador.Text = "";
             }
 
+            // Carrega foto de perfil do usuário
             if (!string.IsNullOrEmpty(usuario.CaminhoFoto) && File.Exists(usuario.CaminhoFoto))
                 picturePerfil.Image = Image.FromFile(usuario.CaminhoFoto);
         }
@@ -148,6 +168,21 @@ namespace Acelera2025.Views
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

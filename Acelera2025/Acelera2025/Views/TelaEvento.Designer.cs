@@ -75,10 +75,11 @@
             this.btnPresencialOnline = new RoundedButton();
             this.btnCategoria = new RoundedButton();
             this.lblCidadeUf = new System.Windows.Forms.Label();
-            this.lblCep = new System.Windows.Forms.Label();
-            this.lblRua = new System.Windows.Forms.Label();
+            this.lblCEP = new System.Windows.Forms.Label();
+            this.lblEndereco = new System.Windows.Forms.Label();
             this.lblNomeLocal = new System.Windows.Forms.Label();
-            this.lblData = new System.Windows.Forms.Label();
+            this.lblDataEvento = new System.Windows.Forms.Label();
+            this.lblDescrição = new System.Windows.Forms.Label();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,6 +88,7 @@
             this.panelEmpresa.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.gradientPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picEvento)).BeginInit();
@@ -341,6 +343,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1367, 555);
             this.panel1.TabIndex = 25;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panelEmpresa
             // 
@@ -575,6 +578,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.lblDescrição);
             this.tabPage1.Location = new System.Drawing.Point(4, 48);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
@@ -583,6 +587,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Descrição";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // gradientPanel2
             // 
@@ -762,10 +767,10 @@
             this.roundedPanel1.Controls.Add(this.btnPresencialOnline);
             this.roundedPanel1.Controls.Add(this.btnCategoria);
             this.roundedPanel1.Controls.Add(this.lblCidadeUf);
-            this.roundedPanel1.Controls.Add(this.lblCep);
-            this.roundedPanel1.Controls.Add(this.lblRua);
+            this.roundedPanel1.Controls.Add(this.lblCEP);
+            this.roundedPanel1.Controls.Add(this.lblEndereco);
             this.roundedPanel1.Controls.Add(this.lblNomeLocal);
-            this.roundedPanel1.Controls.Add(this.lblData);
+            this.roundedPanel1.Controls.Add(this.lblDataEvento);
             this.roundedPanel1.Location = new System.Drawing.Point(931, 15);
             this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel1.Name = "roundedPanel1";
@@ -816,29 +821,29 @@
             this.lblCidadeUf.TabIndex = 9;
             this.lblCidadeUf.Text = "Cidade - UF";
             // 
-            // lblCep
+            // lblCEP
             // 
-            this.lblCep.AutoSize = true;
-            this.lblCep.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCep.Location = new System.Drawing.Point(14, 130);
-            this.lblCep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(78, 27);
-            this.lblCep.TabIndex = 8;
-            this.lblCep.Text = "xx xxx-xxx";
+            this.lblCEP.AutoSize = true;
+            this.lblCEP.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCEP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCEP.Location = new System.Drawing.Point(14, 130);
+            this.lblCEP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCEP.Name = "lblCEP";
+            this.lblCEP.Size = new System.Drawing.Size(78, 27);
+            this.lblCEP.TabIndex = 8;
+            this.lblCEP.Text = "xx xxx-xxx";
             // 
-            // lblRua
+            // lblEndereco
             // 
-            this.lblRua.AutoSize = true;
-            this.lblRua.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblRua.Location = new System.Drawing.Point(14, 104);
-            this.lblRua.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(162, 27);
-            this.lblRua.TabIndex = 7;
-            this.lblRua.Text = "Rua xxxx, nnn - Bairo X";
+            this.lblEndereco.AutoSize = true;
+            this.lblEndereco.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblEndereco.Location = new System.Drawing.Point(14, 104);
+            this.lblEndereco.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(162, 27);
+            this.lblEndereco.TabIndex = 7;
+            this.lblEndereco.Text = "Rua xxxx, nnn - Bairo X";
             // 
             // lblNomeLocal
             // 
@@ -852,17 +857,27 @@
             this.lblNomeLocal.TabIndex = 6;
             this.lblNomeLocal.Text = "nome do Local";
             // 
-            // lblData
+            // lblDataEvento
             // 
-            this.lblData.AutoSize = true;
-            this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData.Location = new System.Drawing.Point(14, 52);
-            this.lblData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(100, 27);
-            this.lblData.TabIndex = 5;
-            this.lblData.Text = "dd/mm/aaaa";
+            this.lblDataEvento.AutoSize = true;
+            this.lblDataEvento.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblDataEvento.Location = new System.Drawing.Point(14, 52);
+            this.lblDataEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDataEvento.Name = "lblDataEvento";
+            this.lblDataEvento.Size = new System.Drawing.Size(100, 27);
+            this.lblDataEvento.TabIndex = 5;
+            this.lblDataEvento.Text = "dd/mm/aaaa";
+            // 
+            // lblDescrição
+            // 
+            this.lblDescrição.AutoSize = true;
+            this.lblDescrição.Location = new System.Drawing.Point(16, 19);
+            this.lblDescrição.Name = "lblDescrição";
+            this.lblDescrição.Size = new System.Drawing.Size(21, 25);
+            this.lblDescrição.TabIndex = 0;
+            this.lblDescrição.Text = "...";
+            this.lblDescrição.Click += new System.EventHandler(this.label1_Click);
             // 
             // TelaEvento
             // 
@@ -889,6 +904,8 @@
             this.panelEmpresa.ResumeLayout(false);
             this.panelMeusEventos.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.gradientPanel2.ResumeLayout(false);
             this.gradientPanel2.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -927,10 +944,10 @@
         private RoundedButton btnPresencialOnline;
         private RoundedButton btnCategoria;
         private System.Windows.Forms.Label lblCidadeUf;
-        private System.Windows.Forms.Label lblCep;
-        private System.Windows.Forms.Label lblRua;
+        private System.Windows.Forms.Label lblCEP;
+        private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.Label lblNomeLocal;
-        private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.Label lblDataEvento;
         private RoundedButton btnInscrever;
         private System.Windows.Forms.Label lblNomeEvento;
         private System.Windows.Forms.Label label8;
@@ -951,5 +968,6 @@
         private System.Windows.Forms.LinkLabel btnFeed;
         private System.Windows.Forms.Panel panelEmpresa;
         private RoundedButton btnPatrocinar;
+        private System.Windows.Forms.Label lblDescrição;
     }
 }
