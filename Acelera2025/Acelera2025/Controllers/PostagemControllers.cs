@@ -78,18 +78,7 @@ namespace Acelera2025.Controllers
             postagem.Curtidas.Add(novaCurtida);
             return novaCurtida;
         }
-        public CurtidasModels AdicionarCurtidaComentario(ComentariosModels comentario, PessoaModels usuario)
-        {
-            if (comentario.Curtidas.Any(c => c.Usuario == usuario.Nome))
-            {
-                MessageBox.Show("Você já curtiu este comentário.");
-                return null;
-            }
-            var novaCurtida = new CurtidasModels(usuario.Nome);
-            comentario.Curtidas.Add(novaCurtida);
-            return novaCurtida;
-        }
-
+       
         public bool RemoverCurtidaPostagem(PostModels postagem, PessoaModels usuario)
         {
             var curtida = postagem.Curtidas.FirstOrDefault(c => c.Usuario == usuario.Nome);

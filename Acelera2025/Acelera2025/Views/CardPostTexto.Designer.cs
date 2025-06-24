@@ -61,24 +61,24 @@
             this.roundedPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedPanel1.Location = new System.Drawing.Point(0, 0);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(978, 314);
+            this.roundedPanel1.Size = new System.Drawing.Size(1186, 374);
             this.roundedPanel1.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(673, 16);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(743, 23);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(289, 227);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(427, 294);
             this.flowLayoutPanel1.TabIndex = 61;
             // 
             // txtComentarios
             // 
             this.txtComentarios.BackColor = System.Drawing.Color.White;
             this.txtComentarios.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComentarios.Location = new System.Drawing.Point(673, 249);
+            this.txtComentarios.Location = new System.Drawing.Point(743, 320);
             this.txtComentarios.Name = "txtComentarios";
-            this.txtComentarios.Size = new System.Drawing.Size(256, 39);
+            this.txtComentarios.Size = new System.Drawing.Size(394, 39);
             this.txtComentarios.TabIndex = 1;
             this.txtComentarios.Text = "Enviar um Comentário";
             // 
@@ -97,7 +97,7 @@
             this.roundedPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.roundedPanel2.Location = new System.Drawing.Point(0, 0);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(650, 314);
+            this.roundedPanel2.Size = new System.Drawing.Size(737, 374);
             this.roundedPanel2.TabIndex = 0;
             this.roundedPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel2_Paint);
             // 
@@ -106,9 +106,9 @@
             this.panel2.Controls.Add(this.lblCurtidas);
             this.panel2.Controls.Add(this.btnCurtir);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 271);
+            this.panel2.Location = new System.Drawing.Point(0, 331);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(650, 43);
+            this.panel2.Size = new System.Drawing.Size(737, 43);
             this.panel2.TabIndex = 67;
             // 
             // lblCurtidas
@@ -147,7 +147,7 @@
             this.panel1.Controls.Add(this.lblTexto);
             this.panel1.Location = new System.Drawing.Point(3, 91);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(647, 166);
+            this.panel1.Size = new System.Drawing.Size(734, 166);
             this.panel1.TabIndex = 66;
             // 
             // lblTexto
@@ -166,7 +166,7 @@
             this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblData.Location = new System.Drawing.Point(494, 39);
+            this.lblData.Location = new System.Drawing.Point(551, 39);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(128, 30);
             this.lblData.TabIndex = 65;
@@ -203,7 +203,7 @@
             this.btnComentar.FlatAppearance.BorderSize = 0;
             this.btnComentar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComentar.Image = ((System.Drawing.Image)(resources.GetObject("btnComentar.Image")));
-            this.btnComentar.Location = new System.Drawing.Point(935, 256);
+            this.btnComentar.Location = new System.Drawing.Point(1143, 331);
             this.btnComentar.Name = "btnComentar";
             this.btnComentar.Size = new System.Drawing.Size(27, 28);
             this.btnComentar.TabIndex = 60;
@@ -218,7 +218,7 @@
             this.Controls.Add(this.roundedPanel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "CardPostTexto";
-            this.Size = new System.Drawing.Size(978, 314);
+            this.Size = new System.Drawing.Size(1186, 374);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
             this.roundedPanel2.ResumeLayout(false);

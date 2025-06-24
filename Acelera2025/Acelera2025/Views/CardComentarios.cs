@@ -32,37 +32,13 @@ namespace Acelera2025.Views
                 lblNome.Text = comentario.Usuario;
                 lblTexto.Text = comentario.Texto;
 
-                AtualizarBotaoCurtida();
             }
-
-            private void AtualizarBotaoCurtida()
-            {
-                int totalCurtidas = comentario.Curtidas.Count;
-                bool usuarioCurtiu = comentario.Curtidas.Any(c => c.Usuario == usuario);
-
-                btnCurtir.Text = $"{totalCurtidas} ♥";
-                btnCurtir.ForeColor = usuarioCurtiu ? Color.Red : SystemColors.ControlText;
-                btnCurtir.Font = new Font(btnCurtir.Font, usuarioCurtiu ? FontStyle.Bold : FontStyle.Regular);
-            }
-
-       
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void btnCurtir_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                AtualizarBotaoCurtida();
-                OnCurtidaAlterada?.Invoke();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+        
     }
 }

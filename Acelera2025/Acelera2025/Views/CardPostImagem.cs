@@ -32,6 +32,17 @@ namespace Acelera2025.Views
 
             ConfigurarBotaoCurtir();
             AtualizarContadorCurtidas();
+            AtualizarComentarios();
+        }
+        private void AtualizarComentarios()
+        {
+            flowLayoutPanel1.Controls.Clear();
+
+            foreach (var comentario in postagem.Comentarios)
+            {
+                var card = new CardComentarios(comentario, postagem.Usuario.Nome);
+                flowLayoutPanel1.Controls.Add(card);
+            }
         }
         private void ConfigurarBotaoCurtir()
         {
@@ -69,6 +80,22 @@ namespace Acelera2025.Views
             var controller = new PostagemControllers();
             lblCurtidas.Text = controller.ObterTotalCurtidas(postagem).ToString() + " curtidas";
 
+        }
+
+        private void btnComentar_Click(object sender, EventArgs e)
+        {
+            var textoComentario = txtComentarios.Text;
+            var controller = new PostagemControllers();
+            try
+            {
+                controller.AdicionarComentario(postagem, postagem.Usuario, textoComentario);
+                txtComentarios.Clear();
+                AtualizarComentarios();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro: {ex.Message}");
+            }
         }
     }
 }

@@ -33,7 +33,6 @@ namespace Acelera2025.Views
             foreach (var comentario in postagem.Comentarios)
             {
                 var card = new CardComentarios(comentario, postagem.Usuario.Nome);
-                card.OnCurtidaAlterada += () => { AtualizarContadorCurtidas(); };
                 flowLayoutPanel1.Controls.Add(card);
             }
         }

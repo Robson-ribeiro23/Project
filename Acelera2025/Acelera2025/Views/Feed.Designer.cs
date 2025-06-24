@@ -101,9 +101,9 @@
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(164, 241);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(26, 241);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1007, 400);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1287, 400);
             this.flowLayoutPanel1.TabIndex = 28;
             this.flowLayoutPanel1.WrapContents = false;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
@@ -165,18 +165,18 @@
             this.superiorRoundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.superiorRoundedPanel1.BorderRadius = 20;
             this.superiorRoundedPanel1.BorderSize = 0;
-            this.superiorRoundedPanel1.Controls.Add(this.button2);
+            this.superiorRoundedPanel1.Controls.Add(this.btnPostarTexto);
+            this.superiorRoundedPanel1.Controls.Add(this.linkLabel2);
             this.superiorRoundedPanel1.Controls.Add(this.button1);
             this.superiorRoundedPanel1.Controls.Add(this.linkLabel3);
-            this.superiorRoundedPanel1.Controls.Add(this.linkLabel2);
-            this.superiorRoundedPanel1.Controls.Add(this.btnPostarTexto);
             this.superiorRoundedPanel1.Controls.Add(this.panel3);
             this.superiorRoundedPanel1.Controls.Add(this.label1);
             this.superiorRoundedPanel1.Controls.Add(this.button3);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(164, 37);
+            this.superiorRoundedPanel1.Controls.Add(this.button2);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(26, 37);
             this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1007, 138);
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1287, 138);
             this.superiorRoundedPanel1.TabIndex = 9;
             // 
             // button2
@@ -191,7 +191,7 @@
             this.button2.Location = new System.Drawing.Point(383, 82);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 36);
+            this.button2.Size = new System.Drawing.Size(325, 36);
             this.button2.TabIndex = 13;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -208,7 +208,7 @@
             this.button1.Location = new System.Drawing.Point(47, 75);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 50);
+            this.button1.Size = new System.Drawing.Size(343, 50);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -222,7 +222,7 @@
             this.linkLabel3.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.linkLabel3.Location = new System.Drawing.Point(763, 89);
+            this.linkLabel3.Location = new System.Drawing.Point(905, 88);
             this.linkLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(142, 27);
@@ -241,7 +241,7 @@
             this.linkLabel2.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.linkLabel2.Location = new System.Drawing.Point(436, 88);
+            this.linkLabel2.Location = new System.Drawing.Point(583, 89);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(158, 27);
@@ -260,7 +260,7 @@
             this.btnPostarTexto.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPostarTexto.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.btnPostarTexto.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnPostarTexto.Location = new System.Drawing.Point(104, 89);
+            this.btnPostarTexto.Location = new System.Drawing.Point(250, 88);
             this.btnPostarTexto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnPostarTexto.Name = "btnPostarTexto";
             this.btnPostarTexto.Size = new System.Drawing.Size(140, 27);
@@ -278,7 +278,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 65);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1007, 2);
+            this.panel3.Size = new System.Drawing.Size(1287, 2);
             this.panel3.TabIndex = 9;
             // 
             // label1
@@ -287,7 +287,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label1.Location = new System.Drawing.Point(4, 12);
+            this.label1.Location = new System.Drawing.Point(204, 3);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 58);
@@ -307,7 +307,7 @@
             this.button3.Location = new System.Drawing.Point(709, 81);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 36);
+            this.button3.Size = new System.Drawing.Size(325, 36);
             this.button3.TabIndex = 8;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
