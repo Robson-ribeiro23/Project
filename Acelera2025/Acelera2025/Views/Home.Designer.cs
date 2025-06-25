@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblEventoEmAlta = new System.Windows.Forms.Label();
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
             this.btnEventosIngressados = new RoundedButton();
@@ -46,8 +47,6 @@
             this.btnEmail = new System.Windows.Forms.Button();
             this.btnFacebook = new System.Windows.Forms.Button();
             this.btnInstagram = new System.Windows.Forms.Button();
-            this.btnContato = new System.Windows.Forms.LinkLabel();
-            this.btnAjudaInferior = new System.Windows.Forms.LinkLabel();
             this.panelEventosOnline = new System.Windows.Forms.Panel();
             this.btnProxEventosOnline = new System.Windows.Forms.Button();
             this.btnAntEventosOnline = new System.Windows.Forms.Button();
@@ -144,7 +143,6 @@
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.lblEventoEmAlta = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
@@ -207,6 +205,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1308, 555);
             this.panel2.TabIndex = 2;
+            // 
+            // lblEventoEmAlta
+            // 
+            this.lblEventoEmAlta.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblEventoEmAlta.AutoSize = true;
+            this.lblEventoEmAlta.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEventoEmAlta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblEventoEmAlta.Location = new System.Drawing.Point(364, 137);
+            this.lblEventoEmAlta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEventoEmAlta.Name = "lblEventoEmAlta";
+            this.lblEventoEmAlta.Size = new System.Drawing.Size(84, 43);
+            this.lblEventoEmAlta.TabIndex = 8;
+            this.lblEventoEmAlta.Text = "nome";
             // 
             // panelMeusEventos
             // 
@@ -357,8 +368,8 @@
             this.gradientPanel2.Controls.Add(this.btnEmail);
             this.gradientPanel2.Controls.Add(this.btnFacebook);
             this.gradientPanel2.Controls.Add(this.btnInstagram);
-            this.gradientPanel2.Controls.Add(this.btnContato);
-            this.gradientPanel2.Controls.Add(this.btnAjudaInferior);
+            this.gradientPanel2.Controls.Add(this.btnAjuda);
+            this.gradientPanel2.Controls.Add(this.btnSobreNos);
             this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gradientPanel2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
@@ -427,6 +438,7 @@
             this.btnEmail.Size = new System.Drawing.Size(40, 39);
             this.btnEmail.TabIndex = 12;
             this.btnEmail.UseVisualStyleBackColor = false;
+            this.btnEmail.Click += new System.EventHandler(this.btnEmail_Click);
             // 
             // btnFacebook
             // 
@@ -457,43 +469,6 @@
             this.btnInstagram.Size = new System.Drawing.Size(40, 39);
             this.btnInstagram.TabIndex = 10;
             this.btnInstagram.UseVisualStyleBackColor = false;
-            // 
-            // btnContato
-            // 
-            this.btnContato.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnContato.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnContato.AutoSize = true;
-            this.btnContato.BackColor = System.Drawing.Color.Transparent;
-            this.btnContato.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContato.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnContato.LinkColor = System.Drawing.Color.White;
-            this.btnContato.Location = new System.Drawing.Point(1016, 22);
-            this.btnContato.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnContato.Name = "btnContato";
-            this.btnContato.Size = new System.Drawing.Size(53, 21);
-            this.btnContato.TabIndex = 5;
-            this.btnContato.TabStop = true;
-            this.btnContato.Text = "Contato";
-            this.btnContato.VisitedLinkColor = System.Drawing.Color.White;
-            this.btnContato.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnContato_LinkClicked);
-            // 
-            // btnAjudaInferior
-            // 
-            this.btnAjudaInferior.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnAjudaInferior.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAjudaInferior.AutoSize = true;
-            this.btnAjudaInferior.BackColor = System.Drawing.Color.Transparent;
-            this.btnAjudaInferior.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjudaInferior.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnAjudaInferior.LinkColor = System.Drawing.Color.White;
-            this.btnAjudaInferior.Location = new System.Drawing.Point(962, 21);
-            this.btnAjudaInferior.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnAjudaInferior.Name = "btnAjudaInferior";
-            this.btnAjudaInferior.Size = new System.Drawing.Size(41, 21);
-            this.btnAjudaInferior.TabIndex = 4;
-            this.btnAjudaInferior.TabStop = true;
-            this.btnAjudaInferior.Text = "Ajuda";
-            this.btnAjudaInferior.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // panelEventosOnline
             // 
@@ -1723,8 +1698,6 @@
             this.gradientPanel1.Controls.Add(this.btnPrincipal);
             this.gradientPanel1.Controls.Add(this.btnOrganizarEventos);
             this.gradientPanel1.Controls.Add(this.btnMeusEventos);
-            this.gradientPanel1.Controls.Add(this.btnAjuda);
-            this.gradientPanel1.Controls.Add(this.btnSobreNos);
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
@@ -1744,7 +1717,7 @@
             this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnFeed.LinkColor = System.Drawing.Color.White;
-            this.btnFeed.Location = new System.Drawing.Point(771, 13);
+            this.btnFeed.Location = new System.Drawing.Point(885, 13);
             this.btnFeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnFeed.Name = "btnFeed";
             this.btnFeed.Size = new System.Drawing.Size(35, 21);
@@ -1869,7 +1842,7 @@
             this.btnOrganizarEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrganizarEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnOrganizarEventos.LinkColor = System.Drawing.Color.White;
-            this.btnOrganizarEventos.Location = new System.Drawing.Point(826, 12);
+            this.btnOrganizarEventos.Location = new System.Drawing.Point(940, 13);
             this.btnOrganizarEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnOrganizarEventos.Name = "btnOrganizarEventos";
             this.btnOrganizarEventos.Size = new System.Drawing.Size(105, 21);
@@ -1888,7 +1861,7 @@
             this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Location = new System.Drawing.Point(955, 13);
+            this.btnMeusEventos.Location = new System.Drawing.Point(1067, 13);
             this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnMeusEventos.Name = "btnMeusEventos";
             this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
@@ -1907,7 +1880,7 @@
             this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjuda.LinkColor = System.Drawing.Color.White;
-            this.btnAjuda.Location = new System.Drawing.Point(1056, 12);
+            this.btnAjuda.Location = new System.Drawing.Point(941, 22);
             this.btnAjuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnAjuda.Name = "btnAjuda";
             this.btnAjuda.Size = new System.Drawing.Size(41, 21);
@@ -1926,7 +1899,7 @@
             this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnSobreNos.LinkColor = System.Drawing.Color.White;
-            this.btnSobreNos.Location = new System.Drawing.Point(1111, 13);
+            this.btnSobreNos.Location = new System.Drawing.Point(1001, 22);
             this.btnSobreNos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnSobreNos.Name = "btnSobreNos";
             this.btnSobreNos.Size = new System.Drawing.Size(62, 21);
@@ -1935,19 +1908,6 @@
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
-            // 
-            // lblEventoEmAlta
-            // 
-            this.lblEventoEmAlta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblEventoEmAlta.AutoSize = true;
-            this.lblEventoEmAlta.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEventoEmAlta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblEventoEmAlta.Location = new System.Drawing.Point(364, 137);
-            this.lblEventoEmAlta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEventoEmAlta.Name = "lblEventoEmAlta";
-            this.lblEventoEmAlta.Size = new System.Drawing.Size(84, 43);
-            this.lblEventoEmAlta.TabIndex = 8;
-            this.lblEventoEmAlta.Text = "nome";
             // 
             // Home
             // 
@@ -2023,8 +1983,6 @@
         private System.Windows.Forms.Button btnEmail;
         private System.Windows.Forms.Button btnFacebook;
         private System.Windows.Forms.Button btnInstagram;
-        private System.Windows.Forms.LinkLabel btnContato;
-        private System.Windows.Forms.LinkLabel btnAjudaInferior;
         private System.Windows.Forms.Panel panelEventosOnline;
         private System.Windows.Forms.Button btnProxEventosOnline;
         private System.Windows.Forms.Button btnAntEventosOnline;

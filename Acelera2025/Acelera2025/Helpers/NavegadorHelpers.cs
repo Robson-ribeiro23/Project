@@ -14,6 +14,7 @@ namespace Ac
             telaAtual.Show();
         }
 
+
         public static void IrParaInicio()
         {
             FecharTelaAtual();

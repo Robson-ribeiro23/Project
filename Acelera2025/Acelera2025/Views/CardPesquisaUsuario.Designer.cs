@@ -39,9 +39,10 @@
             this.picPerfil.BorderColor = System.Drawing.Color.Black;
             this.picPerfil.BorderRadius = 15;
             this.picPerfil.BorderSize = 0;
-            this.picPerfil.Location = new System.Drawing.Point(18, 12);
+            this.picPerfil.Location = new System.Drawing.Point(14, 10);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(37, 37);
+            this.picPerfil.Size = new System.Drawing.Size(28, 30);
             this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPerfil.TabIndex = 0;
             this.picPerfil.TabStop = false;
@@ -52,20 +53,23 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblNome.Location = new System.Drawing.Point(74, 19);
+            this.lblNome.Location = new System.Drawing.Point(56, 15);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(60, 30);
+            this.lblNome.Size = new System.Drawing.Size(49, 25);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome";
             // 
             // CardPesquisaUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.picPerfil);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CardPesquisaUsuario";
-            this.Size = new System.Drawing.Size(860, 58);
+            this.Size = new System.Drawing.Size(645, 47);
+            this.Load += new System.EventHandler(this.CardPesquisaUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

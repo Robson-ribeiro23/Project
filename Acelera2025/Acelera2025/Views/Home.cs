@@ -437,5 +437,19 @@ namespace Acelera2025.Views
         {
 
         }
+
+        private void btnAjudaInferior_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnEmail_Click(object sender, EventArgs e)
+        {
+            string destinatario = "dairohelp@dominio.com";
+
+            string url = $"mailto:{destinatario}?";
+
+            System.Diagnostics.Process.Start(url);
+        }
     }
 }

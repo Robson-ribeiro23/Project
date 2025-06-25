@@ -1,8 +1,11 @@
 ﻿using Ac;
+using Acelera2025.Models;
 using Acelera2025.Telas;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Acelera2025.Views
@@ -15,6 +18,11 @@ namespace Acelera2025.Views
         private PessoaModels usuario;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
+        private UsuarioControllers usuarioController = new UsuarioControllers();
+
+
+
+
         public Pesquisa(PessoaModels usuario)
         {
             InitializeComponent();
@@ -110,6 +118,41 @@ namespace Acelera2025.Views
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            string termo = txtPesquisa.Text.Trim().ToLower();
+
+            // Obtem todos os usuários
+            var usuarios = usuarioController.ListarTodos();
+
+            if (string.IsNullOrEmpty(termo))
+            {
+                flowLayoutPanelResultados.Controls.Clear();
+                return;
+            }
+
+            // Filtra os usuários
+            var usuariosFiltrados = usuarios
+                .Where(u => u.Nome != null && u.Nome.ToLower().Contains(termo))
+                .ToList();
+
+            // Limpa os cards anteriores
+            flowLayoutPanelResultados.Controls.Clear();
+
+            foreach (var usuario in usuariosFiltrados)
+            {
+                
+                CardPesquisaUsuario card = new CardPesquisaUsuario(usuario);
+                flowLayoutPanelResultados.Controls.Add(card);
+            }
+
         }
     }
 }
