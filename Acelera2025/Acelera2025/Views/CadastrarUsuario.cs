@@ -20,6 +20,24 @@ namespace Acelera2025.Views
         {
             btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
             btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
+
+            var usuario = new UsuarioModels
+            {
+                Tipo = "usuario",
+                Nome = "V",
+                Email = "v@gmail.com",
+                Cidade = "Cruzeiro",
+                CPF = "111.111.111-11",
+                DataNascimento = "11/11/1111",
+                Senha = "1",
+                ConfirmarSenha = "1",
+                CaminhoFoto = @"C:\Programming\C#\university\Acelera2025\Acelera2025\Pictures\avatar_padrao.png"
+            };
+
+            if (controllerUsuario.Cadastrar(usuario))
+            {
+                Navegador.IrParaLoginUsuario();
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

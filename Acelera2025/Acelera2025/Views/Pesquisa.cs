@@ -37,7 +37,6 @@ namespace Acelera2025.Views
             cardPerfil = new CardPerfil(this.usuario);
             cardPerfil.Visible = false;
 
-
             gradientPanel2.Controls.Add(cardPerfil);
             cardPerfil.Location = new Point(gradientPanel2.Width - cardPerfil.Width - 20, 0);
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
@@ -58,13 +57,28 @@ namespace Acelera2025.Views
                 "Festas", "Esportes", "Sociedade", "Gastronomia", "Empreendedorismo", "Entretenimento",
                 "Voluntariado", "Meio Ambiente" , "Hobbies" };
 
-            
-
             comboUF.Items.AddRange(estados);
             comboFiltrarBusca.Items.Add("Eventos");
             comboFiltrarBusca.Items.Add("Empresas");
             comboFiltrarBusca.Items.Add("Pessoas");
             comboCategoria.Items.AddRange(categorias);
+        }
+
+        private void comboFiltrar_Change(object sender, EventArgs e)
+        {
+            if (comboFiltrarBusca.SelectedItem.ToString() != "Eventos")
+            {
+                comboUF.SelectedIndex = -1;
+                comboUF.Visible = false;
+                comboCategoria.SelectedIndex = -1;
+                comboCategoria.Visible = false;
+            }
+            else
+            {
+                comboUF.Visible = true;
+                comboCategoria.Visible = true;
+            }
+
         }
 
         private void picturePerfil_Click(object sender, EventArgs e)
@@ -110,6 +124,11 @@ namespace Acelera2025.Views
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
+        }
+
+        private void btnPequisar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

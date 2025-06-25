@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Ac;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Acelera2025.Views
 {
@@ -13,6 +14,25 @@ namespace Acelera2025.Views
         public EntrarUsuario()
         {
             InitializeComponent();
+        }
+
+        private void EntrarUsuario_Load(object sender, EventArgs e)
+        {
+            btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+
+            cardRecuperacaoSenha = new CardRecuperacaoSenha();
+            cardRecuperacaoSenha.Visible = false;
+            this.Controls.Add(cardRecuperacaoSenha);
+            cardRecuperacaoSenha.Left = (this.ClientSize.Width - cardRecuperacaoSenha.Width) / 2;
+            cardRecuperacaoSenha.FecharTelaSolicitado += (s, args) => this.Close();
+            cardRecuperacaoSenha.Top = (this.ClientSize.Height - cardRecuperacaoSenha.Height) / 2;
+
+            var usuario = controllerUsuario.Login("v@gmail.com", "1");
+
+            if (usuario != null)
+            {
+                Navegador.IrParaHome(usuario);
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -32,18 +52,6 @@ namespace Acelera2025.Views
                 txtSenha.PasswordChar = '*';
                 btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
             }
-        }
-
-        private void EntrarUsuario_Load(object sender, EventArgs e)
-        {
-            btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
-
-            cardRecuperacaoSenha = new CardRecuperacaoSenha();
-            cardRecuperacaoSenha.Visible = false;
-            this.Controls.Add(cardRecuperacaoSenha);
-            cardRecuperacaoSenha.Left = (this.ClientSize.Width - cardRecuperacaoSenha.Width) / 2;
-            cardRecuperacaoSenha.FecharTelaSolicitado += (s, args) => this.Close();
-            cardRecuperacaoSenha.Top = (this.ClientSize.Height - cardRecuperacaoSenha.Height) / 2;
         }
 
         private void btnEntrarUsuario_Click(object sender, EventArgs e)
