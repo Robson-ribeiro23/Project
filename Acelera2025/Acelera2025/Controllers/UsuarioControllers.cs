@@ -46,7 +46,7 @@ public class UsuarioControllers
             return false;
         }
 
-        if (listaUsuarios.Any(u => u.Senha != usuario.ConfirmarSenha))
+        if (usuario.Senha != usuario.ConfirmarSenha)
         {
             MessageBox.Show("As senhas não coincidem.");
             return false;

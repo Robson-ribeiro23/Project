@@ -129,14 +129,14 @@ namespace Acelera2025.Views
         {
             string termo = txtPesquisa.Text.Trim().ToLower();
 
-            // Obtem todos os usuários
-            var usuarios = usuarioController.ListarTodos();
-
             if (string.IsNullOrEmpty(termo))
             {
                 flowLayoutPanelResultados.Controls.Clear();
                 return;
             }
+
+            // Obtem todos os usuários
+            var usuarios = usuarioController.ListarTodos();
 
             // Filtra os usuários
             var usuariosFiltrados = usuarios
@@ -148,10 +148,14 @@ namespace Acelera2025.Views
 
             foreach (var usuario in usuariosFiltrados)
             {
-                
                 CardPesquisaUsuario card = new CardPesquisaUsuario(usuario);
                 flowLayoutPanelResultados.Controls.Add(card);
             }
+
+        }
+
+        private void btnPequisar_Click(object sender, EventArgs e)
+        {
 
         }
     }

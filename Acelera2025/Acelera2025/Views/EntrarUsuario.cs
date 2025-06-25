@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Ac;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Acelera2025.Views
 {
@@ -44,6 +45,13 @@ namespace Acelera2025.Views
             cardRecuperacaoSenha.Left = (this.ClientSize.Width - cardRecuperacaoSenha.Width) / 2;
             cardRecuperacaoSenha.FecharTelaSolicitado += (s, args) => this.Close();
             cardRecuperacaoSenha.Top = (this.ClientSize.Height - cardRecuperacaoSenha.Height) / 2;
+
+            var usuario = controllerUsuario.Login("v@gmail.com", "9");
+
+            if (usuario != null)
+            {
+                Navegador.IrParaHome(usuario);
+            }
         }
 
         private void btnEntrarUsuario_Click(object sender, EventArgs e)
