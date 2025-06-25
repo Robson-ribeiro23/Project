@@ -99,14 +99,7 @@ namespace Ac
             telaAtual.Show();
         }
 
-        public static void IrParaTelaEventos(PessoaModels usuario)
-        {
-            FecharTelaAtual();
-            telaAtual = new TelaEvento(usuario, null); // passa null como evento
-            telaAtual.Show();
-        }
-
-        public static void IrParaTelaEventos(PessoaModels usuario, EventoModels evento)
+        public static void IrParaTelaEventos(PessoaModels usuario, EventoModels evento = null)
         {
             FecharTelaAtual();
             telaAtual = new TelaEvento(usuario, evento); // <-- evento passado corretamente

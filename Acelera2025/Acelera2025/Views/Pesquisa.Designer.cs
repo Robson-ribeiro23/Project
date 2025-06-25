@@ -171,6 +171,7 @@
             this.textBox1.Size = new System.Drawing.Size(173, 27);
             this.textBox1.TabIndex = 14;
             this.textBox1.Text = "Cidade";
+            this.textBox1.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // comboCategoria
             // 
@@ -183,6 +184,7 @@
             this.comboCategoria.Size = new System.Drawing.Size(186, 29);
             this.comboCategoria.TabIndex = 13;
             this.comboCategoria.Text = "Categoria";
+            this.comboCategoria.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // comboUF
             // 
@@ -195,6 +197,7 @@
             this.comboUF.Size = new System.Drawing.Size(44, 29);
             this.comboUF.TabIndex = 12;
             this.comboUF.Text = "UF";
+            this.comboUF.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // label10
             // 
@@ -263,6 +266,7 @@
             this.comboFiltrarBusca.Size = new System.Drawing.Size(92, 29);
             this.comboFiltrarBusca.TabIndex = 10;
             this.comboFiltrarBusca.Text = "Evento";
+            this.comboFiltrarBusca.TextChanged += new System.EventHandler(this.txtPesquisa_TextChanged);
             // 
             // gradientPanel1
             // 

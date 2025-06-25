@@ -46,12 +46,12 @@ namespace Acelera2025.Views
             cardRecuperacaoSenha.FecharTelaSolicitado += (s, args) => this.Close();
             cardRecuperacaoSenha.Top = (this.ClientSize.Height - cardRecuperacaoSenha.Height) / 2;
 
-            var usuario = controllerUsuario.Login("v@gmail.com", "9");
+            /*var usuario = controllerUsuario.Login("v@gmail.com", "9");
 
             if (usuario != null)
             {
                 Navegador.IrParaHome(usuario);
-            }
+            }*/
         }
 
         private void btnEntrarUsuario_Click(object sender, EventArgs e)
@@ -78,6 +78,11 @@ namespace Acelera2025.Views
             cardRecuperacaoSenhaVisivel = !cardRecuperacaoSenhaVisivel;
             cardRecuperacaoSenha.Visible = cardRecuperacaoSenhaVisivel;
             cardRecuperacaoSenha.BringToFront();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

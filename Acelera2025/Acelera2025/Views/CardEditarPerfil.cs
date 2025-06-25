@@ -38,7 +38,8 @@ namespace Acelera2025.Views
             //perfil.Show();
 
             //FecharTelaSolicitado?.Invoke(this, EventArgs.Empty);
-            Navegador.IrParaPerfilUsuario(this.usuario);
+            this.Hide();
+            //Navegador.IrParaPerfilUsuario(this.usuario);
         }
 
         private void roundedButton1_Click(object sender, EventArgs e)
@@ -56,7 +57,7 @@ namespace Acelera2025.Views
                 usuario.CaminhoFoto = caminhoImagem;
                 picFotoPerfil.Image = Image.FromFile(caminhoImagem);
 
-                MessageBox.Show("Foto atualizada!");
+                //MessageBox.Show("Foto atualizada!");
             }
         }
 

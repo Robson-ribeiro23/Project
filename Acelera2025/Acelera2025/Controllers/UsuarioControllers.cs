@@ -8,6 +8,7 @@ using System.Windows.Forms;
 public class UsuarioControllers
 {
     private static List<UsuarioModels> listaUsuarios = new List<UsuarioModels>();
+    public static UsuarioModels loggedUser;
 
     private bool EmailValido(string email)
     {
@@ -87,6 +88,7 @@ public class UsuarioControllers
             return null;
         }
 
+        loggedUser = usuario;
         return usuario;
     }
 }

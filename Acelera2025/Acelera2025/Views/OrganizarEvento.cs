@@ -125,10 +125,6 @@ namespace Acelera2025.Views
                 string cep = txtCEP.Text;
                 string cidade = txtCidade.Text;
 
-
-
-
-
                 // === Cria o evento com o caminho da imagem ===
                 EventoModels novoEvento = new EventoModels
                 (
