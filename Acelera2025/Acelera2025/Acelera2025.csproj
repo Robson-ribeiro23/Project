@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{584D34CE-2694-4D58-9130-6D1CA9885D31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Acelera2025</RootNamespace>
+    <AssemblyName>Acelera2025</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\EmpresaControllers.cs" />
+    <Compile Include="Controllers\EventoControllers.cs" />
+    <Compile Include="Controllers\PostagemControllers.cs" />
+    <Compile Include="Controllers\UsuarioControllers.cs" />
+    <Compile Include="Helpers\NavegadorHelpers.cs" />
+    <Compile Include="Models\ComentariosModels.cs" />
+    <Compile Include="Models\CurtidasModels.cs" />
+    <Compile Include="Models\EmpresaModels.cs" />
+    <Compile Include="Models\EventoCache.cs" />
+    <Compile Include="Models\EventoModels.cs" />
+    <Compile Include="Models\PessoaModels.cs" />
+    <Compile Include="Models\PostModels.cs" />
+    <Compile Include="Models\UsuarioModels.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ajuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Ajuda.Designer.cs">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastrarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastrarEmpresa.Designer.cs">
+      <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CadastrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastrarUsuario.Designer.cs">
+      <DependentUpon>CadastrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardBaixarCertificado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardBaixarCertificado.Designer.cs">
+      <DependentUpon>CardBaixarCertificado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardComentarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardComentarios.Designer.cs">
+      <DependentUpon>CardComentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardCriarPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardCriarPost.Designer.cs">
+      <DependentUpon>CardCriarPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardCriarPostImagem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardCriarPostImagem.Designer.cs">
+      <DependentUpon>CardCriarPostImagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardCriarPostTexto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardCriarPostTexto.Designer.cs">
+      <DependentUpon>CardCriarPostTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardCriarPostVideo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardCriarPostVideo.Designer.cs">
+      <DependentUpon>CardCriarPostVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardEditarPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardEditarPerfil.Designer.cs">
+      <DependentUpon>CardEditarPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardEvento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardEvento.Designer.cs">
+      <DependentUpon>CardEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardEventoTelaInicial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardEventoTelaInicial.Designer.cs">
+      <DependentUpon>CardEventoTelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardNotificacao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardNotificacao.Designer.cs">
+      <DependentUpon>CardNotificacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardPainelDeNotificacoes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardPainelDeNotificacoes.Designer.cs">
+      <DependentUpon>CardPainelDeNotificacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardParticipantes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardParticipantes.Designer.cs">
+      <DependentUpon>CardParticipantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardPerfil.Designer.cs">
+      <DependentUpon>CardPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardPesquisaUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardPesquisaUsuario.Designer.cs">
+      <DependentUpon>CardPesquisaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardPostImagem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardPostImagem.Designer.cs">
+      <DependentUpon>CardPostImagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardPostTexto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardPostTexto.Designer.cs">
+      <DependentUpon>CardPostTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardPostVideo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardPostVideo.Designer.cs">
+      <DependentUpon>CardPostVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardRecuperacaoSenha.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardRecuperacaoSenha.Designer.cs">
+      <DependentUpon>CardRecuperacaoSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CardTransmissãoOnline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardTransmissãoOnline.Designer.cs">
+      <DependentUpon>CardTransmissãoOnline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Categorias.Designer.cs">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CategoriaSelecionada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CategoriaSelecionada.Designer.cs">
+      <DependentUpon>CategoriaSelecionada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EntrarEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EntrarEmpresa.Designer.cs">
+      <DependentUpon>EntrarEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EntrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EntrarUsuario.Designer.cs">
+      <DependentUpon>EntrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EventosCriados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EventosCriados.Designer.cs">
+      <DependentUpon>EventosCriados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EventosIngressados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EventosIngressados.Designer.cs">
+      <DependentUpon>EventosIngressados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Feed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Feed.Designer.cs">
+      <DependentUpon>Feed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\CircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Tools\CircularPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Tools\Arredondar.cs" />
+    <Compile Include="Views\EventoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\EventoCard.Designer.cs">
+      <DependentUpon>EventoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\CircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Tools\RoundedPicture.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Tools\SuperiorRoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Tools\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Tools\RoundedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Tools\RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Tools\SuperiorRoundedPic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\OrganizarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OrganizarEvento.Designer.cs">
+      <DependentUpon>OrganizarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PerfilEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PerfilEmpresa.Designer.cs">
+      <DependentUpon>PerfilEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PostsCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PostsCard.Designer.cs">
+      <DependentUpon>PostsCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OpcaoLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OpcaoLogin.Designer.cs">
+      <DependentUpon>OpcaoLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\CadastrarEmpresaEndereço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CadastrarEmpresaEndereço.Designer.cs">
+      <DependentUpon>CadastrarEmpresaEndereço.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SobreNos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SobreNos.Designer.cs">
+      <DependentUpon>SobreNos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TelaEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TelaEvento.Designer.cs">
+      <DependentUpon>TelaEvento.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Ajuda.resx">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastrarEmpresa.resx">
+      <DependentUpon>CadastrarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastrarUsuario.resx">
+      <DependentUpon>CadastrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardBaixarCertificado.resx">
+      <DependentUpon>CardBaixarCertificado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardComentarios.resx">
+      <DependentUpon>CardComentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardCriarPost.resx">
+      <DependentUpon>CardCriarPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardCriarPostImagem.resx">
+      <DependentUpon>CardCriarPostImagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardCriarPostTexto.resx">
+      <DependentUpon>CardCriarPostTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardCriarPostVideo.resx">
+      <DependentUpon>CardCriarPostVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardEditarPerfil.resx">
+      <DependentUpon>CardEditarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardEvento.resx">
+      <DependentUpon>CardEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardEventoTelaInicial.resx">
+      <DependentUpon>CardEventoTelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardNotificacao.resx">
+      <DependentUpon>CardNotificacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardPainelDeNotificacoes.resx">
+      <DependentUpon>CardPainelDeNotificacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardParticipantes.resx">
+      <DependentUpon>CardParticipantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardPerfil.resx">
+      <DependentUpon>CardPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardPesquisaUsuario.resx">
+      <DependentUpon>CardPesquisaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardPostImagem.resx">
+      <DependentUpon>CardPostImagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardPostTexto.resx">
+      <DependentUpon>CardPostTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardPostVideo.resx">
+      <DependentUpon>CardPostVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardRecuperacaoSenha.resx">
+      <DependentUpon>CardRecuperacaoSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardTransmissãoOnline.resx">
+      <DependentUpon>CardTransmissãoOnline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Categorias.resx">
+      <DependentUpon>Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CategoriaSelecionada.resx">
+      <DependentUpon>CategoriaSelecionada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EntrarEmpresa.resx">
+      <DependentUpon>EntrarEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EntrarUsuario.resx">
+      <DependentUpon>EntrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EventoCard.resx">
+      <DependentUpon>EventoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EventosCriados.resx">
+      <DependentUpon>EventosCriados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EventosIngressados.resx">
+      <DependentUpon>EventosIngressados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Feed.resx">
+      <DependentUpon>Feed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OrganizarEvento.resx">
+      <DependentUpon>OrganizarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PerfilEmpresa.resx">
+      <DependentUpon>PerfilEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PostsCard.resx">
+      <DependentUpon>PostsCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OpcaoLogin.resx">
+      <DependentUpon>OpcaoLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CadastrarEmpresaEndereço.resx">
+      <DependentUpon>CadastrarEmpresaEndereço.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SobreNos.resx">
+      <DependentUpon>SobreNos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TelaEvento.resx">
+      <DependentUpon>TelaEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setaAzul1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setaBranca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconePesquisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CategoriaSaude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CategoriaTecnologia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CategoriaEducacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CategoriaFestivais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CategoriaMusica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconLinkedIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-instagram-logo-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facebook-logo-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconeNotificacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-03-31 1528011.png" />
+    <None Include="Resources\icons8-like-24.png" />
+    <None Include="Resources\image-removebg-preview %283%29 - Copia.png" />
+    <None Include="Resources\icons8-copy-24.png" />
+    <None Include="Resources\icons8-test-account-48 %281%291.png" />
+    <None Include="Resources\icons8-test-account-48 %281%29.png" />
+    <None Include="Resources\icons8-edit-100.png" />
+    <None Include="Resources\nezuko.jpeg" />
+    <None Include="Resources\usuario.png" />
+    <None Include="Resources\CategoriaHobbies.png" />
+    <None Include="Resources\CategoriaMeioAmbiente.png" />
+    <None Include="Resources\CategoriaVoluntariado.png" />
+    <None Include="Resources\CategoriaEntretenimento.png" />
+    <None Include="Resources\CategoriaNegocios.png" />
+    <None Include="Resources\CategoriaCulinária.png" />
+    <None Include="Resources\CategoriaSociedade.png" />
+    <None Include="Resources\CategoriaEsportes.png" />
+    <None Include="Resources\CategoriaFestas.png" />
+    <None Include="Resources\CategoriaFeiras.png" />
+    <None Include="Resources\CategoriaEspiritualidade.png" />
+    <None Include="Resources\CategoriaCompeticoes.png" />
+    <None Include="Resources\CategoriaCiencia.png" />
+    <None Include="Resources\CategoriaDanca.png" />
+    <None Include="Resources\CategoriaArtes.png" />
+    <None Include="Resources\icons8-hide-24.png" />
+    <None Include="Resources\icons8-eye-30.png" />
+    <None Include="Resources\medioEngajamento.png" />
+    <None Include="Resources\baixoEngajamento.png" />
+    <None Include="Resources\altoEngajamento.png" />
+    <Content Include="Pictures\avatar_padrao.png" />
+    <Content Include="Resources\Captura de tela 2025-03-31 151223.png" />
+    <None Include="Resources\Captura de tela 2025-03-31 1512231.png" />
+    <Content Include="Resources\Captura de tela 2025-03-31 152752.png" />
+    <None Include="Resources\Captura de tela 2025-03-31 1527521.png" />
+    <Content Include="Resources\Captura de tela 2025-03-31 152801.png" />
+    <None Include="Resources\icons8-employ-100.png" />
+    <None Include="Resources\icons8-feed-100.png" />
+    <None Include="Resources\icons8-create-100.png" />
+    <None Include="Resources\icons8-ticket-100.png" />
+    <None Include="Resources\icons8-male-user-100.png" />
+    <None Include="Resources\icons8-account-48.png" />
+    <None Include="Resources\LinkedIn %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
