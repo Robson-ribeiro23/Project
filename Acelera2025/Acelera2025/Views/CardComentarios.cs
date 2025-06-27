@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera2025.Controllers;
+using Ac;
+using Acelera2025.Telas;
+using System.IO;
 
 namespace Acelera2025.Views
 {
@@ -23,6 +26,7 @@ namespace Acelera2025.Views
             this.comentario = comentario;
             this.usuario = usuario;
             controller = new PostagemControllers();
+
 
             ConfigurarComentario();
         }

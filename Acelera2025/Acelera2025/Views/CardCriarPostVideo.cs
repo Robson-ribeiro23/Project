@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ac;
+using System.IO;
 
 namespace Acelera2025.Telas
 {
@@ -21,6 +22,11 @@ namespace Acelera2025.Telas
             InitializeComponent();
             this.usuario = usuario;
             video.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
+            if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
+            {
+                picFotoPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
+            }
         }
 
         private void btnSelecionarVideo_Click(object sender, EventArgs e)
@@ -82,6 +88,11 @@ namespace Acelera2025.Telas
         private void btnFechar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
+        }
+
+        private void picFotoPerfil_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,19 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera2025.Controllers;
+using System.IO;
 
 namespace Acelera2025.Views
 {
     public partial class CardPostTexto: UserControl
     {
         private PostModels postagem;
-        public CardPostTexto(PostModels postagem)
+        private PessoaModels usuario;
+        public CardPostTexto(PostModels postagem,PessoaModels usuario)
         {
             InitializeComponent();
             this.postagem = postagem;
+            this.usuario = usuario;
             lblNome.Text = postagem.Usuario.Nome;
             lblTexto.Text = postagem.Texto;
             lblData.Text = postagem.Data.ToString("dd/MM/yyyy HH:mm");
+
+            if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
+            {
+                picFotoPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
+            }
 
             ConfigurarBotaoCurtir();
             AtualizarContadorCurtidas();

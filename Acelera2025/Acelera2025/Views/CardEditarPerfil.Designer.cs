@@ -35,19 +35,20 @@
             this.btnOrganizarEventos = new System.Windows.Forms.LinkLabel();
             this.btnMostrarSenhaConfirmar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSenhaAtual = new System.Windows.Forms.TextBox();
             this.roundedButton2 = new RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNovaSenha = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.roundedPanel2 = new RoundedPanel();
             this.roundedButton1 = new RoundedButton();
             this.lblNomeUsuario = new System.Windows.Forms.Label();
-            this.circularPanel1 = new CircularPanel();
+            this.picFotoPerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -61,16 +62,16 @@
             this.roundedPanel1.Controls.Add(this.btnOrganizarEventos);
             this.roundedPanel1.Controls.Add(this.btnMostrarSenhaConfirmar);
             this.roundedPanel1.Controls.Add(this.label2);
-            this.roundedPanel1.Controls.Add(this.textBox3);
+            this.roundedPanel1.Controls.Add(this.txtSenhaAtual);
             this.roundedPanel1.Controls.Add(this.roundedButton2);
             this.roundedPanel1.Controls.Add(this.label1);
             this.roundedPanel1.Controls.Add(this.label3);
-            this.roundedPanel1.Controls.Add(this.textBox2);
-            this.roundedPanel1.Controls.Add(this.textBox1);
+            this.roundedPanel1.Controls.Add(this.txtNovaSenha);
+            this.roundedPanel1.Controls.Add(this.txtEmail);
             this.roundedPanel1.Controls.Add(this.roundedPanel2);
             this.roundedPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedPanel1.Location = new System.Drawing.Point(0, 0);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(968, 560);
             this.roundedPanel1.TabIndex = 0;
@@ -79,7 +80,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(19, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +95,7 @@
             this.btnMostrarSenha.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarSenha.Location = new System.Drawing.Point(771, 300);
-            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(2);
             this.btnMostrarSenha.Name = "btnMostrarSenha";
             this.btnMostrarSenha.Size = new System.Drawing.Size(21, 20);
             this.btnMostrarSenha.TabIndex = 33;
@@ -146,15 +147,15 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Digite sua senha atual para aplicar a alteração:";
             // 
-            // textBox3
+            // txtSenhaAtual
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox3.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(145, 419);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(460, 33);
-            this.textBox3.TabIndex = 12;
+            this.txtSenhaAtual.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSenhaAtual.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenhaAtual.Location = new System.Drawing.Point(145, 419);
+            this.txtSenhaAtual.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSenhaAtual.Name = "txtSenhaAtual";
+            this.txtSenhaAtual.Size = new System.Drawing.Size(460, 33);
+            this.txtSenhaAtual.TabIndex = 12;
             // 
             // roundedButton2
             // 
@@ -166,7 +167,7 @@
             this.roundedButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.roundedButton2.Location = new System.Drawing.Point(643, 419);
-            this.roundedButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(2);
             this.roundedButton2.Name = "roundedButton2";
             this.roundedButton2.Size = new System.Drawing.Size(124, 29);
             this.roundedButton2.TabIndex = 11;
@@ -201,25 +202,25 @@
             this.label3.Text = "E-mail:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox2
+            // txtNovaSenha
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(145, 295);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(623, 33);
-            this.textBox2.TabIndex = 3;
+            this.txtNovaSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNovaSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNovaSenha.Location = new System.Drawing.Point(145, 295);
+            this.txtNovaSenha.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNovaSenha.Name = "txtNovaSenha";
+            this.txtNovaSenha.Size = new System.Drawing.Size(623, 33);
+            this.txtNovaSenha.TabIndex = 3;
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(147, 217);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(623, 33);
-            this.textBox1.TabIndex = 2;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(147, 217);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(623, 33);
+            this.txtEmail.TabIndex = 2;
             // 
             // roundedPanel2
             // 
@@ -228,11 +229,11 @@
             this.roundedPanel2.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel2.BorderRadius = 20;
             this.roundedPanel2.BorderSize = 0;
+            this.roundedPanel2.Controls.Add(this.picFotoPerfil);
             this.roundedPanel2.Controls.Add(this.roundedButton1);
             this.roundedPanel2.Controls.Add(this.lblNomeUsuario);
-            this.roundedPanel2.Controls.Add(this.circularPanel1);
             this.roundedPanel2.Location = new System.Drawing.Point(75, 61);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(826, 81);
             this.roundedPanel2.TabIndex = 0;
@@ -246,7 +247,7 @@
             this.roundedButton1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.roundedButton1.Location = new System.Drawing.Point(667, 28);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedButton1.Name = "roundedButton1";
             this.roundedButton1.Size = new System.Drawing.Size(124, 29);
             this.roundedButton1.TabIndex = 4;
@@ -266,18 +267,23 @@
             this.lblNomeUsuario.TabIndex = 3;
             this.lblNomeUsuario.Text = "Nome ";
             // 
-            // circularPanel1
+            // picFotoPerfil
             // 
-            this.circularPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.circularPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularPanel1.BackgroundImage")));
-            this.circularPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.circularPanel1.BorderColor = System.Drawing.Color.Black;
-            this.circularPanel1.BorderSize = 0;
-            this.circularPanel1.Location = new System.Drawing.Point(13, 13);
-            this.circularPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.circularPanel1.Name = "circularPanel1";
-            this.circularPanel1.Size = new System.Drawing.Size(48, 52);
-            this.circularPanel1.TabIndex = 0;
+            this.picFotoPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.picFotoPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.picFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picFotoPerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picFotoPerfil.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.picFotoPerfil.BorderColor2 = System.Drawing.Color.HotPink;
+            this.picFotoPerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picFotoPerfil.BorderSize = 2;
+            this.picFotoPerfil.GradientAngle = 50F;
+            this.picFotoPerfil.Location = new System.Drawing.Point(6, 11);
+            this.picFotoPerfil.Name = "picFotoPerfil";
+            this.picFotoPerfil.Size = new System.Drawing.Size(60, 60);
+            this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotoPerfil.TabIndex = 36;
+            this.picFotoPerfil.TabStop = false;
             // 
             // CardEditarPerfil
             // 
@@ -285,7 +291,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.roundedPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CardEditarPerfil";
             this.Size = new System.Drawing.Size(968, 560);
             this.roundedPanel1.ResumeLayout(false);
@@ -293,6 +299,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -301,19 +308,19 @@
 
         private RoundedPanel roundedPanel1;
         private RoundedPanel roundedPanel2;
-        private CircularPanel circularPanel1;
         private System.Windows.Forms.Label lblNomeUsuario;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private RoundedButton roundedButton2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNovaSenha;
         private RoundedButton roundedButton1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSenhaAtual;
         private System.Windows.Forms.Button btnMostrarSenhaConfirmar;
         private System.Windows.Forms.Button btnMostrarSenha;
         private System.Windows.Forms.LinkLabel btnOrganizarEventos;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Tools.CircularPictureBox picFotoPerfil;
     }
 }

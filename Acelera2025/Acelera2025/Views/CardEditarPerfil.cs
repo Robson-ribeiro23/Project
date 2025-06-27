@@ -39,20 +39,56 @@ namespace Acelera2025.Views
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
-                Title = "Selecione um arquivo",
+                Title = "Selecione uma foto de perfil",
                 Filter = "Imagens|*.png;*.jpg;*.jpeg;*.bmp;*.gif",
                 Multiselect = false
             };
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show("Arquivo escolhido: " + openFileDialog.FileName);
+                string caminhoImagem = openFileDialog.FileName;
+                usuario.CaminhoFoto = caminhoImagem;
+                picFotoPerfil.Image = Image.FromFile(caminhoImagem);
+
+                //MessageBox.Show("Foto atualizada!");
             }
         }
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
+            string novaSenha = txtNovaSenha.Text; 
+            string senhaAtual = txtSenhaAtual.Text;
+            string novoEmail = txtEmail.Text.Trim();
 
+            // Verificação de senha atual
+            if (senhaAtual != usuario.Senha)
+            {
+                MessageBox.Show("Senha atual incorreta!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Validação básica do e-mail (opcional)
+            if (!string.IsNullOrWhiteSpace(novoEmail) && !novoEmail.Contains("@"))
+            {
+                MessageBox.Show("E-mail inválido!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Atualiza o e-mail
+            if (!string.IsNullOrWhiteSpace(novoEmail))
+            {
+                usuario.Email = novoEmail;
+            }
+
+            // Atualiza a senha se nova senha foi informada
+            if (!string.IsNullOrWhiteSpace(novaSenha))
+            {
+                usuario.Senha = novaSenha;
+            }
+
+            MessageBox.Show("Dados atualizados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            this.Hide();
         }
     }
 }

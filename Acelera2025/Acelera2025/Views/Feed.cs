@@ -23,6 +23,7 @@ namespace Acelera2025.Views
         private bool cardCriarPostImagemVisivel = false;
         private CardCriarPostVideo cardCriarPostVideo;
         private bool cardCriarPostVideoVisivel = false;
+        
         public Feed(PessoaModels usuario)
         {
             InitializeComponent();
@@ -147,15 +148,15 @@ namespace Acelera2025.Views
 
                 if (post.Video != null)
                 {
-                    cardPost = new CardPostVideo(post); 
+                    cardPost = new CardPostVideo(post, usuario); 
                 }
                 else if (post.Imagens != null && post.Imagens.Count > 0)
                 {
-                    cardPost = new CardPostImagem(post); 
+                    cardPost = new CardPostImagem(post, usuario); 
                 }
                 else
                 {
-                    cardPost = new CardPostTexto(post);
+                    cardPost = new CardPostTexto(post, usuario);
                 }
 
                 cardPost.Width = flowLayoutPanel1.Width - 25;
@@ -199,6 +200,10 @@ namespace Acelera2025.Views
             cardCriarPostVideo.BringToFront();
         }
 
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
     }

@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Ac;
+using Acelera2025.Telas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +23,11 @@ namespace Acelera2025.Telas
         {
             InitializeComponent();
             this.usuario = usuario;
+
+            if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
+            {
+                PicPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
+            }
         }
 
         private void btnPostar_Click(object sender, EventArgs e)
@@ -118,6 +126,16 @@ namespace Acelera2025.Telas
         private void btnFechar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
+        }
+
+        private void picPerfil_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PicPerfil_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

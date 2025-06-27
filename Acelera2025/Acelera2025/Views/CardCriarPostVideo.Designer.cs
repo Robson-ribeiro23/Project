@@ -34,14 +34,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPostar = new RoundedButton();
             this.btnSelecionarVideo = new System.Windows.Forms.Button();
-            this.picPerfil = new CircularPanel();
             this.txtTexto = new System.Windows.Forms.TextBox();
             this.btnFechar = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picFotoPerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.video)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -50,10 +51,10 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
+            this.roundedPanel1.Controls.Add(this.picFotoPerfil);
             this.roundedPanel1.Controls.Add(this.video);
             this.roundedPanel1.Controls.Add(this.panel1);
             this.roundedPanel1.Controls.Add(this.btnSelecionarVideo);
-            this.roundedPanel1.Controls.Add(this.picPerfil);
             this.roundedPanel1.Controls.Add(this.txtTexto);
             this.roundedPanel1.Controls.Add(this.btnFechar);
             this.roundedPanel1.Controls.Add(this.pictureBox1);
@@ -115,21 +116,6 @@
             this.btnSelecionarVideo.UseVisualStyleBackColor = false;
             this.btnSelecionarVideo.Click += new System.EventHandler(this.btnSelecionarVideo_Click);
             // 
-            // picPerfil
-            // 
-            this.picPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.picPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
-            this.picPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPerfil.BorderColor = System.Drawing.Color.Black;
-            this.picPerfil.BorderSize = 0;
-            this.picPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPerfil.Location = new System.Drawing.Point(17, 66);
-            this.picPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(74, 76);
-            this.picPerfil.TabIndex = 41;
-            // 
             // txtTexto
             // 
             this.txtTexto.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,7 +137,7 @@
             this.btnFechar.LinkColor = System.Drawing.Color.Black;
             this.btnFechar.Location = new System.Drawing.Point(801, 20);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(28, 36);
+            this.btnFechar.Size = new System.Drawing.Size(23, 29);
             this.btnFechar.TabIndex = 43;
             this.btnFechar.TabStop = true;
             this.btnFechar.Text = "X";
@@ -168,6 +154,25 @@
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
+            // picFotoPerfil
+            // 
+            this.picFotoPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.picFotoPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.picFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picFotoPerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picFotoPerfil.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.picFotoPerfil.BorderColor2 = System.Drawing.Color.HotPink;
+            this.picFotoPerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picFotoPerfil.BorderSize = 2;
+            this.picFotoPerfil.GradientAngle = 50F;
+            this.picFotoPerfil.Location = new System.Drawing.Point(17, 78);
+            this.picFotoPerfil.Name = "picFotoPerfil";
+            this.picFotoPerfil.Size = new System.Drawing.Size(72, 72);
+            this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotoPerfil.TabIndex = 36;
+            this.picFotoPerfil.TabStop = false;
+            this.picFotoPerfil.Click += new System.EventHandler(this.picFotoPerfil_Click);
+            // 
             // CardCriarPostVideo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -180,6 +185,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.video)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -190,10 +196,10 @@
         private System.Windows.Forms.Panel panel1;
         private RoundedButton btnPostar;
         private System.Windows.Forms.Button btnSelecionarVideo;
-        private CircularPanel picPerfil;
         private System.Windows.Forms.TextBox txtTexto;
         private System.Windows.Forms.LinkLabel btnFechar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private AxWMPLib.AxWindowsMediaPlayer video;
+        private Views.Tools.CircularPictureBox picFotoPerfil;
     }
 }
