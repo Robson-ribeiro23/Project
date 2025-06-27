@@ -36,15 +36,15 @@
             this.btnCriarEvento = new RoundedButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.comboUF = new System.Windows.Forms.ComboBox();
-            this.txtRua = new System.Windows.Forms.TextBox();
+            this.txtNomeRua = new System.Windows.Forms.TextBox();
             this.linkLabel19 = new System.Windows.Forms.LinkLabel();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.linkLabel18 = new System.Windows.Forms.LinkLabel();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.linkLabel17 = new System.Windows.Forms.LinkLabel();
-            this.txtCEP = new System.Windows.Forms.TextBox();
+            this.txtCep = new System.Windows.Forms.TextBox();
             this.linkLabel16 = new System.Windows.Forms.LinkLabel();
-            this.txtNomeLocal = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.linkLabel15 = new System.Windows.Forms.LinkLabel();
             this.linkLabel14 = new System.Windows.Forms.LinkLabel();
             this.txtCidade = new System.Windows.Forms.TextBox();
@@ -191,15 +191,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.comboUF);
-            this.panel3.Controls.Add(this.txtRua);
+            this.panel3.Controls.Add(this.txtNomeRua);
             this.panel3.Controls.Add(this.linkLabel19);
             this.panel3.Controls.Add(this.txtNumero);
             this.panel3.Controls.Add(this.linkLabel18);
             this.panel3.Controls.Add(this.txtBairro);
             this.panel3.Controls.Add(this.linkLabel17);
-            this.panel3.Controls.Add(this.txtCEP);
+            this.panel3.Controls.Add(this.txtCep);
             this.panel3.Controls.Add(this.linkLabel16);
-            this.panel3.Controls.Add(this.txtNomeLocal);
+            this.panel3.Controls.Add(this.textBox9);
             this.panel3.Controls.Add(this.linkLabel15);
             this.panel3.Controls.Add(this.linkLabel14);
             this.panel3.Controls.Add(this.txtCidade);
@@ -221,17 +221,17 @@
             this.comboUF.Size = new System.Drawing.Size(104, 21);
             this.comboUF.TabIndex = 36;
             // 
-            // txtRua
+            // txtNomeRua
             // 
-            this.txtRua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtNomeRua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRua.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtRua.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRua.Location = new System.Drawing.Point(605, 114);
-            this.txtRua.Margin = new System.Windows.Forms.Padding(2);
-            this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(155, 33);
-            this.txtRua.TabIndex = 35;
+            this.txtNomeRua.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNomeRua.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomeRua.Location = new System.Drawing.Point(605, 114);
+            this.txtNomeRua.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomeRua.Name = "txtNomeRua";
+            this.txtNomeRua.Size = new System.Drawing.Size(155, 33);
+            this.txtNomeRua.TabIndex = 35;
             // 
             // linkLabel19
             // 
@@ -304,15 +304,15 @@
             this.linkLabel17.Text = "Nome da Rua:";
             this.linkLabel17.VisitedLinkColor = System.Drawing.Color.White;
             // 
-            // txtCEP
+            // txtCep
             // 
-            this.txtCEP.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtCEP.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCEP.Location = new System.Drawing.Point(7, 114);
-            this.txtCEP.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(117, 33);
-            this.txtCEP.TabIndex = 29;
+            this.txtCep.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtCep.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCep.Location = new System.Drawing.Point(7, 114);
+            this.txtCep.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(117, 33);
+            this.txtCep.TabIndex = 29;
             // 
             // linkLabel16
             // 
@@ -331,17 +331,17 @@
             this.linkLabel16.Text = "CEP";
             this.linkLabel16.VisitedLinkColor = System.Drawing.Color.White;
             // 
-            // txtNomeLocal
+            // textBox9
             // 
-            this.txtNomeLocal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNomeLocal.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNomeLocal.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeLocal.Location = new System.Drawing.Point(524, 47);
-            this.txtNomeLocal.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNomeLocal.Name = "txtNomeLocal";
-            this.txtNomeLocal.Size = new System.Drawing.Size(236, 33);
-            this.txtNomeLocal.TabIndex = 27;
+            this.textBox9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox9.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(524, 47);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(236, 33);
+            this.textBox9.TabIndex = 27;
             // 
             // linkLabel15
             // 
@@ -1040,16 +1040,16 @@
         private System.Windows.Forms.LinkLabel linkLabel12;
         private System.Windows.Forms.TextBox txtLinkReunião;
         private System.Windows.Forms.LinkLabel linkLabel16;
-        private System.Windows.Forms.TextBox txtNomeLocal;
+        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.LinkLabel linkLabel15;
         private System.Windows.Forms.LinkLabel linkLabel14;
         private System.Windows.Forms.LinkLabel linkLabel18;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.LinkLabel linkLabel17;
-        private System.Windows.Forms.TextBox txtCEP;
+        private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.LinkLabel linkLabel19;
         private System.Windows.Forms.TextBox txtNumero;
-        private System.Windows.Forms.TextBox txtRua;
+        private System.Windows.Forms.TextBox txtNomeRua;
         private RoundedButton btnCriarEvento;
         private System.Windows.Forms.ComboBox comboUF;
         private RoundedPanel panelMeusEventos;

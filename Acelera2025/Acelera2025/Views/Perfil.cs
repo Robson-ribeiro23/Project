@@ -22,7 +22,6 @@ namespace Acelera2025.Views
         {
             InitializeComponent();
             this.usuario = usuario;
-            lblNomeUsuario.Text = usuario.Nome;
 
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
@@ -54,9 +53,6 @@ namespace Acelera2025.Views
             panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-
-            cardEditarPerfilVisivel = usuario == UsuarioControllers.loggedUser;
-            btnLapis.Visible = cardEditarPerfilVisivel;
         }
 
         private void linkLabel3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
@@ -94,7 +90,6 @@ namespace Acelera2025.Views
 
         private void btnLapis_Click(object sender, EventArgs e)
         {
-            if (usuario != UsuarioControllers.loggedUser) return;
             cardEditarPerfilVisivel = !cardEditarPerfilVisivel;
             cardEditarPerfil.Visible = cardEditarPerfilVisivel;
             cardEditarPerfil.BringToFront();
@@ -118,11 +113,6 @@ namespace Acelera2025.Views
         }
 
         private void picPerfil_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

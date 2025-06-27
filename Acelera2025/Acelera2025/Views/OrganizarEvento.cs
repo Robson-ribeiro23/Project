@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -118,12 +117,6 @@ namespace Acelera2025.Views
                 string descricao = txtDescricao.Text;
                 bool permitePatrocinio = checkBoxPatrocinio.Checked;
                 string email = this.usuario.Email;
-                string nomeLocal = txtNomeLocal.Text;
-                string rua = txtRua.Text;
-                string numero = txtNumero.Text;
-                string bairro = txtBairro.Text;
-                string cep = txtCEP.Text;
-                string cidade = txtCidade.Text;
 
                 // === Cria o evento com o caminho da imagem ===
                 EventoModels novoEvento = new EventoModels
@@ -138,13 +131,7 @@ namespace Acelera2025.Views
                     descricao,
                     permitePatrocinio,
                     caminhoImagem,
-                    email,
-                    nomeLocal,
-                    rua,
-                    numero,
-                    bairro,
-                    cep,
-                    cidade
+                    email
                 );
 
                 EventoControllers controller = new EventoControllers();

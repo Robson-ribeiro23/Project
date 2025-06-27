@@ -35,7 +35,7 @@ public class EventoControllers
 
         // Adiciona à lista
         listaEventos.Add(evento);
-        //MessageBox.Show("Evento criado com sucesso!");
+        MessageBox.Show("Evento criado com sucesso!");
         return true;
     }
 
