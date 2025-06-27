@@ -28,6 +28,7 @@ namespace Acelera2025.Views
         private List<Label> labelDatas;
         private List<Label> labelHoras;
         private List<LinkLabel> btnNomes;
+        private List<Label> lblCidadeUfs;
 
         public Home(PessoaModels usuario)
         {
@@ -72,6 +73,7 @@ namespace Acelera2025.Views
             labelDatas = new List<Label> { lblData1, lblData2, lblData3 };
             labelHoras = new List<Label> { lblHora1, lblHora2, lblHora3 };
             btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3 };
+            lblCidadeUfs = new List<Label> { lblCidadeUf1, lblCidadeUf2, lblCidadeUf3 };
 
             List<EventoModels> eventos = EventoCache.ListarTodos();
 
@@ -85,14 +87,25 @@ namespace Acelera2025.Views
                     labelHoras[i].Text = evento.Horario;
                     btnNomes[i].Text = evento.NomeEvento;
 
+                    // Montagem segura do endereço
+                    string rua = evento.Rua ?? "";
+                    string numero = string.IsNullOrWhiteSpace(evento.NumeroEndereco) ? "s/n" : evento.NumeroEndereco;
+                    string bairro = evento.Bairro ?? "";
+                    string cidade = evento.Cidade ?? "";
+
+                    lblCidadeUfs[i].Text = $"{rua}, {numero} - {bairro} | {cidade}";
+
+                    // Carrega imagem
                     if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
                     {
                         pictureBoxes[i].Image = Image.FromFile(evento.CaminhoImagem);
                     }
 
+                    // Armazena evento como Tag
                     pictureBoxes[i].Tag = evento;
                     btnNomes[i].Tag = evento;
 
+                    // Garante um único evento nos handlers
                     pictureBoxes[i].Click -= Evento_Click;
                     pictureBoxes[i].Click += Evento_Click;
 
@@ -104,6 +117,7 @@ namespace Acelera2025.Views
                     labelDatas[i].Text = "";
                     labelHoras[i].Text = "";
                     btnNomes[i].Text = "";
+                    lblCidadeUfs[i].Text = "";
                     pictureBoxes[i].Image = null;
 
                     pictureBoxes[i].Tag = null;
@@ -114,6 +128,42 @@ namespace Acelera2025.Views
                 }
             }
 
+
+            //var eventos = EventoCache.ListarTodos();
+
+            if (eventos.Any())
+            {
+                EventoModels eventoEmAlta = eventos.Last(); // último evento criado
+
+                if (!string.IsNullOrEmpty(eventoEmAlta.CaminhoImagem) && File.Exists(eventoEmAlta.CaminhoImagem))
+                {
+                    picCarrossel.Image = Image.FromFile(eventoEmAlta.CaminhoImagem);
+                }
+                else
+                {
+                    picCarrossel.Image = null; // limpa se não houver imagem válida
+                }
+
+                lblEventoEmAlta.Text = eventoEmAlta.NomeEvento ?? "Evento Sem Nome";
+
+                picCarrossel.Tag = eventoEmAlta;
+                picCarrossel.Click -= PicEventoCarrossel_Click;
+                picCarrossel.Click += PicEventoCarrossel_Click;
+            }
+            else
+            {
+                picCarrossel.Image = null;
+                lblEventoEmAlta.Text = "";
+                picCarrossel.Tag = null;
+                picCarrossel.Click -= PicEventoCarrossel_Click;
+            }
+        }
+        private void PicEventoCarrossel_Click(object sender, EventArgs e)
+        {
+            if (picCarrossel.Tag is EventoModels eventoSelecionado)
+            {
+                Navegador.IrParaTelaEventos(this.usuario, eventoSelecionado);
+            }
         }
 
         private void PicEvento_Click(object sender, EventArgs e)
@@ -386,6 +436,20 @@ namespace Acelera2025.Views
         private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnAjudaInferior_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btnEmail_Click(object sender, EventArgs e)
+        {
+            string destinatario = "dairohelp@dominio.com";
+
+            string url = $"mailto:{destinatario}?";
+
+            System.Diagnostics.Process.Start(url);
         }
     }
 }

@@ -15,6 +15,7 @@ namespace Acelera2025.Views
         {
             InitializeComponent();
             this.usuario = usuario;
+            lblNome.Text = usuario.Nome;
 
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
@@ -52,6 +53,11 @@ namespace Acelera2025.Views
         private void btnSair_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaInicio();
+        }
+
+        private void roundedPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

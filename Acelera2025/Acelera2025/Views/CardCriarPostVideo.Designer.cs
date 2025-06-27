@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardCriarPostVideo));
             this.roundedPanel1 = new RoundedPanel();
+            this.video = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPostar = new RoundedButton();
             this.btnSelecionarVideo = new System.Windows.Forms.Button();
@@ -37,11 +38,10 @@
             this.txtTexto = new System.Windows.Forms.TextBox();
             this.btnFechar = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.video = new AxWMPLib.AxWindowsMediaPlayer();
             this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.video)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.video)).BeginInit();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -59,18 +59,30 @@
             this.roundedPanel1.Controls.Add(this.pictureBox1);
             this.roundedPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedPanel1.Location = new System.Drawing.Point(0, 0);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(858, 375);
+            this.roundedPanel1.Size = new System.Drawing.Size(644, 305);
             this.roundedPanel1.TabIndex = 1;
+            // 
+            // video
+            // 
+            this.video.Enabled = true;
+            this.video.Location = new System.Drawing.Point(582, 78);
+            this.video.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.video.Name = "video";
+            this.video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video.OcxState")));
+            this.video.Size = new System.Drawing.Size(250, 198);
+            this.video.TabIndex = 48;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnPostar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 302);
+            this.panel1.Location = new System.Drawing.Point(0, 246);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(858, 73);
+            this.panel1.Size = new System.Drawing.Size(644, 59);
             this.panel1.TabIndex = 12;
             // 
             // btnPostar
@@ -82,9 +94,10 @@
             this.btnPostar.BorderSize = 0;
             this.btnPostar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPostar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPostar.Location = new System.Drawing.Point(667, 17);
+            this.btnPostar.Location = new System.Drawing.Point(500, 14);
+            this.btnPostar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPostar.Name = "btnPostar";
-            this.btnPostar.Size = new System.Drawing.Size(165, 36);
+            this.btnPostar.Size = new System.Drawing.Size(124, 29);
             this.btnPostar.TabIndex = 12;
             this.btnPostar.Text = "Postar";
             this.btnPostar.UseVisualStyleBackColor = false;
@@ -98,10 +111,9 @@
             this.btnSelecionarVideo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSelecionarVideo.FlatAppearance.BorderSize = 0;
             this.btnSelecionarVideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSelecionarVideo.Location = new System.Drawing.Point(553, 160);
-            this.btnSelecionarVideo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSelecionarVideo.Location = new System.Drawing.Point(415, 130);
             this.btnSelecionarVideo.Name = "btnSelecionarVideo";
-            this.btnSelecionarVideo.Size = new System.Drawing.Size(22, 27);
+            this.btnSelecionarVideo.Size = new System.Drawing.Size(16, 22);
             this.btnSelecionarVideo.TabIndex = 47;
             this.btnSelecionarVideo.UseVisualStyleBackColor = false;
             // 
@@ -114,19 +126,20 @@
             this.picPerfil.BorderColor = System.Drawing.Color.Black;
             this.picPerfil.BorderSize = 0;
             this.picPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPerfil.Location = new System.Drawing.Point(17, 66);
-            this.picPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picPerfil.Location = new System.Drawing.Point(13, 54);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(74, 76);
+            this.picPerfil.Size = new System.Drawing.Size(56, 62);
             this.picPerfil.TabIndex = 41;
             // 
             // txtTexto
             // 
             this.txtTexto.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTexto.Location = new System.Drawing.Point(107, 78);
+            this.txtTexto.Location = new System.Drawing.Point(80, 63);
+            this.txtTexto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTexto.Multiline = true;
             this.txtTexto.Name = "txtTexto";
-            this.txtTexto.Size = new System.Drawing.Size(419, 198);
+            this.txtTexto.Size = new System.Drawing.Size(315, 162);
             this.txtTexto.TabIndex = 42;
             // 
             // btnFechar
@@ -139,9 +152,10 @@
             this.btnFechar.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnFechar.LinkColor = System.Drawing.Color.Black;
-            this.btnFechar.Location = new System.Drawing.Point(801, 20);
+            this.btnFechar.Location = new System.Drawing.Point(601, 16);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(28, 36);
+            this.btnFechar.Size = new System.Drawing.Size(23, 29);
             this.btnFechar.TabIndex = 43;
             this.btnFechar.TabStop = true;
             this.btnFechar.Text = "X";
@@ -150,35 +164,28 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
-            // video
-            // 
-            this.video.Enabled = true;
-            this.video.Location = new System.Drawing.Point(582, 78);
-            this.video.Name = "video";
-            this.video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video.OcxState")));
-            this.video.Size = new System.Drawing.Size(250, 198);
-            this.video.TabIndex = 48;
-            // 
             // CardCriarPostVideo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.roundedPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CardCriarPostVideo";
-            this.Size = new System.Drawing.Size(858, 375);
+            this.Size = new System.Drawing.Size(644, 305);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.video)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.video)).EndInit();
             this.ResumeLayout(false);
 
         }

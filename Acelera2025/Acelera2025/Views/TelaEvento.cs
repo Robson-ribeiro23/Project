@@ -37,7 +37,23 @@ namespace Acelera2025.Views
                 lblNomeEvento.Text = evento.NomeEvento;
                 lblDescricao.Text = evento.Descricao;
                 lblNomePublicador.Text = evento.UsuarioEmail;
+                lblDataEvento.Text = evento.Data.ToShortDateString();
+                btnCategoria.Text = evento.Categoria;
+                btnPresencialOnline.Text = evento.IsPresencial ? "Presencial" : "Online";
+                lblNomeLocal.Text = evento.NomeLocal ?? "";
 
+                // Monta o endereço
+                string rua = evento.Rua ?? "";
+                string numero = string.IsNullOrWhiteSpace(evento.NumeroEndereco) ? "s/n" : evento.NumeroEndereco;
+                string bairro = evento.Bairro ?? "";
+                lblEndereco.Text = $"{rua}, {numero} - {bairro}";
+
+                lblCEP.Text = evento.CEP ?? "";
+                lblCidadeUf.Text = evento.Cidade ?? "";
+                lblDescrição.Text = evento.Descricao ?? "";
+                lblNomePublicador.Text = evento.UsuarioEmail ?? "";
+
+                // Carrega imagem do evento
                 if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
                     picEvento.Image = Image.FromFile(evento.CaminhoImagem);
             }
@@ -45,9 +61,15 @@ namespace Acelera2025.Views
             {
                 lblNomeEvento.Text = "Evento não selecionado";
                 lblDescricao.Text = "";
+                lblDataEvento.Text = "";
+                lblNomeLocal.Text = "";
+                lblEndereco.Text = "";
+                lblCEP.Text = "";
+                lblCidadeUf.Text = "";
                 lblNomePublicador.Text = "";
             }
 
+            // Carrega foto de perfil do usuário
             if (!string.IsNullOrEmpty(usuario.CaminhoFoto) && File.Exists(usuario.CaminhoFoto))
                 picturePerfil.Image = Image.FromFile(usuario.CaminhoFoto);
         }

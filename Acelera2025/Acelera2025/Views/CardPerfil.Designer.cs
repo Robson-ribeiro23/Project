@@ -59,6 +59,7 @@
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(284, 126);
             this.roundedPanel2.TabIndex = 15;
+            this.roundedPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel2_Paint);
             // 
             // picturePerfil
             // 

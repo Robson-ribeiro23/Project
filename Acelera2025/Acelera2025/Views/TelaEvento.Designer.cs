@@ -76,8 +76,8 @@
             this.btnPresencialOnline = new RoundedButton();
             this.btnCategoria = new RoundedButton();
             this.lblCidadeUf = new System.Windows.Forms.Label();
-            this.lblCep = new System.Windows.Forms.Label();
-            this.lblRua = new System.Windows.Forms.Label();
+            this.lblCEP = new System.Windows.Forms.Label();
+            this.lblEndereco = new System.Windows.Forms.Label();
             this.lblNomeLocal = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -340,6 +340,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1823, 684);
             this.panel1.TabIndex = 25;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panelEmpresa
             // 
@@ -579,6 +580,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Descrição";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // lblDescricao
             // 
@@ -763,8 +765,8 @@
             this.roundedPanel1.Controls.Add(this.btnPresencialOnline);
             this.roundedPanel1.Controls.Add(this.btnCategoria);
             this.roundedPanel1.Controls.Add(this.lblCidadeUf);
-            this.roundedPanel1.Controls.Add(this.lblCep);
-            this.roundedPanel1.Controls.Add(this.lblRua);
+            this.roundedPanel1.Controls.Add(this.lblCEP);
+            this.roundedPanel1.Controls.Add(this.lblEndereco);
             this.roundedPanel1.Controls.Add(this.lblNomeLocal);
             this.roundedPanel1.Controls.Add(this.lblData);
             this.roundedPanel1.Location = new System.Drawing.Point(1241, 18);
@@ -816,7 +818,7 @@
             this.lblCidadeUf.TabIndex = 9;
             this.lblCidadeUf.Text = "Cidade - UF";
             // 
-            // lblCep
+            // lblCEP
             // 
             this.lblCep.AutoSize = true;
             this.lblCep.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -827,7 +829,7 @@
             this.lblCep.TabIndex = 8;
             this.lblCep.Text = "xx xxx-xxx";
             // 
-            // lblRua
+            // lblEndereco
             // 
             this.lblRua.AutoSize = true;
             this.lblRua.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -849,7 +851,7 @@
             this.lblNomeLocal.TabIndex = 6;
             this.lblNomeLocal.Text = "nome do Local";
             // 
-            // lblData
+            // lblDataEvento
             // 
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -932,10 +934,10 @@
         private RoundedButton btnPresencialOnline;
         private RoundedButton btnCategoria;
         private System.Windows.Forms.Label lblCidadeUf;
-        private System.Windows.Forms.Label lblCep;
-        private System.Windows.Forms.Label lblRua;
+        private System.Windows.Forms.Label lblCEP;
+        private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.Label lblNomeLocal;
-        private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.Label lblDataEvento;
         private RoundedButton btnInscrever;
         private System.Windows.Forms.Label lblNomeEvento;
         private System.Windows.Forms.Label label8;

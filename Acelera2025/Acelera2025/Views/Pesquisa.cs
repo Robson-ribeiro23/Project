@@ -1,9 +1,13 @@
-﻿using Ac;
-using Acelera2025.Telas;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
+using Ac;
+using Acelera2025.Models;
+using Acelera2025.Telas;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Acelera2025.Views
 {
@@ -15,6 +19,12 @@ namespace Acelera2025.Views
         private PessoaModels usuario;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
+        private UsuarioControllers usuarioController = new UsuarioControllers();
+        private EventoControllers eventoController = new EventoControllers();
+
+
+
+
         public Pesquisa(PessoaModels usuario)
         {
             InitializeComponent();
@@ -64,6 +74,7 @@ namespace Acelera2025.Views
             comboFiltrarBusca.Items.Add("Eventos");
             comboFiltrarBusca.Items.Add("Empresas");
             comboFiltrarBusca.Items.Add("Pessoas");
+            comboFiltrarBusca.SelectedIndex = 0;
             comboCategoria.Items.AddRange(categorias);
         }
 
@@ -110,6 +121,76 @@ namespace Acelera2025.Views
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            refreshSearch();
+        }
+
+        private void refreshSearch()
+        {
+            string termo = txtPesquisa.Text.Trim().ToLower();
+
+            flowLayoutPanelResultados.Controls.Clear();
+
+            if (comboFiltrarBusca.SelectedItem.ToString() == "Pessoas")
+            {
+                showUsers(termo);
+            }
+            else if (comboFiltrarBusca.SelectedItem.ToString() == "Eventos")
+            {
+                showEvents(termo);
+            }
+        }
+
+        private void showUsers(string termo)
+        {
+            // Obtem todos os usuários
+            var usuarios = usuarioController.ListarTodos();
+
+            // Filtra os usuários
+            var usuariosFiltrados = usuarios
+                .Where(u => 
+                (string.IsNullOrEmpty(termo) || !string.IsNullOrEmpty(u.Nome) && u.Nome.ToLower().Contains(termo))
+                ).ToList();
+
+            foreach (var usuario in usuariosFiltrados)
+            {
+                if (usuario == UsuarioControllers.loggedUser) continue;
+                CardPesquisaUsuario card = new CardPesquisaUsuario();
+                card.DefinirDadosUsuario(usuario);
+                flowLayoutPanelResultados.Controls.Add(card);
+            }
+        }
+
+        private void showEvents(string termo)
+        {
+            var eventos = eventoController.ListarTodos();
+
+            var eventosFiltrados = eventos
+                .Where(e =>
+                    (string.IsNullOrEmpty(termo) || !string.IsNullOrEmpty(e.NomeEvento) && e.NomeEvento.ToLower().Contains(termo)) &&
+                    (comboCategoria.SelectedItem == null || e.Categoria == comboCategoria.SelectedItem.ToString())
+                ).ToList(); // Apenas retorna os eventos por nome se termo tiver algum valor e por categoria se também tiver valor
+
+            foreach (var evento in eventosFiltrados)
+            {
+                CardPesquisaUsuario card = new CardPesquisaUsuario();
+                card.ForçarUsuario(UsuarioControllers.loggedUser);
+                card.DefinirDadosEvento(evento);
+                flowLayoutPanelResultados.Controls.Add(card);
+            }
+        }
+
+        private void btnPequisar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
