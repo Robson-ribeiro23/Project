@@ -58,12 +58,16 @@
   <ItemGroup>
     <Compile Include="Controllers\EmpresaControllers.cs" />
     <Compile Include="Controllers\EventoControllers.cs" />
+    <Compile Include="Controllers\PostagemControllers.cs" />
     <Compile Include="Controllers\UsuarioControllers.cs" />
     <Compile Include="Helpers\NavegadorHelpers.cs" />
+    <Compile Include="Models\ComentariosModels.cs" />
+    <Compile Include="Models\CurtidasModels.cs" />
     <Compile Include="Models\EmpresaModels.cs" />
     <Compile Include="Models\EventoCache.cs" />
     <Compile Include="Models\EventoModels.cs" />
     <Compile Include="Models\PessoaModels.cs" />
+    <Compile Include="Models\PostModels.cs" />
     <Compile Include="Models\UsuarioModels.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
