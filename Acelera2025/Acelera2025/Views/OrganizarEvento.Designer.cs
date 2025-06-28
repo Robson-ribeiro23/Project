@@ -794,7 +794,7 @@
             this.picturePerfil.BorderColor = System.Drawing.Color.Transparent;
             this.picturePerfil.BorderColor2 = System.Drawing.Color.Transparent;
             this.picturePerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picturePerfil.BorderSize = 1;
+            this.picturePerfil.BorderSize = 0;
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
             this.picturePerfil.Location = new System.Drawing.Point(1261, 2);

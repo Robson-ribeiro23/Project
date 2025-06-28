@@ -167,6 +167,7 @@ namespace Acelera2025.Views
                 cardPost.Width = flowLayoutPanel1.Width - 25;
                 cardPost.Margin = new Padding(10);
                 flowLayoutPanel1.Controls.Add(cardPost);
+
             }
         }
 

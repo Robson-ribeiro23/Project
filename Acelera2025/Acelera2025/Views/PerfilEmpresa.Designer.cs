@@ -86,7 +86,7 @@ namespace Acelera2025.Views
             this.panel1.Controls.Add(this.superiorRoundedPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 41);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1306, 542);
             this.panel1.TabIndex = 5;
@@ -132,7 +132,7 @@ namespace Acelera2025.Views
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
             this.panelMeusEventos.Location = new System.Drawing.Point(868, 3);
-            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
             this.panelMeusEventos.TabIndex = 65;
@@ -148,7 +148,7 @@ namespace Acelera2025.Views
             this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEventosCriados.Location = new System.Drawing.Point(0, 40);
-            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventosCriados.Name = "btnEventosCriados";
             this.btnEventosCriados.Size = new System.Drawing.Size(184, 41);
             this.btnEventosCriados.TabIndex = 1;
@@ -165,7 +165,7 @@ namespace Acelera2025.Views
             this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEventosIngressados.Location = new System.Drawing.Point(0, 2);
-            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventosIngressados.Name = "btnEventosIngressados";
             this.btnEventosIngressados.Size = new System.Drawing.Size(184, 45);
             this.btnEventosIngressados.TabIndex = 0;
@@ -188,7 +188,7 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.Controls.Add(this.lblSeguidores);
             this.superiorRoundedPanel1.Controls.Add(this.lblNomeEmpresa);
             this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 150);
-            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1306, 635);
             this.superiorRoundedPanel1.TabIndex = 64;
@@ -204,7 +204,7 @@ namespace Acelera2025.Views
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(92, 103);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(30, 15);
             this.tabControl1.SelectedIndex = 0;
@@ -215,9 +215,9 @@ namespace Acelera2025.Views
             // 
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 54);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(1125, 458);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sobre";
@@ -230,7 +230,7 @@ namespace Acelera2025.Views
             this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(16, 16);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -240,9 +240,9 @@ namespace Acelera2025.Views
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 54);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(1125, 458);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Participações";
@@ -251,9 +251,9 @@ namespace Acelera2025.Views
             // tabPage3
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 54);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage3.Size = new System.Drawing.Size(1125, 458);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Disponíveis";
@@ -262,9 +262,9 @@ namespace Acelera2025.Views
             // tabPage4
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 54);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(1125, 458);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Encerrados";
@@ -273,9 +273,9 @@ namespace Acelera2025.Views
             // tabPage5
             // 
             this.tabPage5.Location = new System.Drawing.Point(4, 54);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage5.Size = new System.Drawing.Size(1125, 458);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Posts";
@@ -318,7 +318,7 @@ namespace Acelera2025.Views
             this.btnEntrarEmContato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrarEmContato.Image = ((System.Drawing.Image)(resources.GetObject("btnEntrarEmContato.Image")));
             this.btnEntrarEmContato.Location = new System.Drawing.Point(1087, 55);
-            this.btnEntrarEmContato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEntrarEmContato.Margin = new System.Windows.Forms.Padding(2);
             this.btnEntrarEmContato.Name = "btnEntrarEmContato";
             this.btnEntrarEmContato.Size = new System.Drawing.Size(23, 26);
             this.btnEntrarEmContato.TabIndex = 57;
@@ -335,7 +335,7 @@ namespace Acelera2025.Views
             this.btnSeguir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguir.Image = ((System.Drawing.Image)(resources.GetObject("btnSeguir.Image")));
             this.btnSeguir.Location = new System.Drawing.Point(1086, 22);
-            this.btnSeguir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSeguir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeguir.Name = "btnSeguir";
             this.btnSeguir.Size = new System.Drawing.Size(25, 28);
             this.btnSeguir.TabIndex = 56;
@@ -381,7 +381,7 @@ namespace Acelera2025.Views
             this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gradientPanel1.Name = "gradientPanel1";
             this.gradientPanel1.Size = new System.Drawing.Size(1306, 41);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
@@ -415,7 +415,7 @@ namespace Acelera2025.Views
             this.picturePerfil.BorderColor = System.Drawing.Color.Transparent;
             this.picturePerfil.BorderColor2 = System.Drawing.Color.Transparent;
             this.picturePerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picturePerfil.BorderSize = 1;
+            this.picturePerfil.BorderSize = 0;
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
             this.picturePerfil.Location = new System.Drawing.Point(1253, 2);
@@ -431,7 +431,7 @@ namespace Acelera2025.Views
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(37, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -466,7 +466,7 @@ namespace Acelera2025.Views
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotificacoes.Location = new System.Drawing.Point(1206, 11);
-            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2);
             this.btnNotificacoes.Name = "btnNotificacoes";
             this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
             this.btnNotificacoes.TabIndex = 10;
@@ -481,7 +481,7 @@ namespace Acelera2025.Views
             this.roundedPanel5.Controls.Add(this.btnPesquisar);
             this.roundedPanel5.Controls.Add(this.txtPesquisar);
             this.roundedPanel5.Location = new System.Drawing.Point(245, 10);
-            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel5.Name = "roundedPanel5";
             this.roundedPanel5.Size = new System.Drawing.Size(396, 25);
             this.roundedPanel5.TabIndex = 8;
@@ -494,7 +494,7 @@ namespace Acelera2025.Views
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
             this.btnPesquisar.Location = new System.Drawing.Point(364, -2);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(32, 31);
             this.btnPesquisar.TabIndex = 1;
@@ -508,7 +508,7 @@ namespace Acelera2025.Views
             this.txtPesquisar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisar.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.txtPesquisar.Location = new System.Drawing.Point(2, 4);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(362, 26);
             this.txtPesquisar.TabIndex = 0;
@@ -598,7 +598,7 @@ namespace Acelera2025.Views
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PerfilEmpresa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PerfilEmpresa_Load);

@@ -73,7 +73,7 @@
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 41);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1234, 498);
             this.panel1.TabIndex = 5;
@@ -88,7 +88,7 @@
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
             this.panelMeusEventos.Location = new System.Drawing.Point(824, 3);
-            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
             this.panelMeusEventos.TabIndex = 27;
@@ -104,7 +104,7 @@
             this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEventosCriados.Location = new System.Drawing.Point(0, 40);
-            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventosCriados.Name = "btnEventosCriados";
             this.btnEventosCriados.Size = new System.Drawing.Size(184, 41);
             this.btnEventosCriados.TabIndex = 1;
@@ -121,7 +121,7 @@
             this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEventosIngressados.Location = new System.Drawing.Point(0, 2);
-            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventosIngressados.Name = "btnEventosIngressados";
             this.btnEventosIngressados.Size = new System.Drawing.Size(184, 45);
             this.btnEventosIngressados.TabIndex = 0;
@@ -150,7 +150,7 @@
             this.tabControl1.Controls.Add(this.pageTransmissoesOnline);
             this.tabControl1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(20, 81);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(25, 9);
             this.tabControl1.SelectedIndex = 0;
@@ -161,9 +161,9 @@
             // 
             this.pageInscricoes.Controls.Add(this.cardEvento1);
             this.pageInscricoes.Location = new System.Drawing.Point(4, 42);
-            this.pageInscricoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pageInscricoes.Margin = new System.Windows.Forms.Padding(2);
             this.pageInscricoes.Name = "pageInscricoes";
-            this.pageInscricoes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pageInscricoes.Padding = new System.Windows.Forms.Padding(2);
             this.pageInscricoes.Size = new System.Drawing.Size(1183, 361);
             this.pageInscricoes.TabIndex = 0;
             this.pageInscricoes.Text = "Inscrições";
@@ -172,7 +172,7 @@
             // cardEvento1
             // 
             this.cardEvento1.Location = new System.Drawing.Point(2, 2);
-            this.cardEvento1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cardEvento1.Margin = new System.Windows.Forms.Padding(2);
             this.cardEvento1.Name = "cardEvento1";
             this.cardEvento1.Size = new System.Drawing.Size(892, 143);
             this.cardEvento1.TabIndex = 0;
@@ -181,9 +181,9 @@
             // 
             this.pageCertificados.Controls.Add(this.cardBaixarCertificado1);
             this.pageCertificados.Location = new System.Drawing.Point(4, 42);
-            this.pageCertificados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pageCertificados.Margin = new System.Windows.Forms.Padding(2);
             this.pageCertificados.Name = "pageCertificados";
-            this.pageCertificados.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pageCertificados.Padding = new System.Windows.Forms.Padding(2);
             this.pageCertificados.Size = new System.Drawing.Size(1183, 361);
             this.pageCertificados.TabIndex = 1;
             this.pageCertificados.Text = "Certificados";
@@ -194,7 +194,7 @@
             this.cardBaixarCertificado1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cardBaixarCertificado1.Location = new System.Drawing.Point(4, 5);
-            this.cardBaixarCertificado1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cardBaixarCertificado1.Margin = new System.Windows.Forms.Padding(2);
             this.cardBaixarCertificado1.Name = "cardBaixarCertificado1";
             this.cardBaixarCertificado1.Size = new System.Drawing.Size(848, 49);
             this.cardBaixarCertificado1.TabIndex = 0;
@@ -203,9 +203,9 @@
             // 
             this.pageTransmissoesOnline.Controls.Add(this.cardTransmissãoOnline1);
             this.pageTransmissoesOnline.Location = new System.Drawing.Point(4, 42);
-            this.pageTransmissoesOnline.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pageTransmissoesOnline.Margin = new System.Windows.Forms.Padding(2);
             this.pageTransmissoesOnline.Name = "pageTransmissoesOnline";
-            this.pageTransmissoesOnline.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pageTransmissoesOnline.Padding = new System.Windows.Forms.Padding(2);
             this.pageTransmissoesOnline.Size = new System.Drawing.Size(1183, 361);
             this.pageTransmissoesOnline.TabIndex = 2;
             this.pageTransmissoesOnline.Text = "Transmissões Online";
@@ -216,7 +216,7 @@
             this.cardTransmissãoOnline1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cardTransmissãoOnline1.Location = new System.Drawing.Point(2, 5);
-            this.cardTransmissãoOnline1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cardTransmissãoOnline1.Margin = new System.Windows.Forms.Padding(2);
             this.cardTransmissãoOnline1.Name = "cardTransmissãoOnline1";
             this.cardTransmissãoOnline1.Size = new System.Drawing.Size(848, 49);
             this.cardTransmissãoOnline1.TabIndex = 0;
@@ -237,7 +237,7 @@
             this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gradientPanel1.Name = "gradientPanel1";
             this.gradientPanel1.Size = new System.Drawing.Size(1234, 41);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
@@ -270,7 +270,7 @@
             this.picturePerfil.BorderColor = System.Drawing.Color.Transparent;
             this.picturePerfil.BorderColor2 = System.Drawing.Color.Transparent;
             this.picturePerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picturePerfil.BorderSize = 1;
+            this.picturePerfil.BorderSize = 0;
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
             this.picturePerfil.Location = new System.Drawing.Point(1182, 2);
@@ -286,7 +286,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(37, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -303,7 +303,7 @@
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotificacoes.Location = new System.Drawing.Point(1135, 11);
-            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2);
             this.btnNotificacoes.Name = "btnNotificacoes";
             this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
             this.btnNotificacoes.TabIndex = 10;
@@ -318,7 +318,7 @@
             this.roundedPanel5.Controls.Add(this.btnPesquisar);
             this.roundedPanel5.Controls.Add(this.txtPesquisar);
             this.roundedPanel5.Location = new System.Drawing.Point(245, 10);
-            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel5.Name = "roundedPanel5";
             this.roundedPanel5.Size = new System.Drawing.Size(396, 25);
             this.roundedPanel5.TabIndex = 8;
@@ -331,7 +331,7 @@
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
             this.btnPesquisar.Location = new System.Drawing.Point(364, -2);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(32, 31);
             this.btnPesquisar.TabIndex = 1;
@@ -345,7 +345,7 @@
             this.txtPesquisar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisar.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.txtPesquisar.Location = new System.Drawing.Point(2, 4);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(362, 26);
             this.txtPesquisar.TabIndex = 0;
@@ -452,7 +452,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EventosIngressados";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.EventosIngressados_Load);

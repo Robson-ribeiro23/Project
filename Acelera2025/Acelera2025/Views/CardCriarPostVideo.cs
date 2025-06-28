@@ -49,6 +49,8 @@ namespace Acelera2025.Telas
                     videoSelecionado.Add(caminhoVideo);
                     video.URL = caminhoVideo;
                     video.Visible = true;
+
+                    video.settings.volume = 0;
                 }
             }
         }

@@ -33,21 +33,22 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelComentarios = new System.Windows.Forms.Panel();
             this.txtComentarios = new System.Windows.Forms.TextBox();
-            this.btnComentar = new CircularButton();
             this.roundedPanel2 = new RoundedPanel();
-            this.picFotoPerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.video = new AxWMPLib.AxWindowsMediaPlayer();
             this.lblData = new System.Windows.Forms.Label();
             this.lblTexto = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblCurtidas = new System.Windows.Forms.Label();
+            this.btnComentar = new CircularButton();
+            this.picFotoPerfil = new Acelera2025.Views.Tools.CircularPictureBox();
+            this.btnExpandir = new RoundedButton();
             this.btnCurtir = new CircularButton();
             this.roundedPanel1.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.video)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -98,30 +99,12 @@
             this.txtComentarios.TabIndex = 61;
             this.txtComentarios.Text = "Enviar um Comentário";
             // 
-            // btnComentar
-            // 
-            this.btnComentar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnComentar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.btnComentar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnComentar.BorderColor = System.Drawing.Color.Black;
-            this.btnComentar.BorderSize = 0;
-            this.btnComentar.FlatAppearance.BorderSize = 0;
-            this.btnComentar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComentar.Image = ((System.Drawing.Image)(resources.GetObject("btnComentar.Image")));
-            this.btnComentar.Location = new System.Drawing.Point(854, 362);
-            this.btnComentar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnComentar.Name = "btnComentar";
-            this.btnComentar.Size = new System.Drawing.Size(20, 23);
-            this.btnComentar.TabIndex = 62;
-            this.btnComentar.UseVisualStyleBackColor = false;
-            this.btnComentar.Click += new System.EventHandler(this.btnComentar_Click);
-            // 
             // roundedPanel2
             // 
             this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.roundedPanel2.BorderColor = System.Drawing.Color.Black;
-            this.roundedPanel2.BorderRadius = 20;
-            this.roundedPanel2.BorderSize = 0;
+            this.roundedPanel2.BorderRadius = 1;
+            this.roundedPanel2.BorderSize = 1;
             this.roundedPanel2.Controls.Add(this.picFotoPerfil);
             this.roundedPanel2.Controls.Add(this.panel1);
             this.roundedPanel2.Controls.Add(this.lblData);
@@ -137,31 +120,14 @@
             this.roundedPanel2.TabIndex = 0;
             this.roundedPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel2_Paint);
             // 
-            // picFotoPerfil
-            // 
-            this.picFotoPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.picFotoPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
-            this.picFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picFotoPerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.picFotoPerfil.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.picFotoPerfil.BorderColor2 = System.Drawing.Color.HotPink;
-            this.picFotoPerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picFotoPerfil.BorderSize = 2;
-            this.picFotoPerfil.GradientAngle = 50F;
-            this.picFotoPerfil.Location = new System.Drawing.Point(6, 18);
-            this.picFotoPerfil.Name = "picFotoPerfil";
-            this.picFotoPerfil.Size = new System.Drawing.Size(52, 52);
-            this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFotoPerfil.TabIndex = 72;
-            this.picFotoPerfil.TabStop = false;
-            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnExpandir);
             this.panel1.Controls.Add(this.video);
-            this.panel1.Location = new System.Drawing.Point(68, 168);
+            this.panel1.Location = new System.Drawing.Point(25, 108);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(424, 194);
+            this.panel1.Size = new System.Drawing.Size(467, 254);
             this.panel1.TabIndex = 71;
             // 
             // video
@@ -172,7 +138,7 @@
             this.video.Margin = new System.Windows.Forms.Padding(2);
             this.video.Name = "video";
             this.video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video.OcxState")));
-            this.video.Size = new System.Drawing.Size(424, 194);
+            this.video.Size = new System.Drawing.Size(467, 254);
             this.video.TabIndex = 70;
             this.video.Enter += new System.EventHandler(this.video_Enter);
             // 
@@ -224,6 +190,58 @@
             this.lblCurtidas.TabIndex = 61;
             this.lblCurtidas.Text = "X curtidas";
             // 
+            // btnComentar
+            // 
+            this.btnComentar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnComentar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnComentar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnComentar.BorderColor = System.Drawing.Color.Black;
+            this.btnComentar.BorderSize = 0;
+            this.btnComentar.FlatAppearance.BorderSize = 0;
+            this.btnComentar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnComentar.Image = ((System.Drawing.Image)(resources.GetObject("btnComentar.Image")));
+            this.btnComentar.Location = new System.Drawing.Point(854, 362);
+            this.btnComentar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnComentar.Name = "btnComentar";
+            this.btnComentar.Size = new System.Drawing.Size(20, 23);
+            this.btnComentar.TabIndex = 62;
+            this.btnComentar.UseVisualStyleBackColor = false;
+            this.btnComentar.Click += new System.EventHandler(this.btnComentar_Click);
+            // 
+            // picFotoPerfil
+            // 
+            this.picFotoPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.picFotoPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.picFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picFotoPerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picFotoPerfil.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.picFotoPerfil.BorderColor2 = System.Drawing.Color.HotPink;
+            this.picFotoPerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picFotoPerfil.BorderSize = 2;
+            this.picFotoPerfil.GradientAngle = 50F;
+            this.picFotoPerfil.Location = new System.Drawing.Point(6, 18);
+            this.picFotoPerfil.Name = "picFotoPerfil";
+            this.picFotoPerfil.Size = new System.Drawing.Size(52, 52);
+            this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotoPerfil.TabIndex = 72;
+            this.picFotoPerfil.TabStop = false;
+            // 
+            // btnExpandir
+            // 
+            this.btnExpandir.BackColor = System.Drawing.Color.Transparent;
+            this.btnExpandir.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_expand_100;
+            this.btnExpandir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExpandir.BorderColor = System.Drawing.Color.Transparent;
+            this.btnExpandir.BorderRadius = 5;
+            this.btnExpandir.BorderSize = 2;
+            this.btnExpandir.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExpandir.Location = new System.Drawing.Point(419, 222);
+            this.btnExpandir.Name = "btnExpandir";
+            this.btnExpandir.Size = new System.Drawing.Size(30, 26);
+            this.btnExpandir.TabIndex = 71;
+            this.btnExpandir.UseVisualStyleBackColor = false;
+            this.btnExpandir.Click += new System.EventHandler(this.btnExpandirVideo_Click);
+            // 
             // btnCurtir
             // 
             this.btnCurtir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -256,9 +274,9 @@
             this.roundedPanel1.PerformLayout();
             this.roundedPanel2.ResumeLayout(false);
             this.roundedPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.video)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -279,5 +297,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Tools.CircularPictureBox picFotoPerfil;
+        private RoundedButton btnExpandir;
     }
 }

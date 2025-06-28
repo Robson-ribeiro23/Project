@@ -12,10 +12,13 @@ using System.IO;
 
 namespace Acelera2025.Views
 {
-    public partial class CardPostVideo: UserControl
+    public partial class CardPostVideo : UserControl
     {
         private PessoaModels usuario;
         private PostModels postagem;
+        private bool videoEmTelaCheia = false;
+
+
         public CardPostVideo(PostModels postagem, PessoaModels usuario)
         {
             InitializeComponent();
@@ -24,6 +27,21 @@ namespace Acelera2025.Views
             lblNome.Text = postagem.Usuario.Nome;
             lblTexto.Text = postagem.Texto;
             lblData.Text = postagem.Data.ToString("dd/MM/yyyy HH:mm");
+            video.settings.volume = 0;
+
+
+
+            if (!string.IsNullOrEmpty(postagem.Video))
+            {
+                video.URL = postagem.Video;
+                video.settings.volume = 0; 
+                video.Visible = true;
+
+           
+            }
+
+
+
             if (!string.IsNullOrEmpty(postagem.Video))
             {
                 video.URL = postagem.Video;
@@ -57,7 +75,8 @@ namespace Acelera2025.Views
             bool curtido = postagem.Curtidas.Any(c => c.Usuario == postagem.Usuario.Nome);
             btnCurtir.ForeColor = curtido ? Color.Red : Color.Gray;
 
-            btnCurtir.Click += (s, e) => {
+            btnCurtir.Click += (s, e) =>
+            {
                 CurtirPostagem();
             };
         }
@@ -88,7 +107,7 @@ namespace Acelera2025.Views
 
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -122,6 +141,19 @@ namespace Acelera2025.Views
         private void video_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnExpandirVideo_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(postagem.Video) && File.Exists(postagem.Video))
+            {
+                var telaCheia = new VideoTelaCheia(postagem.Video);
+                telaCheia.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vídeo não encontrado.");
+            }
         }
     }
 }

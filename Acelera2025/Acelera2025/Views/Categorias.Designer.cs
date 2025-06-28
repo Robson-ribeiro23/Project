@@ -116,7 +116,7 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 40);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1276, 817);
             this.panel1.TabIndex = 5;
@@ -130,7 +130,7 @@
             this.panel2.Controls.Add(this.roundedPanel2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1276, 817);
             this.panel2.TabIndex = 33;
@@ -145,7 +145,7 @@
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
             this.panelMeusEventos.Location = new System.Drawing.Point(857, 5);
-            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
             this.panelMeusEventos.TabIndex = 75;
@@ -161,7 +161,7 @@
             this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEventosCriados.Location = new System.Drawing.Point(0, 40);
-            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventosCriados.Name = "btnEventosCriados";
             this.btnEventosCriados.Size = new System.Drawing.Size(184, 41);
             this.btnEventosCriados.TabIndex = 1;
@@ -179,7 +179,7 @@
             this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnEventosIngressados.Location = new System.Drawing.Point(0, 2);
-            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventosIngressados.Name = "btnEventosIngressados";
             this.btnEventosIngressados.Size = new System.Drawing.Size(184, 45);
             this.btnEventosIngressados.TabIndex = 0;
@@ -195,7 +195,7 @@
             this.superiorRoundedPanel1.BorderSize = 0;
             this.superiorRoundedPanel1.Controls.Add(this.gradientPanel2);
             this.superiorRoundedPanel1.Location = new System.Drawing.Point(20, 26);
-            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1229, 67);
             this.superiorRoundedPanel1.TabIndex = 74;
@@ -206,7 +206,7 @@
             this.gradientPanel2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gradientPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.gradientPanel2.Name = "gradientPanel2";
             this.gradientPanel2.Size = new System.Drawing.Size(1229, 65);
             this.gradientPanel2.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
@@ -276,7 +276,7 @@
             this.roundedPanel2.Controls.Add(this.label6);
             this.roundedPanel2.Controls.Add(this.label14);
             this.roundedPanel2.Location = new System.Drawing.Point(20, 115);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(1238, 878);
             this.roundedPanel2.TabIndex = 73;
@@ -289,7 +289,7 @@
             this.circularButton20.BorderSize = 2;
             this.circularButton20.Image = global::Acelera2025.Properties.Resources.CategoriaHobbies;
             this.circularButton20.Location = new System.Drawing.Point(920, 622);
-            this.circularButton20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton20.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton20.Name = "circularButton20";
             this.circularButton20.Size = new System.Drawing.Size(137, 151);
             this.circularButton20.TabIndex = 92;
@@ -303,7 +303,7 @@
             this.circularButton19.BorderSize = 2;
             this.circularButton19.Image = global::Acelera2025.Properties.Resources.CategoriaMeioAmbiente;
             this.circularButton19.Location = new System.Drawing.Point(749, 622);
-            this.circularButton19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton19.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton19.Name = "circularButton19";
             this.circularButton19.Size = new System.Drawing.Size(137, 151);
             this.circularButton19.TabIndex = 91;
@@ -317,7 +317,7 @@
             this.circularButton18.BorderSize = 2;
             this.circularButton18.Image = global::Acelera2025.Properties.Resources.CategoriaVoluntariado;
             this.circularButton18.Location = new System.Drawing.Point(568, 622);
-            this.circularButton18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton18.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton18.Name = "circularButton18";
             this.circularButton18.Size = new System.Drawing.Size(137, 151);
             this.circularButton18.TabIndex = 90;
@@ -331,7 +331,7 @@
             this.circularButton17.BorderSize = 2;
             this.circularButton17.Image = global::Acelera2025.Properties.Resources.CategoriaEntretenimento;
             this.circularButton17.Location = new System.Drawing.Point(385, 622);
-            this.circularButton17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton17.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton17.Name = "circularButton17";
             this.circularButton17.Size = new System.Drawing.Size(137, 151);
             this.circularButton17.TabIndex = 89;
@@ -345,7 +345,7 @@
             this.circularButton16.BorderSize = 2;
             this.circularButton16.Image = global::Acelera2025.Properties.Resources.CategoriaNegocios;
             this.circularButton16.Location = new System.Drawing.Point(200, 622);
-            this.circularButton16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton16.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton16.Name = "circularButton16";
             this.circularButton16.Size = new System.Drawing.Size(137, 151);
             this.circularButton16.TabIndex = 88;
@@ -359,7 +359,7 @@
             this.circularButton15.BorderSize = 2;
             this.circularButton15.Image = global::Acelera2025.Properties.Resources.CategoriaSociedade;
             this.circularButton15.Location = new System.Drawing.Point(1077, 334);
-            this.circularButton15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton15.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton15.Name = "circularButton15";
             this.circularButton15.Size = new System.Drawing.Size(137, 151);
             this.circularButton15.TabIndex = 87;
@@ -373,7 +373,7 @@
             this.circularButton14.BorderSize = 2;
             this.circularButton14.Image = global::Acelera2025.Properties.Resources.CategoriaEsportes;
             this.circularButton14.Location = new System.Drawing.Point(920, 334);
-            this.circularButton14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton14.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton14.Name = "circularButton14";
             this.circularButton14.Size = new System.Drawing.Size(137, 151);
             this.circularButton14.TabIndex = 86;
@@ -387,7 +387,7 @@
             this.circularButton13.BorderSize = 2;
             this.circularButton13.Image = global::Acelera2025.Properties.Resources.CategoriaFestas;
             this.circularButton13.Location = new System.Drawing.Point(749, 334);
-            this.circularButton13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton13.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton13.Name = "circularButton13";
             this.circularButton13.Size = new System.Drawing.Size(137, 151);
             this.circularButton13.TabIndex = 85;
@@ -401,7 +401,7 @@
             this.circularButton12.BorderSize = 2;
             this.circularButton12.Image = global::Acelera2025.Properties.Resources.CategoriaFeiras;
             this.circularButton12.Location = new System.Drawing.Point(568, 334);
-            this.circularButton12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton12.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton12.Name = "circularButton12";
             this.circularButton12.Size = new System.Drawing.Size(137, 151);
             this.circularButton12.TabIndex = 84;
@@ -415,7 +415,7 @@
             this.circularButton11.BorderSize = 2;
             this.circularButton11.Image = global::Acelera2025.Properties.Resources.CategoriaEspiritualidade;
             this.circularButton11.Location = new System.Drawing.Point(385, 334);
-            this.circularButton11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton11.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton11.Name = "circularButton11";
             this.circularButton11.Size = new System.Drawing.Size(137, 151);
             this.circularButton11.TabIndex = 83;
@@ -429,7 +429,7 @@
             this.circularButton10.BorderSize = 2;
             this.circularButton10.Image = global::Acelera2025.Properties.Resources.CategoriaCompeticoes;
             this.circularButton10.Location = new System.Drawing.Point(200, 334);
-            this.circularButton10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton10.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton10.Name = "circularButton10";
             this.circularButton10.Size = new System.Drawing.Size(137, 151);
             this.circularButton10.TabIndex = 82;
@@ -443,7 +443,7 @@
             this.circularButton9.BorderSize = 2;
             this.circularButton9.Image = global::Acelera2025.Properties.Resources.CategoriaCulinária;
             this.circularButton9.Location = new System.Drawing.Point(16, 622);
-            this.circularButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton9.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton9.Name = "circularButton9";
             this.circularButton9.Size = new System.Drawing.Size(137, 151);
             this.circularButton9.TabIndex = 81;
@@ -457,7 +457,7 @@
             this.circularButton8.BorderSize = 2;
             this.circularButton8.Image = global::Acelera2025.Properties.Resources.CategoriaCiencia;
             this.circularButton8.Location = new System.Drawing.Point(16, 334);
-            this.circularButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton8.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton8.Name = "circularButton8";
             this.circularButton8.Size = new System.Drawing.Size(137, 151);
             this.circularButton8.TabIndex = 80;
@@ -471,7 +471,7 @@
             this.circularButton7.BorderSize = 2;
             this.circularButton7.Image = global::Acelera2025.Properties.Resources.CategoriaDanca;
             this.circularButton7.Location = new System.Drawing.Point(1077, 42);
-            this.circularButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton7.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton7.Name = "circularButton7";
             this.circularButton7.Size = new System.Drawing.Size(137, 151);
             this.circularButton7.TabIndex = 79;
@@ -485,7 +485,7 @@
             this.circularButton6.BorderSize = 2;
             this.circularButton6.Image = global::Acelera2025.Properties.Resources.CategoriaArtes;
             this.circularButton6.Location = new System.Drawing.Point(920, 42);
-            this.circularButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton6.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton6.Name = "circularButton6";
             this.circularButton6.Size = new System.Drawing.Size(137, 151);
             this.circularButton6.TabIndex = 78;
@@ -499,7 +499,7 @@
             this.circularButton5.BorderSize = 2;
             this.circularButton5.Image = global::Acelera2025.Properties.Resources.CategoriaMusica;
             this.circularButton5.Location = new System.Drawing.Point(749, 42);
-            this.circularButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton5.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton5.Name = "circularButton5";
             this.circularButton5.Size = new System.Drawing.Size(137, 151);
             this.circularButton5.TabIndex = 77;
@@ -514,7 +514,7 @@
             this.circularButton4.BorderSize = 2;
             this.circularButton4.Image = global::Acelera2025.Properties.Resources.CategoriaFestivais;
             this.circularButton4.Location = new System.Drawing.Point(568, 42);
-            this.circularButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton4.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton4.Name = "circularButton4";
             this.circularButton4.Size = new System.Drawing.Size(137, 151);
             this.circularButton4.TabIndex = 76;
@@ -528,7 +528,7 @@
             this.circularButton3.BorderSize = 2;
             this.circularButton3.Image = global::Acelera2025.Properties.Resources.CategoriaEducacao;
             this.circularButton3.Location = new System.Drawing.Point(385, 42);
-            this.circularButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton3.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton3.Name = "circularButton3";
             this.circularButton3.Size = new System.Drawing.Size(137, 151);
             this.circularButton3.TabIndex = 75;
@@ -542,7 +542,7 @@
             this.circularButton1.BorderSize = 2;
             this.circularButton1.Image = global::Acelera2025.Properties.Resources.CategoriaSaude;
             this.circularButton1.Location = new System.Drawing.Point(200, 42);
-            this.circularButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton1.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton1.Name = "circularButton1";
             this.circularButton1.Size = new System.Drawing.Size(137, 151);
             this.circularButton1.TabIndex = 74;
@@ -556,7 +556,7 @@
             this.circularButton2.BorderSize = 2;
             this.circularButton2.Image = global::Acelera2025.Properties.Resources.CategoriaTecnologia;
             this.circularButton2.Location = new System.Drawing.Point(16, 42);
-            this.circularButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.circularButton2.Margin = new System.Windows.Forms.Padding(2);
             this.circularButton2.Name = "circularButton2";
             this.circularButton2.Size = new System.Drawing.Size(137, 151);
             this.circularButton2.TabIndex = 73;
@@ -869,7 +869,7 @@
             this.btnMusica.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMusica.Image = global::Acelera2025.Properties.Resources.CategoriaMusica;
             this.btnMusica.Location = new System.Drawing.Point(106, 126);
-            this.btnMusica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMusica.Margin = new System.Windows.Forms.Padding(2);
             this.btnMusica.Name = "btnMusica";
             this.btnMusica.Size = new System.Drawing.Size(112, 120);
             this.btnMusica.TabIndex = 31;
@@ -905,7 +905,7 @@
             this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gradientPanel1.Name = "gradientPanel1";
             this.gradientPanel1.Size = new System.Drawing.Size(1276, 40);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
@@ -938,7 +938,7 @@
             this.picturePerfil.BorderColor = System.Drawing.Color.Transparent;
             this.picturePerfil.BorderColor2 = System.Drawing.Color.Transparent;
             this.picturePerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picturePerfil.BorderSize = 1;
+            this.picturePerfil.BorderSize = 0;
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
             this.picturePerfil.Location = new System.Drawing.Point(1222, 2);
@@ -954,7 +954,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(37, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -971,7 +971,7 @@
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotificacoes.Location = new System.Drawing.Point(1175, 11);
-            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2);
             this.btnNotificacoes.Name = "btnNotificacoes";
             this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
             this.btnNotificacoes.TabIndex = 10;
@@ -986,7 +986,7 @@
             this.roundedPanel5.Controls.Add(this.btnPesquisar);
             this.roundedPanel5.Controls.Add(this.txtPesquisar);
             this.roundedPanel5.Location = new System.Drawing.Point(245, 10);
-            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel5.Name = "roundedPanel5";
             this.roundedPanel5.Size = new System.Drawing.Size(396, 25);
             this.roundedPanel5.TabIndex = 8;
@@ -999,7 +999,7 @@
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
             this.btnPesquisar.Location = new System.Drawing.Point(364, -2);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(32, 31);
             this.btnPesquisar.TabIndex = 1;
@@ -1013,7 +1013,7 @@
             this.txtPesquisar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisar.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.txtPesquisar.Location = new System.Drawing.Point(2, 4);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(362, 26);
             this.txtPesquisar.TabIndex = 0;
@@ -1120,7 +1120,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Categorias";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Categorias_Load);
