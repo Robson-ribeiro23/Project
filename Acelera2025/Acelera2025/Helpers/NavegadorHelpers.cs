@@ -138,8 +138,6 @@ namespace Ac
             telaAtual = new Feed(usuario);
             telaAtual.Show();
         }
-
-
         private static void FecharTelaAtual()
         {
             if (telaAtual != null && !telaAtual.IsDisposed)

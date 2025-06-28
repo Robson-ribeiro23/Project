@@ -5,17 +5,12 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
-using System.Globalization;
-using System.Drawing;
 
 namespace Acelera2025.Views
 {
-    public partial class CadastrarUsuario : Form
+    public partial class CadastrarUsuario: Form
     {
         private UsuarioControllers controllerUsuario = new UsuarioControllers();
-        private const int MAX_CARACTERES_NOME = 100;
-
         public CadastrarUsuario()
         {
             InitializeComponent();
@@ -25,11 +20,6 @@ namespace Acelera2025.Views
         {
             btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
             btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
-
-            // Configuração inicial dos labels de validação da senha (opcional)
-            lblMaiuscula.ForeColor = Color.Red;
-            lblNumero.ForeColor = Color.Red;
-            lblTamanhoSenha.ForeColor = Color.Red;
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -128,56 +118,13 @@ namespace Acelera2025.Views
 
         private void CadastrarUsuario_Click(object sender, EventArgs e)
         {
-            // Validações
-            if (!ValidarNome(txtNome.Text))
-            {
-                MessageBox.Show("Nome inválido. Verifique se não está vazio e não ultrapassa o limite de caracteres.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtNome.Focus();
-                return;
-            }
-
-            if (!ValidarEmail(txtEmail.Text))
-            {
-                MessageBox.Show("Por favor, insira um e-mail válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtEmail.Focus();
-                return;
-            }
-
-            if (!ValidarCPF(txtCpf.Text))
-            {
-                MessageBox.Show("CPF inválido. Verifique o número digitado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtCpf.Focus();
-                return;
-            }
-
-            if (!ValidarDataNascimento(txtData.Text))
-            {
-                MessageBox.Show("Data de nascimento inválida. Verifique se está no formato correto (DD/MM/AAAA) e não é uma data futura.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtData.Focus();
-                return;
-            }
-
-            if (!ValidarSenha(txtSenha.Text))
-            {
-                MessageBox.Show("A senha deve conter pelo menos uma letra maiúscula, um número e ter no mínimo 8 caracteres.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtSenha.Focus();
-                return;
-            }
-
-            if (txtSenha.Text != txtConfirmarSenha.Text)
-            {
-                MessageBox.Show("As senhas não coincidem.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtConfirmarSenha.Focus();
-                return;
-            }
-
             var usuario = new UsuarioModels
             {
                 Tipo = "usuario",
-                Nome = txtNome.Text.Trim(),
-                Email = txtEmail.Text.Trim(),
-                Cidade = txtCidade.Text.Trim(),
-                CPF = new string(txtCpf.Text.Where(char.IsDigit).ToArray()), // Armazena apenas números
+                Nome = txtNome.Text,
+                Email = txtEmail.Text,
+                Cidade = txtCidade.Text,
+                CPF = txtCpf.Text,
                 DataNascimento = txtData.Text,
                 Senha = txtSenha.Text,
                 ConfirmarSenha = txtConfirmarSenha.Text,
@@ -186,11 +133,9 @@ namespace Acelera2025.Views
 
             if (controllerUsuario.Cadastrar(usuario))
             {
-                MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimparCampos();
             }
         }
-
         private void LimparCampos()
         {
             txtNome.Text = "";
@@ -200,11 +145,6 @@ namespace Acelera2025.Views
             txtSenha.Text = "";
             txtConfirmarSenha.Text = "";
             txtData.Text = "";
-
-            // Resetar os labels de validação da senha
-            lblMaiuscula.ForeColor = Color.Red;
-            lblNumero.ForeColor = Color.Red;
-            lblTamanhoSenha.ForeColor = Color.Red;
         }
 
         private void btnMostrarSenhaConfirmar_Click(object sender, EventArgs e)
@@ -224,177 +164,6 @@ namespace Acelera2025.Views
         private void btnEntrarUsuario_Click(object sender, EventArgs e)
         {
             Navegador.IrParaLoginUsuario();
-        }
-
-        // Métodos de validação
-        private bool ValidarEmail(string email)
-        {
-            if (string.IsNullOrWhiteSpace(email))
-                return false;
-
-            try
-            {
-                // Regex para validar formato de e-mail
-                return Regex.IsMatch(email,
-                    @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
-                    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
-            }
-            catch (RegexMatchTimeoutException)
-            {
-                return false;
-            }
-        }
-
-        private bool ValidarNome(string nome)
-        {
-           
-            if (string.IsNullOrWhiteSpace(nome))
-                return false;
-
-           
-            var partesNome = nome.Trim().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            if (partesNome.Length < 2)
-            {
-                MessageBox.Show("Por favor, digite seu nome completo (pelo menos nome e sobrenome).",
-                              "Nome incompleto",
-                              MessageBoxButtons.OK,
-                              MessageBoxIcon.Warning);
-                return false;
-            }
-
-            if (nome.Any(c => !char.IsLetter(c) && !char.IsWhiteSpace(c) && !"áéíóúâêîôûãõàèìòùäëïöüçÁÉÍÓÚÂÊÎÔÛÃÕÀÈÌÒÙÄËÏÖÜÇ".Contains(c)))
-            {
-                MessageBox.Show("O nome deve conter apenas letras e espaços.",
-                              "Caracteres inválidos",
-                              MessageBoxButtons.OK,
-                              MessageBoxIcon.Warning);
-                return false;
-            }
-
-
-            foreach (var parte in partesNome)
-            {
-                if (parte.Length < 2)
-                {
-                    MessageBox.Show("Cada parte do nome deve ter pelo menos 2 caracteres.",
-                                  "Nome inválido",
-                                  MessageBoxButtons.OK,
-                                  MessageBoxIcon.Warning);
-                    return false;
-                }
-            }
-
-           
-            const int MAX_CARACTERES_NOME = 100;
-            if (nome.Length > MAX_CARACTERES_NOME)
-            {
-                MessageBox.Show($"O nome não pode ter mais de {MAX_CARACTERES_NOME} caracteres.",
-                               "Nome muito longo",
-                               MessageBoxButtons.OK,
-                               MessageBoxIcon.Warning);
-                return false;
-            }
-
-            return true;
-        }
-
-        private bool ValidarSenha(string senha)
-        {
-            const int MIN_CARACTERES_SENHA = 8;
-            return !string.IsNullOrWhiteSpace(senha) &&
-                   senha.Length >= MIN_CARACTERES_SENHA &&
-                   senha.Any(char.IsUpper) &&
-                   senha.Any(char.IsDigit);
-        }
-
-        private bool ValidarDataNascimento(string dataStr)
-        {
-            if (string.IsNullOrWhiteSpace(dataStr))
-                return false;
-
-            if (!DateTime.TryParseExact(dataStr, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dataNascimento))
-                return false;
-
-           
-            return dataNascimento <= DateTime.Today &&
-                   dataNascimento <= DateTime.Today.AddYears(-12);
-        }
-
-        private bool ValidarCPF(string cpf)
-        {
-           
-            cpf = new string(cpf.Where(char.IsDigit).ToArray());
-
-         
-            if (cpf.Length != 11)
-                return false;
-
-           
-            if (cpf.Distinct().Count() == 1)
-                return false;
-
-            
-            int soma = 0;
-            for (int i = 0; i < 9; i++)
-                soma += int.Parse(cpf[i].ToString()) * (10 - i);
-
-            int resto = soma % 11;
-            int digito1 = resto < 2 ? 0 : 11 - resto;
-
-           
-            soma = 0;
-            for (int i = 0; i < 10; i++)
-                soma += int.Parse(cpf[i].ToString()) * (11 - i);
-
-            resto = soma % 11;
-            int digito2 = resto < 2 ? 0 : 11 - resto;
-
-          
-            return int.Parse(cpf[9].ToString()) == digito1 &&
-                   int.Parse(cpf[10].ToString()) == digito2;
-        }
-
-       
-        private void txtSenha_TextChanged(object sender, EventArgs e)
-        {
-            if (txtSenha.Text.Length > 0)
-            {
-                bool temMaiuscula = txtSenha.Text.Any(char.IsUpper);
-                bool temNumero = txtSenha.Text.Any(char.IsDigit);
-                bool temTamanhoMinimo = txtSenha.Text.Length >= 8;
-
-                lblMaiuscula.ForeColor = temMaiuscula ? Color.Green : Color.Red;
-                lblNumero.ForeColor = temNumero ? Color.Green : Color.Red;
-                lblTamanhoSenha.ForeColor = temTamanhoMinimo ? Color.Green : Color.Red;
-            }
-            else
-            {
-                lblMaiuscula.ForeColor = Color.Red;
-                lblNumero.ForeColor = Color.Red;
-                lblTamanhoSenha.ForeColor = Color.Red;
-            }
-        }
-
-     
-        private void txtNome_TextChanged(object sender, EventArgs e)
-        {
-             
-            const int MAX_CARACTERES_NOME = 100;
-            if (txtNome.Text.Length > MAX_CARACTERES_NOME)
-            {
-                txtNome.Text = txtNome.Text.Substring(0, MAX_CARACTERES_NOME);
-                txtNome.SelectionStart = MAX_CARACTERES_NOME;
-            }
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-            
         }
     }
 }

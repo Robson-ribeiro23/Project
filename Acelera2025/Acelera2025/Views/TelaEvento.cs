@@ -22,8 +22,6 @@ namespace Acelera2025.Views
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
         private EventoModels evento;
-        private EnviarEmail enviarEmail;
-        private bool enviarEmailVisivel = false;
 
 
 
@@ -61,14 +59,14 @@ namespace Acelera2025.Views
             cardPerfil.Visible = false;
 
 
-            panelPatrocinadores.Controls.Add(cardPerfil);
-            cardPerfil.Location = new Point(panelPatrocinadores.Width - cardPerfil.Width - 20, 0);
+            panel1.Controls.Add(cardPerfil);
+            cardPerfil.Location = new Point(panel1.Width - cardPerfil.Width - 20, 0);
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
             cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 
             cardPainelDeNotificacoes = new CardPainelDeNotificacoes();
             cardPainelDeNotificacoes.Visible = false;
-            panelPatrocinadores.Controls.Add(cardPainelDeNotificacoes);
+            panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
         }
@@ -149,36 +147,6 @@ namespace Acelera2025.Views
             Navegador.IrParaFeed(this.usuario);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNomePublicador_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPatrocinar_Click(object sender, EventArgs e)
-        {
-
-            if (!(usuario is EmpresaModels))
-            {
-                MessageBox.Show("Você precisa ser uma empresa para patrocinar.", "Acesso restrito", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            if (enviarEmail == null)
-            {
-                enviarEmail = new EnviarEmail(evento, usuario);
-                enviarEmail.Visible = false;
-                this.Controls.Add(enviarEmail);
-                enviarEmail.Dock = DockStyle.Fill;
-            }
-
-            enviarEmailVisivel = !enviarEmailVisivel;
-            enviarEmail.Visible = enviarEmailVisivel;
-            enviarEmail.BringToFront();
-        }
+        
     }
 }

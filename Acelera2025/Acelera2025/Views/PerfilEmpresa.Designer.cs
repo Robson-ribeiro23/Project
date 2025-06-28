@@ -49,6 +49,7 @@ namespace Acelera2025.Views
             this.label2 = new System.Windows.Forms.Label();
             this.btnEntrarEmContato = new CircularButton();
             this.btnSeguir = new CircularButton();
+            this.lblSeguidores = new System.Windows.Forms.Label();
             this.lblNomeEmpresa = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
             this.btnFeed = new System.Windows.Forms.LinkLabel();
@@ -63,8 +64,6 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.lblSeguidores = new System.Windows.Forms.Label();
-            this.lblNumSeguidores = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
             this.panelMeusEventos.SuspendLayout();
@@ -181,7 +180,6 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.superiorRoundedPanel1.BorderRadius = 100;
             this.superiorRoundedPanel1.BorderSize = 0;
-            this.superiorRoundedPanel1.Controls.Add(this.lblNumSeguidores);
             this.superiorRoundedPanel1.Controls.Add(this.tabControl1);
             this.superiorRoundedPanel1.Controls.Add(this.label3);
             this.superiorRoundedPanel1.Controls.Add(this.label2);
@@ -342,6 +340,18 @@ namespace Acelera2025.Views
             this.btnSeguir.Size = new System.Drawing.Size(25, 28);
             this.btnSeguir.TabIndex = 56;
             this.btnSeguir.UseVisualStyleBackColor = false;
+            // 
+            // lblSeguidores
+            // 
+            this.lblSeguidores.AutoSize = true;
+            this.lblSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblSeguidores.Location = new System.Drawing.Point(230, 37);
+            this.lblSeguidores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSeguidores.Name = "lblSeguidores";
+            this.lblSeguidores.Size = new System.Drawing.Size(97, 27);
+            this.lblSeguidores.TabIndex = 20;
+            this.lblSeguidores.Text = "X seguidores";
             // 
             // lblNomeEmpresa
             // 
@@ -579,30 +589,6 @@ namespace Acelera2025.Views
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
-            // lblSeguidores
-            // 
-            this.lblSeguidores.AutoSize = true;
-            this.lblSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblSeguidores.Location = new System.Drawing.Point(230, 37);
-            this.lblSeguidores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSeguidores.Name = "lblSeguidores";
-            this.lblSeguidores.Size = new System.Drawing.Size(96, 27);
-            this.lblSeguidores.TabIndex = 20;
-            this.lblSeguidores.Text = "   seguidores";
-            // 
-            // lblNumSeguidores
-            // 
-            this.lblNumSeguidores.AutoSize = true;
-            this.lblNumSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNumSeguidores.Location = new System.Drawing.Point(222, 39);
-            this.lblNumSeguidores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNumSeguidores.Name = "lblNumSeguidores";
-            this.lblNumSeguidores.Size = new System.Drawing.Size(20, 27);
-            this.lblNumSeguidores.TabIndex = 62;
-            this.lblNumSeguidores.Text = "0";
-            // 
             // PerfilEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -661,6 +647,7 @@ namespace Acelera2025.Views
         private System.Windows.Forms.Label label2;
         private CircularButton btnEntrarEmContato;
         private CircularButton btnSeguir;
+        private System.Windows.Forms.Label lblSeguidores;
         private System.Windows.Forms.Label lblNomeEmpresa;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel btnPrincipal;
@@ -668,7 +655,5 @@ namespace Acelera2025.Views
         private Tools.CircularPictureBox circularPictureBox2;
         private Tools.CircularPictureBox picturePerfil;
         private System.Windows.Forms.LinkLabel btnFeed;
-        private System.Windows.Forms.Label lblSeguidores;
-        private System.Windows.Forms.Label lblNumSeguidores;
     }
 }

@@ -11,13 +11,10 @@ namespace Acelera2025.Views
         public event EventHandler FecharTelaSolicitado;
 
         private PessoaModels usuario;
-
-        
         public CardPerfil(PessoaModels usuario)
         {
             InitializeComponent();
             this.usuario = usuario;
-            lblNome.Text = usuario.Nome;
 
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
