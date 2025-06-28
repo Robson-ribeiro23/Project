@@ -1,4 +1,5 @@
 ﻿using Ac;
+using Acelera2025.Controllers;
 using Acelera2025.Telas;
 using System;
 using System.Drawing;
@@ -142,17 +143,21 @@ namespace Acelera2025.Views
         public void CarregarPostagensNoFeed()
         {
             flowLayoutPanel1.Controls.Clear();
-            foreach (var post in usuario.Postagens.OrderByDescending(p => p.Data))
+
+            var controller = new PostagemControllers();
+            var todasPostagens = controller.ListarPostagens();
+
+            foreach (var post in todasPostagens)
             {
                 UserControl cardPost = null;
 
                 if (post.Video != null)
                 {
-                    cardPost = new CardPostVideo(post, usuario); 
+                    cardPost = new CardPostVideo(post, usuario);
                 }
                 else if (post.Imagens != null && post.Imagens.Count > 0)
                 {
-                    cardPost = new CardPostImagem(post, usuario); 
+                    cardPost = new CardPostImagem(post, usuario);
                 }
                 else
                 {

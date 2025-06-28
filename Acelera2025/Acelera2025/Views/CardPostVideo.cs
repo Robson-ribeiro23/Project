@@ -118,5 +118,10 @@ namespace Acelera2025.Views
                 MessageBox.Show($"Erro: {ex.Message}");
             }
         }
+
+        private void video_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

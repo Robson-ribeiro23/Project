@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Ac;
+using Acelera2025.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Ac;
-using System.IO;
 
 namespace Acelera2025.Telas
 {
@@ -53,36 +54,29 @@ namespace Acelera2025.Telas
         }
         private void btnPostar_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrWhiteSpace(txtTexto.Text))
             {
                 MessageBox.Show("O texto da postagem não pode estar vazio.");
                 return;
             }
 
-            var post = new PostModels(
-                usuario: this.usuario,
-                texto: txtTexto.Text,
-                imagens: null,
-                video: videoSelecionado[0]
-            )
+            if (videoSelecionado.Count == 0)
             {
-                Data = DateTime.Now,
-                Curtidas = new List<CurtidasModels>(),
-                Comentarios = new List<ComentariosModels>()
-            };
+                MessageBox.Show("Você precisa selecionar um vídeo.");
+                return;
+            }
 
+            var controller = new PostagemControllers();
+            var postCriado = controller.CriarPost(this.usuario, txtTexto.Text, null, videoSelecionado[0]);
 
-            if (this.usuario.Postagens == null)
-                this.usuario.Postagens = new List<PostModels>();
-
-
-            this.usuario.Postagens.Add(post);
-
-            this.Parent.Controls.Remove(this);
-            OnPostCriado?.Invoke(this, EventArgs.Empty);
-
-            txtTexto.Clear();
-            MessageBox.Show("Postagem de imagens criada com sucesso!");
+            if (postCriado != null)
+            {
+                this.Parent.Controls.Remove(this);
+                OnPostCriado?.Invoke(this, EventArgs.Empty);
+                txtTexto.Clear();
+                MessageBox.Show("Postagem de vídeo criada com sucesso!");
+            }
         }
 
         private void btnFechar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -91,6 +85,11 @@ namespace Acelera2025.Telas
         }
 
         private void picFotoPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

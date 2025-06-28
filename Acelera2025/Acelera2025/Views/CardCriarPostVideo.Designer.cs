@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardCriarPostVideo));
             this.roundedPanel1 = new RoundedPanel();
+            this.picFotoPerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.video = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPostar = new RoundedButton();
@@ -37,12 +38,11 @@
             this.txtTexto = new System.Windows.Forms.TextBox();
             this.btnFechar = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.picFotoPerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.video)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // roundedPanel1
@@ -64,13 +64,32 @@
             this.roundedPanel1.Size = new System.Drawing.Size(858, 375);
             this.roundedPanel1.TabIndex = 1;
             // 
+            // picFotoPerfil
+            // 
+            this.picFotoPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.picFotoPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.picFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picFotoPerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picFotoPerfil.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.picFotoPerfil.BorderColor2 = System.Drawing.Color.HotPink;
+            this.picFotoPerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picFotoPerfil.BorderSize = 2;
+            this.picFotoPerfil.GradientAngle = 50F;
+            this.picFotoPerfil.Location = new System.Drawing.Point(17, 78);
+            this.picFotoPerfil.Name = "picFotoPerfil";
+            this.picFotoPerfil.Size = new System.Drawing.Size(72, 72);
+            this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotoPerfil.TabIndex = 36;
+            this.picFotoPerfil.TabStop = false;
+            this.picFotoPerfil.Click += new System.EventHandler(this.picFotoPerfil_Click);
+            // 
             // video
             // 
             this.video.Enabled = true;
-            this.video.Location = new System.Drawing.Point(582, 78);
+            this.video.Location = new System.Drawing.Point(582, 58);
             this.video.Name = "video";
             this.video.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("video.OcxState")));
-            this.video.Size = new System.Drawing.Size(250, 198);
+            this.video.Size = new System.Drawing.Size(250, 218);
             this.video.TabIndex = 48;
             // 
             // panel1
@@ -82,6 +101,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(858, 73);
             this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnPostar
             // 
@@ -135,7 +155,7 @@
             this.btnFechar.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnFechar.LinkColor = System.Drawing.Color.Black;
-            this.btnFechar.Location = new System.Drawing.Point(801, 20);
+            this.btnFechar.Location = new System.Drawing.Point(824, 9);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(23, 29);
             this.btnFechar.TabIndex = 43;
@@ -154,25 +174,6 @@
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
-            // picFotoPerfil
-            // 
-            this.picFotoPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.picFotoPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
-            this.picFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picFotoPerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.picFotoPerfil.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.picFotoPerfil.BorderColor2 = System.Drawing.Color.HotPink;
-            this.picFotoPerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picFotoPerfil.BorderSize = 2;
-            this.picFotoPerfil.GradientAngle = 50F;
-            this.picFotoPerfil.Location = new System.Drawing.Point(17, 78);
-            this.picFotoPerfil.Name = "picFotoPerfil";
-            this.picFotoPerfil.Size = new System.Drawing.Size(72, 72);
-            this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFotoPerfil.TabIndex = 36;
-            this.picFotoPerfil.TabStop = false;
-            this.picFotoPerfil.Click += new System.EventHandler(this.picFotoPerfil_Click);
-            // 
             // CardCriarPostVideo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -182,10 +183,10 @@
             this.Size = new System.Drawing.Size(858, 375);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.video)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFotoPerfil)).EndInit();
             this.ResumeLayout(false);
 
         }
