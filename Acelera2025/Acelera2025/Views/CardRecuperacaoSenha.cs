@@ -113,12 +113,12 @@ namespace Acelera2025.Views
 
             if (txtCodigo.Text.Trim().Equals(codigoGerado, StringComparison.OrdinalIgnoreCase))
             {
-                MessageBox.Show("Os valores são iguais!");
+                MessageBox.Show("Código correto");
                 panelNovaSenha.Visible = true;
             }
             else
             {
-                MessageBox.Show("Os valores são diferentes.");
+                MessageBox.Show("Código incorreto digitado");
             }
         }
         private void btnFechar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -126,6 +126,19 @@ namespace Acelera2025.Views
             Navegador.IrParaLoginUsuario();
         }
 
+        private void roundedButton2_Click(object sender, EventArgs e)
+        {
+            var usuarioController = new UsuarioControllers();
+            string email = txtEmail.Text;
+            string confirmarSenha = txtSenha.Text;
+
+            bool sucesso = usuarioController.AtualizarSenha(email, confirmarSenha);
+            if (sucesso)
+            {
+              Navegador.IrParaLoginUsuario();
+            }
+        
     }
+}
     
 }

@@ -89,4 +89,29 @@ public class UsuarioControllers
 
         return usuario;
     }
+    public bool AtualizarSenha(string email, string novaSenha)
+    {
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(novaSenha))
+            {
+                MessageBox.Show("Preencha todos os campos obrigatórios.");
+                return false;
+            }
+
+            if (!EmailValido(email))
+            {
+                MessageBox.Show("E-mail em formato inválido.");
+                return false;
+            }
+
+            var usuario = listaUsuarios.FirstOrDefault(u => u.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
+            if (usuario == null)
+            {
+                MessageBox.Show("Usuário não encontrado.");
+                return false;
+            }
+            usuario.Senha = novaSenha;
+            MessageBox.Show("Senha atualizada com sucesso!");
+            return true;
+    }
 }
+

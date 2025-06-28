@@ -1375,7 +1375,7 @@
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_1;
             this.picturePerfil.Location = new System.Drawing.Point(1611, 2);
-            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4);
             this.picturePerfil.Name = "picturePerfil";
             this.picturePerfil.Size = new System.Drawing.Size(47, 47);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

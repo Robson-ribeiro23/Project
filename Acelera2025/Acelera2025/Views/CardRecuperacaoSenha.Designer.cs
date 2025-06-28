@@ -206,6 +206,7 @@
             this.roundedButton2.TabIndex = 47;
             this.roundedButton2.Text = "Confirmar";
             this.roundedButton2.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // label3
             // 
