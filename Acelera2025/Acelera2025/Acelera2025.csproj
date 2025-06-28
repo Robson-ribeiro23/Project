@@ -230,6 +230,12 @@
     <Compile Include="Views\EntrarUsuario.Designer.cs">
       <DependentUpon>EntrarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\EnviarEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\EnviarEmail.Designer.cs">
+      <DependentUpon>EnviarEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\EventosCriados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -434,6 +440,9 @@
     <EmbeddedResource Include="Views\EntrarUsuario.resx">
       <DependentUpon>EntrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\EnviarEmail.resx">
+      <DependentUpon>EnviarEmail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\EventoCard.resx">
       <DependentUpon>EventoCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -541,6 +550,7 @@
     <None Include="Resources\IconeNotificacao.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8-plus-128.png" />
     <None Include="Resources\icons8-expand-100.png" />
     <None Include="Resources\Captura de tela 2025-03-31 1528011.png" />
     <None Include="Resources\icons8-like-24.png" />
