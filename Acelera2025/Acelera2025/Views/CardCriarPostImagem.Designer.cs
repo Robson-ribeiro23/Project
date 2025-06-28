@@ -195,6 +195,7 @@
             this.txtTexto.Name = "txtTexto";
             this.txtTexto.Size = new System.Drawing.Size(367, 162);
             this.txtTexto.TabIndex = 11;
+            this.txtTexto.TextChanged += new System.EventHandler(this.txtTexto_TextChanged);
             // 
             // CardCriarPostImagem
             // 

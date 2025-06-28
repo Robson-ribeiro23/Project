@@ -2,6 +2,7 @@
 using Ac;
 using Acelera2025.Controllers;
 using Acelera2025.Telas;
+using Acelera2025.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,12 +19,16 @@ namespace Acelera2025.Telas
 {
     public partial class CardCriarPostTexto: UserControl
     {
-        public event EventHandler OnPostCriado;
+        private Feed feed;
         private PessoaModels usuario;
-        public CardCriarPostTexto(PessoaModels usuario)
+
+        public event EventHandler OnPostCriado;
+        
+        public CardCriarPostTexto(PessoaModels usuario, Feed feed)
         {
             InitializeComponent();
-            this.usuario = usuario;
+            this.usuario = usuario;           
+            this.feed = feed;
 
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
@@ -46,6 +51,9 @@ namespace Acelera2025.Telas
 
             if (postCriado != null)
             {
+
+
+                feed.CarregarPostagensNoFeed();
                 this.Parent.Controls.Remove(this);
                 OnPostCriado?.Invoke(this, EventArgs.Empty);
                 txtTexto.Clear();

@@ -24,7 +24,8 @@ namespace Acelera2025.Views
         private bool cardCriarPostImagemVisivel = false;
         private CardCriarPostVideo cardCriarPostVideo;
         private bool cardCriarPostVideoVisivel = false;
-        
+        private static Feed instancia;
+
         public Feed(PessoaModels usuario)
         {
             InitializeComponent();
@@ -57,20 +58,20 @@ namespace Acelera2025.Views
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 
 
-            cardCriarPostTexto = new CardCriarPostTexto(this.usuario);
+            cardCriarPostTexto = new CardCriarPostTexto(this.usuario, this);
             cardCriarPostTexto.Visible = false;
             this.Controls.Add(cardCriarPostTexto);
             cardCriarPostTexto.Left = (this.ClientSize.Width - cardCriarPostTexto.Width) / 2;
             cardCriarPostTexto.Top = (this.ClientSize.Height - cardCriarPostTexto.Height) / 2;
 
-            cardCriarPostImagem = new CardCriarPostImagem(this.usuario);
+            cardCriarPostImagem = new CardCriarPostImagem(this.usuario, this);
             cardCriarPostImagem.Visible = false;
             this.Controls.Add(cardCriarPostImagem);
             cardCriarPostImagem.Left = (this.ClientSize.Width - cardCriarPostImagem.Width) / 2;
             cardCriarPostImagem.Top = (this.ClientSize.Height - cardCriarPostImagem.Height) / 2;
 
 
-            cardCriarPostVideo = new CardCriarPostVideo(this.usuario);
+            cardCriarPostVideo = new CardCriarPostVideo(this.usuario, this);
             cardCriarPostVideo.Visible = false;
             this.Controls.Add(cardCriarPostVideo);
             cardCriarPostVideo.Left = (this.ClientSize.Width - cardCriarPostVideo.Width) / 2;
@@ -108,6 +109,15 @@ namespace Acelera2025.Views
             cardPainelDeNotificacoes.BringToFront();
         }
 
+        public static Feed GetInstancia(PessoaModels usuario)
+        {
+            if (instancia == null || instancia.IsDisposed)
+            {
+                instancia = new Feed(usuario);
+            }
+            return instancia;
+        }
+
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
@@ -135,9 +145,15 @@ namespace Acelera2025.Views
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            cardCriarPostTextoVisivel= !cardCriarPostTextoVisivel;
-            cardCriarPostTexto.Visible = cardCriarPostTextoVisivel;
+            cardCriarPostTexto = new CardCriarPostTexto(this.usuario, this);
+            this.Controls.Add(cardCriarPostTexto);
+            // posiciona e exibe como antes
+            cardCriarPostTexto.Visible = true;
             cardCriarPostTexto.BringToFront();
+
+            //cardCriarPostTextoVisivel= !cardCriarPostTextoVisivel;
+            //cardCriarPostTexto.Visible = cardCriarPostTextoVisivel;
+            //cardCriarPostTexto.BringToFront();
         }
 
         public void CarregarPostagensNoFeed()
@@ -180,8 +196,10 @@ namespace Acelera2025.Views
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            cardCriarPostImagemVisivel = !cardCriarPostImagemVisivel;
-            cardCriarPostImagem.Visible = cardCriarPostImagemVisivel;
+            cardCriarPostImagem = new CardCriarPostImagem(this.usuario, this);
+            this.Controls.Add(cardCriarPostImagem);
+            // posiciona e exibe como antes
+            cardCriarPostImagem.Visible = true;
             cardCriarPostImagem.BringToFront();
         }
 
@@ -201,8 +219,10 @@ namespace Acelera2025.Views
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            cardCriarPostVideoVisivel = !cardCriarPostVideoVisivel;
-            cardCriarPostVideo.Visible = cardCriarPostVideoVisivel;
+            cardCriarPostVideo = new CardCriarPostVideo(this.usuario, this);
+            this.Controls.Add(cardCriarPostVideo);
+            
+            cardCriarPostVideo.Visible = true;
             cardCriarPostVideo.BringToFront();
         }
 

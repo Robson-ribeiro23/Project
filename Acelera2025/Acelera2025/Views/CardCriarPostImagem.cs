@@ -2,6 +2,7 @@
 using Ac;
 using Acelera2025.Controllers;
 using Acelera2025.Telas;
+using Acelera2025.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,10 +21,13 @@ namespace Acelera2025.Telas
         public event EventHandler OnPostCriado;
         private PessoaModels usuario;
         private List<string> imagensSelecionadas = new List<string>();
-        public CardCriarPostImagem(PessoaModels usuario)
+        private Feed feed;
+
+        public CardCriarPostImagem(PessoaModels usuario, Feed feed)
         {
             InitializeComponent();
             this.usuario = usuario;
+            this.feed = feed;
 
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
@@ -44,6 +48,7 @@ namespace Acelera2025.Telas
 
             if (postCriado != null)
             {
+                feed.CarregarPostagensNoFeed();
                 this.Parent.Controls.Remove(this);
                 OnPostCriado?.Invoke(this, EventArgs.Empty);
                 txtTexto.Clear();
@@ -120,6 +125,11 @@ namespace Acelera2025.Telas
         }
 
         private void PicPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTexto_TextChanged(object sender, EventArgs e)
         {
 
         }

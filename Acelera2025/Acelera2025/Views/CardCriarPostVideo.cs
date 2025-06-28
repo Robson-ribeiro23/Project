@@ -1,5 +1,6 @@
 ﻿using Ac;
 using Acelera2025.Controllers;
+using Acelera2025.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,16 +19,20 @@ namespace Acelera2025.Telas
         public event EventHandler OnPostCriado;
         private PessoaModels usuario;
         private List<string> videoSelecionado= new List<string>();
-        public CardCriarPostVideo(PessoaModels usuario)
+        private Feed feed;
+        public CardCriarPostVideo(PessoaModels usuario, Feed feed)
         {
             InitializeComponent();
             this.usuario = usuario;
+            this.feed = feed;
             video.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
                 picFotoPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
             }
+
+            this.feed = feed;
         }
 
         private void btnSelecionarVideo_Click(object sender, EventArgs e)
@@ -74,10 +79,14 @@ namespace Acelera2025.Telas
 
             if (postCriado != null)
             {
+                feed.CarregarPostagensNoFeed();
                 this.Parent.Controls.Remove(this);
+
                 OnPostCriado?.Invoke(this, EventArgs.Empty);
                 txtTexto.Clear();
                 MessageBox.Show("Postagem de vídeo criada com sucesso!");
+                
+
             }
         }
 
