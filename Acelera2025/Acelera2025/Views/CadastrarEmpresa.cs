@@ -1,15 +1,20 @@
 ﻿using Ac;
 using Acelera2025.Controllers;
+using Acelera2025.Models;
 using System;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace Acelera2025.Views
 {
-    public partial class CadastrarEmpresa: Form
+    public partial class CadastrarEmpresa : Form
     {
         private EmpresaControllers controllerEmpresa = new EmpresaControllers();
+        private const int MAX_CARACTERES_NOME = 100;
+
         public CadastrarEmpresa()
         {
             InitializeComponent();
@@ -19,6 +24,7 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaOpcaoLogin();
         }
+
         private void btnMostrarSenha_Click(object sender, EventArgs e)
         {
             if (txtSenha.PasswordChar == '*')
@@ -41,16 +47,16 @@ namespace Acelera2025.Views
 
         private void btnMostrarSenhaConfirmar_Click(object sender, EventArgs e)
         {
-             if (txtConfirmarSenha.PasswordChar == '*')
-                {
-                    txtConfirmarSenha.PasswordChar = '\0';
-                    btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_eye_30_1;
-                }
-                else
-                {
-                    txtConfirmarSenha.PasswordChar = '*';
-                    btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
-                }
+            if (txtConfirmarSenha.PasswordChar == '*')
+            {
+                txtConfirmarSenha.PasswordChar = '\0';
+                btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_eye_30_1;
+            }
+            else
+            {
+                txtConfirmarSenha.PasswordChar = '*';
+                btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
+            }
         }
 
         private void txtCnpj_KeyPress(object sender, KeyPressEventArgs e)
@@ -90,7 +96,6 @@ namespace Acelera2025.Views
             e.Handled = true;
 
             txtCnpj.Text = formatado;
-
             txtCnpj.SelectionStart = txtCnpj.Text.Length;
         }
 
@@ -122,7 +127,7 @@ namespace Acelera2025.Views
                     formatado += "(";
                 else if (i == 2)
                     formatado += ") ";
-                else if (i == 7)
+                else if (texto.Length > 6 && i == 7)
                     formatado += "-";
 
                 formatado += texto[i];
@@ -136,21 +141,64 @@ namespace Acelera2025.Views
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            // Validações
+            if (!ValidarNomeEmpresa(txtNomeEmpresa.Text))
+            {
+                MessageBox.Show("Nome da empresa inválido. Deve conter pelo menos 3 caracteres e não ultrapassar 100 caracteres.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtNomeEmpresa.Focus();
+                return;
+            }
+
+            if (!ValidarCNPJ(txtCnpj.Text))
+            {
+                MessageBox.Show("CNPJ inválido. Verifique o número digitado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCnpj.Focus();
+                return;
+            }
+
+            if (!ValidarTelefone(txtTelefone.Text))
+            {
+                MessageBox.Show("Telefone inválido. Deve conter DDD + número (10 ou 11 dígitos).", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTelefone.Focus();
+                return;
+            }
+
+            if (!ValidarEmail(txtEmail.Text))
+            {
+                MessageBox.Show("Por favor, insira um e-mail válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEmail.Focus();
+                return;
+            }
+
+            if (!ValidarSenha(txtSenha.Text))
+            {
+                MessageBox.Show("A senha deve conter pelo menos uma letra maiúscula, um número e ter no mínimo 8 caracteres.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSenha.Focus();
+                return;
+            }
+
+            if (txtSenha.Text != txtConfirmarSenha.Text)
+            {
+                MessageBox.Show("As senhas não coincidem.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtConfirmarSenha.Focus();
+                return;
+            }
 
             var empresa = new EmpresaModels
             {
                 Tipo = "empresa",
-                Nome = txtNomeEmpresa.Text,
-                CNPJ = txtCnpj.Text,
-                Telefone = txtTelefone.Text,
+                Nome = txtNomeEmpresa.Text.Trim(),
+                CNPJ = new string(txtCnpj.Text.Where(char.IsDigit).ToArray()), // Armazena apenas números
+                Telefone = new string(txtTelefone.Text.Where(char.IsDigit).ToArray()),
                 Cidade = "São Paulo",
-                Email = txtEmail.Text,
+                Email = txtEmail.Text.Trim(),
                 Senha = txtSenha.Text,
                 ConfirmarSenha = txtConfirmarSenha.Text,
             };
 
             if (controllerEmpresa.Cadastrar(empresa))
             {
+                MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimparCampos();
             }
         }
@@ -168,6 +216,95 @@ namespace Acelera2025.Views
         private void btnEntrarEmpresa_Click(object sender, EventArgs e)
         {
             Navegador.IrParaLoginEmpresa();
+        }
+
+        // Métodos de validação
+        private bool ValidarNomeEmpresa(string nome)
+        {
+            return !string.IsNullOrWhiteSpace(nome) &&
+                   nome.Length >= 3 &&
+                   nome.Length <= MAX_CARACTERES_NOME;
+        }
+
+        private bool ValidarCNPJ(string cnpj)
+        {
+            // Remove caracteres não numéricos
+            cnpj = new string(cnpj.Where(char.IsDigit).ToArray());
+
+            // Verifica se tem 14 dígitos
+            if (cnpj.Length != 14)
+                return false;
+
+            // Verifica se todos os dígitos não são iguais
+            if (cnpj.Distinct().Count() == 1)
+                return false;
+
+            // Cálculo do primeiro dígito verificador
+            int[] multiplicadores1 = { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+            int soma = 0;
+            for (int i = 0; i < 12; i++)
+                soma += int.Parse(cnpj[i].ToString()) * multiplicadores1[i];
+
+            int resto = soma % 11;
+            int digito1 = resto < 2 ? 0 : 11 - resto;
+
+            // Cálculo do segundo dígito verificador
+            int[] multiplicadores2 = { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+            soma = 0;
+            for (int i = 0; i < 13; i++)
+                soma += int.Parse(cnpj[i].ToString()) * multiplicadores2[i];
+
+            resto = soma % 11;
+            int digito2 = resto < 2 ? 0 : 11 - resto;
+
+            // Verifica se os dígitos calculados conferem com os informados
+            return int.Parse(cnpj[12].ToString()) == digito1 &&
+                   int.Parse(cnpj[13].ToString()) == digito2;
+        }
+
+        private bool ValidarTelefone(string telefone)
+        {
+            // Remove caracteres não numéricos
+            telefone = new string(telefone.Where(char.IsDigit).ToArray());
+
+            // Verifica se tem 10 (fixo) ou 11 (celular) dígitos
+            return telefone.Length == 10 || telefone.Length == 11;
+        }
+
+        private bool ValidarEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            try
+            {
+                return Regex.IsMatch(email,
+                    @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+            }
+            catch (RegexMatchTimeoutException)
+            {
+                return false;
+            }
+        }
+
+        private bool ValidarSenha(string senha)
+        {
+            const int MIN_CARACTERES_SENHA = 8;
+            return !string.IsNullOrWhiteSpace(senha) &&
+                   senha.Length >= MIN_CARACTERES_SENHA &&
+                   senha.Any(char.IsUpper) &&
+                   senha.Any(char.IsDigit);
+        }
+
+        // Validação em tempo real do nome da empresa
+        private void txtNomeEmpresa_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNomeEmpresa.Text.Length > MAX_CARACTERES_NOME)
+            {
+                txtNomeEmpresa.Text = txtNomeEmpresa.Text.Substring(0, MAX_CARACTERES_NOME);
+                txtNomeEmpresa.SelectionStart = MAX_CARACTERES_NOME;
+            }
         }
     }
 }

@@ -90,5 +90,10 @@ namespace Acelera2025.Views
 
             this.Hide();
         }
+
+        private void picFotoPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

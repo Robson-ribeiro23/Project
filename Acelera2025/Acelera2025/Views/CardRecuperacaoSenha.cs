@@ -14,7 +14,7 @@ using Ac;
 
 namespace Acelera2025.Views
 {
-    public partial class CardRecuperacaoSenha: UserControl
+    public partial class CardRecuperacaoSenha : UserControl
     {
         public event EventHandler FecharTelaSolicitado;
         String codigoGerado;
@@ -65,7 +65,7 @@ namespace Acelera2025.Views
                 var toAddress = new MailAddress(txtEmail.Text.Trim(), "Destinatário");
                 const string fromPassword = "tkep pwkn tsor voas";
                 const string subject = "Código de Recuperação Connecta";
-                string body = "Ola," + "Seu código de recuperação de senha é:"+ codigoGerado;
+                string body = "Ola," + "Seu código de recuperação de senha é:" + codigoGerado;
 
                 var smtp = new SmtpClient
                 {
@@ -94,10 +94,10 @@ namespace Acelera2025.Views
             }
         }
 
-        
-       
-       
-         static string GerarCodigoNumerico(int tamanho)
+
+
+
+        static string GerarCodigoNumerico(int tamanho)
         {
             Random random = new Random();
             string codigo = string.Empty;
@@ -106,8 +106,8 @@ namespace Acelera2025.Views
                 codigo += random.Next(0, 10);
             }
             return codigo;
-            
-        } 
+
+        }
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
 
@@ -135,10 +135,10 @@ namespace Acelera2025.Views
             bool sucesso = usuarioController.AtualizarSenha(email, confirmarSenha);
             if (sucesso)
             {
-              Navegador.IrParaLoginUsuario();
+                Navegador.IrParaLoginUsuario();
             }
-        
+
+        }
     }
-}
-    
+
 }

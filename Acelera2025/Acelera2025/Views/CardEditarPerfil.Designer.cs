@@ -42,9 +42,9 @@
             this.txtNovaSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.roundedPanel2 = new RoundedPanel();
+            this.picFotoPerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.roundedButton1 = new RoundedButton();
             this.lblNomeUsuario = new System.Windows.Forms.Label();
-            this.picFotoPerfil = new Acelera2025.Views.Tools.CircularPictureBox();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel2.SuspendLayout();
@@ -238,6 +238,25 @@
             this.roundedPanel2.Size = new System.Drawing.Size(826, 81);
             this.roundedPanel2.TabIndex = 0;
             // 
+            // picFotoPerfil
+            // 
+            this.picFotoPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.picFotoPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.picFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picFotoPerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picFotoPerfil.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.picFotoPerfil.BorderColor2 = System.Drawing.Color.HotPink;
+            this.picFotoPerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picFotoPerfil.BorderSize = 2;
+            this.picFotoPerfil.GradientAngle = 50F;
+            this.picFotoPerfil.Location = new System.Drawing.Point(6, 11);
+            this.picFotoPerfil.Name = "picFotoPerfil";
+            this.picFotoPerfil.Size = new System.Drawing.Size(60, 60);
+            this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFotoPerfil.TabIndex = 36;
+            this.picFotoPerfil.TabStop = false;
+            this.picFotoPerfil.Click += new System.EventHandler(this.picFotoPerfil_Click);
+            // 
             // roundedButton1
             // 
             this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
@@ -266,24 +285,6 @@
             this.lblNomeUsuario.Size = new System.Drawing.Size(60, 29);
             this.lblNomeUsuario.TabIndex = 3;
             this.lblNomeUsuario.Text = "Nome ";
-            // 
-            // picFotoPerfil
-            // 
-            this.picFotoPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.picFotoPerfil.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
-            this.picFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picFotoPerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.picFotoPerfil.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.picFotoPerfil.BorderColor2 = System.Drawing.Color.HotPink;
-            this.picFotoPerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.picFotoPerfil.BorderSize = 2;
-            this.picFotoPerfil.GradientAngle = 50F;
-            this.picFotoPerfil.Location = new System.Drawing.Point(6, 11);
-            this.picFotoPerfil.Name = "picFotoPerfil";
-            this.picFotoPerfil.Size = new System.Drawing.Size(60, 60);
-            this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picFotoPerfil.TabIndex = 36;
-            this.picFotoPerfil.TabStop = false;
             // 
             // CardEditarPerfil
             // 
