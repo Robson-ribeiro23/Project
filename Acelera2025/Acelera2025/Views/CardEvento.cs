@@ -16,5 +16,10 @@ namespace Acelera2025.Telas
         {
             InitializeComponent();
         }
+
+        private void CardEvento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

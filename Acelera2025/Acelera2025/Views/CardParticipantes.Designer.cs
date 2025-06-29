@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picPerfil = new CircularPanel();
             this.lblNome = new System.Windows.Forms.Label();
+            this.picturePerfil = new Acelera2025.Views.Tools.CircularPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picPerfil
-            // 
-            this.picPerfil.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.picPerfil.BorderColor = System.Drawing.Color.Black;
-            this.picPerfil.BorderSize = 0;
-            this.picPerfil.Location = new System.Drawing.Point(14, 17);
-            this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(43, 42);
-            this.picPerfil.TabIndex = 0;
             // 
             // lblNome
             // 
@@ -48,28 +39,49 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.lblNome.Location = new System.Drawing.Point(87, 29);
+            this.lblNome.Location = new System.Drawing.Point(65, 24);
+            this.lblNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(60, 30);
+            this.lblNome.Size = new System.Drawing.Size(49, 25);
             this.lblNome.TabIndex = 1;
             this.lblNome.Text = "Nome";
             // 
+            // picturePerfil
+            // 
+            this.picturePerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturePerfil.BackColor = System.Drawing.Color.Transparent;
+            this.picturePerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picturePerfil.BorderColor = System.Drawing.Color.Transparent;
+            this.picturePerfil.BorderColor2 = System.Drawing.Color.Transparent;
+            this.picturePerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picturePerfil.BorderSize = 1;
+            this.picturePerfil.GradientAngle = 50F;
+            this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.picturePerfil.Location = new System.Drawing.Point(14, 14);
+            this.picturePerfil.Name = "picturePerfil";
+            this.picturePerfil.Size = new System.Drawing.Size(35, 35);
+            this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturePerfil.TabIndex = 18;
+            this.picturePerfil.TabStop = false;
+            // 
             // CardParticipantes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.picturePerfil);
             this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.picPerfil);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CardParticipantes";
-            this.Size = new System.Drawing.Size(377, 77);
+            this.Size = new System.Drawing.Size(283, 63);
+            this.Load += new System.EventHandler(this.CardParticipantes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private CircularPanel picPerfil;
-        private System.Windows.Forms.Label lblNome;
+        public System.Windows.Forms.Label lblNome;
+        private Tools.CircularPictureBox picturePerfil;
     }
 }

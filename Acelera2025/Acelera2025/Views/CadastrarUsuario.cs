@@ -30,6 +30,48 @@ namespace Acelera2025.Views
             lblMaiuscula.ForeColor = Color.Red;
             lblNumero.ForeColor = Color.Red;
             lblTamanhoSenha.ForeColor = Color.Red;
+
+            string[] nomes = { "a", "b", "c", "d", "e" };
+
+            for (int i = 0; i < nomes.Length; i++)
+            {
+                string four = new string(i.ToString()[0], 4);
+                string three = new string(i.ToString()[0], 3);
+                string two = new string(i.ToString()[0], 2);
+
+                var user = new UsuarioModels
+                {
+                    Tipo = "usuario",
+                    Nome = nomes[i],
+                    Email = nomes[i] + "@gmail.com",
+                    Cidade = "Cruzeiro",
+                    CPF = $"{three}.{three}.{three}-{two}",
+                    DataNascimento = $"{two}/{two}/{four}",
+                    Senha = i.ToString(),
+                    ConfirmarSenha = i.ToString(),
+                    CaminhoFoto = @"C:\Programming\C#\university\Acelera2025\Acelera2025\Pictures\avatar_padrao.png"
+                };
+
+                controllerUsuario.Cadastrar(user);
+            }
+
+            var usuario = new UsuarioModels
+            {
+                Tipo = "usuario",
+                Nome = "v",
+                Email = "v@gmail.com",
+                Cidade = "Cruzeiro",
+                CPF = "999.999.999-99",
+                DataNascimento = "99/99/9999",
+                Senha = "9",
+                ConfirmarSenha = "9",
+                CaminhoFoto = @"C:\Programming\C#\university\Acelera2025\Acelera2025\Pictures\avatar_padrao.png"
+            };
+
+            if (controllerUsuario.Cadastrar(usuario))
+            {
+                Navegador.IrParaLoginUsuario();
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

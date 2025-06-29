@@ -1,6 +1,7 @@
 ﻿using Ac;
 using Acelera2025.Telas;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -43,6 +44,31 @@ namespace Acelera2025.Views
             panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+        }
+
+        private void LoadAllEvents()
+        {
+            List<EventoModels> eventoList = usuario.GetSubbedEvents();
+
+            foreach (EventoModels evento in eventoList) 
+            {
+                CreateEventCard(evento);
+            }
+        }
+
+        private void CreateEventCard(EventoModels evento)
+        {
+            CardEvento card = new CardEvento();
+
+            card.PicEvento.Image = Image.FromFile(evento.CaminhoImagem);
+            card.lblNomeEvento.Text = evento.NomeEvento;
+            card.lblDataHora.Text = evento.Data.ToString();
+            card.lblLocal.Text = evento.Local;
+            card.lblRua.Text = evento.Rua;
+            card.lblCidadeEstado.Text = evento.Cidade;
+
+            pageInscricoes.Controls.Add(card);
+
         }
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

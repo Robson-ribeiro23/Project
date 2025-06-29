@@ -187,5 +187,10 @@ namespace Acelera2025.Views
             enviarEmail.Visible = enviarEmailVisivel;
             enviarEmail.BringToFront();
         }
+
+        private void btnInscrever_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

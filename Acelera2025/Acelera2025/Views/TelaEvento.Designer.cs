@@ -116,7 +116,7 @@
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1367, 41);
+            this.gradientPanel1.Size = new System.Drawing.Size(1364, 41);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 24;
             // 
@@ -129,7 +129,7 @@
             this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnFeed.LinkColor = System.Drawing.Color.White;
-            this.btnFeed.Location = new System.Drawing.Point(820, 12);
+            this.btnFeed.Location = new System.Drawing.Point(817, 12);
             this.btnFeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnFeed.Name = "btnFeed";
             this.btnFeed.Size = new System.Drawing.Size(35, 21);
@@ -150,7 +150,7 @@
             this.picturePerfil.BorderSize = 0;
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
-            this.picturePerfil.Location = new System.Drawing.Point(1313, 2);
+            this.picturePerfil.Location = new System.Drawing.Point(1310, 2);
             this.picturePerfil.Name = "picturePerfil";
             this.picturePerfil.Size = new System.Drawing.Size(35, 35);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,7 +197,7 @@
             this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacoes.Location = new System.Drawing.Point(1266, 11);
+            this.btnNotificacoes.Location = new System.Drawing.Point(1263, 11);
             this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2);
             this.btnNotificacoes.Name = "btnNotificacoes";
             this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
@@ -254,7 +254,7 @@
             this.btnOrganizadorEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrganizadorEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnOrganizadorEventos.LinkColor = System.Drawing.Color.White;
-            this.btnOrganizadorEventos.Location = new System.Drawing.Point(885, 12);
+            this.btnOrganizadorEventos.Location = new System.Drawing.Point(882, 12);
             this.btnOrganizadorEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnOrganizadorEventos.Name = "btnOrganizadorEventos";
             this.btnOrganizadorEventos.Size = new System.Drawing.Size(105, 21);
@@ -273,7 +273,7 @@
             this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Location = new System.Drawing.Point(1015, 12);
+            this.btnMeusEventos.Location = new System.Drawing.Point(1012, 12);
             this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnMeusEventos.Name = "btnMeusEventos";
             this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
@@ -292,7 +292,7 @@
             this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjuda.LinkColor = System.Drawing.Color.White;
-            this.btnAjuda.Location = new System.Drawing.Point(1115, 12);
+            this.btnAjuda.Location = new System.Drawing.Point(1112, 12);
             this.btnAjuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnAjuda.Name = "btnAjuda";
             this.btnAjuda.Size = new System.Drawing.Size(41, 21);
@@ -311,7 +311,7 @@
             this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnSobreNos.LinkColor = System.Drawing.Color.White;
-            this.btnSobreNos.Location = new System.Drawing.Point(1169, 13);
+            this.btnSobreNos.Location = new System.Drawing.Point(1166, 13);
             this.btnSobreNos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnSobreNos.Name = "btnSobreNos";
             this.btnSobreNos.Size = new System.Drawing.Size(62, 21);
@@ -345,7 +345,7 @@
             this.panelPatrocinadores.Location = new System.Drawing.Point(0, 41);
             this.panelPatrocinadores.Margin = new System.Windows.Forms.Padding(2);
             this.panelPatrocinadores.Name = "panelPatrocinadores";
-            this.panelPatrocinadores.Size = new System.Drawing.Size(1367, 555);
+            this.panelPatrocinadores.Size = new System.Drawing.Size(1364, 555);
             this.panelPatrocinadores.TabIndex = 25;
             // 
             // panel3
@@ -360,7 +360,7 @@
             // 
             this.panelEmpresa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelEmpresa.Controls.Add(this.btnPatrocinar);
-            this.panelEmpresa.Location = new System.Drawing.Point(938, 309);
+            this.panelEmpresa.Location = new System.Drawing.Point(935, 309);
             this.panelEmpresa.Margin = new System.Windows.Forms.Padding(2);
             this.panelEmpresa.Name = "panelEmpresa";
             this.panelEmpresa.Size = new System.Drawing.Size(172, 56);
@@ -394,7 +394,7 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(936, 5);
+            this.panelMeusEventos.Location = new System.Drawing.Point(933, 5);
             this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
@@ -478,7 +478,7 @@
             this.btnCurtir.FlatAppearance.BorderSize = 0;
             this.btnCurtir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCurtir.Image = global::Acelera2025.Properties.Resources.Captura_de_tela_2025_03_31_151223;
-            this.btnCurtir.Location = new System.Drawing.Point(1139, 264);
+            this.btnCurtir.Location = new System.Drawing.Point(1136, 264);
             this.btnCurtir.Margin = new System.Windows.Forms.Padding(2);
             this.btnCurtir.Name = "btnCurtir";
             this.btnCurtir.Size = new System.Drawing.Size(28, 32);
@@ -503,7 +503,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label6.Location = new System.Drawing.Point(1180, 271);
+            this.label6.Location = new System.Drawing.Point(1177, 271);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 27);
@@ -519,13 +519,14 @@
             this.btnInscrever.BorderSize = 0;
             this.btnInscrever.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInscrever.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnInscrever.Location = new System.Drawing.Point(936, 264);
+            this.btnInscrever.Location = new System.Drawing.Point(933, 264);
             this.btnInscrever.Margin = new System.Windows.Forms.Padding(2);
             this.btnInscrever.Name = "btnInscrever";
             this.btnInscrever.Size = new System.Drawing.Size(174, 32);
             this.btnInscrever.TabIndex = 40;
             this.btnInscrever.Text = "Inscrever-se";
             this.btnInscrever.UseVisualStyleBackColor = false;
+            this.btnInscrever.Click += new System.EventHandler(this.btnInscrever_Click);
             // 
             // label9
             // 
@@ -586,7 +587,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(25, 10);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1252, 601);
+            this.tabControl1.Size = new System.Drawing.Size(1249, 601);
             this.tabControl1.TabIndex = 38;
             // 
             // tabPage1
@@ -597,7 +598,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(1244, 549);
+            this.tabPage1.Size = new System.Drawing.Size(1241, 549);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Descrição";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -628,7 +629,7 @@
             this.gradientPanel2.Location = new System.Drawing.Point(0, 1021);
             this.gradientPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.gradientPanel2.Name = "gradientPanel2";
-            this.gradientPanel2.Size = new System.Drawing.Size(1350, 60);
+            this.gradientPanel2.Size = new System.Drawing.Size(1347, 60);
             this.gradientPanel2.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel2.TabIndex = 35;
             // 
@@ -639,7 +640,7 @@
             this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button14.FlatAppearance.BorderSize = 0;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(1173, 11);
+            this.button14.Location = new System.Drawing.Point(1170, 11);
             this.button14.Margin = new System.Windows.Forms.Padding(2);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(40, 39);
@@ -654,7 +655,7 @@
             this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(1128, 11);
+            this.button17.Location = new System.Drawing.Point(1125, 11);
             this.button17.Margin = new System.Windows.Forms.Padding(2);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(40, 39);
@@ -669,7 +670,7 @@
             this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(1263, 11);
+            this.button16.Location = new System.Drawing.Point(1260, 11);
             this.button16.Margin = new System.Windows.Forms.Padding(2);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(40, 39);
@@ -684,7 +685,7 @@
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button15.FlatAppearance.BorderSize = 0;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(1218, 11);
+            this.button15.Location = new System.Drawing.Point(1215, 11);
             this.button15.Margin = new System.Windows.Forms.Padding(2);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(40, 39);
@@ -727,7 +728,7 @@
             this.linkLabel8.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel8.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel8.LinkColor = System.Drawing.Color.White;
-            this.linkLabel8.Location = new System.Drawing.Point(1053, 22);
+            this.linkLabel8.Location = new System.Drawing.Point(1050, 22);
             this.linkLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel8.Name = "linkLabel8";
             this.linkLabel8.Size = new System.Drawing.Size(53, 21);
@@ -745,7 +746,7 @@
             this.linkLabel7.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel7.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel7.LinkColor = System.Drawing.Color.White;
-            this.linkLabel7.Location = new System.Drawing.Point(1000, 21);
+            this.linkLabel7.Location = new System.Drawing.Point(997, 21);
             this.linkLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel7.Name = "linkLabel7";
             this.linkLabel7.Size = new System.Drawing.Size(41, 21);
@@ -765,7 +766,7 @@
             this.panel2.Location = new System.Drawing.Point(3, 34);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1363, 210);
+            this.panel2.Size = new System.Drawing.Size(1360, 210);
             this.panel2.TabIndex = 49;
             // 
             // flowLayoutPanel1
@@ -816,7 +817,7 @@
             this.roundedPanel1.Controls.Add(this.lblRua);
             this.roundedPanel1.Controls.Add(this.lblNomeLocal);
             this.roundedPanel1.Controls.Add(this.lblData);
-            this.roundedPanel1.Location = new System.Drawing.Point(931, 15);
+            this.roundedPanel1.Location = new System.Drawing.Point(928, 15);
             this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(410, 188);
@@ -920,7 +921,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1367, 596);
+            this.ClientSize = new System.Drawing.Size(1364, 596);
             this.Controls.Add(this.panelPatrocinadores);
             this.Controls.Add(this.gradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

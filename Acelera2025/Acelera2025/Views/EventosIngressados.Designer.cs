@@ -36,7 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.pageInscricoes = new System.Windows.Forms.TabPage();
-            this.cardEvento1 = new Acelera2025.Telas.CardEvento();
             this.pageCertificados = new System.Windows.Forms.TabPage();
             this.cardBaixarCertificado1 = new Acelera2025.Telas.CardBaixarCertificado();
             this.pageTransmissoesOnline = new System.Windows.Forms.TabPage();
@@ -57,7 +56,6 @@
             this.panel1.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.pageInscricoes.SuspendLayout();
             this.pageCertificados.SuspendLayout();
             this.pageTransmissoesOnline.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
@@ -159,7 +157,6 @@
             // 
             // pageInscricoes
             // 
-            this.pageInscricoes.Controls.Add(this.cardEvento1);
             this.pageInscricoes.Location = new System.Drawing.Point(4, 42);
             this.pageInscricoes.Margin = new System.Windows.Forms.Padding(2);
             this.pageInscricoes.Name = "pageInscricoes";
@@ -168,14 +165,6 @@
             this.pageInscricoes.TabIndex = 0;
             this.pageInscricoes.Text = "Inscrições";
             this.pageInscricoes.UseVisualStyleBackColor = true;
-            // 
-            // cardEvento1
-            // 
-            this.cardEvento1.Location = new System.Drawing.Point(2, 2);
-            this.cardEvento1.Margin = new System.Windows.Forms.Padding(2);
-            this.cardEvento1.Name = "cardEvento1";
-            this.cardEvento1.Size = new System.Drawing.Size(892, 143);
-            this.cardEvento1.TabIndex = 0;
             // 
             // pageCertificados
             // 
@@ -460,7 +449,6 @@
             this.panel1.PerformLayout();
             this.panelMeusEventos.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.pageInscricoes.ResumeLayout(false);
             this.pageCertificados.ResumeLayout(false);
             this.pageTransmissoesOnline.ResumeLayout(false);
             this.gradientPanel1.ResumeLayout(false);
@@ -493,7 +481,6 @@
         private System.Windows.Forms.TabPage pageCertificados;
         private System.Windows.Forms.TabPage pageTransmissoesOnline;
         private System.Windows.Forms.Label label1;
-        private Telas.CardEvento cardEvento1;
         private Telas.CardBaixarCertificado cardBaixarCertificado1;
         private Telas.CardTransmissãoOnline cardTransmissãoOnline1;
         private RoundedPanel panelMeusEventos;

@@ -56,5 +56,10 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaInicio();
         }
+
+        private void roundedPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

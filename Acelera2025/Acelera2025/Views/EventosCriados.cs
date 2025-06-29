@@ -1,4 +1,5 @@
 ﻿using Ac;
+using Acelera2025.Models;
 using Acelera2025.Telas;
 using System;
 using System.Collections.Generic;
@@ -168,9 +169,23 @@ namespace Acelera2025.Views
             {
                 PicEvento.Image = null;
             }
+
+            panelParticipantes.Controls.Clear();
+            foreach (UsuarioModels u in evento.GetUserList()) 
+            { 
+                CreateSubbedCard(u);
+            }
         }
 
+        private void CreateSubbedCard(UsuarioModels u)
+        {
+            CardParticipantes card = new CardParticipantes();
             
+            card.lblNome.Text = u.Nome;
+            card.SetImage(u.CaminhoFoto);
+
+            panelParticipantes.Controls.Add(card);
+        }
 
 
 

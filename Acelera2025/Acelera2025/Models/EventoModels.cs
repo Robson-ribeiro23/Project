@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Policy;
+using System.Windows.Forms;
+using Acelera2025.Models;
 
 public class EventoModels
 {
@@ -24,6 +28,7 @@ public class EventoModels
     public string Cidade { get; set; }
     public string Estado { get; set; }
 
+    private List<UsuarioModels> usuariosInscritos = new List<UsuarioModels>();
     
     public string LinkReuniao { get; set; }
 
@@ -79,6 +84,63 @@ public class EventoModels
         {
             EventosCriados.Add(evento);
         }
+    }
+
+    public bool SubscribeUser(UsuarioModels usuario)
+    {
+        if (usuario == null) { return false; }
+
+        DateTime birthDate = DateTime.Parse(usuario.DataNascimento);
+        int ageGroup = int.Parse(FaixaEtaria);
+        int age = DateTime.Now.Year - birthDate.Year;
+
+        // Caso não tenha passado a data de aniversário
+        if (DateTime.Now < birthDate.AddYears(age))
+        {
+            age--;
+        }
+
+        if (age < ageGroup)
+        {
+            MessageBox.Show("Esse evento é direcionado a um público mais velho!");
+            return false;
+        }
+
+        if (usuariosInscritos.Contains(usuario)) 
+        {
+            MessageBox.Show("O usuário já está inscrito no evento!");
+            return false;
+        }
+
+        if (usuariosInscritos.Count() >= LimiteParticipantes)
+        {
+            MessageBox.Show("Não há espaço para mais participantes!");
+            return false;
+        }
+
+        usuariosInscritos.Add(usuario);
+        usuario.SubscribeToEvent(this);
+        return true;
+    }
+
+    public bool UnsubscribeUser(UsuarioModels usuario)
+    {
+        if (usuario == null) { return false; }
+
+        if (!usuariosInscritos.Contains(usuario))
+        {
+            MessageBox.Show("O usuário não está inscrito no evento!");
+            return false;
+        }
+
+        usuariosInscritos.Remove(usuario);
+        usuario.UnsubscribeToEvent(this);
+        return true;
+    }
+
+    public List<UsuarioModels> GetUserList()
+    {
+        return usuariosInscritos;
     }
 
     public override string ToString()

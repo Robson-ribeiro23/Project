@@ -46,7 +46,7 @@ public class UsuarioControllers
             return false;
         }
 
-        if (listaUsuarios.Any(u => u.Senha != usuario.ConfirmarSenha))
+        if (usuario.Senha != usuario.ConfirmarSenha)
         {
             MessageBox.Show("As senhas não coincidem.");
             return false;
@@ -62,7 +62,10 @@ public class UsuarioControllers
         return listaUsuarios;
     }
 
-
+    public static bool HasUserByEmail(string email)
+    {
+        return listaUsuarios.Any(u => u.Email == email);
+    }
 
     public UsuarioModels Login(string email, string senha)
     {
