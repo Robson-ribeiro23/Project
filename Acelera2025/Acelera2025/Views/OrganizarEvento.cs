@@ -65,6 +65,10 @@ namespace Acelera2025.Views
             comboUF.Items.AddRange(estados);
             comboCategoria.Items.AddRange(categorias);
             comboFaixaEtaria.Items.AddRange(faixaEtaria);
+
+            /*comboCategoria.SelectedIndex = 0;
+            radioBtnPresencial.Checked = true;
+            comboFaixaEtaria.SelectedIndex = 0;*/
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -116,7 +120,6 @@ namespace Acelera2025.Views
                 string descricao = txtDescricao.Text;
                 bool permitePatrocinio = checkBoxPatrocinio.Checked;
                 string email = this.usuario.Email;
-
                 
                 string local = txtLocal.Text;
                 string rua = txtNomeRua.Text;
@@ -155,6 +158,7 @@ namespace Acelera2025.Views
 
                 if (sucesso)
                 {
+                    novoEvento.criador = usuario;
                     EventoCache.Adicionar(novoEvento);
                     Navegador.IrParaTelaEventos(this.usuario, novoEvento);
                     MessageBox.Show("Evento criado com sucesso!");

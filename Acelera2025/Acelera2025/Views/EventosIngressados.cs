@@ -44,6 +44,8 @@ namespace Acelera2025.Views
             panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
+            LoadAllEvents();
         }
 
         private void LoadAllEvents()
@@ -60,7 +62,10 @@ namespace Acelera2025.Views
         {
             CardEvento card = new CardEvento();
 
-            card.PicEvento.Image = Image.FromFile(evento.CaminhoImagem);
+            if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+            {
+                card.PicEvento.Image = Image.FromFile(evento.CaminhoImagem);
+            }
             card.lblNomeEvento.Text = evento.NomeEvento;
             card.lblDataHora.Text = evento.Data.ToString();
             card.lblLocal.Text = evento.Local;

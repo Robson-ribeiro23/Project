@@ -1,4 +1,5 @@
 ﻿using Ac;
+using Acelera2025.Models;
 using Acelera2025.Telas;
 using System;
 using System.Collections.Generic;
@@ -24,9 +25,6 @@ namespace Acelera2025.Views
         private EventoModels evento;
         private EnviarEmail enviarEmail;
         private bool enviarEmailVisivel = false;
-
-
-
 
         public TelaEvento(PessoaModels usuario, EventoModels evento)
         {
@@ -190,7 +188,19 @@ namespace Acelera2025.Views
 
         private void btnInscrever_Click(object sender, EventArgs e)
         {
+            if (usuario is EmpresaModels)
+            {
+                MessageBox.Show("Você não pode se inscrever em um evento como empresa.");
+                return;
+            }
 
+            if (evento.criador == usuario)
+            {
+                MessageBox.Show("Você não pode se inscrever no seu próprio evento.");
+                return;
+            }
+
+            evento.SubscribeUser((UsuarioModels) usuario);
         }
     }
 }

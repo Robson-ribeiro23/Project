@@ -31,7 +31,7 @@ namespace Acelera2025.Views
             lblNumero.ForeColor = Color.Red;
             lblTamanhoSenha.ForeColor = Color.Red;
 
-            string[] nomes = { "a", "b", "c", "d", "e" };
+            /*string[] nomes = { "a", "b", "c", "d", "e" };
 
             for (int i = 0; i < nomes.Length; i++)
             {
@@ -46,7 +46,7 @@ namespace Acelera2025.Views
                     Email = nomes[i] + "@gmail.com",
                     Cidade = "Cruzeiro",
                     CPF = $"{three}.{three}.{three}-{two}",
-                    DataNascimento = $"{two}/{two}/{four}",
+                    DataNascimento = $"0{(i+1).ToString()}/0{(i + 1).ToString()}/200{i.ToString()}",
                     Senha = i.ToString(),
                     ConfirmarSenha = i.ToString(),
                     CaminhoFoto = @"C:\Programming\C#\university\Acelera2025\Acelera2025\Pictures\avatar_padrao.png"
@@ -62,7 +62,7 @@ namespace Acelera2025.Views
                 Email = "v@gmail.com",
                 Cidade = "Cruzeiro",
                 CPF = "999.999.999-99",
-                DataNascimento = "99/99/9999",
+                DataNascimento = "10/10/2005",
                 Senha = "9",
                 ConfirmarSenha = "9",
                 CaminhoFoto = @"C:\Programming\C#\university\Acelera2025\Acelera2025\Pictures\avatar_padrao.png"
@@ -71,7 +71,7 @@ namespace Acelera2025.Views
             if (controllerUsuario.Cadastrar(usuario))
             {
                 Navegador.IrParaLoginUsuario();
-            }
+            }*/
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

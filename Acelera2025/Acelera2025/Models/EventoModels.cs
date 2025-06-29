@@ -28,6 +28,7 @@ public class EventoModels
     public string Cidade { get; set; }
     public string Estado { get; set; }
 
+    public PessoaModels criador { get; set; }
     private List<UsuarioModels> usuariosInscritos = new List<UsuarioModels>();
     
     public string LinkReuniao { get; set; }
@@ -90,20 +91,26 @@ public class EventoModels
     {
         if (usuario == null) { return false; }
 
-        DateTime birthDate = DateTime.Parse(usuario.DataNascimento);
-        int ageGroup = int.Parse(FaixaEtaria);
-        int age = DateTime.Now.Year - birthDate.Year;
-
-        // Caso não tenha passado a data de aniversário
-        if (DateTime.Now < birthDate.AddYears(age))
+        //MessageBox.Show(usuario.DataNascimento);
+        DateTime birthDate = DateTime.ParseExact(usuario.DataNascimento, "dd/MM/yyyy", null);
+        
+        if (FaixaEtaria != "Livre")
         {
-            age--;
-        }
+            string desiredRange = FaixaEtaria.Replace("+", "");
+            int ageGroup = int.Parse(desiredRange);
+            int age = DateTime.Now.Year - birthDate.Year;
 
-        if (age < ageGroup)
-        {
-            MessageBox.Show("Esse evento é direcionado a um público mais velho!");
-            return false;
+            // Caso não tenha passado a data de aniversário
+            if (DateTime.Now < birthDate.AddYears(age))
+            {
+                age--;
+            }
+
+            if (age < ageGroup)
+            {
+                MessageBox.Show("Esse evento é direcionado a um público mais velho!");
+                return false;
+            }
         }
 
         if (usuariosInscritos.Contains(usuario)) 
