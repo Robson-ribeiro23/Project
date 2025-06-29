@@ -68,10 +68,10 @@ namespace Acelera2025.Views
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPainelDeNotificacoes.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 
-            pictureBoxes = new List<PictureBox> { PicEventoPerto1, PicEventoPerto2, PicEventoPerto3 };
-            labelDatas = new List<Label> { lblData1, lblData2, lblData3 };
-            labelHoras = new List<Label> { lblHora1, lblHora2, lblHora3 };
-            btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3 };
+            pictureBoxes = new List<PictureBox> { PicEventoPerto1, PicEventoPerto2, PicEventoPerto3, PicEventoPerto4 };
+            labelDatas = new List<Label> { lblData1, lblData2, lblData3, lblData4 };
+            labelHoras = new List<Label> { lblHora1, lblHora2, lblHora3, lblHora4 };
+            btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3, btnNome4 };
 
             List<EventoModels> eventos = EventoCache.ListarTodos();
 
@@ -384,6 +384,16 @@ namespace Acelera2025.Views
         }
 
         private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblData4_Click(object sender, EventArgs e)
         {
 
         }

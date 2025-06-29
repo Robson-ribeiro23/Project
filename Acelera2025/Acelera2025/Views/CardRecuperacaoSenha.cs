@@ -139,6 +139,22 @@ namespace Acelera2025.Views
             }
 
         }
+
+        private void roundedButton2_Click_1(object sender, EventArgs e)
+        {
+
+            var usuarioController = new UsuarioControllers();
+            string email = txtEmail.Text;
+            string confirmarSenha = txtSenha.Text;
+
+            bool sucesso = usuarioController.AtualizarSenha(email, confirmarSenha);
+            if (sucesso)
+            {
+                Navegador.IrParaLoginUsuario();
+            }
+
+
+        }
     }
 
 }

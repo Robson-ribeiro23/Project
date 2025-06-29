@@ -132,8 +132,6 @@ namespace Acelera2025.Views
 
         private void comboEventosCriados_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
             string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
             if (string.IsNullOrWhiteSpace(nomeSelecionado)) return;
 
@@ -149,6 +147,15 @@ namespace Acelera2025.Views
             lblFaixaEtaria.Text = evento.FaixaEtaria;
             txtDescricao.Text = evento.Descricao;
 
+            // Novos dados
+            lblNomeLocal.Text = evento.Local;
+
+            lblEndereco.Text = $"{evento.Rua}, {evento.Numero}, {evento.Bairro}";
+            lblCidadeEstado.Text = $"{evento.Cidade} - {evento.Estado}";
+            lblCEP.Text = evento.CEP;
+
+            lblLinkReuniao.Text = evento.IsPresencial ? "Evento presencial" : evento.LinkReuniao;
+
             if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
             {
                 using (var imgTemp = Image.FromFile(evento.CaminhoImagem))
@@ -161,6 +168,7 @@ namespace Acelera2025.Views
             {
                 PicEvento.Image = null;
             }
+        }
 
             
 
@@ -201,7 +209,7 @@ namespace Acelera2025.Views
             }
             */
 
-        }
+        
 
         private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -301,6 +309,11 @@ namespace Acelera2025.Views
 
                 //MessageBox.Show("Foto atualizada!");
             }
+        }
+
+        private void VisaoGeral_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

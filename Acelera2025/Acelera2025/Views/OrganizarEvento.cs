@@ -102,11 +102,10 @@ namespace Acelera2025.Views
                     string caminhoCompleto = Path.Combine(pastaDestino, nomeArquivo);
 
                     picEvento.Image.Save(caminhoCompleto, System.Drawing.Imaging.ImageFormat.Png);
-
-                    caminhoImagem = caminhoCompleto; // Guarda o caminho para passar ao modelo
+                    caminhoImagem = caminhoCompleto;
                 }
 
-                // === Dados do formulário ===
+                
                 string nomeEvento = txtNomeEvento.Text;
                 DateTime dataEvento = dateTimePicker.Value;
                 string horario = txtHorario.Text;
@@ -118,9 +117,18 @@ namespace Acelera2025.Views
                 bool permitePatrocinio = checkBoxPatrocinio.Checked;
                 string email = this.usuario.Email;
 
-                // === Cria o evento com o caminho da imagem ===
-                EventoModels novoEvento = new EventoModels
-                (
+                
+                string local = txtLocal.Text;
+                string rua = txtNomeRua.Text;
+                string numero = txtNumero.Text;
+                string bairro = txtBairro.Text;
+                string cep = txtCep.Text;
+                string cidade = txtCidade.Text;
+                string estado = comboUF.SelectedItem?.ToString();
+                string linkReuniao = isPresencial ? null : txtLinkReunião.Text;
+
+                
+                EventoModels novoEvento = new EventoModels(
                     nomeEvento,
                     dataEvento,
                     categoria,
@@ -131,7 +139,15 @@ namespace Acelera2025.Views
                     descricao,
                     permitePatrocinio,
                     caminhoImagem,
-                    email
+                    email,
+                    local,
+                    rua,
+                    numero,
+                    bairro,
+                    cep,
+                    cidade,
+                    estado,
+                    linkReuniao
                 );
 
                 EventoControllers controller = new EventoControllers();
@@ -139,26 +155,16 @@ namespace Acelera2025.Views
 
                 if (sucesso)
                 {
-                    // Exibe eventos criados no console
-                    foreach (var es in controller.ListarTodos())
-                    {
-                        Console.WriteLine("Salvo: " + es.NomeEvento + " | Imagem: " + es.CaminhoImagem);
-                    }
-
-                    // Adiciona à cache (opcional para acessos futuros)
                     EventoCache.Adicionar(novoEvento);
-
                     Navegador.IrParaTelaEventos(this.usuario, novoEvento);
-
                     MessageBox.Show("Evento criado com sucesso!");
                 }
-
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao criar evento: " + ex.Message);
             }
+        }
 
 
            
@@ -234,7 +240,7 @@ namespace Acelera2025.Views
             //Navegador.IrParaTelaEventos(this.usuario); */
 
 
-        }
+        
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

@@ -39,6 +39,13 @@ namespace Acelera2025.Views
                 lblNomeEvento.Text = evento.NomeEvento;
                 lblDescricao.Text = evento.Descricao;
                 lblNomePublicador.Text = evento.UsuarioEmail;
+                btnCategoria.Text = evento.Categoria;
+                btnPresencialOnline.Text = evento.IsPresencial ? "Presencial" : "Online";
+                lblData.Text = evento.Data.ToString("dd/MM/yyyy");
+                lblRua.Text = $"{evento.Rua}, {evento.Numero} - {evento.Bairro}";
+                lblCep.Text = evento.CEP;
+                lblCidadeUf.Text = $"{evento.Cidade} - {evento.Estado}";
+                //lblLinkReuniao.Text = evento.IsPresencial ? "Evento Presencial" : evento.LinkReuniao;
 
                 if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
                     picEvento.Image = Image.FromFile(evento.CaminhoImagem);

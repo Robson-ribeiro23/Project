@@ -205,6 +205,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1308, 555);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panelMeusEventos
             // 
@@ -1256,9 +1257,9 @@
             this.label11.Location = new System.Drawing.Point(89, 187);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(168, 29);
+            this.label11.Size = new System.Drawing.Size(129, 29);
             this.label11.TabIndex = 4;
-            this.label11.Text = "Eventos perto de você:";
+            this.label11.Text = "Eventos recentes";
             // 
             // panelEventosPerto
             // 
@@ -1646,6 +1647,7 @@
             this.lblData4.Size = new System.Drawing.Size(79, 29);
             this.lblData4.TabIndex = 18;
             this.lblData4.Text = "00/00/00";
+            this.lblData4.Click += new System.EventHandler(this.lblData4_Click);
             // 
             // btnNome4
             // 

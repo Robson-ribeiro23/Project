@@ -44,7 +44,7 @@
             this.linkLabel17 = new System.Windows.Forms.LinkLabel();
             this.txtCep = new System.Windows.Forms.TextBox();
             this.linkLabel16 = new System.Windows.Forms.LinkLabel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtLocal = new System.Windows.Forms.TextBox();
             this.linkLabel15 = new System.Windows.Forms.LinkLabel();
             this.linkLabel14 = new System.Windows.Forms.LinkLabel();
             this.txtCidade = new System.Windows.Forms.TextBox();
@@ -199,7 +199,7 @@
             this.panel3.Controls.Add(this.linkLabel17);
             this.panel3.Controls.Add(this.txtCep);
             this.panel3.Controls.Add(this.linkLabel16);
-            this.panel3.Controls.Add(this.textBox9);
+            this.panel3.Controls.Add(this.txtLocal);
             this.panel3.Controls.Add(this.linkLabel15);
             this.panel3.Controls.Add(this.linkLabel14);
             this.panel3.Controls.Add(this.txtCidade);
@@ -331,17 +331,17 @@
             this.linkLabel16.Text = "CEP";
             this.linkLabel16.VisitedLinkColor = System.Drawing.Color.White;
             // 
-            // textBox9
+            // txtLocal
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtLocal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox9.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(524, 47);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(236, 33);
-            this.textBox9.TabIndex = 27;
+            this.txtLocal.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtLocal.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocal.Location = new System.Drawing.Point(524, 47);
+            this.txtLocal.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLocal.Name = "txtLocal";
+            this.txtLocal.Size = new System.Drawing.Size(236, 33);
+            this.txtLocal.TabIndex = 27;
             // 
             // linkLabel15
             // 
@@ -1040,7 +1040,7 @@
         private System.Windows.Forms.LinkLabel linkLabel12;
         private System.Windows.Forms.TextBox txtLinkReunião;
         private System.Windows.Forms.LinkLabel linkLabel16;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtLocal;
         private System.Windows.Forms.LinkLabel linkLabel15;
         private System.Windows.Forms.LinkLabel linkLabel14;
         private System.Windows.Forms.LinkLabel linkLabel18;

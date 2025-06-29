@@ -1,5 +1,9 @@
 ﻿using Ac;
+using Acelera2025.Telas;
 using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -7,6 +11,18 @@ namespace Acelera2025.Views
 {
     public partial class Inicio: Form
     {
+
+
+        private List<PictureBox> pictureBoxes;
+        private List<Label> labelDatas;
+        private List<Label> labelHoras;
+        private List<LinkLabel> btnNomes;
+        private List<Label> lblCidades;
+
+
+
+
+
         public Inicio()
         {
             InitializeComponent();
@@ -15,12 +31,63 @@ namespace Acelera2025.Views
             panelEventosOnline.Resize += PanelEventosOnline_Resize;
         }
 
+
+
+
+
+
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
             PanelCategorias_Resize(null, null);
             PanelEventosPerto_Resize(null, null);
             PanelEventosOnline_Resize(null, null);
+
+
+
+            pictureBoxes = new List<PictureBox> { PicEventoPerto1, PicEventoPerto2, PicEventoPerto3, PicEventoPerto4 };
+            labelDatas = new List<Label> { lblData1, lblData2, lblData3, lblData4 };
+            labelHoras = new List<Label> { lblHora1, lblHora2, lblHora3, lblHora4 };
+            btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3, btnNome4 };
+            lblCidades = new List<Label> { lblCidadeUf1 , lblCidadeUf2, lblCidadeUf3, lblCidadeUf4 };
+
+
+            List<EventoModels> eventos = EventoCache.ListarTodos();
+
+            for (int i = 0; i < pictureBoxes.Count; i++)
+            {
+                if (i < eventos.Count)
+                {
+                    var evento = eventos[i];
+
+                    btnNomes[i].Text = evento.NomeEvento;
+                    labelDatas[i].Text = evento.Data.ToShortDateString();
+                    labelHoras[i].Text = evento.Horario;
+                    lblCidades[i].Text = evento.Cidade;
+
+                    if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+                    {
+                        pictureBoxes[i].Image = Image.FromFile(evento.CaminhoImagem);
+                        pictureBoxes[i].SizeMode = PictureBoxSizeMode.Zoom;
+                    }
+                    else
+                    {
+                        pictureBoxes[i].Image = null;
+                    }
+                }
+                else
+                {
+                    btnNomes[i].Text = "";
+                    labelDatas[i].Text = "";
+                    labelHoras[i].Text = "";
+                    lblCidades[i].Text = "";
+                    pictureBoxes[i].Image = null;
+                }
+            }
+
         }
+
 
         private void PanelEventosPerto_Resize(object sender, EventArgs e)
         {
@@ -124,6 +191,11 @@ namespace Acelera2025.Views
         }
 
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

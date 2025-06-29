@@ -38,12 +38,12 @@
             this.Patrocinador1 = new Acelera2025.Views.Tools.CircularPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblNomeLocal = new System.Windows.Forms.Label();
-            this.lblCep = new System.Windows.Forms.Label();
+            this.lblCEP = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.lblRua = new System.Windows.Forms.Label();
+            this.lblEndereco = new System.Windows.Forms.Label();
             this.lblCidadeEstado = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblLink = new System.Windows.Forms.Label();
+            this.lblLinkReuniao = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lblLimiteParticipantes = new System.Windows.Forms.Label();
@@ -214,6 +214,7 @@
             this.VisaoGeral.Size = new System.Drawing.Size(1210, 456);
             this.VisaoGeral.TabIndex = 0;
             this.VisaoGeral.Text = "Visão Geral";
+            this.VisaoGeral.Click += new System.EventHandler(this.VisaoGeral_Click);
             // 
             // Patrocinador5
             // 
@@ -309,9 +310,9 @@
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.lblNomeLocal);
-            this.panel3.Controls.Add(this.lblCep);
+            this.panel3.Controls.Add(this.lblCEP);
             this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.lblRua);
+            this.panel3.Controls.Add(this.lblEndereco);
             this.panel3.Controls.Add(this.lblCidadeEstado);
             this.panel3.Location = new System.Drawing.Point(646, 313);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
@@ -332,18 +333,18 @@
             this.lblNomeLocal.TabIndex = 25;
             this.lblNomeLocal.Text = "Nome do local";
             // 
-            // lblCep
+            // lblCEP
             // 
-            this.lblCep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCep.AutoSize = true;
-            this.lblCep.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCep.Location = new System.Drawing.Point(405, 13);
-            this.lblCep.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(78, 27);
-            this.lblCep.TabIndex = 24;
-            this.lblCep.Text = "xx xxx-xxx";
+            this.lblCEP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCEP.AutoSize = true;
+            this.lblCEP.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCEP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCEP.Location = new System.Drawing.Point(405, 13);
+            this.lblCEP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCEP.Name = "lblCEP";
+            this.lblCEP.Size = new System.Drawing.Size(78, 27);
+            this.lblCEP.TabIndex = 24;
+            this.lblCEP.Text = "xx xxx-xxx";
             // 
             // label18
             // 
@@ -358,18 +359,18 @@
             this.label18.TabIndex = 23;
             this.label18.Text = "CEP:";
             // 
-            // lblRua
+            // lblEndereco
             // 
-            this.lblRua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblRua.AutoSize = true;
-            this.lblRua.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblRua.Location = new System.Drawing.Point(8, 39);
-            this.lblRua.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(246, 27);
-            this.lblRua.TabIndex = 22;
-            this.lblRua.Text = "Rua XXXXXX, Nº XX, Bairro XXXXXX";
+            this.lblEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblEndereco.AutoSize = true;
+            this.lblEndereco.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblEndereco.Location = new System.Drawing.Point(8, 39);
+            this.lblEndereco.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(246, 27);
+            this.lblEndereco.TabIndex = 22;
+            this.lblEndereco.Text = "Rua XXXXXX, Nº XX, Bairro XXXXXX";
             // 
             // lblCidadeEstado
             // 
@@ -387,7 +388,7 @@
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.lblLink);
+            this.panel2.Controls.Add(this.lblLinkReuniao);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Location = new System.Drawing.Point(646, 258);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -395,18 +396,18 @@
             this.panel2.Size = new System.Drawing.Size(541, 40);
             this.panel2.TabIndex = 21;
             // 
-            // lblLink
+            // lblLinkReuniao
             // 
-            this.lblLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblLink.AutoSize = true;
-            this.lblLink.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblLink.Location = new System.Drawing.Point(124, 0);
-            this.lblLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblLink.Name = "lblLink";
-            this.lblLink.Size = new System.Drawing.Size(42, 27);
-            this.lblLink.TabIndex = 21;
-            this.lblLink.Text = "Link ";
+            this.lblLinkReuniao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLinkReuniao.AutoSize = true;
+            this.lblLinkReuniao.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLinkReuniao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblLinkReuniao.Location = new System.Drawing.Point(124, 0);
+            this.lblLinkReuniao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLinkReuniao.Name = "lblLinkReuniao";
+            this.lblLinkReuniao.Size = new System.Drawing.Size(42, 27);
+            this.lblLinkReuniao.TabIndex = 21;
+            this.lblLinkReuniao.Text = "Link ";
             // 
             // label13
             // 
@@ -1718,12 +1719,12 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label lblRua;
+        private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.Label lblCidadeEstado;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblLink;
+        private System.Windows.Forms.Label lblLinkReuniao;
         private System.Windows.Forms.Label lblNomeLocal;
-        private System.Windows.Forms.Label lblCep;
+        private System.Windows.Forms.Label lblCEP;
         private RoundedPanel panelMeusEventos;
         private RoundedButton btnEventosCriados;
         private RoundedButton btnEventosIngressados;
