@@ -228,18 +228,18 @@ namespace Acelera2025.Views
 
         private bool ValidarCNPJ(string cnpj)
         {
-            // Remove caracteres não numéricos
+            
             cnpj = new string(cnpj.Where(char.IsDigit).ToArray());
 
-            // Verifica se tem 14 dígitos
+            
             if (cnpj.Length != 14)
                 return false;
 
-            // Verifica se todos os dígitos não são iguais
+            
             if (cnpj.Distinct().Count() == 1)
                 return false;
 
-            // Cálculo do primeiro dígito verificador
+            
             int[] multiplicadores1 = { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
             int soma = 0;
             for (int i = 0; i < 12; i++)
@@ -248,7 +248,7 @@ namespace Acelera2025.Views
             int resto = soma % 11;
             int digito1 = resto < 2 ? 0 : 11 - resto;
 
-            // Cálculo do segundo dígito verificador
+            
             int[] multiplicadores2 = { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
             soma = 0;
             for (int i = 0; i < 13; i++)
@@ -257,17 +257,17 @@ namespace Acelera2025.Views
             resto = soma % 11;
             int digito2 = resto < 2 ? 0 : 11 - resto;
 
-            // Verifica se os dígitos calculados conferem com os informados
+            
             return int.Parse(cnpj[12].ToString()) == digito1 &&
                    int.Parse(cnpj[13].ToString()) == digito2;
         }
 
         private bool ValidarTelefone(string telefone)
         {
-            // Remove caracteres não numéricos
+            
             telefone = new string(telefone.Where(char.IsDigit).ToArray());
 
-            // Verifica se tem 10 (fixo) ou 11 (celular) dígitos
+            
             return telefone.Length == 10 || telefone.Length == 11;
         }
 
@@ -297,7 +297,7 @@ namespace Acelera2025.Views
                    senha.Any(char.IsDigit);
         }
 
-        // Validação em tempo real do nome da empresa
+        
         private void txtNomeEmpresa_TextChanged(object sender, EventArgs e)
         {
             if (txtNomeEmpresa.Text.Length > MAX_CARACTERES_NOME)
@@ -305,6 +305,11 @@ namespace Acelera2025.Views
                 txtNomeEmpresa.Text = txtNomeEmpresa.Text.Substring(0, MAX_CARACTERES_NOME);
                 txtNomeEmpresa.SelectionStart = MAX_CARACTERES_NOME;
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -72,7 +72,7 @@
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowPatrociadores = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.picEvento = new SuperiorRoundedPic();
             this.roundedPanel1 = new RoundedPanel();
@@ -759,7 +759,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
+            this.panel2.Controls.Add(this.flowPatrociadores);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.picEvento);
             this.panel2.Controls.Add(this.roundedPanel1);
@@ -769,13 +769,13 @@
             this.panel2.Size = new System.Drawing.Size(1360, 210);
             this.panel2.TabIndex = 49;
             // 
-            // flowLayoutPanel1
+            // flowPatrociadores
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(587, 125);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(298, 78);
-            this.flowLayoutPanel1.TabIndex = 60;
+            this.flowPatrociadores.BackColor = System.Drawing.Color.White;
+            this.flowPatrociadores.Location = new System.Drawing.Point(587, 125);
+            this.flowPatrociadores.Name = "flowPatrociadores";
+            this.flowPatrociadores.Size = new System.Drawing.Size(298, 78);
+            this.flowPatrociadores.TabIndex = 60;
             // 
             // label1
             // 
@@ -1008,6 +1008,6 @@
         private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowPatrociadores;
     }
 }

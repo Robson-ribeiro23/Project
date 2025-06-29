@@ -48,6 +48,22 @@ namespace Acelera2025.Controllers
                 return false;
             }
 
+            if (empresa.Senha != empresa.ConfirmarSenha)
+            {
+                MessageBox.Show("As senhas não coincidem.");
+                return false;
+            }
+
+            empresa.CNPJ = new string(empresa.CNPJ.Where(char.IsDigit).ToArray());
+
+            
+            if (listaEmpresas.Any(e => e.CNPJ == empresa.CNPJ))
+            {
+                MessageBox.Show("Já existe uma empresa com este CNPJ.");
+                return false;
+            }
+
+
             listaEmpresas.Add(empresa);
             return true;
         }
@@ -65,6 +81,8 @@ namespace Acelera2025.Controllers
                 MessageBox.Show("E-mail em formato inválido.");
                 return null;
             }
+
+            cnpj = new string(cnpj.Where(char.IsDigit).ToArray());
 
             var empresa = listaEmpresas.FirstOrDefault(e =>
                 e.CNPJ == cnpj &&

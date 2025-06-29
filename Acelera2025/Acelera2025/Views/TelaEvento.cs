@@ -25,6 +25,7 @@ namespace Acelera2025.Views
         private EventoModels evento;
         private EnviarEmail enviarEmail;
         private bool enviarEmailVisivel = false;
+        
 
         public TelaEvento(PessoaModels usuario, EventoModels evento)
         {
@@ -166,16 +167,18 @@ namespace Acelera2025.Views
 
         private void btnPatrocinar_Click(object sender, EventArgs e)
         {
-
             if (!(usuario is EmpresaModels))
             {
                 MessageBox.Show("Você precisa ser uma empresa para patrocinar.", "Acesso restrito", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
+
+            string emailDono = evento.UsuarioEmail;
+
             if (enviarEmail == null)
             {
-                enviarEmail = new EnviarEmail(evento, usuario);
+                enviarEmail = new EnviarEmail(evento, usuario, emailDono);
                 enviarEmail.Visible = false;
                 this.Controls.Add(enviarEmail);
                 enviarEmail.Dock = DockStyle.Fill;

@@ -33,13 +33,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.sendEmail = new RoundedButton();
             this.fechar = new System.Windows.Forms.Panel();
-            this.EmailDoDono = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTexto = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtAssunto = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTexto = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.EmailDoDono = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.fechar.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +93,7 @@
             this.fechar.Controls.Add(this.button1);
             this.fechar.Controls.Add(this.label2);
             this.fechar.Controls.Add(this.label4);
-            this.fechar.Controls.Add(this.textBox1);
+            this.fechar.Controls.Add(this.txtAssunto);
             this.fechar.Controls.Add(this.label3);
             this.fechar.Controls.Add(this.txtTexto);
             this.fechar.Controls.Add(this.label1);
@@ -103,67 +103,20 @@
             this.fechar.Name = "fechar";
             this.fechar.Size = new System.Drawing.Size(489, 493);
             this.fechar.TabIndex = 40;
+            this.fechar.Paint += new System.Windows.Forms.PaintEventHandler(this.fechar_Paint);
             // 
-            // EmailDoDono
+            // button1
             // 
-            this.EmailDoDono.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.EmailDoDono.AutoSize = true;
-            this.EmailDoDono.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailDoDono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.EmailDoDono.Location = new System.Drawing.Point(82, 91);
-            this.EmailDoDono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.EmailDoDono.Name = "EmailDoDono";
-            this.EmailDoDono.Size = new System.Drawing.Size(190, 27);
-            this.EmailDoDono.TabIndex = 41;
-            this.EmailDoDono.Text = "EmailDoDono@gmail.com";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(34, 91);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 27);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Para:";
-            // 
-            // txtTexto
-            // 
-            this.txtTexto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTexto.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTexto.Location = new System.Drawing.Point(39, 239);
-            this.txtTexto.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTexto.Multiline = true;
-            this.txtTexto.Name = "txtTexto";
-            this.txtTexto.Size = new System.Drawing.Size(410, 186);
-            this.txtTexto.TabIndex = 43;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(34, 135);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 27);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "Assunto:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(39, 154);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(410, 30);
-            this.textBox1.TabIndex = 45;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(464, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(22, 23);
+            this.button1.TabIndex = 47;
+            this.button1.Text = "x";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -178,18 +131,66 @@
             this.label4.TabIndex = 46;
             this.label4.Text = "Menssagem:";
             // 
-            // button1
+            // txtAssunto
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(464, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(22, 23);
-            this.button1.TabIndex = 47;
-            this.button1.Text = "x";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtAssunto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAssunto.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAssunto.Location = new System.Drawing.Point(39, 154);
+            this.txtAssunto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAssunto.Multiline = true;
+            this.txtAssunto.Name = "txtAssunto";
+            this.txtAssunto.Size = new System.Drawing.Size(410, 30);
+            this.txtAssunto.TabIndex = 45;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label3.Location = new System.Drawing.Point(34, 135);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 27);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Assunto:";
+            // 
+            // txtTexto
+            // 
+            this.txtTexto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTexto.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTexto.Location = new System.Drawing.Point(39, 239);
+            this.txtTexto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTexto.Multiline = true;
+            this.txtTexto.Name = "txtTexto";
+            this.txtTexto.Size = new System.Drawing.Size(410, 186);
+            this.txtTexto.TabIndex = 43;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(34, 91);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 27);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Para:";
+            // 
+            // EmailDoDono
+            // 
+            this.EmailDoDono.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EmailDoDono.AutoSize = true;
+            this.EmailDoDono.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailDoDono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.EmailDoDono.Location = new System.Drawing.Point(82, 91);
+            this.EmailDoDono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.EmailDoDono.Name = "EmailDoDono";
+            this.EmailDoDono.Size = new System.Drawing.Size(190, 27);
+            this.EmailDoDono.TabIndex = 41;
+            this.EmailDoDono.Text = "EmailDoDono@gmail.com";
             // 
             // EnviarEmail
             // 
@@ -215,7 +216,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label EmailDoDono;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAssunto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTexto;
         private System.Windows.Forms.Button button1;
