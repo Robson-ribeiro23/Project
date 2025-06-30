@@ -65,7 +65,7 @@
             this.lblTexto.AutoSize = true;
             this.lblTexto.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblTexto.Location = new System.Drawing.Point(56, 39);
+            this.lblTexto.Location = new System.Drawing.Point(56, 42);
             this.lblTexto.Name = "lblTexto";
             this.lblTexto.Size = new System.Drawing.Size(57, 27);
             this.lblTexto.TabIndex = 65;
@@ -76,7 +76,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNome.Location = new System.Drawing.Point(56, 9);
+            this.lblNome.Location = new System.Drawing.Point(56, 12);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(65, 30);
             this.lblNome.TabIndex = 64;
@@ -84,12 +84,12 @@
             // 
             // picPerfil
             // 
-            this.picPerfil.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.picPerfil.BackColor = System.Drawing.Color.Transparent;
             this.picPerfil.BorderColor = System.Drawing.Color.Black;
             this.picPerfil.BorderSize = 0;
-            this.picPerfil.Location = new System.Drawing.Point(9, 3);
+            this.picPerfil.Location = new System.Drawing.Point(19, 9);
             this.picPerfil.Name = "picPerfil";
-            this.picPerfil.Size = new System.Drawing.Size(41, 33);
+            this.picPerfil.Size = new System.Drawing.Size(31, 33);
             this.picPerfil.TabIndex = 0;
             // 
             // CardComentarios

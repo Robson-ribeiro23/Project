@@ -11,16 +11,18 @@ using Acelera2025.Controllers;
 using Ac;
 using Acelera2025.Telas;
 using System.IO;
+using Acelera2025.Models;
+using System.Collections.Generic;
 
 namespace Acelera2025.Views
 {
     public partial class CardComentarios: UserControl
     {
             private ComentariosModels comentario;
-            private string usuario; 
+            private PessoaModels usuario; 
             public event Action OnCurtidaAlterada;
             private PostagemControllers controller;
-        public CardComentarios(ComentariosModels comentario, string usuarioAtual)
+        public CardComentarios(ComentariosModels comentario, PessoaModels usuario)
         {
             InitializeComponent();
             this.comentario = comentario;
@@ -31,12 +33,21 @@ namespace Acelera2025.Views
             ConfigurarComentario();
         }
 
-            private void ConfigurarComentario()
-            {
-                lblNome.Text = comentario.Usuario;
-                lblTexto.Text = comentario.Texto;
+        private void ConfigurarComentario()
+        {
+            lblNome.Text = comentario.Usuario;
+            lblTexto.Text = comentario.Texto;
 
+            if (!string.IsNullOrEmpty(usuario.CaminhoFoto) && File.Exists(usuario.CaminhoFoto))
+            {
+                picPerfil.BackgroundImage = Image.FromFile(usuario.CaminhoFoto);
             }
+            else
+            {
+                picPerfil.BackgroundImage = null; 
+            }
+        }
+
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
         {

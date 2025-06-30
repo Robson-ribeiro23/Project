@@ -25,9 +25,9 @@ namespace Acelera2025.Views
             lblTexto.Text = postagem.Texto;
             lblData.Text = postagem.Data.ToString("dd/MM/yyyy HH:mm");
 
-            if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
+            if (!string.IsNullOrEmpty(this.postagem.Usuario.CaminhoFoto) && File.Exists(this.postagem.Usuario.CaminhoFoto))
             {
-                picFotoPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
+                picFotoPerfil.Image = Image.FromFile(this.postagem.Usuario.CaminhoFoto);
             }
 
             ConfigurarBotaoCurtir();
@@ -40,7 +40,7 @@ namespace Acelera2025.Views
 
             foreach (var comentario in postagem.Comentarios)
             {
-                var card = new CardComentarios(comentario, postagem.Usuario.Nome);
+                var card = new CardComentarios(comentario, usuario);
                 flowLayoutPanel1.Controls.Add(card);
             }
         }
@@ -56,7 +56,7 @@ namespace Acelera2025.Views
         }
         private void CurtirPostagem()
         {
-            var curtidaExistente = postagem.Curtidas.FirstOrDefault(c => c.Usuario == postagem.Usuario.Nome);
+            var curtidaExistente = postagem.Curtidas.FirstOrDefault(c => c.Usuario == usuario.Nome);
 
             if (curtidaExistente != null)
             {
@@ -64,7 +64,7 @@ namespace Acelera2025.Views
             }
             else
             {
-                postagem.Curtidas.Add(new CurtidasModels(postagem.Usuario.Nome));
+                postagem.Curtidas.Add(new CurtidasModels(usuario.Nome));
 
                 btnCurtir.ForeColor = Color.Red;
             }
@@ -92,7 +92,7 @@ namespace Acelera2025.Views
             var controller = new PostagemControllers();
             try
             {
-                controller.AdicionarComentario(postagem, postagem.Usuario , textoComentario);
+                controller.AdicionarComentario(postagem, usuario , textoComentario);
                 txtComentarios.Clear();
                 AtualizarComentarios();
             }
