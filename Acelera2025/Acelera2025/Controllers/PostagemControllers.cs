@@ -62,7 +62,8 @@ namespace Acelera2025.Controllers
                 MessageBox.Show("O comentário não pode estar vazio.");
                 return null;
             }
-            var novoComentario = new ComentariosModels(usuario.Nome, texto);
+
+            var novoComentario = new ComentariosModels(usuario.Email, texto);
             postagem.Comentarios.Add(novoComentario);
             return novoComentario;
         }

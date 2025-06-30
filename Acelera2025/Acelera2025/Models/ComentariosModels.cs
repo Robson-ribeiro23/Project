@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+
 public class ComentariosModels
-    {
-    public string Usuario { get; set; }
+{
+    public string EmailUsuario { get; set; }  // Identificador único (email)
     public string Texto { get; set; }
     public DateTime Data { get; set; }
-    
 
-    public ComentariosModels(string usuario, string texto)
+    public ComentariosModels(string emailUsuario, string texto)
     {
-        Usuario = usuario;
+        EmailUsuario = emailUsuario;
         Texto = texto;
         Data = DateTime.Now;
     }

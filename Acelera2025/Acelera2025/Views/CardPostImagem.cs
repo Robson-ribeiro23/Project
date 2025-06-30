@@ -46,10 +46,10 @@ namespace Acelera2025.Views
                 picPost2.Image = null; 
             }
 
-            
-            if (!string.IsNullOrEmpty(usuario.CaminhoFoto) && File.Exists(usuario.CaminhoFoto))
+
+            if (!string.IsNullOrEmpty(postagem.Usuario.CaminhoFoto) && File.Exists(postagem.Usuario.CaminhoFoto))
             {
-                picFotoPerfil.Image = Image.FromFile(usuario.CaminhoFoto);
+                picFotoPerfil.Image = Image.FromFile(postagem.Usuario.CaminhoFoto);
             }
             else
             {
@@ -66,7 +66,7 @@ namespace Acelera2025.Views
 
             foreach (var comentario in postagem.Comentarios)
             {
-                var card = new CardComentarios(comentario, usuario);
+                var card = new CardComentarios(comentario);
                 flowLayoutPanel1.Controls.Add(card);
             }
         }
@@ -125,6 +125,11 @@ namespace Acelera2025.Views
         }
 
         private void roundedPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

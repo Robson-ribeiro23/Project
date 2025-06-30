@@ -16,37 +16,42 @@ using System.Collections.Generic;
 
 namespace Acelera2025.Views
 {
-    public partial class CardComentarios: UserControl
+    public partial class CardComentarios : UserControl
     {
-            private ComentariosModels comentario;
-            private PessoaModels usuario; 
-            public event Action OnCurtidaAlterada;
-            private PostagemControllers controller;
-        public CardComentarios(ComentariosModels comentario, PessoaModels usuario)
+        private ComentariosModels comentario;
+        private PessoaModels usuario;
+
+        public CardComentarios(ComentariosModels comentario)
         {
             InitializeComponent();
             this.comentario = comentario;
-            this.usuario = usuario;
-            controller = new PostagemControllers();
-
+            
 
             ConfigurarComentario();
         }
 
         private void ConfigurarComentario()
         {
-            lblNome.Text = comentario.Usuario;
+            // Criar instância do controller
+            var controller = new UsuarioControllers();
+
+            // Procurar o usuário no controller
+            var pessoa = controller.ListarTodos()
+                .FirstOrDefault(p => p.Email == comentario.EmailUsuario);
+
+            lblNome.Text = pessoa != null ? pessoa.Nome : comentario.EmailUsuario;
             lblTexto.Text = comentario.Texto;
 
-            if (!string.IsNullOrEmpty(usuario.CaminhoFoto) && File.Exists(usuario.CaminhoFoto))
+            if (pessoa != null && !string.IsNullOrEmpty(pessoa.CaminhoFoto) && File.Exists(pessoa.CaminhoFoto))
             {
-                picPerfil.BackgroundImage = Image.FromFile(usuario.CaminhoFoto);
+                picPerfil.BackgroundImage = Image.FromFile(pessoa.CaminhoFoto);
             }
             else
             {
-                picPerfil.BackgroundImage = null; 
+                picPerfil.BackgroundImage = null;
             }
         }
+
 
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
@@ -54,6 +59,9 @@ namespace Acelera2025.Views
 
         }
 
-        
+        private void picPerfil_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace Acelera2025.Views
 
             foreach (var comentario in postagem.Comentarios)
             {
-                var card = new CardComentarios(comentario, usuario);
+                var card = new CardComentarios(comentario);
                 flowLayoutPanel1.Controls.Add(card);
             }
         }

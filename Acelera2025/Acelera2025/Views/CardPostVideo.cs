@@ -49,9 +49,9 @@ namespace Acelera2025.Views
             video.Ctlcontrols.pause();
             this.postagem = postagem;
 
-            if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
+            if (!string.IsNullOrEmpty(postagem.Usuario.CaminhoFoto) && File.Exists(postagem.Usuario.CaminhoFoto))
             {
-                picFotoPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
+                picFotoPerfil.Image = Image.FromFile(postagem.Usuario.CaminhoFoto);
             }
 
             ConfigurarBotaoCurtir();
@@ -64,7 +64,7 @@ namespace Acelera2025.Views
 
             foreach (var comentario in postagem.Comentarios)
             {
-                var card = new CardComentarios(comentario, usuario);
+                var card = new CardComentarios(comentario);
 
                 flowLayoutPanel1.Controls.Add(card);
             }
