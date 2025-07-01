@@ -63,7 +63,7 @@ namespace Acelera2025.Views
             // Supondo que você tenha o usuário logado em this.usuario.Email
             string emailUsuarioLogado = this.usuario.Email;
 
-            List<EventoModels> eventos = new EventoControllers().ListarTodos();
+            List<EventoModels> eventos = EventoControllers.ListarTodos();
 
             // FILTRA apenas os eventos do usuário logado
             var eventosDoUsuario = eventos

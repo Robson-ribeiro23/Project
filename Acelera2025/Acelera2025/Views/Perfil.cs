@@ -69,15 +69,21 @@ namespace Acelera2025.Views
 
         private void LoadAllEvents()
         {
-            List<EventoModels> eventoList = usuario.GetSubbedEvents();
+            List<EventoModels> subbedEvents = usuario.GetSubbedEvents();
+            List<EventoModels> ownedEvents = usuario.GetOwnedEvents();
 
-            foreach (EventoModels evento in eventoList)
+            foreach (EventoModels evento in subbedEvents)
             {
-                CreateEventCard(evento);
+                panelParticipacoes.Controls.Add(CreateEventCard(evento));
+            }
+
+            foreach (EventoModels evento in ownedEvents)
+            {
+                panelEventos.Controls.Add(CreateEventCard(evento));
             }
         }
 
-        private void CreateEventCard(EventoModels evento)
+        private CardEvento CreateEventCard(EventoModels evento)
         {
             CardEvento card = new CardEvento();
 
@@ -91,9 +97,9 @@ namespace Acelera2025.Views
             card.lblRua.Text = evento.Rua;
             card.lblCidadeEstado.Text = evento.Cidade;
 
-            panelParticipacoes.Controls.Add(card);
-
+            return card;
         }
+
         private void linkLabel3_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             panelVisivel = !panelVisivel;

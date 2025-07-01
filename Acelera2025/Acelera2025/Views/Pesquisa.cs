@@ -20,8 +20,6 @@ namespace Acelera2025.Views
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
         private UsuarioControllers usuarioController = new UsuarioControllers();
-        private EventoControllers eventoController = new EventoControllers();
-
 
         public Pesquisa(PessoaModels usuario)
         {
@@ -169,7 +167,7 @@ namespace Acelera2025.Views
 
         private void showEvents(string termo)
         {
-            var eventos = eventoController.ListarTodos();
+            var eventos = EventoControllers.ListarTodos();
 
             var eventosFiltrados = eventos
                 .Where(e =>

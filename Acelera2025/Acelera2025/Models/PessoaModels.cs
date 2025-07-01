@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 public abstract class PessoaModels
 {
@@ -17,6 +18,13 @@ public abstract class PessoaModels
     public List<EventoModels> GetSubbedEvents()
     {
         return EventosIncritos;
+    }
+
+    public List<EventoModels> GetOwnedEvents()
+    {
+        List<EventoModels> allEvents = EventoControllers.ListarTodos();
+        List<EventoModels> filteredEvents = allEvents.Where(e => e.criador.Email.Equals(Email)).ToList();
+        return filteredEvents;
     }
 
     public void SubscribeToEvent(EventoModels evento) 

@@ -133,49 +133,57 @@ namespace Acelera2025.Views
                     return;
                 }
 
-                if (!string.IsNullOrWhiteSpace(txtLinkReunião.Text))
+                if (radioBtnOnline.Checked)
                 {
-                    if (!Uri.IsWellFormedUriString(txtLinkReunião.Text, UriKind.Absolute))
+                    if (!string.IsNullOrWhiteSpace(txtLinkReunião.Text))
                     {
-                        MessageBox.Show("Link da reunião inválido.");
-                        return;
+                        if (!Uri.IsWellFormedUriString(txtLinkReunião.Text, UriKind.Absolute))
+                        {
+                            MessageBox.Show("Link da reunião inválido.");
+                            return;
+                        }
                     }
                 }
 
-                if (txtCidade.Text.Length > 20 || !txtCidade.Text.All(char.IsLetter))
-                {
-                    MessageBox.Show("A cidade deve conter apenas letras e no máximo 20 caracteres.");
-                    return;
-                }
+                int numero = 0;
 
-                if (txtLocal.Text.Length > 30)
-                {
-                    MessageBox.Show("O local deve conter no máximo 30 caracteres.");
-                    return;
-                }
+                if (radioBtnPresencial.Checked) 
+                { 
+                    if (txtCidade.Text.Length > 20 || !txtCidade.Text.All(char.IsLetter))
+                    {
+                        MessageBox.Show("A cidade deve conter apenas letras e no máximo 20 caracteres.");
+                        return;
+                    }
 
-                if (!System.Text.RegularExpressions.Regex.IsMatch(txtCep.Text, @"^\d{5}-\d{3}$"))
-                {
-                    MessageBox.Show("CEP inválido. Use o formato 00000-000.");
-                    return;
-                }
+                    if (txtLocal.Text.Length > 30)
+                    {
+                        MessageBox.Show("O local deve conter no máximo 30 caracteres.");
+                        return;
+                    }
 
-                if (txtBairro.Text.Length > 40)
-                {
-                    MessageBox.Show("O bairro deve conter no máximo 40 caracteres.");
-                    return;
-                }
+                    if (!System.Text.RegularExpressions.Regex.IsMatch(txtCep.Text, @"^\d{5}-\d{3}$"))
+                    {
+                        MessageBox.Show("CEP inválido. Use o formato 00000-000.");
+                        return;
+                    }
 
-                if (!int.TryParse(txtNumero.Text, out int numero) || numero > 1000)
-                {
-                    MessageBox.Show("Número inválido. O valor máximo permitido é 1000.");
-                    return;
-                }
+                    if (txtBairro.Text.Length > 40)
+                    {
+                        MessageBox.Show("O bairro deve conter no máximo 40 caracteres.");
+                        return;
+                    }
 
-                if (txtNomeRua.Text.Length > 30)
-                {
-                    MessageBox.Show("O nome da rua deve conter no máximo 30 caracteres.");
-                    return;
+                    if (!int.TryParse(txtNumero.Text, out numero) || numero > 1000)
+                    {
+                        MessageBox.Show("Número inválido. O valor máximo permitido é 1000.");
+                        return;
+                    }
+
+                    if (txtNomeRua.Text.Length > 30)
+                    {
+                        MessageBox.Show("O nome da rua deve conter no máximo 30 caracteres.");
+                        return;
+                    }
                 }
 
                 // === Salvar imagem do PictureBox ===

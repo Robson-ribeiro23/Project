@@ -39,7 +39,7 @@ public class EventoControllers
         return true;
     }
 
-    public List<EventoModels> ListarTodos()
+    public static List<EventoModels> ListarTodos()
     {
         return listaEventos;
     }
