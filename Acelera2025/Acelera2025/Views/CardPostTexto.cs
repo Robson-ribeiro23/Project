@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera2025.Controllers;
 using System.IO;
+using Ac;
 
 namespace Acelera2025.Views
 {
@@ -100,6 +101,11 @@ namespace Acelera2025.Views
             {
                 MessageBox.Show($"Erro: {ex.Message}");
             }
+        }
+
+        private void picFotoPerfil_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }
