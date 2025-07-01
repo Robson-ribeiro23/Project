@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using static EventoModels;
 
@@ -93,6 +94,90 @@ namespace Acelera2025.Views
         {
             try
             {
+                // === Validações ===
+                if (txtNomeEvento.Text.Length > 30)
+                {
+                    MessageBox.Show("O nome do evento deve conter no máximo 30 caracteres.");
+                    return;
+                }
+
+                if (dateTimePicker.Value.Date < DateTime.Now.Date)
+                {
+                    MessageBox.Show("A data do evento não pode ser anterior à data atual.");
+                    return;
+                }
+
+                if (!TimeSpan.TryParse(txtHorario.Text, out TimeSpan horarioValido))
+                {
+                    MessageBox.Show("Horário inválido. Use o formato HH:mm.");
+                    return;
+                }
+
+                if (!int.TryParse(txtLimiteParticipantes.Text, out int limite))
+                {
+                    MessageBox.Show("Limite de participantes inválido.");
+                    return;
+                }
+
+                bool isEmpresa = usuario.Tipo == "empresa"; // Ajuste se necessário conforme sua lógica
+                int limiteMaximo = isEmpresa ? 1000 : 200;
+                if (limite > limiteMaximo)
+                {
+                    MessageBox.Show($"Limite de participantes não pode ultrapassar {limiteMaximo}.");
+                    return;
+                }
+
+                if (txtDescricao.Text.Length > 2000)
+                {
+                    MessageBox.Show("A descrição não pode ultrapassar 2000 caracteres.");
+                    return;
+                }
+
+                if (!string.IsNullOrWhiteSpace(txtLinkReunião.Text))
+                {
+                    if (!Uri.IsWellFormedUriString(txtLinkReunião.Text, UriKind.Absolute))
+                    {
+                        MessageBox.Show("Link da reunião inválido.");
+                        return;
+                    }
+                }
+
+                if (txtCidade.Text.Length > 20 || !txtCidade.Text.All(char.IsLetter))
+                {
+                    MessageBox.Show("A cidade deve conter apenas letras e no máximo 20 caracteres.");
+                    return;
+                }
+
+                if (txtLocal.Text.Length > 30)
+                {
+                    MessageBox.Show("O local deve conter no máximo 30 caracteres.");
+                    return;
+                }
+
+                if (!System.Text.RegularExpressions.Regex.IsMatch(txtCep.Text, @"^\d{5}-\d{3}$"))
+                {
+                    MessageBox.Show("CEP inválido. Use o formato 00000-000.");
+                    return;
+                }
+
+                if (txtBairro.Text.Length > 40)
+                {
+                    MessageBox.Show("O bairro deve conter no máximo 40 caracteres.");
+                    return;
+                }
+
+                if (!int.TryParse(txtNumero.Text, out int numero) || numero > 1000)
+                {
+                    MessageBox.Show("Número inválido. O valor máximo permitido é 1000.");
+                    return;
+                }
+
+                if (txtNomeRua.Text.Length > 30)
+                {
+                    MessageBox.Show("O nome da rua deve conter no máximo 30 caracteres.");
+                    return;
+                }
+
                 // === Salvar imagem do PictureBox ===
                 string caminhoImagem = null;
                 if (picEvento.Image != null)
@@ -109,28 +194,26 @@ namespace Acelera2025.Views
                     caminhoImagem = caminhoCompleto;
                 }
 
-                
+                // === Dados do formulário ===
                 string nomeEvento = txtNomeEvento.Text;
                 DateTime dataEvento = dateTimePicker.Value;
                 string horario = txtHorario.Text;
                 string categoria = comboCategoria.SelectedItem?.ToString();
                 bool isPresencial = radioBtnPresencial.Checked;
-                int limiteParticipantes = int.TryParse(txtLimiteParticipantes.Text, out int limite) ? limite : 0;
+                int limiteParticipantes = limite;
                 string faixaEtaria = comboFaixaEtaria.SelectedItem?.ToString();
                 string descricao = txtDescricao.Text;
                 bool permitePatrocinio = checkBoxPatrocinio.Checked;
                 string email = this.usuario.Email;
-                
+
                 string local = txtLocal.Text;
                 string rua = txtNomeRua.Text;
-                string numero = txtNumero.Text;
                 string bairro = txtBairro.Text;
                 string cep = txtCep.Text;
                 string cidade = txtCidade.Text;
                 string estado = comboUF.SelectedItem?.ToString();
                 string linkReuniao = isPresencial ? null : txtLinkReunião.Text;
 
-                
                 EventoModels novoEvento = new EventoModels(
                     nomeEvento,
                     dataEvento,
@@ -145,7 +228,7 @@ namespace Acelera2025.Views
                     email,
                     local,
                     rua,
-                    numero,
+                    numero.ToString(),
                     bairro,
                     cep,
                     cidade,
@@ -169,80 +252,6 @@ namespace Acelera2025.Views
                 MessageBox.Show("Erro ao criar evento: " + ex.Message);
             }
         }
-
-
-           
-
-
-            /*try
-            {
-
-                string nomeEvento = txtNomeEvento.Text;
-                DateTime dataEvento = dateTimePicker.Value;
-                string horario = txtHorario.Text;
-                string categoria = comboCategoria.SelectedItem?.ToString();
-                bool isPresencial = radioBtnPresencial.Checked;
-                int limiteParticipantes = int.TryParse(txtLimiteParticipantes.Text, out int limite) ? limite : 0;
-                string faixaEtaria = comboFaixaEtaria.SelectedItem?.ToString();
-                string descricao = txtDescricao.Text;
-                bool permitePatrocinio = checkBoxPatrocinio.Checked;
-
-
-
-                EventoModels novoEvento = new EventoModels
-                (
-                    nomeEvento,
-                    dataEvento,
-                    categoria,
-                    horario,
-                    isPresencial,
-                    limiteParticipantes,
-                    faixaEtaria,
-                    descricao,
-                    permitePatrocinio
-                );
-
-                EventoControllers controller = new EventoControllers();
-                bool sucesso = controller.CriarEvento(novoEvento);
-
-                if (sucesso)
-                {
-                    // TESTE: ver se realmente salvou
-                    foreach (var es in controller.ListarTodos())
-                    {
-                        Console.WriteLine("Salvo: " + es.NomeEvento);
-                    }
-
-                    //LimparFormulario();
-                }
-
-                MessageBox.Show("Evento criado com sucesso!");
-
-
-                if (picEvento.Image != null)
-                {
-                    string pastaDestino = @"C:\Users\giiml\Desktop\Acelera2025\Acelera2025\Pictures";
-
-                    if (!Directory.Exists(pastaDestino))
-                        Directory.CreateDirectory(pastaDestino);
-
-                    string nomeArquivo = "evento" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
-                    string caminhoCompleto = Path.Combine(pastaDestino, nomeArquivo);
-
-                    picEvento.Image.Save(caminhoCompleto, System.Drawing.Imaging.ImageFormat.Png);
-                }
-            
-
-
-                    //LimparFormulario();
-                }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao criar evento: " + ex.Message);
-            }
-
-            //Navegador.IrParaTelaEventos(this.usuario); */
-
 
         
 

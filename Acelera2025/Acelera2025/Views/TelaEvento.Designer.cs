@@ -605,11 +605,12 @@
             // 
             // lblDescricao
             // 
-            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDescricao.Location = new System.Drawing.Point(35, 33);
             this.lblDescricao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(70, 25);
+            this.lblDescricao.Size = new System.Drawing.Size(1177, 485);
             this.lblDescricao.TabIndex = 0;
             this.lblDescricao.Text = "Descrição";
             // 
@@ -941,7 +942,6 @@
             this.panelMeusEventos.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.gradientPanel2.ResumeLayout(false);
             this.gradientPanel2.PerformLayout();
             this.panel2.ResumeLayout(false);

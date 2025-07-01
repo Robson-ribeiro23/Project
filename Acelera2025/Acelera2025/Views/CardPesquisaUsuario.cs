@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ac;
+using Acelera2025.Views;
 
 namespace Acelera2025.Telas
 {
@@ -55,17 +56,22 @@ namespace Acelera2025.Telas
 
         private void lblNome_Click(object sender, EventArgs e)
         {
-            if (usuario != null)
-            {
-                Navegador.IrParaPerfilUsuario(usuario);
-            }
             if (evento != null)
             {
-                Navegador.IrParaTelaEventos(usuario, evento);
+                Navegador.IrParaTelaEventos(this.usuario, evento);
+            }
+            else if (usuario != null)
+            {
+                Navegador.IrParaPerfilUsuario(usuario);
             }
         }
 
         private void CardPesquisaUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNome_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -40,7 +40,7 @@
             this.picPerfil.BorderRadius = 15;
             this.picPerfil.BorderSize = 0;
             this.picPerfil.Location = new System.Drawing.Point(14, 10);
-            this.picPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.picPerfil.Name = "picPerfil";
             this.picPerfil.Size = new System.Drawing.Size(28, 30);
             this.picPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -59,6 +59,7 @@
             this.lblNome.Size = new System.Drawing.Size(49, 25);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome";
+            this.lblNome.Click += new System.EventHandler(this.lblNome_Click_1);
             // 
             // CardPesquisaUsuario
             // 
@@ -66,7 +67,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.picPerfil);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CardPesquisaUsuario";
             this.Size = new System.Drawing.Size(645, 47);
             this.Load += new System.EventHandler(this.CardPesquisaUsuario_Load);

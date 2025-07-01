@@ -26,12 +26,12 @@ namespace Acelera2025.Views
             btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
             btnMostrarSenhaConfirmar.Image = Properties.Resources.icons8_hide_24_1;
 
-            // Configuração inicial dos labels de validação da senha (opcional)
+
             lblMaiuscula.ForeColor = Color.Red;
             lblNumero.ForeColor = Color.Red;
             lblTamanhoSenha.ForeColor = Color.Red;
 
-           // /*
+
              string[] nomes = { "a", "b", "c", "d", "e" };
 
             for (int i = 0; i < nomes.Length; i++)
@@ -73,7 +73,7 @@ namespace Acelera2025.Views
             {
                 Navegador.IrParaLoginUsuario();
             }
-          //  */
+
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

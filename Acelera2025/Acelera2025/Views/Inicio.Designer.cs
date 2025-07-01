@@ -175,7 +175,7 @@
             this.panel1.Controls.Add(this.btnProxEmAlta);
             this.panel1.Controls.Add(this.btnAntEmAlta);
             this.panel1.Controls.Add(this.superiorRoundedPanel1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 41);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
