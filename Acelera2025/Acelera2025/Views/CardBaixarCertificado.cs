@@ -22,7 +22,7 @@ namespace Acelera2025.Telas
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            PreencherModeloPDF("Amanda do Prado Gomes de Carvalho", "123.456.789-00", "Feira Gastronomica do Morango Sulista", "11/06/2025", "3");
+            PreencherModeloPDF("Amanda do Prado Gomes de Carvalho", "123.456.789-00", "Feira Gastronomica do Morango Sulista", "11/06/2025", "3");//Exemplo para teste
             MessageBox.Show("PDF gerado com sucesso!");
         }
         public void PreencherModeloPDF(string nome, string cpf, string nomeEvento, string data, string hora)

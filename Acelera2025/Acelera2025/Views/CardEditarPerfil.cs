@@ -19,11 +19,10 @@ namespace Acelera2025.Views
         {
             InitializeComponent();
             this.usuario = usuario;
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
+            btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+            button1.Image = Properties.Resources.icons8_hide_24_1;
+            txtSenhaAtual.PasswordChar = '*';
+            txtNovaSenha.PasswordChar = '*';
         }
 
         private void btnOrganizarEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -94,6 +93,34 @@ namespace Acelera2025.Views
         private void picFotoPerfil_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtSenhaAtual.PasswordChar == '*')
+            {
+                txtSenhaAtual.PasswordChar = '\0';
+                button1.Image = Properties.Resources.icons8_eye_30_1;
+            }
+            else
+            {
+                txtSenhaAtual.PasswordChar = '*';
+                button1.Image = Properties.Resources.icons8_hide_24_1;
+            }
+        }
+
+        private void btnMostrarSenha_Click(object sender, EventArgs e)
+        {
+            if (txtNovaSenha.PasswordChar == '*')
+            {
+                txtNovaSenha.PasswordChar = '\0';
+                btnMostrarSenha.Image = Properties.Resources.icons8_eye_30_1;
+            }
+            else
+            {
+                txtNovaSenha.PasswordChar = '*';
+                btnMostrarSenha.Image = Properties.Resources.icons8_hide_24_1;
+            }
         }
     }
 }

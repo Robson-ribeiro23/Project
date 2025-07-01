@@ -265,5 +265,10 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaOrganizarEventos(this.usuario);
         }
+
+        private void btnConvidarParticipante_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -11,7 +11,6 @@ using Acelera2025.Controllers;
 using Ac;
 using Acelera2025.Telas;
 using System.IO;
-using Acelera2025.Models;
 using System.Collections.Generic;
 
 namespace Acelera2025.Views
@@ -39,29 +38,43 @@ namespace Acelera2025.Views
             var pessoa = controller.ListarTodos()
                 .FirstOrDefault(p => p.Email == comentario.EmailUsuario);
 
+            this.usuario = pessoa;
+
             lblNome.Text = pessoa != null ? pessoa.Nome : comentario.EmailUsuario;
             lblTexto.Text = comentario.Texto;
 
             if (pessoa != null && !string.IsNullOrEmpty(pessoa.CaminhoFoto) && File.Exists(pessoa.CaminhoFoto))
             {
-                picPerfil.BackgroundImage = Image.FromFile(pessoa.CaminhoFoto);
+                picPerfil.Image = Image.FromFile(pessoa.CaminhoFoto);
             }
             else
             {
-                picPerfil.BackgroundImage = null;
+                picPerfil.Image = null;
             }
         }
 
-
-
-        private void roundedPanel1_Paint(object sender, PaintEventArgs e)
+        private void lblNome_Click(object sender, EventArgs e)
         {
-
+            if( usuario != null)
+            {
+                Navegador.IrParaPerfilUsuario(usuario);
+            }
+            else
+            {
+                MessageBox.Show("Usuário não definido.");
+            }
         }
 
-        private void picPerfil_Paint(object sender, PaintEventArgs e)
+        private void picPerfil_Click_1(object sender, EventArgs e)
         {
-
+            if (usuario != null)
+            {
+                Navegador.IrParaPerfilUsuario(usuario);
+            }
+            else
+            {
+                MessageBox.Show("Usuário não definido.");
+            }
         }
     }
 }

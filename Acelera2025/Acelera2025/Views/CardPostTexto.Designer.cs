@@ -68,6 +68,8 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(743, 23);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -118,12 +120,13 @@
             this.picFotoPerfil.BorderSize = 2;
             this.picFotoPerfil.GradientAngle = 50F;
             this.picFotoPerfil.Location = new System.Drawing.Point(9, 15);
-            this.picFotoPerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picFotoPerfil.Margin = new System.Windows.Forms.Padding(4);
             this.picFotoPerfil.Name = "picFotoPerfil";
             this.picFotoPerfil.Size = new System.Drawing.Size(73, 73);
             this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFotoPerfil.TabIndex = 60;
             this.picFotoPerfil.TabStop = false;
+            this.picFotoPerfil.Click += new System.EventHandler(this.picFotoPerfil_Click);
             // 
             // panel2
             // 
