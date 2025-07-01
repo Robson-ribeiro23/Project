@@ -199,6 +199,11 @@ namespace Acelera2025.Views
         {
 
         }
+
+        private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
  }
 

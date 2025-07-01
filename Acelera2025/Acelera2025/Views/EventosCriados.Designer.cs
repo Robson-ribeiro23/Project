@@ -886,6 +886,7 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.Controls.Add(this.roundedPanel11);
             this.panel4.Controls.Add(this.label25);
             this.panel4.Location = new System.Drawing.Point(52, 392);
@@ -909,7 +910,8 @@
             // 
             // txtLink
             // 
-            this.txtLink.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtLink.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtLink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.txtLink.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLink.Location = new System.Drawing.Point(0, 0);
             this.txtLink.Margin = new System.Windows.Forms.Padding(2);
@@ -923,7 +925,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label25.Location = new System.Drawing.Point(2, 0);
+            this.label25.Location = new System.Drawing.Point(3, 2);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(112, 27);
@@ -1113,6 +1115,7 @@
             // 
             // txtCEP
             // 
+            this.txtCEP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.txtCEP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCEP.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCEP.Location = new System.Drawing.Point(0, 0);
@@ -1136,6 +1139,7 @@
             // 
             // txtNumero
             // 
+            this.txtNumero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.txtNumero.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNumero.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumero.Location = new System.Drawing.Point(0, 0);
@@ -1159,6 +1163,7 @@
             // 
             // txtBairro
             // 
+            this.txtBairro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.txtBairro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBairro.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.Location = new System.Drawing.Point(0, 0);
@@ -1182,6 +1187,7 @@
             // 
             // txtRua
             // 
+            this.txtRua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.txtRua.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtRua.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRua.Location = new System.Drawing.Point(0, 0);
@@ -1205,6 +1211,7 @@
             // 
             // txtNomeLocal
             // 
+            this.txtNomeLocal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.txtNomeLocal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNomeLocal.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeLocal.Location = new System.Drawing.Point(0, 0);
@@ -1228,6 +1235,7 @@
             // 
             // txtParticipantes
             // 
+            this.txtParticipantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.txtParticipantes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtParticipantes.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtParticipantes.Location = new System.Drawing.Point(0, 0);
@@ -1251,6 +1259,7 @@
             // 
             // txtHora
             // 
+            this.txtHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.txtHora.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtHora.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHora.Location = new System.Drawing.Point(0, 0);
@@ -1274,6 +1283,7 @@
             // 
             // txtNomeEvento
             // 
+            this.txtNomeEvento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
             this.txtNomeEvento.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtNomeEvento.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeEvento.Location = new System.Drawing.Point(0, 0);

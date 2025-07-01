@@ -38,6 +38,7 @@ namespace Acelera2025.Views
             this.roundedButton4 = new RoundedButton();
             this.roundedButton5 = new RoundedButton();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
+            this.lblNumSeguidores = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -62,7 +63,6 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.lblNumSeguidores = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             this.roundedPanel10.SuspendLayout();
@@ -153,6 +153,7 @@ namespace Acelera2025.Views
             this.roundedButton4.TabIndex = 1;
             this.roundedButton4.Text = "Eventos Criados";
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // roundedButton5
             // 
@@ -170,6 +171,7 @@ namespace Acelera2025.Views
             this.roundedButton5.TabIndex = 0;
             this.roundedButton5.Text = "Eventos Ingressados";
             this.roundedButton5.UseVisualStyleBackColor = false;
+            this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
             // 
             // superiorRoundedPanel1
             // 
@@ -192,6 +194,18 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1257, 633);
             this.superiorRoundedPanel1.TabIndex = 58;
+            // 
+            // lblNumSeguidores
+            // 
+            this.lblNumSeguidores.AutoSize = true;
+            this.lblNumSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblNumSeguidores.Location = new System.Drawing.Point(221, 38);
+            this.lblNumSeguidores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNumSeguidores.Name = "lblNumSeguidores";
+            this.lblNumSeguidores.Size = new System.Drawing.Size(20, 27);
+            this.lblNumSeguidores.TabIndex = 61;
+            this.lblNumSeguidores.Text = "0";
             // 
             // tabControl1
             // 
@@ -565,18 +579,6 @@ namespace Acelera2025.Views
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
-            // 
-            // lblNumSeguidores
-            // 
-            this.lblNumSeguidores.AutoSize = true;
-            this.lblNumSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNumSeguidores.Location = new System.Drawing.Point(221, 38);
-            this.lblNumSeguidores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNumSeguidores.Name = "lblNumSeguidores";
-            this.lblNumSeguidores.Size = new System.Drawing.Size(20, 27);
-            this.lblNumSeguidores.TabIndex = 61;
-            this.lblNumSeguidores.Text = "0";
             // 
             // Perfil
             // 

@@ -157,3 +157,4 @@ public class EventoModels
                $"Faixa Etária: {FaixaEtaria}, Patrocínio: {(PermitePatrocinio ? "Sim" : "Não")}\nDescrição: {Descricao}";
     }
 }
+

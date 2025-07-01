@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.roundedPicture1 = new Acelera2025.Ferramentas.RoundedPicture();
             this.btnProxEmAlta = new System.Windows.Forms.Button();
             this.btnAntEmAlta = new System.Windows.Forms.Button();
-            this.roundedPicture1 = new Acelera2025.Ferramentas.RoundedPicture();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
             this.gradientPanel2 = new GradientPanel();
             this.btnEmail = new System.Windows.Forms.Button();
@@ -175,12 +175,12 @@
             this.panel1.Controls.Add(this.btnProxEmAlta);
             this.panel1.Controls.Add(this.btnAntEmAlta);
             this.panel1.Controls.Add(this.superiorRoundedPanel1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 41);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1269, 528);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label10
@@ -195,6 +195,20 @@
             this.label10.Size = new System.Drawing.Size(235, 43);
             this.label10.TabIndex = 3;
             this.label10.Text = "EVENTOS EM ALTA";
+            // 
+            // roundedPicture1
+            // 
+            this.roundedPicture1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.roundedPicture1.BorderColor = System.Drawing.Color.Transparent;
+            this.roundedPicture1.BorderRadius = 20;
+            this.roundedPicture1.BorderSize = 2;
+            this.roundedPicture1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedPicture1.Location = new System.Drawing.Point(315, 622);
+            this.roundedPicture1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPicture1.Name = "roundedPicture1";
+            this.roundedPicture1.Size = new System.Drawing.Size(632, 262);
+            this.roundedPicture1.TabIndex = 2;
+            this.roundedPicture1.TabStop = false;
             // 
             // btnProxEmAlta
             // 
@@ -227,20 +241,6 @@
             this.btnAntEmAlta.Size = new System.Drawing.Size(37, 49);
             this.btnAntEmAlta.TabIndex = 4;
             this.btnAntEmAlta.UseVisualStyleBackColor = false;
-            // 
-            // roundedPicture1
-            // 
-            this.roundedPicture1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedPicture1.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedPicture1.BorderRadius = 20;
-            this.roundedPicture1.BorderSize = 2;
-            this.roundedPicture1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedPicture1.Location = new System.Drawing.Point(315, 622);
-            this.roundedPicture1.Margin = new System.Windows.Forms.Padding(2);
-            this.roundedPicture1.Name = "roundedPicture1";
-            this.roundedPicture1.Size = new System.Drawing.Size(632, 262);
-            this.roundedPicture1.TabIndex = 2;
-            this.roundedPicture1.TabStop = false;
             // 
             // superiorRoundedPanel1
             // 
@@ -275,6 +275,7 @@
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1267, 1280);
             this.superiorRoundedPanel1.TabIndex = 6;
+            this.superiorRoundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.superiorRoundedPanel1_Paint);
             // 
             // gradientPanel2
             // 

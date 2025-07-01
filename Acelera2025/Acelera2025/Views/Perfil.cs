@@ -122,5 +122,15 @@ namespace Acelera2025.Views
         {
 
         }
+
+        private void roundedButton5_Click(object sender, EventArgs e)
+        {
+            Navegador.IrParaEventosIngressados(this.usuario);
+        }
+
+        private void roundedButton4_Click(object sender, EventArgs e)
+        {
+            Navegador.IrParaEventosCriados(this.usuario);
+        }
     }
 }

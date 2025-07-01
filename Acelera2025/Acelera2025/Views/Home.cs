@@ -28,6 +28,7 @@ namespace Acelera2025.Views
         private List<Label> labelDatas;
         private List<Label> labelHoras;
         private List<LinkLabel> btnNomes;
+        private List<Label> labelCidadeUfs;
 
         public Home(PessoaModels usuario)
         {
@@ -72,6 +73,7 @@ namespace Acelera2025.Views
             labelDatas = new List<Label> { lblData1, lblData2, lblData3, lblData4 };
             labelHoras = new List<Label> { lblHora1, lblHora2, lblHora3, lblHora4 };
             btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3, btnNome4 };
+            labelCidadeUfs = new List<Label> { lblCidadeUf1, lblCidadeUf2, lblCidadeUf3, lblCidadeUf4 };
 
             List<EventoModels> eventos = EventoCache.ListarTodos();
 
@@ -84,6 +86,7 @@ namespace Acelera2025.Views
                     labelDatas[i].Text = evento.Data.ToShortDateString();
                     labelHoras[i].Text = evento.Horario;
                     btnNomes[i].Text = evento.NomeEvento;
+                    labelCidadeUfs[i].Text = $"{evento.Cidade} - {evento.Estado}"; // <- LINHA NOVA
 
                     if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
                     {
@@ -104,6 +107,7 @@ namespace Acelera2025.Views
                     labelDatas[i].Text = "";
                     labelHoras[i].Text = "";
                     btnNomes[i].Text = "";
+                    labelCidadeUfs[i].Text = ""; // <- Limpa também quando não houver evento
                     pictureBoxes[i].Image = null;
 
                     pictureBoxes[i].Tag = null;
@@ -394,6 +398,16 @@ namespace Acelera2025.Views
         }
 
         private void lblData4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCidadeUf1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
         {
 
         }

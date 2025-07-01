@@ -124,7 +124,7 @@
             this.PicEventoPerto3 = new SuperiorRoundedPic();
             this.roundedPanel4 = new RoundedPanel();
             this.label22 = new System.Windows.Forms.Label();
-            this.lblCidadeUf = new System.Windows.Forms.Label();
+            this.lblCidadeUf4 = new System.Windows.Forms.Label();
             this.lblHora4 = new System.Windows.Forms.Label();
             this.lblData4 = new System.Windows.Forms.Label();
             this.btnNome4 = new System.Windows.Forms.LinkLabel();
@@ -564,6 +564,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label26.Location = new System.Drawing.Point(84, 142);
@@ -576,6 +577,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label27.Location = new System.Drawing.Point(15, 175);
@@ -588,6 +590,7 @@
             // lblHora8
             // 
             this.lblHora8.AutoSize = true;
+            this.lblHora8.BackColor = System.Drawing.Color.Transparent;
             this.lblHora8.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblHora8.Location = new System.Drawing.Point(115, 150);
@@ -600,6 +603,7 @@
             // lblData8
             // 
             this.lblData8.AutoSize = true;
+            this.lblData8.BackColor = System.Drawing.Color.Transparent;
             this.lblData8.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblData8.Location = new System.Drawing.Point(14, 150);
@@ -665,6 +669,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label30.Location = new System.Drawing.Point(89, 142);
@@ -677,6 +682,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label31.Location = new System.Drawing.Point(20, 175);
@@ -685,10 +691,12 @@
             this.label31.Size = new System.Drawing.Size(52, 25);
             this.label31.TabIndex = 25;
             this.label31.Text = "Online";
+            this.label31.Click += new System.EventHandler(this.label31_Click);
             // 
             // lblHora7
             // 
             this.lblHora7.AutoSize = true;
+            this.lblHora7.BackColor = System.Drawing.Color.Transparent;
             this.lblHora7.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblHora7.Location = new System.Drawing.Point(120, 150);
@@ -701,6 +709,7 @@
             // lblData7
             // 
             this.lblData7.AutoSize = true;
+            this.lblData7.BackColor = System.Drawing.Color.Transparent;
             this.lblData7.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblData7.Location = new System.Drawing.Point(20, 150);
@@ -766,6 +775,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label34.Location = new System.Drawing.Point(89, 142);
@@ -778,6 +788,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label35.Location = new System.Drawing.Point(20, 175);
@@ -802,6 +813,7 @@
             // lblData6
             // 
             this.lblData6.AutoSize = true;
+            this.lblData6.BackColor = System.Drawing.Color.Transparent;
             this.lblData6.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblData6.Location = new System.Drawing.Point(20, 150);
@@ -867,6 +879,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label38.Location = new System.Drawing.Point(84, 142);
@@ -879,6 +892,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label39.Location = new System.Drawing.Point(15, 175);
@@ -891,6 +905,7 @@
             // lblHora5
             // 
             this.lblHora5.AutoSize = true;
+            this.lblHora5.BackColor = System.Drawing.Color.Transparent;
             this.lblHora5.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblHora5.Location = new System.Drawing.Point(115, 150);
@@ -903,6 +918,7 @@
             // lblData5
             // 
             this.lblData5.AutoSize = true;
+            this.lblData5.BackColor = System.Drawing.Color.Transparent;
             this.lblData5.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblData5.Location = new System.Drawing.Point(14, 150);
@@ -1300,6 +1316,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label14.Location = new System.Drawing.Point(79, 143);
@@ -1312,6 +1329,7 @@
             // lblCidadeUf1
             // 
             this.lblCidadeUf1.AutoSize = true;
+            this.lblCidadeUf1.BackColor = System.Drawing.Color.Transparent;
             this.lblCidadeUf1.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidadeUf1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblCidadeUf1.Location = new System.Drawing.Point(10, 176);
@@ -1320,10 +1338,12 @@
             this.lblCidadeUf1.Size = new System.Drawing.Size(75, 25);
             this.lblCidadeUf1.TabIndex = 20;
             this.lblCidadeUf1.Text = "Cidade UF";
+            this.lblCidadeUf1.Click += new System.EventHandler(this.lblCidadeUf1_Click);
             // 
             // lblHora1
             // 
             this.lblHora1.AutoSize = true;
+            this.lblHora1.BackColor = System.Drawing.Color.Transparent;
             this.lblHora1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblHora1.Location = new System.Drawing.Point(110, 151);
@@ -1336,6 +1356,7 @@
             // lblData1
             // 
             this.lblData1.AutoSize = true;
+            this.lblData1.BackColor = System.Drawing.Color.Transparent;
             this.lblData1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblData1.Location = new System.Drawing.Point(9, 151);
@@ -1401,6 +1422,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label7.Location = new System.Drawing.Point(86, 143);
@@ -1413,6 +1435,7 @@
             // lblCidadeUf2
             // 
             this.lblCidadeUf2.AutoSize = true;
+            this.lblCidadeUf2.BackColor = System.Drawing.Color.Transparent;
             this.lblCidadeUf2.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidadeUf2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblCidadeUf2.Location = new System.Drawing.Point(16, 176);
@@ -1425,6 +1448,7 @@
             // lblHora2
             // 
             this.lblHora2.AutoSize = true;
+            this.lblHora2.BackColor = System.Drawing.Color.Transparent;
             this.lblHora2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblHora2.Location = new System.Drawing.Point(116, 151);
@@ -1437,6 +1461,7 @@
             // lblData2
             // 
             this.lblData2.AutoSize = true;
+            this.lblData2.BackColor = System.Drawing.Color.Transparent;
             this.lblData2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblData2.Location = new System.Drawing.Point(16, 151);
@@ -1502,6 +1527,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label18.Location = new System.Drawing.Point(82, 143);
@@ -1514,6 +1540,7 @@
             // lblCidadeUf3
             // 
             this.lblCidadeUf3.AutoSize = true;
+            this.lblCidadeUf3.BackColor = System.Drawing.Color.Transparent;
             this.lblCidadeUf3.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidadeUf3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblCidadeUf3.Location = new System.Drawing.Point(14, 176);
@@ -1526,6 +1553,7 @@
             // lblHora3
             // 
             this.lblHora3.AutoSize = true;
+            this.lblHora3.BackColor = System.Drawing.Color.Transparent;
             this.lblHora3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblHora3.Location = new System.Drawing.Point(113, 151);
@@ -1538,6 +1566,7 @@
             // lblData3
             // 
             this.lblData3.AutoSize = true;
+            this.lblData3.BackColor = System.Drawing.Color.Transparent;
             this.lblData3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblData3.Location = new System.Drawing.Point(13, 151);
@@ -1589,7 +1618,7 @@
             this.roundedPanel4.BorderRadius = 20;
             this.roundedPanel4.BorderSize = 0;
             this.roundedPanel4.Controls.Add(this.label22);
-            this.roundedPanel4.Controls.Add(this.lblCidadeUf);
+            this.roundedPanel4.Controls.Add(this.lblCidadeUf4);
             this.roundedPanel4.Controls.Add(this.lblHora4);
             this.roundedPanel4.Controls.Add(this.lblData4);
             this.roundedPanel4.Controls.Add(this.btnNome4);
@@ -1603,6 +1632,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label22.Location = new System.Drawing.Point(83, 143);
@@ -1612,21 +1642,23 @@
             this.label22.TabIndex = 21;
             this.label22.Text = "-";
             // 
-            // lblCidadeUf
+            // lblCidadeUf4
             // 
-            this.lblCidadeUf.AutoSize = true;
-            this.lblCidadeUf.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidadeUf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCidadeUf.Location = new System.Drawing.Point(14, 176);
-            this.lblCidadeUf.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCidadeUf.Name = "lblCidadeUf";
-            this.lblCidadeUf.Size = new System.Drawing.Size(75, 25);
-            this.lblCidadeUf.TabIndex = 20;
-            this.lblCidadeUf.Text = "Cidade UF";
+            this.lblCidadeUf4.AutoSize = true;
+            this.lblCidadeUf4.BackColor = System.Drawing.Color.Transparent;
+            this.lblCidadeUf4.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidadeUf4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCidadeUf4.Location = new System.Drawing.Point(14, 176);
+            this.lblCidadeUf4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCidadeUf4.Name = "lblCidadeUf4";
+            this.lblCidadeUf4.Size = new System.Drawing.Size(75, 25);
+            this.lblCidadeUf4.TabIndex = 20;
+            this.lblCidadeUf4.Text = "Cidade UF";
             // 
             // lblHora4
             // 
             this.lblHora4.AutoSize = true;
+            this.lblHora4.BackColor = System.Drawing.Color.Transparent;
             this.lblHora4.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblHora4.Location = new System.Drawing.Point(114, 151);
@@ -1639,6 +1671,7 @@
             // lblData4
             // 
             this.lblData4.AutoSize = true;
+            this.lblData4.BackColor = System.Drawing.Color.Transparent;
             this.lblData4.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblData4.Location = new System.Drawing.Point(14, 151);
@@ -2081,7 +2114,7 @@
         private System.Windows.Forms.Label lblData3;
         private System.Windows.Forms.LinkLabel btnNome3;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label lblCidadeUf;
+        private System.Windows.Forms.Label lblCidadeUf4;
         private System.Windows.Forms.Label lblHora4;
         private System.Windows.Forms.Label lblData4;
         private System.Windows.Forms.LinkLabel btnNome4;
