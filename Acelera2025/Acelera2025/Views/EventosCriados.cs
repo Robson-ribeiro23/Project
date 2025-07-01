@@ -36,7 +36,6 @@ namespace Acelera2025.Views
         
         private void EventosCriados_Load(object sender, EventArgs e)
         {
-
             AtualizarListaDeEventos();
 
             panelMeusEventos.Visible = false;
@@ -156,6 +155,8 @@ namespace Acelera2025.Views
             lblCEP.Text = evento.CEP;
 
             lblLinkReuniao.Text = evento.IsPresencial ? "Evento presencial" : evento.LinkReuniao;
+
+            lblParticipantes.Text = evento.GetUserList().Count().ToString();
 
             if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
             {
