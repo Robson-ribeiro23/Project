@@ -46,7 +46,7 @@ namespace Acelera2025.Views
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelSeguir = new System.Windows.Forms.Label();
             this.btnEntrarEmContato = new CircularButton();
             this.btnSeguir = new CircularButton();
             this.lblSeguidores = new System.Windows.Forms.Label();
@@ -87,7 +87,11 @@ namespace Acelera2025.Views
             this.panel1.Location = new System.Drawing.Point(0, 41);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
+<<<<<<< Updated upstream
             this.panel1.Size = new System.Drawing.Size(1023, 543);
+=======
+            this.panel1.Size = new System.Drawing.Size(1257, 543);
+>>>>>>> Stashed changes
             this.panel1.TabIndex = 59;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -132,7 +136,11 @@ namespace Acelera2025.Views
             this.roundedPanel10.BorderSize = 0;
             this.roundedPanel10.Controls.Add(this.roundedButton4);
             this.roundedPanel10.Controls.Add(this.roundedButton5);
+<<<<<<< Updated upstream
             this.roundedPanel10.Location = new System.Drawing.Point(462, 5);
+=======
+            this.roundedPanel10.Location = new System.Drawing.Point(696, 5);
+>>>>>>> Stashed changes
             this.roundedPanel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel10.Name = "roundedPanel10";
             this.roundedPanel10.Size = new System.Drawing.Size(184, 81);
@@ -186,7 +194,7 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.Controls.Add(this.lblNumSeguidores);
             this.superiorRoundedPanel1.Controls.Add(this.tabControl1);
             this.superiorRoundedPanel1.Controls.Add(this.label3);
-            this.superiorRoundedPanel1.Controls.Add(this.label2);
+            this.superiorRoundedPanel1.Controls.Add(this.labelSeguir);
             this.superiorRoundedPanel1.Controls.Add(this.btnEntrarEmContato);
             this.superiorRoundedPanel1.Controls.Add(this.btnSeguir);
             this.superiorRoundedPanel1.Controls.Add(this.lblSeguidores);
@@ -194,7 +202,11 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 150);
             this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
+<<<<<<< Updated upstream
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1023, 633);
+=======
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1257, 633);
+>>>>>>> Stashed changes
             this.superiorRoundedPanel1.TabIndex = 58;
             // 
             // lblNumSeguidores
@@ -208,6 +220,7 @@ namespace Acelera2025.Views
             this.lblNumSeguidores.Size = new System.Drawing.Size(20, 27);
             this.lblNumSeguidores.TabIndex = 61;
             this.lblNumSeguidores.Text = "0";
+            this.lblNumSeguidores.Click += new System.EventHandler(this.lblNumSeguidores_Click);
             // 
             // tabControl1
             // 
@@ -223,7 +236,11 @@ namespace Acelera2025.Views
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(30, 15);
             this.tabControl1.SelectedIndex = 0;
+<<<<<<< Updated upstream
             this.tabControl1.Size = new System.Drawing.Size(843, 516);
+=======
+            this.tabControl1.Size = new System.Drawing.Size(1077, 516);
+>>>>>>> Stashed changes
             this.tabControl1.TabIndex = 60;
             // 
             // tabParticipacoes
@@ -234,7 +251,11 @@ namespace Acelera2025.Views
             this.tabParticipacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabParticipacoes.Name = "tabParticipacoes";
             this.tabParticipacoes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+<<<<<<< Updated upstream
             this.tabParticipacoes.Size = new System.Drawing.Size(835, 458);
+=======
+            this.tabParticipacoes.Size = new System.Drawing.Size(1069, 458);
+>>>>>>> Stashed changes
             this.tabParticipacoes.TabIndex = 0;
             this.tabParticipacoes.Text = "Participações";
             this.tabParticipacoes.UseVisualStyleBackColor = true;
@@ -249,12 +270,17 @@ namespace Acelera2025.Views
             this.panelParticipacoes.Location = new System.Drawing.Point(2, 22);
             this.panelParticipacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelParticipacoes.Name = "panelParticipacoes";
+<<<<<<< Updated upstream
             this.panelParticipacoes.Size = new System.Drawing.Size(832, 427);
+=======
+            this.panelParticipacoes.Size = new System.Drawing.Size(1066, 427);
+>>>>>>> Stashed changes
             this.panelParticipacoes.TabIndex = 0;
             this.panelParticipacoes.WrapContents = false;
             // 
             // panelEventos
             // 
+<<<<<<< Updated upstream
             this.panelEventos.Location = new System.Drawing.Point(4, 54);
             this.panelEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelEventos.Name = "panelEventos";
@@ -263,6 +289,16 @@ namespace Acelera2025.Views
             this.panelEventos.TabIndex = 1;
             this.panelEventos.Text = "Disponíveis";
             this.panelEventos.UseVisualStyleBackColor = true;
+=======
+            this.tabPage2.Location = new System.Drawing.Point(4, 54);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(1069, 458);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Disponíveis";
+            this.tabPage2.UseVisualStyleBackColor = true;
+>>>>>>> Stashed changes
             // 
             // tabPage3
             // 
@@ -270,7 +306,11 @@ namespace Acelera2025.Views
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+<<<<<<< Updated upstream
             this.tabPage3.Size = new System.Drawing.Size(835, 458);
+=======
+            this.tabPage3.Size = new System.Drawing.Size(1069, 458);
+>>>>>>> Stashed changes
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Encerrados";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -292,15 +332,20 @@ namespace Acelera2025.Views
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+<<<<<<< Updated upstream
             this.label3.Location = new System.Drawing.Point(702, 57);
+=======
+            this.label3.Location = new System.Drawing.Point(936, 57);
+>>>>>>> Stashed changes
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 27);
             this.label3.TabIndex = 59;
             this.label3.Text = "Entrar em Contato";
             // 
-            // label2
+            // labelSeguir
             // 
+<<<<<<< Updated upstream
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -311,6 +356,18 @@ namespace Acelera2025.Views
             this.label2.Size = new System.Drawing.Size(54, 27);
             this.label2.TabIndex = 58;
             this.label2.Text = "Seguir";
+=======
+            this.labelSeguir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSeguir.AutoSize = true;
+            this.labelSeguir.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSeguir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.labelSeguir.Location = new System.Drawing.Point(936, 24);
+            this.labelSeguir.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelSeguir.Name = "labelSeguir";
+            this.labelSeguir.Size = new System.Drawing.Size(54, 27);
+            this.labelSeguir.TabIndex = 58;
+            this.labelSeguir.Text = "Seguir";
+>>>>>>> Stashed changes
             // 
             // btnEntrarEmContato
             // 
@@ -322,7 +379,11 @@ namespace Acelera2025.Views
             this.btnEntrarEmContato.FlatAppearance.BorderSize = 0;
             this.btnEntrarEmContato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrarEmContato.Image = ((System.Drawing.Image)(resources.GetObject("btnEntrarEmContato.Image")));
+<<<<<<< Updated upstream
             this.btnEntrarEmContato.Location = new System.Drawing.Point(665, 55);
+=======
+            this.btnEntrarEmContato.Location = new System.Drawing.Point(899, 55);
+>>>>>>> Stashed changes
             this.btnEntrarEmContato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEntrarEmContato.Name = "btnEntrarEmContato";
             this.btnEntrarEmContato.Size = new System.Drawing.Size(23, 26);
@@ -339,12 +400,17 @@ namespace Acelera2025.Views
             this.btnSeguir.FlatAppearance.BorderSize = 0;
             this.btnSeguir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguir.Image = ((System.Drawing.Image)(resources.GetObject("btnSeguir.Image")));
+<<<<<<< Updated upstream
             this.btnSeguir.Location = new System.Drawing.Point(664, 22);
+=======
+            this.btnSeguir.Location = new System.Drawing.Point(898, 22);
+>>>>>>> Stashed changes
             this.btnSeguir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSeguir.Name = "btnSeguir";
             this.btnSeguir.Size = new System.Drawing.Size(25, 28);
             this.btnSeguir.TabIndex = 56;
             this.btnSeguir.UseVisualStyleBackColor = false;
+            this.btnSeguir.Click += new System.EventHandler(this.btnSeguir_Click);
             // 
             // lblSeguidores
             // 
@@ -389,7 +455,11 @@ namespace Acelera2025.Views
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gradientPanel1.Name = "gradientPanel1";
+<<<<<<< Updated upstream
             this.gradientPanel1.Size = new System.Drawing.Size(1023, 41);
+=======
+            this.gradientPanel1.Size = new System.Drawing.Size(1257, 41);
+>>>>>>> Stashed changes
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 58;
             // 
@@ -402,7 +472,11 @@ namespace Acelera2025.Views
             this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnFeed.LinkColor = System.Drawing.Color.White;
+<<<<<<< Updated upstream
             this.btnFeed.Location = new System.Drawing.Point(471, 12);
+=======
+            this.btnFeed.Location = new System.Drawing.Point(705, 12);
+>>>>>>> Stashed changes
             this.btnFeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnFeed.Name = "btnFeed";
             this.btnFeed.Size = new System.Drawing.Size(35, 21);
@@ -423,7 +497,11 @@ namespace Acelera2025.Views
             this.picturePerfil.BorderSize = 0;
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+<<<<<<< Updated upstream
             this.picturePerfil.Location = new System.Drawing.Point(969, 2);
+=======
+            this.picturePerfil.Location = new System.Drawing.Point(1203, 2);
+>>>>>>> Stashed changes
             this.picturePerfil.Name = "picturePerfil";
             this.picturePerfil.Size = new System.Drawing.Size(35, 35);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -470,7 +548,11 @@ namespace Acelera2025.Views
             this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< Updated upstream
             this.btnNotificacoes.Location = new System.Drawing.Point(922, 11);
+=======
+            this.btnNotificacoes.Location = new System.Drawing.Point(1156, 11);
+>>>>>>> Stashed changes
             this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNotificacoes.Name = "btnNotificacoes";
             this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
@@ -528,7 +610,11 @@ namespace Acelera2025.Views
             this.btnOrganizarEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrganizarEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnOrganizarEventos.LinkColor = System.Drawing.Color.White;
+<<<<<<< Updated upstream
             this.btnOrganizarEventos.Location = new System.Drawing.Point(540, 12);
+=======
+            this.btnOrganizarEventos.Location = new System.Drawing.Point(774, 12);
+>>>>>>> Stashed changes
             this.btnOrganizarEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnOrganizarEventos.Name = "btnOrganizarEventos";
             this.btnOrganizarEventos.Size = new System.Drawing.Size(105, 21);
@@ -548,7 +634,11 @@ namespace Acelera2025.Views
             this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
+<<<<<<< Updated upstream
             this.btnMeusEventos.Location = new System.Drawing.Point(669, 13);
+=======
+            this.btnMeusEventos.Location = new System.Drawing.Point(903, 13);
+>>>>>>> Stashed changes
             this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnMeusEventos.Name = "btnMeusEventos";
             this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
@@ -568,7 +658,11 @@ namespace Acelera2025.Views
             this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjuda.LinkColor = System.Drawing.Color.White;
+<<<<<<< Updated upstream
             this.btnAjuda.Location = new System.Drawing.Point(770, 12);
+=======
+            this.btnAjuda.Location = new System.Drawing.Point(1004, 12);
+>>>>>>> Stashed changes
             this.btnAjuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnAjuda.Name = "btnAjuda";
             this.btnAjuda.Size = new System.Drawing.Size(41, 21);
@@ -588,7 +682,11 @@ namespace Acelera2025.Views
             this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnSobreNos.LinkColor = System.Drawing.Color.White;
+<<<<<<< Updated upstream
             this.btnSobreNos.Location = new System.Drawing.Point(825, 13);
+=======
+            this.btnSobreNos.Location = new System.Drawing.Point(1059, 13);
+>>>>>>> Stashed changes
             this.btnSobreNos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnSobreNos.Name = "btnSobreNos";
             this.btnSobreNos.Size = new System.Drawing.Size(62, 21);
@@ -603,7 +701,11 @@ namespace Acelera2025.Views
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
+<<<<<<< Updated upstream
             this.ClientSize = new System.Drawing.Size(1023, 584);
+=======
+            this.ClientSize = new System.Drawing.Size(1257, 584);
+>>>>>>> Stashed changes
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -640,7 +742,7 @@ namespace Acelera2025.Views
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelSeguir;
         private CircularButton btnEntrarEmContato;
         private CircularButton btnSeguir;
         private System.Windows.Forms.Label lblSeguidores;

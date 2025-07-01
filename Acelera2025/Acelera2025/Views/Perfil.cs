@@ -1,10 +1,11 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
-using Ac;
-using System.IO;
+﻿using Ac;
+using Acelera2025.Models;
 using Acelera2025.Telas;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Acelera2025.Views
 {
@@ -19,10 +20,13 @@ namespace Acelera2025.Views
         private PessoaModels loggedUser;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
+        private UsuarioModels usuarioVisualizado; 
+        private UsuarioModels usuarioLogado;
 
         public Perfil(PessoaModels usuario)
         {
             InitializeComponent();
+<<<<<<< Updated upstream
             this.usuario = usuario;
             lblNomeUsuario.Text = usuario.Nome;
             loggedUser = UsuarioControllers.loggedUser;
@@ -34,9 +38,37 @@ namespace Acelera2025.Views
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
                 picPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
+=======
+
+            this.usuario = usuario;
+            this.usuarioVisualizado = (UsuarioModels)usuario; // Correção
+            this.usuarioLogado = UsuarioControllers.loggedUser;
+
+            lblNomeUsuario.Text = usuarioVisualizado.Nome;
+            lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();
+
+            if (!string.IsNullOrEmpty(usuarioVisualizado.CaminhoFoto) && File.Exists(usuarioVisualizado.CaminhoFoto))
+            {
+                picturePerfil.Image = Image.FromFile(usuarioVisualizado.CaminhoFoto);
+                picPerfil.Image = Image.FromFile(usuarioVisualizado.CaminhoFoto);
+>>>>>>> Stashed changes
             }
+
+            labelSeguir.Text = usuarioLogado.EstaSeguindo(usuarioVisualizado) ? "Seguindo" : "Seguir";
         }
 
+<<<<<<< Updated upstream
+=======
+
+        //    if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
+        //  {
+        //   picturePerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
+        //   picPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
+        //  }
+        // }
+
+
+>>>>>>> Stashed changes
         private void Perfil_Load(object sender, EventArgs e)
         {
             if (loggedUser == null) { return; }
@@ -175,6 +207,22 @@ namespace Acelera2025.Views
         private void roundedButton4_Click(object sender, EventArgs e)
         {
             Navegador.IrParaEventosCriados(this.usuario);
+        }
+
+        private void lblNumSeguidores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSeguir_Click(object sender, EventArgs e)
+        {
+            bool seguindo = usuarioLogado.SeguirOuDeixarDeSeguir(usuarioVisualizado);
+
+            // Atualiza texto do botão
+            labelSeguir.Text = seguindo ? "Seguindo" : "Seguir";
+
+            // Atualiza número de seguidores no label
+            lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();
         }
     }
 }
