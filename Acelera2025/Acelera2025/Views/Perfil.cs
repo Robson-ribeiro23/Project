@@ -16,6 +16,7 @@ namespace Acelera2025.Views
         private bool cardPerfilVisivel = false;
         private bool cardEditarPerfilVisivel = false;
         private PessoaModels usuario;
+        private PessoaModels loggedUser;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
 
@@ -24,19 +25,26 @@ namespace Acelera2025.Views
             InitializeComponent();
             this.usuario = usuario;
             lblNomeUsuario.Text = usuario.Nome;
+            loggedUser = UsuarioControllers.loggedUser;
 
+            if (loggedUser != null && !string.IsNullOrEmpty(loggedUser.CaminhoFoto) && File.Exists(loggedUser.CaminhoFoto))
+            {
+                picturePerfil.Image = Image.FromFile(loggedUser.CaminhoFoto);
+            }
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
-                picturePerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
                 picPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
             }
         }
+
         private void Perfil_Load(object sender, EventArgs e)
         {
+            if (loggedUser == null) { return; }
+
             roundedPanel10.Visible = false;
-            cardPerfil = new CardPerfil(this.usuario);
+            cardPerfil = new CardPerfil(loggedUser);
             cardPerfil.Visible = false;
-            cardEditarPerfil = new CardEditarPerfil(this.usuario);
+            cardEditarPerfil = new CardEditarPerfil(loggedUser);
             cardEditarPerfil.Visible = false;
             
 
@@ -58,6 +66,7 @@ namespace Acelera2025.Views
 
             LoadAllEvents();
         }
+
         private void LoadAllEvents()
         {
             List<EventoModels> eventoList = usuario.GetSubbedEvents();
