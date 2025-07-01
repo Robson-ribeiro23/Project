@@ -189,7 +189,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label10.Location = new System.Drawing.Point(524, 576);
+            this.label10.Location = new System.Drawing.Point(555, 76);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(235, 43);
@@ -203,7 +203,7 @@
             this.roundedPicture1.BorderRadius = 20;
             this.roundedPicture1.BorderSize = 2;
             this.roundedPicture1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedPicture1.Location = new System.Drawing.Point(315, 622);
+            this.roundedPicture1.Location = new System.Drawing.Point(344, 121);
             this.roundedPicture1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPicture1.Name = "roundedPicture1";
             this.roundedPicture1.Size = new System.Drawing.Size(632, 262);
@@ -219,7 +219,7 @@
             this.btnProxEmAlta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProxEmAlta.FlatAppearance.BorderSize = 0;
             this.btnProxEmAlta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProxEmAlta.Location = new System.Drawing.Point(956, 729);
+            this.btnProxEmAlta.Location = new System.Drawing.Point(997, 225);
             this.btnProxEmAlta.Margin = new System.Windows.Forms.Padding(2);
             this.btnProxEmAlta.Name = "btnProxEmAlta";
             this.btnProxEmAlta.Size = new System.Drawing.Size(37, 49);
@@ -235,7 +235,7 @@
             this.btnAntEmAlta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAntEmAlta.FlatAppearance.BorderSize = 0;
             this.btnAntEmAlta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAntEmAlta.Location = new System.Drawing.Point(274, 729);
+            this.btnAntEmAlta.Location = new System.Drawing.Point(285, 225);
             this.btnAntEmAlta.Margin = new System.Windows.Forms.Padding(2);
             this.btnAntEmAlta.Name = "btnAntEmAlta";
             this.btnAntEmAlta.Size = new System.Drawing.Size(37, 49);
@@ -270,7 +270,7 @@
             this.superiorRoundedPanel1.Controls.Add(this.roundedPanel2);
             this.superiorRoundedPanel1.Controls.Add(this.roundedPanel1);
             this.superiorRoundedPanel1.Controls.Add(this.panelEventosPerto);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 783);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(-3, 278);
             this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1267, 1280);
