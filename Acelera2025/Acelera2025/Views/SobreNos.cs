@@ -92,5 +92,10 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaFeed(this.usuario);
         }
+
+        private void btnEventosIngressados_Click(object sender, EventArgs e)
+        {
+            Navegador.IrParaEventosIngressados(this.usuario);
+        }
     }
 }

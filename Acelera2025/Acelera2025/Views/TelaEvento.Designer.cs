@@ -771,7 +771,7 @@
             // 
             // flowPatrociadores
             // 
-            this.flowPatrociadores.BackColor = System.Drawing.Color.White;
+            this.flowPatrociadores.BackColor = System.Drawing.Color.Transparent;
             this.flowPatrociadores.Location = new System.Drawing.Point(587, 125);
             this.flowPatrociadores.Name = "flowPatrociadores";
             this.flowPatrociadores.Size = new System.Drawing.Size(298, 78);

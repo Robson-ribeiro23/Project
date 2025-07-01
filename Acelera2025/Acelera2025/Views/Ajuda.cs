@@ -135,5 +135,10 @@ namespace Acelera2025.Views
             tabControl1.SelectedTab = tabEngajar;
             this.ScrollControlIntoView(tabControl1);
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            Navegador.IrParaPesquisa(this.usuario);
+        }
     }
 }

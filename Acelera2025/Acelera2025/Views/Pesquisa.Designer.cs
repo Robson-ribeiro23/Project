@@ -139,6 +139,7 @@
             this.btnEventosCriados.TabIndex = 1;
             this.btnEventosCriados.Text = "Eventos Criados";
             this.btnEventosCriados.UseVisualStyleBackColor = false;
+            this.btnEventosCriados.Click += new System.EventHandler(this.btnEventosCriados_Click);
             // 
             // btnEventosIngressados
             // 
@@ -156,6 +157,7 @@
             this.btnEventosIngressados.TabIndex = 0;
             this.btnEventosIngressados.Text = "Eventos Ingressados";
             this.btnEventosIngressados.UseVisualStyleBackColor = false;
+            this.btnEventosIngressados.Click += new System.EventHandler(this.btnEventosIngressados_Click);
             // 
             // textBox1
             // 

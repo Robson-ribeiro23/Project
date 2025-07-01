@@ -330,5 +330,10 @@ namespace Acelera2025.Views
         {
 
         }
+
+        private void btnOrganizarEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Navegador.IrParaOrganizarEventos(this.usuario);
+        }
     }
 }

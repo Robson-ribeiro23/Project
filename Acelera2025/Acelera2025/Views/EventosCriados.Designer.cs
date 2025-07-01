@@ -1554,6 +1554,7 @@
             this.btnOrganizarEventos.TabStop = true;
             this.btnOrganizarEventos.Text = "Organizar eventos";
             this.btnOrganizarEventos.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnOrganizarEventos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnOrganizarEventos_LinkClicked);
             // 
             // btnMeusEventos
             // 

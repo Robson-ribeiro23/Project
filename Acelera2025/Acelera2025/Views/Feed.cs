@@ -230,6 +230,16 @@ namespace Acelera2025.Views
         {
 
         }
+
+        private void btnEventosIngressados_Click(object sender, EventArgs e)
+        {
+            Navegador.IrParaEventosIngressados(this.usuario);
+        }
+
+        private void btnEventosCriados_Click(object sender, EventArgs e)
+        {
+            Navegador.IrParaEventosCriados(this.usuario);
+        }
     }
 
     }

@@ -199,7 +199,7 @@
             this.tabControl1.Location = new System.Drawing.Point(86, 966);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1457, 800);
+            this.tabControl1.Size = new System.Drawing.Size(1440, 800);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 28;
             // 
@@ -208,7 +208,7 @@
             this.tabInicial.Location = new System.Drawing.Point(4, 14);
             this.tabInicial.Name = "tabInicial";
             this.tabInicial.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInicial.Size = new System.Drawing.Size(1449, 782);
+            this.tabInicial.Size = new System.Drawing.Size(1432, 782);
             this.tabInicial.TabIndex = 0;
             this.tabInicial.Text = "tabPage1";
             this.tabInicial.UseVisualStyleBackColor = true;
@@ -227,7 +227,7 @@
             this.tabIngressar.Location = new System.Drawing.Point(4, 14);
             this.tabIngressar.Name = "tabIngressar";
             this.tabIngressar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabIngressar.Size = new System.Drawing.Size(1466, 782);
+            this.tabIngressar.Size = new System.Drawing.Size(1449, 782);
             this.tabIngressar.TabIndex = 1;
             this.tabIngressar.Text = "tabPage2";
             this.tabIngressar.UseVisualStyleBackColor = true;
@@ -349,7 +349,7 @@
             this.tabCriar.Location = new System.Drawing.Point(4, 14);
             this.tabCriar.Name = "tabCriar";
             this.tabCriar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCriar.Size = new System.Drawing.Size(1466, 782);
+            this.tabCriar.Size = new System.Drawing.Size(1449, 782);
             this.tabCriar.TabIndex = 2;
             this.tabCriar.Text = "tabPage3";
             this.tabCriar.UseVisualStyleBackColor = true;
@@ -493,7 +493,7 @@
             this.tabPostar.Location = new System.Drawing.Point(4, 14);
             this.tabPostar.Name = "tabPostar";
             this.tabPostar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPostar.Size = new System.Drawing.Size(1466, 782);
+            this.tabPostar.Size = new System.Drawing.Size(1449, 782);
             this.tabPostar.TabIndex = 3;
             this.tabPostar.Text = "tabPage4";
             this.tabPostar.UseVisualStyleBackColor = true;
@@ -567,7 +567,7 @@
             this.tabPatrocinio.Location = new System.Drawing.Point(4, 14);
             this.tabPatrocinio.Name = "tabPatrocinio";
             this.tabPatrocinio.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPatrocinio.Size = new System.Drawing.Size(1466, 782);
+            this.tabPatrocinio.Size = new System.Drawing.Size(1449, 782);
             this.tabPatrocinio.TabIndex = 4;
             this.tabPatrocinio.Text = "tabPage5";
             this.tabPatrocinio.UseVisualStyleBackColor = true;
@@ -666,7 +666,7 @@
             this.tabEngajar.Location = new System.Drawing.Point(4, 14);
             this.tabEngajar.Name = "tabEngajar";
             this.tabEngajar.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEngajar.Size = new System.Drawing.Size(1466, 782);
+            this.tabEngajar.Size = new System.Drawing.Size(1449, 782);
             this.tabEngajar.TabIndex = 5;
             this.tabEngajar.Text = "tabPage6";
             this.tabEngajar.UseVisualStyleBackColor = true;
@@ -793,7 +793,7 @@
             this.tabConta.Location = new System.Drawing.Point(4, 14);
             this.tabConta.Name = "tabConta";
             this.tabConta.Padding = new System.Windows.Forms.Padding(3);
-            this.tabConta.Size = new System.Drawing.Size(1466, 782);
+            this.tabConta.Size = new System.Drawing.Size(1449, 782);
             this.tabConta.TabIndex = 6;
             this.tabConta.Text = "tabPage1";
             this.tabConta.UseVisualStyleBackColor = true;
@@ -994,7 +994,7 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1055, 4);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1038, 4);
             this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
@@ -1055,7 +1055,7 @@
             this.superiorRoundedPanel1.Location = new System.Drawing.Point(93, 294);
             this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1450, 539);
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1433, 539);
             this.superiorRoundedPanel1.TabIndex = 27;
             // 
             // roundedPanel7
@@ -1068,7 +1068,7 @@
             this.roundedPanel7.Controls.Add(this.label12);
             this.roundedPanel7.Controls.Add(this.label13);
             this.roundedPanel7.Controls.Add(this.button6);
-            this.roundedPanel7.Location = new System.Drawing.Point(2447, 4);
+            this.roundedPanel7.Location = new System.Drawing.Point(2447, -4);
             this.roundedPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel7.Name = "roundedPanel7";
             this.roundedPanel7.Size = new System.Drawing.Size(412, 434);
@@ -1124,7 +1124,7 @@
             this.roundedPanel6.Controls.Add(this.label9);
             this.roundedPanel6.Controls.Add(this.label11);
             this.roundedPanel6.Controls.Add(this.button5);
-            this.roundedPanel6.Location = new System.Drawing.Point(1965, -3);
+            this.roundedPanel6.Location = new System.Drawing.Point(1965, -11);
             this.roundedPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel6.Name = "roundedPanel6";
             this.roundedPanel6.Size = new System.Drawing.Size(412, 442);
@@ -1180,7 +1180,7 @@
             this.roundedPanel4.Controls.Add(this.label7);
             this.roundedPanel4.Controls.Add(this.label8);
             this.roundedPanel4.Controls.Add(this.button4);
-            this.roundedPanel4.Location = new System.Drawing.Point(1479, -6);
+            this.roundedPanel4.Location = new System.Drawing.Point(1479, -14);
             this.roundedPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel4.Name = "roundedPanel4";
             this.roundedPanel4.Size = new System.Drawing.Size(412, 446);
@@ -1236,7 +1236,7 @@
             this.roundedPanel3.Controls.Add(this.label5);
             this.roundedPanel3.Controls.Add(this.label6);
             this.roundedPanel3.Controls.Add(this.button3);
-            this.roundedPanel3.Location = new System.Drawing.Point(996, -6);
+            this.roundedPanel3.Location = new System.Drawing.Point(996, -14);
             this.roundedPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel3.Name = "roundedPanel3";
             this.roundedPanel3.Size = new System.Drawing.Size(412, 446);
@@ -1292,7 +1292,7 @@
             this.roundedPanel1.Controls.Add(this.label2);
             this.roundedPanel1.Controls.Add(this.label1);
             this.roundedPanel1.Controls.Add(this.button1);
-            this.roundedPanel1.Location = new System.Drawing.Point(16, -6);
+            this.roundedPanel1.Location = new System.Drawing.Point(16, -14);
             this.roundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(412, 446);
@@ -1348,7 +1348,7 @@
             this.roundedPanel2.Controls.Add(this.label3);
             this.roundedPanel2.Controls.Add(this.label4);
             this.roundedPanel2.Controls.Add(this.button2);
-            this.roundedPanel2.Location = new System.Drawing.Point(509, -6);
+            this.roundedPanel2.Location = new System.Drawing.Point(509, -14);
             this.roundedPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel2.Name = "roundedPanel2";
             this.roundedPanel2.Size = new System.Drawing.Size(412, 446);
@@ -1400,7 +1400,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label10.Location = new System.Drawing.Point(682, 225);
+            this.label10.Location = new System.Drawing.Point(674, 225);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(252, 43);
             this.label10.TabIndex = 4;
@@ -1538,6 +1538,7 @@
             this.btnPesquisar.Size = new System.Drawing.Size(43, 38);
             this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtPesquisar
             // 
