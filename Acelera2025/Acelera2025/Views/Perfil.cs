@@ -21,15 +21,30 @@ namespace Acelera2025.Views
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
         private UsuarioModels usuarioVisualizado; 
-        private UsuarioModels usuarioLogado;
+        
+
 
         public Perfil(PessoaModels usuario)
         {
             InitializeComponent();
-<<<<<<< Updated upstream
             this.usuario = usuario;
             lblNomeUsuario.Text = usuario.Nome;
             loggedUser = UsuarioControllers.loggedUser;
+            this.usuarioVisualizado = (UsuarioModels)usuario;
+
+
+
+
+            lblNomeUsuario.Text = usuario.Nome;
+            lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();
+
+            if (!string.IsNullOrEmpty(this.usuarioVisualizado.CaminhoFoto) && File.Exists(this.usuarioVisualizado.CaminhoFoto))
+            {
+                picturePerfil.Image = Image.FromFile(this.usuarioVisualizado.CaminhoFoto);
+                picPerfil.Image = Image.FromFile(this.usuarioVisualizado.CaminhoFoto);
+            }
+
+            btnSeguir.Text = loggedUser.EstaSeguindo(usuarioVisualizado) ? "Seguindo" : "Seguir";
 
             if (loggedUser != null && !string.IsNullOrEmpty(loggedUser.CaminhoFoto) && File.Exists(loggedUser.CaminhoFoto))
             {
@@ -38,37 +53,9 @@ namespace Acelera2025.Views
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
                 picPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
-=======
-
-            this.usuario = usuario;
-            this.usuarioVisualizado = (UsuarioModels)usuario; // Correção
-            this.usuarioLogado = UsuarioControllers.loggedUser;
-
-            lblNomeUsuario.Text = usuarioVisualizado.Nome;
-            lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();
-
-            if (!string.IsNullOrEmpty(usuarioVisualizado.CaminhoFoto) && File.Exists(usuarioVisualizado.CaminhoFoto))
-            {
-                picturePerfil.Image = Image.FromFile(usuarioVisualizado.CaminhoFoto);
-                picPerfil.Image = Image.FromFile(usuarioVisualizado.CaminhoFoto);
->>>>>>> Stashed changes
             }
-
-            labelSeguir.Text = usuarioLogado.EstaSeguindo(usuarioVisualizado) ? "Seguindo" : "Seguir";
         }
 
-<<<<<<< Updated upstream
-=======
-
-        //    if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
-        //  {
-        //   picturePerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
-        //   picPerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);
-        //  }
-        // }
-
-
->>>>>>> Stashed changes
         private void Perfil_Load(object sender, EventArgs e)
         {
             if (loggedUser == null) { return; }
@@ -209,19 +196,14 @@ namespace Acelera2025.Views
             Navegador.IrParaEventosCriados(this.usuario);
         }
 
-        private void lblNumSeguidores_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSeguir_Click(object sender, EventArgs e)
         {
-            bool seguindo = usuarioLogado.SeguirOuDeixarDeSeguir(usuarioVisualizado);
+            bool seguindo = loggedUser.SeguirOuDeixarDeSeguir(usuarioVisualizado);
 
-            // Atualiza texto do botão
+            
             labelSeguir.Text = seguindo ? "Seguindo" : "Seguir";
 
-            // Atualiza número de seguidores no label
+            
             lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();
         }
     }

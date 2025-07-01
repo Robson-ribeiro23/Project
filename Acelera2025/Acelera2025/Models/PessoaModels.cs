@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using Acelera2025.Models;
+using System.Collections.Generic;
 using System.Linq;
+
+
 
 public abstract class PessoaModels
 {
@@ -14,6 +17,29 @@ public abstract class PessoaModels
     public List<PostModels> Postagens { get; set; } = new List<PostModels>();
 
     protected List<EventoModels> EventosIncritos = new List<EventoModels>();
+    public List<PessoaModels> Seguindo { get; set; } = new List<PessoaModels>();
+    public List<PessoaModels> Seguidores { get; set; } = new List<PessoaModels>();
+
+    public bool EstaSeguindo(PessoaModels outro)
+    {
+        return Seguindo.Any(u => u.Email == outro.Email);
+    }
+
+    public bool SeguirOuDeixarDeSeguir(PessoaModels outro)
+    {
+        if (EstaSeguindo(outro))
+        {
+            Seguindo.RemoveAll(u => u.Email == outro.Email);
+            outro.Seguidores.RemoveAll(u => u.Email == this.Email);
+            return false;
+        }
+        else
+        {
+            Seguindo.Add(outro);
+            outro.Seguidores.Add(this);
+            return true;
+        }
+    }
 
     public List<EventoModels> GetSubbedEvents()
     {
