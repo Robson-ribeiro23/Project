@@ -137,22 +137,22 @@ namespace Acelera2025.Views
 
         private void linkLabel4_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Navegador.IrParaOrganizarEventos(this.usuario);
+            Navegador.IrParaOrganizarEventos(this.loggedUser);
         }
 
         private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Navegador.IrParaAjuda(this.usuario);
+            Navegador.IrParaAjuda(this.loggedUser);
         }
 
         private void btnSobreNos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Navegador.IrParaSobreNos(this.usuario);
+            Navegador.IrParaSobreNos(this.loggedUser);
         }
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Navegador.IrParaHome(this.usuario);
+            Navegador.IrParaHome(this.loggedUser);
         }
 
         private void picturePerfil_Click(object sender, EventArgs e)
@@ -171,7 +171,7 @@ namespace Acelera2025.Views
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            Navegador.IrParaPesquisa(this.usuario);
+            Navegador.IrParaPesquisa(this.loggedUser);
         }
 
         private void btnNotificacoes_Click(object sender, EventArgs e)
@@ -183,7 +183,7 @@ namespace Acelera2025.Views
 
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Navegador.IrParaFeed(this.usuario);
+            Navegador.IrParaFeed(this.loggedUser);
         }
 
         private void picPerfil_Click(object sender, EventArgs e)
@@ -198,12 +198,12 @@ namespace Acelera2025.Views
 
         private void roundedButton5_Click(object sender, EventArgs e)
         {
-            Navegador.IrParaEventosIngressados(this.usuario);
+            Navegador.IrParaEventosIngressados(this.loggedUser);
         }
 
         private void roundedButton4_Click(object sender, EventArgs e)
         {
-            Navegador.IrParaEventosCriados(this.usuario);
+            Navegador.IrParaEventosCriados(this.loggedUser);
         }
 
         private void btnSeguir_Click(object sender, EventArgs e)
