@@ -31,11 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventosCriados));
             this.EditarInformacoes = new System.Windows.Forms.TabControl();
             this.VisaoGeral = new System.Windows.Forms.TabPage();
-            this.Patrocinador5 = new Acelera2025.Views.Tools.CircularPictureBox();
-            this.Patrocinador4 = new Acelera2025.Views.Tools.CircularPictureBox();
-            this.Patrocinador3 = new Acelera2025.Views.Tools.CircularPictureBox();
-            this.Patrocinador2 = new Acelera2025.Views.Tools.CircularPictureBox();
-            this.Patrocinador1 = new Acelera2025.Views.Tools.CircularPictureBox();
             this.panelPresencial = new System.Windows.Forms.Panel();
             this.lblNomeLocal = new System.Windows.Forms.Label();
             this.lblCEP = new System.Windows.Forms.Label();
@@ -59,9 +54,7 @@
             this.lblHora = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.lblNomeEvento = new System.Windows.Forms.Label();
-            this.PicEvento = new SuperiorRoundedPic();
             this.Participantes = new System.Windows.Forms.TabPage();
-            this.picAltoRendimento = new Acelera2025.Ferramentas.RoundedPicture();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -70,9 +63,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblParticipantes = new System.Windows.Forms.Label();
-            this.btnConvidarParticipante = new RoundedButton();
-            this.picMedioRendimento = new Acelera2025.Ferramentas.RoundedPicture();
-            this.picBaixoRendimento = new Acelera2025.Ferramentas.RoundedPicture();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.presencial = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
@@ -80,6 +70,30 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.online = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.data = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panelMeusEventos = new RoundedPanel();
+            this.btnEventosCriados = new RoundedButton();
+            this.btnEventosIngressados = new RoundedButton();
+            this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
+            this.comboEventosCriados = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Patrocinador5 = new Acelera2025.Views.Tools.CircularPictureBox();
+            this.Patrocinador4 = new Acelera2025.Views.Tools.CircularPictureBox();
+            this.Patrocinador3 = new Acelera2025.Views.Tools.CircularPictureBox();
+            this.Patrocinador2 = new Acelera2025.Views.Tools.CircularPictureBox();
+            this.Patrocinador1 = new Acelera2025.Views.Tools.CircularPictureBox();
+            this.PicEvento = new SuperiorRoundedPic();
+            this.picAltoRendimento = new Acelera2025.Ferramentas.RoundedPicture();
+            this.btnConvidarParticipante = new RoundedButton();
+            this.picMedioRendimento = new Acelera2025.Ferramentas.RoundedPicture();
+            this.picBaixoRendimento = new Acelera2025.Ferramentas.RoundedPicture();
             this.roundedPanel9 = new RoundedPanel();
             this.txtCEP = new System.Windows.Forms.TextBox();
             this.roundedPanel8 = new RoundedPanel();
@@ -92,16 +106,8 @@
             this.txtNomeLocal = new System.Windows.Forms.TextBox();
             this.btnExcluir = new RoundedButton();
             this.btnAtualizar = new RoundedButton();
-            this.label24 = new System.Windows.Forms.Label();
-            this.online = new System.Windows.Forms.Panel();
             this.roundedPanel11 = new RoundedPanel();
             this.txtLink = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.data = new System.Windows.Forms.DateTimePicker();
-            this.label11 = new System.Windows.Forms.Label();
             this.roundedPanel10 = new RoundedPanel();
             this.txtNovaDescricao = new System.Windows.Forms.TextBox();
             this.btnTrocarImagem = new RoundedButton();
@@ -112,12 +118,6 @@
             this.roundedPanel1 = new RoundedPanel();
             this.txtNomeEvento = new System.Windows.Forms.TextBox();
             this.PicImagemEvento = new SuperiorRoundedPic();
-            this.panelMeusEventos = new RoundedPanel();
-            this.btnEventosCriados = new RoundedButton();
-            this.btnEventosIngressados = new RoundedButton();
-            this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
-            this.comboEventosCriados = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
             this.btnFeed = new System.Windows.Forms.LinkLabel();
             this.picturePerfil = new Acelera2025.Views.Tools.CircularPictureBox();
@@ -133,34 +133,34 @@
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
             this.EditarInformacoes.SuspendLayout();
             this.VisaoGeral.SuspendLayout();
+            this.panelPresencial.SuspendLayout();
+            this.panelOnline.SuspendLayout();
+            this.Participantes.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.presencial.SuspendLayout();
+            this.online.SuspendLayout();
+            this.panelMeusEventos.SuspendLayout();
+            this.superiorRoundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador1)).BeginInit();
-            this.panelPresencial.SuspendLayout();
-            this.panelOnline.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).BeginInit();
-            this.Participantes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAltoRendimento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMedioRendimento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBaixoRendimento)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            this.presencial.SuspendLayout();
             this.roundedPanel9.SuspendLayout();
             this.roundedPanel8.SuspendLayout();
             this.roundedPanel7.SuspendLayout();
             this.roundedPanel6.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
-            this.online.SuspendLayout();
             this.roundedPanel11.SuspendLayout();
             this.roundedPanel10.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicImagemEvento)).BeginInit();
-            this.panelMeusEventos.SuspendLayout();
-            this.superiorRoundedPanel1.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -217,101 +217,6 @@
             this.VisaoGeral.TabIndex = 0;
             this.VisaoGeral.Text = "Visão Geral";
             this.VisaoGeral.Click += new System.EventHandler(this.VisaoGeral_Click);
-            // 
-            // Patrocinador5
-            // 
-            this.Patrocinador5.BackColor = System.Drawing.Color.Transparent;
-            this.Patrocinador5.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.Patrocinador5.BorderColor = System.Drawing.Color.Transparent;
-            this.Patrocinador5.BorderColor2 = System.Drawing.Color.Transparent;
-            this.Patrocinador5.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.Patrocinador5.BorderSize = 0;
-            this.Patrocinador5.GradientAngle = 50F;
-            this.Patrocinador5.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
-            this.Patrocinador5.Location = new System.Drawing.Point(1080, 185);
-            this.Patrocinador5.Margin = new System.Windows.Forms.Padding(4);
-            this.Patrocinador5.Name = "Patrocinador5";
-            this.Patrocinador5.Size = new System.Drawing.Size(72, 72);
-            this.Patrocinador5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Patrocinador5.TabIndex = 26;
-            this.Patrocinador5.TabStop = false;
-            this.Patrocinador5.Click += new System.EventHandler(this.Patrocinador5_Click);
-            // 
-            // Patrocinador4
-            // 
-            this.Patrocinador4.BackColor = System.Drawing.Color.Transparent;
-            this.Patrocinador4.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.Patrocinador4.BorderColor = System.Drawing.Color.Transparent;
-            this.Patrocinador4.BorderColor2 = System.Drawing.Color.Transparent;
-            this.Patrocinador4.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.Patrocinador4.BorderSize = 0;
-            this.Patrocinador4.GradientAngle = 50F;
-            this.Patrocinador4.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
-            this.Patrocinador4.Location = new System.Drawing.Point(1000, 185);
-            this.Patrocinador4.Margin = new System.Windows.Forms.Padding(4);
-            this.Patrocinador4.Name = "Patrocinador4";
-            this.Patrocinador4.Size = new System.Drawing.Size(72, 72);
-            this.Patrocinador4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Patrocinador4.TabIndex = 25;
-            this.Patrocinador4.TabStop = false;
-            this.Patrocinador4.Click += new System.EventHandler(this.Patrocinador4_Click);
-            // 
-            // Patrocinador3
-            // 
-            this.Patrocinador3.BackColor = System.Drawing.Color.Transparent;
-            this.Patrocinador3.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.Patrocinador3.BorderColor = System.Drawing.Color.Transparent;
-            this.Patrocinador3.BorderColor2 = System.Drawing.Color.Transparent;
-            this.Patrocinador3.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.Patrocinador3.BorderSize = 0;
-            this.Patrocinador3.GradientAngle = 50F;
-            this.Patrocinador3.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
-            this.Patrocinador3.Location = new System.Drawing.Point(920, 185);
-            this.Patrocinador3.Margin = new System.Windows.Forms.Padding(4);
-            this.Patrocinador3.Name = "Patrocinador3";
-            this.Patrocinador3.Size = new System.Drawing.Size(72, 72);
-            this.Patrocinador3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Patrocinador3.TabIndex = 24;
-            this.Patrocinador3.TabStop = false;
-            this.Patrocinador3.Click += new System.EventHandler(this.Patrocinador3_Click);
-            // 
-            // Patrocinador2
-            // 
-            this.Patrocinador2.BackColor = System.Drawing.Color.Transparent;
-            this.Patrocinador2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.Patrocinador2.BorderColor = System.Drawing.Color.Transparent;
-            this.Patrocinador2.BorderColor2 = System.Drawing.Color.Transparent;
-            this.Patrocinador2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.Patrocinador2.BorderSize = 0;
-            this.Patrocinador2.GradientAngle = 50F;
-            this.Patrocinador2.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
-            this.Patrocinador2.Location = new System.Drawing.Point(840, 185);
-            this.Patrocinador2.Margin = new System.Windows.Forms.Padding(4);
-            this.Patrocinador2.Name = "Patrocinador2";
-            this.Patrocinador2.Size = new System.Drawing.Size(72, 72);
-            this.Patrocinador2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Patrocinador2.TabIndex = 23;
-            this.Patrocinador2.TabStop = false;
-            this.Patrocinador2.Click += new System.EventHandler(this.Patrocinador2_Click);
-            // 
-            // Patrocinador1
-            // 
-            this.Patrocinador1.BackColor = System.Drawing.Color.Transparent;
-            this.Patrocinador1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.Patrocinador1.BorderColor = System.Drawing.Color.Transparent;
-            this.Patrocinador1.BorderColor2 = System.Drawing.Color.Transparent;
-            this.Patrocinador1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.Patrocinador1.BorderSize = 0;
-            this.Patrocinador1.GradientAngle = 50F;
-            this.Patrocinador1.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
-            this.Patrocinador1.Location = new System.Drawing.Point(760, 185);
-            this.Patrocinador1.Margin = new System.Windows.Forms.Padding(4);
-            this.Patrocinador1.Name = "Patrocinador1";
-            this.Patrocinador1.Size = new System.Drawing.Size(72, 72);
-            this.Patrocinador1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Patrocinador1.TabIndex = 18;
-            this.Patrocinador1.TabStop = false;
-            this.Patrocinador1.Click += new System.EventHandler(this.Patrocinador1_Click);
             // 
             // panelPresencial
             // 
@@ -587,20 +492,6 @@
             this.lblNomeEvento.TabIndex = 1;
             this.lblNomeEvento.Text = "Nome do Evento";
             // 
-            // PicEvento
-            // 
-            this.PicEvento.BackColor = System.Drawing.Color.Gainsboro;
-            this.PicEvento.BorderColor = System.Drawing.Color.Black;
-            this.PicEvento.BorderRadius = 20;
-            this.PicEvento.BorderSize = 0;
-            this.PicEvento.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.PicEvento.Location = new System.Drawing.Point(35, 25);
-            this.PicEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PicEvento.Name = "PicEvento";
-            this.PicEvento.Size = new System.Drawing.Size(675, 224);
-            this.PicEvento.TabIndex = 0;
-            this.PicEvento.TabStop = false;
-            // 
             // Participantes
             // 
             this.Participantes.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -623,21 +514,6 @@
             this.Participantes.Size = new System.Drawing.Size(1616, 566);
             this.Participantes.TabIndex = 1;
             this.Participantes.Text = "Participantes";
-            // 
-            // picAltoRendimento
-            // 
-            this.picAltoRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picAltoRendimento.BorderColor = System.Drawing.Color.Black;
-            this.picAltoRendimento.BorderRadius = 20;
-            this.picAltoRendimento.BorderSize = 0;
-            this.picAltoRendimento.Image = global::Acelera2025.Properties.Resources.altoEngajamento;
-            this.picAltoRendimento.Location = new System.Drawing.Point(807, 210);
-            this.picAltoRendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picAltoRendimento.Name = "picAltoRendimento";
-            this.picAltoRendimento.Size = new System.Drawing.Size(108, 108);
-            this.picAltoRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAltoRendimento.TabIndex = 15;
-            this.picAltoRendimento.TabStop = false;
             // 
             // label9
             // 
@@ -733,53 +609,6 @@
             this.lblParticipantes.Size = new System.Drawing.Size(72, 65);
             this.lblParticipantes.TabIndex = 2;
             this.lblParticipantes.Text = "XX";
-            // 
-            // btnConvidarParticipante
-            // 
-            this.btnConvidarParticipante.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnConvidarParticipante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnConvidarParticipante.BorderColor = System.Drawing.Color.Black;
-            this.btnConvidarParticipante.BorderRadius = 20;
-            this.btnConvidarParticipante.BorderSize = 0;
-            this.btnConvidarParticipante.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnConvidarParticipante.Location = new System.Drawing.Point(107, 331);
-            this.btnConvidarParticipante.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnConvidarParticipante.Name = "btnConvidarParticipante";
-            this.btnConvidarParticipante.Size = new System.Drawing.Size(204, 55);
-            this.btnConvidarParticipante.TabIndex = 4;
-            this.btnConvidarParticipante.Text = "Convidar Participante";
-            this.btnConvidarParticipante.UseVisualStyleBackColor = false;
-            this.btnConvidarParticipante.Click += new System.EventHandler(this.btnConvidarParticipante_Click);
-            // 
-            // picMedioRendimento
-            // 
-            this.picMedioRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picMedioRendimento.BorderColor = System.Drawing.Color.Black;
-            this.picMedioRendimento.BorderRadius = 20;
-            this.picMedioRendimento.BorderSize = 0;
-            this.picMedioRendimento.Image = global::Acelera2025.Properties.Resources.medioEngajamento;
-            this.picMedioRendimento.Location = new System.Drawing.Point(667, 210);
-            this.picMedioRendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picMedioRendimento.Name = "picMedioRendimento";
-            this.picMedioRendimento.Size = new System.Drawing.Size(108, 108);
-            this.picMedioRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMedioRendimento.TabIndex = 13;
-            this.picMedioRendimento.TabStop = false;
-            // 
-            // picBaixoRendimento
-            // 
-            this.picBaixoRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picBaixoRendimento.BorderColor = System.Drawing.Color.Navy;
-            this.picBaixoRendimento.BorderRadius = 20;
-            this.picBaixoRendimento.BorderSize = 0;
-            this.picBaixoRendimento.Image = global::Acelera2025.Properties.Resources.baixoEngajamento;
-            this.picBaixoRendimento.Location = new System.Drawing.Point(520, 210);
-            this.picBaixoRendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picBaixoRendimento.Name = "picBaixoRendimento";
-            this.picBaixoRendimento.Size = new System.Drawing.Size(108, 108);
-            this.picBaixoRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBaixoRendimento.TabIndex = 11;
-            this.picBaixoRendimento.TabStop = false;
             // 
             // tabPage3
             // 
@@ -885,6 +714,362 @@
             this.label19.Size = new System.Drawing.Size(139, 32);
             this.label19.TabIndex = 56;
             this.label19.Text = "Nome do Local:";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label24.Location = new System.Drawing.Point(749, 292);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(94, 32);
+            this.label24.TabIndex = 60;
+            this.label24.Text = "Descrição:";
+            // 
+            // online
+            // 
+            this.online.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.online.Controls.Add(this.roundedPanel11);
+            this.online.Controls.Add(this.label25);
+            this.online.Location = new System.Drawing.Point(69, 482);
+            this.online.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.online.Name = "online";
+            this.online.Size = new System.Drawing.Size(608, 78);
+            this.online.TabIndex = 56;
+            // 
+            // label25
+            // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label25.Location = new System.Drawing.Point(4, 2);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(135, 32);
+            this.label25.TabIndex = 29;
+            this.label25.Text = "Link de Acesso:";
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label17.Location = new System.Drawing.Point(463, 128);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(191, 32);
+            this.label17.TabIndex = 45;
+            this.label17.Text = "Limite de Participantes";
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label16.Location = new System.Drawing.Point(302, 128);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(57, 32);
+            this.label16.TabIndex = 43;
+            this.label16.Text = "Hora:";
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label15.Location = new System.Drawing.Point(63, 128);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(55, 32);
+            this.label15.TabIndex = 41;
+            this.label15.Text = "Data:";
+            // 
+            // data
+            // 
+            this.data.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.data.Location = new System.Drawing.Point(69, 162);
+            this.data.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.data.Name = "data";
+            this.data.Size = new System.Drawing.Size(200, 35);
+            this.data.TabIndex = 40;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label11.Location = new System.Drawing.Point(63, 39);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(153, 32);
+            this.label11.TabIndex = 39;
+            this.label11.Text = "Nome do evento:";
+            // 
+            // panelMeusEventos
+            // 
+            this.panelMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelMeusEventos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelMeusEventos.BorderColor = System.Drawing.Color.Black;
+            this.panelMeusEventos.BorderRadius = 20;
+            this.panelMeusEventos.BorderSize = 0;
+            this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
+            this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1151, 57);
+            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMeusEventos.Name = "panelMeusEventos";
+            this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
+            this.panelMeusEventos.TabIndex = 26;
+            this.panelMeusEventos.Visible = false;
+            // 
+            // btnEventosCriados
+            // 
+            this.btnEventosCriados.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEventosCriados.BorderColor = System.Drawing.Color.Black;
+            this.btnEventosCriados.BorderRadius = 20;
+            this.btnEventosCriados.BorderSize = 0;
+            this.btnEventosCriados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEventosCriados.Location = new System.Drawing.Point(0, 49);
+            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEventosCriados.Name = "btnEventosCriados";
+            this.btnEventosCriados.Size = new System.Drawing.Size(245, 50);
+            this.btnEventosCriados.TabIndex = 1;
+            this.btnEventosCriados.Text = "Eventos Criados";
+            this.btnEventosCriados.UseVisualStyleBackColor = false;
+            // 
+            // btnEventosIngressados
+            // 
+            this.btnEventosIngressados.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnEventosIngressados.BorderColor = System.Drawing.Color.Black;
+            this.btnEventosIngressados.BorderRadius = 20;
+            this.btnEventosIngressados.BorderSize = 0;
+            this.btnEventosIngressados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEventosIngressados.Location = new System.Drawing.Point(0, 2);
+            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEventosIngressados.Name = "btnEventosIngressados";
+            this.btnEventosIngressados.Size = new System.Drawing.Size(245, 55);
+            this.btnEventosIngressados.TabIndex = 0;
+            this.btnEventosIngressados.Text = "Eventos Ingressados";
+            this.btnEventosIngressados.UseVisualStyleBackColor = false;
+            this.btnEventosIngressados.Click += new System.EventHandler(this.btnEventosIngressados_Click);
+            // 
+            // superiorRoundedPanel1
+            // 
+            this.superiorRoundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.superiorRoundedPanel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.superiorRoundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.superiorRoundedPanel1.BorderRadius = 20;
+            this.superiorRoundedPanel1.BorderSize = 0;
+            this.superiorRoundedPanel1.Controls.Add(this.comboEventosCriados);
+            this.superiorRoundedPanel1.Controls.Add(this.label14);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(33, 89);
+            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1624, 55);
+            this.superiorRoundedPanel1.TabIndex = 25;
+            this.superiorRoundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.superiorRoundedPanel1_Paint);
+            // 
+            // comboEventosCriados
+            // 
+            this.comboEventosCriados.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.comboEventosCriados.BackColor = System.Drawing.Color.Gainsboro;
+            this.comboEventosCriados.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboEventosCriados.FormattingEnabled = true;
+            this.comboEventosCriados.Location = new System.Drawing.Point(285, 11);
+            this.comboEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboEventosCriados.Name = "comboEventosCriados";
+            this.comboEventosCriados.Size = new System.Drawing.Size(431, 35);
+            this.comboEventosCriados.TabIndex = 21;
+            this.comboEventosCriados.SelectedIndexChanged += new System.EventHandler(this.comboEventosCriados_SelectedIndexChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label14.Location = new System.Drawing.Point(3, 14);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(217, 32);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Eventos criados por você:";
+            // 
+            // Patrocinador5
+            // 
+            this.Patrocinador5.BackColor = System.Drawing.Color.Transparent;
+            this.Patrocinador5.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.Patrocinador5.BorderColor = System.Drawing.Color.Transparent;
+            this.Patrocinador5.BorderColor2 = System.Drawing.Color.Transparent;
+            this.Patrocinador5.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.Patrocinador5.BorderSize = 0;
+            this.Patrocinador5.GradientAngle = 50F;
+            this.Patrocinador5.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
+            this.Patrocinador5.Location = new System.Drawing.Point(1080, 185);
+            this.Patrocinador5.Margin = new System.Windows.Forms.Padding(4);
+            this.Patrocinador5.Name = "Patrocinador5";
+            this.Patrocinador5.Size = new System.Drawing.Size(72, 72);
+            this.Patrocinador5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Patrocinador5.TabIndex = 26;
+            this.Patrocinador5.TabStop = false;
+            this.Patrocinador5.Click += new System.EventHandler(this.Patrocinador5_Click);
+            // 
+            // Patrocinador4
+            // 
+            this.Patrocinador4.BackColor = System.Drawing.Color.Transparent;
+            this.Patrocinador4.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.Patrocinador4.BorderColor = System.Drawing.Color.Transparent;
+            this.Patrocinador4.BorderColor2 = System.Drawing.Color.Transparent;
+            this.Patrocinador4.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.Patrocinador4.BorderSize = 0;
+            this.Patrocinador4.GradientAngle = 50F;
+            this.Patrocinador4.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
+            this.Patrocinador4.Location = new System.Drawing.Point(1000, 185);
+            this.Patrocinador4.Margin = new System.Windows.Forms.Padding(4);
+            this.Patrocinador4.Name = "Patrocinador4";
+            this.Patrocinador4.Size = new System.Drawing.Size(72, 72);
+            this.Patrocinador4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Patrocinador4.TabIndex = 25;
+            this.Patrocinador4.TabStop = false;
+            this.Patrocinador4.Click += new System.EventHandler(this.Patrocinador4_Click);
+            // 
+            // Patrocinador3
+            // 
+            this.Patrocinador3.BackColor = System.Drawing.Color.Transparent;
+            this.Patrocinador3.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.Patrocinador3.BorderColor = System.Drawing.Color.Transparent;
+            this.Patrocinador3.BorderColor2 = System.Drawing.Color.Transparent;
+            this.Patrocinador3.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.Patrocinador3.BorderSize = 0;
+            this.Patrocinador3.GradientAngle = 50F;
+            this.Patrocinador3.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
+            this.Patrocinador3.Location = new System.Drawing.Point(920, 185);
+            this.Patrocinador3.Margin = new System.Windows.Forms.Padding(4);
+            this.Patrocinador3.Name = "Patrocinador3";
+            this.Patrocinador3.Size = new System.Drawing.Size(72, 72);
+            this.Patrocinador3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Patrocinador3.TabIndex = 24;
+            this.Patrocinador3.TabStop = false;
+            this.Patrocinador3.Click += new System.EventHandler(this.Patrocinador3_Click);
+            // 
+            // Patrocinador2
+            // 
+            this.Patrocinador2.BackColor = System.Drawing.Color.Transparent;
+            this.Patrocinador2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.Patrocinador2.BorderColor = System.Drawing.Color.Transparent;
+            this.Patrocinador2.BorderColor2 = System.Drawing.Color.Transparent;
+            this.Patrocinador2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.Patrocinador2.BorderSize = 0;
+            this.Patrocinador2.GradientAngle = 50F;
+            this.Patrocinador2.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
+            this.Patrocinador2.Location = new System.Drawing.Point(840, 185);
+            this.Patrocinador2.Margin = new System.Windows.Forms.Padding(4);
+            this.Patrocinador2.Name = "Patrocinador2";
+            this.Patrocinador2.Size = new System.Drawing.Size(72, 72);
+            this.Patrocinador2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Patrocinador2.TabIndex = 23;
+            this.Patrocinador2.TabStop = false;
+            this.Patrocinador2.Click += new System.EventHandler(this.Patrocinador2_Click);
+            // 
+            // Patrocinador1
+            // 
+            this.Patrocinador1.BackColor = System.Drawing.Color.Transparent;
+            this.Patrocinador1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.Patrocinador1.BorderColor = System.Drawing.Color.Transparent;
+            this.Patrocinador1.BorderColor2 = System.Drawing.Color.Transparent;
+            this.Patrocinador1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.Patrocinador1.BorderSize = 0;
+            this.Patrocinador1.GradientAngle = 50F;
+            this.Patrocinador1.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
+            this.Patrocinador1.Location = new System.Drawing.Point(760, 185);
+            this.Patrocinador1.Margin = new System.Windows.Forms.Padding(4);
+            this.Patrocinador1.Name = "Patrocinador1";
+            this.Patrocinador1.Size = new System.Drawing.Size(72, 72);
+            this.Patrocinador1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Patrocinador1.TabIndex = 18;
+            this.Patrocinador1.TabStop = false;
+            this.Patrocinador1.Click += new System.EventHandler(this.Patrocinador1_Click);
+            // 
+            // PicEvento
+            // 
+            this.PicEvento.BackColor = System.Drawing.Color.Gainsboro;
+            this.PicEvento.BorderColor = System.Drawing.Color.Black;
+            this.PicEvento.BorderRadius = 20;
+            this.PicEvento.BorderSize = 0;
+            this.PicEvento.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.PicEvento.Location = new System.Drawing.Point(35, 25);
+            this.PicEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PicEvento.Name = "PicEvento";
+            this.PicEvento.Size = new System.Drawing.Size(675, 224);
+            this.PicEvento.TabIndex = 0;
+            this.PicEvento.TabStop = false;
+            // 
+            // picAltoRendimento
+            // 
+            this.picAltoRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picAltoRendimento.BorderColor = System.Drawing.Color.Black;
+            this.picAltoRendimento.BorderRadius = 20;
+            this.picAltoRendimento.BorderSize = 0;
+            this.picAltoRendimento.Image = global::Acelera2025.Properties.Resources.altoEngajamento;
+            this.picAltoRendimento.Location = new System.Drawing.Point(807, 210);
+            this.picAltoRendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picAltoRendimento.Name = "picAltoRendimento";
+            this.picAltoRendimento.Size = new System.Drawing.Size(108, 108);
+            this.picAltoRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAltoRendimento.TabIndex = 15;
+            this.picAltoRendimento.TabStop = false;
+            // 
+            // btnConvidarParticipante
+            // 
+            this.btnConvidarParticipante.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnConvidarParticipante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.btnConvidarParticipante.BorderColor = System.Drawing.Color.Black;
+            this.btnConvidarParticipante.BorderRadius = 20;
+            this.btnConvidarParticipante.BorderSize = 0;
+            this.btnConvidarParticipante.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnConvidarParticipante.Location = new System.Drawing.Point(107, 331);
+            this.btnConvidarParticipante.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConvidarParticipante.Name = "btnConvidarParticipante";
+            this.btnConvidarParticipante.Size = new System.Drawing.Size(204, 55);
+            this.btnConvidarParticipante.TabIndex = 4;
+            this.btnConvidarParticipante.Text = "Convidar Participante";
+            this.btnConvidarParticipante.UseVisualStyleBackColor = false;
+            this.btnConvidarParticipante.Click += new System.EventHandler(this.btnConvidarParticipante_Click);
+            // 
+            // picMedioRendimento
+            // 
+            this.picMedioRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picMedioRendimento.BorderColor = System.Drawing.Color.Black;
+            this.picMedioRendimento.BorderRadius = 20;
+            this.picMedioRendimento.BorderSize = 0;
+            this.picMedioRendimento.Image = global::Acelera2025.Properties.Resources.medioEngajamento;
+            this.picMedioRendimento.Location = new System.Drawing.Point(667, 210);
+            this.picMedioRendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picMedioRendimento.Name = "picMedioRendimento";
+            this.picMedioRendimento.Size = new System.Drawing.Size(108, 108);
+            this.picMedioRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMedioRendimento.TabIndex = 13;
+            this.picMedioRendimento.TabStop = false;
+            // 
+            // picBaixoRendimento
+            // 
+            this.picBaixoRendimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picBaixoRendimento.BorderColor = System.Drawing.Color.Navy;
+            this.picBaixoRendimento.BorderRadius = 20;
+            this.picBaixoRendimento.BorderSize = 0;
+            this.picBaixoRendimento.Image = global::Acelera2025.Properties.Resources.baixoEngajamento;
+            this.picBaixoRendimento.Location = new System.Drawing.Point(520, 210);
+            this.picBaixoRendimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picBaixoRendimento.Name = "picBaixoRendimento";
+            this.picBaixoRendimento.Size = new System.Drawing.Size(108, 108);
+            this.picBaixoRendimento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBaixoRendimento.TabIndex = 11;
+            this.picBaixoRendimento.TabStop = false;
             // 
             // roundedPanel9
             // 
@@ -1023,6 +1208,7 @@
             this.btnExcluir.TabIndex = 62;
             this.btnExcluir.Text = "Excluir Evento";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAtualizar
             // 
@@ -1042,29 +1228,6 @@
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
-            // 
-            // label24
-            // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label24.Location = new System.Drawing.Point(749, 292);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(94, 32);
-            this.label24.TabIndex = 60;
-            this.label24.Text = "Descrição:";
-            // 
-            // online
-            // 
-            this.online.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.online.Controls.Add(this.roundedPanel11);
-            this.online.Controls.Add(this.label25);
-            this.online.Location = new System.Drawing.Point(69, 482);
-            this.online.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.online.Name = "online";
-            this.online.Size = new System.Drawing.Size(608, 78);
-            this.online.TabIndex = 56;
             // 
             // roundedPanel11
             // 
@@ -1089,75 +1252,6 @@
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(533, 39);
             this.txtLink.TabIndex = 0;
-            // 
-            // label25
-            // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label25.Location = new System.Drawing.Point(4, 2);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(135, 32);
-            this.label25.TabIndex = 29;
-            this.label25.Text = "Link de Acesso:";
-            // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label17.Location = new System.Drawing.Point(463, 128);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(191, 32);
-            this.label17.TabIndex = 45;
-            this.label17.Text = "Limite de Participantes";
-            // 
-            // label16
-            // 
-            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label16.Location = new System.Drawing.Point(302, 128);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(57, 32);
-            this.label16.TabIndex = 43;
-            this.label16.Text = "Hora:";
-            // 
-            // label15
-            // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label15.Location = new System.Drawing.Point(63, 128);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(55, 32);
-            this.label15.TabIndex = 41;
-            this.label15.Text = "Data:";
-            // 
-            // data
-            // 
-            this.data.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.data.Location = new System.Drawing.Point(69, 162);
-            this.data.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.data.Name = "data";
-            this.data.Size = new System.Drawing.Size(200, 35);
-            this.data.TabIndex = 40;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label11.Location = new System.Drawing.Point(63, 39);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(153, 32);
-            this.label11.TabIndex = 39;
-            this.label11.Text = "Nome do evento:";
             // 
             // roundedPanel10
             // 
@@ -1290,99 +1384,6 @@
             this.PicImagemEvento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicImagemEvento.TabIndex = 57;
             this.PicImagemEvento.TabStop = false;
-            // 
-            // panelMeusEventos
-            // 
-            this.panelMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelMeusEventos.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panelMeusEventos.BorderColor = System.Drawing.Color.Black;
-            this.panelMeusEventos.BorderRadius = 20;
-            this.panelMeusEventos.BorderSize = 0;
-            this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
-            this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1151, 57);
-            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelMeusEventos.Name = "panelMeusEventos";
-            this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
-            this.panelMeusEventos.TabIndex = 26;
-            this.panelMeusEventos.Visible = false;
-            // 
-            // btnEventosCriados
-            // 
-            this.btnEventosCriados.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEventosCriados.BorderColor = System.Drawing.Color.Black;
-            this.btnEventosCriados.BorderRadius = 20;
-            this.btnEventosCriados.BorderSize = 0;
-            this.btnEventosCriados.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEventosCriados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEventosCriados.Location = new System.Drawing.Point(0, 49);
-            this.btnEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEventosCriados.Name = "btnEventosCriados";
-            this.btnEventosCriados.Size = new System.Drawing.Size(245, 50);
-            this.btnEventosCriados.TabIndex = 1;
-            this.btnEventosCriados.Text = "Eventos Criados";
-            this.btnEventosCriados.UseVisualStyleBackColor = false;
-            // 
-            // btnEventosIngressados
-            // 
-            this.btnEventosIngressados.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEventosIngressados.BorderColor = System.Drawing.Color.Black;
-            this.btnEventosIngressados.BorderRadius = 20;
-            this.btnEventosIngressados.BorderSize = 0;
-            this.btnEventosIngressados.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEventosIngressados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEventosIngressados.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnEventosIngressados.Location = new System.Drawing.Point(0, 2);
-            this.btnEventosIngressados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEventosIngressados.Name = "btnEventosIngressados";
-            this.btnEventosIngressados.Size = new System.Drawing.Size(245, 55);
-            this.btnEventosIngressados.TabIndex = 0;
-            this.btnEventosIngressados.Text = "Eventos Ingressados";
-            this.btnEventosIngressados.UseVisualStyleBackColor = false;
-            this.btnEventosIngressados.Click += new System.EventHandler(this.btnEventosIngressados_Click);
-            // 
-            // superiorRoundedPanel1
-            // 
-            this.superiorRoundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.superiorRoundedPanel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.superiorRoundedPanel1.BorderColor = System.Drawing.Color.Black;
-            this.superiorRoundedPanel1.BorderRadius = 20;
-            this.superiorRoundedPanel1.BorderSize = 0;
-            this.superiorRoundedPanel1.Controls.Add(this.comboEventosCriados);
-            this.superiorRoundedPanel1.Controls.Add(this.label14);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(33, 89);
-            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1624, 55);
-            this.superiorRoundedPanel1.TabIndex = 25;
-            this.superiorRoundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.superiorRoundedPanel1_Paint);
-            // 
-            // comboEventosCriados
-            // 
-            this.comboEventosCriados.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboEventosCriados.BackColor = System.Drawing.Color.Gainsboro;
-            this.comboEventosCriados.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboEventosCriados.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboEventosCriados.FormattingEnabled = true;
-            this.comboEventosCriados.Location = new System.Drawing.Point(285, 11);
-            this.comboEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboEventosCriados.Name = "comboEventosCriados";
-            this.comboEventosCriados.Size = new System.Drawing.Size(431, 35);
-            this.comboEventosCriados.TabIndex = 21;
-            this.comboEventosCriados.SelectedIndexChanged += new System.EventHandler(this.comboEventosCriados_SelectedIndexChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label14.Location = new System.Drawing.Point(3, 14);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(217, 32);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Eventos criados por você:";
             // 
             // gradientPanel1
             // 
@@ -1619,25 +1620,30 @@
             this.EditarInformacoes.ResumeLayout(false);
             this.VisaoGeral.ResumeLayout(false);
             this.VisaoGeral.PerformLayout();
+            this.panelPresencial.ResumeLayout(false);
+            this.panelPresencial.PerformLayout();
+            this.panelOnline.ResumeLayout(false);
+            this.panelOnline.PerformLayout();
+            this.Participantes.ResumeLayout(false);
+            this.Participantes.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.presencial.ResumeLayout(false);
+            this.presencial.PerformLayout();
+            this.online.ResumeLayout(false);
+            this.online.PerformLayout();
+            this.panelMeusEventos.ResumeLayout(false);
+            this.superiorRoundedPanel1.ResumeLayout(false);
+            this.superiorRoundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador1)).EndInit();
-            this.panelPresencial.ResumeLayout(false);
-            this.panelPresencial.PerformLayout();
-            this.panelOnline.ResumeLayout(false);
-            this.panelOnline.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).EndInit();
-            this.Participantes.ResumeLayout(false);
-            this.Participantes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAltoRendimento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMedioRendimento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBaixoRendimento)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.presencial.ResumeLayout(false);
-            this.presencial.PerformLayout();
             this.roundedPanel9.ResumeLayout(false);
             this.roundedPanel9.PerformLayout();
             this.roundedPanel8.ResumeLayout(false);
@@ -1648,8 +1654,6 @@
             this.roundedPanel6.PerformLayout();
             this.roundedPanel4.ResumeLayout(false);
             this.roundedPanel4.PerformLayout();
-            this.online.ResumeLayout(false);
-            this.online.PerformLayout();
             this.roundedPanel11.ResumeLayout(false);
             this.roundedPanel11.PerformLayout();
             this.roundedPanel10.ResumeLayout(false);
@@ -1661,9 +1665,6 @@
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicImagemEvento)).EndInit();
-            this.panelMeusEventos.ResumeLayout(false);
-            this.superiorRoundedPanel1.ResumeLayout(false);
-            this.superiorRoundedPanel1.PerformLayout();
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
