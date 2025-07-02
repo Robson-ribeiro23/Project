@@ -53,6 +53,41 @@ namespace Acelera2025.Views
             panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            EditarEvento();
+        }
+
+        private void EditarEvento()
+        {
+            string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
+            if (string.IsNullOrWhiteSpace(nomeSelecionado)) return;
+
+            EventoModels evento = new EventoControllers().BuscarPorNome(nomeSelecionado);
+            if (evento == null || evento.UsuarioEmail != this.usuario.Email) return;
+
+            txtNomeEvento.Text = evento.NomeEvento;
+            data.Value = evento.Data;
+            txtHora.Text = evento.Horario;
+            txtParticipantes.Text = evento.LimiteParticipantes.ToString();
+            txtNomeLocal.Text = evento.Local;
+            txtRua.Text = evento.Rua;
+            txtNumero.Text = evento.Numero;
+            txtCEP.Text = evento.CEP;
+            txtBairro.Text = evento.Bairro;
+            txtLink.Text = evento.LinkReuniao;
+            txtDescricao.Text = evento.Descricao;
+            if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+            {
+                using (var imgTemp = Image.FromFile(evento.CaminhoImagem))
+                {
+                    PicImagemEvento.Image = new Bitmap(imgTemp); 
+                }
+                PicImagemEvento.SizeMode = PictureBoxSizeMode.Zoom; 
+            }
+            else
+            {
+                PicImagemEvento.Image = null; 
+            }
+
         }
 
         public void AtualizarListaDeEventos()
