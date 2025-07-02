@@ -105,7 +105,7 @@ namespace Acelera2025.Views
 
         private void picFotoPerfil_Click(object sender, EventArgs e)
         {
-          
+            Navegador.IrParaPerfilUsuario(postagem.Usuario);
         }
     }
 }

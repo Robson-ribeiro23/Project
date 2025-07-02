@@ -208,6 +208,13 @@ namespace Acelera2025.Views
 
         private void btnSeguir_Click(object sender, EventArgs e)
         {
+            // Proibir que o usuário siga a si mesmo
+            if (loggedUser.Email == usuarioVisualizado.Email)
+            {
+                MessageBox.Show("Você não pode seguir a si mesmo.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             bool seguindo = loggedUser.SeguirOuDeixarDeSeguir(usuarioVisualizado);
 
             labelSeguir.Text = seguindo ? "Seguindo" : "Seguir";
@@ -266,6 +273,15 @@ namespace Acelera2025.Views
                 panelPosts.Controls.Add(cardPost);
                 panelPosts.Controls.SetChildIndex(cardPost, 0); // Para exibir o mais novo no topo
             }
+        }
+        private void btnEntrarEmContato_Click(object sender, EventArgs e)
+        {
+            string email = usuario.Email;
+            string assunto = Uri.EscapeDataString("Contato via Connecta");
+            string corpo = Uri.EscapeDataString("Olá, gostaria de entrar em contato com você.");
+            string mailto = $"mailto:{email}?subject={assunto}&body={corpo}";
+
+            System.Diagnostics.Process.Start(mailto);
         }
 
     }

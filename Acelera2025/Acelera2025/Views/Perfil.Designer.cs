@@ -43,6 +43,7 @@ namespace Acelera2025.Views
             this.tabParticipacoes = new System.Windows.Forms.TabPage();
             this.panelParticipacoes = new System.Windows.Forms.FlowLayoutPanel();
             this.panelEventos = new System.Windows.Forms.TabPage();
+            this.panelEventosCriados = new System.Windows.Forms.FlowLayoutPanel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panelPosts = new System.Windows.Forms.FlowLayoutPanel();
@@ -65,7 +66,6 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.panelEventosCriados = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             this.roundedPanel10.SuspendLayout();
@@ -268,6 +268,18 @@ namespace Acelera2025.Views
             this.panelEventos.Text = "Disponíveis";
             this.panelEventos.UseVisualStyleBackColor = true;
             // 
+            // panelEventosCriados
+            // 
+            this.panelEventosCriados.AutoScroll = true;
+            this.panelEventosCriados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEventosCriados.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.panelEventosCriados.Location = new System.Drawing.Point(3, 2);
+            this.panelEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelEventosCriados.Name = "panelEventosCriados";
+            this.panelEventosCriados.Size = new System.Drawing.Size(1185, 714);
+            this.panelEventosCriados.TabIndex = 1;
+            this.panelEventosCriados.WrapContents = false;
+            // 
             // tabPage3
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 60);
@@ -343,6 +355,7 @@ namespace Acelera2025.Views
             this.btnEntrarEmContato.Size = new System.Drawing.Size(31, 32);
             this.btnEntrarEmContato.TabIndex = 57;
             this.btnEntrarEmContato.UseVisualStyleBackColor = false;
+            this.btnEntrarEmContato.Click += new System.EventHandler(this.btnEntrarEmContato_Click);
             // 
             // btnSeguir
             // 
@@ -606,18 +619,6 @@ namespace Acelera2025.Views
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
-            // 
-            // panelEventosCriados
-            // 
-            this.panelEventosCriados.AutoScroll = true;
-            this.panelEventosCriados.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEventosCriados.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.panelEventosCriados.Location = new System.Drawing.Point(3, 2);
-            this.panelEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelEventosCriados.Name = "panelEventosCriados";
-            this.panelEventosCriados.Size = new System.Drawing.Size(1185, 714);
-            this.panelEventosCriados.TabIndex = 1;
-            this.panelEventosCriados.WrapContents = false;
             // 
             // Perfil
             // 
