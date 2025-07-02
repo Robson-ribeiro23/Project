@@ -8,15 +8,17 @@ namespace Acelera2025.Models
 {
     public class NotificacaoModels
     {
-        public string NomeDeQuemSeguiu { get; set; }
         public string EmailDeQuemSeguiu { get; set; }
+        public string TipoDeNot {  get; set; }
+        public Dictionary<string, object> Contexto { get; set; }
         public DateTime Data { get; set; }
 
-        public NotificacaoModels(string nome, string email)
+        public NotificacaoModels(string email, string tipoDeNot, Dictionary<string, object> contexto = null)
         {
-            NomeDeQuemSeguiu = nome;
             EmailDeQuemSeguiu = email;
             Data = DateTime.Now;
+            TipoDeNot = tipoDeNot;
+            Contexto = contexto ?? new Dictionary<string, object>();
         }
     }
 }

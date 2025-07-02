@@ -218,6 +218,12 @@ namespace Acelera2025.Views
                 return;
             }
 
+            var context = new Dictionary<string, object>();
+            context["perfil"] = usuario;
+            context["evento"] = evento;
+            NotificacaoModels notificacao = new NotificacaoModels(evento.criador.Email, "onEventFollowed", context);
+            NotificacaoCache.AdicionarNotificacao(evento.criador.Email, notificacao);
+
             evento.SubscribeUser((UsuarioModels) usuario);
             Navegador.IrParaEventosIngressados(usuario);
         }

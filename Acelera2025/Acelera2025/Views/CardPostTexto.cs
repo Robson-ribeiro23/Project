@@ -35,6 +35,7 @@ namespace Acelera2025.Views
             AtualizarContadorCurtidas();
             AtualizarComentarios();
         }
+
         private void AtualizarComentarios()
         {
             flowLayoutPanel1.Controls.Clear();
@@ -55,6 +56,7 @@ namespace Acelera2025.Views
                 CurtirPostagem();
             };
         }
+
         private void CurtirPostagem()
         {
             var curtidaExistente = postagem.Curtidas.FirstOrDefault(c => c.Usuario == usuario.Nome);
@@ -71,6 +73,7 @@ namespace Acelera2025.Views
             }
             AtualizarContadorCurtidas();
         }
+
         private void roundedPanel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -80,6 +83,7 @@ namespace Acelera2025.Views
         {
             ConfigurarBotaoCurtir();
         }
+
         private void AtualizarContadorCurtidas()
         {
             var controller = new PostagemControllers();

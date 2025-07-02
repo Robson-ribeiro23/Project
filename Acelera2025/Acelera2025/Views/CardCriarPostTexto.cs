@@ -1,9 +1,4 @@
-﻿using Ac;
-using Ac;
-using Acelera2025.Controllers;
-using Acelera2025.Telas;
-using Acelera2025.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ac;
+using Ac;
+using Acelera2025.Controllers;
+using Acelera2025.Models;
+using Acelera2025.Telas;
+using Acelera2025.Views;
 
 
 namespace Acelera2025.Telas
@@ -57,6 +58,17 @@ namespace Acelera2025.Telas
                 this.Parent.Controls.Remove(this);
                 OnPostCriado?.Invoke(this, EventArgs.Empty);
                 txtTexto.Clear();
+
+                List<PessoaModels> seguidores = usuario.Seguidores;
+
+                var context = new Dictionary<string, object>();
+                context["perfil"] = usuario;
+                foreach (PessoaModels follower in seguidores)
+                {
+                    NotificacaoModels notificacao = new NotificacaoModels(follower.Email, "onAccountPosted", context);
+                    NotificacaoCache.AdicionarNotificacao(follower.Email, notificacao);
+                }
+
                 MessageBox.Show("Postagem de texto criada com sucesso!");
             }
         }

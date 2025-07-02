@@ -1,7 +1,5 @@
-﻿using Ac;
-using Acelera2025.Presença;
-using Acelera2025.Telas;
-using System;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,8 +7,12 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using static EventoModels;
+using Ac;
+using Acelera2025.Models;
+using Acelera2025.Presença;
+using Acelera2025.Telas;
 using Acelera2025.Utils;
+using static EventoModels;
 
 namespace Acelera2025.Views
 {
@@ -262,6 +264,18 @@ namespace Acelera2025.Views
                     novoEvento.criador = usuario;
                     EventoCache.Adicionar(novoEvento);
                     MessageBox.Show($"Evento criado com sucesso!\\n\\nCódigo de Presença: {novoEvento.CodigoPresenca}");
+
+                    List<PessoaModels> seguidores = usuario.Seguidores;
+
+                    var context = new Dictionary<string, object>();
+                    context["perfil"] = usuario;
+                    context["evento"] = novoEvento;
+                    foreach (PessoaModels follower in seguidores)
+                    {
+                        NotificacaoModels notificacao = new NotificacaoModels(follower.Email, "onAccountEvent", context);
+                        NotificacaoCache.AdicionarNotificacao(follower.Email, notificacao);
+                    }
+
                     Navegador.IrParaTelaEventos(this.usuario, novoEvento);
                 }
             }

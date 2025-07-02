@@ -197,6 +197,8 @@ namespace Acelera2025.Views
 
         private void CarregarNotificacoes()
         {
+            return;
+            /*
             var lista = NotificacaoCache.ObterNotificacoes(usuario.Email); 
 
             var painel = cardPainelDeNotificacoes.Controls
@@ -210,7 +212,7 @@ namespace Acelera2025.Views
                 foreach (var notif in lista)
                 {
                     var card = new CardNotificacao();
-                    card.lblNomeDoSeguidor.Text = $"{notif.NomeDeQuemSeguiu} começou a te seguir!";
+                    card.lblTitulo.Text = $"{notif.NomeDeQuemSeguiu} começou a te seguir!";
 
                     card.btnVerNotificacao.Click += (s, args) =>
                     {
@@ -223,7 +225,7 @@ namespace Acelera2025.Views
 
                     painel.Controls.Add(card);
                 }
-            }
+            }*/
         }
 
 
