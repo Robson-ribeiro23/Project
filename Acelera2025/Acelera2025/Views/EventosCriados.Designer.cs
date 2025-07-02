@@ -1048,6 +1048,7 @@
             this.txtNovaDescricao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNovaDescricao.Multiline = true;
             this.txtNovaDescricao.Name = "txtNovaDescricao";
+            this.txtNovaDescricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtNovaDescricao.Size = new System.Drawing.Size(717, 124);
             this.txtNovaDescricao.TabIndex = 0;
             // 
@@ -1273,6 +1274,7 @@
             this.PicImagemEvento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PicImagemEvento.Name = "PicImagemEvento";
             this.PicImagemEvento.Size = new System.Drawing.Size(608, 192);
+            this.PicImagemEvento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicImagemEvento.TabIndex = 57;
             this.PicImagemEvento.TabStop = false;
             // 
