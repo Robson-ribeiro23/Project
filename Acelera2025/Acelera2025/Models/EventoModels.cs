@@ -28,6 +28,8 @@ public class EventoModels
     public string Cidade { get; set; }
     public string Estado { get; set; }
 
+    public string CodigoPresenca { get; set; }
+
     public PessoaModels criador { get; set; }
     private List<UsuarioModels> usuariosInscritos = new List<UsuarioModels>();
     
@@ -75,6 +77,8 @@ public class EventoModels
         Cidade = cidade;
         Estado = estado;
         LinkReuniao = linkReuniao;
+
+        this.CodigoPresenca = Acelera2025.Utils.GeradorDeCodigos.Gerar();
     }
 
     public static class EventoCache

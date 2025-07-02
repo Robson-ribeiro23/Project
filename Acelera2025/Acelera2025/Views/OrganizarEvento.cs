@@ -1,4 +1,5 @@
 ﻿using Ac;
+using Acelera2025.Presença;
 using Acelera2025.Telas;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using static EventoModels;
+using Acelera2025.Utils;
 
 namespace Acelera2025.Views
 {
@@ -222,6 +224,8 @@ namespace Acelera2025.Views
                 string cidade = txtCidade.Text;
                 string estado = comboUF.SelectedItem?.ToString();
                 string linkReuniao = isPresencial ? null : txtLinkReunião.Text;
+                string codigoPresenca = GeradorDeCodigos.Gerar(8);
+                ControleDePresencas.RegistrarCodigo(codigoPresenca);
 
                 EventoModels novoEvento = new EventoModels(
                     nomeEvento,
@@ -245,6 +249,8 @@ namespace Acelera2025.Views
                     linkReuniao
                 );
 
+                novoEvento.CodigoPresenca = codigoPresenca;
+
                 EventoControllers controller = new EventoControllers();
                 bool sucesso = controller.CriarEvento(novoEvento);
 
@@ -252,8 +258,8 @@ namespace Acelera2025.Views
                 {
                     novoEvento.criador = usuario;
                     EventoCache.Adicionar(novoEvento);
+                    MessageBox.Show($"Evento criado com sucesso!\\n\\nCódigo de Presença: {novoEvento.CodigoPresenca}");
                     Navegador.IrParaTelaEventos(this.usuario, novoEvento);
-                    MessageBox.Show("Evento criado com sucesso!");
                 }
             }
             catch (Exception ex)

@@ -83,6 +83,10 @@
             this.lblRua = new System.Windows.Forms.Label();
             this.lblNomeLocal = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
+            this.lblAndamentoEncerrado = new System.Windows.Forms.Label();
+            this.btnConfirmar = new CircularButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -325,6 +329,9 @@
             // 
             this.panelPatrocinadores.AutoScroll = true;
             this.panelPatrocinadores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panelPatrocinadores.Controls.Add(this.txtCodigo);
+            this.panelPatrocinadores.Controls.Add(this.label2);
+            this.panelPatrocinadores.Controls.Add(this.btnConfirmar);
             this.panelPatrocinadores.Controls.Add(this.panel3);
             this.panelPatrocinadores.Controls.Add(this.panelEmpresa);
             this.panelPatrocinadores.Controls.Add(this.panelMeusEventos);
@@ -811,6 +818,7 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
+            this.roundedPanel1.Controls.Add(this.lblAndamentoEncerrado);
             this.roundedPanel1.Controls.Add(this.btnPresencialOnline);
             this.roundedPanel1.Controls.Add(this.btnCategoria);
             this.roundedPanel1.Controls.Add(this.lblCidadeUf);
@@ -916,6 +924,54 @@
             this.lblData.TabIndex = 5;
             this.lblData.Text = "dd/mm/aaaa";
             // 
+            // lblAndamentoEncerrado
+            // 
+            this.lblAndamentoEncerrado.AutoSize = true;
+            this.lblAndamentoEncerrado.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAndamentoEncerrado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblAndamentoEncerrado.Location = new System.Drawing.Point(228, 160);
+            this.lblAndamentoEncerrado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAndamentoEncerrado.Name = "lblAndamentoEncerrado";
+            this.lblAndamentoEncerrado.Size = new System.Drawing.Size(180, 20);
+            this.lblAndamentoEncerrado.TabIndex = 12;
+            this.lblAndamentoEncerrado.Text = "Evento em andamento/encerrado";
+            // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfirmar.BorderColor = System.Drawing.Color.Black;
+            this.btnConfirmar.BorderSize = 0;
+            this.btnConfirmar.FlatAppearance.BorderSize = 0;
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar.Image = global::Acelera2025.Properties.Resources.nezuko;
+            this.btnConfirmar.Location = new System.Drawing.Point(417, 344);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(18, 19);
+            this.btnConfirmar.TabIndex = 59;
+            this.btnConfirmar.UseVisualStyleBackColor = false;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label2.Location = new System.Drawing.Point(439, 341);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(140, 27);
+            this.label2.TabIndex = 60;
+            this.label2.Text = "Confirmar Presença";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(413, 368);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(196, 20);
+            this.txtCodigo.TabIndex = 61;
+            // 
             // TelaEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1009,5 +1065,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowPatrociadores;
+        private System.Windows.Forms.Label label2;
+        private CircularButton btnConfirmar;
+        private System.Windows.Forms.Label lblAndamentoEncerrado;
+        private System.Windows.Forms.TextBox txtCodigo;
     }
 }

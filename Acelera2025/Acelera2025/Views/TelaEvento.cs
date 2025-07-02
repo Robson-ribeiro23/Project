@@ -1,5 +1,6 @@
 ﻿using Ac;
 using Acelera2025.Models;
+using Acelera2025.Presença;
 using Acelera2025.Telas;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Acelera2025.Utils;
 
 namespace Acelera2025.Views
 {
@@ -204,6 +206,18 @@ namespace Acelera2025.Views
             }
 
             evento.SubscribeUser((UsuarioModels) usuario);
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            string codigoDigitado = txtCodigo.Text.Trim().ToUpper();
+
+            bool valido = ControleDePresencas.ValidarCodigo(codigoDigitado);
+
+            if (valido)
+                MessageBox.Show("Presença confirmada!");
+            else
+                MessageBox.Show("Código inválido ou expirado.");
         }
     }
 }

@@ -71,6 +71,9 @@
     <Compile Include="Models\PessoaModels.cs" />
     <Compile Include="Models\PostModels.cs" />
     <Compile Include="Models\UsuarioModels.cs" />
+    <Compile Include="Presença\CodigoPresenca.cs" />
+    <Compile Include="Presença\ControleDePresencas.cs" />
+    <Compile Include="Presença\GeradorDeCodigos.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
