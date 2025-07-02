@@ -158,6 +158,42 @@ namespace Acelera2025.Views
 
             lblParticipantes.Text = evento.GetUserList().Count().ToString();
 
+            // Obtém a quantidade de participantes e o limite
+            int qtdParticipantes = evento.GetUserList().Count();
+            int limite = evento.LimiteParticipantes;
+
+            // Evita divisão por zero
+            double porcentagem = (limite > 0) ? (qtdParticipantes * 100.0 / limite) : 0;
+
+            // Baixo rendimento: menor que 40%
+            if (porcentagem < 40)
+            {
+                picBaixoRendimento.BorderColor = Color.Blue;
+                picBaixoRendimento.BorderSize = 3;
+                label6.ForeColor = Color.Red;
+            }
+            else
+            {
+                picBaixoRendimento.BorderSize = 0;
+                picMedioRendimento.BorderSize = 0;
+                picAltoRendimento.BorderSize = 0;
+
+                // Medio rendimento: de 40% a 60%
+                if (porcentagem >= 40 && porcentagem <= 60)
+                {
+                    picMedioRendimento.BorderColor = Color.Orange;
+                    picMedioRendimento.BorderSize = 3;
+                    label8.ForeColor = Color.Orange;
+                }
+                // Alto rendimento: acima de 60%
+                else if (porcentagem > 60)
+                {
+                    picAltoRendimento.BorderColor = Color.Green;
+                    picAltoRendimento.BorderSize = 3;
+                    label9.ForeColor = Color.Green;
+                }
+            }
+
             if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
             {
                 using (var imgTemp = Image.FromFile(evento.CaminhoImagem))
@@ -273,3 +309,4 @@ namespace Acelera2025.Views
         }
     }
 }
+
