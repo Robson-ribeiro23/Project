@@ -1677,6 +1677,7 @@
             this.btnProxEventoPerto.Size = new System.Drawing.Size(49, 60);
             this.btnProxEventoPerto.TabIndex = 9;
             this.btnProxEventoPerto.UseVisualStyleBackColor = false;
+            this.btnProxEventoPerto.Click += new System.EventHandler(this.btnProxEventoPerto_Click);
             // 
             // btnAntEventoPerto
             // 
@@ -1692,6 +1693,7 @@
             this.btnAntEventoPerto.Size = new System.Drawing.Size(49, 60);
             this.btnAntEventoPerto.TabIndex = 6;
             this.btnAntEventoPerto.UseVisualStyleBackColor = false;
+            this.btnAntEventoPerto.Click += new System.EventHandler(this.btnAntEventoPerto_Click);
             // 
             // gradientPanel1
             // 
@@ -1745,7 +1747,7 @@
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
             this.picturePerfil.Location = new System.Drawing.Point(1673, 2);
-            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4);
             this.picturePerfil.Name = "picturePerfil";
             this.picturePerfil.Size = new System.Drawing.Size(47, 47);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -26,7 +26,7 @@ namespace Acelera2025.Views
         private List<Label> labelDatas;
         private List<Label> labelHoras;
         private List<LinkLabel> btnNomes;
-        private List<Label> labelCidadeUfs;
+        private List<Label> CidadeUfs;
 
         public Home(PessoaModels usuario)
         {
@@ -55,7 +55,7 @@ namespace Acelera2025.Views
             panelMeusEventos.Visible = false;
             cardPerfil = new CardPerfil(this.usuario);
             cardPerfil.Visible = false;
-            
+
 
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
             panel2.Controls.Add(cardPerfil);
@@ -74,32 +74,41 @@ namespace Acelera2025.Views
             labelDatas = new List<Label> { lblData1, lblData2, lblData3, lblData4 };
             labelHoras = new List<Label> { lblHora1, lblHora2, lblHora3, lblHora4 };
             btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3, btnNome4 };
-            labelCidadeUfs = new List<Label> { lblCidadeUf1, lblCidadeUf2, lblCidadeUf3, lblCidadeUf4 };
+            CidadeUfs = new List<Label> { lblCidadeUf1, lblCidadeUf2, lblCidadeUf3, lblCidadeUf4 };
 
-            List<EventoModels> eventos = EventoCache.ListarTodos()
-            .Where(evento => !(evento.GetType().GetProperty("Excluido") != null &&
-                               (bool)evento.GetType().GetProperty("Excluido").GetValue(evento)))
-            .ToList();
+            CarregarEventos();
+        }
 
+        int paginaAtual = 0;
+        int eventosPorPagina = 3;
+        List<EventoModels> eventos = EventoCache.ListarTodos();
+
+        private void CarregarEventos()
+        {
+            int inicio = paginaAtual * eventosPorPagina;
 
             for (int i = 0; i < pictureBoxes.Count; i++)
             {
-                if (i < eventos.Count)
+                int indexEvento = inicio + i;
+
+                if (indexEvento < eventos.Count)
                 {
-                    var evento = eventos[i];
+                    var evento = eventos[indexEvento];
 
                     labelDatas[i].Text = evento.Data.ToShortDateString();
                     labelHoras[i].Text = evento.Horario;
                     btnNomes[i].Text = evento.NomeEvento;
+                    
                     if (evento.IsPresencial)
-                        labelCidadeUfs[i].Text = $"{evento.Cidade} - {evento.Estado}";
+                        CidadeUfs[i].Text = $"{evento.Cidade} - {evento.Estado}";
                     else
-                        labelCidadeUfs[i].Text = "Online";
+                        CidadeUfs[i].Text = "Online";
+
 
                     if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
-                    {
                         pictureBoxes[i].Image = Image.FromFile(evento.CaminhoImagem);
-                    }
+                    else
+                        pictureBoxes[i].Image = null;
 
                     pictureBoxes[i].Tag = evento;
                     btnNomes[i].Tag = evento;
@@ -115,9 +124,8 @@ namespace Acelera2025.Views
                     labelDatas[i].Text = "";
                     labelHoras[i].Text = "";
                     btnNomes[i].Text = "";
-                    labelCidadeUfs[i].Text = "";
                     pictureBoxes[i].Image = null;
-
+                    CidadeUfs[i].Text = "";
                     pictureBoxes[i].Tag = null;
                     btnNomes[i].Tag = null;
 
@@ -126,7 +134,22 @@ namespace Acelera2025.Views
                 }
             }
 
+            // Habilita/Desabilita os botões de navegação
+            btnAntEventoPerto.Enabled = paginaAtual > 0;
+            btnProxEventoPerto.Enabled = (paginaAtual + 1) * eventosPorPagina < eventos.Count;
         }
+        private void btnProxEventoPerto_Click(object sender, EventArgs e)
+        {
+            paginaAtual++;
+            CarregarEventos();
+        }
+
+        private void btnAntEventoPerto_Click(object sender, EventArgs e)
+        {
+            paginaAtual--;
+            CarregarEventos();
+        }
+
 
         private void PicEvento_Click(object sender, EventArgs e)
         {
@@ -453,5 +476,7 @@ namespace Acelera2025.Views
         {
 
         }
+
+       
     }
 }
