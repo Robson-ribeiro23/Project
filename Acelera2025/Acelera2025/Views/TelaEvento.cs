@@ -206,6 +206,7 @@ namespace Acelera2025.Views
             }
 
             evento.SubscribeUser((UsuarioModels) usuario);
+            Navegador.IrParaEventosIngressados(usuario);
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)

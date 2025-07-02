@@ -100,7 +100,7 @@ namespace Acelera2025.Views
 
             foreach (EventoModels evento in ownedEvents)
             {
-                panelEventos.Controls.Add(CreateEventCard(evento));
+                panelEventosCriados.Controls.Add(CreateEventCard(evento));
             }
         }
 

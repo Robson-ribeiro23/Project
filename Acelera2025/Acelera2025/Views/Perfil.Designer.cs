@@ -45,6 +45,7 @@ namespace Acelera2025.Views
             this.panelEventos = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panelPosts = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.labelSeguir = new System.Windows.Forms.Label();
             this.btnEntrarEmContato = new CircularButton();
@@ -64,13 +65,14 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.panelPosts = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelEventosCriados = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfil)).BeginInit();
             this.roundedPanel10.SuspendLayout();
             this.superiorRoundedPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabParticipacoes.SuspendLayout();
+            this.panelEventos.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
@@ -256,11 +258,12 @@ namespace Acelera2025.Views
             // 
             // panelEventos
             // 
+            this.panelEventos.Controls.Add(this.panelEventosCriados);
             this.panelEventos.Location = new System.Drawing.Point(4, 60);
             this.panelEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEventos.Name = "panelEventos";
             this.panelEventos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelEventos.Size = new System.Drawing.Size(1116, 718);
+            this.panelEventos.Size = new System.Drawing.Size(1191, 718);
             this.panelEventos.TabIndex = 1;
             this.panelEventos.Text = "Disponíveis";
             this.panelEventos.UseVisualStyleBackColor = true;
@@ -287,6 +290,18 @@ namespace Acelera2025.Views
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Posts";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panelPosts
+            // 
+            this.panelPosts.AutoScroll = true;
+            this.panelPosts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPosts.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.panelPosts.Location = new System.Drawing.Point(3, 2);
+            this.panelPosts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelPosts.Name = "panelPosts";
+            this.panelPosts.Size = new System.Drawing.Size(1185, 714);
+            this.panelPosts.TabIndex = 29;
+            this.panelPosts.WrapContents = false;
             // 
             // label3
             // 
@@ -592,17 +607,17 @@ namespace Acelera2025.Views
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
-            // panelPosts
+            // panelEventosCriados
             // 
-            this.panelPosts.AutoScroll = true;
-            this.panelPosts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPosts.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.panelPosts.Location = new System.Drawing.Point(3, 2);
-            this.panelPosts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelPosts.Name = "panelPosts";
-            this.panelPosts.Size = new System.Drawing.Size(1185, 714);
-            this.panelPosts.TabIndex = 29;
-            this.panelPosts.WrapContents = false;
+            this.panelEventosCriados.AutoScroll = true;
+            this.panelEventosCriados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEventosCriados.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.panelEventosCriados.Location = new System.Drawing.Point(3, 2);
+            this.panelEventosCriados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelEventosCriados.Name = "panelEventosCriados";
+            this.panelEventosCriados.Size = new System.Drawing.Size(1185, 714);
+            this.panelEventosCriados.TabIndex = 1;
+            this.panelEventosCriados.WrapContents = false;
             // 
             // Perfil
             // 
@@ -624,6 +639,7 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabParticipacoes.ResumeLayout(false);
+            this.panelEventos.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
@@ -670,5 +686,6 @@ namespace Acelera2025.Views
         private System.Windows.Forms.Label lblNumSeguidores;
         private System.Windows.Forms.FlowLayoutPanel panelParticipacoes;
         private System.Windows.Forms.FlowLayoutPanel panelPosts;
+        private System.Windows.Forms.FlowLayoutPanel panelEventosCriados;
     }
 }
