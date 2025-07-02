@@ -57,7 +57,7 @@ public class EventoControllers
         {
             // Remove o evento da lista de inscritos de cada usuário
             var inscritos = evento.GetUserList();
-            foreach (var usuario in inscritos)
+            foreach (var usuario in inscritos.ToList())
             {
                 usuario.UnsubscribeToEvent(evento);
             }
@@ -74,6 +74,28 @@ public class EventoControllers
                 EventoModels.EventoCache.EventosCriados.Remove(evento);
             }
 
+            // Limpa todas as referências do evento para remoção completa
+            evento.criador = null;
+            if (evento.GetUserList() != null)
+            {
+                evento.GetUserList().Clear();
+            }
+            evento.NomeEvento = null;
+            evento.Categoria = null;
+            evento.Horario = null;
+            evento.FaixaEtaria = null;
+            evento.Descricao = null;
+            evento.CaminhoImagem = null;
+            evento.UsuarioEmail = null;
+            evento.Local = null;
+            evento.Rua = null;
+            evento.Numero = null;
+            evento.Bairro = null;
+            evento.CEP = null;
+            evento.Cidade = null;
+            evento.Estado = null;
+            evento.CodigoPresenca = null;
+            evento.LinkReuniao = null;
 
             return true;
         }

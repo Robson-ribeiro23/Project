@@ -394,6 +394,68 @@ namespace Acelera2025.Views
                 }
             }
         }
+
+        private void LimparCamposEvento()
+        {
+            lblNomeEvento.Text = "";
+            lblData.Text = "";
+            lblHora.Text = "";
+            lblCategorias.Text = "";
+            lblPresencialOnline.Text = "";
+            lblLimiteParticipantes.Text = "";
+            lblFaixaEtaria.Text = "";
+            txtDescricao.Text = "";
+            lblNomeLocal.Text = "";
+            lblEndereco.Text = "";
+            lblCidadeEstado.Text = "";
+            lblCEP.Text = "";
+            lblLinkReuniao.Text = "";
+            lblParticipantes.Text = "";
+            PicEvento.Image = null;
+            panelParticipantes.Controls.Clear();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
+            if (string.IsNullOrWhiteSpace(nomeSelecionado) || nomeSelecionado == "Nenhum evento encontrado")
+            {
+                MessageBox.Show("Selecione um evento para excluir.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var confirmResult = MessageBox.Show("Tem certeza que deseja excluir este evento?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirmResult != DialogResult.Yes)
+                return;
+
+            EventoControllers controller = new EventoControllers();
+            EventoModels evento = controller.BuscarPorNome(nomeSelecionado);
+            if (evento == null || evento.UsuarioEmail != this.usuario.Email)
+            {
+                MessageBox.Show("Evento não encontrado ou você não tem permissão para excluí-lo.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            bool excluido = controller.RemoverEvento(evento.NomeEvento);
+            if (excluido)
+            {
+                MessageBox.Show("Evento excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Limpa todos os itens do ComboBox
+                comboEventosCriados.Items.Clear();
+                AtualizarListaDeEventos();
+                comboEventosCriados.SelectedIndex = -1; // Nenhum evento selecionado
+                LimparCamposEvento();
+
+                // Atualiza a lista de eventos novamente
+                AtualizarListaDeEventos();
+                Navegador.IrParaEventosCriados(this.usuario);
+            }
+            else
+            {
+                MessageBox.Show("Erro ao excluir o evento.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
 

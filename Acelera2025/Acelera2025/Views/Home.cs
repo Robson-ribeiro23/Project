@@ -13,9 +13,6 @@ using System.Windows.Forms;
 
 namespace Acelera2025.Views
 {
-
-
-
     public partial class Home: Form
     {
         private bool panelVisivel = false;
@@ -79,7 +76,11 @@ namespace Acelera2025.Views
             btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3, btnNome4 };
             labelCidadeUfs = new List<Label> { lblCidadeUf1, lblCidadeUf2, lblCidadeUf3, lblCidadeUf4 };
 
-            List<EventoModels> eventos = EventoCache.ListarTodos();
+            List<EventoModels> eventos = EventoCache.ListarTodos()
+            .Where(evento => !(evento.GetType().GetProperty("Excluido") != null &&
+                               (bool)evento.GetType().GetProperty("Excluido").GetValue(evento)))
+            .ToList();
+
 
             for (int i = 0; i < pictureBoxes.Count; i++)
             {
