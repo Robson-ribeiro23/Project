@@ -1,6 +1,7 @@
 ﻿using Ac;
 using Acelera2025.Models;
 using Acelera2025.Telas;
+using iTextSharp.text.pdf.events;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -82,18 +83,22 @@ namespace Acelera2025.Views
         int paginaAtual = 0;
         int eventosPorPagina = 3;
         List<EventoModels> eventos = EventoCache.ListarTodos();
-
         private void CarregarEventos()
         {
+            var eventosOrdenados = EventoCache.ListarTodos()
+                                       .OrderByDescending(e => e.Data)
+                                       .Take(20)
+                                       .ToList();
+
             int inicio = paginaAtual * eventosPorPagina;
 
             for (int i = 0; i < pictureBoxes.Count; i++)
             {
                 int indexEvento = inicio + i;
 
-                if (indexEvento < eventos.Count)
+                if (indexEvento < eventosOrdenados.Count)
                 {
-                    var evento = eventos[indexEvento];
+                    var evento = eventosOrdenados[indexEvento];
 
                     labelDatas[i].Text = evento.Data.ToShortDateString();
                     labelHoras[i].Text = evento.Horario;
