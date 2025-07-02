@@ -93,16 +93,6 @@ namespace Acelera2025.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Captura_de_tela_2025_03_31_1512231 {
-            get {
-                object obj = ResourceManager.GetObject("Captura de tela 2025-03-31 1512231", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_2025_03_31_152752 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2025-03-31 152752", resourceCulture);
