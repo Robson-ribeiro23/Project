@@ -63,6 +63,13 @@ namespace Ac
             telaAtual.Show();
         }
 
+        public static void IrParaCategoriaSelecionada(PessoaModels usuario, string categoria)
+        {
+            FecharTelaAtual();
+            telaAtual = new CategoriaSelecionada(usuario, categoria);
+            telaAtual.Show();
+        }
+
         public static void IrParaPesquisa(PessoaModels usuario)
         {
             FecharTelaAtual();

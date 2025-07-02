@@ -15,6 +15,10 @@ namespace Acelera2025.Views
         private PessoaModels usuario;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
+        string[] categorias = { "Tecnologia", "Saúde", "Educação", "Festivais", "Música", "Artes",
+                "Dança", "Ciências", "Competições e Concursos", "Espiritualidade", "Exposições e Feiras",
+                "Festas", "Esportes", "Sociedade", "Gastronomia", "Empreendedorismo", "Entretenimento",
+                "Voluntariado", "Meio Ambiente" , "Hobbies" };
 
         public Categorias(PessoaModels usuario)
         {
@@ -45,6 +49,26 @@ namespace Acelera2025.Views
             panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel2.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
+            int count = categorias.Length - 1;
+            foreach (object obj in roundedPanel2.Controls)
+            {
+                if (obj is CircularButton c)
+                {
+                    c.Click += CategoriaButton_Clicked;
+                    c.Name = "CircularButton_" + count.ToString();
+                    count--;
+                }
+            }
+        }
+
+        private void CategoriaButton_Clicked(object sender, EventArgs e)
+        {
+            if (sender is CircularButton btn){
+                string[] parts = btn.Name.Split('_');
+                int index = int.Parse(parts[parts.Length - 1]);
+                Navegador.IrParaCategoriaSelecionada(UsuarioControllers.loggedUser, categorias[index]);
+            }
         }
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

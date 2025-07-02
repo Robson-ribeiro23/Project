@@ -1,9 +1,10 @@
-﻿using Ac;
-using Acelera2025.Telas;
-using System;
+﻿using System;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
+using Ac;
+using Acelera2025.Telas;
 
 namespace Acelera2025.Views
 {
@@ -15,11 +16,13 @@ namespace Acelera2025.Views
         private PessoaModels usuario;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
+        private string categoria;
 
-        public CategoriaSelecionada(PessoaModels usuario)
+        public CategoriaSelecionada(PessoaModels usuario, string categoria)
         {
             InitializeComponent();
             this.usuario = usuario;
+            this.categoria = categoria;
 
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
@@ -43,6 +46,24 @@ namespace Acelera2025.Views
             panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
+            lblNomeCategoria.Text = categoria;
+            panelEventosCategoria.Controls.Clear();
+            showEvents();
+        }
+
+        private void showEvents()
+        {
+            var eventos = EventoControllers.ListarTodos();
+            var eventosFiltrados = eventos.Where(e => e.Categoria == categoria).ToList();
+
+            foreach (var evento in eventosFiltrados)
+            {
+                CardPesquisaUsuario card = new CardPesquisaUsuario();
+                card.ForçarUsuario(UsuarioControllers.loggedUser);
+                card.DefinirDadosEvento(evento);
+                panelEventosCategoria.Controls.Add(card);
+            }
         }
 
         private void btnMeusEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
