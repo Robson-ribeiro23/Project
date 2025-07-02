@@ -153,41 +153,11 @@ namespace Acelera2025.Views
             lblEndereco.Text = $"{evento.Rua}, {evento.Numero}, {evento.Bairro}";
             lblCidadeEstado.Text = $"{evento.Cidade} - {evento.Estado}";
             lblCEP.Text = evento.CEP;
+
             lblLinkReuniao.Text = evento.IsPresencial ? "Evento presencial" : evento.LinkReuniao;
             panelPresencial.Visible = evento.IsPresencial;
             panelOnline.Visible = !evento.IsPresencial;
             lblParticipantes.Text = evento.GetUserList().Count().ToString();
-            
-            // Atualização
-            txtNomeEvento.Text = evento.NomeEvento;
-            data.Value = evento.Data;
-            data.Text = evento.Data.ToString("dd/MM/yyyy");
-            txtHora.Text = evento.Horario;
-            txtLink.Text = evento.LinkReuniao;
-            txtParticipantes.Text = evento.LimiteParticipantes.ToString();
-            txtNovaDescricao.Text = evento.Descricao;
-            txtNomeLocal.Text = evento.Local;
-            txtRua.Text = evento.Rua;
-            txtNumero.Text = evento.Numero;
-            txtCEP.Text = evento.CEP;
-            txtBairro.Text = evento.Bairro;
-
-            if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
-            {
-                using (var imgTemp = Image.FromFile(evento.CaminhoImagem))
-                {
-                    PicImagemEvento.Image = new Bitmap(imgTemp);
-                }
-                PicImagemEvento.SizeMode = PictureBoxSizeMode.Zoom; 
-            }
-            else
-            {
-                PicImagemEvento.Image = null; 
-            }
-
-            lblLinkReuniao.Text = evento.IsPresencial ? "Evento presencial" : evento.LinkReuniao;
-            presencial.Visible = evento.IsPresencial;
-            online.Visible = !evento.IsPresencial;
 
             // Obtém a quantidade de participantes e o limite
             int qtdParticipantes = evento.GetUserList().Count();
@@ -255,129 +225,88 @@ namespace Acelera2025.Views
             panelParticipantes.Controls.Add(card);
         }
 
+
+
+
+
+
+            /*string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
+            if (string.IsNullOrWhiteSpace(nomeSelecionado)) return;
+
+            EventoModels evento = new EventoControllers().BuscarPorNome(nomeSelecionado);
+            if (evento == null) return;
+
+            // Preencher os labels com os dados do evento
+            lblNomeEvento.Text = evento.NomeEvento;
+            lblData.Text = evento.Data.ToString("dd/MM/yyyy");
+            lblHora.Text = evento.Horario;
+            lblCategorias.Text = evento.Categoria;
+            lblPresencialOnline.Text = evento.IsPresencial ? "Presencial" : "Online";
+            lblLimiteParticipantes.Text = evento.LimiteParticipantes.ToString();
+            lblFaixaEtaria.Text = evento.FaixaEtaria;
+            txtDescricao.Text = evento.Descricao;
+            // lblPatrocinio.Text = evento.PermitePatrocinio ? "Permitido" : "Não permitido";
+
+            // Carregar a imagem do evento no PictureBox
+            if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+            {
+                using (var imgTemp = Image.FromFile(evento.CaminhoImagem))
+                {
+                    PicEvento.Image = new Bitmap(imgTemp); // cria uma cópia para evitar travamento do arquivo
+                }
+                PicEvento.SizeMode = PictureBoxSizeMode.Zoom; // ajusta a imagem ao PictureBox
+            }
+            else
+            {
+                PicEvento.Image = null; // limpa caso não haja imagem
+            }
+            */
+
+        
+
+        private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Patrocinador1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Patrocinador2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Patrocinador3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Patrocinador4_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Patrocinador5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void VisaoGeral_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnOrganizarEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaOrganizarEventos(this.usuario);
         }
 
-        private void btnPesquisar_Click(object sender, EventArgs e)
+        private void btnConvidarParticipante_Click(object sender, EventArgs e)
         {
-            Navegador.IrParaPesquisa(this.usuario);
-        }
 
-        private void btnAtualizar_Click(object sender, EventArgs e)
-        {
-            string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
-            if (string.IsNullOrWhiteSpace(nomeSelecionado) || nomeSelecionado == "Nenhum evento encontrado")
-            {
-                MessageBox.Show("Selecione um evento para atualizar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Busca o evento pelo nome
-            EventoModels evento = new EventoControllers().BuscarPorNome(nomeSelecionado);
-            if (evento == null || evento.UsuarioEmail != this.usuario.Email)
-            {
-                MessageBox.Show("Evento não encontrado ou você não tem permissão para atualizá-lo.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            evento.NomeEvento = txtNomeEvento.Text;
-            evento.Data = data.Value;
-            evento.Horario = txtHora.Text;
-            evento.LimiteParticipantes = int.TryParse(txtParticipantes.Text, out int limite) ? limite : evento.LimiteParticipantes;
-            evento.Descricao = txtNovaDescricao.Text;
-            evento.Local = txtNomeLocal.Text;
-            evento.Rua = txtRua.Text;
-            evento.Numero = txtNumero.Text;
-            evento.CEP = txtCEP.Text;
-            evento.Bairro = txtBairro.Text;
-            evento.LinkReuniao = txtLink.Text;
-
-            EventoControllers eventoController = new EventoControllers();
-            eventoController.EditarEvento(
-                evento.NomeEvento,
-                evento.Data,
-                evento.Horario,
-                evento.LinkReuniao,
-                evento.LimiteParticipantes,
-                evento.Descricao,
-                evento.Local,
-                evento.Rua,
-                evento.Numero,
-                evento.CEP,
-                evento.Bairro,
-                evento.CaminhoImagem
-            );
-
-            MessageBox.Show("Evento atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            AtualizarListaDeEventos();
-            comboEventosCriados.SelectedItem = evento.NomeEvento;
-        }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-            string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
-            if (string.IsNullOrWhiteSpace(nomeSelecionado) || nomeSelecionado == "Nenhum evento encontrado")
-            {
-                MessageBox.Show("Selecione um evento para excluir.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Busca o evento pelo nome
-            EventoModels evento = new EventoControllers().BuscarPorNome(nomeSelecionado);
-            if (evento == null || evento.UsuarioEmail != this.usuario.Email)
-            {
-                MessageBox.Show("Evento não encontrado ou você não tem permissão para excluí-lo.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            var confirm = MessageBox.Show($"Tem certeza que deseja excluir o evento '{evento.NomeEvento}'?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (confirm != DialogResult.Yes)
-                return;
-
-            // Remove o evento
-            EventoControllers eventoController = new EventoControllers();
-            bool sucesso = eventoController.RemoverEvento(evento.NomeEvento);
-
-            if (sucesso)
-            {
-                MessageBox.Show("Evento excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                AtualizarListaDeEventos();
-                // Limpa os campos de detalhes
-                lblNomeEvento.Text = "";
-                lblData.Text = "";
-                lblHora.Text = "";
-                lblCategorias.Text = "";
-                lblPresencialOnline.Text = "";
-                lblLimiteParticipantes.Text = "";
-                lblFaixaEtaria.Text = "";
-                txtDescricao.Text = "";
-                lblNomeLocal.Text = "";
-                lblEndereco.Text = "";
-                lblCidadeEstado.Text = "";
-                lblCEP.Text = "";
-                lblLinkReuniao.Text = "";
-                lblParticipantes.Text = "";
-                txtNomeEvento.Text = "";
-                txtHora.Text = "";
-                txtLink.Text = "";
-                txtParticipantes.Text = "";
-                txtNovaDescricao.Text = "";
-                txtNomeLocal.Text = "";
-                txtRua.Text = "";
-                txtNumero.Text = "";
-                txtCEP.Text = "";
-                txtBairro.Text = "";
-                PicImagemEvento.Image = null;
-                PicEvento.Image = null;
-                panelParticipantes.Controls.Clear();
-            }
-            else
-            {
-                MessageBox.Show("Erro ao excluir o evento.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
     }
 }

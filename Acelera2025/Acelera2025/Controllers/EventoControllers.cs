@@ -52,64 +52,15 @@ public class EventoControllers
 
     public bool RemoverEvento(string nome)
     {
-        var evento = listaEventos.FirstOrDefault(e => e.NomeEvento == nome);
+        var evento = BuscarPorNome(nome);
         if (evento != null)
         {
-            // Remove o evento da lista de inscritos de cada usuário
-            var inscritos = evento.GetUserList();
-            foreach (var usuario in inscritos)
-            {
-                usuario.UnsubscribeToEvent(evento);
-            }
-
-            // Remove o evento da lista de eventos criados do criador
-            evento.criador?.GetOwnedEvents()?.Remove(evento);
-
-            // Remove o evento da lista global de eventos
             listaEventos.Remove(evento);
-
-            // Remove o evento de todas as listas estáticas globais, se existirem
-            if (EventoModels.EventoCache.EventosCriados != null)
-            {
-                EventoModels.EventoCache.EventosCriados.Remove(evento);
-            }
-
-
+            MessageBox.Show("Evento removido com sucesso!");
             return true;
         }
+
+        MessageBox.Show("Evento não encontrado.");
         return false;
-    }
-
-    public bool EditarEvento(
-        string nomeEvento,
-        DateTime data,
-        string horario,
-        string linkReuniao,
-        int limiteParticipantes,
-        string descricao,
-        string local,
-        string rua,
-        string numero,
-        string cep,
-        string bairro,
-        string caminhoImagem)
-    {
-        EventoModels evento = BuscarPorNome(nomeEvento);
-        if (evento == null)
-            return false;
-
-        evento.Data = data;
-        evento.Horario = horario;
-        evento.LinkReuniao = linkReuniao;
-        evento.LimiteParticipantes = limiteParticipantes;
-        evento.Descricao = descricao;
-        evento.Local = local;
-        evento.Rua = rua;
-        evento.Numero = numero;
-        evento.CEP = cep;
-        evento.Bairro = bairro;
-        evento.CaminhoImagem = caminhoImagem;
-
-        return true;
     }
 }

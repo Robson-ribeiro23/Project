@@ -95,7 +95,6 @@ namespace Acelera2025.Controllers
         {
             return postagem?.Curtidas.Count ?? 0;  
         }
-        
-        
+
     }
 }
