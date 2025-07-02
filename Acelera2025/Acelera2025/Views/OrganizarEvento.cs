@@ -190,7 +190,8 @@ namespace Acelera2025.Views
                 string caminhoImagem = null;
                 if (picEvento.Image != null)
                 {
-                    string pastaDestino = @"C:\Users\giiml\Desktop\Acelera2025\Acelera2025\Pictures";
+                    //string pastaDestino = @"C:\Users\giiml\Desktop\Acelera2025\Acelera2025\Pictures";
+                    string pastaDestino = @"C:\Users\amand\OneDrive\Comuna\Documentos\GitHub\Project\Acelera2025\Acelera2025\Pictures";
 
                     if (!Directory.Exists(pastaDestino))
                         Directory.CreateDirectory(pastaDestino);

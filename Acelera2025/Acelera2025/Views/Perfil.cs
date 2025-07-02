@@ -84,6 +84,7 @@ namespace Acelera2025.Views
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 
             LoadAllEvents();
+            LoadAllPosts();
         }
 
         private void LoadAllEvents()
@@ -206,5 +207,33 @@ namespace Acelera2025.Views
             
             lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();
         }
+        private void LoadAllPosts()
+        {
+            var postagensUsuario = usuario.Postagens;
+
+            foreach (var post in postagensUsuario)
+            {
+                UserControl cardPost = null;
+
+                if (post.Video != null)
+                {
+                    cardPost = new CardPostVideo(post, usuario);
+                }
+                else if (post.Imagens != null && post.Imagens.Count > 0)
+                {
+                    cardPost = new CardPostImagem(post, usuario);
+                }
+                else
+                {
+                    cardPost = new CardPostTexto(post, usuario);
+                }
+                cardPost.AutoSize = false;
+                cardPost.Margin = new Padding(0, 0, 0, 10);
+                panelPosts.Controls.Add(cardPost);
+                panelPosts.Controls.SetChildIndex(cardPost, 0); // Para exibir o mais novo no topo
+            }
+        }
+
     }
+
 }

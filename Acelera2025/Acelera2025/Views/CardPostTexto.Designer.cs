@@ -182,12 +182,11 @@
             // 
             // lblTexto
             // 
-            this.lblTexto.AutoSize = true;
             this.lblTexto.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblTexto.Location = new System.Drawing.Point(19, 14);
             this.lblTexto.Name = "lblTexto";
-            this.lblTexto.Size = new System.Drawing.Size(122, 36);
+            this.lblTexto.Size = new System.Drawing.Size(694, 145);
             this.lblTexto.TabIndex = 64;
             this.lblTexto.Text = "Texto TEXTo";
             // 
@@ -248,7 +247,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
