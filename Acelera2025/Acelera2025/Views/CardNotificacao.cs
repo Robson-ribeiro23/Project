@@ -19,7 +19,7 @@ namespace Acelera2025.Telas
         public Dictionary<string, object> contexto;
 
 
-        public CardNotificacao(PessoaModels usuario, string type, Dictionary<string, object> context)
+        public CardNotificacao(PessoaModels usuario, string type, Dictionary<string, object> context) 
         {
             InitializeComponent();
             this.loggedUser = UsuarioControllers.loggedUser;

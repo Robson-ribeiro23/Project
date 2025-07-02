@@ -2,6 +2,7 @@
 using Acelera2025.Models;
 using Acelera2025.Presença;
 using Acelera2025.Telas;
+using Acelera2025.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,10 +10,10 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Acelera2025.Utils;
 
 namespace Acelera2025.Views
 {
@@ -238,6 +239,46 @@ namespace Acelera2025.Views
                 MessageBox.Show("Presença confirmada!");
             else
                 MessageBox.Show("Código inválido, expirado ou sem resgates disponíveis.");
+        }
+
+        private void btnSeguir_Click(object sender, EventArgs e)
+        {
+            if (usuario == null || evento == null || evento.criador == null)
+            {
+                MessageBox.Show("Erro ao seguir usuário. Dados incompletos.");
+                return;
+            }
+
+            // Impedir seguir a si mesmo
+            if (usuario.Email == evento.criador.Email)
+            {
+                MessageBox.Show("Você não pode seguir a si mesmo.");
+                return;
+            }
+
+            // Alterna entre seguir e deixar de seguir
+            bool seguindo = usuario.SeguirOuDeixarDeSeguir(evento.criador);
+
+            labelSeguir.Text = seguindo ? "Seguindo" : "Seguir";
+
+            if (seguindo)
+            {
+                var notificacao = new NotificacaoModels(usuario.Nome, usuario.Email);
+                NotificacaoCache.AdicionarNotificacao(evento.criador.Email, notificacao);
+
+                var contexto = new Dictionary<string, object>
+        {
+            { "perfil", usuario }
+        };
+
+                var card = new CardNotificacao(usuario, "onBeFollowed", contexto);
+
+                var painel = cardPainelDeNotificacoes?.Controls
+                    .OfType<FlowLayoutPanel>()
+                    .FirstOrDefault();
+
+                painel?.Controls.Add(card);
+            }
         }
     }
 }
