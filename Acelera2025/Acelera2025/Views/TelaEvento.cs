@@ -219,7 +219,7 @@ namespace Acelera2025.Views
             if (valido)
                 MessageBox.Show("Presença confirmada!");
             else
-                MessageBox.Show("Código inválido ou expirado.");
+                MessageBox.Show("Código inválido, expirado ou sem resgates disponíveis.");
         }
     }
 }
