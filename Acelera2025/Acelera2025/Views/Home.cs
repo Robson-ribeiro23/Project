@@ -13,9 +13,6 @@ using System.Windows.Forms;
 
 namespace Acelera2025.Views
 {
-
-
-
     public partial class Home: Form
     {
         private bool panelVisivel = false;
