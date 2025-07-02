@@ -90,17 +90,25 @@ namespace Acelera2025.Views
 
         private void LoadAllEvents()
         {
-            List<EventoModels> subbedEvents = usuario.GetSubbedEvents();
-            List<EventoModels> ownedEvents = usuario.GetOwnedEvents();
+            // mais recentes primeiro
+            List<EventoModels> subbedEvents = usuario.GetSubbedEvents()
+                .OrderByDescending(e => e.Data).ToList();
+            List<EventoModels> ownedEvents = usuario.GetOwnedEvents()
+                .OrderByDescending(e => e.Data).ToList();
+
+            panelParticipacoes.Controls.Clear();
+            panelEventosCriados.Controls.Clear();
 
             foreach (EventoModels evento in subbedEvents)
             {
                 panelParticipacoes.Controls.Add(CreateEventCard(evento));
+                panelParticipacoes.Controls.SetChildIndex(panelParticipacoes.Controls[panelParticipacoes.Controls.Count - 1], 0);
             }
 
             foreach (EventoModels evento in ownedEvents)
             {
                 panelEventosCriados.Controls.Add(CreateEventCard(evento));
+                panelEventosCriados.Controls.SetChildIndex(panelEventosCriados.Controls[panelEventosCriados.Controls.Count - 1], 0);
             }
         }
 
@@ -113,7 +121,7 @@ namespace Acelera2025.Views
                 card.PicEvento.Image = Image.FromFile(evento.CaminhoImagem);
             }
             card.lblNomeEvento.Text = evento.NomeEvento;
-            card.lblDataHora.Text = evento.Data.ToString();
+            card.lblDataHora.Text = evento.Data.ToString("dd/MM/yyyy") + (string.IsNullOrEmpty(evento.Horario) ? "" : " " + evento.Horario);
             card.lblLocal.Text = evento.Local;
             card.lblRua.Text = evento.Rua;
             card.lblCidadeEstado.Text = evento.Cidade;

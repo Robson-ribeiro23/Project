@@ -67,13 +67,12 @@ namespace Acelera2025.Views
                 card.PicEvento.Image = Image.FromFile(evento.CaminhoImagem);
             }
             card.lblNomeEvento.Text = evento.NomeEvento;
-            card.lblDataHora.Text = evento.Data.ToString();
+            card.lblDataHora.Text = evento.Data.ToString("dd/MM/yyyy") + (string.IsNullOrEmpty(evento.Horario) ? "" : " " + evento.Horario);
             card.lblLocal.Text = evento.Local;
             card.lblRua.Text = evento.Rua;
             card.lblCidadeEstado.Text = evento.Cidade;
 
             pageInscricoes.Controls.Add(card);
-
         }
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

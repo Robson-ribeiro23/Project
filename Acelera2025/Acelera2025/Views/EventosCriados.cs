@@ -155,7 +155,8 @@ namespace Acelera2025.Views
             lblCEP.Text = evento.CEP;
 
             lblLinkReuniao.Text = evento.IsPresencial ? "Evento presencial" : evento.LinkReuniao;
-
+            panelPresencial.Visible = evento.IsPresencial;
+            panelOnline.Visible = !evento.IsPresencial;
             lblParticipantes.Text = evento.GetUserList().Count().ToString();
 
             // Obtém a quantidade de participantes e o limite

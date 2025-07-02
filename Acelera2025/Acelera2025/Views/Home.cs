@@ -90,7 +90,10 @@ namespace Acelera2025.Views
                     labelDatas[i].Text = evento.Data.ToShortDateString();
                     labelHoras[i].Text = evento.Horario;
                     btnNomes[i].Text = evento.NomeEvento;
-                    labelCidadeUfs[i].Text = $"{evento.Cidade} - {evento.Estado}"; // <- LINHA NOVA
+                    if (evento.IsPresencial)
+                        labelCidadeUfs[i].Text = $"{evento.Cidade} - {evento.Estado}";
+                    else
+                        labelCidadeUfs[i].Text = "Online";
 
                     if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
                     {
@@ -111,7 +114,7 @@ namespace Acelera2025.Views
                     labelDatas[i].Text = "";
                     labelHoras[i].Text = "";
                     btnNomes[i].Text = "";
-                    labelCidadeUfs[i].Text = ""; // <- Limpa também quando não houver evento
+                    labelCidadeUfs[i].Text = "";
                     pictureBoxes[i].Image = null;
 
                     pictureBoxes[i].Tag = null;

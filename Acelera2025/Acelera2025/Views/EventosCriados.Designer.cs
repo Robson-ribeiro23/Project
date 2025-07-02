@@ -36,13 +36,13 @@
             this.Patrocinador3 = new Acelera2025.Views.Tools.CircularPictureBox();
             this.Patrocinador2 = new Acelera2025.Views.Tools.CircularPictureBox();
             this.Patrocinador1 = new Acelera2025.Views.Tools.CircularPictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelPresencial = new System.Windows.Forms.Panel();
             this.lblNomeLocal = new System.Windows.Forms.Label();
             this.lblCEP = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.lblEndereco = new System.Windows.Forms.Label();
             this.lblCidadeEstado = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelOnline = new System.Windows.Forms.Panel();
             this.lblLinkReuniao = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -137,8 +137,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelPresencial.SuspendLayout();
+            this.panelOnline.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).BeginInit();
             this.Participantes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAltoRendimento)).BeginInit();
@@ -190,8 +190,8 @@
             this.VisaoGeral.Controls.Add(this.Patrocinador3);
             this.VisaoGeral.Controls.Add(this.Patrocinador2);
             this.VisaoGeral.Controls.Add(this.Patrocinador1);
-            this.VisaoGeral.Controls.Add(this.panel3);
-            this.VisaoGeral.Controls.Add(this.panel2);
+            this.VisaoGeral.Controls.Add(this.panelPresencial);
+            this.VisaoGeral.Controls.Add(this.panelOnline);
             this.VisaoGeral.Controls.Add(this.label12);
             this.VisaoGeral.Controls.Add(this.lblLimiteParticipantes);
             this.VisaoGeral.Controls.Add(this.label10);
@@ -227,7 +227,7 @@
             this.Patrocinador5.GradientAngle = 50F;
             this.Patrocinador5.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
             this.Patrocinador5.Location = new System.Drawing.Point(1080, 185);
-            this.Patrocinador5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Patrocinador5.Margin = new System.Windows.Forms.Padding(4);
             this.Patrocinador5.Name = "Patrocinador5";
             this.Patrocinador5.Size = new System.Drawing.Size(72, 72);
             this.Patrocinador5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -246,7 +246,7 @@
             this.Patrocinador4.GradientAngle = 50F;
             this.Patrocinador4.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
             this.Patrocinador4.Location = new System.Drawing.Point(1000, 185);
-            this.Patrocinador4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Patrocinador4.Margin = new System.Windows.Forms.Padding(4);
             this.Patrocinador4.Name = "Patrocinador4";
             this.Patrocinador4.Size = new System.Drawing.Size(72, 72);
             this.Patrocinador4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -265,7 +265,7 @@
             this.Patrocinador3.GradientAngle = 50F;
             this.Patrocinador3.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
             this.Patrocinador3.Location = new System.Drawing.Point(920, 185);
-            this.Patrocinador3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Patrocinador3.Margin = new System.Windows.Forms.Padding(4);
             this.Patrocinador3.Name = "Patrocinador3";
             this.Patrocinador3.Size = new System.Drawing.Size(72, 72);
             this.Patrocinador3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -284,7 +284,7 @@
             this.Patrocinador2.GradientAngle = 50F;
             this.Patrocinador2.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
             this.Patrocinador2.Location = new System.Drawing.Point(840, 185);
-            this.Patrocinador2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Patrocinador2.Margin = new System.Windows.Forms.Padding(4);
             this.Patrocinador2.Name = "Patrocinador2";
             this.Patrocinador2.Size = new System.Drawing.Size(72, 72);
             this.Patrocinador2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -303,7 +303,7 @@
             this.Patrocinador1.GradientAngle = 50F;
             this.Patrocinador1.Image = global::Acelera2025.Properties.Resources.icons8_plus_128;
             this.Patrocinador1.Location = new System.Drawing.Point(760, 185);
-            this.Patrocinador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Patrocinador1.Margin = new System.Windows.Forms.Padding(4);
             this.Patrocinador1.Name = "Patrocinador1";
             this.Patrocinador1.Size = new System.Drawing.Size(72, 72);
             this.Patrocinador1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -311,19 +311,19 @@
             this.Patrocinador1.TabStop = false;
             this.Patrocinador1.Click += new System.EventHandler(this.Patrocinador1_Click);
             // 
-            // panel3
+            // panelPresencial
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.lblNomeLocal);
-            this.panel3.Controls.Add(this.lblCEP);
-            this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.lblEndereco);
-            this.panel3.Controls.Add(this.lblCidadeEstado);
-            this.panel3.Location = new System.Drawing.Point(861, 385);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(721, 110);
-            this.panel3.TabIndex = 22;
+            this.panelPresencial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelPresencial.Controls.Add(this.lblNomeLocal);
+            this.panelPresencial.Controls.Add(this.lblCEP);
+            this.panelPresencial.Controls.Add(this.label18);
+            this.panelPresencial.Controls.Add(this.lblEndereco);
+            this.panelPresencial.Controls.Add(this.lblCidadeEstado);
+            this.panelPresencial.Location = new System.Drawing.Point(861, 385);
+            this.panelPresencial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelPresencial.Name = "panelPresencial";
+            this.panelPresencial.Size = new System.Drawing.Size(721, 110);
+            this.panelPresencial.TabIndex = 22;
             // 
             // lblNomeLocal
             // 
@@ -385,16 +385,16 @@
             this.lblCidadeEstado.TabIndex = 21;
             this.lblCidadeEstado.Text = "Cidade , UF";
             // 
-            // panel2
+            // panelOnline
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.lblLinkReuniao);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Location = new System.Drawing.Point(861, 318);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(721, 49);
-            this.panel2.TabIndex = 21;
+            this.panelOnline.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelOnline.Controls.Add(this.lblLinkReuniao);
+            this.panelOnline.Controls.Add(this.label13);
+            this.panelOnline.Location = new System.Drawing.Point(861, 318);
+            this.panelOnline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelOnline.Name = "panelOnline";
+            this.panelOnline.Size = new System.Drawing.Size(721, 49);
+            this.panelOnline.TabIndex = 21;
             // 
             // lblLinkReuniao
             // 
@@ -1421,7 +1421,7 @@
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_1;
             this.picturePerfil.Location = new System.Drawing.Point(1611, 2);
-            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4);
             this.picturePerfil.Name = "picturePerfil";
             this.picturePerfil.Size = new System.Drawing.Size(47, 47);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1609,10 +1609,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelPresencial.ResumeLayout(false);
+            this.panelPresencial.PerformLayout();
+            this.panelOnline.ResumeLayout(false);
+            this.panelOnline.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicEvento)).EndInit();
             this.Participantes.ResumeLayout(false);
             this.Participantes.PerformLayout();
@@ -1691,11 +1691,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboEventosCriados;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelPresencial;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.Label lblCidadeEstado;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelOnline;
         private System.Windows.Forms.Label lblLinkReuniao;
         private System.Windows.Forms.Label lblNomeLocal;
         private System.Windows.Forms.Label lblCEP;
