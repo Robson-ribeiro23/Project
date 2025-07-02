@@ -1,12 +1,13 @@
-﻿using Ac;
-using Acelera2025.Models;
-using Acelera2025.Telas;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using Ac;
+using Acelera2025.Models;
+using Acelera2025.Telas;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Acelera2025.Views
 {
@@ -67,7 +68,6 @@ namespace Acelera2025.Views
             cardEditarPerfil = new CardEditarPerfil(loggedUser);
             cardEditarPerfil.Visible = false;
             
-
             panel1.Controls.Add(cardPerfil);
             cardPerfil.Location = new Point(panel1.Width - cardPerfil.Width-20, 0);
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
@@ -83,6 +83,12 @@ namespace Acelera2025.Views
             panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
+            btnLapis.Visible = usuarioVisualizado.Email == loggedUser.Email;
+            btnSeguir.Visible = usuarioVisualizado.Email != loggedUser.Email;
+            labelSeguir.Visible = usuarioVisualizado.Email != loggedUser.Email;
+            btnEntrarEmContato.Visible = usuarioVisualizado.Email != loggedUser.Email;
+            labelEntrarEmContato.Visible = usuarioVisualizado.Email != loggedUser.Email;
 
             LoadAllEvents();
             LoadAllPosts();
@@ -223,14 +229,12 @@ namespace Acelera2025.Views
             // Adicionar notificação ao usuário seguido
             if (seguindo)
             {
-                var notificacao = new NotificacaoModels(loggedUser.Nome, loggedUser.Email);
+                var context = new Dictionary<string, object>();
+                context["perfil"] = loggedUser;
+                NotificacaoModels notificacao = new NotificacaoModels(usuarioVisualizado.Email, "onBeFollowed", context);
                 NotificacaoCache.AdicionarNotificacao(usuarioVisualizado.Email, notificacao);
 
-                // Criar card visual de notificação
-                var card = new CardNotificacao();
-                card.lblNomeDoSeguidor.Text = $"{loggedUser.Nome} começou a te seguir!";
-
-                // Você pode implementar lógica no botão para ir ao perfil
+                /* Você pode implementar lógica no botão para ir ao perfil
                 card.btnVerNotificacao.Click += (s, args) =>
                 {
                     Navegador.IrParaPerfilUsuario(loggedUser); // ou outra lógica
@@ -245,7 +249,7 @@ namespace Acelera2025.Views
 
                     if (painel != null)
                         painel.Controls.Add(card);
-                }
+                }*/
             }
         }
         private void LoadAllPosts()

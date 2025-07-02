@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVerNotificacao = new System.Windows.Forms.LinkLabel();
             this.lblDescricao = new System.Windows.Forms.Label();
-            this.lblNomeDoSeguidor = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.picPerfil = new CircularPanel();
             this.roundedPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +46,7 @@
             this.roundedPanel1.Controls.Add(this.panel1);
             this.roundedPanel1.Controls.Add(this.btnVerNotificacao);
             this.roundedPanel1.Controls.Add(this.lblDescricao);
-            this.roundedPanel1.Controls.Add(this.lblNomeDoSeguidor);
+            this.roundedPanel1.Controls.Add(this.lblTitulo);
             this.roundedPanel1.Controls.Add(this.picPerfil);
             this.roundedPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedPanel1.Location = new System.Drawing.Point(0, 0);
@@ -76,6 +76,7 @@
             this.btnVerNotificacao.TabIndex = 69;
             this.btnVerNotificacao.TabStop = true;
             this.btnVerNotificacao.Text = "Ver";
+            this.btnVerNotificacao.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnVerNotificacao_LinkClicked);
             // 
             // lblDescricao
             // 
@@ -88,17 +89,17 @@
             this.lblDescricao.Size = new System.Drawing.Size(0, 21);
             this.lblDescricao.TabIndex = 68;
             // 
-            // lblNomeDoSeguidor
+            // lblTitulo
             // 
-            this.lblNomeDoSeguidor.AutoSize = true;
-            this.lblNomeDoSeguidor.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeDoSeguidor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNomeDoSeguidor.Location = new System.Drawing.Point(44, 15);
-            this.lblNomeDoSeguidor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNomeDoSeguidor.Name = "lblNomeDoSeguidor";
-            this.lblNomeDoSeguidor.Size = new System.Drawing.Size(46, 25);
-            this.lblNomeDoSeguidor.TabIndex = 67;
-            this.lblNomeDoSeguidor.Text = "Titulo";
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblTitulo.Location = new System.Drawing.Point(44, 15);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(46, 25);
+            this.lblTitulo.TabIndex = 67;
+            this.lblTitulo.Text = "Titulo";
             // 
             // picPerfil
             // 
@@ -120,6 +121,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CardNotificacao";
             this.Size = new System.Drawing.Size(236, 81);
+            this.Load += new System.EventHandler(this.CardNotificacao_Load);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -130,7 +132,7 @@
 
         public RoundedPanel roundedPanel1;
         public System.Windows.Forms.Label lblDescricao;
-        public System.Windows.Forms.Label lblNomeDoSeguidor;
+        public System.Windows.Forms.Label lblTitulo;
         public CircularPanel picPerfil;
         public System.Windows.Forms.LinkLabel btnVerNotificacao;
         public System.Windows.Forms.Panel panel1;
