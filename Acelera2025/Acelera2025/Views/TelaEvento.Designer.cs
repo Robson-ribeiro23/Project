@@ -31,12 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaEvento));
             this.gradientPanel1 = new GradientPanel();
             this.btnFeed = new System.Windows.Forms.LinkLabel();
-            this.picturePerfil = new Acelera2025.Views.Tools.CircularPictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPrincipal = new System.Windows.Forms.LinkLabel();
-            this.btnNotificacoes = new System.Windows.Forms.Button();
             this.roundedPanel5 = new RoundedPanel();
-            this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.btnOrganizadorEventos = new System.Windows.Forms.LinkLabel();
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
@@ -52,9 +48,6 @@
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
             this.btnEventosIngressados = new RoundedButton();
-            this.btnMaisEventos = new CircularButton();
-            this.btnSeguir = new CircularButton();
-            this.btnCurtir = new CircularButton();
             this.lblNomeEvento = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnInscrever = new RoundedButton();
@@ -67,9 +60,6 @@
             this.lblDescricao = new System.Windows.Forms.Label();
             this.gradientPanel2 = new GradientPanel();
             this.button14 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
             this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.circularPanel2 = new CircularPanel();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
@@ -77,7 +67,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowPatrociadores = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.picEvento = new SuperiorRoundedPic();
             this.roundedPanel1 = new RoundedPanel();
             this.lblAndamentoEncerrado = new System.Windows.Forms.Label();
             this.btnPresencialOnline = new RoundedButton();
@@ -88,9 +77,19 @@
             this.lblNomeLocal = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
+            this.btnConfirmar = new CircularButton();
+            this.btnMaisEventos = new CircularButton();
+            this.btnSeguir = new CircularButton();
+            this.btnCurtir = new CircularButton();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.picEvento = new SuperiorRoundedPic();
+            this.picturePerfil = new Acelera2025.Views.Tools.CircularPictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnNotificacoes = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.gradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel5.SuspendLayout();
             this.panelPatrocinadores.SuspendLayout();
             this.panelEmpresa.SuspendLayout();
@@ -99,8 +98,10 @@
             this.tabPage1.SuspendLayout();
             this.gradientPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picEvento)).BeginInit();
             this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEvento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gradientPanel1
@@ -964,6 +965,192 @@
             this.lblHora.Size = new System.Drawing.Size(58, 32);
             this.lblHora.TabIndex = 13;
             this.lblHora.Text = "00:00";
+            // btnConfirmar
+            // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfirmar.BorderColor = System.Drawing.Color.Black;
+            this.btnConfirmar.BorderSize = 0;
+            this.btnConfirmar.FlatAppearance.BorderSize = 0;
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar.Image = global::Acelera2025.Properties.Resources.Captura_de_tela_2025_03_31_1512231;
+            this.btnConfirmar.Location = new System.Drawing.Point(417, 344);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(20, 21);
+            this.btnConfirmar.TabIndex = 59;
+            this.btnConfirmar.UseVisualStyleBackColor = false;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            // 
+            // btnMaisEventos
+            // 
+            this.btnMaisEventos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnMaisEventos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMaisEventos.BorderColor = System.Drawing.Color.Black;
+            this.btnMaisEventos.BorderSize = 0;
+            this.btnMaisEventos.FlatAppearance.BorderSize = 0;
+            this.btnMaisEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaisEventos.Image = global::Acelera2025.Properties.Resources.Captura_de_tela_2025_03_31_152801;
+            this.btnMaisEventos.Location = new System.Drawing.Point(261, 344);
+            this.btnMaisEventos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMaisEventos.Name = "btnMaisEventos";
+            this.btnMaisEventos.Size = new System.Drawing.Size(20, 21);
+            this.btnMaisEventos.TabIndex = 55;
+            this.btnMaisEventos.UseVisualStyleBackColor = false;
+            // 
+            // btnSeguir
+            // 
+            this.btnSeguir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnSeguir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSeguir.BorderColor = System.Drawing.Color.Black;
+            this.btnSeguir.BorderSize = 0;
+            this.btnSeguir.FlatAppearance.BorderSize = 0;
+            this.btnSeguir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeguir.Image = global::Acelera2025.Properties.Resources.Captura_de_tela_2025_03_31_152752;
+            this.btnSeguir.Location = new System.Drawing.Point(143, 341);
+            this.btnSeguir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSeguir.Name = "btnSeguir";
+            this.btnSeguir.Size = new System.Drawing.Size(20, 21);
+            this.btnSeguir.TabIndex = 54;
+            this.btnSeguir.UseVisualStyleBackColor = false;
+            // 
+            // btnCurtir
+            // 
+            this.btnCurtir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCurtir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
+            this.btnCurtir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCurtir.BorderColor = System.Drawing.Color.Black;
+            this.btnCurtir.BorderSize = 0;
+            this.btnCurtir.FlatAppearance.BorderSize = 0;
+            this.btnCurtir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCurtir.Image = global::Acelera2025.Properties.Resources.Captura_de_tela_2025_03_31_151223;
+            this.btnCurtir.Location = new System.Drawing.Point(1136, 264);
+            this.btnCurtir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCurtir.Name = "btnCurtir";
+            this.btnCurtir.Size = new System.Drawing.Size(28, 32);
+            this.btnCurtir.TabIndex = 53;
+            this.btnCurtir.UseVisualStyleBackColor = false;
+            // 
+            // button17
+            // 
+            this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button17.BackColor = System.Drawing.Color.Transparent;
+            this.button17.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_email_48;
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Location = new System.Drawing.Point(1125, 11);
+            this.button17.Margin = new System.Windows.Forms.Padding(2);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(40, 39);
+            this.button17.TabIndex = 12;
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button16.BackColor = System.Drawing.Color.Transparent;
+            this.button16.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_facebook_logo_48;
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(1260, 11);
+            this.button16.Margin = new System.Windows.Forms.Padding(2);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(40, 39);
+            this.button16.TabIndex = 11;
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button15.BackColor = System.Drawing.Color.Transparent;
+            this.button15.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_instagram_logo_48;
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(1215, 11);
+            this.button15.Margin = new System.Windows.Forms.Padding(2);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(40, 39);
+            this.button15.TabIndex = 10;
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // picEvento
+            // 
+            this.picEvento.BackColor = System.Drawing.Color.Silver;
+            this.picEvento.BorderColor = System.Drawing.Color.Black;
+            this.picEvento.BorderRadius = 20;
+            this.picEvento.BorderSize = 0;
+            this.picEvento.Location = new System.Drawing.Point(69, 15);
+            this.picEvento.Margin = new System.Windows.Forms.Padding(2);
+            this.picEvento.Name = "picEvento";
+            this.picEvento.Size = new System.Drawing.Size(500, 188);
+            this.picEvento.TabIndex = 36;
+            this.picEvento.TabStop = false;
+            // 
+            // picturePerfil
+            // 
+            this.picturePerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picturePerfil.BackColor = System.Drawing.Color.Transparent;
+            this.picturePerfil.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picturePerfil.BorderColor = System.Drawing.Color.Transparent;
+            this.picturePerfil.BorderColor2 = System.Drawing.Color.Transparent;
+            this.picturePerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picturePerfil.BorderSize = 0;
+            this.picturePerfil.GradientAngle = 50F;
+            this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.picturePerfil.Location = new System.Drawing.Point(1310, 2);
+            this.picturePerfil.Name = "picturePerfil";
+            this.picturePerfil.Size = new System.Drawing.Size(35, 35);
+            this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturePerfil.TabIndex = 18;
+            this.picturePerfil.TabStop = false;
+            this.picturePerfil.Click += new System.EventHandler(this.picturePerfil_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnNotificacoes
+            // 
+            this.btnNotificacoes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.btnNotificacoes.BackgroundImage = global::Acelera2025.Properties.Resources.IconeNotificacao;
+            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotificacoes.FlatAppearance.BorderSize = 0;
+            this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificacoes.Location = new System.Drawing.Point(1263, 11);
+            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNotificacoes.Name = "btnNotificacoes";
+            this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
+            this.btnNotificacoes.TabIndex = 10;
+            this.btnNotificacoes.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesquisar.FlatAppearance.BorderSize = 0;
+            this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
+            this.btnPesquisar.Location = new System.Drawing.Point(364, -2);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(32, 31);
+            this.btnPesquisar.TabIndex = 1;
+            this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // TelaEvento
             // 
@@ -981,8 +1168,6 @@
             this.Load += new System.EventHandler(this.TelaEvento_Load);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
             this.panelPatrocinadores.ResumeLayout(false);
@@ -995,9 +1180,11 @@
             this.gradientPanel2.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picEvento)).EndInit();
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEvento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
