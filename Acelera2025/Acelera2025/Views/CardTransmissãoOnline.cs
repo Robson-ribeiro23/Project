@@ -17,7 +17,7 @@ namespace Acelera2025.Telas
             InitializeComponent();
         }
 
-        private void roundedButton1_Click(object sender, EventArgs e)
+        public void btnCopiarLink_Click(object sender, EventArgs e)
         {
 
         }

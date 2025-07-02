@@ -46,6 +46,7 @@ namespace Acelera2025.Views
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 
             LoadAllEvents();
+            LoadEventosOnline();
         }
 
         private void LoadAllEvents()
@@ -72,7 +73,43 @@ namespace Acelera2025.Views
             card.lblRua.Text = evento.Rua;
             card.lblCidadeEstado.Text = evento.Cidade;
 
-            pageInscricoes.Controls.Add(card);
+            panelInscricoes.Controls.Add(card);
+        }
+        private void LoadEventosOnline()
+        {
+            List<EventoModels> eventoOnlineList = usuario.GetSubbedEvents();
+            foreach (EventoModels evento in eventoOnlineList)
+            {
+                if (!evento.IsPresencial)
+                {
+                    CreateEventoOnlineLink(evento);
+                }
+            }
+        }
+        private void CreateEventoOnlineLink(EventoModels evento)
+        {
+            CardTransmissãoOnline card = new CardTransmissãoOnline();
+
+            card.lblNomeEvento.Text = evento.NomeEvento;
+            card.lblDataHora.Text = evento.Data.ToString("dd/MM/yyyy") + (string.IsNullOrEmpty(evento.Horario) ? "" : " " + evento.Horario);
+
+            card.btnCopiarLink.Click += (sender, e) =>
+            {
+                if (!string.IsNullOrEmpty(evento.LinkReuniao))
+                {
+                    Clipboard.SetText(evento.LinkReuniao);
+                    MessageBox.Show("Link copiado para a área de transferência!", "Copiado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Este evento não possui link de transmissão.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            };
+
+            panelOnline.Controls.Add(card);
+            card.BringToFront();
+            panelOnline.Refresh();
+            card.Visible = true;
         }
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

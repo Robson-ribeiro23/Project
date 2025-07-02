@@ -31,8 +31,8 @@
             this.lblNomeEvento = new System.Windows.Forms.Label();
             this.lblDataHora = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCopiarLink = new RoundedButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCopiarLink = new RoundedButton();
             this.SuspendLayout();
             // 
             // lblNomeEvento
@@ -67,22 +67,6 @@
             this.label1.Size = new System.Drawing.Size(0, 32);
             this.label1.TabIndex = 22;
             // 
-            // btnCopiarLink
-            // 
-            this.btnCopiarLink.BackColor = System.Drawing.Color.Transparent;
-            this.btnCopiarLink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCopiarLink.BorderColor = System.Drawing.Color.White;
-            this.btnCopiarLink.BorderRadius = 20;
-            this.btnCopiarLink.BorderSize = 3;
-            this.btnCopiarLink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCopiarLink.Image = global::Acelera2025.Properties.Resources.icons8_copy_24;
-            this.btnCopiarLink.Location = new System.Drawing.Point(863, 12);
-            this.btnCopiarLink.Name = "btnCopiarLink";
-            this.btnCopiarLink.Size = new System.Drawing.Size(40, 36);
-            this.btnCopiarLink.TabIndex = 23;
-            this.btnCopiarLink.UseVisualStyleBackColor = false;
-            this.btnCopiarLink.Click += new System.EventHandler(this.roundedButton1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -93,6 +77,22 @@
             this.label2.Size = new System.Drawing.Size(102, 32);
             this.label2.TabIndex = 24;
             this.label2.Text = "Copiar Link";
+            // 
+            // btnCopiarLink
+            // 
+            this.btnCopiarLink.BackColor = System.Drawing.Color.Transparent;
+            this.btnCopiarLink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCopiarLink.BorderColor = System.Drawing.Color.White;
+            this.btnCopiarLink.BorderRadius = 20;
+            this.btnCopiarLink.BorderSize = 3;
+            this.btnCopiarLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCopiarLink.Image = global::Acelera2025.Properties.Resources.icons8_copy_24;
+            this.btnCopiarLink.Location = new System.Drawing.Point(863, 10);
+            this.btnCopiarLink.Name = "btnCopiarLink";
+            this.btnCopiarLink.Size = new System.Drawing.Size(40, 36);
+            this.btnCopiarLink.TabIndex = 23;
+            this.btnCopiarLink.UseVisualStyleBackColor = false;
+            this.btnCopiarLink.Click += new System.EventHandler(this.btnCopiarLink_Click);
             // 
             // CardTransmissãoOnline
             // 
@@ -110,11 +110,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblNomeEvento;
-        private System.Windows.Forms.Label lblDataHora;
         private System.Windows.Forms.Label label1;
-        private RoundedButton btnCopiarLink;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lblNomeEvento;
+        public System.Windows.Forms.Label lblDataHora;
+        public RoundedButton btnCopiarLink;
     }
 }
