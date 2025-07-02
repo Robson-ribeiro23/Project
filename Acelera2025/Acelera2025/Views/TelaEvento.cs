@@ -263,21 +263,10 @@ namespace Acelera2025.Views
 
             if (seguindo)
             {
-                var notificacao = new NotificacaoModels(usuario.Nome, usuario.Email);
+                var context = new Dictionary<string, object>();
+                context["perfil"] = usuario;
+                NotificacaoModels notificacao = new NotificacaoModels(evento.criador.Email, "onBeFollowed", context);
                 NotificacaoCache.AdicionarNotificacao(evento.criador.Email, notificacao);
-
-                var contexto = new Dictionary<string, object>
-        {
-            { "perfil", usuario }
-        };
-
-                var card = new CardNotificacao(usuario, "onBeFollowed", contexto);
-
-                var painel = cardPainelDeNotificacoes?.Controls
-                    .OfType<FlowLayoutPanel>()
-                    .FirstOrDefault();
-
-                painel?.Controls.Add(card);
             }
         }
     }
