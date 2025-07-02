@@ -342,8 +342,21 @@ namespace Acelera2025.Views
             evento.Bairro = txtBairro.Text;
             evento.LinkReuniao = txtLink.Text;
             evento.Descricao = txtDescricao.Text;
-
             evento.IsPresencial = presencial.Visible;
+
+            if (PicImagemEvento.Image != null)
+            {
+                string pastaImagens = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ImagensEventos");
+                if (!Directory.Exists(pastaImagens))
+                    Directory.CreateDirectory(pastaImagens);
+
+                string nomeArquivo = $"{Guid.NewGuid()}.jpg";
+                string caminhoCompleto = Path.Combine(pastaImagens, nomeArquivo);
+
+                // Salva a imagem atual do PictureBox
+                PicImagemEvento.Image.Save(caminhoCompleto, System.Drawing.Imaging.ImageFormat.Jpeg);
+                evento.CaminhoImagem = caminhoCompleto;
+            }
 
             controller.EditarEvento(
                 evento.NomeEvento,
@@ -365,6 +378,21 @@ namespace Acelera2025.Views
             AtualizarListaDeEventos();
             comboEventosCriados.SelectedItem = evento.NomeEvento;
             EditarEvento();
+        }
+
+        private void btnTrocarImagem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Title = "Selecionar Imagem";
+                openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    PicImagemEvento.Image = Image.FromFile(openFileDialog.FileName);
+                    PicImagemEvento.SizeMode = PictureBoxSizeMode.Zoom; // ou StretchImage, CenterImage, etc.
+                }
+            }
         }
     }
 }

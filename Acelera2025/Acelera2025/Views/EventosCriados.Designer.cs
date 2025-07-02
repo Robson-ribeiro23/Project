@@ -1201,6 +1201,7 @@
             this.btnTrocarImagem.TabIndex = 58;
             this.btnTrocarImagem.Text = "Trocar Imagem";
             this.btnTrocarImagem.UseVisualStyleBackColor = false;
+            this.btnTrocarImagem.Click += new System.EventHandler(this.btnTrocarImagem_Click);
             // 
             // roundedPanel3
             // 
