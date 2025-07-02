@@ -53,7 +53,7 @@ namespace Acelera2025.Views
             panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-            EditarEvento();
+            
         }
 
         private void EditarEvento()
@@ -74,20 +74,24 @@ namespace Acelera2025.Views
             txtCEP.Text = evento.CEP;
             txtBairro.Text = evento.Bairro;
             txtLink.Text = evento.LinkReuniao;
-            txtDescricao.Text = evento.Descricao;
+            txtNovaDescricao.Text = evento.Descricao;
+
+            // Exibe o painel correto conforme o tipo do evento
+            presencial.Visible = evento.IsPresencial;
+            online.Visible = !evento.IsPresencial;
+
             if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
             {
                 using (var imgTemp = Image.FromFile(evento.CaminhoImagem))
                 {
-                    PicImagemEvento.Image = new Bitmap(imgTemp); 
+                    PicImagemEvento.Image = new Bitmap(imgTemp);
                 }
-                PicImagemEvento.SizeMode = PictureBoxSizeMode.Zoom; 
+                PicImagemEvento.SizeMode = PictureBoxSizeMode.Zoom;
             }
             else
             {
-                PicImagemEvento.Image = null; 
+                PicImagemEvento.Image = null;
             }
-
         }
 
         public void AtualizarListaDeEventos()
@@ -167,6 +171,7 @@ namespace Acelera2025.Views
 
         private void comboEventosCriados_SelectedIndexChanged(object sender, EventArgs e)
         {
+            EditarEvento();
             string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
             if (string.IsNullOrWhiteSpace(nomeSelecionado)) return;
 
@@ -261,44 +266,6 @@ namespace Acelera2025.Views
         }
 
 
-
-
-
-
-            /*string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
-            if (string.IsNullOrWhiteSpace(nomeSelecionado)) return;
-
-            EventoModels evento = new EventoControllers().BuscarPorNome(nomeSelecionado);
-            if (evento == null) return;
-
-            // Preencher os labels com os dados do evento
-            lblNomeEvento.Text = evento.NomeEvento;
-            lblData.Text = evento.Data.ToString("dd/MM/yyyy");
-            lblHora.Text = evento.Horario;
-            lblCategorias.Text = evento.Categoria;
-            lblPresencialOnline.Text = evento.IsPresencial ? "Presencial" : "Online";
-            lblLimiteParticipantes.Text = evento.LimiteParticipantes.ToString();
-            lblFaixaEtaria.Text = evento.FaixaEtaria;
-            txtDescricao.Text = evento.Descricao;
-            // lblPatrocinio.Text = evento.PermitePatrocinio ? "Permitido" : "Não permitido";
-
-            // Carregar a imagem do evento no PictureBox
-            if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
-            {
-                using (var imgTemp = Image.FromFile(evento.CaminhoImagem))
-                {
-                    PicEvento.Image = new Bitmap(imgTemp); // cria uma cópia para evitar travamento do arquivo
-                }
-                PicEvento.SizeMode = PictureBoxSizeMode.Zoom; // ajusta a imagem ao PictureBox
-            }
-            else
-            {
-                PicEvento.Image = null; // limpa caso não haja imagem
-            }
-            */
-
-        
-
         private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -342,6 +309,90 @@ namespace Acelera2025.Views
         private void btnConvidarParticipante_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
+            if (string.IsNullOrWhiteSpace(nomeSelecionado) || nomeSelecionado == "Nenhum evento encontrado")
+            {
+                MessageBox.Show("Selecione um evento para atualizar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            EventoControllers controller = new EventoControllers();
+            EventoModels evento = controller.BuscarPorNome(nomeSelecionado);
+            if (evento == null || evento.UsuarioEmail != this.usuario.Email)
+            {
+                MessageBox.Show("Evento não encontrado ou você não tem permissão para editá-lo.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Atualiza os dados do evento com os valores dos campos  
+            evento.NomeEvento = txtNomeEvento.Text;
+            evento.Data = data.Value;
+            evento.Horario = txtHora.Text;
+            int limite;
+            if (int.TryParse(txtParticipantes.Text, out limite))
+                evento.LimiteParticipantes = limite;
+            evento.Local = txtNomeLocal.Text;
+            evento.Rua = txtRua.Text;
+            evento.Numero = txtNumero.Text;
+            evento.CEP = txtCEP.Text;
+            evento.Bairro = txtBairro.Text;
+            evento.LinkReuniao = txtLink.Text;
+            evento.Descricao = txtDescricao.Text;
+            evento.IsPresencial = presencial.Visible;
+
+            if (PicImagemEvento.Image != null)
+            {
+                string pastaImagens = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ImagensEventos");
+                if (!Directory.Exists(pastaImagens))
+                    Directory.CreateDirectory(pastaImagens);
+
+                string nomeArquivo = $"{Guid.NewGuid()}.jpg";
+                string caminhoCompleto = Path.Combine(pastaImagens, nomeArquivo);
+
+                // Salva a imagem atual do PictureBox
+                PicImagemEvento.Image.Save(caminhoCompleto, System.Drawing.Imaging.ImageFormat.Jpeg);
+                evento.CaminhoImagem = caminhoCompleto;
+            }
+
+            controller.EditarEvento(
+                evento.NomeEvento,
+                evento.Data,
+                evento.Horario,
+                evento.LinkReuniao,
+                evento.LimiteParticipantes,
+                evento.Descricao,
+                evento.Local,
+                evento.Rua,
+                evento.Numero,
+                evento.CEP,
+                evento.Bairro,
+                evento.CaminhoImagem
+            );
+
+            MessageBox.Show("Evento atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            AtualizarListaDeEventos();
+            comboEventosCriados.SelectedItem = evento.NomeEvento;
+            EditarEvento();
+        }
+
+        private void btnTrocarImagem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Title = "Selecionar Imagem";
+                openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    PicImagemEvento.Image = Image.FromFile(openFileDialog.FileName);
+                    PicImagemEvento.SizeMode = PictureBoxSizeMode.Zoom; // ou StretchImage, CenterImage, etc.
+                }
+            }
         }
     }
 }

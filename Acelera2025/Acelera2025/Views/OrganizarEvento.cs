@@ -227,7 +227,10 @@ namespace Acelera2025.Views
                 string estado = comboUF.SelectedItem?.ToString();
                 string linkReuniao = isPresencial ? null : txtLinkReunião.Text;
                 string codigoPresenca = GeradorDeCodigos.Gerar(8);
-                ControleDePresencas.RegistrarCodigo(codigoPresenca);
+                DateTime validade = dataEvento.AddDays(1);
+                int maxResgates = limite + 20;
+
+                ControleDePresencas.RegistrarCodigo(codigoPresenca, maxResgates, validade);
 
                 EventoModels novoEvento = new EventoModels(
                     nomeEvento,
