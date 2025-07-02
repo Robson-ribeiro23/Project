@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Acelera2025.Views
@@ -201,11 +202,36 @@ namespace Acelera2025.Views
         {
             bool seguindo = loggedUser.SeguirOuDeixarDeSeguir(usuarioVisualizado);
 
-            
             labelSeguir.Text = seguindo ? "Seguindo" : "Seguir";
-
-            
             lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();
+
+            // Adicionar notificação ao usuário seguido
+            if (seguindo)
+            {
+                var notificacao = new NotificacaoModels(loggedUser.Nome, loggedUser.Email);
+                NotificacaoCache.AdicionarNotificacao(usuarioVisualizado.Email, notificacao);
+
+                // Criar card visual de notificação
+                var card = new CardNotificacao();
+                card.lblNomeDoSeguidor.Text = $"{loggedUser.Nome} começou a te seguir!";
+
+                // Você pode implementar lógica no botão para ir ao perfil
+                card.btnVerNotificacao.Click += (s, args) =>
+                {
+                    Navegador.IrParaPerfilUsuario(loggedUser); // ou outra lógica
+                };
+
+                // Adicionar ao painel de notificações
+                if (cardPainelDeNotificacoes != null)
+                {
+                    var painel = cardPainelDeNotificacoes.Controls
+                        .OfType<FlowLayoutPanel>()
+                        .FirstOrDefault();
+
+                    if (painel != null)
+                        painel.Controls.Add(card);
+                }
+            }
         }
         private void LoadAllPosts()
         {

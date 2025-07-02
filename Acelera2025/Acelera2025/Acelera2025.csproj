@@ -66,6 +66,8 @@
     <Compile Include="Models\EmpresaModels.cs" />
     <Compile Include="Models\EventoCache.cs" />
     <Compile Include="Models\EventoModels.cs" />
+    <Compile Include="Models\NotificacaoCache.cs" />
+    <Compile Include="Models\NotificacaoModels.cs" />
     <Compile Include="Models\PessoaModels.cs" />
     <Compile Include="Models\PostModels.cs" />
     <Compile Include="Models\UsuarioModels.cs" />

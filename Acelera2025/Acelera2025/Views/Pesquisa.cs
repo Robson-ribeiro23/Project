@@ -148,7 +148,7 @@ namespace Acelera2025.Views
         private void showUsers(string termo)
         {
             // Obtem todos os usuários
-            var usuarios = usuarioController.ListarTodos();
+            var usuarios = UsuarioControllers.ListarTodos();
 
             // Filtra os usuários
             var usuariosFiltrados = usuarios

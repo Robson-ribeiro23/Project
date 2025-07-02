@@ -12,9 +12,17 @@ namespace Acelera2025.Telas
 {
     public partial class CardNotificacao: UserControl
     {
+
+        
+
         public CardNotificacao()
         {
             InitializeComponent();
+        }
+
+        private void roundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -31,12 +31,8 @@ namespace Acelera2025.Views
 
         private void ConfigurarComentario()
         {
-            // Criar instância do controller
-            var controller = new UsuarioControllers();
-
-            // Procurar o usuário no controller
-            var pessoa = controller.ListarTodos()
-                .FirstOrDefault(p => p.Email == comentario.EmailUsuario);
+            var pessoa = UsuarioControllers.ListarTodos()
+                            .FirstOrDefault(p => p.Email == comentario.EmailUsuario);
 
             this.usuario = pessoa;
 

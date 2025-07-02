@@ -1,4 +1,5 @@
 ﻿using Ac;
+using Acelera2025.Models;
 using Acelera2025.Telas;
 using System;
 using System.Collections.Generic;
@@ -57,6 +58,7 @@ namespace Acelera2025.Views
             panelMeusEventos.Visible = false;
             cardPerfil = new CardPerfil(this.usuario);
             cardPerfil.Visible = false;
+            
 
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
             panel2.Controls.Add(cardPerfil);
@@ -68,6 +70,8 @@ namespace Acelera2025.Views
             panel2.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPainelDeNotificacoes.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+
+            CarregarNotificacoes();
 
             pictureBoxes = new List<PictureBox> { PicEventoPerto1, PicEventoPerto2, PicEventoPerto3, PicEventoPerto4 };
             labelDatas = new List<Label> { lblData1, lblData2, lblData3, lblData4 };
@@ -186,6 +190,38 @@ namespace Acelera2025.Views
                 }
             }
         }
+
+        private void CarregarNotificacoes()
+        {
+            var lista = NotificacaoCache.ObterNotificacoes(usuario.Email); 
+
+            var painel = cardPainelDeNotificacoes.Controls
+                .OfType<FlowLayoutPanel>()
+                .FirstOrDefault();
+
+            if (painel != null)
+            {
+                painel.Controls.Clear(); 
+
+                foreach (var notif in lista)
+                {
+                    var card = new CardNotificacao();
+                    card.lblNomeDoSeguidor.Text = $"{notif.NomeDeQuemSeguiu} começou a te seguir!";
+
+                    card.btnVerNotificacao.Click += (s, args) =>
+                    {
+                        var seguidor = UsuarioControllers.ListarTodos()
+                            .FirstOrDefault(u => u.Email == notif.EmailDeQuemSeguiu);
+
+                        if (seguidor != null)
+                            Navegador.IrParaPerfilUsuario(seguidor);
+                    };
+
+                    painel.Controls.Add(card);
+                }
+            }
+        }
+
 
         private void Evento_Click(object sender, EventArgs e)
         {

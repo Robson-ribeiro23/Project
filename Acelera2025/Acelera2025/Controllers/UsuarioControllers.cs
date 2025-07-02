@@ -58,7 +58,7 @@ public class UsuarioControllers
         return true;
     }
 
-    public List<UsuarioModels> ListarTodos()
+    public static List <UsuarioModels> ListarTodos()
     {
         return listaUsuarios;
     }
