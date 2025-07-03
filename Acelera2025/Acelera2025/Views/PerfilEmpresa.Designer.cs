@@ -32,6 +32,7 @@ namespace Acelera2025.Views
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilEmpresa));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblEnderecoCompleto = new System.Windows.Forms.Label();
             this.picPerfilEmpresa = new Acelera2025.Views.Tools.CircularPictureBox();
             this.btnLapis = new CircularButton();
             this.panelMeusEventos = new RoundedPanel();
@@ -47,7 +48,7 @@ namespace Acelera2025.Views
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblSeguir = new System.Windows.Forms.Label();
             this.btnEntrarEmContato = new CircularButton();
             this.btnSeguir = new CircularButton();
             this.lblSeguidores = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.lblEnderecoCompleto = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfilEmpresa)).BeginInit();
             this.panelMeusEventos.SuspendLayout();
@@ -94,6 +94,19 @@ namespace Acelera2025.Views
             this.panel1.Size = new System.Drawing.Size(1306, 542);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblEnderecoCompleto
+            // 
+            this.lblEnderecoCompleto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblEnderecoCompleto.AutoSize = true;
+            this.lblEnderecoCompleto.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnderecoCompleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblEnderecoCompleto.Location = new System.Drawing.Point(320, 362);
+            this.lblEnderecoCompleto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEnderecoCompleto.Name = "lblEnderecoCompleto";
+            this.lblEnderecoCompleto.Size = new System.Drawing.Size(18, 27);
+            this.lblEnderecoCompleto.TabIndex = 63;
+            this.lblEnderecoCompleto.Text = "-";
             // 
             // picPerfilEmpresa
             // 
@@ -187,7 +200,7 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.Controls.Add(this.lblNumSeguidores);
             this.superiorRoundedPanel1.Controls.Add(this.tabControlEndereço);
             this.superiorRoundedPanel1.Controls.Add(this.label3);
-            this.superiorRoundedPanel1.Controls.Add(this.label2);
+            this.superiorRoundedPanel1.Controls.Add(this.lblSeguir);
             this.superiorRoundedPanel1.Controls.Add(this.btnEntrarEmContato);
             this.superiorRoundedPanel1.Controls.Add(this.btnSeguir);
             this.superiorRoundedPanel1.Controls.Add(this.lblSeguidores);
@@ -312,18 +325,18 @@ namespace Acelera2025.Views
             this.label3.TabIndex = 59;
             this.label3.Text = "Entrar em Contato";
             // 
-            // label2
+            // lblSeguir
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label2.Location = new System.Drawing.Point(1124, 24);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 27);
-            this.label2.TabIndex = 58;
-            this.label2.Text = "Seguir";
+            this.lblSeguir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSeguir.AutoSize = true;
+            this.lblSeguir.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeguir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblSeguir.Location = new System.Drawing.Point(1124, 24);
+            this.lblSeguir.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSeguir.Name = "lblSeguir";
+            this.lblSeguir.Size = new System.Drawing.Size(54, 27);
+            this.lblSeguir.TabIndex = 58;
+            this.lblSeguir.Text = "Seguir";
             // 
             // btnEntrarEmContato
             // 
@@ -358,6 +371,7 @@ namespace Acelera2025.Views
             this.btnSeguir.Size = new System.Drawing.Size(25, 28);
             this.btnSeguir.TabIndex = 56;
             this.btnSeguir.UseVisualStyleBackColor = false;
+            this.btnSeguir.Click += new System.EventHandler(this.btnSeguir_Click);
             // 
             // lblSeguidores
             // 
@@ -607,19 +621,6 @@ namespace Acelera2025.Views
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
-            // lblEnderecoCompleto
-            // 
-            this.lblEnderecoCompleto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEnderecoCompleto.AutoSize = true;
-            this.lblEnderecoCompleto.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnderecoCompleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblEnderecoCompleto.Location = new System.Drawing.Point(320, 362);
-            this.lblEnderecoCompleto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEnderecoCompleto.Name = "lblEnderecoCompleto";
-            this.lblEnderecoCompleto.Size = new System.Drawing.Size(18, 27);
-            this.lblEnderecoCompleto.TabIndex = 63;
-            this.lblEnderecoCompleto.Text = "-";
-            // 
             // PerfilEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -676,7 +677,7 @@ namespace Acelera2025.Views
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSeguir;
         private CircularButton btnEntrarEmContato;
         private CircularButton btnSeguir;
         private System.Windows.Forms.Label lblNomeEmpresa;

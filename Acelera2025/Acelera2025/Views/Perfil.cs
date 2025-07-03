@@ -87,7 +87,7 @@ namespace Acelera2025.Views
 
             btnLapis.Visible = usuarioVisualizado.Email == loggedUser.Email;
             btnSeguir.Visible = usuarioVisualizado.Email != loggedUser.Email;
-            labelSeguir.Visible = usuarioVisualizado.Email != loggedUser.Email;
+            lblSeguir.Visible = usuarioVisualizado.Email != loggedUser.Email;
             btnEntrarEmContato.Visible = usuarioVisualizado.Email != loggedUser.Email;
             labelEntrarEmContato.Visible = usuarioVisualizado.Email != loggedUser.Email;
 
@@ -246,7 +246,7 @@ namespace Acelera2025.Views
 
             bool seguindo = loggedUser.SeguirOuDeixarDeSeguir(usuarioVisualizado);
 
-            labelSeguir.Text = seguindo ? "Seguindo" : "Seguir";
+            lblSeguir.Text = seguindo ? "Seguindo" : "Seguir";
             lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();
 
             // Adicionar notificação ao usuário seguido

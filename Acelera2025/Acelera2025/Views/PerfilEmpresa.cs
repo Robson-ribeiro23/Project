@@ -1,15 +1,16 @@
 ﻿using Ac;
+using Acelera2025.Models;
 using Acelera2025.Telas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace Acelera2025.Views
 {
@@ -24,15 +25,20 @@ namespace Acelera2025.Views
         private bool cardEditarPerfilEmpresaVisivel = false;
         private CardEditarPerfilEmpresa cardEditarPerfilEmpresa;
         private EmpresaModels empresa;
+        private PessoaModels loggedUser;
+        private EmpresaModels empresaVisualizada;
 
         public PerfilEmpresa(PessoaModels usuario)
         {
             InitializeComponent();
             this.usuario = usuario;
+            this.loggedUser = UsuarioControllers.loggedUser;
 
             if (usuario is EmpresaModels empresaCasted)
             {
                 this.empresa = empresaCasted;
+                
+                this.empresaVisualizada = empresaCasted;
             }
         }
         private void PerfilEmpresa_Load(object sender, EventArgs e)
@@ -175,6 +181,34 @@ namespace Acelera2025.Views
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnSeguir_Click(object sender, EventArgs e)
+        {
+            if (loggedUser == null || empresaVisualizada == null)
+            {
+                MessageBox.Show("Erro ao identificar usuários.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (loggedUser.Email == empresaVisualizada.Email)
+            {
+                MessageBox.Show("Você não pode seguir a si mesmo.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            bool seguindo = loggedUser.SeguirOuDeixarDeSeguir(empresaVisualizada);
+
+            lblSeguir.Text = seguindo ? "Seguindo" : "Seguir";
+            lblNumSeguidores.Text = empresaVisualizada.Seguidores.Count.ToString();
+
+            if (seguindo)
+            {
+                var context = new Dictionary<string, object>();
+                context["perfil"] = loggedUser;
+                NotificacaoModels notificacao = new NotificacaoModels(empresaVisualizada.Email, "onBeFollowed", context);
+                NotificacaoCache.AdicionarNotificacao(empresaVisualizada.Email, notificacao);
+            }
         }
     }
 }

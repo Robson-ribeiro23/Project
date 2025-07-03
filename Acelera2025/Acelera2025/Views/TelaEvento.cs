@@ -269,5 +269,10 @@ namespace Acelera2025.Views
                 NotificacaoCache.AdicionarNotificacao(evento.criador.Email, notificacao);
             }
         }
+
+        private void lblDescricao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

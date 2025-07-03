@@ -48,7 +48,7 @@ namespace Acelera2025.Views
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.panelPosts = new System.Windows.Forms.FlowLayoutPanel();
             this.labelEntrarEmContato = new System.Windows.Forms.Label();
-            this.labelSeguir = new System.Windows.Forms.Label();
+            this.lblSeguir = new System.Windows.Forms.Label();
             this.btnEntrarEmContato = new CircularButton();
             this.btnSeguir = new CircularButton();
             this.lblSeguidores = new System.Windows.Forms.Label();
@@ -190,7 +190,7 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.Controls.Add(this.lblNumSeguidores);
             this.superiorRoundedPanel1.Controls.Add(this.tabControl1);
             this.superiorRoundedPanel1.Controls.Add(this.labelEntrarEmContato);
-            this.superiorRoundedPanel1.Controls.Add(this.labelSeguir);
+            this.superiorRoundedPanel1.Controls.Add(this.lblSeguir);
             this.superiorRoundedPanel1.Controls.Add(this.btnEntrarEmContato);
             this.superiorRoundedPanel1.Controls.Add(this.btnSeguir);
             this.superiorRoundedPanel1.Controls.Add(this.lblSeguidores);
@@ -328,18 +328,18 @@ namespace Acelera2025.Views
             this.labelEntrarEmContato.TabIndex = 59;
             this.labelEntrarEmContato.Text = "Entrar em Contato";
             // 
-            // labelSeguir
+            // lblSeguir
             // 
-            this.labelSeguir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelSeguir.AutoSize = true;
-            this.labelSeguir.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSeguir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.labelSeguir.Location = new System.Drawing.Point(702, 24);
-            this.labelSeguir.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelSeguir.Name = "labelSeguir";
-            this.labelSeguir.Size = new System.Drawing.Size(54, 27);
-            this.labelSeguir.TabIndex = 58;
-            this.labelSeguir.Text = "Seguir";
+            this.lblSeguir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSeguir.AutoSize = true;
+            this.lblSeguir.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeguir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblSeguir.Location = new System.Drawing.Point(702, 24);
+            this.lblSeguir.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSeguir.Name = "lblSeguir";
+            this.lblSeguir.Size = new System.Drawing.Size(54, 27);
+            this.lblSeguir.TabIndex = 58;
+            this.lblSeguir.Text = "Seguir";
             // 
             // btnEntrarEmContato
             // 
@@ -673,7 +673,7 @@ namespace Acelera2025.Views
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label labelEntrarEmContato;
-        private System.Windows.Forms.Label labelSeguir;
+        private System.Windows.Forms.Label lblSeguir;
         private CircularButton btnEntrarEmContato;
         private CircularButton btnSeguir;
         private System.Windows.Forms.Label lblSeguidores;

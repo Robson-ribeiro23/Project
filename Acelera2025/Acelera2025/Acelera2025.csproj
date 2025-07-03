@@ -564,6 +564,7 @@
     <None Include="Resources\IconeNotificacao.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\check.jpeg" />
     <None Include="Resources\icons8-plus-128.png" />
     <None Include="Resources\icons8-expand-100.png" />
     <None Include="Resources\Captura de tela 2025-03-31 1528011.png" />
