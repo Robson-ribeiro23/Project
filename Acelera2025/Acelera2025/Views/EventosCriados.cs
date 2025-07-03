@@ -186,6 +186,7 @@ namespace Acelera2025.Views
             lblLimiteParticipantes.Text = evento.LimiteParticipantes.ToString();
             lblFaixaEtaria.Text = evento.FaixaEtaria;
             txtDescricao.Text = evento.Descricao;
+            lblCodigo.Text = evento.CodigoPresenca;
 
             // Novos dados
             lblNomeLocal.Text = evento.Local;
@@ -455,6 +456,27 @@ namespace Acelera2025.Views
             {
                 MessageBox.Show("Erro ao excluir o evento.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+
+        private void btnCopiarLink_Click(object sender, EventArgs e)
+        {
+            EditarEvento();
+            string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
+            if (string.IsNullOrWhiteSpace(nomeSelecionado)) return;
+
+            EventoModels evento = new EventoControllers().BuscarPorNome(nomeSelecionado);
+            if (evento == null || evento.UsuarioEmail != this.usuario.Email) return;
+
+            if (!string.IsNullOrEmpty(evento.LinkReuniao))
+                {
+                    Clipboard.SetText(lblCodigo.Text);
+                    MessageBox.Show("Link copiado para a área de transferência!", "Copiado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Este evento não possui link de transmissão.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
         }
     }
 }

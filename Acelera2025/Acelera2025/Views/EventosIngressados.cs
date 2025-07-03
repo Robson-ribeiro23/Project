@@ -177,5 +177,10 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaEventosCriados(this.usuario);
         }
+
+        private void cardBaixarCertificado1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

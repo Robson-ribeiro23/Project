@@ -36,8 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.pageInscricoes = new System.Windows.Forms.TabPage();
-            this.pageCertificados = new System.Windows.Forms.TabPage();
-            this.cardBaixarCertificado1 = new Acelera2025.Telas.CardBaixarCertificado();
+            this.panelInscricoes = new System.Windows.Forms.FlowLayoutPanel();
             this.pageTransmissoesOnline = new System.Windows.Forms.TabPage();
             this.panelOnline = new System.Windows.Forms.FlowLayoutPanel();
             this.gradientPanel1 = new GradientPanel();
@@ -53,12 +52,10 @@
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.panelInscricoes = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.pageInscricoes.SuspendLayout();
-            this.pageCertificados.SuspendLayout();
             this.pageTransmissoesOnline.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
@@ -146,7 +143,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.pageInscricoes);
-            this.tabControl1.Controls.Add(this.pageCertificados);
             this.tabControl1.Controls.Add(this.pageTransmissoesOnline);
             this.tabControl1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(27, 100);
@@ -169,27 +165,15 @@
             this.pageInscricoes.Text = "Inscrições";
             this.pageInscricoes.UseVisualStyleBackColor = true;
             // 
-            // pageCertificados
+            // panelInscricoes
             // 
-            this.pageCertificados.Controls.Add(this.cardBaixarCertificado1);
-            this.pageCertificados.Location = new System.Drawing.Point(4, 48);
-            this.pageCertificados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pageCertificados.Name = "pageCertificados";
-            this.pageCertificados.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pageCertificados.Size = new System.Drawing.Size(1580, 449);
-            this.pageCertificados.TabIndex = 1;
-            this.pageCertificados.Text = "Certificados";
-            this.pageCertificados.UseVisualStyleBackColor = true;
-            // 
-            // cardBaixarCertificado1
-            // 
-            this.cardBaixarCertificado1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cardBaixarCertificado1.Location = new System.Drawing.Point(5, 6);
-            this.cardBaixarCertificado1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cardBaixarCertificado1.Name = "cardBaixarCertificado1";
-            this.cardBaixarCertificado1.Size = new System.Drawing.Size(1131, 60);
-            this.cardBaixarCertificado1.TabIndex = 0;
+            this.panelInscricoes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelInscricoes.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.panelInscricoes.Location = new System.Drawing.Point(3, 2);
+            this.panelInscricoes.Name = "panelInscricoes";
+            this.panelInscricoes.Size = new System.Drawing.Size(1574, 445);
+            this.panelInscricoes.TabIndex = 1;
+            this.panelInscricoes.WrapContents = false;
             // 
             // pageTransmissoesOnline
             // 
@@ -431,16 +415,6 @@
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
-            // panelInscricoes
-            // 
-            this.panelInscricoes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelInscricoes.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.panelInscricoes.Location = new System.Drawing.Point(3, 2);
-            this.panelInscricoes.Name = "panelInscricoes";
-            this.panelInscricoes.Size = new System.Drawing.Size(1574, 445);
-            this.panelInscricoes.TabIndex = 1;
-            this.panelInscricoes.WrapContents = false;
-            // 
             // EventosIngressados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -458,7 +432,6 @@
             this.panelMeusEventos.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.pageInscricoes.ResumeLayout(false);
-            this.pageCertificados.ResumeLayout(false);
             this.pageTransmissoesOnline.ResumeLayout(false);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
@@ -487,10 +460,8 @@
         private Tools.CircularPictureBox picturePerfil;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage pageInscricoes;
-        private System.Windows.Forms.TabPage pageCertificados;
         private System.Windows.Forms.TabPage pageTransmissoesOnline;
         private System.Windows.Forms.Label label1;
-        private Telas.CardBaixarCertificado cardBaixarCertificado1;
         private RoundedPanel panelMeusEventos;
         private RoundedButton btnEventosCriados;
         private RoundedButton btnEventosIngressados;
