@@ -11,17 +11,19 @@ namespace Acelera2025.Views
 {
     public partial class Inicio: Form
     {
-
-
         private List<PictureBox> pictureBoxes;
         private List<Label> labelDatas;
         private List<Label> labelHoras;
         private List<LinkLabel> btnNomes;
-        private List<Label> lblCidades;
+        private List<Label> CidadeUfs;
 
+        private List<PictureBox> pictureBoxesOnline;
+        private List<Label> labelDatasOnline;
+        private List<Label> labelHorasOnline;
+        private List<LinkLabel> btnNomesOnline;
+        private List<Label> CidadeUfsOnline;
 
-
-
+        private List<PictureBox> pictureCarrosseis;
 
         public Inicio()
         {
@@ -33,11 +35,6 @@ namespace Acelera2025.Views
 
 
 
-
-
-
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
             PanelCategorias_Resize(null, null);
@@ -45,49 +42,220 @@ namespace Acelera2025.Views
             PanelEventosOnline_Resize(null, null);
 
 
-
             pictureBoxes = new List<PictureBox> { PicEventoPerto1, PicEventoPerto2, PicEventoPerto3, PicEventoPerto4 };
             labelDatas = new List<Label> { lblData1, lblData2, lblData3, lblData4 };
             labelHoras = new List<Label> { lblHora1, lblHora2, lblHora3, lblHora4 };
             btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3, btnNome4 };
-            lblCidades = new List<Label> { lblCidadeUf1 , lblCidadeUf2, lblCidadeUf3, lblCidadeUf4 };
+            CidadeUfs = new List<Label> { lblCidadeUf1, lblCidadeUf2, lblCidadeUf3, lblCidadeUf4 };
 
+            pictureBoxesOnline = new List<PictureBox> { picOnline1, picOnline2, picOnline3, picOnline4 };
+            labelDatasOnline = new List<Label> { dataOnline1, dataOnline2, dataOnline3, dataOnline4};
+            labelHorasOnline = new List<Label> { horaOnline1, horaOnline2, horaOnline3, horaOnline4 };
+            btnNomesOnline = new List<LinkLabel> { nomeOnline1, nomeOnline2, nomeOnline3, nomeOnline4 };
+            CidadeUfsOnline = new List<Label> { online1, online2, online3, online4 };
 
+            pictureCarrosseis = new List<PictureBox> { picCarrossel };
+
+            CarregarEventosRecentes();
+            CarregarEventosOnline();
+            //CarregarEventosProximos();
+
+        }
+        int paginaAtual = 0;
+
+        private void CarregarEventosRecentes()
+        {
+
+            int eventosPorPagina = 3;
             List<EventoModels> eventos = EventoCache.ListarTodos();
+
+            var eventosOrdenados = EventoCache.ListarTodos()
+                                       .OrderByDescending(e => e.Data)
+                                       .Take(20)
+                                       .ToList();
+
+            int inicio = paginaAtual * eventosPorPagina;
 
             for (int i = 0; i < pictureBoxes.Count; i++)
             {
-                if (i < eventos.Count)
-                {
-                    var evento = eventos[i];
+                int indexEvento = inicio + i;
 
-                    btnNomes[i].Text = evento.NomeEvento;
+                if (indexEvento < eventosOrdenados.Count)
+                {
+                    var evento = eventosOrdenados[indexEvento];
+
                     labelDatas[i].Text = evento.Data.ToShortDateString();
                     labelHoras[i].Text = evento.Horario;
-                    lblCidades[i].Text = evento.Cidade;
+                    btnNomes[i].Text = evento.NomeEvento;
+
+                    if (evento.IsPresencial)
+                        CidadeUfs[i].Text = $"{evento.Cidade} - {evento.Estado}";
+                    else
+                        CidadeUfs[i].Text = "Online";
+
 
                     if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
-                    {
                         pictureBoxes[i].Image = Image.FromFile(evento.CaminhoImagem);
-                        pictureBoxes[i].SizeMode = PictureBoxSizeMode.Zoom;
-                    }
                     else
-                    {
                         pictureBoxes[i].Image = null;
-                    }
+
+                    pictureBoxes[i].Tag = evento;
+                    btnNomes[i].Tag = evento;
                 }
                 else
                 {
-                    btnNomes[i].Text = "";
                     labelDatas[i].Text = "";
                     labelHoras[i].Text = "";
-                    lblCidades[i].Text = "";
+                    btnNomes[i].Text = "";
                     pictureBoxes[i].Image = null;
+                    CidadeUfs[i].Text = "";
+                    pictureBoxes[i].Tag = null;
+                    btnNomes[i].Tag = null;
+
                 }
             }
 
+            // Habilita/Desabilita os botões de navegação
+            btnAntPerto.Enabled = paginaAtual > 0;
+            btnProxPerto.Enabled = (paginaAtual + 1) * eventosPorPagina < eventos.Count;
         }
 
+        private void btnAntPerto_Click(object sender, EventArgs e)
+        {
+            paginaAtual--;
+            CarregarEventosRecentes();
+        }
+
+        private void btnProxPerto_Click(object sender, EventArgs e)
+        {
+            paginaAtual++;
+            CarregarEventosRecentes();
+        }
+
+        private void CarregarEventosOnline()
+        {
+
+            int eventosPorPagina = 3;
+            List<EventoModels> eventos = EventoCache.ListarTodos();
+
+            var eventosOnline = EventoCache.ListarTodos()
+                                           .Where(e => !e.IsPresencial)
+                                           .OrderByDescending(e => e.Data)
+                                           .Take(20)
+                                           .ToList();
+
+            int inicio = paginaAtual * eventosPorPagina;
+
+            for (int i = 0; i < pictureBoxesOnline.Count; i++)
+            {
+                int indexEvento = inicio + i;
+
+                if (indexEvento < eventosOnline.Count)
+                {
+                    var evento = eventosOnline[indexEvento];
+
+                    labelDatasOnline[i].Text = evento.Data.ToShortDateString();
+                    labelHorasOnline[i].Text = evento.Horario;
+                    btnNomesOnline[i].Text = evento.NomeEvento;
+                    CidadeUfsOnline[i].Text = "Online";
+
+                    if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+                        pictureBoxesOnline[i].Image = Image.FromFile(evento.CaminhoImagem);
+                    else
+                        pictureBoxesOnline[i].Image = null;
+
+                    pictureBoxesOnline[i].Tag = evento;
+                    btnNomesOnline[i].Tag = evento;
+
+                }
+                else
+                {
+                    labelDatasOnline[i].Text = "";
+                    labelHorasOnline[i].Text = "";
+                    btnNomesOnline[i].Text = "";
+                    CidadeUfsOnline[i].Text = "";
+                    pictureBoxesOnline[i].Image = null;
+
+                    pictureBoxesOnline[i].Tag = null;
+                    btnNomesOnline[i].Tag = null;
+                }
+            }
+
+            btnAntOnline.Enabled = paginaAtual > 0;
+            btnProxOnline.Enabled = (paginaAtual + 1) * eventosPorPagina < eventosOnline.Count;
+        }
+
+        private void btnAntOnline_Click(object sender, EventArgs e)
+        {
+            paginaAtual--;
+            CarregarEventosOnline();
+        }
+
+        private void btnProxOnline_Click(object sender, EventArgs e)
+        {
+            paginaAtual++;
+            CarregarEventosOnline();
+        }
+
+        private void CarregarEventosProximos()
+        {
+            int eventosPorPagina = 1;
+            List<EventoModels> eventos = EventoCache.ListarTodos();
+
+            var eventosMaisProximos = EventoCache.ListarTodos()
+            .Where(e => e.Data >= DateTime.Today)       // só eventos de hoje em diante
+            .OrderBy(e => e.Data)                        // data mais próxima primeiro
+            .Take(6)
+            .ToList();
+
+
+            int inicio = paginaAtual * eventosPorPagina;
+            int limite = Math.Min(pictureBoxes.Count, pictureCarrosseis.Count);
+
+            for (int i = 0; i < limite; i++)
+            {
+                int indexEvento = inicio + i;
+
+                if (indexEvento < eventosMaisProximos.Count)
+                {
+                    var evento = eventosMaisProximos[indexEvento];
+
+                    if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+                        pictureCarrosseis[i].Image = Image.FromFile(evento.CaminhoImagem);
+                    else
+                        pictureCarrosseis[i].Image = null;
+
+                    pictureCarrosseis[i].Tag = evento;
+
+                }
+                else
+                {
+                    pictureCarrosseis[i].Image = null;
+
+                    pictureCarrosseis[i].Tag = null;
+
+                }
+            }
+
+            btnAntEmAlta.Enabled = paginaAtual > 0;
+            btnProxEmAlta.Enabled = (paginaAtual + 1) * eventosPorPagina < eventosMaisProximos.Count;
+        }
+
+
+        private void btnProxEmAlta_Click(object sender, EventArgs e)
+        {
+            paginaAtual++;
+            CarregarEventosProximos();
+        }
+
+        private void btnAntEmAlta_Click(object sender, EventArgs e)
+        {
+            if (paginaAtual > 0)
+            {
+                paginaAtual--;
+                CarregarEventosProximos();
+            }
+        }
 
         private void PanelEventosPerto_Resize(object sender, EventArgs e)
         {
@@ -185,24 +353,40 @@ namespace Acelera2025.Views
             System.Diagnostics.Process.Start(url);
         }
 
-        private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-
+            paginaAtual = 0;
+            CarregarEventosProximos();
         }
 
-        private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-
+            paginaAtual = 1;
+            CarregarEventosProximos();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
-
+            paginaAtual = 2;
+            CarregarEventosProximos();
         }
 
-        private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
+        private void button8_Click(object sender, EventArgs e)
         {
+            paginaAtual = 3;
+            CarregarEventosProximos();
+        }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            paginaAtual = 4;
+            CarregarEventosProximos();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            paginaAtual = 5;
+            CarregarEventosProximos();
         }
     }
  }
