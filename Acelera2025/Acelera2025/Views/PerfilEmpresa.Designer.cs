@@ -32,12 +32,13 @@ namespace Acelera2025.Views
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilEmpresa));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.circularPictureBox2 = new Acelera2025.Views.Tools.CircularPictureBox();
+            this.picPerfilEmpresa = new Acelera2025.Views.Tools.CircularPictureBox();
             this.btnLapis = new CircularButton();
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
             this.btnEventosIngressados = new RoundedButton();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
+            this.lblNumSeguidores = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -45,10 +46,12 @@ namespace Acelera2025.Views
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabEndereço = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEntrarEmContato = new CircularButton();
             this.btnSeguir = new CircularButton();
+            this.lblSeguidores = new System.Windows.Forms.Label();
             this.lblNomeEmpresa = new System.Windows.Forms.Label();
             this.gradientPanel1 = new GradientPanel();
             this.btnFeed = new System.Windows.Forms.LinkLabel();
@@ -63,10 +66,8 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.lblSeguidores = new System.Windows.Forms.Label();
-            this.lblNumSeguidores = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPerfilEmpresa)).BeginInit();
             this.panelMeusEventos.SuspendLayout();
             this.superiorRoundedPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -81,7 +82,7 @@ namespace Acelera2025.Views
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.circularPictureBox2);
+            this.panel1.Controls.Add(this.picPerfilEmpresa);
             this.panel1.Controls.Add(this.btnLapis);
             this.panel1.Controls.Add(this.panelMeusEventos);
             this.panel1.Controls.Add(this.superiorRoundedPanel1);
@@ -91,23 +92,24 @@ namespace Acelera2025.Views
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1306, 542);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // circularPictureBox2
+            // picPerfilEmpresa
             // 
-            this.circularPictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.circularPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.circularPictureBox2.BorderColor = System.Drawing.Color.Transparent;
-            this.circularPictureBox2.BorderColor2 = System.Drawing.Color.Transparent;
-            this.circularPictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.circularPictureBox2.BorderSize = 1;
-            this.circularPictureBox2.GradientAngle = 50F;
-            this.circularPictureBox2.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
-            this.circularPictureBox2.Location = new System.Drawing.Point(92, 79);
-            this.circularPictureBox2.Name = "circularPictureBox2";
-            this.circularPictureBox2.Size = new System.Drawing.Size(125, 125);
-            this.circularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularPictureBox2.TabIndex = 68;
-            this.circularPictureBox2.TabStop = false;
+            this.picPerfilEmpresa.BackColor = System.Drawing.Color.Transparent;
+            this.picPerfilEmpresa.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picPerfilEmpresa.BorderColor = System.Drawing.Color.Transparent;
+            this.picPerfilEmpresa.BorderColor2 = System.Drawing.Color.Transparent;
+            this.picPerfilEmpresa.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picPerfilEmpresa.BorderSize = 1;
+            this.picPerfilEmpresa.GradientAngle = 50F;
+            this.picPerfilEmpresa.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
+            this.picPerfilEmpresa.Location = new System.Drawing.Point(92, 331);
+            this.picPerfilEmpresa.Name = "picPerfilEmpresa";
+            this.picPerfilEmpresa.Size = new System.Drawing.Size(125, 125);
+            this.picPerfilEmpresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPerfilEmpresa.TabIndex = 68;
+            this.picPerfilEmpresa.TabStop = false;
             // 
             // btnLapis
             // 
@@ -116,7 +118,7 @@ namespace Acelera2025.Views
             this.btnLapis.BorderColor = System.Drawing.Color.Black;
             this.btnLapis.BorderSize = 0;
             this.btnLapis.Image = global::Acelera2025.Properties.Resources.icons8_edit_100;
-            this.btnLapis.Location = new System.Drawing.Point(211, 91);
+            this.btnLapis.Location = new System.Drawing.Point(211, 343);
             this.btnLapis.Name = "btnLapis";
             this.btnLapis.Size = new System.Drawing.Size(24, 21);
             this.btnLapis.TabIndex = 67;
@@ -132,7 +134,7 @@ namespace Acelera2025.Views
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(868, 3);
+            this.panelMeusEventos.Location = new System.Drawing.Point(868, 255);
             this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
@@ -189,11 +191,24 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.Controls.Add(this.btnSeguir);
             this.superiorRoundedPanel1.Controls.Add(this.lblSeguidores);
             this.superiorRoundedPanel1.Controls.Add(this.lblNomeEmpresa);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 150);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 402);
             this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1306, 635);
             this.superiorRoundedPanel1.TabIndex = 64;
+            this.superiorRoundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.superiorRoundedPanel1_Paint);
+            // 
+            // lblNumSeguidores
+            // 
+            this.lblNumSeguidores.AutoSize = true;
+            this.lblNumSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblNumSeguidores.Location = new System.Drawing.Point(222, 39);
+            this.lblNumSeguidores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNumSeguidores.Name = "lblNumSeguidores";
+            this.lblNumSeguidores.Size = new System.Drawing.Size(20, 27);
+            this.lblNumSeguidores.TabIndex = 62;
+            this.lblNumSeguidores.Text = "0";
             // 
             // tabControl1
             // 
@@ -204,6 +219,7 @@ namespace Acelera2025.Views
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabEndereço);
             this.tabControl1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(92, 103);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
@@ -283,6 +299,15 @@ namespace Acelera2025.Views
             this.tabPage5.Text = "Posts";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // tabEndereço
+            // 
+            this.tabEndereço.Location = new System.Drawing.Point(4, 54);
+            this.tabEndereço.Name = "tabEndereço";
+            this.tabEndereço.Size = new System.Drawing.Size(1125, 458);
+            this.tabEndereço.TabIndex = 5;
+            this.tabEndereço.Text = "Endereço";
+            this.tabEndereço.UseVisualStyleBackColor = true;
+            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -342,6 +367,18 @@ namespace Acelera2025.Views
             this.btnSeguir.Size = new System.Drawing.Size(25, 28);
             this.btnSeguir.TabIndex = 56;
             this.btnSeguir.UseVisualStyleBackColor = false;
+            // 
+            // lblSeguidores
+            // 
+            this.lblSeguidores.AutoSize = true;
+            this.lblSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblSeguidores.Location = new System.Drawing.Point(230, 37);
+            this.lblSeguidores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSeguidores.Name = "lblSeguidores";
+            this.lblSeguidores.Size = new System.Drawing.Size(96, 27);
+            this.lblSeguidores.TabIndex = 20;
+            this.lblSeguidores.Text = "   seguidores";
             // 
             // lblNomeEmpresa
             // 
@@ -579,30 +616,6 @@ namespace Acelera2025.Views
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
-            // lblSeguidores
-            // 
-            this.lblSeguidores.AutoSize = true;
-            this.lblSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblSeguidores.Location = new System.Drawing.Point(230, 37);
-            this.lblSeguidores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSeguidores.Name = "lblSeguidores";
-            this.lblSeguidores.Size = new System.Drawing.Size(96, 27);
-            this.lblSeguidores.TabIndex = 20;
-            this.lblSeguidores.Text = "   seguidores";
-            // 
-            // lblNumSeguidores
-            // 
-            this.lblNumSeguidores.AutoSize = true;
-            this.lblNumSeguidores.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumSeguidores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNumSeguidores.Location = new System.Drawing.Point(222, 39);
-            this.lblNumSeguidores.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNumSeguidores.Name = "lblNumSeguidores";
-            this.lblNumSeguidores.Size = new System.Drawing.Size(20, 27);
-            this.lblNumSeguidores.TabIndex = 62;
-            this.lblNumSeguidores.Text = "0";
-            // 
             // PerfilEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -617,7 +630,7 @@ namespace Acelera2025.Views
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PerfilEmpresa_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.circularPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPerfilEmpresa)).EndInit();
             this.panelMeusEventos.ResumeLayout(false);
             this.superiorRoundedPanel1.ResumeLayout(false);
             this.superiorRoundedPanel1.PerformLayout();
@@ -665,10 +678,11 @@ namespace Acelera2025.Views
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel btnPrincipal;
         private CircularButton btnLapis;
-        private Tools.CircularPictureBox circularPictureBox2;
+        private Tools.CircularPictureBox picPerfilEmpresa;
         private Tools.CircularPictureBox picturePerfil;
         private System.Windows.Forms.LinkLabel btnFeed;
         private System.Windows.Forms.Label lblSeguidores;
         private System.Windows.Forms.Label lblNumSeguidores;
+        private System.Windows.Forms.TabPage tabEndereço;
     }
 }

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Acelera2025.Views
 {
@@ -20,6 +21,9 @@ namespace Acelera2025.Views
         private PessoaModels usuario;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
+        private bool cardEditarPerfilEmpresaVisivel = false;
+        private CardEditarPerfilEmpresa cardEditarPerfilEmpresa;
+
         public PerfilEmpresa(PessoaModels usuario)
         {
             InitializeComponent();
@@ -36,11 +40,36 @@ namespace Acelera2025.Views
             cardPerfil.FecharTelaSolicitado += (s, args) => this.Close();
             cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 
+
+            cardEditarPerfilEmpresa = new CardEditarPerfilEmpresa();
+            cardEditarPerfilEmpresa.Visible = false;
+
+            cardEditarPerfilEmpresa.DadosAtualizados += AtualizarDadosEmpresa;
+
+
+
+            panel1.Controls.Add(cardEditarPerfilEmpresa);
+            cardEditarPerfilEmpresa.Left = (this.ClientSize.Width - cardEditarPerfilEmpresa.Width) / 2;
+            cardEditarPerfilEmpresa.FecharTelaSolicitado += (s, args) => this.Close();
+            cardEditarPerfilEmpresa.Top = (this.ClientSize.Height - cardEditarPerfilEmpresa.Height) / 2;
+
+
             cardPainelDeNotificacoes = new CardPainelDeNotificacoes();
             cardPainelDeNotificacoes.Visible = false;
             panel1.Controls.Add(cardPainelDeNotificacoes);
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
+            if (usuario is EmpresaModels empresa)
+            {
+                lblNomeEmpresa.Text = empresa.Nome;
+
+
+                if (!string.IsNullOrEmpty(empresa.CaminhoFoto) && File.Exists(empresa.CaminhoFoto))
+                {
+                    picturePerfil.Image = Image.FromFile(empresa.CaminhoFoto);
+                }
+            }
         }
 
         private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -67,13 +96,32 @@ namespace Acelera2025.Views
 
         private void btnLapis_Click(object sender, EventArgs e)
         {
-
+            if (usuario is EmpresaModels empresa)
+            {
+                cardEditarPerfilEmpresa.PreencherDados(empresa); 
+                cardEditarPerfilEmpresaVisivel = !cardEditarPerfilEmpresaVisivel;
+                cardEditarPerfilEmpresa.Visible = cardEditarPerfilEmpresaVisivel;
+                cardEditarPerfilEmpresa.BringToFront();
+            }
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             Navegador.IrParaPesquisa(this.usuario);
         }
+
+        private void AtualizarDadosEmpresa(EmpresaModels empresa)
+        {
+            if (!string.IsNullOrEmpty(empresa.CaminhoFoto) && File.Exists(empresa.CaminhoFoto))
+            {
+                using (var stream = new FileStream(empresa.CaminhoFoto, FileMode.Open, FileAccess.Read))
+                {
+                    picturePerfil.Image = Image.FromStream(stream);
+                    picPerfilEmpresa.Image = Image.FromFile(empresa.CaminhoFoto);
+                }
+            }
+        }
+
 
         private void btnMeusEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -101,6 +149,16 @@ namespace Acelera2025.Views
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Navegador.IrParaFeed(this.usuario);
+        }
+
+        private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

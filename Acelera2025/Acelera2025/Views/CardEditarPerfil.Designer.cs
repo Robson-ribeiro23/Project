@@ -73,10 +73,11 @@
             this.roundedPanel1.Controls.Add(this.roundedPanel2);
             this.roundedPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedPanel1.Location = new System.Drawing.Point(0, 0);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(1291, 689);
+            this.roundedPanel1.Size = new System.Drawing.Size(968, 560);
             this.roundedPanel1.TabIndex = 0;
+            this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
             // button1
             // 
@@ -84,10 +85,10 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(811, 523);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(608, 425);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 25);
+            this.button1.Size = new System.Drawing.Size(21, 20);
             this.button1.TabIndex = 35;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -95,13 +96,14 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnMostrarSenha
             // 
@@ -110,10 +112,10 @@
             this.btnMostrarSenha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMostrarSenha.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarSenha.Location = new System.Drawing.Point(1028, 369);
-            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMostrarSenha.Location = new System.Drawing.Point(771, 300);
+            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMostrarSenha.Name = "btnMostrarSenha";
-            this.btnMostrarSenha.Size = new System.Drawing.Size(28, 25);
+            this.btnMostrarSenha.Size = new System.Drawing.Size(21, 20);
             this.btnMostrarSenha.TabIndex = 33;
             this.btnMostrarSenha.UseVisualStyleBackColor = false;
             this.btnMostrarSenha.Click += new System.EventHandler(this.btnMostrarSenha_Click);
@@ -128,9 +130,10 @@
             this.btnOrganizarEventos.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrganizarEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnOrganizarEventos.LinkColor = System.Drawing.Color.Black;
-            this.btnOrganizarEventos.Location = new System.Drawing.Point(1245, 9);
+            this.btnOrganizarEventos.Location = new System.Drawing.Point(934, 7);
+            this.btnOrganizarEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.btnOrganizarEventos.Name = "btnOrganizarEventos";
-            this.btnOrganizarEventos.Size = new System.Drawing.Size(28, 36);
+            this.btnOrganizarEventos.Size = new System.Drawing.Size(23, 29);
             this.btnOrganizarEventos.TabIndex = 6;
             this.btnOrganizarEventos.TabStop = true;
             this.btnOrganizarEventos.Text = "X";
@@ -144,10 +147,9 @@
             this.btnMostrarSenhaConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMostrarSenhaConfirmar.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenhaConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMostrarSenhaConfirmar.Location = new System.Drawing.Point(807, 519);
-            this.btnMostrarSenhaConfirmar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMostrarSenhaConfirmar.Location = new System.Drawing.Point(605, 422);
             this.btnMostrarSenhaConfirmar.Name = "btnMostrarSenhaConfirmar";
-            this.btnMostrarSenhaConfirmar.Size = new System.Drawing.Size(28, 30);
+            this.btnMostrarSenhaConfirmar.Size = new System.Drawing.Size(21, 24);
             this.btnMostrarSenhaConfirmar.TabIndex = 32;
             this.btnMostrarSenhaConfirmar.UseVisualStyleBackColor = false;
             // 
@@ -157,21 +159,24 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(189, 469);
+            this.label2.Location = new System.Drawing.Point(142, 381);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(377, 32);
+            this.label2.Size = new System.Drawing.Size(322, 27);
             this.label2.TabIndex = 13;
             this.label2.Text = "Digite sua senha atual para aplicar a alteração:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtSenhaAtual
             // 
             this.txtSenhaAtual.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSenhaAtual.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenhaAtual.Location = new System.Drawing.Point(193, 516);
-            this.txtSenhaAtual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSenhaAtual.Location = new System.Drawing.Point(145, 419);
+            this.txtSenhaAtual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSenhaAtual.Name = "txtSenhaAtual";
-            this.txtSenhaAtual.Size = new System.Drawing.Size(612, 39);
+            this.txtSenhaAtual.Size = new System.Drawing.Size(460, 33);
             this.txtSenhaAtual.TabIndex = 12;
+            this.txtSenhaAtual.TextChanged += new System.EventHandler(this.txtSenhaAtual_TextChanged);
             // 
             // roundedButton2
             // 
@@ -182,10 +187,10 @@
             this.roundedButton2.BorderSize = 0;
             this.roundedButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.roundedButton2.Location = new System.Drawing.Point(857, 516);
-            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedButton2.Location = new System.Drawing.Point(643, 419);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(165, 36);
+            this.roundedButton2.Size = new System.Drawing.Size(124, 29);
             this.roundedButton2.TabIndex = 11;
             this.roundedButton2.Text = "Atualizar";
             this.roundedButton2.UseVisualStyleBackColor = false;
@@ -197,11 +202,13 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(197, 327);
+            this.label1.Location = new System.Drawing.Point(148, 266);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 32);
+            this.label1.Size = new System.Drawing.Size(94, 27);
             this.label1.TabIndex = 10;
             this.label1.Text = "Nova Senha:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -209,31 +216,35 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(197, 231);
+            this.label3.Location = new System.Drawing.Point(148, 188);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 32);
+            this.label3.Size = new System.Drawing.Size(58, 27);
             this.label3.TabIndex = 9;
             this.label3.Text = "E-mail:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtNovaSenha
             // 
             this.txtNovaSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNovaSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNovaSenha.Location = new System.Drawing.Point(193, 363);
-            this.txtNovaSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNovaSenha.Location = new System.Drawing.Point(145, 295);
+            this.txtNovaSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNovaSenha.Name = "txtNovaSenha";
-            this.txtNovaSenha.Size = new System.Drawing.Size(829, 39);
+            this.txtNovaSenha.Size = new System.Drawing.Size(623, 33);
             this.txtNovaSenha.TabIndex = 3;
+            this.txtNovaSenha.TextChanged += new System.EventHandler(this.txtNovaSenha_TextChanged);
             // 
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(196, 267);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmail.Location = new System.Drawing.Point(147, 217);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(829, 39);
+            this.txtEmail.Size = new System.Drawing.Size(623, 33);
             this.txtEmail.TabIndex = 2;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // roundedPanel2
             // 
@@ -245,11 +256,12 @@
             this.roundedPanel2.Controls.Add(this.picFotoPerfil);
             this.roundedPanel2.Controls.Add(this.roundedButton1);
             this.roundedPanel2.Controls.Add(this.lblNomeUsuario);
-            this.roundedPanel2.Location = new System.Drawing.Point(100, 75);
-            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPanel2.Location = new System.Drawing.Point(75, 61);
+            this.roundedPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Size = new System.Drawing.Size(1101, 100);
+            this.roundedPanel2.Size = new System.Drawing.Size(826, 81);
             this.roundedPanel2.TabIndex = 0;
+            this.roundedPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel2_Paint);
             // 
             // picFotoPerfil
             // 
@@ -262,10 +274,9 @@
             this.picFotoPerfil.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.picFotoPerfil.BorderSize = 2;
             this.picFotoPerfil.GradientAngle = 50F;
-            this.picFotoPerfil.Location = new System.Drawing.Point(8, 14);
-            this.picFotoPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.picFotoPerfil.Location = new System.Drawing.Point(6, 11);
             this.picFotoPerfil.Name = "picFotoPerfil";
-            this.picFotoPerfil.Size = new System.Drawing.Size(80, 80);
+            this.picFotoPerfil.Size = new System.Drawing.Size(60, 60);
             this.picFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFotoPerfil.TabIndex = 36;
             this.picFotoPerfil.TabStop = false;
@@ -279,10 +290,10 @@
             this.roundedButton1.BorderSize = 0;
             this.roundedButton1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.roundedButton1.Location = new System.Drawing.Point(889, 34);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedButton1.Location = new System.Drawing.Point(667, 28);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(165, 36);
+            this.roundedButton1.Size = new System.Drawing.Size(124, 29);
             this.roundedButton1.TabIndex = 4;
             this.roundedButton1.Text = "Editar Foto";
             this.roundedButton1.UseVisualStyleBackColor = false;
@@ -293,21 +304,23 @@
             this.lblNomeUsuario.AutoSize = true;
             this.lblNomeUsuario.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNomeUsuario.Location = new System.Drawing.Point(87, 34);
+            this.lblNomeUsuario.Location = new System.Drawing.Point(65, 28);
+            this.lblNomeUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNomeUsuario.Name = "lblNomeUsuario";
-            this.lblNomeUsuario.Size = new System.Drawing.Size(74, 36);
+            this.lblNomeUsuario.Size = new System.Drawing.Size(60, 29);
             this.lblNomeUsuario.TabIndex = 3;
             this.lblNomeUsuario.Text = "Nome ";
+            this.lblNomeUsuario.Click += new System.EventHandler(this.lblNomeUsuario_Click);
             // 
             // CardEditarPerfil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.roundedPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CardEditarPerfil";
-            this.Size = new System.Drawing.Size(1291, 689);
+            this.Size = new System.Drawing.Size(968, 560);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

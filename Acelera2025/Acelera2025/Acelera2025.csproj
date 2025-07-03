@@ -139,6 +139,12 @@
     <Compile Include="Views\CardEditarPerfil.Designer.cs">
       <DependentUpon>CardEditarPerfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CardEditarPerfilEmpresa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CardEditarPerfilEmpresa.Designer.cs">
+      <DependentUpon>CardEditarPerfilEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CardEvento.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -396,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CardEditarPerfil.resx">
       <DependentUpon>CardEditarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardEditarPerfilEmpresa.resx">
+      <DependentUpon>CardEditarPerfilEmpresa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CardEvento.resx">
       <DependentUpon>CardEvento.cs</DependentUpon>
