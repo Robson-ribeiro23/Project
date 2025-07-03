@@ -388,6 +388,15 @@ namespace Acelera2025.Views
             paginaAtual = 5;
             CarregarEventosProximos();
         }
+
+        private void btnEmail_Click(object sender, EventArgs e)
+        {
+            string email = "dairohel@gmail.com";
+            string assunto = Uri.EscapeDataString("Contato via Connecta");
+            string mailto = $"mailto:{email}?subject={assunto}";
+
+            System.Diagnostics.Process.Start(mailto);
+        }
     }
  }
 

@@ -31,21 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnProxCarrossel = new System.Windows.Forms.Button();
+            this.btnAntCarrossel = new System.Windows.Forms.Button();
             this.panelMeusEventos = new RoundedPanel();
             this.btnEventosCriados = new RoundedButton();
             this.btnEventosIngressados = new RoundedButton();
-            this.label10 = new System.Windows.Forms.Label();
             this.picCarrossel = new Acelera2025.Ferramentas.RoundedPicture();
-            this.btnProxCarrossel = new System.Windows.Forms.Button();
-            this.btnAntCarrossel = new System.Windows.Forms.Button();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
             this.gradientPanel2 = new GradientPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btnLinkedIn = new System.Windows.Forms.Button();
             this.btnEmail = new System.Windows.Forms.Button();
-            this.btnFacebook = new System.Windows.Forms.Button();
-            this.btnInstagram = new System.Windows.Forms.Button();
             this.btnContato = new System.Windows.Forms.LinkLabel();
             this.btnAjudaInferior = new System.Windows.Forms.LinkLabel();
             this.panelEventosOnline = new System.Windows.Forms.Panel();
@@ -206,6 +203,52 @@
             this.panel2.Size = new System.Drawing.Size(1744, 684);
             this.panel2.TabIndex = 2;
             // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label10.Location = new System.Drawing.Point(711, 93);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(410, 53);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "EVENTOS MAIS PRÓXIMOS";
+            // 
+            // btnProxCarrossel
+            // 
+            this.btnProxCarrossel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnProxCarrossel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(234)))));
+            this.btnProxCarrossel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProxCarrossel.BackgroundImage")));
+            this.btnProxCarrossel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProxCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProxCarrossel.FlatAppearance.BorderSize = 0;
+            this.btnProxCarrossel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProxCarrossel.Location = new System.Drawing.Point(1325, 256);
+            this.btnProxCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProxCarrossel.Name = "btnProxCarrossel";
+            this.btnProxCarrossel.Size = new System.Drawing.Size(49, 60);
+            this.btnProxCarrossel.TabIndex = 5;
+            this.btnProxCarrossel.UseVisualStyleBackColor = false;
+            this.btnProxCarrossel.Click += new System.EventHandler(this.btnProxCarrossel_Click);
+            // 
+            // btnAntCarrossel
+            // 
+            this.btnAntCarrossel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAntCarrossel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(234)))));
+            this.btnAntCarrossel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAntCarrossel.BackgroundImage")));
+            this.btnAntCarrossel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAntCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAntCarrossel.FlatAppearance.BorderSize = 0;
+            this.btnAntCarrossel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAntCarrossel.Location = new System.Drawing.Point(413, 256);
+            this.btnAntCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAntCarrossel.Name = "btnAntCarrossel";
+            this.btnAntCarrossel.Size = new System.Drawing.Size(49, 60);
+            this.btnAntCarrossel.TabIndex = 4;
+            this.btnAntCarrossel.UseVisualStyleBackColor = false;
+            this.btnAntCarrossel.Click += new System.EventHandler(this.btnAntCarrossel_Click);
+            // 
             // panelMeusEventos
             // 
             this.panelMeusEventos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -215,7 +258,7 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.btnEventosCriados);
             this.panelMeusEventos.Controls.Add(this.btnEventosIngressados);
-            this.panelMeusEventos.Location = new System.Drawing.Point(1213, 6);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1214, 4);
             this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMeusEventos.Name = "panelMeusEventos";
             this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
@@ -258,18 +301,6 @@
             this.btnEventosIngressados.UseVisualStyleBackColor = false;
             this.btnEventosIngressados.Click += new System.EventHandler(this.btnEventosIngressados_Click);
             // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label10.Location = new System.Drawing.Point(710, 95);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(410, 53);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "EVENTOS MAIS PRÓXIMOS";
-            // 
             // picCarrossel
             // 
             this.picCarrossel.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -277,47 +308,13 @@
             this.picCarrossel.BorderRadius = 20;
             this.picCarrossel.BorderSize = 2;
             this.picCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCarrossel.Location = new System.Drawing.Point(467, 150);
+            this.picCarrossel.Location = new System.Drawing.Point(468, 148);
             this.picCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCarrossel.Name = "picCarrossel";
             this.picCarrossel.Size = new System.Drawing.Size(843, 322);
             this.picCarrossel.TabIndex = 2;
             this.picCarrossel.TabStop = false;
             this.picCarrossel.Click += new System.EventHandler(this.picCarrosel_Click);
-            // 
-            // btnProxCarrossel
-            // 
-            this.btnProxCarrossel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnProxCarrossel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(234)))));
-            this.btnProxCarrossel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProxCarrossel.BackgroundImage")));
-            this.btnProxCarrossel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnProxCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProxCarrossel.FlatAppearance.BorderSize = 0;
-            this.btnProxCarrossel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProxCarrossel.Location = new System.Drawing.Point(1324, 258);
-            this.btnProxCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProxCarrossel.Name = "btnProxCarrossel";
-            this.btnProxCarrossel.Size = new System.Drawing.Size(49, 60);
-            this.btnProxCarrossel.TabIndex = 5;
-            this.btnProxCarrossel.UseVisualStyleBackColor = false;
-            this.btnProxCarrossel.Click += new System.EventHandler(this.btnProxCarrossel_Click);
-            // 
-            // btnAntCarrossel
-            // 
-            this.btnAntCarrossel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAntCarrossel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(234)))));
-            this.btnAntCarrossel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAntCarrossel.BackgroundImage")));
-            this.btnAntCarrossel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAntCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAntCarrossel.FlatAppearance.BorderSize = 0;
-            this.btnAntCarrossel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAntCarrossel.Location = new System.Drawing.Point(412, 258);
-            this.btnAntCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAntCarrossel.Name = "btnAntCarrossel";
-            this.btnAntCarrossel.Size = new System.Drawing.Size(49, 60);
-            this.btnAntCarrossel.TabIndex = 4;
-            this.btnAntCarrossel.UseVisualStyleBackColor = false;
-            this.btnAntCarrossel.Click += new System.EventHandler(this.btnAntCarrossel_Click);
             // 
             // superiorRoundedPanel1
             // 
@@ -341,7 +338,7 @@
             this.superiorRoundedPanel1.Controls.Add(this.btnCarrossel2);
             this.superiorRoundedPanel1.Controls.Add(this.label11);
             this.superiorRoundedPanel1.Controls.Add(this.panelEventosPerto);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(-1, 324);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 322);
             this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1749, 1575);
@@ -351,10 +348,7 @@
             // 
             this.gradientPanel2.Controls.Add(this.pictureBox2);
             this.gradientPanel2.Controls.Add(this.linkLabel1);
-            this.gradientPanel2.Controls.Add(this.btnLinkedIn);
             this.gradientPanel2.Controls.Add(this.btnEmail);
-            this.gradientPanel2.Controls.Add(this.btnFacebook);
-            this.gradientPanel2.Controls.Add(this.btnInstagram);
             this.gradientPanel2.Controls.Add(this.btnContato);
             this.gradientPanel2.Controls.Add(this.btnAjudaInferior);
             this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -395,21 +389,6 @@
             this.linkLabel1.Text = "CONNECTA";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.White;
             // 
-            // btnLinkedIn
-            // 
-            this.btnLinkedIn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLinkedIn.BackColor = System.Drawing.Color.Transparent;
-            this.btnLinkedIn.BackgroundImage = global::Acelera2025.Properties.Resources.LinkedIn__2_;
-            this.btnLinkedIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLinkedIn.FlatAppearance.BorderSize = 0;
-            this.btnLinkedIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLinkedIn.Location = new System.Drawing.Point(1515, 14);
-            this.btnLinkedIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLinkedIn.Name = "btnLinkedIn";
-            this.btnLinkedIn.Size = new System.Drawing.Size(60, 48);
-            this.btnLinkedIn.TabIndex = 14;
-            this.btnLinkedIn.UseVisualStyleBackColor = false;
-            // 
             // btnEmail
             // 
             this.btnEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -418,42 +397,13 @@
             this.btnEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEmail.FlatAppearance.BorderSize = 0;
             this.btnEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmail.Location = new System.Drawing.Point(1453, 14);
+            this.btnEmail.Location = new System.Drawing.Point(1643, 15);
             this.btnEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEmail.Name = "btnEmail";
             this.btnEmail.Size = new System.Drawing.Size(53, 48);
             this.btnEmail.TabIndex = 12;
             this.btnEmail.UseVisualStyleBackColor = false;
-            // 
-            // btnFacebook
-            // 
-            this.btnFacebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFacebook.BackColor = System.Drawing.Color.Transparent;
-            this.btnFacebook.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_facebook_logo_48;
-            this.btnFacebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFacebook.FlatAppearance.BorderSize = 0;
-            this.btnFacebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacebook.Location = new System.Drawing.Point(1635, 14);
-            this.btnFacebook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnFacebook.Name = "btnFacebook";
-            this.btnFacebook.Size = new System.Drawing.Size(53, 48);
-            this.btnFacebook.TabIndex = 11;
-            this.btnFacebook.UseVisualStyleBackColor = false;
-            // 
-            // btnInstagram
-            // 
-            this.btnInstagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInstagram.BackColor = System.Drawing.Color.Transparent;
-            this.btnInstagram.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_instagram_logo_48;
-            this.btnInstagram.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnInstagram.FlatAppearance.BorderSize = 0;
-            this.btnInstagram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInstagram.Location = new System.Drawing.Point(1573, 14);
-            this.btnInstagram.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnInstagram.Name = "btnInstagram";
-            this.btnInstagram.Size = new System.Drawing.Size(53, 48);
-            this.btnInstagram.TabIndex = 10;
-            this.btnInstagram.UseVisualStyleBackColor = false;
+            this.btnEmail.Click += new System.EventHandler(this.btnEmail_Click);
             // 
             // btnContato
             // 
@@ -464,7 +414,7 @@
             this.btnContato.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContato.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnContato.LinkColor = System.Drawing.Color.White;
-            this.btnContato.Location = new System.Drawing.Point(1355, 27);
+            this.btnContato.Location = new System.Drawing.Point(1545, 28);
             this.btnContato.Name = "btnContato";
             this.btnContato.Size = new System.Drawing.Size(65, 27);
             this.btnContato.TabIndex = 5;
@@ -482,13 +432,14 @@
             this.btnAjudaInferior.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjudaInferior.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjudaInferior.LinkColor = System.Drawing.Color.White;
-            this.btnAjudaInferior.Location = new System.Drawing.Point(1283, 26);
+            this.btnAjudaInferior.Location = new System.Drawing.Point(1473, 27);
             this.btnAjudaInferior.Name = "btnAjudaInferior";
             this.btnAjudaInferior.Size = new System.Drawing.Size(51, 27);
             this.btnAjudaInferior.TabIndex = 4;
             this.btnAjudaInferior.TabStop = true;
             this.btnAjudaInferior.Text = "Ajuda";
             this.btnAjudaInferior.VisitedLinkColor = System.Drawing.Color.White;
+            this.btnAjudaInferior.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnAjudaInferior_LinkClicked);
             // 
             // panelEventosOnline
             // 
@@ -1990,8 +1941,6 @@
         private SuperiorRoundedPanel superiorRoundedPanel1;
         private GradientPanel gradientPanel2;
         private System.Windows.Forms.Button btnEmail;
-        private System.Windows.Forms.Button btnFacebook;
-        private System.Windows.Forms.Button btnInstagram;
         private System.Windows.Forms.LinkLabel btnContato;
         private System.Windows.Forms.LinkLabel btnAjudaInferior;
         private System.Windows.Forms.Panel panelEventosOnline;
@@ -2038,7 +1987,6 @@
         private System.Windows.Forms.LinkLabel btnAjuda;
         private System.Windows.Forms.LinkLabel btnSobreNos;
         private System.Windows.Forms.Button btnNotificacoes;
-        private System.Windows.Forms.Button btnLinkedIn;
         private SuperiorRoundedPic picEventoOnline4;
         private SuperiorRoundedPic picEventoOnline3;
         private SuperiorRoundedPic picEventoOnline2;

@@ -2,6 +2,7 @@
 using Acelera2025.Models;
 using Acelera2025.Telas;
 using iTextSharp.text.pdf.events;
+using Org.BouncyCastle.Tls.Crypto;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -648,5 +649,18 @@ namespace Acelera2025.Views
             CarregarEventosProximos();
         }
 
+        private void btnEmail_Click(object sender, EventArgs e)
+        {
+            string email = "dairohel@gmail.com";
+            string assunto = Uri.EscapeDataString("Contato via Connecta");
+            string mailto = $"mailto:{email}?subject={assunto}";
+
+            System.Diagnostics.Process.Start(mailto);
+        }
+
+        private void btnAjudaInferior_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Navegador.IrParaAjuda(this.usuario);
+        }
     }
 }

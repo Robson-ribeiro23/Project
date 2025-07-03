@@ -42,9 +42,9 @@
             this.lblDataHora.AutoSize = true;
             this.lblDataHora.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDataHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblDataHora.Location = new System.Drawing.Point(491, 49);
+            this.lblDataHora.Location = new System.Drawing.Point(491, 81);
             this.lblDataHora.Name = "lblDataHora";
-            this.lblDataHora.Size = new System.Drawing.Size(91, 27);
+            this.lblDataHora.Size = new System.Drawing.Size(107, 32);
             this.lblDataHora.TabIndex = 12;
             this.lblDataHora.Text = "Data - Hora";
             // 
@@ -55,7 +55,7 @@
             this.lblRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblRua.Location = new System.Drawing.Point(491, 113);
             this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(167, 27);
+            this.lblRua.Size = new System.Drawing.Size(200, 32);
             this.lblRua.TabIndex = 11;
             this.lblRua.Text = "Nome da rua, n°, bairro";
             // 
@@ -64,9 +64,9 @@
             this.lblLocal.AutoSize = true;
             this.lblLocal.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLocal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblLocal.Location = new System.Drawing.Point(491, 81);
+            this.lblLocal.Location = new System.Drawing.Point(491, 49);
             this.lblLocal.Name = "lblLocal";
-            this.lblLocal.Size = new System.Drawing.Size(47, 27);
+            this.lblLocal.Size = new System.Drawing.Size(54, 32);
             this.lblLocal.TabIndex = 10;
             this.lblLocal.Text = "Local";
             // 
@@ -77,7 +77,7 @@
             this.lblNomeEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.lblNomeEvento.Location = new System.Drawing.Point(488, 11);
             this.lblNomeEvento.Name = "lblNomeEvento";
-            this.lblNomeEvento.Size = new System.Drawing.Size(181, 39);
+            this.lblNomeEvento.Size = new System.Drawing.Size(229, 50);
             this.lblNomeEvento.TabIndex = 9;
             this.lblNomeEvento.Text = "Nome do Evento";
             // 
@@ -88,7 +88,7 @@
             this.lblCidadeEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.lblCidadeEstado.Location = new System.Drawing.Point(491, 141);
             this.lblCidadeEstado.Name = "lblCidadeEstado";
-            this.lblCidadeEstado.Size = new System.Drawing.Size(83, 27);
+            this.lblCidadeEstado.Size = new System.Drawing.Size(99, 32);
             this.lblCidadeEstado.TabIndex = 13;
             this.lblCidadeEstado.Text = "Cidade, UF";
             // 
@@ -103,6 +103,7 @@
             this.PicEvento.Size = new System.Drawing.Size(437, 151);
             this.PicEvento.TabIndex = 8;
             this.PicEvento.TabStop = false;
+            this.PicEvento.Click += new System.EventHandler(this.PicEvento_Click);
             // 
             // CardEvento
             // 

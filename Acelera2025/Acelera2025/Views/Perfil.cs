@@ -126,11 +126,21 @@ namespace Acelera2025.Views
             {
                 card.PicEvento.Image = Image.FromFile(evento.CaminhoImagem);
             }
+            card.PicEvento.Cursor = Cursors.Hand;
+            card.PicEvento.Click += (sender, e) =>
+            {
+                Navegador.IrParaTelaEventos(usuario, evento);
+            };
+
             card.lblNomeEvento.Text = evento.NomeEvento;
             card.lblDataHora.Text = evento.Data.ToString("dd/MM/yyyy") + (string.IsNullOrEmpty(evento.Horario) ? "" : " " + evento.Horario);
             card.lblLocal.Text = evento.Local;
             card.lblRua.Text = evento.Rua;
-            card.lblCidadeEstado.Text = evento.Cidade;
+
+            if (evento.IsPresencial)
+                card.lblCidadeEstado.Text = evento.Cidade;
+            else
+                card.lblCidadeEstado.Text = "Online";
 
             return card;
         }

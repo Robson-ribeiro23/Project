@@ -30,20 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picCarrossel = new Acelera2025.Ferramentas.RoundedPicture();
             this.label10 = new System.Windows.Forms.Label();
             this.btnProxEmAlta = new System.Windows.Forms.Button();
             this.btnAntEmAlta = new System.Windows.Forms.Button();
-            this.picCarrossel = new Acelera2025.Ferramentas.RoundedPicture();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
             this.gradientPanel2 = new GradientPanel();
             this.btnEmail = new System.Windows.Forms.Button();
-            this.btnFacebook = new System.Windows.Forms.Button();
-            this.btnInstagram = new System.Windows.Forms.Button();
-            this.btnLinkedIn = new System.Windows.Forms.Button();
             this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.circularPanel2 = new CircularPanel();
             this.btnContato = new System.Windows.Forms.LinkLabel();
-            this.btnAjuda2 = new System.Windows.Forms.LinkLabel();
             this.panelEventosOnline = new System.Windows.Forms.Panel();
             this.btnProxOnline = new System.Windows.Forms.Button();
             this.btnAntOnline = new System.Windows.Forms.Button();
@@ -182,6 +178,20 @@
             this.panel1.Size = new System.Drawing.Size(1692, 650);
             this.panel1.TabIndex = 2;
             // 
+            // picCarrossel
+            // 
+            this.picCarrossel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picCarrossel.BorderColor = System.Drawing.Color.Transparent;
+            this.picCarrossel.BorderRadius = 20;
+            this.picCarrossel.BorderSize = 2;
+            this.picCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCarrossel.Location = new System.Drawing.Point(461, 152);
+            this.picCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picCarrossel.Name = "picCarrossel";
+            this.picCarrossel.Size = new System.Drawing.Size(857, 325);
+            this.picCarrossel.TabIndex = 7;
+            this.picCarrossel.TabStop = false;
+            // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -228,20 +238,6 @@
             this.btnAntEmAlta.UseVisualStyleBackColor = false;
             this.btnAntEmAlta.Click += new System.EventHandler(this.btnAntEmAlta_Click);
             // 
-            // picCarrossel
-            // 
-            this.picCarrossel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picCarrossel.BorderColor = System.Drawing.Color.Transparent;
-            this.picCarrossel.BorderRadius = 20;
-            this.picCarrossel.BorderSize = 2;
-            this.picCarrossel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCarrossel.Location = new System.Drawing.Point(461, 152);
-            this.picCarrossel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.picCarrossel.Name = "picCarrossel";
-            this.picCarrossel.Size = new System.Drawing.Size(857, 325);
-            this.picCarrossel.TabIndex = 7;
-            this.picCarrossel.TabStop = false;
-            // 
             // superiorRoundedPanel1
             // 
             this.superiorRoundedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -279,13 +275,9 @@
             // gradientPanel2
             // 
             this.gradientPanel2.Controls.Add(this.btnEmail);
-            this.gradientPanel2.Controls.Add(this.btnFacebook);
-            this.gradientPanel2.Controls.Add(this.btnInstagram);
-            this.gradientPanel2.Controls.Add(this.btnLinkedIn);
             this.gradientPanel2.Controls.Add(this.linkLabel9);
             this.gradientPanel2.Controls.Add(this.circularPanel2);
             this.gradientPanel2.Controls.Add(this.btnContato);
-            this.gradientPanel2.Controls.Add(this.btnAjuda2);
             this.gradientPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gradientPanel2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
@@ -304,56 +296,13 @@
             this.btnEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEmail.FlatAppearance.BorderSize = 0;
             this.btnEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmail.Location = new System.Drawing.Point(1384, 14);
+            this.btnEmail.Location = new System.Drawing.Point(1577, 14);
             this.btnEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEmail.Name = "btnEmail";
             this.btnEmail.Size = new System.Drawing.Size(53, 48);
             this.btnEmail.TabIndex = 12;
             this.btnEmail.UseVisualStyleBackColor = false;
-            // 
-            // btnFacebook
-            // 
-            this.btnFacebook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFacebook.BackColor = System.Drawing.Color.Transparent;
-            this.btnFacebook.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_facebook_logo_48;
-            this.btnFacebook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFacebook.FlatAppearance.BorderSize = 0;
-            this.btnFacebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFacebook.Location = new System.Drawing.Point(1576, 14);
-            this.btnFacebook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnFacebook.Name = "btnFacebook";
-            this.btnFacebook.Size = new System.Drawing.Size(53, 48);
-            this.btnFacebook.TabIndex = 11;
-            this.btnFacebook.UseVisualStyleBackColor = false;
-            // 
-            // btnInstagram
-            // 
-            this.btnInstagram.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInstagram.BackColor = System.Drawing.Color.Transparent;
-            this.btnInstagram.BackgroundImage = global::Acelera2025.Properties.Resources.icons8_instagram_logo_48;
-            this.btnInstagram.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnInstagram.FlatAppearance.BorderSize = 0;
-            this.btnInstagram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInstagram.Location = new System.Drawing.Point(1518, 14);
-            this.btnInstagram.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnInstagram.Name = "btnInstagram";
-            this.btnInstagram.Size = new System.Drawing.Size(53, 48);
-            this.btnInstagram.TabIndex = 10;
-            this.btnInstagram.UseVisualStyleBackColor = false;
-            // 
-            // btnLinkedIn
-            // 
-            this.btnLinkedIn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLinkedIn.BackgroundImage = global::Acelera2025.Properties.Resources.IconLinkedIn;
-            this.btnLinkedIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLinkedIn.FlatAppearance.BorderSize = 0;
-            this.btnLinkedIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLinkedIn.Location = new System.Drawing.Point(1462, 20);
-            this.btnLinkedIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLinkedIn.Name = "btnLinkedIn";
-            this.btnLinkedIn.Size = new System.Drawing.Size(43, 34);
-            this.btnLinkedIn.TabIndex = 9;
-            this.btnLinkedIn.UseVisualStyleBackColor = true;
+            this.btnEmail.Click += new System.EventHandler(this.btnEmail_Click);
             // 
             // linkLabel9
             // 
@@ -390,7 +339,7 @@
             this.btnContato.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContato.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnContato.LinkColor = System.Drawing.Color.White;
-            this.btnContato.Location = new System.Drawing.Point(1296, 27);
+            this.btnContato.Location = new System.Drawing.Point(1489, 27);
             this.btnContato.Name = "btnContato";
             this.btnContato.Size = new System.Drawing.Size(65, 27);
             this.btnContato.TabIndex = 5;
@@ -398,23 +347,6 @@
             this.btnContato.Text = "Contato";
             this.btnContato.VisitedLinkColor = System.Drawing.Color.White;
             this.btnContato.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnContato_LinkClicked);
-            // 
-            // btnAjuda2
-            // 
-            this.btnAjuda2.ActiveLinkColor = System.Drawing.Color.White;
-            this.btnAjuda2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAjuda2.AutoSize = true;
-            this.btnAjuda2.BackColor = System.Drawing.Color.Transparent;
-            this.btnAjuda2.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAjuda2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnAjuda2.LinkColor = System.Drawing.Color.White;
-            this.btnAjuda2.Location = new System.Drawing.Point(1226, 26);
-            this.btnAjuda2.Name = "btnAjuda2";
-            this.btnAjuda2.Size = new System.Drawing.Size(51, 27);
-            this.btnAjuda2.TabIndex = 4;
-            this.btnAjuda2.TabStop = true;
-            this.btnAjuda2.Text = "Ajuda";
-            this.btnAjuda2.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // panelEventosOnline
             // 
@@ -1872,13 +1804,9 @@
         private RoundedPanel roundedPanel7;
         private RoundedPanel roundedPanel6;
         private GradientPanel gradientPanel2;
-        private System.Windows.Forms.LinkLabel btnAjuda2;
         private System.Windows.Forms.LinkLabel linkLabel9;
         private CircularPanel circularPanel2;
         private System.Windows.Forms.LinkLabel btnContato;
-        private System.Windows.Forms.Button btnLinkedIn;
-        private System.Windows.Forms.Button btnInstagram;
-        private System.Windows.Forms.Button btnFacebook;
         private System.Windows.Forms.Button btnEmail;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel btnPrincipal;
