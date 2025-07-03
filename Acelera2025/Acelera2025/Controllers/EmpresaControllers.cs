@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using Acelera2025.Models;
 
 namespace Acelera2025.Controllers
 {
     public class EmpresaControllers
     {
         private static List<EmpresaModels> listaEmpresas = new List<EmpresaModels>();
+        public static EmpresaModels loggedCompany;
 
         private bool EmailValido(string email)
         {
@@ -96,7 +98,18 @@ namespace Acelera2025.Controllers
                 return null;
             }
 
+            loggedCompany = empresa;
             return empresa;
+        }
+
+        public static List<EmpresaModels> ListarTodos()
+        {
+            return listaEmpresas;
+        }
+
+        public static bool HasCompanyByEmail(string email)
+        {
+            return listaEmpresas.Any(u => u.Email == email);
         }
     }
 }

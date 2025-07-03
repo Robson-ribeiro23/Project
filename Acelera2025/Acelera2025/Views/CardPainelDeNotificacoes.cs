@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acelera2025.Models;
+using Acelera2025.Controllers;
 
 namespace Acelera2025.Telas
 {
@@ -20,7 +21,8 @@ namespace Acelera2025.Telas
 
         private void CardPainelDeNotificacoes_Load(object sender, EventArgs e)
         {
-            List<NotificacaoModels> notificacoes = NotificacaoCache.ObterNotificacoes(UsuarioControllers.loggedUser.Email);
+            var email = UsuarioControllers.loggedUser != null ? UsuarioControllers.loggedUser.Email : EmpresaControllers.loggedCompany.Email;
+            List<NotificacaoModels> notificacoes = NotificacaoCache.ObterNotificacoes(email);
 
             panelNotificacao.Controls.Clear();
             foreach (var notificacao in notificacoes)
@@ -31,7 +33,19 @@ namespace Acelera2025.Telas
 
         private void CreateNotCard(NotificacaoModels notificacao)
         {
-            UsuarioModels user = UsuarioControllers.ListarTodos().Where(u => u.Email == notificacao.EmailDeQuemSeguiu).ToList()[0];
+            PessoaModels user= null;
+            if (UsuarioControllers.HasUserByEmail(notificacao.EmailDeQuemSeguiu))
+            { 
+                user = UsuarioControllers.ListarTodos().Where(u => u.Email == notificacao.EmailDeQuemSeguiu).ToList()[0]; 
+            }
+
+            if (EmpresaControllers.HasCompanyByEmail(notificacao.EmailDeQuemSeguiu))
+            {
+                user = EmpresaControllers.ListarTodos().Where(u => u.Email == notificacao.EmailDeQuemSeguiu).ToList()[0];
+            }
+
+            if (user == null) { return; }
+
             CardNotificacao card = new CardNotificacao(user, notificacao.TipoDeNot, notificacao.Contexto);
             panelNotificacao.Controls.Add(card);
         }

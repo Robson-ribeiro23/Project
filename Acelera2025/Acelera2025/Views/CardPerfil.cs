@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Ac;
 using System.IO;
+using Acelera2025.Controllers;
 
 namespace Acelera2025.Views
 {
@@ -54,6 +55,8 @@ namespace Acelera2025.Views
 
         private void btnSair_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            UsuarioControllers.loggedUser = null;
+            EmpresaControllers.loggedCompany = null;
             Navegador.IrParaInicio();
         }
 

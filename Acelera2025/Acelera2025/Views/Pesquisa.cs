@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using Ac;
+using Acelera2025.Controllers;
 using Acelera2025.Models;
 using Acelera2025.Telas;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -63,8 +64,6 @@ namespace Acelera2025.Views
                 "Dança", "Ciências", "Competições e Concursos", "Espiritualidade", "Exposições e Feiras",
                 "Festas", "Esportes", "Sociedade", "Gastronomia", "Empreendedorismo", "Entretenimento",
                 "Voluntariado", "Meio Ambiente" , "Hobbies" };
-
-
 
             comboUF.Items.AddRange(estados);
             comboFiltrarBusca.Items.Add("Eventos");
@@ -143,6 +142,10 @@ namespace Acelera2025.Views
             {
                 showEvents(termo);
             }
+            else if (comboFiltrarBusca.SelectedItem.ToString() == "Empresas")
+            {
+                showCompanies(termo);
+            }
         }
 
         private void showUsers(string termo)
@@ -180,6 +183,24 @@ namespace Acelera2025.Views
                 CardPesquisaUsuario card = new CardPesquisaUsuario();
                 card.ForçarUsuario(UsuarioControllers.loggedUser);
                 card.DefinirDadosEvento(evento);
+                flowLayoutPanelResultados.Controls.Add(card);
+            }
+        }
+
+        private void showCompanies(string termo)
+        {
+            var empresas = EmpresaControllers.ListarTodos();
+
+            var empresasFiltradas = empresas
+                .Where(e =>
+                (string.IsNullOrEmpty(termo) || !string.IsNullOrEmpty(e.Nome) && e.Nome.ToLower().Contains(termo))
+                ).ToList();
+
+            foreach (var empresa in empresasFiltradas)
+            {
+                if (empresa == EmpresaControllers.loggedCompany) continue;
+                CardPesquisaUsuario card = new CardPesquisaUsuario();
+                card.DefinirDadosUsuario(usuario);
                 flowLayoutPanelResultados.Controls.Add(card);
             }
         }

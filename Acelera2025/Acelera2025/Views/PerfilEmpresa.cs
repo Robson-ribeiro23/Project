@@ -1,7 +1,4 @@
-﻿using Ac;
-using Acelera2025.Models;
-using Acelera2025.Telas;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ac;
+using Acelera2025.Controllers;
+using Acelera2025.Models;
+using Acelera2025.Telas;
 
 namespace Acelera2025.Views
 {
@@ -32,7 +33,7 @@ namespace Acelera2025.Views
         {
             InitializeComponent();
             this.usuario = usuario;
-            this.loggedUser = UsuarioControllers.loggedUser;
+            this.loggedUser = UsuarioControllers.loggedUser != null ? (PessoaModels)UsuarioControllers.loggedUser : (PessoaModels)EmpresaControllers.loggedCompany;
 
             if (usuario is EmpresaModels empresaCasted)
             {
@@ -73,15 +74,85 @@ namespace Acelera2025.Views
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 
+
             if (usuario is EmpresaModels empresa)
             {
                 lblNomeEmpresa.Text = empresa.Nome;
-
+                LoadAllEvents();
+                LoadAllPosts();
 
                 if (!string.IsNullOrEmpty(empresa.CaminhoFoto) && File.Exists(empresa.CaminhoFoto))
                 {
                     picturePerfil.Image = Image.FromFile(empresa.CaminhoFoto);
                 }
+            }
+        }
+
+        private void LoadAllEvents()
+        {
+            List<EventoModels> ownedEvents = usuario.GetOwnedEvents()
+                .OrderByDescending(e => e.Data).ToList();
+
+            panelEventosCriados.Controls.Clear();
+
+            foreach (EventoModels evento in ownedEvents)
+            {
+                panelEventosCriados.Controls.Add(CreateEventCard(evento));
+                panelEventosCriados.Controls.SetChildIndex(panelEventosCriados.Controls[panelEventosCriados.Controls.Count - 1], 0);
+            }
+        }
+
+        private CardEvento CreateEventCard(EventoModels evento)
+        {
+            CardEvento card = new CardEvento();
+
+            if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+            {
+                card.PicEvento.Image = Image.FromFile(evento.CaminhoImagem);
+            }
+            card.PicEvento.Cursor = Cursors.Hand;
+            card.PicEvento.Click += (sender, e) =>
+            {
+                Navegador.IrParaTelaEventos(loggedUser, evento);
+            };
+
+            card.lblNomeEvento.Text = evento.NomeEvento;
+            card.lblDataHora.Text = evento.Data.ToString("dd/MM/yyyy") + (string.IsNullOrEmpty(evento.Horario) ? "" : " " + evento.Horario);
+            card.lblLocal.Text = evento.Local;
+            card.lblRua.Text = evento.Rua;
+
+            if (evento.IsPresencial)
+                card.lblCidadeEstado.Text = evento.Cidade;
+            else
+                card.lblCidadeEstado.Text = "Online";
+
+            return card;
+        }
+
+        private void LoadAllPosts()
+        {
+            var postagensUsuario = usuario.Postagens;
+
+            foreach (var post in postagensUsuario)
+            {
+                UserControl cardPost = null;
+
+                if (post.Video != null)
+                {
+                    cardPost = new CardPostVideo(post, usuario);
+                }
+                else if (post.Imagens != null && post.Imagens.Count > 0)
+                {
+                    cardPost = new CardPostImagem(post, usuario);
+                }
+                else
+                {
+                    cardPost = new CardPostTexto(post, usuario);
+                }
+                cardPost.AutoSize = false;
+                cardPost.Margin = new Padding(0, 0, 0, 10);
+                panelPosts.Controls.Add(cardPost);
+                panelPosts.Controls.SetChildIndex(cardPost, 0);
             }
         }
 
