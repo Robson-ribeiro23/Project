@@ -41,8 +41,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtNomeDaRua = new System.Windows.Forms.TextBox();
-            this.txtCep = new System.Windows.Forms.TextBox();
+            this.txtRua = new System.Windows.Forms.TextBox();
+            this.txtCEP = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new RoundedButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -62,8 +62,9 @@
             this.panel1.Controls.Add(this.btnEntrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(564, 726);
+            this.panel1.Size = new System.Drawing.Size(423, 590);
             this.panel1.TabIndex = 0;
             this.panel1.UseWaitCursor = true;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
@@ -76,9 +77,10 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Location = new System.Drawing.Point(31, 26);
+            this.btnVoltar.Location = new System.Drawing.Point(23, 21);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(44, 54);
+            this.btnVoltar.Size = new System.Drawing.Size(33, 44);
             this.btnVoltar.TabIndex = 11;
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.UseWaitCursor = true;
@@ -90,9 +92,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(186, 312);
+            this.label2.Location = new System.Drawing.Point(140, 254);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 58);
+            this.label2.Size = new System.Drawing.Size(156, 48);
             this.label2.TabIndex = 8;
             this.label2.Text = "Fazer Login";
             this.label2.UseWaitCursor = true;
@@ -107,11 +110,12 @@
             this.btnEntrar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnEntrar.Location = new System.Drawing.Point(187, 373);
+            this.btnEntrar.Location = new System.Drawing.Point(140, 303);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(190, 40);
+            this.btnEntrar.Size = new System.Drawing.Size(142, 32);
             this.btnEntrar.TabIndex = 7;
-            this.btnEntrar.Text = "\'";
+            this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.UseWaitCursor = true;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrarEmpresa_Click);
@@ -120,11 +124,13 @@
             // 
             this.panel2.Controls.Add(this.roundedPanel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(564, 0);
+            this.panel2.Location = new System.Drawing.Point(423, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(847, 726);
+            this.panel2.Size = new System.Drawing.Size(635, 590);
             this.panel2.TabIndex = 1;
             this.panel2.UseWaitCursor = true;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // roundedPanel1
             // 
@@ -139,17 +145,18 @@
             this.roundedPanel1.Controls.Add(this.label8);
             this.roundedPanel1.Controls.Add(this.txtBairro);
             this.roundedPanel1.Controls.Add(this.label6);
-            this.roundedPanel1.Controls.Add(this.txtNomeDaRua);
-            this.roundedPanel1.Controls.Add(this.txtCep);
+            this.roundedPanel1.Controls.Add(this.txtRua);
+            this.roundedPanel1.Controls.Add(this.txtCEP);
             this.roundedPanel1.Controls.Add(this.txtCidade);
             this.roundedPanel1.Controls.Add(this.btnCadastrar);
             this.roundedPanel1.Controls.Add(this.label5);
             this.roundedPanel1.Controls.Add(this.label4);
             this.roundedPanel1.Controls.Add(this.label3);
             this.roundedPanel1.Controls.Add(this.label1);
-            this.roundedPanel1.Location = new System.Drawing.Point(136, 119);
+            this.roundedPanel1.Location = new System.Drawing.Point(102, 97);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(581, 516);
+            this.roundedPanel1.Size = new System.Drawing.Size(436, 419);
             this.roundedPanel1.TabIndex = 0;
             this.roundedPanel1.UseWaitCursor = true;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
@@ -160,10 +167,9 @@
             this.comboUF.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboUF.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboUF.FormattingEnabled = true;
-            this.comboUF.Location = new System.Drawing.Point(455, 149);
-            this.comboUF.Margin = new System.Windows.Forms.Padding(4);
+            this.comboUF.Location = new System.Drawing.Point(341, 121);
             this.comboUF.Name = "comboUF";
-            this.comboUF.Size = new System.Drawing.Size(89, 38);
+            this.comboUF.Size = new System.Drawing.Size(68, 33);
             this.comboUF.TabIndex = 28;
             this.comboUF.UseWaitCursor = true;
             // 
@@ -173,9 +179,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label9.Location = new System.Drawing.Point(440, 308);
+            this.label9.Location = new System.Drawing.Point(330, 250);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 32);
+            this.label9.Size = new System.Drawing.Size(69, 27);
             this.label9.TabIndex = 23;
             this.label9.Text = "Número:";
             this.label9.UseWaitCursor = true;
@@ -185,9 +192,10 @@
             this.txtNumero.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNumero.BackColor = System.Drawing.SystemColors.Control;
             this.txtNumero.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(455, 343);
+            this.txtNumero.Location = new System.Drawing.Point(341, 279);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(58, 39);
+            this.txtNumero.Size = new System.Drawing.Size(44, 33);
             this.txtNumero.TabIndex = 22;
             this.txtNumero.UseWaitCursor = true;
             // 
@@ -197,9 +205,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label8.Location = new System.Drawing.Point(307, 208);
+            this.label8.Location = new System.Drawing.Point(230, 169);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 32);
+            this.label8.Size = new System.Drawing.Size(55, 27);
             this.label8.TabIndex = 21;
             this.label8.Text = "Bairro:";
             this.label8.UseWaitCursor = true;
@@ -209,9 +218,10 @@
             this.txtBairro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBairro.BackColor = System.Drawing.SystemColors.Control;
             this.txtBairro.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBairro.Location = new System.Drawing.Point(307, 243);
+            this.txtBairro.Location = new System.Drawing.Point(230, 197);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(206, 39);
+            this.txtBairro.Size = new System.Drawing.Size(156, 33);
             this.txtBairro.TabIndex = 20;
             this.txtBairro.UseWaitCursor = true;
             // 
@@ -221,44 +231,48 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label6.Location = new System.Drawing.Point(449, 113);
+            this.label6.Location = new System.Drawing.Point(337, 92);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 32);
+            this.label6.Size = new System.Drawing.Size(32, 27);
             this.label6.TabIndex = 19;
             this.label6.Text = "UF:";
             this.label6.UseWaitCursor = true;
             // 
-            // txtNomeDaRua
+            // txtRua
             // 
-            this.txtNomeDaRua.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNomeDaRua.BackColor = System.Drawing.SystemColors.Control;
-            this.txtNomeDaRua.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeDaRua.Location = new System.Drawing.Point(74, 343);
-            this.txtNomeDaRua.Name = "txtNomeDaRua";
-            this.txtNomeDaRua.Size = new System.Drawing.Size(356, 39);
-            this.txtNomeDaRua.TabIndex = 8;
-            this.txtNomeDaRua.UseWaitCursor = true;
-            this.txtNomeDaRua.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtRua.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRua.BackColor = System.Drawing.SystemColors.Control;
+            this.txtRua.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRua.Location = new System.Drawing.Point(56, 279);
+            this.txtRua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(268, 33);
+            this.txtRua.TabIndex = 8;
+            this.txtRua.UseWaitCursor = true;
+            this.txtRua.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // txtCep
+            // txtCEP
             // 
-            this.txtCep.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCep.BackColor = System.Drawing.SystemColors.Control;
-            this.txtCep.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCep.Location = new System.Drawing.Point(74, 243);
-            this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(206, 39);
-            this.txtCep.TabIndex = 11;
-            this.txtCep.UseWaitCursor = true;
+            this.txtCEP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCEP.BackColor = System.Drawing.SystemColors.Control;
+            this.txtCEP.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCEP.Location = new System.Drawing.Point(56, 197);
+            this.txtCEP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(156, 33);
+            this.txtCEP.TabIndex = 11;
+            this.txtCEP.UseWaitCursor = true;
             // 
             // txtCidade
             // 
             this.txtCidade.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCidade.BackColor = System.Drawing.SystemColors.Control;
             this.txtCidade.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCidade.Location = new System.Drawing.Point(74, 148);
+            this.txtCidade.Location = new System.Drawing.Point(56, 120);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(356, 39);
+            this.txtCidade.Size = new System.Drawing.Size(268, 33);
             this.txtCidade.TabIndex = 10;
             this.txtCidade.UseWaitCursor = true;
             this.txtCidade.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -273,9 +287,10 @@
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCadastrar.Location = new System.Drawing.Point(200, 422);
+            this.btnCadastrar.Location = new System.Drawing.Point(150, 343);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(190, 40);
+            this.btnCadastrar.Size = new System.Drawing.Size(142, 32);
             this.btnCadastrar.TabIndex = 15;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -288,9 +303,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label5.Location = new System.Drawing.Point(68, 308);
+            this.label5.Location = new System.Drawing.Point(51, 250);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 32);
+            this.label5.Size = new System.Drawing.Size(110, 27);
             this.label5.TabIndex = 14;
             this.label5.Text = " Nome da Rua:";
             this.label5.UseWaitCursor = true;
@@ -301,9 +317,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label4.Location = new System.Drawing.Point(68, 208);
+            this.label4.Location = new System.Drawing.Point(51, 169);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 32);
+            this.label4.Size = new System.Drawing.Size(40, 27);
             this.label4.TabIndex = 9;
             this.label4.Text = "CEP:";
             this.label4.UseWaitCursor = true;
@@ -314,9 +331,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label3.Location = new System.Drawing.Point(77, 113);
+            this.label3.Location = new System.Drawing.Point(58, 92);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 32);
+            this.label3.Size = new System.Drawing.Size(62, 27);
             this.label3.TabIndex = 8;
             this.label3.Text = "Cidade:";
             this.label3.UseWaitCursor = true;
@@ -327,21 +345,23 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label1.Location = new System.Drawing.Point(126, 35);
+            this.label1.Location = new System.Drawing.Point(94, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 58);
+            this.label1.Size = new System.Drawing.Size(275, 48);
             this.label1.TabIndex = 6;
             this.label1.Text = "Endereço da empresa";
             this.label1.UseWaitCursor = true;
             // 
             // CadastrarEmpresaEndereço
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1411, 726);
+            this.ClientSize = new System.Drawing.Size(1058, 590);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CadastrarEmpresaEndereço";
             this.UseWaitCursor = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -362,14 +382,14 @@
         private RoundedPanel roundedPanel1;
         private RoundedButton btnEntrar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNomeDaRua;
+        private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private RoundedButton btnCadastrar;
-        private System.Windows.Forms.TextBox txtCep;
+        private System.Windows.Forms.TextBox txtCEP;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNumero;

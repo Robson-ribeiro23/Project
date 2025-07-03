@@ -39,14 +39,13 @@ namespace Acelera2025.Views
             this.btnEventosIngressados = new RoundedButton();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
             this.lblNumSeguidores = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlEndereço = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabEndereço = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEntrarEmContato = new CircularButton();
@@ -66,11 +65,14 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
+            this.lblBairro = new System.Windows.Forms.Label();
+            this.lblRuaNumero = new System.Windows.Forms.Label();
+            this.lblCidade = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfilEmpresa)).BeginInit();
             this.panelMeusEventos.SuspendLayout();
             this.superiorRoundedPanel1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabControlEndereço.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
@@ -82,6 +84,9 @@ namespace Acelera2025.Views
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.lblCidade);
+            this.panel1.Controls.Add(this.lblRuaNumero);
+            this.panel1.Controls.Add(this.lblBairro);
             this.panel1.Controls.Add(this.picPerfilEmpresa);
             this.panel1.Controls.Add(this.btnLapis);
             this.panel1.Controls.Add(this.panelMeusEventos);
@@ -184,7 +189,7 @@ namespace Acelera2025.Views
             this.superiorRoundedPanel1.BorderRadius = 100;
             this.superiorRoundedPanel1.BorderSize = 0;
             this.superiorRoundedPanel1.Controls.Add(this.lblNumSeguidores);
-            this.superiorRoundedPanel1.Controls.Add(this.tabControl1);
+            this.superiorRoundedPanel1.Controls.Add(this.tabControlEndereço);
             this.superiorRoundedPanel1.Controls.Add(this.label3);
             this.superiorRoundedPanel1.Controls.Add(this.label2);
             this.superiorRoundedPanel1.Controls.Add(this.btnEntrarEmContato);
@@ -210,24 +215,23 @@ namespace Acelera2025.Views
             this.lblNumSeguidores.TabIndex = 62;
             this.lblNumSeguidores.Text = "0";
             // 
-            // tabControl1
+            // tabControlEndereço
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tabControlEndereço.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabEndereço);
-            this.tabControl1.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(92, 103);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.Padding = new System.Drawing.Point(30, 15);
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1133, 516);
-            this.tabControl1.TabIndex = 60;
+            this.tabControlEndereço.Controls.Add(this.tabPage1);
+            this.tabControlEndereço.Controls.Add(this.tabPage2);
+            this.tabControlEndereço.Controls.Add(this.tabPage3);
+            this.tabControlEndereço.Controls.Add(this.tabPage4);
+            this.tabControlEndereço.Controls.Add(this.tabPage5);
+            this.tabControlEndereço.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlEndereço.Location = new System.Drawing.Point(92, 103);
+            this.tabControlEndereço.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControlEndereço.Name = "tabControlEndereço";
+            this.tabControlEndereço.Padding = new System.Drawing.Point(30, 15);
+            this.tabControlEndereço.SelectedIndex = 0;
+            this.tabControlEndereço.Size = new System.Drawing.Size(1133, 516);
+            this.tabControlEndereço.TabIndex = 60;
             // 
             // tabPage1
             // 
@@ -298,15 +302,6 @@ namespace Acelera2025.Views
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Posts";
             this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabEndereço
-            // 
-            this.tabEndereço.Location = new System.Drawing.Point(4, 54);
-            this.tabEndereço.Name = "tabEndereço";
-            this.tabEndereço.Size = new System.Drawing.Size(1125, 458);
-            this.tabEndereço.TabIndex = 5;
-            this.tabEndereço.Text = "Endereço";
-            this.tabEndereço.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -616,6 +611,45 @@ namespace Acelera2025.Views
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
+            // lblBairro
+            // 
+            this.lblBairro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblBairro.Location = new System.Drawing.Point(339, 356);
+            this.lblBairro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(192, 27);
+            this.lblBairro.TabIndex = 63;
+            this.lblBairro.Text = "-                                          -";
+            // 
+            // lblRuaNumero
+            // 
+            this.lblRuaNumero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRuaNumero.AutoSize = true;
+            this.lblRuaNumero.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRuaNumero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblRuaNumero.Location = new System.Drawing.Point(557, 356);
+            this.lblRuaNumero.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRuaNumero.Name = "lblRuaNumero";
+            this.lblRuaNumero.Size = new System.Drawing.Size(18, 27);
+            this.lblRuaNumero.TabIndex = 69;
+            this.lblRuaNumero.Text = "-";
+            // 
+            // lblCidade
+            // 
+            this.lblCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCidade.AutoSize = true;
+            this.lblCidade.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCidade.Location = new System.Drawing.Point(614, 356);
+            this.lblCidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCidade.Name = "lblCidade";
+            this.lblCidade.Size = new System.Drawing.Size(18, 27);
+            this.lblCidade.TabIndex = 70;
+            this.lblCidade.Text = "-";
+            // 
             // PerfilEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -630,11 +664,12 @@ namespace Acelera2025.Views
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PerfilEmpresa_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfilEmpresa)).EndInit();
             this.panelMeusEventos.ResumeLayout(false);
             this.superiorRoundedPanel1.ResumeLayout(false);
             this.superiorRoundedPanel1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlEndereço.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.gradientPanel1.ResumeLayout(false);
@@ -663,7 +698,7 @@ namespace Acelera2025.Views
         private RoundedButton btnEventosCriados;
         private RoundedButton btnEventosIngressados;
         private SuperiorRoundedPanel superiorRoundedPanel1;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlEndereço;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TabPage tabPage2;
@@ -683,6 +718,8 @@ namespace Acelera2025.Views
         private System.Windows.Forms.LinkLabel btnFeed;
         private System.Windows.Forms.Label lblSeguidores;
         private System.Windows.Forms.Label lblNumSeguidores;
-        private System.Windows.Forms.TabPage tabEndereço;
+        private System.Windows.Forms.Label lblRuaNumero;
+        private System.Windows.Forms.Label lblBairro;
+        private System.Windows.Forms.Label lblCidade;
     }
 }

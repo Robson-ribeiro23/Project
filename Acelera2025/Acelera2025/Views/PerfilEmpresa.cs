@@ -23,11 +23,17 @@ namespace Acelera2025.Views
         private bool cardPainelDeNotificacoesVisivel = false;
         private bool cardEditarPerfilEmpresaVisivel = false;
         private CardEditarPerfilEmpresa cardEditarPerfilEmpresa;
+        private EmpresaModels empresa;
 
         public PerfilEmpresa(PessoaModels usuario)
         {
             InitializeComponent();
             this.usuario = usuario;
+
+            if (usuario is EmpresaModels empresaCasted)
+            {
+                this.empresa = empresaCasted;
+            }
         }
         private void PerfilEmpresa_Load(object sender, EventArgs e)
         {
@@ -46,6 +52,7 @@ namespace Acelera2025.Views
 
             cardEditarPerfilEmpresa.DadosAtualizados += AtualizarDadosEmpresa;
 
+            CarregarEndereco();
 
 
             panel1.Controls.Add(cardEditarPerfilEmpresa);
@@ -69,6 +76,17 @@ namespace Acelera2025.Views
                 {
                     picturePerfil.Image = Image.FromFile(empresa.CaminhoFoto);
                 }
+            }
+        }
+
+        private void CarregarEndereco()
+        {
+            if (empresa != null)
+            {
+                lblCidade.Text = $"{empresa.Cidade} - {empresa.UF}";
+                
+                lblBairro.Text = empresa.Bairro;
+                lblRuaNumero.Text = $"{empresa.Rua}, {empresa.Numero}";
             }
         }
 

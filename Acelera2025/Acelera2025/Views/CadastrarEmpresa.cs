@@ -188,7 +188,7 @@ namespace Acelera2025.Views
             {
                 Tipo = "empresa",
                 Nome = txtNomeEmpresa.Text.Trim(),
-                CNPJ = new string(txtCnpj.Text.Where(char.IsDigit).ToArray()), // Armazena apenas números
+                CNPJ = new string(txtCnpj.Text.Where(char.IsDigit).ToArray()), // Apenas números
                 Telefone = new string(txtTelefone.Text.Where(char.IsDigit).ToArray()),
                 Cidade = "São Paulo",
                 Email = txtEmail.Text.Trim(),
@@ -200,6 +200,24 @@ namespace Acelera2025.Views
             {
                 MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimparCampos();
+
+                // Pergunta se possui endereço físico
+                var resposta = MessageBox.Show("A empresa possui endereço físico?", "Endereço", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resposta == DialogResult.Yes)
+                {
+                    // Vai para tela de endereço
+                    var formEndereco = new CadastrarEmpresaEndereço(empresa);
+                    formEndereco.Show();
+                }
+                else
+                {
+                    // Vai para tela de login da empresa
+                    var loginEmpresa = new EntrarEmpresa();
+                    loginEmpresa.Show();
+                }
+
+                this.Hide();
             }
         }
 

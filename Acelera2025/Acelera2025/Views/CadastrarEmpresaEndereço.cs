@@ -12,10 +12,12 @@ namespace Acelera2025.Views
 {
     public partial class CadastrarEmpresaEndereço : Form
     {
-        public CadastrarEmpresaEndereço()
+        private EmpresaModels empresa;
+        public CadastrarEmpresaEndereço(EmpresaModels empresa)
         {
             InitializeComponent();
-           // panel2.Resize += panel2_Resize;
+            this.empresa = empresa;
+            // panel2.Resize += panel2_Resize;
         }
         
 
@@ -89,9 +91,18 @@ namespace Acelera2025.Views
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            //Principal principal = new Principal();
-            //principal.Show();
-            //this.Hide();
+            empresa.Cidade = txtCidade.Text;
+            empresa.UF = comboUF.Text;
+            empresa.CEP = txtCEP.Text;
+            empresa.Bairro = txtBairro.Text;
+            empresa.Rua = txtRua.Text;
+            empresa.Numero = txtNumero.Text;
+
+
+            EntrarEmpresa loginEmpresa = new EntrarEmpresa();
+            loginEmpresa.Show();
+
+            this.Close();
         }
 
         private void txtUF_TextChanged(object sender, EventArgs e)
@@ -106,6 +117,11 @@ namespace Acelera2025.Views
                      "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO" };
 
             comboUF.Items.AddRange(estados);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
