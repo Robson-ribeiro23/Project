@@ -50,30 +50,30 @@
             this.roundedPanel9 = new RoundedPanel();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.lblHoraOnline4 = new System.Windows.Forms.Label();
-            this.lblDataOnline4 = new System.Windows.Forms.Label();
-            this.btnNomeEventoOnline4 = new System.Windows.Forms.LinkLabel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.superiorRoundedPic7 = new SuperiorRoundedPic();
             this.roundedPanel8 = new RoundedPanel();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.lblHoraOnline3 = new System.Windows.Forms.Label();
-            this.lblDataOnline3 = new System.Windows.Forms.Label();
-            this.btnNomeEventoOnline3 = new System.Windows.Forms.LinkLabel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
             this.superiorRoundedPic6 = new SuperiorRoundedPic();
             this.roundedPanel7 = new RoundedPanel();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.lblHoraOnline2 = new System.Windows.Forms.Label();
-            this.lblDataOnline2 = new System.Windows.Forms.Label();
-            this.btnNomeEventoOnline2 = new System.Windows.Forms.LinkLabel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.superiorRoundedPic5 = new SuperiorRoundedPic();
             this.roundedPanel6 = new RoundedPanel();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.lblHoraOnline1 = new System.Windows.Forms.Label();
-            this.lblDataOnline1 = new System.Windows.Forms.Label();
-            this.btnNomeEventoOnline1 = new System.Windows.Forms.LinkLabel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.superiorRoundedPic4 = new SuperiorRoundedPic();
             this.label6 = new System.Windows.Forms.Label();
             this.panelCategorias = new System.Windows.Forms.Panel();
@@ -477,9 +477,9 @@
             this.roundedPanel9.BorderSize = 0;
             this.roundedPanel9.Controls.Add(this.label35);
             this.roundedPanel9.Controls.Add(this.label36);
-            this.roundedPanel9.Controls.Add(this.lblHoraOnline4);
-            this.roundedPanel9.Controls.Add(this.lblDataOnline4);
-            this.roundedPanel9.Controls.Add(this.btnNomeEventoOnline4);
+            this.roundedPanel9.Controls.Add(this.label37);
+            this.roundedPanel9.Controls.Add(this.label38);
+            this.roundedPanel9.Controls.Add(this.linkLabel7);
             this.roundedPanel9.Controls.Add(this.superiorRoundedPic7);
             this.roundedPanel9.Location = new System.Drawing.Point(952, 12);
             this.roundedPanel9.Margin = new System.Windows.Forms.Padding(2);
@@ -490,7 +490,6 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label35.Location = new System.Drawing.Point(79, 145);
@@ -503,7 +502,6 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label36.Location = new System.Drawing.Point(10, 178);
@@ -513,48 +511,46 @@
             this.label36.TabIndex = 26;
             this.label36.Text = "Cidade UF";
             // 
-            // lblHoraOnline4
+            // label37
             // 
-            this.lblHoraOnline4.AutoSize = true;
-            this.lblHoraOnline4.BackColor = System.Drawing.Color.Transparent;
-            this.lblHoraOnline4.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraOnline4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHoraOnline4.Location = new System.Drawing.Point(110, 153);
-            this.lblHoraOnline4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblHoraOnline4.Name = "lblHoraOnline4";
-            this.lblHoraOnline4.Size = new System.Drawing.Size(52, 29);
-            this.lblHoraOnline4.TabIndex = 25;
-            this.lblHoraOnline4.Text = "00:00";
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label37.Location = new System.Drawing.Point(110, 153);
+            this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(52, 29);
+            this.label37.TabIndex = 25;
+            this.label37.Text = "00:00";
             // 
-            // lblDataOnline4
+            // label38
             // 
-            this.lblDataOnline4.AutoSize = true;
-            this.lblDataOnline4.BackColor = System.Drawing.Color.Transparent;
-            this.lblDataOnline4.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataOnline4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblDataOnline4.Location = new System.Drawing.Point(9, 153);
-            this.lblDataOnline4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDataOnline4.Name = "lblDataOnline4";
-            this.lblDataOnline4.Size = new System.Drawing.Size(79, 29);
-            this.lblDataOnline4.TabIndex = 24;
-            this.lblDataOnline4.Text = "00/00/00";
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label38.Location = new System.Drawing.Point(9, 153);
+            this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(79, 29);
+            this.label38.TabIndex = 24;
+            this.label38.Text = "00/00/00";
             // 
-            // btnNomeEventoOnline4
+            // linkLabel7
             // 
-            this.btnNomeEventoOnline4.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
-            this.btnNomeEventoOnline4.AutoSize = true;
-            this.btnNomeEventoOnline4.BackColor = System.Drawing.Color.Transparent;
-            this.btnNomeEventoOnline4.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNomeEventoOnline4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnNomeEventoOnline4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNomeEventoOnline4.Location = new System.Drawing.Point(8, 121);
-            this.btnNomeEventoOnline4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnNomeEventoOnline4.Name = "btnNomeEventoOnline4";
-            this.btnNomeEventoOnline4.Size = new System.Drawing.Size(69, 34);
-            this.btnNomeEventoOnline4.TabIndex = 23;
-            this.btnNomeEventoOnline4.TabStop = true;
-            this.btnNomeEventoOnline4.Text = "Nome";
-            this.btnNomeEventoOnline4.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel7.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel7.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel7.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel7.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.linkLabel7.Location = new System.Drawing.Point(8, 121);
+            this.linkLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(69, 34);
+            this.linkLabel7.TabIndex = 23;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "Nome";
+            this.linkLabel7.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // superiorRoundedPic7
             // 
@@ -580,9 +576,9 @@
             this.roundedPanel8.BorderSize = 0;
             this.roundedPanel8.Controls.Add(this.label31);
             this.roundedPanel8.Controls.Add(this.label32);
-            this.roundedPanel8.Controls.Add(this.lblHoraOnline3);
-            this.roundedPanel8.Controls.Add(this.lblDataOnline3);
-            this.roundedPanel8.Controls.Add(this.btnNomeEventoOnline3);
+            this.roundedPanel8.Controls.Add(this.label33);
+            this.roundedPanel8.Controls.Add(this.label34);
+            this.roundedPanel8.Controls.Add(this.linkLabel6);
             this.roundedPanel8.Controls.Add(this.superiorRoundedPic6);
             this.roundedPanel8.Location = new System.Drawing.Point(667, 12);
             this.roundedPanel8.Margin = new System.Windows.Forms.Padding(2);
@@ -593,7 +589,6 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label31.Location = new System.Drawing.Point(79, 145);
@@ -606,7 +601,6 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label32.Location = new System.Drawing.Point(10, 178);
@@ -616,48 +610,46 @@
             this.label32.TabIndex = 26;
             this.label32.Text = "Cidade UF";
             // 
-            // lblHoraOnline3
+            // label33
             // 
-            this.lblHoraOnline3.AutoSize = true;
-            this.lblHoraOnline3.BackColor = System.Drawing.Color.Transparent;
-            this.lblHoraOnline3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraOnline3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHoraOnline3.Location = new System.Drawing.Point(110, 153);
-            this.lblHoraOnline3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblHoraOnline3.Name = "lblHoraOnline3";
-            this.lblHoraOnline3.Size = new System.Drawing.Size(52, 29);
-            this.lblHoraOnline3.TabIndex = 25;
-            this.lblHoraOnline3.Text = "00:00";
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label33.Location = new System.Drawing.Point(110, 153);
+            this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(52, 29);
+            this.label33.TabIndex = 25;
+            this.label33.Text = "00:00";
             // 
-            // lblDataOnline3
+            // label34
             // 
-            this.lblDataOnline3.AutoSize = true;
-            this.lblDataOnline3.BackColor = System.Drawing.Color.Transparent;
-            this.lblDataOnline3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataOnline3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblDataOnline3.Location = new System.Drawing.Point(9, 153);
-            this.lblDataOnline3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDataOnline3.Name = "lblDataOnline3";
-            this.lblDataOnline3.Size = new System.Drawing.Size(79, 29);
-            this.lblDataOnline3.TabIndex = 24;
-            this.lblDataOnline3.Text = "00/00/00";
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label34.Location = new System.Drawing.Point(9, 153);
+            this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(79, 29);
+            this.label34.TabIndex = 24;
+            this.label34.Text = "00/00/00";
             // 
-            // btnNomeEventoOnline3
+            // linkLabel6
             // 
-            this.btnNomeEventoOnline3.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
-            this.btnNomeEventoOnline3.AutoSize = true;
-            this.btnNomeEventoOnline3.BackColor = System.Drawing.Color.Transparent;
-            this.btnNomeEventoOnline3.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNomeEventoOnline3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnNomeEventoOnline3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNomeEventoOnline3.Location = new System.Drawing.Point(8, 121);
-            this.btnNomeEventoOnline3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnNomeEventoOnline3.Name = "btnNomeEventoOnline3";
-            this.btnNomeEventoOnline3.Size = new System.Drawing.Size(69, 34);
-            this.btnNomeEventoOnline3.TabIndex = 23;
-            this.btnNomeEventoOnline3.TabStop = true;
-            this.btnNomeEventoOnline3.Text = "Nome";
-            this.btnNomeEventoOnline3.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel6.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel6.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel6.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel6.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.linkLabel6.Location = new System.Drawing.Point(8, 121);
+            this.linkLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.Size = new System.Drawing.Size(69, 34);
+            this.linkLabel6.TabIndex = 23;
+            this.linkLabel6.TabStop = true;
+            this.linkLabel6.Text = "Nome";
+            this.linkLabel6.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // superiorRoundedPic6
             // 
@@ -683,9 +675,9 @@
             this.roundedPanel7.BorderSize = 0;
             this.roundedPanel7.Controls.Add(this.label27);
             this.roundedPanel7.Controls.Add(this.label28);
-            this.roundedPanel7.Controls.Add(this.lblHoraOnline2);
-            this.roundedPanel7.Controls.Add(this.lblDataOnline2);
-            this.roundedPanel7.Controls.Add(this.btnNomeEventoOnline2);
+            this.roundedPanel7.Controls.Add(this.label29);
+            this.roundedPanel7.Controls.Add(this.label30);
+            this.roundedPanel7.Controls.Add(this.linkLabel5);
             this.roundedPanel7.Controls.Add(this.superiorRoundedPic5);
             this.roundedPanel7.Location = new System.Drawing.Point(380, 12);
             this.roundedPanel7.Margin = new System.Windows.Forms.Padding(2);
@@ -696,7 +688,6 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label27.Location = new System.Drawing.Point(79, 145);
@@ -709,7 +700,6 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label28.Location = new System.Drawing.Point(10, 178);
@@ -719,48 +709,46 @@
             this.label28.TabIndex = 26;
             this.label28.Text = "Cidade UF";
             // 
-            // lblHoraOnline2
+            // label29
             // 
-            this.lblHoraOnline2.AutoSize = true;
-            this.lblHoraOnline2.BackColor = System.Drawing.Color.Transparent;
-            this.lblHoraOnline2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraOnline2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHoraOnline2.Location = new System.Drawing.Point(110, 153);
-            this.lblHoraOnline2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblHoraOnline2.Name = "lblHoraOnline2";
-            this.lblHoraOnline2.Size = new System.Drawing.Size(52, 29);
-            this.lblHoraOnline2.TabIndex = 25;
-            this.lblHoraOnline2.Text = "00:00";
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label29.Location = new System.Drawing.Point(110, 153);
+            this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(52, 29);
+            this.label29.TabIndex = 25;
+            this.label29.Text = "00:00";
             // 
-            // lblDataOnline2
+            // label30
             // 
-            this.lblDataOnline2.AutoSize = true;
-            this.lblDataOnline2.BackColor = System.Drawing.Color.Transparent;
-            this.lblDataOnline2.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataOnline2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblDataOnline2.Location = new System.Drawing.Point(9, 153);
-            this.lblDataOnline2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDataOnline2.Name = "lblDataOnline2";
-            this.lblDataOnline2.Size = new System.Drawing.Size(79, 29);
-            this.lblDataOnline2.TabIndex = 24;
-            this.lblDataOnline2.Text = "00/00/00";
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label30.Location = new System.Drawing.Point(9, 153);
+            this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(79, 29);
+            this.label30.TabIndex = 24;
+            this.label30.Text = "00/00/00";
             // 
-            // btnNomeEventoOnline2
+            // linkLabel5
             // 
-            this.btnNomeEventoOnline2.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
-            this.btnNomeEventoOnline2.AutoSize = true;
-            this.btnNomeEventoOnline2.BackColor = System.Drawing.Color.Transparent;
-            this.btnNomeEventoOnline2.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNomeEventoOnline2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnNomeEventoOnline2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNomeEventoOnline2.Location = new System.Drawing.Point(8, 121);
-            this.btnNomeEventoOnline2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnNomeEventoOnline2.Name = "btnNomeEventoOnline2";
-            this.btnNomeEventoOnline2.Size = new System.Drawing.Size(69, 34);
-            this.btnNomeEventoOnline2.TabIndex = 23;
-            this.btnNomeEventoOnline2.TabStop = true;
-            this.btnNomeEventoOnline2.Text = "Nome";
-            this.btnNomeEventoOnline2.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel5.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel5.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel5.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.linkLabel5.Location = new System.Drawing.Point(8, 121);
+            this.linkLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(69, 34);
+            this.linkLabel5.TabIndex = 23;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "Nome";
+            this.linkLabel5.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // superiorRoundedPic5
             // 
@@ -786,9 +774,9 @@
             this.roundedPanel6.BorderSize = 0;
             this.roundedPanel6.Controls.Add(this.label23);
             this.roundedPanel6.Controls.Add(this.label24);
-            this.roundedPanel6.Controls.Add(this.lblHoraOnline1);
-            this.roundedPanel6.Controls.Add(this.lblDataOnline1);
-            this.roundedPanel6.Controls.Add(this.btnNomeEventoOnline1);
+            this.roundedPanel6.Controls.Add(this.label25);
+            this.roundedPanel6.Controls.Add(this.label26);
+            this.roundedPanel6.Controls.Add(this.linkLabel4);
             this.roundedPanel6.Controls.Add(this.superiorRoundedPic4);
             this.roundedPanel6.Location = new System.Drawing.Point(100, 12);
             this.roundedPanel6.Margin = new System.Windows.Forms.Padding(2);
@@ -799,7 +787,6 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label23.Location = new System.Drawing.Point(79, 145);
@@ -812,7 +799,6 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.label24.Location = new System.Drawing.Point(10, 178);
@@ -822,48 +808,46 @@
             this.label24.TabIndex = 26;
             this.label24.Text = "Cidade UF";
             // 
-            // lblHoraOnline1
+            // label25
             // 
-            this.lblHoraOnline1.AutoSize = true;
-            this.lblHoraOnline1.BackColor = System.Drawing.Color.Transparent;
-            this.lblHoraOnline1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoraOnline1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblHoraOnline1.Location = new System.Drawing.Point(110, 153);
-            this.lblHoraOnline1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblHoraOnline1.Name = "lblHoraOnline1";
-            this.lblHoraOnline1.Size = new System.Drawing.Size(52, 29);
-            this.lblHoraOnline1.TabIndex = 25;
-            this.lblHoraOnline1.Text = "00:00";
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label25.Location = new System.Drawing.Point(110, 153);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(52, 29);
+            this.label25.TabIndex = 25;
+            this.label25.Text = "00:00";
             // 
-            // lblDataOnline1
+            // label26
             // 
-            this.lblDataOnline1.AutoSize = true;
-            this.lblDataOnline1.BackColor = System.Drawing.Color.Transparent;
-            this.lblDataOnline1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataOnline1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblDataOnline1.Location = new System.Drawing.Point(9, 153);
-            this.lblDataOnline1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDataOnline1.Name = "lblDataOnline1";
-            this.lblDataOnline1.Size = new System.Drawing.Size(79, 29);
-            this.lblDataOnline1.TabIndex = 24;
-            this.lblDataOnline1.Text = "00/00/00";
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label26.Location = new System.Drawing.Point(9, 153);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(79, 29);
+            this.label26.TabIndex = 24;
+            this.label26.Text = "00/00/00";
             // 
-            // btnNomeEventoOnline1
+            // linkLabel4
             // 
-            this.btnNomeEventoOnline1.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
-            this.btnNomeEventoOnline1.AutoSize = true;
-            this.btnNomeEventoOnline1.BackColor = System.Drawing.Color.Transparent;
-            this.btnNomeEventoOnline1.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNomeEventoOnline1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.btnNomeEventoOnline1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.btnNomeEventoOnline1.Location = new System.Drawing.Point(8, 121);
-            this.btnNomeEventoOnline1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnNomeEventoOnline1.Name = "btnNomeEventoOnline1";
-            this.btnNomeEventoOnline1.Size = new System.Drawing.Size(69, 34);
-            this.btnNomeEventoOnline1.TabIndex = 23;
-            this.btnNomeEventoOnline1.TabStop = true;
-            this.btnNomeEventoOnline1.Text = "Nome";
-            this.btnNomeEventoOnline1.VisitedLinkColor = System.Drawing.Color.White;
+            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel4.Font = new System.Drawing.Font("Myanmar Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel4.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.linkLabel4.Location = new System.Drawing.Point(8, 121);
+            this.linkLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(69, 34);
+            this.linkLabel4.TabIndex = 23;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Nome";
+            this.linkLabel4.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // superiorRoundedPic4
             // 
@@ -1952,27 +1936,27 @@
         private System.Windows.Forms.LinkLabel btnFeed;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label lblHoraOnline4;
-        private System.Windows.Forms.Label lblDataOnline4;
-        private System.Windows.Forms.LinkLabel btnNomeEventoOnline4;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.LinkLabel linkLabel7;
         private SuperiorRoundedPic superiorRoundedPic7;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label lblHoraOnline3;
-        private System.Windows.Forms.Label lblDataOnline3;
-        private System.Windows.Forms.LinkLabel btnNomeEventoOnline3;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.LinkLabel linkLabel6;
         private SuperiorRoundedPic superiorRoundedPic6;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label lblHoraOnline2;
-        private System.Windows.Forms.Label lblDataOnline2;
-        private System.Windows.Forms.LinkLabel btnNomeEventoOnline2;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.LinkLabel linkLabel5;
         private SuperiorRoundedPic superiorRoundedPic5;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label lblHoraOnline1;
-        private System.Windows.Forms.Label lblDataOnline1;
-        private System.Windows.Forms.LinkLabel btnNomeEventoOnline1;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.LinkLabel linkLabel4;
         private SuperiorRoundedPic superiorRoundedPic4;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lblCidadeUf4;
