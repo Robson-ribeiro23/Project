@@ -35,6 +35,7 @@ namespace Acelera2025.Views
         private List<LinkLabel> btnNomesOnline;
         private List<Label> CidadeUfsOnline;
 
+        private List<PictureBox> pictureCarrosseis;
         public Home(PessoaModels usuario)
         {
             InitializeComponent();
@@ -89,15 +90,21 @@ namespace Acelera2025.Views
             btnNomesOnline = new List<LinkLabel> { btnNomeEventoOnline1, btnNomeEventoOnline2, btnNomeEventoOnline3, btnNomeEventoOnline4 };
             CidadeUfsOnline = new List<Label> {Online1, Online2, Online3, Online4 };
 
+            pictureCarrosseis = new List<PictureBox> { picCarrossel };
+
             CarregarEventosRecentes();
             CarregarEventosOnline();
+            CarregarEventosProximos();
         }
 
         int paginaAtual = 0;
-        int eventosPorPagina = 3;
-        List<EventoModels> eventos = EventoCache.ListarTodos();
+
         private void CarregarEventosRecentes()
         {
+           
+            int eventosPorPagina = 3;
+            List<EventoModels> eventos = EventoCache.ListarTodos();
+
             var eventosOrdenados = EventoCache.ListarTodos()
                                        .OrderByDescending(e => e.Data)
                                        .Take(20)
@@ -169,6 +176,10 @@ namespace Acelera2025.Views
         }
         private void CarregarEventosOnline()
         {
+            
+            int eventosPorPagina = 3;
+            List<EventoModels> eventos = EventoCache.ListarTodos();
+
             var eventosOnline = EventoCache.ListarTodos()
                                            .Where(e => !e.IsPresencial) 
                                            .OrderByDescending(e => e.Data)
@@ -177,7 +188,7 @@ namespace Acelera2025.Views
 
             int inicio = paginaAtual * eventosPorPagina;
 
-            for (int i = 0; i < pictureBoxes.Count; i++)
+            for (int i = 0; i < pictureBoxesOnline.Count; i++)
             {
                 int indexEvento = inicio + i;
 
@@ -234,6 +245,71 @@ namespace Acelera2025.Views
         {
             paginaAtual--;
             CarregarEventosOnline();
+        }
+
+        private void CarregarEventosProximos()
+        {
+            int eventosPorPagina = 1;
+            List<EventoModels> eventos = EventoCache.ListarTodos();
+
+            var eventosMaisProximos = EventoCache.ListarTodos()
+            .Where(e => e.Data >= DateTime.Today)       // só eventos de hoje em diante
+            .OrderBy(e => e.Data)                        // data mais próxima primeiro
+            .Take(6)                                    
+            .ToList();
+
+
+            int inicio = paginaAtual * eventosPorPagina;
+            int limite = Math.Min(pictureBoxes.Count, pictureCarrosseis.Count);
+
+            for (int i = 0; i < limite ; i++)
+            {
+                int indexEvento = inicio + i;
+
+                if (indexEvento < eventosMaisProximos.Count)
+                {
+                    var evento = eventosMaisProximos[indexEvento];
+
+                    if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
+                        pictureCarrosseis[i].Image = Image.FromFile(evento.CaminhoImagem);
+                    else
+                        pictureCarrosseis[i].Image = null;
+
+                    pictureCarrosseis[i].Tag = evento;
+
+                    pictureCarrosseis[i].Click -= Evento_Click;
+                    pictureCarrosseis[i].Click += Evento_Click;
+
+                }
+                else
+                {
+                    pictureCarrosseis[i].Image = null;
+
+                    pictureCarrosseis[i].Tag = null;
+
+                    pictureCarrosseis[i].Click -= Evento_Click;
+                }
+            }
+
+            btnAntEventosOnline.Enabled = paginaAtual > 0;
+            btnProxEventosOnline.Enabled = (paginaAtual + 1) * eventosPorPagina < eventosMaisProximos.Count;
+        }
+
+        private void btnAntCarrossel_Click(object sender, EventArgs e)
+        {
+            if (paginaAtual > 0)
+            {
+                paginaAtual--;
+                CarregarEventosProximos();
+            }
+        }
+
+        private void btnProxCarrossel_Click(object sender, EventArgs e)
+        {
+
+                    paginaAtual++;
+                    CarregarEventosProximos();
+
         }
         private void PicEvento_Click(object sender, EventArgs e)
         {
@@ -565,5 +641,42 @@ namespace Acelera2025.Views
         {
 
         }
+        // Botões
+        private void btnCarrossel1_Click(object sender, EventArgs e)
+        {
+            paginaAtual = 0;
+            CarregarEventosProximos();
+        }
+
+        private void btnCarrossel2_Click(object sender, EventArgs e)
+        {
+            paginaAtual = 1;
+            CarregarEventosProximos();
+        }
+
+        private void btnCarrossel3_Click(object sender, EventArgs e)
+        {
+            paginaAtual = 2;
+            CarregarEventosProximos();
+        }
+
+        private void btnCarrossel4_Click(object sender, EventArgs e)
+        {
+            paginaAtual = 3;
+            CarregarEventosProximos();
+        }
+
+        private void btnCarrossel5_Click(object sender, EventArgs e)
+        {
+            paginaAtual = 4;
+            CarregarEventosProximos();
+        }
+
+        private void btnCarrossel6_Click(object sender, EventArgs e)
+        {
+            paginaAtual = 5;
+            CarregarEventosProximos();
+        }
+
     }
 }

@@ -265,11 +265,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.label10.Location = new System.Drawing.Point(740, 94);
+            this.label10.Location = new System.Drawing.Point(710, 95);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(293, 53);
+            this.label10.Size = new System.Drawing.Size(410, 53);
             this.label10.TabIndex = 3;
-            this.label10.Text = "EVENTOS EM ALTA";
+            this.label10.Text = "EVENTOS MAIS PRÓXIMOS";
             // 
             // picCarrossel
             // 
@@ -301,6 +301,7 @@
             this.btnProxCarrossel.Size = new System.Drawing.Size(49, 60);
             this.btnProxCarrossel.TabIndex = 5;
             this.btnProxCarrossel.UseVisualStyleBackColor = false;
+            this.btnProxCarrossel.Click += new System.EventHandler(this.btnProxCarrossel_Click);
             // 
             // btnAntCarrossel
             // 
@@ -317,6 +318,7 @@
             this.btnAntCarrossel.Size = new System.Drawing.Size(49, 60);
             this.btnAntCarrossel.TabIndex = 4;
             this.btnAntCarrossel.UseVisualStyleBackColor = false;
+            this.btnAntCarrossel.Click += new System.EventHandler(this.btnAntCarrossel_Click);
             // 
             // superiorRoundedPanel1
             // 
@@ -1116,7 +1118,7 @@
             this.btnCarrossel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel1.FlatAppearance.BorderSize = 0;
             this.btnCarrossel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel1.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel1.Location = new System.Drawing.Point(771, 154);
             this.btnCarrossel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1125,6 +1127,7 @@
             this.btnCarrossel1.TabIndex = 27;
             this.btnCarrossel1.Text = ".";
             this.btnCarrossel1.UseVisualStyleBackColor = false;
+            this.btnCarrossel1.Click += new System.EventHandler(this.btnCarrossel1_Click);
             // 
             // btnVerMaisCategorias
             // 
@@ -1158,7 +1161,7 @@
             this.btnCarrossel6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel6.FlatAppearance.BorderSize = 0;
             this.btnCarrossel6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel6.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel6.Location = new System.Drawing.Point(971, 154);
             this.btnCarrossel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1167,6 +1170,7 @@
             this.btnCarrossel6.TabIndex = 19;
             this.btnCarrossel6.Text = ".";
             this.btnCarrossel6.UseVisualStyleBackColor = false;
+            this.btnCarrossel6.Click += new System.EventHandler(this.btnCarrossel6_Click);
             // 
             // btnCarrossel5
             // 
@@ -1175,7 +1179,7 @@
             this.btnCarrossel5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel5.FlatAppearance.BorderSize = 0;
             this.btnCarrossel5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel5.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel5.Location = new System.Drawing.Point(931, 154);
             this.btnCarrossel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1184,6 +1188,7 @@
             this.btnCarrossel5.TabIndex = 18;
             this.btnCarrossel5.Text = ".";
             this.btnCarrossel5.UseVisualStyleBackColor = false;
+            this.btnCarrossel5.Click += new System.EventHandler(this.btnCarrossel5_Click);
             // 
             // btnCarrossel4
             // 
@@ -1192,7 +1197,7 @@
             this.btnCarrossel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel4.FlatAppearance.BorderSize = 0;
             this.btnCarrossel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel4.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel4.Location = new System.Drawing.Point(891, 154);
             this.btnCarrossel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1201,6 +1206,7 @@
             this.btnCarrossel4.TabIndex = 17;
             this.btnCarrossel4.Text = ".";
             this.btnCarrossel4.UseVisualStyleBackColor = false;
+            this.btnCarrossel4.Click += new System.EventHandler(this.btnCarrossel4_Click);
             // 
             // btnCarrossel3
             // 
@@ -1209,7 +1215,7 @@
             this.btnCarrossel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel3.FlatAppearance.BorderSize = 0;
             this.btnCarrossel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel3.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel3.Location = new System.Drawing.Point(852, 154);
             this.btnCarrossel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1218,6 +1224,7 @@
             this.btnCarrossel3.TabIndex = 16;
             this.btnCarrossel3.Text = ".";
             this.btnCarrossel3.UseVisualStyleBackColor = false;
+            this.btnCarrossel3.Click += new System.EventHandler(this.btnCarrossel3_Click);
             // 
             // btnCarrossel2
             // 
@@ -1226,7 +1233,7 @@
             this.btnCarrossel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCarrossel2.FlatAppearance.BorderSize = 0;
             this.btnCarrossel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCarrossel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarrossel2.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarrossel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.btnCarrossel2.Location = new System.Drawing.Point(811, 154);
             this.btnCarrossel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1235,6 +1242,7 @@
             this.btnCarrossel2.TabIndex = 15;
             this.btnCarrossel2.Text = ".";
             this.btnCarrossel2.UseVisualStyleBackColor = false;
+            this.btnCarrossel2.Click += new System.EventHandler(this.btnCarrossel2_Click);
             // 
             // label11
             // 
