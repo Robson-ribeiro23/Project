@@ -200,7 +200,7 @@ namespace Acelera2025.Views
             {
                 if (empresa == EmpresaControllers.loggedCompany) continue;
                 CardPesquisaUsuario card = new CardPesquisaUsuario();
-                card.DefinirDadosUsuario(usuario);
+                card.DefinirDadosUsuario(empresa);
                 flowLayoutPanelResultados.Controls.Add(card);
             }
         }

@@ -65,7 +65,7 @@ namespace Acelera2025.Controllers
                 return false;
             }
 
-
+            empresa.Tipo = "Empresa";
             listaEmpresas.Add(empresa);
             return true;
         }

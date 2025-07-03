@@ -62,7 +62,14 @@ namespace Acelera2025.Telas
             }
             else if (usuario != null)
             {
-                Navegador.IrParaPerfilUsuario(usuario);
+                if (usuario.Tipo == "Empresa")
+                {
+                    Navegador.IrParaPerfilEmpresa(usuario);
+                }
+                else
+                {
+                    Navegador.IrParaPerfilUsuario(usuario);
+                }
             }
         }
 
