@@ -40,13 +40,6 @@ namespace Acelera2025.Views
             this.btnEventosIngressados = new RoundedButton();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
             this.lblNumSeguidores = new System.Windows.Forms.Label();
-            this.tabControlEndereço = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.lblSeguir = new System.Windows.Forms.Label();
             this.btnEntrarEmContato = new CircularButton();
@@ -66,16 +59,23 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
+            this.panelPosts = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panelEventosCriados = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tabControlEndereço = new System.Windows.Forms.TabControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfilEmpresa)).BeginInit();
             this.panelMeusEventos.SuspendLayout();
             this.superiorRoundedPanel1.SuspendLayout();
-            this.tabControlEndereço.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel5.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabControlEndereço.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -223,94 +223,6 @@ namespace Acelera2025.Views
             this.lblNumSeguidores.Size = new System.Drawing.Size(20, 27);
             this.lblNumSeguidores.TabIndex = 62;
             this.lblNumSeguidores.Text = "0";
-            // 
-            // tabControlEndereço
-            // 
-            this.tabControlEndereço.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControlEndereço.Controls.Add(this.tabPage1);
-            this.tabControlEndereço.Controls.Add(this.tabPage2);
-            this.tabControlEndereço.Controls.Add(this.tabPage3);
-            this.tabControlEndereço.Controls.Add(this.tabPage4);
-            this.tabControlEndereço.Controls.Add(this.tabPage5);
-            this.tabControlEndereço.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlEndereço.Location = new System.Drawing.Point(92, 103);
-            this.tabControlEndereço.Margin = new System.Windows.Forms.Padding(2);
-            this.tabControlEndereço.Name = "tabControlEndereço";
-            this.tabControlEndereço.Padding = new System.Drawing.Point(30, 15);
-            this.tabControlEndereço.SelectedIndex = 0;
-            this.tabControlEndereço.Size = new System.Drawing.Size(1133, 516);
-            this.tabControlEndereço.TabIndex = 60;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 54);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(1125, 458);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Sobre";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(16, 16);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(1030, 425);
-            this.textBox2.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 54);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(1125, 458);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Participações";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 54);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(1125, 458);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Disponíveis";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 54);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage4.Size = new System.Drawing.Size(1125, 458);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Encerrados";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 54);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Size = new System.Drawing.Size(1125, 458);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Posts";
-            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -621,6 +533,94 @@ namespace Acelera2025.Views
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
+            // panelPosts
+            // 
+            this.panelPosts.Location = new System.Drawing.Point(4, 54);
+            this.panelPosts.Margin = new System.Windows.Forms.Padding(2);
+            this.panelPosts.Name = "panelPosts";
+            this.panelPosts.Padding = new System.Windows.Forms.Padding(2);
+            this.panelPosts.Size = new System.Drawing.Size(1125, 458);
+            this.panelPosts.TabIndex = 4;
+            this.panelPosts.Text = "Posts";
+            this.panelPosts.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 54);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Size = new System.Drawing.Size(1125, 458);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Encerrados";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // panelEventosCriados
+            // 
+            this.panelEventosCriados.Location = new System.Drawing.Point(4, 54);
+            this.panelEventosCriados.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEventosCriados.Name = "panelEventosCriados";
+            this.panelEventosCriados.Padding = new System.Windows.Forms.Padding(2);
+            this.panelEventosCriados.Size = new System.Drawing.Size(1125, 458);
+            this.panelEventosCriados.TabIndex = 2;
+            this.panelEventosCriados.Text = "Disponíveis";
+            this.panelEventosCriados.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 54);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(1125, 458);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Participações";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 54);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(1125, 458);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Sobre";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(16, 16);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(1030, 425);
+            this.textBox2.TabIndex = 0;
+            // 
+            // tabControlEndereço
+            // 
+            this.tabControlEndereço.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControlEndereço.Controls.Add(this.tabPage1);
+            this.tabControlEndereço.Controls.Add(this.tabPage2);
+            this.tabControlEndereço.Controls.Add(this.panelEventosCriados);
+            this.tabControlEndereço.Controls.Add(this.tabPage4);
+            this.tabControlEndereço.Controls.Add(this.panelPosts);
+            this.tabControlEndereço.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlEndereço.Location = new System.Drawing.Point(92, 103);
+            this.tabControlEndereço.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControlEndereço.Name = "tabControlEndereço";
+            this.tabControlEndereço.Padding = new System.Drawing.Point(30, 15);
+            this.tabControlEndereço.SelectedIndex = 0;
+            this.tabControlEndereço.Size = new System.Drawing.Size(1133, 516);
+            this.tabControlEndereço.TabIndex = 60;
+            // 
             // PerfilEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -640,15 +640,15 @@ namespace Acelera2025.Views
             this.panelMeusEventos.ResumeLayout(false);
             this.superiorRoundedPanel1.ResumeLayout(false);
             this.superiorRoundedPanel1.PerformLayout();
-            this.tabControlEndereço.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabControlEndereço.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -669,13 +669,6 @@ namespace Acelera2025.Views
         private RoundedButton btnEventosCriados;
         private RoundedButton btnEventosIngressados;
         private SuperiorRoundedPanel superiorRoundedPanel1;
-        private System.Windows.Forms.TabControl tabControlEndereço;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblSeguir;
         private CircularButton btnEntrarEmContato;
@@ -690,5 +683,12 @@ namespace Acelera2025.Views
         private System.Windows.Forms.Label lblSeguidores;
         private System.Windows.Forms.Label lblNumSeguidores;
         private System.Windows.Forms.Label lblEnderecoCompleto;
+        private System.Windows.Forms.TabControl tabControlEndereço;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage panelEventosCriados;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage panelPosts;
     }
 }

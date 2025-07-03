@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ac;
+using Acelera2025.Controllers;
 using Acelera2025.Models;
 
 namespace Acelera2025.Telas
@@ -22,7 +23,7 @@ namespace Acelera2025.Telas
         public CardNotificacao(PessoaModels usuario, string type, Dictionary<string, object> context) 
         {
             InitializeComponent();
-            this.loggedUser = UsuarioControllers.loggedUser;
+            this.loggedUser = UsuarioControllers.loggedUser != null ? (PessoaModels)UsuarioControllers.loggedUser : (PessoaModels)EmpresaControllers.loggedCompany;
             this.usuario = usuario;
             this.type = type;
             this.contexto = context;

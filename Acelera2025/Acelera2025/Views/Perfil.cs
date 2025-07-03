@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using Ac;
+using Acelera2025.Controllers;
 using Acelera2025.Models;
 using Acelera2025.Telas;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
@@ -31,11 +32,8 @@ namespace Acelera2025.Views
             InitializeComponent();
             this.usuario = usuario;
             lblNomeUsuario.Text = usuario.Nome;
-            loggedUser = UsuarioControllers.loggedUser;
+            loggedUser = UsuarioControllers.loggedUser != null ? (PessoaModels)UsuarioControllers.loggedUser : (PessoaModels)EmpresaControllers.loggedCompany;
             this.usuarioVisualizado = (UsuarioModels)usuario;
-
-
-
 
             lblNomeUsuario.Text = usuario.Nome;
             lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();

@@ -18,6 +18,20 @@ namespace Acelera2025.Views
         public CadastrarEmpresa()
         {
             InitializeComponent();
+
+            var empresa = new EmpresaModels
+            {
+                Tipo = "empresa",
+                Nome = "Vinícius Inc",
+                CNPJ = "00000000000000",
+                Telefone = "0000000",
+                Cidade = "São Paulo",
+                Email = "viniciusmail@gmail.com",
+                Senha = "0",
+                ConfirmarSenha = "0",
+            };
+
+            controllerEmpresa.Cadastrar(empresa);
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
