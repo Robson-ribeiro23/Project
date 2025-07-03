@@ -77,6 +77,7 @@ namespace Acelera2025.Views
             cardEditarPerfil.Left = (this.ClientSize.Width - cardEditarPerfil.Width) / 2;
             cardEditarPerfil.FecharTelaSolicitado += (s, args) => this.Close();
             cardEditarPerfil.Top = (this.ClientSize.Height - cardEditarPerfil.Height) / 2;
+            cardEditarPerfil.DadosAtualizados += AtualizarDadosUsuario;
 
             cardPainelDeNotificacoes = new CardPainelDeNotificacoes();
             cardPainelDeNotificacoes.Visible = false;
@@ -116,6 +117,18 @@ namespace Acelera2025.Views
                 panelEventosCriados.Controls.Add(CreateEventCard(evento));
                 panelEventosCriados.Controls.SetChildIndex(panelEventosCriados.Controls[panelEventosCriados.Controls.Count - 1], 0);
             }
+        }
+
+        private void AtualizarDadosUsuario(PessoaModels usuario)
+        {
+            if (!string.IsNullOrEmpty(usuario.CaminhoFoto) && File.Exists(usuario.CaminhoFoto))
+            {
+                picPerfil.Image = Image.FromFile(usuario.CaminhoFoto);
+                picturePerfil.Image = Image.FromFile(usuario.CaminhoFoto);
+            }
+
+            lblNomeUsuario.Text = usuario.Nome;
+            lblNumSeguidores.Text = usuarioVisualizado.Seguidores.Count.ToString();
         }
 
         private CardEvento CreateEventCard(EventoModels evento)
@@ -298,6 +311,10 @@ namespace Acelera2025.Views
             System.Diagnostics.Process.Start(mailto);
         }
 
+        private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

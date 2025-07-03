@@ -15,6 +15,7 @@ namespace Acelera2025.Views
     {
         public event EventHandler FecharTelaSolicitado;
         private PessoaModels usuario;
+        public event Action<PessoaModels> DadosAtualizados;
         public CardEditarPerfil(PessoaModels usuario)
         {
             InitializeComponent();
@@ -86,6 +87,8 @@ namespace Acelera2025.Views
             }
 
             MessageBox.Show("Dados atualizados com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            DadosAtualizados?.Invoke(usuario);
 
             this.Hide();
         }
