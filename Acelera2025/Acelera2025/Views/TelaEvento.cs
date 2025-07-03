@@ -3,10 +3,12 @@ using Acelera2025.Models;
 using Acelera2025.Presença;
 using Acelera2025.Telas;
 using Acelera2025.Utils;
+using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -17,7 +19,7 @@ using System.Windows.Forms;
 
 namespace Acelera2025.Views
 {
-    public partial class TelaEvento: Form
+    public partial class TelaEvento : Form
     {
         private bool panelVisivel = false;
         private CardPerfil cardPerfil;
@@ -28,7 +30,7 @@ namespace Acelera2025.Views
         private EventoModels evento;
         private EnviarEmail enviarEmail;
         private bool enviarEmailVisivel = false;
-        
+
 
         public TelaEvento(PessoaModels usuario, EventoModels evento)
         {
@@ -59,7 +61,7 @@ namespace Acelera2025.Views
                     lblCidadeUf.Text = "";
                     lblCep.Text = "";
                 }
-                
+
 
 
                 if (!string.IsNullOrEmpty(evento.CaminhoImagem) && File.Exists(evento.CaminhoImagem))
@@ -129,7 +131,7 @@ namespace Acelera2025.Views
 
         private void roundedButton4_Click(object sender, EventArgs e)
         {
-           Navegador.IrParaEventosCriados(this.usuario);
+            Navegador.IrParaEventosCriados(this.usuario);
         }
 
         private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -225,7 +227,7 @@ namespace Acelera2025.Views
             NotificacaoModels notificacao = new NotificacaoModels(evento.criador.Email, "onEventFollowed", context);
             NotificacaoCache.AdicionarNotificacao(evento.criador.Email, notificacao);
 
-            evento.SubscribeUser((UsuarioModels) usuario);
+            evento.SubscribeUser((UsuarioModels)usuario);
             Navegador.IrParaEventosIngressados(usuario);
         }
 
@@ -235,10 +237,44 @@ namespace Acelera2025.Views
 
             bool valido = ControleDePresencas.ValidarCodigo(codigoDigitado);
 
-            if (valido)
+            if (valido) { 
                 MessageBox.Show("Presença confirmada!");
-            else
+            GerarCertificado();
+        }
+            else{
                 MessageBox.Show("Código inválido, expirado ou sem resgates disponíveis.");
+            }
+        }
+
+        private void GerarCertificado()
+        {
+            string modeloPDF = "certificado.pdf";
+            string novoPDF = $"certificadoConclusao_{evento.NomeEvento}.pdf";
+
+            using (PdfReader reader = new PdfReader(modeloPDF))
+            using (FileStream fs = new FileStream(novoPDF, FileMode.Create, FileAccess.Write))
+            using (PdfStamper stamper = new PdfStamper(reader, fs))
+            {
+                PdfContentByte cb = stamper.GetOverContent(1);
+                BaseFont fonte = BaseFont.CreateFont(BaseFont.HELVETICA, BaseFont.CP1252, BaseFont.NOT_EMBEDDED);
+
+                cb.BeginText();
+                cb.SetFontAndSize(fonte, 16);
+                cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "Certificamos que " + usuario.Nome, 420, 290, 0);
+                cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "participou do evento " + evento.NomeEvento, 420, 260, 0);
+                cb.ShowTextAligned(PdfContentByte.ALIGN_CENTER, "na data e hora: " + evento.Data, 420, 230, 0);
+                cb.EndText();
+                stamper.FormFlattening = true;
+            }
+
+            if (File.Exists(novoPDF))
+            {
+                Process.Start(new ProcessStartInfo(novoPDF) { UseShellExecute = true });
+            }
+            else
+            {
+                MessageBox.Show("Erro: O arquivo PDF não foi criado.");
+            }
         }
 
         private void btnSeguir_Click(object sender, EventArgs e)

@@ -131,6 +131,11 @@
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
+            this.btnCopiarLink = new RoundedButton();
             this.EditarInformacoes.SuspendLayout();
             this.VisaoGeral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Patrocinador5)).BeginInit();
@@ -165,6 +170,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel5.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // EditarInformacoes
@@ -175,6 +181,7 @@
             this.EditarInformacoes.Controls.Add(this.VisaoGeral);
             this.EditarInformacoes.Controls.Add(this.Participantes);
             this.EditarInformacoes.Controls.Add(this.tabPage3);
+            this.EditarInformacoes.Controls.Add(this.tabPage1);
             this.EditarInformacoes.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditarInformacoes.Location = new System.Drawing.Point(33, 149);
             this.EditarInformacoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1602,6 +1609,74 @@
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.btnCopiarLink);
+            this.tabPage1.Controls.Add(this.lblCodigo);
+            this.tabPage1.Controls.Add(this.label27);
+            this.tabPage1.Controls.Add(this.label26);
+            this.tabPage1.Location = new System.Drawing.Point(4, 48);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1616, 566);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "Codigo de Presença";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label26.Location = new System.Drawing.Point(489, 83);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(709, 71);
+            this.label26.TabIndex = 2;
+            this.label26.Text = "Codigo de Confirmação de Presença";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.label27.Location = new System.Drawing.Point(448, 163);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(765, 100);
+            this.label27.TabIndex = 3;
+            this.label27.Text = "       Passe esse código aos inscritos no final do evento\r\npara que eles possam g" +
+    "anhar um certificado de participação";
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblCodigo.Location = new System.Drawing.Point(737, 305);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(164, 71);
+            this.lblCodigo.TabIndex = 4;
+            this.lblCodigo.Text = "Codigo";
+            // 
+            // btnCopiarLink
+            // 
+            this.btnCopiarLink.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCopiarLink.BackColor = System.Drawing.Color.Transparent;
+            this.btnCopiarLink.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCopiarLink.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnCopiarLink.BorderRadius = 20;
+            this.btnCopiarLink.BorderSize = 3;
+            this.btnCopiarLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCopiarLink.Image = global::Acelera2025.Properties.Resources.icons8_copy_24;
+            this.btnCopiarLink.Location = new System.Drawing.Point(580, 397);
+            this.btnCopiarLink.Name = "btnCopiarLink";
+            this.btnCopiarLink.Size = new System.Drawing.Size(485, 55);
+            this.btnCopiarLink.TabIndex = 24;
+            this.btnCopiarLink.UseVisualStyleBackColor = false;
+            this.btnCopiarLink.Click += new System.EventHandler(this.btnCopiarLink_Click);
+            // 
             // EventosCriados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1671,6 +1746,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1779,5 +1856,10 @@
         private System.Windows.Forms.Label label17;
         private RoundedPanel roundedPanel3;
         private System.Windows.Forms.TextBox txtParticipantes;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        public RoundedButton btnCopiarLink;
     }
 }
