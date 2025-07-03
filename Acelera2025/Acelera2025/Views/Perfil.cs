@@ -142,7 +142,7 @@ namespace Acelera2025.Views
             card.PicEvento.Cursor = Cursors.Hand;
             card.PicEvento.Click += (sender, e) =>
             {
-                Navegador.IrParaTelaEventos(usuario, evento);
+                Navegador.IrParaTelaEventos(loggedUser, evento);
             };
 
             card.lblNomeEvento.Text = evento.NomeEvento;
