@@ -35,7 +35,6 @@
             this.panelMeusEventos = new RoundedPanel();
             this.roundedButton4 = new RoundedButton();
             this.roundedButton5 = new RoundedButton();
-            this.panelCategoria = new CircularPanel();
             this.superiorRoundedPanel1 = new SuperiorRoundedPanel();
             this.panelEventosCategoria = new System.Windows.Forms.Panel();
             this.lblNomeCategoria = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
+            this.picture = new Acelera2025.Views.Tools.CircularPictureBox();
             this.panel1.SuspendLayout();
             this.panelMeusEventos.SuspendLayout();
             this.superiorRoundedPanel1.SuspendLayout();
@@ -59,21 +59,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.roundedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.picture);
             this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.Controls.Add(this.lblCategoria);
             this.panel1.Controls.Add(this.panelMeusEventos);
-            this.panel1.Controls.Add(this.panelCategoria);
             this.panel1.Controls.Add(this.superiorRoundedPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 41);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(0, 50);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1207, 540);
+            this.panel1.Size = new System.Drawing.Size(1609, 665);
             this.panel1.TabIndex = 27;
             // 
             // btnVoltar
@@ -84,10 +85,10 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Location = new System.Drawing.Point(13, 2);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVoltar.Location = new System.Drawing.Point(17, 2);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(33, 44);
+            this.btnVoltar.Size = new System.Drawing.Size(44, 54);
             this.btnVoltar.TabIndex = 64;
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -98,10 +99,9 @@
             this.lblCategoria.BackColor = System.Drawing.Color.Transparent;
             this.lblCategoria.Font = new System.Drawing.Font("Myanmar Text", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
-            this.lblCategoria.Location = new System.Drawing.Point(218, 107);
-            this.lblCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategoria.Location = new System.Drawing.Point(291, 132);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(111, 39);
+            this.lblCategoria.Size = new System.Drawing.Size(140, 50);
             this.lblCategoria.TabIndex = 20;
             this.lblCategoria.Text = "Categoria";
             // 
@@ -114,10 +114,10 @@
             this.panelMeusEventos.BorderSize = 0;
             this.panelMeusEventos.Controls.Add(this.roundedButton4);
             this.panelMeusEventos.Controls.Add(this.roundedButton5);
-            this.panelMeusEventos.Location = new System.Drawing.Point(757, 5);
-            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMeusEventos.Location = new System.Drawing.Point(1009, 6);
+            this.panelMeusEventos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMeusEventos.Name = "panelMeusEventos";
-            this.panelMeusEventos.Size = new System.Drawing.Size(184, 81);
+            this.panelMeusEventos.Size = new System.Drawing.Size(245, 100);
             this.panelMeusEventos.TabIndex = 63;
             this.panelMeusEventos.Visible = false;
             // 
@@ -130,10 +130,10 @@
             this.roundedButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedButton4.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.roundedButton4.Location = new System.Drawing.Point(0, 40);
-            this.roundedButton4.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton4.Location = new System.Drawing.Point(0, 49);
+            this.roundedButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(184, 41);
+            this.roundedButton4.Size = new System.Drawing.Size(245, 50);
             this.roundedButton4.TabIndex = 1;
             this.roundedButton4.Text = "Eventos Criados";
             this.roundedButton4.UseVisualStyleBackColor = false;
@@ -149,24 +149,13 @@
             this.roundedButton5.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedButton5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.roundedButton5.Location = new System.Drawing.Point(0, 2);
-            this.roundedButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(184, 45);
+            this.roundedButton5.Size = new System.Drawing.Size(245, 55);
             this.roundedButton5.TabIndex = 0;
             this.roundedButton5.Text = "Eventos Ingressados";
             this.roundedButton5.UseVisualStyleBackColor = false;
             this.roundedButton5.Click += new System.EventHandler(this.roundedButton5_Click);
-            // 
-            // panelCategoria
-            // 
-            this.panelCategoria.BackColor = System.Drawing.Color.Silver;
-            this.panelCategoria.BorderColor = System.Drawing.Color.Black;
-            this.panelCategoria.BorderSize = 0;
-            this.panelCategoria.Location = new System.Drawing.Point(92, 83);
-            this.panelCategoria.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCategoria.Name = "panelCategoria";
-            this.panelCategoria.Size = new System.Drawing.Size(122, 127);
-            this.panelCategoria.TabIndex = 62;
             // 
             // superiorRoundedPanel1
             // 
@@ -178,10 +167,10 @@
             this.superiorRoundedPanel1.BorderSize = 0;
             this.superiorRoundedPanel1.Controls.Add(this.panelEventosCategoria);
             this.superiorRoundedPanel1.Controls.Add(this.lblNomeCategoria);
-            this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 148);
-            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.superiorRoundedPanel1.Location = new System.Drawing.Point(0, 182);
+            this.superiorRoundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
-            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1234, 633);
+            this.superiorRoundedPanel1.Size = new System.Drawing.Size(1645, 779);
             this.superiorRoundedPanel1.TabIndex = 61;
             // 
             // panelEventosCategoria
@@ -190,10 +179,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelEventosCategoria.AutoSize = true;
-            this.panelEventosCategoria.Location = new System.Drawing.Point(92, 101);
-            this.panelEventosCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.panelEventosCategoria.Location = new System.Drawing.Point(123, 124);
+            this.panelEventosCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEventosCategoria.Name = "panelEventosCategoria";
-            this.panelEventosCategoria.Size = new System.Drawing.Size(1076, 497);
+            this.panelEventosCategoria.Size = new System.Drawing.Size(1435, 612);
             this.panelEventosCategoria.TabIndex = 3;
             // 
             // lblNomeCategoria
@@ -201,10 +190,9 @@
             this.lblNomeCategoria.AutoSize = true;
             this.lblNomeCategoria.Font = new System.Drawing.Font("Myanmar Text", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblNomeCategoria.Location = new System.Drawing.Point(218, 0);
-            this.lblNomeCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomeCategoria.Location = new System.Drawing.Point(291, 0);
             this.lblNomeCategoria.Name = "lblNomeCategoria";
-            this.lblNomeCategoria.Size = new System.Drawing.Size(113, 53);
+            this.lblNomeCategoria.Size = new System.Drawing.Size(139, 65);
             this.lblNomeCategoria.TabIndex = 2;
             this.lblNomeCategoria.Text = "Nome ";
             // 
@@ -224,9 +212,9 @@
             this.gradientPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(136)))), ((int)(((byte)(107)))));
             this.gradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1207, 41);
+            this.gradientPanel1.Size = new System.Drawing.Size(1609, 50);
             this.gradientPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.gradientPanel1.TabIndex = 26;
             // 
@@ -239,10 +227,9 @@
             this.btnFeed.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFeed.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnFeed.LinkColor = System.Drawing.Color.White;
-            this.btnFeed.Location = new System.Drawing.Point(662, 13);
-            this.btnFeed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnFeed.Location = new System.Drawing.Point(883, 16);
             this.btnFeed.Name = "btnFeed";
-            this.btnFeed.Size = new System.Drawing.Size(35, 21);
+            this.btnFeed.Size = new System.Drawing.Size(44, 27);
             this.btnFeed.TabIndex = 17;
             this.btnFeed.TabStop = true;
             this.btnFeed.Text = "Feed";
@@ -260,9 +247,10 @@
             this.picturePerfil.BorderSize = 0;
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
-            this.picturePerfil.Location = new System.Drawing.Point(1154, 2);
+            this.picturePerfil.Location = new System.Drawing.Point(1539, 2);
+            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picturePerfil.Name = "picturePerfil";
-            this.picturePerfil.Size = new System.Drawing.Size(35, 35);
+            this.picturePerfil.Size = new System.Drawing.Size(47, 47);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturePerfil.TabIndex = 16;
             this.picturePerfil.TabStop = false;
@@ -272,10 +260,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 27);
+            this.pictureBox1.Size = new System.Drawing.Size(49, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -288,10 +276,9 @@
             this.btnPrincipal.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrincipal.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnPrincipal.LinkColor = System.Drawing.Color.White;
-            this.btnPrincipal.Location = new System.Drawing.Point(50, 12);
-            this.btnPrincipal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnPrincipal.Location = new System.Drawing.Point(67, 15);
             this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Size = new System.Drawing.Size(82, 21);
+            this.btnPrincipal.Size = new System.Drawing.Size(108, 27);
             this.btnPrincipal.TabIndex = 11;
             this.btnPrincipal.TabStop = true;
             this.btnPrincipal.Text = "CONNECTA";
@@ -307,10 +294,10 @@
             this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacoes.Location = new System.Drawing.Point(1106, 11);
-            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNotificacoes.Location = new System.Drawing.Point(1475, 14);
+            this.btnNotificacoes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNotificacoes.Name = "btnNotificacoes";
-            this.btnNotificacoes.Size = new System.Drawing.Size(22, 21);
+            this.btnNotificacoes.Size = new System.Drawing.Size(29, 26);
             this.btnNotificacoes.TabIndex = 10;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
             this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
@@ -322,10 +309,10 @@
             this.roundedPanel5.BorderSize = 0;
             this.roundedPanel5.Controls.Add(this.btnPesquisar);
             this.roundedPanel5.Controls.Add(this.txtPesquisar);
-            this.roundedPanel5.Location = new System.Drawing.Point(245, 10);
-            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel5.Location = new System.Drawing.Point(327, 12);
+            this.roundedPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel5.Name = "roundedPanel5";
-            this.roundedPanel5.Size = new System.Drawing.Size(396, 25);
+            this.roundedPanel5.Size = new System.Drawing.Size(528, 31);
             this.roundedPanel5.TabIndex = 8;
             // 
             // btnPesquisar
@@ -335,10 +322,10 @@
             this.btnPesquisar.FlatAppearance.BorderSize = 0;
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Image = global::Acelera2025.Properties.Resources.iconePesquisa;
-            this.btnPesquisar.Location = new System.Drawing.Point(364, -2);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPesquisar.Location = new System.Drawing.Point(485, -2);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(32, 31);
+            this.btnPesquisar.Size = new System.Drawing.Size(43, 38);
             this.btnPesquisar.TabIndex = 1;
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -349,10 +336,10 @@
             this.txtPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPesquisar.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisar.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtPesquisar.Location = new System.Drawing.Point(2, 4);
-            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPesquisar.Location = new System.Drawing.Point(3, 5);
+            this.txtPesquisar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(362, 26);
+            this.txtPesquisar.Size = new System.Drawing.Size(483, 32);
             this.txtPesquisar.TabIndex = 0;
             // 
             // btnOrganizadorEventos
@@ -364,10 +351,9 @@
             this.btnOrganizadorEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrganizadorEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnOrganizadorEventos.LinkColor = System.Drawing.Color.White;
-            this.btnOrganizadorEventos.Location = new System.Drawing.Point(725, 12);
-            this.btnOrganizadorEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnOrganizadorEventos.Location = new System.Drawing.Point(967, 15);
             this.btnOrganizadorEventos.Name = "btnOrganizadorEventos";
-            this.btnOrganizadorEventos.Size = new System.Drawing.Size(105, 21);
+            this.btnOrganizadorEventos.Size = new System.Drawing.Size(132, 27);
             this.btnOrganizadorEventos.TabIndex = 5;
             this.btnOrganizadorEventos.TabStop = true;
             this.btnOrganizadorEventos.Text = "Organizar eventos";
@@ -383,10 +369,9 @@
             this.btnMeusEventos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnMeusEventos.LinkColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Location = new System.Drawing.Point(856, 12);
-            this.btnMeusEventos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnMeusEventos.Location = new System.Drawing.Point(1141, 15);
             this.btnMeusEventos.Name = "btnMeusEventos";
-            this.btnMeusEventos.Size = new System.Drawing.Size(83, 21);
+            this.btnMeusEventos.Size = new System.Drawing.Size(102, 27);
             this.btnMeusEventos.TabIndex = 4;
             this.btnMeusEventos.TabStop = true;
             this.btnMeusEventos.Text = "Meus eventos";
@@ -402,10 +387,9 @@
             this.btnAjuda.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjuda.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnAjuda.LinkColor = System.Drawing.Color.White;
-            this.btnAjuda.Location = new System.Drawing.Point(955, 12);
-            this.btnAjuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnAjuda.Location = new System.Drawing.Point(1273, 15);
             this.btnAjuda.Name = "btnAjuda";
-            this.btnAjuda.Size = new System.Drawing.Size(41, 21);
+            this.btnAjuda.Size = new System.Drawing.Size(51, 27);
             this.btnAjuda.TabIndex = 3;
             this.btnAjuda.TabStop = true;
             this.btnAjuda.Text = "Ajuda";
@@ -421,25 +405,39 @@
             this.btnSobreNos.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobreNos.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.btnSobreNos.LinkColor = System.Drawing.Color.White;
-            this.btnSobreNos.Location = new System.Drawing.Point(1010, 13);
-            this.btnSobreNos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnSobreNos.Location = new System.Drawing.Point(1347, 16);
             this.btnSobreNos.Name = "btnSobreNos";
-            this.btnSobreNos.Size = new System.Drawing.Size(62, 21);
+            this.btnSobreNos.Size = new System.Drawing.Size(78, 27);
             this.btnSobreNos.TabIndex = 2;
             this.btnSobreNos.TabStop = true;
             this.btnSobreNos.Text = "Sobre nós";
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
+            // picture
+            // 
+            this.picture.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picture.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.picture.BorderColor2 = System.Drawing.Color.HotPink;
+            this.picture.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picture.BorderSize = 2;
+            this.picture.GradientAngle = 50F;
+            this.picture.Location = new System.Drawing.Point(110, 72);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(175, 175);
+            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture.TabIndex = 65;
+            this.picture.TabStop = false;
+            // 
             // CategoriaSelecionada
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1207, 581);
+            this.ClientSize = new System.Drawing.Size(1609, 715);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CategoriaSelecionada";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.CategoriaSelecionada_Load);
@@ -454,6 +452,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -475,7 +474,6 @@
         private RoundedPanel panelMeusEventos;
         private RoundedButton roundedButton4;
         private RoundedButton roundedButton5;
-        private CircularPanel panelCategoria;
         private SuperiorRoundedPanel superiorRoundedPanel1;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblNomeCategoria;
@@ -483,5 +481,6 @@
         private System.Windows.Forms.Button btnVoltar;
         private Tools.CircularPictureBox picturePerfil;
         private System.Windows.Forms.LinkLabel btnFeed;
+        private Tools.CircularPictureBox picture;
     }
 }

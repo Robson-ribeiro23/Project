@@ -611,36 +611,6 @@ namespace Acelera2025.Views
         {
             Navegador.IrParaFeed(this.usuario);
         }
-
-        private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblData4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCidadeUf1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label31_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundedPanel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         // Botões
         private void btnCarrossel1_Click(object sender, EventArgs e)
         {

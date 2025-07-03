@@ -18,12 +18,16 @@ namespace Acelera2025.Views
         private bool cardPainelDeNotificacoesVisivel = false;
         private string categoria;
 
-        public CategoriaSelecionada(PessoaModels usuario, string categoria)
+        public CategoriaSelecionada(PessoaModels usuario, string categoria, Image imagem)
         {
             InitializeComponent();
             this.usuario = usuario;
             this.categoria = categoria;
 
+            if (imagem != null)
+            {
+                picture.Image = imagem;
+            }
             if (!string.IsNullOrEmpty(this.usuario.CaminhoFoto) && File.Exists(this.usuario.CaminhoFoto))
             {
                 picturePerfil.Image = Image.FromFile(this.usuario.CaminhoFoto);

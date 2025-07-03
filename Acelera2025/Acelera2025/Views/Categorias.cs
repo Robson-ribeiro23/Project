@@ -3,6 +3,7 @@ using Acelera2025.Telas;
 using System;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Acelera2025.Views
@@ -50,24 +51,46 @@ namespace Acelera2025.Views
             cardPainelDeNotificacoes.Location = new Point(gradientPanel2.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 
-            int count = categorias.Length - 1;
-            foreach (object obj in roundedPanel2.Controls)
+            var botoesOrdenados = roundedPanel2.Controls
+            .OfType<CircularButton>()
+            .OrderBy(b => b.Location.Y)    // primeiro por linha (vertical)
+            .ThenBy(b => b.Location.X)     // depois por coluna (horizontal)
+            .ToList();
+
+            for (int i = 0; i < botoesOrdenados.Count && i < categorias.Count(); i++)
             {
-                if (obj is CircularButton c)
+                var btn = botoesOrdenados[i];
+                btn.Name = $"CircularButton_{i}";
+                btn.Tag = categorias[i]; // armazena o nome da categoria
+
+                // define imagem do botão (você pode adaptar com ícones específicos)
+                string caminhoImagem = $"ImagensCategorias\\{categorias[i]}.png";
+                if (File.Exists(caminhoImagem))
                 {
-                    c.Click += CategoriaButton_Clicked;
-                    c.Name = "CircularButton_" + count.ToString();
-                    count--;
+                    btn.Image = Image.FromFile(caminhoImagem);
+                    btn.Tag = caminhoImagem; // opcional: armazena o caminho da imagem
                 }
+
+                btn.Click += CategoriaButton_Clicked;
+
             }
         }
 
         private void CategoriaButton_Clicked(object sender, EventArgs e)
         {
-            if (sender is CircularButton btn){
+            if (sender is CircularButton btn)
+            {
+                // Obtém o índice pelo nome
                 string[] parts = btn.Name.Split('_');
-                int index = int.Parse(parts[parts.Length - 1]);
-                Navegador.IrParaCategoriaSelecionada(UsuarioControllers.loggedUser, categorias[index]);
+                int index = int.Parse(parts.Last());
+
+                string categoriaSelecionada = categorias[index];
+
+                // Recupera a imagem do botão
+                Image imagemSelecionada = btn.Image;
+
+                // Navega passando categoria e imagem
+                Navegador.IrParaCategoriaSelecionada(usuario, categoriaSelecionada, imagemSelecionada);
             }
         }
 

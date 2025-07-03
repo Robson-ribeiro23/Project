@@ -205,7 +205,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1744, 684);
             this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panelMeusEventos
             // 
@@ -347,7 +346,6 @@
             this.superiorRoundedPanel1.Name = "superiorRoundedPanel1";
             this.superiorRoundedPanel1.Size = new System.Drawing.Size(1749, 1575);
             this.superiorRoundedPanel1.TabIndex = 6;
-            this.superiorRoundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.superiorRoundedPanel1_Paint);
             // 
             // gradientPanel2
             // 
@@ -684,7 +682,6 @@
             this.Online3.Size = new System.Drawing.Size(63, 30);
             this.Online3.TabIndex = 25;
             this.Online3.Text = "Online";
-            this.Online3.Click += new System.EventHandler(this.label31_Click);
             // 
             // lblHoraOnline3
             // 
@@ -860,7 +857,6 @@
             this.roundedPanel6.Name = "roundedPanel6";
             this.roundedPanel6.Size = new System.Drawing.Size(347, 252);
             this.roundedPanel6.TabIndex = 6;
-            this.roundedPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel6_Paint);
             // 
             // label38
             // 
@@ -1314,7 +1310,6 @@
             this.lblCidadeUf1.Size = new System.Drawing.Size(91, 30);
             this.lblCidadeUf1.TabIndex = 20;
             this.lblCidadeUf1.Text = "Cidade UF";
-            this.lblCidadeUf1.Click += new System.EventHandler(this.lblCidadeUf1_Click);
             // 
             // lblHora1
             // 
@@ -1639,7 +1634,6 @@
             this.lblData4.Size = new System.Drawing.Size(119, 36);
             this.lblData4.TabIndex = 18;
             this.lblData4.Text = "00/00/0000";
-            this.lblData4.Click += new System.EventHandler(this.lblData4_Click);
             // 
             // btnNome4
             // 

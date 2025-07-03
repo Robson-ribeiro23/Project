@@ -1,4 +1,5 @@
 ﻿using Acelera2025.Views;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Ac
@@ -63,10 +64,10 @@ namespace Ac
             telaAtual.Show();
         }
 
-        public static void IrParaCategoriaSelecionada(PessoaModels usuario, string categoria)
+        public static void IrParaCategoriaSelecionada(PessoaModels usuario, string categoria, Image imagem)
         {
             FecharTelaAtual();
-            telaAtual = new CategoriaSelecionada(usuario, categoria);
+            telaAtual = new CategoriaSelecionada(usuario, categoria, imagem);
             telaAtual.Show();
         }
 
