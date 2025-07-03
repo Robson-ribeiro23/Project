@@ -65,9 +65,7 @@ namespace Acelera2025.Views
             this.btnMeusEventos = new System.Windows.Forms.LinkLabel();
             this.btnAjuda = new System.Windows.Forms.LinkLabel();
             this.btnSobreNos = new System.Windows.Forms.LinkLabel();
-            this.lblBairro = new System.Windows.Forms.Label();
-            this.lblRuaNumero = new System.Windows.Forms.Label();
-            this.lblCidade = new System.Windows.Forms.Label();
+            this.lblEnderecoCompleto = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPerfilEmpresa)).BeginInit();
             this.panelMeusEventos.SuspendLayout();
@@ -84,9 +82,7 @@ namespace Acelera2025.Views
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.lblCidade);
-            this.panel1.Controls.Add(this.lblRuaNumero);
-            this.panel1.Controls.Add(this.lblBairro);
+            this.panel1.Controls.Add(this.lblEnderecoCompleto);
             this.panel1.Controls.Add(this.picPerfilEmpresa);
             this.panel1.Controls.Add(this.btnLapis);
             this.panel1.Controls.Add(this.panelMeusEventos);
@@ -611,44 +607,18 @@ namespace Acelera2025.Views
             this.btnSobreNos.VisitedLinkColor = System.Drawing.Color.White;
             this.btnSobreNos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.btnSobreNos_LinkClicked);
             // 
-            // lblBairro
+            // lblEnderecoCompleto
             // 
-            this.lblBairro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblBairro.AutoSize = true;
-            this.lblBairro.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBairro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblBairro.Location = new System.Drawing.Point(339, 356);
-            this.lblBairro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(192, 27);
-            this.lblBairro.TabIndex = 63;
-            this.lblBairro.Text = "-                                          -";
-            // 
-            // lblRuaNumero
-            // 
-            this.lblRuaNumero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblRuaNumero.AutoSize = true;
-            this.lblRuaNumero.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRuaNumero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblRuaNumero.Location = new System.Drawing.Point(557, 356);
-            this.lblRuaNumero.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblRuaNumero.Name = "lblRuaNumero";
-            this.lblRuaNumero.Size = new System.Drawing.Size(18, 27);
-            this.lblRuaNumero.TabIndex = 69;
-            this.lblRuaNumero.Text = "-";
-            // 
-            // lblCidade
-            // 
-            this.lblCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
-            this.lblCidade.Location = new System.Drawing.Point(614, 356);
-            this.lblCidade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(18, 27);
-            this.lblCidade.TabIndex = 70;
-            this.lblCidade.Text = "-";
+            this.lblEnderecoCompleto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblEnderecoCompleto.AutoSize = true;
+            this.lblEnderecoCompleto.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnderecoCompleto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
+            this.lblEnderecoCompleto.Location = new System.Drawing.Point(320, 362);
+            this.lblEnderecoCompleto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEnderecoCompleto.Name = "lblEnderecoCompleto";
+            this.lblEnderecoCompleto.Size = new System.Drawing.Size(18, 27);
+            this.lblEnderecoCompleto.TabIndex = 63;
+            this.lblEnderecoCompleto.Text = "-";
             // 
             // PerfilEmpresa
             // 
@@ -718,8 +688,6 @@ namespace Acelera2025.Views
         private System.Windows.Forms.LinkLabel btnFeed;
         private System.Windows.Forms.Label lblSeguidores;
         private System.Windows.Forms.Label lblNumSeguidores;
-        private System.Windows.Forms.Label lblRuaNumero;
-        private System.Windows.Forms.Label lblBairro;
-        private System.Windows.Forms.Label lblCidade;
+        private System.Windows.Forms.Label lblEnderecoCompleto;
     }
 }

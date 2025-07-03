@@ -123,6 +123,26 @@ namespace Acelera2025.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_03_31_1528011 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-03-31 1528011", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2025_03_31_1528012 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2025-03-31 1528012", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CategoriaArtes {
             get {
                 object obj = ResourceManager.GetObject("CategoriaArtes", resourceCulture);

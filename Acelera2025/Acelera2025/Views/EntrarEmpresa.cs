@@ -106,6 +106,7 @@ namespace Acelera2025.Views
             if (empresa != null)
             {
                 Navegador.IrParaHome(empresa);
+                this.Close();
             }
         }
 

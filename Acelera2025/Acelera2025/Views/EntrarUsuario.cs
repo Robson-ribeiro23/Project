@@ -63,6 +63,7 @@ namespace Acelera2025.Views
             if (usuario != null)
             {
                 Navegador.IrParaHome(usuario);
+                this.Close();
             }
 
         }

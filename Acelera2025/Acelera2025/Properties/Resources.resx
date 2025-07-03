@@ -136,6 +136,9 @@
   <data name="icons8-hide-24 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-hide-24 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-employ-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-employ-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="CategoriaVoluntariado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CategoriaVoluntariado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,6 +154,9 @@
   <data name="image-removebg-preview (3) - Copia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image-removebg-preview (3) - Copia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-facebook-logo-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-facebook-logo-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-ticket-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-ticket-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -165,9 +171,6 @@
   </data>
   <data name="CategoriaFestas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CategoriaFestas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-plus-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-plus-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de tela 2025-03-31 152752" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2025-03-31 1527521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,11 +190,11 @@
   <data name="CategoriaCiencia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CategoriaCiencia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IconeNotificacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IconeNotificacao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="medioEngajamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medioEngajamento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-employ-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-employ-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-plus-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-plus-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-email-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-email-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,8 +205,8 @@
   <data name="CategoriaSociedade" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CategoriaSociedade.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="medioEngajamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\medioEngajamento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-eye-30 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-eye-30 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="baixoEngajamento" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\baixoEngajamento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -216,6 +219,9 @@
   </data>
   <data name="CategoriaDanca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CategoriaDanca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2025-03-31 1512231" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2025-03-31 151223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-copy-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-copy-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,8 +253,8 @@
   <data name="icons8-instagram-logo-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-instagram-logo-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-eye-30 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-eye-30 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IconeNotificacao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IconeNotificacao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CategoriaCulinária" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CategoriaCulinária.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,6 +271,9 @@
   <data name="icons8-camera-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-camera-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Captura de tela 2025-03-31 1528011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2025-03-31 152801.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-create-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-create-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -280,9 +289,6 @@
   <data name="icons8-hide-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-hide-24.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="icons8-facebook-logo-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-facebook-logo-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-test-account-48 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-test-account-48 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -292,7 +298,7 @@
   <data name="Captura de tela 2025-03-31 152801" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2025-03-31 1528011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de tela 2025-03-31 1512231" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2025-03-31 151223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de tela 2025-03-31 1528012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2025-03-31 152801.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

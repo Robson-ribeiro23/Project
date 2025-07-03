@@ -83,10 +83,8 @@ namespace Acelera2025.Views
         {
             if (empresa != null)
             {
-                lblCidade.Text = $"{empresa.Cidade} - {empresa.UF}";
-                
-                lblBairro.Text = empresa.Bairro;
-                lblRuaNumero.Text = $"{empresa.Rua}, {empresa.Numero}";
+                lblEnderecoCompleto.Text = $"{empresa.Rua}, {empresa.Numero} - {empresa.Bairro}, {empresa.Cidade} - {empresa.UF} | CEP: {empresa.CEP}";
+
             }
         }
 
