@@ -75,6 +75,7 @@ namespace Acelera2025.Views
             labelDatas = new List<Label> { lblData1, lblData2, lblData3, lblData4 };
             labelHoras = new List<Label> { lblHora1, lblHora2, lblHora3, lblHora4 };
             btnNomes = new List<LinkLabel> { btnNome1, btnNome2, btnNome3, btnNome4 };
+<<<<<<< Updated upstream
             CidadeUfs = new List<Label> { lblCidadeUf1, lblCidadeUf2, lblCidadeUf3, lblCidadeUf4 };
 
             CarregarEventos();
@@ -99,6 +100,55 @@ namespace Acelera2025.Views
                 if (indexEvento < eventosOrdenados.Count)
                 {
                     var evento = eventosOrdenados[indexEvento];
+=======
+            labelCidadeUfs = new List<Label> { lblCidadeUf1, lblCidadeUf2, lblCidadeUf3, lblCidadeUf4 };
+            var btnNomesOnline = new List<LinkLabel> { btnNomeEventoOnline1, btnNomeEventoOnline2, btnNomeEventoOnline3, btnNomeEventoOnline4 };
+            var lblDatasOnline = new List<Label> { lblDataOnline1, lblDataOnline2, lblDataOnline3, lblDataOnline4 };
+            var lblHorasOnline = new List<Label> { lblHoraOnline1, lblHoraOnline2, lblHoraOnline3, lblHoraOnline4 };
+
+
+            List<EventoModels> eventos = EventoCache.ListarTodos()
+            .Where(evento => !(evento.GetType().GetProperty("Excluido") != null &&
+                       (bool)evento.GetType().GetProperty("Excluido").GetValue(evento)))
+            .ToList();
+
+            var eventosOnline = eventos.Where(a => !a.IsPresencial).ToList();
+            var eventosPresenciais = eventos.Where(a => a.IsPresencial).ToList();
+
+
+            
+
+            for (int i = 0; i < btnNomesOnline.Count; i++)
+            {
+                if (i < eventosOnline.Count)
+                {
+                    var evento = eventosOnline[i];
+
+                    lblDatasOnline[i].Text = evento.Data.ToShortDateString();
+                    lblHorasOnline[i].Text = evento.Horario;
+                    btnNomesOnline[i].Text = evento.NomeEvento;
+                    btnNomesOnline[i].Tag = evento;
+
+                    btnNomesOnline[i].LinkClicked -= Evento_LinkClicked;
+                    btnNomesOnline[i].LinkClicked += Evento_LinkClicked;
+                }
+                else
+                {
+                    lblDatasOnline[i].Text = "";
+                    lblHorasOnline[i].Text = "";
+                    btnNomesOnline[i].Text = "";
+                    btnNomesOnline[i].Tag = null;
+
+                    btnNomesOnline[i].LinkClicked -= Evento_LinkClicked;
+                }
+            }
+
+            for (int i = 0; i < pictureBoxes.Count; i++)
+            {
+                if (i < eventosPresenciais.Count)
+                {
+                    var evento = eventosPresenciais[i];
+>>>>>>> Stashed changes
 
                     labelDatas[i].Text = evento.Data.ToShortDateString();
                     labelHoras[i].Text = evento.Horario;
@@ -482,6 +532,13 @@ namespace Acelera2025.Views
 
         }
 
+<<<<<<< Updated upstream
        
+=======
+        private void panelCategorias_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+>>>>>>> Stashed changes
     }
 }
