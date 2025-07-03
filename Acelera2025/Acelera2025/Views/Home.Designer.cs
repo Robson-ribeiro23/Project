@@ -1802,8 +1802,12 @@
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             this.picturePerfil.Location = new System.Drawing.Point(1673, 2);
             this.picturePerfil.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.picturePerfil.Location = new System.Drawing.Point(1255, 2);
+>>>>>>> Stashed changes
 =======
             this.picturePerfil.Location = new System.Drawing.Point(1255, 2);
 >>>>>>> Stashed changes
