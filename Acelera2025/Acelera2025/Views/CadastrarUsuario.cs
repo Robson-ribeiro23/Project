@@ -175,7 +175,7 @@ namespace Acelera2025.Views
             // Validações
             if (!ValidarNome(txtNome.Text))
             {
-                MessageBox.Show("Nome inválido. Verifique se não está vazio e não ultrapassa o limite de caracteres.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nome inválido. Verifique se não está vazio e não ultrapassa o limite de caracteres.", "Erro", MessageBoxButtons.OK);
                 txtNome.Focus();
                 return;
             }
@@ -230,8 +230,11 @@ namespace Acelera2025.Views
 
             if (controllerUsuario.Cadastrar(usuario))
             {
-                MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                LimparCampos();
+                MessageBox.Show("Cadastro realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information); 
+             
+                EntrarUsuario loginUsuario = new EntrarUsuario(); 
+                loginUsuario.Show(); 
+                this.Close(); 
             }
         }
 

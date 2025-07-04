@@ -52,6 +52,9 @@
             this.txtCnpj = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.btnEntrar = new RoundedButton();
+            this.lblTamanhoSenha = new System.Windows.Forms.Label();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.lblMaiuscula = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
@@ -65,7 +68,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(423, 597);
             this.panel1.TabIndex = 3;
@@ -82,7 +85,7 @@
             this.btnEntrarEmpresa.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrarEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(97)))), ((int)(((byte)(153)))));
             this.btnEntrarEmpresa.Location = new System.Drawing.Point(144, 300);
-            this.btnEntrarEmpresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEntrarEmpresa.Margin = new System.Windows.Forms.Padding(2);
             this.btnEntrarEmpresa.Name = "btnEntrarEmpresa";
             this.btnEntrarEmpresa.Size = new System.Drawing.Size(142, 32);
             this.btnEntrarEmpresa.TabIndex = 12;
@@ -99,7 +102,7 @@
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Location = new System.Drawing.Point(23, 21);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(33, 44);
             this.btnVoltar.TabIndex = 11;
@@ -125,7 +128,7 @@
             this.panel2.Controls.Add(this.roundedPanel1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(423, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(642, 597);
             this.panel2.TabIndex = 4;
@@ -137,7 +140,10 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
             this.roundedPanel1.BorderRadius = 20;
             this.roundedPanel1.BorderSize = 0;
+            this.roundedPanel1.Controls.Add(this.lblTamanhoSenha);
+            this.roundedPanel1.Controls.Add(this.lblNumero);
             this.roundedPanel1.Controls.Add(this.btnMostrarSenhaConfirmar);
+            this.roundedPanel1.Controls.Add(this.lblMaiuscula);
             this.roundedPanel1.Controls.Add(this.btnMostrarSenha);
             this.roundedPanel1.Controls.Add(this.txtConfirmarSenha);
             this.roundedPanel1.Controls.Add(this.label8);
@@ -154,7 +160,7 @@
             this.roundedPanel1.Controls.Add(this.txtCnpj);
             this.roundedPanel1.Controls.Add(this.txtTelefone);
             this.roundedPanel1.Location = new System.Drawing.Point(57, 10);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Size = new System.Drawing.Size(527, 578);
             this.roundedPanel1.TabIndex = 0;
@@ -166,7 +172,7 @@
             this.btnMostrarSenhaConfirmar.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenhaConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarSenhaConfirmar.Location = new System.Drawing.Point(471, 489);
-            this.btnMostrarSenhaConfirmar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMostrarSenhaConfirmar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMostrarSenhaConfirmar.Name = "btnMostrarSenhaConfirmar";
             this.btnMostrarSenhaConfirmar.Size = new System.Drawing.Size(21, 20);
             this.btnMostrarSenhaConfirmar.TabIndex = 32;
@@ -180,7 +186,7 @@
             this.btnMostrarSenha.FlatAppearance.BorderSize = 0;
             this.btnMostrarSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarSenha.Location = new System.Drawing.Point(471, 409);
-            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMostrarSenha.Margin = new System.Windows.Forms.Padding(2);
             this.btnMostrarSenha.Name = "btnMostrarSenha";
             this.btnMostrarSenha.Size = new System.Drawing.Size(21, 20);
             this.btnMostrarSenha.TabIndex = 31;
@@ -193,7 +199,7 @@
             this.txtConfirmarSenha.BackColor = System.Drawing.SystemColors.Control;
             this.txtConfirmarSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmarSenha.Location = new System.Drawing.Point(56, 485);
-            this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
             this.txtConfirmarSenha.PasswordChar = '*';
             this.txtConfirmarSenha.Size = new System.Drawing.Size(411, 33);
@@ -231,7 +237,7 @@
             this.txtEmail.BackColor = System.Drawing.SystemColors.Control;
             this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(56, 325);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(411, 33);
             this.txtEmail.TabIndex = 20;
@@ -242,7 +248,7 @@
             this.txtNomeEmpresa.BackColor = System.Drawing.SystemColors.Control;
             this.txtNomeEmpresa.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeEmpresa.Location = new System.Drawing.Point(56, 93);
-            this.txtNomeEmpresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeEmpresa.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeEmpresa.Name = "txtNomeEmpresa";
             this.txtNomeEmpresa.Size = new System.Drawing.Size(411, 33);
             this.txtNomeEmpresa.TabIndex = 19;
@@ -266,7 +272,7 @@
             this.txtSenha.BackColor = System.Drawing.SystemColors.Control;
             this.txtSenha.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(56, 405);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(2);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(411, 33);
@@ -283,7 +289,7 @@
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCadastrar.Location = new System.Drawing.Point(200, 534);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(142, 32);
             this.btnCadastrar.TabIndex = 15;
@@ -349,7 +355,7 @@
             this.txtCnpj.BackColor = System.Drawing.SystemColors.Control;
             this.txtCnpj.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCnpj.Location = new System.Drawing.Point(57, 169);
-            this.txtCnpj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCnpj.Margin = new System.Windows.Forms.Padding(2);
             this.txtCnpj.Name = "txtCnpj";
             this.txtCnpj.Size = new System.Drawing.Size(411, 33);
             this.txtCnpj.TabIndex = 35;
@@ -361,7 +367,7 @@
             this.txtTelefone.BackColor = System.Drawing.SystemColors.Control;
             this.txtTelefone.Font = new System.Drawing.Font("Myanmar Text", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone.Location = new System.Drawing.Point(57, 245);
-            this.txtTelefone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefone.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(411, 33);
             this.txtTelefone.TabIndex = 36;
@@ -385,6 +391,34 @@
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             // 
+            // lblTamanhoSenha
+            // 
+            this.lblTamanhoSenha.AutoSize = true;
+            this.lblTamanhoSenha.Location = new System.Drawing.Point(352, 390);
+            this.lblTamanhoSenha.Name = "lblTamanhoSenha";
+            this.lblTamanhoSenha.Size = new System.Drawing.Size(115, 13);
+            this.lblTamanhoSenha.TabIndex = 39;
+            this.lblTamanhoSenha.Text = "✓ Mínimo 8 caracteres";
+            // 
+            // lblNumero
+            // 
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Location = new System.Drawing.Point(248, 390);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(92, 13);
+            this.lblNumero.TabIndex = 38;
+            this.lblNumero.Text = "✓ Contém número";
+            // 
+            // lblMaiuscula
+            // 
+            this.lblMaiuscula.AutoSize = true;
+            this.lblMaiuscula.ForeColor = System.Drawing.Color.Black;
+            this.lblMaiuscula.Location = new System.Drawing.Point(110, 390);
+            this.lblMaiuscula.Name = "lblMaiuscula";
+            this.lblMaiuscula.Size = new System.Drawing.Size(127, 13);
+            this.lblMaiuscula.TabIndex = 37;
+            this.lblMaiuscula.Text = "✓ Contém letra maiúscula";
+            // 
             // CadastrarEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -393,7 +427,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CadastrarEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -432,5 +466,8 @@
         private RoundedButton btnEntrarEmpresa;
         private System.Windows.Forms.TextBox txtCnpj;
         private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.Label lblTamanhoSenha;
+        private System.Windows.Forms.Label lblNumero;
+        private System.Windows.Forms.Label lblMaiuscula;
     }
 }
