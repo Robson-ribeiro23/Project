@@ -31,8 +31,8 @@ namespace Acelera2025.Views
             lblNumero.ForeColor = Color.Red;
             lblTamanhoSenha.ForeColor = Color.Red;
 
-
-             string[] nomes = { "a", "b", "c", "d", "e" };
+            /*
+            string[] nomes = { "a", "b", "c", "d", "e" };
 
             for (int i = 0; i < nomes.Length; i++)
             {
@@ -72,7 +72,7 @@ namespace Acelera2025.Views
             if (controllerUsuario.Cadastrar(usuario))
             {
                 Navegador.IrParaLoginUsuario();
-            }
+            }*/
 
         }
 

@@ -19,6 +19,7 @@ namespace Acelera2025.Views
         {
             InitializeComponent();
 
+            /*-
             var empresa = new EmpresaModels
             {
                 Tipo = "empresa",
@@ -31,7 +32,7 @@ namespace Acelera2025.Views
                 ConfirmarSenha = "0",
             };
 
-            controllerEmpresa.Cadastrar(empresa);
+            controllerEmpresa.Cadastrar(empresa);*/
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
