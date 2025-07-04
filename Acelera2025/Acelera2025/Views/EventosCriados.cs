@@ -473,6 +473,11 @@ namespace Acelera2025.Views
                     MessageBox.Show("Este evento não possui link de transmissão.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
         }
+
+        private void lblLinkReuniao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

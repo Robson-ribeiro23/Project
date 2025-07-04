@@ -60,6 +60,19 @@ namespace Acelera2025.Views
                     lblRua.Text = "";
                     lblCidadeUf.Text = "";
                     lblCep.Text = "";
+
+                 
+                }
+                if (!evento.IsPresencial && !string.IsNullOrEmpty(evento.LinkReuniao))
+                {
+                    linkDoEvento.Text = evento.LinkReuniao;
+                    linkDoEvento.Links.Clear();
+                    linkDoEvento.Links.Add(0, evento.LinkReuniao.Length, evento.LinkReuniao);
+                    linkDoEvento.Visible = true;
+                }
+                else
+                {
+                    linkDoEvento.Visible = false;
                 }
 
 
@@ -309,6 +322,28 @@ namespace Acelera2025.Views
         private void lblDescricao_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void linkDoEvento_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = e.Link.LinkData as string;
+
+            if (!string.IsNullOrEmpty(url))
+            {
+                try
+                {
+                    Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao abrir o link: " + ex.Message);
+                }
+            }
         }
     }
 }
