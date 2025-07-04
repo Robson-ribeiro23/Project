@@ -59,7 +59,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.labelSeguir = new System.Windows.Forms.Label();
             this.lblNomePublicador = new System.Windows.Forms.Label();
-            this.circularPanel5 = new CircularPanel();
+            this.picPerfil = new CircularPanel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lblDescricao = new System.Windows.Forms.Label();
@@ -151,7 +151,7 @@
             this.picturePerfil.GradientAngle = 50F;
             this.picturePerfil.Image = global::Acelera2025.Properties.Resources.icons8_test_account_48__1_;
             this.picturePerfil.Location = new System.Drawing.Point(1747, 2);
-            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picturePerfil.Margin = new System.Windows.Forms.Padding(4);
             this.picturePerfil.Name = "picturePerfil";
             this.picturePerfil.Size = new System.Drawing.Size(47, 47);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -334,7 +334,7 @@
             this.panelPatrocinadores.Controls.Add(this.label9);
             this.panelPatrocinadores.Controls.Add(this.labelSeguir);
             this.panelPatrocinadores.Controls.Add(this.lblNomePublicador);
-            this.panelPatrocinadores.Controls.Add(this.circularPanel5);
+            this.panelPatrocinadores.Controls.Add(this.picPerfil);
             this.panelPatrocinadores.Controls.Add(this.tabControl1);
             this.panelPatrocinadores.Controls.Add(this.gradientPanel2);
             this.panelPatrocinadores.Controls.Add(this.panel2);
@@ -348,7 +348,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(556, 453);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Multiline = true;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(205, 27);
@@ -566,16 +566,16 @@
             this.lblNomePublicador.Text = "Evento publicado por XXXXX";
             this.lblNomePublicador.Click += new System.EventHandler(this.lblNomePublicador_Click);
             // 
-            // circularPanel5
+            // picPerfil
             // 
-            this.circularPanel5.BackColor = System.Drawing.Color.Silver;
-            this.circularPanel5.BorderColor = System.Drawing.Color.Black;
-            this.circularPanel5.BorderSize = 0;
-            this.circularPanel5.Location = new System.Drawing.Point(96, 377);
-            this.circularPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.circularPanel5.Name = "circularPanel5";
-            this.circularPanel5.Size = new System.Drawing.Size(69, 76);
-            this.circularPanel5.TabIndex = 43;
+            this.picPerfil.BackColor = System.Drawing.Color.Silver;
+            this.picPerfil.BorderColor = System.Drawing.Color.Black;
+            this.picPerfil.BorderSize = 0;
+            this.picPerfil.Location = new System.Drawing.Point(96, 377);
+            this.picPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picPerfil.Name = "picPerfil";
+            this.picPerfil.Size = new System.Drawing.Size(69, 76);
+            this.picPerfil.TabIndex = 43;
             // 
             // tabControl1
             // 
@@ -982,7 +982,7 @@
         private System.Windows.Forms.Label lblNomeEvento;
         private System.Windows.Forms.Label labelSeguir;
         private System.Windows.Forms.Label lblNomePublicador;
-        private CircularPanel circularPanel5;
+        private CircularPanel picPerfil;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel2;
         private CircularButton btnMaisEventos;

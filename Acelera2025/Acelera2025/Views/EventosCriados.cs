@@ -307,11 +307,6 @@ namespace Acelera2025.Views
             Navegador.IrParaOrganizarEventos(this.usuario);
         }
 
-        private void btnConvidarParticipante_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
             string nomeSelecionado = comboEventosCriados.SelectedItem?.ToString();
