@@ -20,7 +20,6 @@ namespace Acelera2025.Views
         private bool panelVisivel = false;
         private CardPerfil cardPerfil;
         private bool cardPerfilVisivel = false;
-        private PessoaModels usuario;
         private CardPainelDeNotificacoes cardPainelDeNotificacoes;
         private bool cardPainelDeNotificacoesVisivel = false;
         private bool cardEditarPerfilEmpresaVisivel = false;
@@ -32,7 +31,6 @@ namespace Acelera2025.Views
         public PerfilEmpresa(PessoaModels usuario)
         {
             InitializeComponent();
-            this.usuario = usuario;
             this.loggedUser = UsuarioControllers.loggedUser != null ? (PessoaModels)UsuarioControllers.loggedUser : (PessoaModels)EmpresaControllers.loggedCompany;
 
             if (usuario is EmpresaModels empresaCasted)
@@ -41,11 +39,22 @@ namespace Acelera2025.Views
                 
                 this.empresaVisualizada = empresaCasted;
             }
+
+            btnSeguir.Text = loggedUser.EstaSeguindo(empresaVisualizada) ? "Seguindo" : "Seguir";
+
+            if (loggedUser != null && !string.IsNullOrEmpty(loggedUser.CaminhoFoto) && File.Exists(loggedUser.CaminhoFoto))
+            {
+                picturePerfil.Image = Image.FromFile(loggedUser.CaminhoFoto);
+            }
+            if (!string.IsNullOrEmpty(this.empresa.CaminhoFoto) && File.Exists(this.empresa.CaminhoFoto))
+            {
+                picPerfilEmpresa.Image = Image.FromFile(this.empresa.CaminhoFoto);
+            }
         }
         private void PerfilEmpresa_Load(object sender, EventArgs e)
         {
             panelMeusEventos.Visible = false;
-            cardPerfil = new CardPerfil(this.usuario);
+            cardPerfil = new CardPerfil(this.loggedUser);
             cardPerfil.Visible = false;
 
             panel1.Controls.Add(cardPerfil);
@@ -54,6 +63,7 @@ namespace Acelera2025.Views
             cardPerfil.Anchor = AnchorStyles.Top | AnchorStyles.Right;
 
 
+            lblNomeEmpresa.Text = this.empresa.Nome;
             cardEditarPerfilEmpresa = new CardEditarPerfilEmpresa();
             cardEditarPerfilEmpresa.Visible = false;
 
@@ -74,23 +84,13 @@ namespace Acelera2025.Views
             cardPainelDeNotificacoes.Location = new Point(gradientPanel1.Width - cardPerfil.Width - 20, 0);
             cardPainelDeNotificacoes.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 
-
-            if (usuario is EmpresaModels empresa)
-            {
-                lblNomeEmpresa.Text = empresa.Nome;
-                LoadAllEvents();
-                LoadAllPosts();
-
-                if (!string.IsNullOrEmpty(empresa.CaminhoFoto) && File.Exists(empresa.CaminhoFoto))
-                {
-                    picturePerfil.Image = Image.FromFile(empresa.CaminhoFoto);
-                }
-            }
+            LoadAllEvents();
+            LoadAllPosts();
         }
 
         private void LoadAllEvents()
         {
-            List<EventoModels> ownedEvents = usuario.GetOwnedEvents()
+            List<EventoModels> ownedEvents = empresa.GetOwnedEvents()
                 .OrderByDescending(e => e.Data).ToList();
 
             panelEventosCriados.Controls.Clear();
@@ -131,7 +131,7 @@ namespace Acelera2025.Views
 
         private void LoadAllPosts()
         {
-            var postagensUsuario = usuario.Postagens;
+            var postagensUsuario = empresa.Postagens;
 
             foreach (var post in postagensUsuario)
             {
@@ -139,15 +139,15 @@ namespace Acelera2025.Views
 
                 if (post.Video != null)
                 {
-                    cardPost = new CardPostVideo(post, usuario);
+                    cardPost = new CardPostVideo(post, empresa);
                 }
                 else if (post.Imagens != null && post.Imagens.Count > 0)
                 {
-                    cardPost = new CardPostImagem(post, usuario);
+                    cardPost = new CardPostImagem(post, empresa);
                 }
                 else
                 {
-                    cardPost = new CardPostTexto(post, usuario);
+                    cardPost = new CardPostTexto(post, empresa);
                 }
                 cardPost.AutoSize = false;
                 cardPost.Margin = new Padding(0, 0, 0, 10);
@@ -167,17 +167,17 @@ namespace Acelera2025.Views
 
         private void btnAjuda_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Navegador.IrParaAjuda(this.usuario);
+            Navegador.IrParaAjuda(this.loggedUser);
         }
 
         private void btnSobreNos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {   
-            Navegador.IrParaSobreNos(this.usuario);
+            Navegador.IrParaSobreNos(this.loggedUser);
         }
 
         private void btnPrincipal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Navegador.IrParaHome(this.usuario);
+            Navegador.IrParaHome(this.loggedUser);
         }
 
         private void picturePerfil_Click(object sender, EventArgs e)
@@ -189,7 +189,7 @@ namespace Acelera2025.Views
 
         private void btnLapis_Click(object sender, EventArgs e)
         {
-            if (usuario is EmpresaModels empresa)
+            if (empresa.Email == loggedUser.Email)
             {
                 cardEditarPerfilEmpresa.PreencherDados(empresa); 
                 cardEditarPerfilEmpresaVisivel = !cardEditarPerfilEmpresaVisivel;
@@ -200,7 +200,7 @@ namespace Acelera2025.Views
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            Navegador.IrParaPesquisa(this.usuario);
+            Navegador.IrParaPesquisa(this.loggedUser);
         }
 
         private void AtualizarDadosEmpresa(EmpresaModels empresa)
@@ -231,7 +231,7 @@ namespace Acelera2025.Views
 
         private void btnOrganizarEventos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Navegador.IrParaOrganizarEventos(this.usuario);
+            Navegador.IrParaOrganizarEventos(this.loggedUser);
         }
 
         private void gradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -241,7 +241,7 @@ namespace Acelera2025.Views
 
         private void btnFeed_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Navegador.IrParaFeed(this.usuario);
+            Navegador.IrParaFeed(this.loggedUser);
         }
 
         private void superiorRoundedPanel1_Paint(object sender, PaintEventArgs e)

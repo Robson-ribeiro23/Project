@@ -33,7 +33,7 @@ namespace Acelera2025.Views
 
         private void btnPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if (this.usuario.Tipo == "empresa")
+            if (this.usuario.Tipo == "Empresa")
             {
                 //PerfilEmpresa perfil = new PerfilEmpresa();
                 //perfil.Show();
@@ -42,7 +42,7 @@ namespace Acelera2025.Views
                 Navegador.IrParaPerfilEmpresa(this.usuario);
 
             }
-            else if(this.usuario.Tipo == "usuario")
+            else if(this.usuario.Tipo == "Usuario")
             {
                 //Perfil perfil = new Perfil();
                 //perfil.Show();

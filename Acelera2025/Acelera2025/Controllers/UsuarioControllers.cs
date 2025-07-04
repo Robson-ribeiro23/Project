@@ -53,7 +53,7 @@ public class UsuarioControllers
             return false;
         }
 
-        usuario.Tipo = "Usario";
+        usuario.Tipo = "Usuario";
         listaUsuarios.Add(usuario);
         MessageBox.Show("Usuário cadastrado com sucesso!");
         return true;
