@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acelera2025", "Acelera2025\Acelera2025.csproj", "{584D34CE-2694-4D58-9130-6D1CA9885D31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acelera2025.Tests", "Acelera2025.Tests\Acelera2025.Tests.csproj", "{7D443AAA-D4A5-4CEF-80F3-45003D212F8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{584D34CE-2694-4D58-9130-6D1CA9885D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584D34CE-2694-4D58-9130-6D1CA9885D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584D34CE-2694-4D58-9130-6D1CA9885D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D443AAA-D4A5-4CEF-80F3-45003D212F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D443AAA-D4A5-4CEF-80F3-45003D212F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D443AAA-D4A5-4CEF-80F3-45003D212F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D443AAA-D4A5-4CEF-80F3-45003D212F8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
